@@ -1,0 +1,18 @@
+/* Tutti */
+.footer {
+  color: #fff;
+  background-color: $neutral-1;
+
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  nav {
+    ul {
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+}

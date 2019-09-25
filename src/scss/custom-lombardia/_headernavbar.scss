@@ -1,0 +1,28 @@
+
+.it-header-navbar-wrapper {
+  .navbar {
+    .navbar-collapsable {
+      .navbar-nav {
+        li {
+          a.nav-link {
+            color: $gray-primary;
+            font-weight: bold;
+            padding: $nav-link-padding-y $nav-link-padding-x;
+
+            &.dropdown-toggle {
+              svg {
+                fill: $gray-primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //Tablet horizontal / small desktop
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;    
+  }  
+  
+}

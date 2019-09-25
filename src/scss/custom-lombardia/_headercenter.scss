@@ -1,0 +1,29 @@
+.it-header-center-wrapper {
+  .it-header-center-content-wrapper {
+    .it-brand-wrapper {
+      img {
+        height: 41px;
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          height: 54px;
+        }
+        margin-right: 24px;
+      }
+      .it-brand-text {
+        line-height: 1.555;
+        font-weight: 700;
+//        font-size: 36px;
+      }
+    }
+    .it-search-wrapper {
+      margin: 4px 0;
+      border: 2px solid #cacacc;
+      border-radius: 4px;
+
+      input[type='search'] {
+        border-bottom: 0;
+      }
+    }    
+    
+
+  }
+}

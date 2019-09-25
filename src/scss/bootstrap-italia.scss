@@ -6,10 +6,12 @@
 
 // funzioni e variabili colore
 @import 'functions';
-@import 'utilities/colors_vars';
+//@import 'utilities/colors_vars';
+@import 'custom-lombardia/colors_vars';
 
 //variables
 @import 'variables';
+@import 'custom-lombardia/variables';
 
 //classi colore
 @import 'utilities/colors';
@@ -147,3 +149,11 @@
 //gestione dei focus
 @import 'utilities/focus';
 @import 'utilities/icons';
+
+// Componenti lombardia
+@import 'custom-lombardia/headerslim';
+@import 'custom-lombardia/headercenter';
+@import 'custom-lombardia/headernavbar';
+@import 'custom-lombardia/header';
+
+@import "custom-lombardia/footer";

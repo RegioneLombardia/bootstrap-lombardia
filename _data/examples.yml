@@ -14,6 +14,17 @@
       url: hero
       description: Pagina con vari esempi di Hero.
 
+- category: Esempi di componenti Lombardia
+  description: Di seguito sono riportati esempi per il corretto utilizzo di alcuni componenti.
+  examples:
+    - name: Footer
+      url: http://localhost:4000/docs/esempi-lombardia/footer
+      description: Footer standard Lombardia
+    - name: Header
+      url: http://localhost:4000/docs/esempi-lombardia/header
+      description: Header Applicativi Web
+      status: work in progress      
+
 - category: Esempi di template completi
   description: Questa area conterrà alcuni template di esempio generici. Per applicazioni della libreria su progetti reali, puoi anche consultare la pagina dei Progetti.
   examples:
