@@ -18,10 +18,10 @@
   description: Di seguito sono riportati esempi per il corretto utilizzo di alcuni componenti.
   examples:
     - name: Footer
-      url: http://localhost:4000/docs/esempi-lombardia/footer
+      url: ../esempi-lombardia/footer
       description: Footer standard Lombardia
     - name: Header
-      url: http://localhost:4000/docs/esempi-lombardia/header
+      url: ../esempi-lombardia/header
       description: Header Applicativi Web
       status: work in progress      
 
