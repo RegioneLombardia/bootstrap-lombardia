@@ -8,7 +8,7 @@
         }
       }
       .it-header-navbar-wrapper {
-        margin-top: -10px;
+        margin-top: -5px;
         .menu-wrapper {
           .it-brand-wrapper {
             &.cloned {
@@ -22,6 +22,7 @@
       .it-header-center-wrapper {
         border-top: 20px solid $primary;
         .it-header-center-content-wrapper {
+          margin-top: 16px;
           .it-brand-wrapper {
             img {
               height: 41px;

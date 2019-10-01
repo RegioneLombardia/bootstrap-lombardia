@@ -1,5 +1,10 @@
 .it-header-slim-wrapper {
   .it-header-slim-wrapper-content {
+    .navbar-brand {
+      img {
+        height: 40px;
+      }
+    }
     .header-slim-right-zone {
       font-weight: 600;
     }
