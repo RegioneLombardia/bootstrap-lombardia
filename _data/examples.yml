@@ -25,6 +25,13 @@
       description: Header Applicativi Web
       status: work in progress      
 
+- category: Pagine complete Lombardia
+  examples:
+    - name: Tabella
+      url: ../esempi-lombardia/pag_tabella
+      description: Pagina completa con tabella
+      status: work in progress
+
 - category: Esempi di template completi
   description: Questa area conterrà alcuni template di esempio generici. Per applicazioni della libreria su progetti reali, puoi anche consultare la pagina dei Progetti.
   examples:

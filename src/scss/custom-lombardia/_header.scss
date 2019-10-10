@@ -4,11 +4,11 @@
     &.is-sticky {
       @media (min-width: #{map-get($grid-breakpoints, lg)}) {
         .it-header-navbar-wrapper {
-          border-top: 20px solid $primary;
+          border-top: 15px solid $primary;
         }
       }
       .it-header-navbar-wrapper {
-        margin-top: -5px;
+//        margin-top: -5px;
         .menu-wrapper {
           .it-brand-wrapper {
             &.cloned {
@@ -20,9 +20,9 @@
         }
       }
       .it-header-center-wrapper {
-        border-top: 20px solid $primary;
+        border-top: 15px solid $primary;
         .it-header-center-content-wrapper {
-          margin-top: 16px;
+          margin-top: -12px;
           .it-brand-wrapper {
             img {
               height: 41px;
