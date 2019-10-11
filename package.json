@@ -10,8 +10,8 @@
     "framework",
     "web"
   ],
-  "description": "Bootstrap Italia è un tema Bootstrap 4 per la creazione di applicazioni web nel pieno rispetto delle Linee guida di design per i servizi web della PA",
-  "homepage": "https://italia.github.io/bootstrap-italia/",
+  "description": "'Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA",
+  "homepage": "https://regionelombardia.github.io/bootstrap-lombardia/",
   "style": "dist/css/bootstrap-italia.min.css",
   "main": "dist/js/bootstrap-italia.min.js",
   "scripts": {
@@ -32,9 +32,9 @@
     "test-a11y": "npx pa11y-ci --sitemap http://localhost:4000/sitemap.xml",
     "test-a11y-one": "npx pa11y-ci"
   },
-  "repository": "https://github.com/italia/bootstrap-italia",
-  "author": "Presidenza del Consiglio dei Ministri",
-  "license": "BSD-3-Clause",
+  "repository": "https://github.com/RegioneLombardia/bootstrap-lombardia",
+  "author": "Agenzia Regionale Innovazione e Acquisti",
+  "license": "EUPL-1.2",
   "browserslist": [
     "last 2 versions",
     "> 1%"
