@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-italia",
-  "version": "1.3.7",
+  "name": "bootstrap-lombardia",
+  "version": "0.1.4",
   "keywords": [
     "css",
     "sass",
@@ -12,8 +12,8 @@
   ],
   "description": "'Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA",
   "homepage": "https://regionelombardia.github.io/bootstrap-lombardia/",
-  "style": "dist/css/bootstrap-italia.min.css",
-  "main": "dist/js/bootstrap-italia.min.js",
+  "style": "dist/css/bootstrap-lombardia.min.css",
+  "main": "dist/js/bootstrap-lombardia.min.js",
   "scripts": {
     "start": "gulp serve",
     "build": "gulp build",
@@ -33,7 +33,7 @@
     "test-a11y-one": "npx pa11y-ci"
   },
   "repository": "https://github.com/RegioneLombardia/bootstrap-lombardia",
-  "author": "Agenzia Regionale Innovazione e Acquisti",
+  "author": "Azienda Regionale Innovazione e Acquisti",
   "license": "EUPL-1.2",
   "browserslist": [
     "last 2 versions",

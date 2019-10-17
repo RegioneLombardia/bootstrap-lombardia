@@ -1,11 +1,11 @@
 <header class="navbar-main navbar navbar-dark bd-navbar px-3 {% if page.layout == "docs" %}bd-navbar--slim{% endif %}">
   <div class="container{% if page.layout == "docs" %}-fluid{% endif %}">
-    <a class="navbar-brand py-2 text-decoration-none" href="{{ site.baseurl }}/" aria-label="Bootstrap Italia Homepage" title="Bootstrap Italia Homepage">
+    <a class="navbar-brand py-2 text-decoration-none" href="{{ site.baseurl }}/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        {%- include icons/it-logo.svg height="48" class="d-block" -%}
+        <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" height="36px" class="d-none d-md-block">
         <div class="d-flex flex-column pl-3 pl-sm-4">
-          <h1 class="bd-logo-title">Bootstrap Italia</h1>
-          <h2 class="bd-logo-subtitle">Il tema Bootstrap 4 per <span class="d-none d-sm-inline">lo sviluppo di applicazioni web per </span>la PA</h2>
+          <h1 class="bd-logo-title">Bootstrap Lombardia</h1>
+          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
         </div>
       </div>
     </a>
@@ -18,12 +18,12 @@
 
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
-        <a title="Scarica Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/italia/bootstrap-italia/releases/download/v{{ site.current_version }}/bootstrap-italia.zip" aria-label="Download">
+        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/italia/bootstrap-italia/releases/download/v{{ site.current_version }}/bootstrap-italia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
       <li class="nav-item pr-2">
-        <a title="Repository GitHub di Bootstrap Italia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="{{ site.repo }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="{{ site.repo }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
           <svg class="icon icon-sm icon-light"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
         </a>
       </li>

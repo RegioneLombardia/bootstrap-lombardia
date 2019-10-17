@@ -7,40 +7,40 @@ redirect_from:
   - /docs/
 toc: true
 title: Introduzione
-description: Come usare Bootstrap Italia nel tuo progetto
+description: Come usare Bootstrap Lombardia nel tuo progetto
 ---
 
 ## Caricare la libreria
 
 Per utilizzare il codice compilato di Bootstrap Italia nel tuo progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui: 
 
-<a href="https://github.com/italia/bootstrap-italia/releases/download/v{{ site.current_version }}/bootstrap-italia.zip" class="btn btn-primary">Scarica Bootstrap Italia v{{ site.current_version }}</a>
+<a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
 
 {% capture callout %}
+
 
 ##### Importante!
 
 È sempre consigliabile utilizzare la **versione più recente della libreria e mantenerla aggiornata** sui propri progetti.
 
-Non usare semplicemente la versione 1.0.0! La versione più recente tra le [release di progetto](https://github.com/italia/bootstrap-italia/releases) contiene anche tutti i miglioramenti e le correzioni disponibili fino ad oggi.
+La versione più recente tra le [release di progetto](https://github.com/RegioneLombardia/bootstrap-lombardia/releases) contiene anche tutti i miglioramenti e le correzioni disponibili fino ad oggi.
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
-Se preferisci usare i file sorgente di Bootstrap Italia nel tuo progetto attraverso il package manager **npm**, puoi fare riferimento a [queste indicazioni]({{ site.baseurl }}/docs/come-iniziare/introduzione#utilizzo-come-dipendenza).
+Se preferisci usare i file sorgente di Bootstrap Lombardia nel tuo progetto attraverso il package manager **npm**, puoi fare riferimento a [queste indicazioni]({{ site.baseurl }}/docs/come-iniziare/introduzione#utilizzo-come-dipendenza).
 
-Le librerie Javascript e CSS di Bootstrap Italia personalizzano e comprendono anche il codice originale di **Bootstrap {{ site.bootstrap_version }}**, ereditandone quindi tutte i selettori, le funzionalità, ecc., che sono consultabili al sito di Bootstrap stesso.
+Le librerie Javascript e CSS di Bootstrap Lombardia personalizzano e comprendono anche il codice originale di **Bootstrap {{ site.bootstrap_version }}**, ereditandone quindi tutte i selettori, le funzionalità, ecc., che sono consultabili al sito di Bootstrap stesso.
 
-La libreria è accessibile anche via CDN su [jsDelivr](https://www.jsdelivr.com/package/npm/bootstrap-italia) o [unpkg](https://unpkg.com/bootstrap-italia/), di cui però è sconsigliato l'utilizzo in ambienti di produzione.
 
 Di seguito le informazioni per l'utilizzo dei singoli file.
 
 ### CSS
 
-Una volta scaricato e decompresso il file, all'interno della cartella `css` sarà presente un file CSS minificato (`bootstrap-italia.min.css`) con la sua [sourcemap](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (opzionale).
+Una volta scaricato e decompresso il file, all'interno della cartella `css` sarà presente un file CSS minificato (`bootstrap-lombardia.min.css`) con la sua [sourcemap](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (opzionale).
 
 Per includere questo file all'interno del tuo progetto sarà quindi sufficiente aggiungere il tag `<link>` di seguito riportato all'interno del tag `<head>` della pagina, prima di ogni altro CSS già presente, eventualmente correggendo il riferimento al percorso del file:
 
 {% highlight html %}
-<link rel="stylesheet" href="./bootstrap-italia.min.css">
+<link rel="stylesheet" href="./bootstrap-lombardia.min.css">
 {% endhighlight %}
 
 ### Javascript
@@ -59,7 +59,7 @@ All'interno della cartella `js` saranno invece presenti due file, che si differe
   <tbody>
     <tr>
       <th scope="row">
-        <div><code class="font-weight-normal text-nowrap">bootstrap-italia.bundle.min.js</code></div>
+        <div><code class="font-weight-normal text-nowrap">bootstrap-lombardia.bundle.min.js</code></div>
       </th>
       <td class="bg-success text-white">Incluso</td>
       <td class="bg-success text-white">Incluso</td>
@@ -67,7 +67,7 @@ All'interno della cartella `js` saranno invece presenti due file, che si differe
     </tr>
     <tr>
       <th scope="row">
-        <div><code class="font-weight-normal text-nowrap">bootstrap-italia.min.js</code></div>
+        <div><code class="font-weight-normal text-nowrap">bootstrap-lombardia.min.js</code></div>
       </th>
       <td>Non Incluso</td>
       <td>Non Incluso</td>
@@ -80,26 +80,26 @@ In questo caso, dopo aver copiato i file all'interno del vostro progetto, sarà 
 
 
 ### Fonts
-È necessario anche includere i file relativi ai font referenziati nel CSS, mantenendo i path dei singoli font utilizzato nei [file sorgente della libreria](https://github.com/italia/bootstrap-italia/releases/tag/v{{ site.current_version }}). Il path di base della cartella dei font può essere impostato utilizzando la variabile globale **prima** del caricamento della libreria Javascript di Bootstrap Italia:
+È necessario anche includere i file relativi ai font referenziati nel CSS, mantenendo i path dei singoli font utilizzato nei [file sorgente della libreria](https://github.com/RegioneLombardia/bootstrap-lombardia/releases/tag/v{{ site.current_version }}). Il path di base della cartella dei font può essere impostato utilizzando la variabile globale **prima** del caricamento della libreria Javascript di Bootstrap Lombardia:
 
 {% highlight html %}
-<script>window.__PUBLIC_PATH__ = '/bootstrap-italia/dist/fonts'</script>
+<script>window.__PUBLIC_PATH__ = '/bootstrap-lombardia/dist/fonts'</script>
 {% endhighlight %}
 
-Se tale variabile non è valorizzata, i font saranno cercati all'interno di una cartella `/bootstrap-italia/dist/fonts/`.
+Se tale variabile non è valorizzata, i font saranno cercati all'interno di una cartella `/bootstrap-lombardia/dist/fonts/`.
 
 ### Icone
 
-Le icone a disposizione sono un componente assolutamente opzionale e sono pubblicate nella libreria sotto forma di sprite SVG `/bootstrap-italia/dist/svg/`, le cui singole SVG sorgenti sono presenti nel repository.
+Le icone a disposizione sono un componente assolutamente opzionale e sono pubblicate nella libreria sotto forma di sprite SVG `/bootstrap-lombardia/dist/svg/`, le cui singole SVG sorgenti sono presenti nel repository.
 
 Per informazioni, si può fare riferimento alla [documentazione sull'utilizzo delle icone]({{ site.baseurl }}/docs/utilities/icone/).
 
 #### Versione "bundle"
 
-Includendo la versione `*.bundle.*`, non sarà necessario aggiungere ulteriori riferimenti a jQuery, Popper.js e Owl Carousel, in quanto già inclusi nel file `bootstrap-italia.bundle.min.js`.
+Includendo la versione `*.bundle.*`, non sarà necessario aggiungere ulteriori riferimenti a jQuery, Popper.js e Owl Carousel, in quanto già inclusi nel file `bootstrap-lombardia.bundle.min.js`.
 
 {% highlight html %}
-<script src="./bootstrap-italia.bundle.min.js"></script>
+<script src="./bootstrap-lombardia.bundle.min.js"></script>
 {% endhighlight %}
 
 #### Versione semplice
@@ -110,7 +110,7 @@ Al contrario, nel caso si preferisca caricare jQuery, Popper.js e Owl Carousel s
 {{ site.cdn.jquery }}
 {{ site.cdn.popper }}
 {{ site.cdn.owlcarousel }}
-<script src="./bootstrap-italia.min.js"></script>
+<script src="./bootstrap-lombardia.min.js"></script>
 {% endhighlight %}
 
 
@@ -127,37 +127,37 @@ In breve, si dovrebbe ottenere qualcosa di simile a ciò che segue:
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="./bootstrap-italia.min.css">
+    <link rel="stylesheet" href="./bootstrap-lombardia.min.css">
   </head>
   <body>
     <h1>Hello, world!</h1>
     <!-- JS -->
-    <script src="./bootstrap-italia.bundle.min.js"></script>
+    <script src="./bootstrap-lombardia.bundle.min.js"></script>
   </body>
 </html>
 {% endhighlight %}
 
-Questo è tutto ciò che è sufficiente per avere a disposizione le funzionalità e gli stili di Bootstrap Italia.
+Questo è tutto ciò che è sufficiente per avere a disposizione le funzionalità e gli stili di Bootstrap Lombardia.
 
 ### Altri esempi
 
 Assieme a questa documentazione, si possono consultare una vasta quantità di esempi, consultabili sia alla sezione [esempi]({{ site.baseurl }}/docs/esempi/) e [progetti]({{ site.baseurl }}/docs/progetti/) di questo sito, che [sul sito di Bootstrap](https://getbootstrap.com/docs/{{ site.bootstrap_minor }}/examples/), con i quali è possibile iniziare a personalizzare la tua pagina semplicemente copiando il loro codice sorgente.
 
-Il codice sorgente di tali esempi si può trovare anche nel repository di Bootstrap Italia, nella [cartella `docs/esempi/`](https://github.com/italia/bootstrap-italia/tree/master/docs/esempi).
+Il codice sorgente di tali esempi si può trovare anche nel repository di Bootstrap Lombardia, nella [cartella `docs/esempi/`](https://github.com/RegioneLombardia/bootstrap-lombardia/tree/master/docs/esempi).
 
 Tra i [progetti]({{ site.baseurl }}/docs/progetti/) si possono trovare molti riferimenti a progetti terzi che fanno uso di Bootstrap Italia, come i temi per alcuni CMS, generatori di siti statici e framework per il web.
 
 ## Utilizzo come dipendenza
 
-Alternativamente, se si utilizza [Webpack](https://webpack.github.io/) o altri module bundler per l'inclusione di librerie esterne attraverso `npm`, è possibile aggiungere Bootstrap Italia come dipendenza con il seguente comando:
+Alternativamente, se si utilizza [Webpack](https://webpack.github.io/) o altri module bundler per l'inclusione di librerie esterne attraverso `npm`, è possibile aggiungere Bootstrap Lombardia come dipendenza con il seguente comando:
 
 {% highlight sh %}
-npm i bootstrap-italia --save
+npm i bootstrap-lombardia --save
 {% endhighlight %}
 
 ## Impostazioni globali
 
-Il framework Bootstrap, e di conseguenza il tema Bootstrap Italia, utilizza e richiede alcune impostazioni globali di cui è bene essere al corrente durante lo sviluppo, che tendono *normalizzare* gli stili tra i vari browser. Di seguito alcune di esse.
+Il framework Bootstrap, e di conseguenza il tema Bootstrap Lombardia, utilizza e richiede alcune impostazioni globali di cui è bene essere al corrente durante lo sviluppo, che tendono *normalizzare* gli stili tra i vari browser. Di seguito alcune di esse.
 
 ### Doctype HTML5
 
@@ -196,7 +196,7 @@ Si possono trovare dettagli aggiuntivi alla [pagina corrispondente](https://getb
 
 ### Reboot
 
-Infine, per _normalizzare_ alcuni comportamenti cross-browser, Bootstrap Italia eredita da Bootstrap il cosiddetto "[Reboot]({{ site.baseurl }}/docs/organizzare-i-contenuti/introduzione/#reboot)", una serie di regole CSS che correggono inconsistenze tra browsers e dispositivi.
+Infine, per _normalizzare_ alcuni comportamenti cross-browser, Bootstrap Lombardia eredita da Bootstrap il cosiddetto "[Reboot]({{ site.baseurl }}/docs/organizzare-i-contenuti/introduzione/#reboot)", una serie di regole CSS che correggono inconsistenze tra browsers e dispositivi.
 
 ---
 
