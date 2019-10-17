@@ -1,0 +1,41 @@
+---
+layout: base
+title: Template pagina form
+---
+
+{% include esempi-lombardia/header.html %}
+<main>
+{% include esempi-lombardia/barra_operatore.html %}
+  <div class="container">
+    <form class="my-5">
+    
+    {% include esempi-lombardia/account_posta.html %}
+    {% include esempi-lombardia/indirizzo.html %}
+    {% include esempi-lombardia/datepickers.html %}
+    {% include esempi-lombardia/radiobuttons.html %}
+    {% include esempi-lombardia/checkboxes.html %}
+    {% include esempi-lombardia/toggles.html %}
+
+<!-- *****************************************************************************************************+ -->    
+<div class="row">
+  <div class="col-12">    
+    <div class="float-right">
+      <button type="button" class="btn btn-outline-primary">Annulla</button>    
+      <button type="button" class="btn btn-primary">Invio</button>
+    </div>    
+  </div>    
+</div>    
+    
+    
+<!-- *****************************************************************************************************+ -->    
+   
+    </form>
+  </div>
+</main>
+{% include esempi-lombardia/footer.html %}
+
+<a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top">
+  <svg class="icon icon-light">
+    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-arrow-up"></use>
+  </svg>
+</a>

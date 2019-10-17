@@ -30,6 +30,9 @@
     - name: Tabella
       url: ../esempi-lombardia/pag_tabella
       description: Pagina completa con tabella
+    - name: Form
+      url: ../esempi-lombardia/pag_form
+      description: Pagina completa con form
       status: work in progress
 
 - category: Esempi di template completi
