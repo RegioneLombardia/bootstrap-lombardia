@@ -14,7 +14,11 @@ description: Come usare Bootstrap Lombardia nel tuo progetto
 
 Per utilizzare il codice compilato di Bootstrap Italia nel tuo progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui: 
 
+<!--
 <a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
+-->
+
+<a href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
 
 {% capture callout %}
 
