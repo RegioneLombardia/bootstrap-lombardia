@@ -30,11 +30,11 @@
     - title: tab bar
       url: componenti/tab 
     - title: radio button
-      url: form/adio-button
+      url: form/radio-button
     - title: check box
       url: form/checkbox
     - title: toggle
-      url: form/toggle
+      url: form/toggles
     - title: input fields
       url: form/input
     - title: modal
