@@ -18,7 +18,7 @@ Definisci colori di background, bordi, colore di testo attraverso specifiche cla
   </p>
   <div class="primary-color-container">
     <div class="square-color primary-bg">
-      <span class="white-color">#0066CC</span>
+      <span class="white-color">#2A7A38</span>
     </div>
     <div class="square-color white-bg shadow">
       <span>#FFFFFF</span>
@@ -329,7 +329,7 @@ I colori Complementari possiedono due tipologie di varianti cromatiche. Per util
 
 <div class="primary-color-container">
 <div class="square-color neutral-1-bg">
-<span class="white-color">#17324d</span>
+<span class="white-color">#003354</span>
 </div>
 <div class="square-color neutral-2-bg">
 <span>#e6ecf2</span>

@@ -1,0 +1,35 @@
+<div class="it-header-center-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+        {% if page.sidebar %}
+          <button class="btn btn-xs btn-outline-primary d-md-none px-2" type="button" data-toggle="collapse"
+                  data-target="#sidebar-docs-nav" aria-controls="sidebar-docs-nav" aria-expanded="false"
+                  aria-label="Apri/chuidi menu navigazione">
+            <svg class="icon">
+              <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-burger"></use>
+            </svg>
+          </button>
+        {% endif %}        
+          <div class="it-brand-wrapper">
+            <a href="#">
+              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="d-none d-lg-block">
+              <div class="it-brand-text">
+                ACRONIMO Nome applicativo
+              </div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <div class="it-search-wrapper d-none d-lg-flex">
+              <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
+              <button class="btn p-0 my-2 my-sm-0" type="submit" aria-label="Esegui ricerca">
+                <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-search"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

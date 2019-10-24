@@ -1,5 +1,9 @@
 .it-header-center-wrapper {
+  border-bottom: 1px solid $neutral-1-a1;  
   .it-header-center-content-wrapper {
+    @media (max-width: #{map-get($grid-breakpoints, md)}) {
+      justify-content: inherit;
+    }
     .it-brand-wrapper {
       img {
         height: 41px;

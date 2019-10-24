@@ -83,10 +83,6 @@
     - title: Timeline
     # - title: Toasts # TODO To be merged with our "Notifiche"?
     - title: Tooltip
-
-- title: Componenti Lombardia
-  pages:
-    - title: Footer     
     
 - title: Form
   pages:

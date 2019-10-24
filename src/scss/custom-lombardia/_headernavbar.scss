@@ -1,4 +1,3 @@
-
 .it-header-navbar-wrapper {
   .navbar {
     .navbar-collapsable {
@@ -19,10 +18,4 @@
       }
     }
   }
-  //Tablet horizontal / small desktop
-  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;    
-  }  
-  
 }

@@ -1,0 +1,31 @@
+---
+layout: base
+title: Pagina di testo con menù verticale
+sidebar: true
+---
+
+<header class="it-header-wrapper it-header-sticky">
+{% include esempi-lombardia/topbar.html %}
+  <div class="it-nav-wrapper">
+    {% include esempi-lombardia/barra_istituzionale.html %}    
+  </div>    
+</header>
+
+<div class="container-fluid">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 bd-sidebar neutral-1-bg-a1">
+      {% include esempi-lombardia/sidebar.html %}
+    </div>
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3">
+      {% include esempi-lombardia/testo.html %}
+    </main>
+  </div>
+</div>
+{% include esempi-lombardia/footer_minimo.html %}
+
+<a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top">
+  <svg class="icon icon-light">
+    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-arrow-up"></use>
+  </svg>
+</a>

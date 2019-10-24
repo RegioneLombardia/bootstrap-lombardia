@@ -6,8 +6,6 @@ group: componenti-lombardia
 toc: true
 ---
 
-Ne sono stati predisposti tre tipi.
-
 ## Come usarlo
 
 Copiare il codice HTML all'interno delle proprie pagine web inserendolo in fondo al tag `body`.
@@ -17,69 +15,11 @@ Può essere personalizzato nel testo, ma è importante ...
 ### Footer Applicativi Web
 
 <div class="bd-example">
-    <footer class="footer">
-      <div class="container-fluid px-3">
-        <div class="row">
-          <div class="col-12 my-4 font-weight-bold">
-            Nome dell'applicativo Web
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <nav>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="">Voce 1</a></li>
-                <li class="list-inline-item"><a href="">Voce 2</a></li>
-                <li class="list-inline-item"><a href="">Voce 3</a></li>
-                <li class="list-inline-item"><a href="">Voce 4</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 my-3">
-            <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
-            <span class="d-inline-block"> - tutti i diritti riservati</span>
-            <span class="d-inline-block"> - C.F. 80050050154</span>
-            <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
-            <span class="d-inline-block"> - 20124 Milano</span>
-          </div>
-        </div>
-      </div>
-    </footer> 
+{% include esempi-lombardia/footer.html %}
 </div>
 
 {% highlight html %}
-    <footer class="footer">
-      <div class="container-fluid px-3">
-        <div class="row">
-          <div class="col-12 my-4 font-weight-bold">
-            Nome dell'applicativo Web
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12">
-            <nav>
-              <ul class="list-inline">
-                <li class="list-inline-item"><a href="">Voce 1</a></li>
-                <li class="list-inline-item"><a href="">Voce 2</a></li>
-                <li class="list-inline-item"><a href="">Voce 3</a></li>
-                <li class="list-inline-item"><a href="">Voce 4</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 my-3">
-            <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
-            <span class="d-inline-block"> - tutti i diritti riservati</span>
-            <span class="d-inline-block"> - C.F. 80050050154</span>
-            <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
-            <span class="d-inline-block"> - 20124 Milano</span>
-          </div>
-        </div>
-      </div>
-    </footer> 
+{% include esempi-lombardia/footer.html %}
 {% endhighlight %}
 
 

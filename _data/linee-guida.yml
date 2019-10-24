@@ -1,0 +1,71 @@
+- title: Componenti Principali
+  pages:
+    - title: logo
+      status: 'to do'
+    - title: colori
+      url: utilities/colori-custom
+    - title: tipografia
+      url: organizzare-i-contenuti/tipografia
+    - title: icone
+      url: utilities/icone
+    - title: header
+      url: componenti-lombardia/header
+      status: 'work in progress'
+    - title: footer
+      url: componenti-lombardia/footer
+      status: 'work in progress'
+    - title: menu
+      status: 'to do'
+    - title: barra utente
+      status: 'to do'
+    
+- title: Componenti Singole
+  pages:
+    - title: paginatore
+      url: componenti/paginazione
+    - title: breadcrumbs
+      url: menu-di-navigazione/breadcrumbs
+    - title: buttons
+      url: componenti/bottoni
+    - title: tab bar
+      url: componenti/tab 
+    - title: radio button
+      url: form/adio-button
+    - title: check box
+      url: form/checkbox
+    - title: toggle
+      url: form/toggle
+    - title: input fields
+      url: form/input
+    - title: modal
+      url: componenti/modale
+    - title: tooltip
+      url: componenti/tooltip
+    - title: popover
+      url: componenti/popover
+    - title: calendario
+      url: form/input-calendario
+    - title: indicatori di progresso
+      url: componenti/progress-indicators
+    - title: accordion
+      url: componenti/collapse
+    - title: overlay
+      url: componenti/overlay
+    - title: card
+      url: componenti/card
+    - title: cookiebar
+      url: componenti/cookiebar
+    - title: carousel
+      url: componenti/carousel
+
+- title: Schermate Composte
+  pages:
+    - title: Tabella complessa
+      url: esempi-lombardia/pag_tabella 
+    - title: Form / Input Fields
+      url: esempi-lombardia/pag_form
+    - title: Wizard
+      url: componenti/steppers
+      status: 'to do'
+    - title: Sidebar
+      url: esempi-lombardia/pag_sidebar 
