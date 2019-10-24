@@ -5,11 +5,11 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Documentazione ed esempi per aggiungere tooltip personalizzati">
+<meta name="description" content="Header applicativi Web.">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
 <meta name="generator" content="Jekyll v3.8.5">
 
-<title>Tooltip · Bootstrap Lombardia</title>
+<title>Header · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
 <link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201910241642" rel="stylesheet">
@@ -37,14 +37,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@teamdigitaleIT">
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="twitter:title" content="Tooltip">
-<meta name="twitter:description" content="Documentazione ed esempi per aggiungere tooltip personalizzati">
+<meta name="twitter:title" content="Header">
+<meta name="twitter:description" content="Header applicativi Web.">
 <meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/componenti/tooltip/">
-<meta property="og:title" content="Tooltip">
-<meta property="og:description" content="Documentazione ed esempi per aggiungere tooltip personalizzati">
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/componenti-lombardia/header/">
+<meta property="og:title" content="Header">
+<meta property="og:description" content="Header applicativi Web.">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
 <meta property="og:image:type" content="image/png">
@@ -470,11 +470,11 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
             </li><li>
               
               <!-- One:usare ID -->
-              <a class="list-item large medium right-icon active" href="#collapse-5" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-5">
+              <a class="list-item large medium right-icon " href="#collapse-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-5">
                 <span>Componenti</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
               </a>
-              <ul class="link-sublist collapse show" id="collapse-5"><li>
+              <ul class="link-sublist collapse " id="collapse-5"><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/introduzione/">
                       <span>Introduzione</span></a>
                   </li><li>
@@ -556,7 +556,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/timeline/">
                       <span>Timeline</span></a>
                   </li><li>
-                    <a class="list-item  active" href="/bootstrap-lombardia/docs/componenti/tooltip/">
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                       <span>Tooltip</span></a>
                   </li></ul>
               
@@ -640,21 +640,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         
           <div class="d-none d-xl-block col-xl-2 bd-toc">
   <div class="sidebar-wrapper">
-    <h3>Tooltip</h3>
+    <h3>Header</h3>
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#abilitazione-di-tooltip">Abilitazione di tooltip</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#altri-esempi">Altri esempi</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#uso">Uso</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#markup">Markup</a></li>
-<li class="toc-entry toc-h3"><a href="#opzioni">Opzioni</a></li>
-<li class="toc-entry toc-h3"><a href="#metodi">Metodi</a></li>
-<li class="toc-entry toc-h3"><a href="#eventi">Eventi</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h2"><a href="#top-bar">Top bar</a></li>
+<li class="toc-entry toc-h2"><a href="#barra-istituzionale">Barra istituzionale</a></li>
 </ul>
   </div>
 </div>
@@ -662,304 +651,208 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
-          <h1 class="bd-title" id="content">Tooltip</h1>
-          <p class="bd-lead">Documentazione ed esempi per aggiungere tooltip personalizzati</p>
-          <p>I Toolip di Bootstrap con CSS e JavaScript utilizzano CSS3 per animazioni e attributi <code class="highlighter-rouge">data</code> per l’archiviazione di titoli locali.</p>
+          <h1 class="bd-title" id="content">Header</h1>
+          <p class="bd-lead">Header applicativi Web.</p>
+          <!-- Style override for Documentation purposes -->
+<style>
+  @media (max-width: 991px) {
+    .it-header-slim-wrapper .it-header-slim-wrapper-content a.btn-full {
+      margin-top: -7px;
+    }
+  }
+</style>
 
-<div class="bd-callout bd-callout-accessibility">
-<h5 id="accessibiltà-i-tooltip-funzionano-sia-con-la-tastiera-che-per-gli-utenti-dotati-di-tecnologia-assistiva">Accessibiltà: I tooltip funzionano sia con la tastiera che per gli utenti dotati di tecnologia assistiva.</h5>
+<p>E’ composto da tre parti:</p>
+<ol>
+  <li>top bar</li>
+  <li>barra istituzionale</li>
+  <li>menu principale</li>
+</ol>
 
-<p>È importante aggiungere tooltip solo ad elementi HTML che sono tradizionalmente attivabili da tastiera e interattivi (link,
-bottoni, o elementi di form).</p>
+<h2 id="top-bar">Top bar</h2>
+<p>E’ <strong>obbligatoria</strong>.</p>
 
-<p>Sebbene arbitrariamente gli elementi HTML (come <code class="highlighter-rouge">&lt;span&gt;</code>) possano essere resi attivabili tramite l’attributo <code class="highlighter-rouge">tabindex="0"</code>,
-ciò aggiungerà interruzioni di tabulazioni potenzialmente dannose per gli utenti che usano la tastiera per navigare.
-Inoltre, la maggior parte delle tecnologie assistive in questa situazione non annuncia il tooltip come ci si potrebbe
-invece attendere.</p>
-
-<p>Infine, non fare affidamento esclusivamente sull’evento “mouse over” come innesco del tooltip, in quanto ciò renderà impossibile
-l’attivazione per gli utenti che usano la tastiera per navigare.</p>
-</div>
-
-<p>Cose da sapere quando usi il plugin tooltip:</p>
-
-<ul>
-  <li>I tooltip si basano sulla libreria di terze parti <a href="https://popper.js.org/">Popper.js</a>.
-Per fare in modo che i tooltip funzionino è quindi necessario includere <code class="highlighter-rouge">popper.min.js</code> prima di
-bootstrap-italia.js o usare la versione <em>bundle</em> che contiene già Popper.js.</li>
-  <li>I tooltip sono opt-in per ragioni di performance, quindi <strong>devi inizializzarli tu stesso</strong> con il codice che trovi di seguito.</li>
-  <li>I tooltip con titoli vuoti non saranno mai visualizzati.</li>
-  <li>Specifica <code class="highlighter-rouge">container: 'body'</code> per evitare problemi di rendering in componenti più complessi (come nei gruppi di input, gruppi di bottoni, etc).</li>
-  <li>Attivare i tooltip su elementi nascosti non funzionerà.</li>
-  <li>I tooltip per gli elementi <code class="highlighter-rouge">.disabled</code> o <code class="highlighter-rouge">disabled</code> devono essere attivati da un elemento contenitore.</li>
-  <li>Quando attivati da collegamenti ipertestuali che si estendono su più righe, i tooltip verranno centrati. Usa <code class="highlighter-rouge">white-space: nowrap;</code>sui tuoi <code class="highlighter-rouge">&lt;a&gt;</code> per evitare questo comportamento.</li>
-  <li>I tooltip devono essere nascosti prima che i loro elementi corrispondenti siano stati rimossi dal DOM.</li>
-</ul>
-
-<h2 id="abilitazione-di-tooltip">Abilitazione di tooltip</h2>
-
-<p>Un modo per inizializzare tutti i tooltip su una pagina è quello di selezionarli tramite il loro attributo <code class="highlighter-rouge">data-toggle</code>:</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="nx">$</span><span class="p">(</span><span class="s1">'[data-toggle="tooltip"]'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">()</span>
-<span class="p">})</span></code></pre></figure>
-
-<h3 id="altri-esempi">Altri esempi</h3>
-
-<p>Passa il mouse sopra i link sottostanti per visualizzare i tooltip:</p>
+<p>Può contenere voci di servizio quali: Home, Contatti, Assistenza, Numero verde, Login/Logout, Impostazioni, Scelta lingua, ecc.</p>
 
 <div class="bd-example">
-<div class="tooltip-demo">
-  <p class="text-serif muted">
-    Ecco un <a href="#" data-toggle="tooltip" title="Primo tooltip">bianco scenario</a><br />
-    per tratteggiarvi l’accompagnamento<br />
-    degli oggetti di sfondo che pur vivono.<br />
-    Non ne sarò <a href="#" data-toggle="tooltip" title="Secondo tooltip">l’artefice</a> impaziente.<br />
-    Berrò alle coppe della nostalgia,<br />
-    avrò preteso d’ozio nelle lacrime...<br />
-    perché non mi ribello alla natura:<br />
-    la mia lentezza li esaspera...<br />
-    La mia lentezza? No, la mia fiducia.<br />
-    Per adesso è deserto.<br />
-    <a href="#" data-toggle="tooltip" title="Terzo tooltip">Il mondo può rifarsi senza me</a>,<br />
-    E intanto gli altri mi denigreranno
-  </p>
-  <small>
-    <em>La città nuova, Alda Merini</em>
-  </small>
-</div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tooltip-demo"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-serif muted"</span><span class="nt">&gt;</span>
-    Ecco un <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Primo tooltip"</span><span class="nt">&gt;</span>bianco scenario<span class="nt">&lt;/a&gt;&lt;br/&gt;</span>
-    per tratteggiarvi l’accompagnamento<span class="nt">&lt;br/&gt;</span>
-    degli oggetti di sfondo che pur vivono.<span class="nt">&lt;br/&gt;</span>
-    Non ne sarò <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Secondo tooltip"</span><span class="nt">&gt;</span>l’artefice<span class="nt">&lt;/a&gt;</span> impaziente.<span class="nt">&lt;br/&gt;</span>
-    Berrò alle coppe della nostalgia,<span class="nt">&lt;br/&gt;</span>
-    avrò preteso d’ozio nelle lacrime...<span class="nt">&lt;br/&gt;</span>
-    perché non mi ribello alla natura:<span class="nt">&lt;br/&gt;</span>
-    la mia lentezza li esaspera...<span class="nt">&lt;br/&gt;</span>
-    La mia lentezza? No, la mia fiducia.<span class="nt">&lt;br/&gt;</span>
-    Per adesso è deserto.<span class="nt">&lt;br/&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Terzo tooltip"</span><span class="nt">&gt;</span>Il mondo può rifarsi senza me<span class="nt">&lt;/a&gt;</span>,<span class="nt">&lt;br/&gt;</span>
-    E intanto gli altri mi denigreranno
-  <span class="nt">&lt;/p&gt;</span>
-  <span class="nt">&lt;small&gt;</span>
-    <span class="nt">&lt;em&gt;</span>La città nuova, Alda Merini<span class="nt">&lt;/em&gt;</span>
-  <span class="nt">&lt;/small&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Passa il mouse sopra i bottoni sottostanti per vedere le quattro direzioni dei tooltip: sopra, destra, sotto, e sinistra.</p>
-
-<div class="bd-example">
-<div class="tooltip-demo">
-  <div class="bd-example-tooltips">
-    <div class="container">
-      <div class="row mt-3">
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip in alto" style="width: 100%;">Tooltip in alto</button>
+<div class="it-header-slim-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="d-lg-block navbar-brand" href="#">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-lg-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item">
+              <a class="btn btn-primary btn-icon btn-full" href="#" title="Impostazioni" aria-label="Impostazionni">
+                <svg class="icon icon-white"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"></use></svg>
+                <span class="d-none d-lg-block">Impostazioni</span>
+              </a>
+            </div>
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                <span>ITA</span>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                        <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                        <li><a class="list-item" href="#"><span>ESP</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
+                </svg>
+              <span class="d-none d-lg-block">Accedi all'area personale</span>
+            </a>
+          </div>
         </div>
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom" style="width: 100%;">Tooltip in basso</button>
-        </div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-5"></div>
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip a sinistra" style="width: 100%;">Tooltip a sinistra</button>
-        </div>
-        <div class="col-1"></div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-1"></div>
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip a destra" style="width: 100%;">Tooltip a destra</button>
-        </div>
-        <div class="col-5"></div>
-      </div>
-      <div class="row mt-5">
-        <div class="col-3"></div>
-        <div class="col-6">
-          <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-html="true" title="&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;con&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;" style="width: 100%;">Tooltip con HTML</button>
-        </div>
-        <div class="col-3"></div>
       </div>
     </div>
   </div>
 </div>
+
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tooltip-demo"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bd-example-tooltips"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-3"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tooltip in alto"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>Tooltip in alto<span class="nt">&lt;/button&gt;</span>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"d-lg-block navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-lg-none"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon btn-full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Impostazioni"</span> <span class="na">aria-label=</span><span class="s">"Impostazionni"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-lg-block"</span><span class="nt">&gt;</span>Impostazioni<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span>
+                  <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>ITA<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ITA<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ENG<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ESP<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
+                      <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon btn-full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Accedi all'area personale"</span> <span class="na">aria-label=</span><span class="s">"Accedi all'area personale"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-user"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-lg-block"</span><span class="nt">&gt;</span>Accedi all'area personale<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Tooltip on bottom"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>Tooltip in basso<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">"Tooltip a sinistra"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>Tooltip a sinistra<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1"</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-1"</span><span class="nt">&gt;&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">"Tooltip a destra"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>Tooltip a destra<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-5"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-6"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">"&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;con&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;"</span> <span class="na">style=</span><span class="s">"width: 100%;"</span><span class="nt">&gt;</span>Tooltip con HTML<span class="nt">&lt;/button&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3"</span><span class="nt">&gt;&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>E con codice HTML personalizzato:</p>
+<h2 id="barra-istituzionale">Barra istituzionale</h2>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-html=</span><span class="s">"true"</span> <span class="na">title=</span><span class="s">"&lt;em&gt;Tooltip&lt;/em&gt; &lt;u&gt;con&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;"</span><span class="nt">&gt;</span>
-  Tooltip con HTML
-<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<p><strong>Deve</strong> contenere il <strong>logo</strong> e il <strong>nome dell’applicativo</strong>, preceduto dall’ <strong>acronimo</strong> se esiste.<br />
+<strong>Può</strong> contenere il <strong>campo di ricerca</strong> a destra e l’<strong>hamburger menu</strong> a sinistra che comanda la comparsa del menù principale.</p>
 
-<h2 id="uso">Uso</h2>
+<p>Restringendosi le dimensioni dello schermo, <strong>scompaiono</strong>:</p>
+<ol>
+  <li>il <strong>logo</strong>, che però appare nella <em>top bar</em></li>
+  <li>il <strong>campo di ricerca</strong>, che viene sostituito da un pulsante per farlo comparire tra la <em>barra istituzionale</em> e il <em>menù principale</em>.</li>
+</ol>
 
-<p>Il plugin del tooltip genera contenuto e markup su richiesta, e in modo predefinito posiziona i tooltip dopo i loro elementi attivati.</p>
+<p>Inoltre, in caso di schermi <strong>molto piccoli</strong>, <em>acronimo</em> e <em>nome dell’applicativo</em> vengono disposti su due righe.</p>
 
-<p>Attivare il tooltip tramite JavaScript:</p>
+<p>Scorrendo la pagina verso il basso, la bassa istituzionale rimane fissa in alto nello schermo, posizionata sotto la <em>top bar</em>, si restringe leggermente ed anche il logo rimpicciolisce.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#example'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span></code></pre></figure>
-
-<h3 id="markup">Markup</h3>
-
-<p>Di seguito è mostrato un esempio che esplicita il funzionamento interno di Bootstrap per la gestione di Tooltip.</p>
-
-<p>Il markup richiesto per un tooltip è costituito da un attributo <code class="highlighter-rouge">data-</code> e <code class="highlighter-rouge">title</code> sull’elemento HTML sul quale si vuole
-abilitare un tooltip. Ad esempio, quando nella pagina è scritto questo codice HTML:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Testo di esempio del tooltip"</span><span class="nt">&gt;</span>Link che attiva il tooltip<span class="nt">&lt;/a&gt;</span></code></pre></figure>
-
-<p>Nel momento in cui tale elemento riceve focus da tastiera (o c’è un evento <code class="highlighter-rouge">hover</code>), Bootstrap genera il markup seguente:</p>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-toggle=</span><span class="s">"tooltip"</span> <span class="na">title=</span><span class="s">"Testo di esempio del tooltip!"</span> <span class="na">aria-describedby=</span><span class="s">"tooltip0123456"</span><span class="nt">&gt;</span>Link che attiva il tooltip<span class="nt">&lt;/a&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tooltip bs-tooltip-top"</span> <span class="na">role=</span><span class="s">"tooltip"</span> <span class="na">id=</span><span class="s">"tooltip0123456"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"arrow"</span><span class="nt">&gt;&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tooltip-inner"</span><span class="nt">&gt;</span>Testo di esempio del tooltip<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h3 id="opzioni">Opzioni</h3>
-
-<p>Le opzioni possono essere passate tramite attributi data o tramite JavaScript. Per gli attributi data, aggiungi l’opzione nome a <code class="highlighter-rouge">data-</code>, come in <code class="highlighter-rouge">data-animation=""</code>.</p>
-
-<p>Per ulteriori informazioni si rimanda alla sezione <a href="https://getbootstrap.com/docs/4.3/components/tooltips/">tooltip</a> del sito di Bootstrap.</p>
-
-<h3 id="metodi">Metodi</h3>
-
-<div class="bd-callout bd-callout-info">
-<h4 id="metodi-asincroni-e-transizioni">Metodi asincroni e transizioni</h4>
-
-<p>Tutti i metodi API sono <strong>asincroni</strong> e avviano una <strong>transizione</strong>. Ritornano al chiamante non appena viene avviata la transizione ma <strong>prima che termini</strong>. Inoltre, una chiamata al metodo su un <strong>componente in transizione verrà ignorata</strong>.</p>
-
-<p>Per maggiori informazioni consulta la <a href="https://getbootstrap.com/docs/4.0/getting-started/javascript/">documentazione Javascript di Bootstrap</a> (in inglese).</p>
+<div class="bd-example">
+<div class="it-header-center-wrapper">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+                
+          <div class="it-brand-wrapper">
+            <a href="#">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="d-none d-lg-block" />
+              <div class="it-brand-text">
+                ACRONIMO Nome applicativo
+              </div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <div class="it-search-wrapper d-none d-lg-flex">
+              <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca" />
+              <button class="btn p-0 my-2 my-sm-0" type="submit" aria-label="Esegui ricerca">
+                <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-search"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h4 id="tooltipoptions"><code class="highlighter-rouge">$().tooltip(options)</code></h4>
+</div>
 
-<p>Allega un gestore del tooltip a una raccolta di elementi.</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
+                
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-lombardia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-none d-lg-block"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>
+                ACRONIMO Nome applicativo
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper d-none d-lg-flex"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca"</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 my-2 my-sm-0"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/dist/svg/sprite.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+              <span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h4 id="tooltipshow"><code class="highlighter-rouge">.tooltip('show')</code></h4>
-
-<p>Mostra il tootlip di un elemento. <strong>Ritorna al chiamante prima che il tooltip sia stato effettivamente mostrato</strong> (i.e. prima che si verifichi l’evento <code class="highlighter-rouge">shown.bs.tooltip</code>). Questo è considerato un’attivazione “manuale” del tooltip. I tooltip senza titoli non vengono mai visualizzati.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'show'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiphide"><code class="highlighter-rouge">.tooltip('hide')</code></h4>
-
-<p>Nascondi il tootltip di un elemento. <strong>Ritorna al chiamante prima che il tooltip sia stato effettivamente nascosto</strong> (i.e. prima che si verifichi l’evento <code class="highlighter-rouge">hidden.bs.tooltip</code>). Questo è considerato un’attivazione “manuale” del tooltip.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'hide'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiptoggle"><code class="highlighter-rouge">.tooltip('toggle')</code></h4>
-
-<p>Attiva/Disattiva il tooltip di un elemento. <strong>Ritorna al chiamante prima che il tooltip sia stato effettivamente mostrato o nascosto</strong> (i.e. prima che si verifichi l’evento <code class="highlighter-rouge">shown.bs.tooltip</code> o l’evento <code class="highlighter-rouge">hidden.bs.tooltip</code>). Questo è considerato un’attivazione “manuale” del tooltip.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'toggle'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipdispose"><code class="highlighter-rouge">.tooltip('dispose')</code></h4>
-
-<p>Nasconde e distrugge il tooltip di un elemento.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'dispose'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipenable"><code class="highlighter-rouge">.tooltip('enable')</code></h4>
-
-<p>Fornisce al tooltip di un elemento la possibilità di essere mostrato. <strong>I tooltip sono abilitati in modo predefinito.</strong></p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'enable'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipdisable"><code class="highlighter-rouge">.tooltip('disable')</code></h4>
-
-<p>Rimuove la capacità di mostrare il tooltip di un elemento. Il tooltip potrà essere mostrato solo se è riattivato.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'disable'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltiptoggleenabled"><code class="highlighter-rouge">.tooltip('toggleEnabled')</code></h4>
-
-<p>Attiva/disattiva la possibilità che il tooltip di un elemento sia mostrato o nascosto.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'toggleEnabled'</span><span class="p">)</span></code></pre></figure>
-
-<h4 id="tooltipupdate"><code class="highlighter-rouge">.tooltip('update')</code></h4>
-
-<p>Aggiorna la posizione del tooltip di un elemento.</p>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#element'</span><span class="p">).</span><span class="nx">tooltip</span><span class="p">(</span><span class="s1">'update'</span><span class="p">)</span></code></pre></figure>
-
-<h3 id="eventi">Eventi</h3>
-
-<table class="table table-bordered table-striped">
-  <thead>
-    <tr>
-      <th style="width: 150px;">Tipo di evento</th>
-      <th>Descrizione</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>show.bs.tooltip</td>
-      <td>Questo evento si attiva immediatamente quando viene chiamato il metodo <code>show</code>.</td>.
-    </tr>
-    <tr>
-      <td>shown.bs.tooltip</td>
-      <td>Questo evento viene attivato quando il tooltip è stato reso visibile all'utente (attenderà il completamento delle transizioni CSS).</td>
-    </tr>
-    <tr>
-      <td>hide.bs.tooltip</td>
-      <td>Questo evento si attiva immediatamente quando viene chiamato il metodo <code>hide</code>.</td>
-    </tr>
-    <tr>
-      <td>hidden.bs.tooltip</td>
-      <td>Questo evento viene generato quando il tooltip ha finito di essere nascosto all'utente (attenderà il completamento delle transizioni CSS).</td>
-    </tr>
-    <tr>
-      <td>inserted.bs.tooltip</td>
-      <td>Questo evento si attiva dopo l'evento <code>show.bs.tooltip</code> quando il modello del tooltip è stato aggiunto al DOM.</td>
-    </tr>
-  </tbody>
-</table>
-
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myTooltip'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'hidden.bs.tooltip'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-  <span class="c1">// fai qualcosa</span>
-<span class="p">})</span></code></pre></figure>
+<p>E’ composta da due <code class="highlighter-rouge">&lt;div&gt;</code> principali:<br />
+Il primo è caratterizzato dalle classi <code class="highlighter-rouge">it-header-center-wrapper it-small-header theme-light barra-ist</code>, contiene il corpo dell’header.<br />
+Il secondo è un <code class="highlighter-rouge">container-fluid</code> di una riga contenente il campo di ricerca visualizzabile a comando sugli schermi piccoli.</p>
 
 
         </main>
