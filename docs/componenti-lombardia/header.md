@@ -38,7 +38,7 @@ Può contenere voci di servizio quali: Home, Contatti, Assistenza, Numero verde,
 ## Barra istituzionale
 
 **Deve** contenere il **logo** e il **nome dell'applicativo**, preceduto dall' **acronimo** se esiste.  
-**Può** contenere il **campo di ricerca** a destra e l'**hamburger menu** a sinistra che comanda la comparsa del [menù principale](#menù-principale).  
+**Può** contenere il **campo di ricerca** a destra e l'**hamburger menu** a sinistra che comanda la comparsa del menù principale.  
 
 Restringendosi le dimensioni dello schermo, **scompaiono**:
 1. il **logo**, che però appare nella *top bar*
