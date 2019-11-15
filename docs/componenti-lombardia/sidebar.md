@@ -7,7 +7,7 @@ toc: false
 ---
 
 Su smartphone
-1. La visualizzazione è comandata dal bottone *hamburger* nella **[barra istituzonale]({{ site.baseurl }}/docs/componenti-lombardia/header#barra-istituzonale)**
+1. La visualizzazione è comandata dal bottone *hamburger* nella **[barra istituzionale]({{ site.baseurl }}/docs/componenti-lombardia/header#barra-istituionale)**
 2. Le voci sono visualizzate in verticale in un pannello che si apre sotto la barra istituzionale
 3. Premendo il bottone *hamburger* la pagina scorre automaticamente in alto per visualizzare immediatamente le voci della sidebar.
 

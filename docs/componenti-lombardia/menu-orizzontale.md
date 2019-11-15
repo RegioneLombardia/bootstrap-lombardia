@@ -10,7 +10,7 @@ Può contenere, oltre a semplici link, menù **[dropdown]({{ site.baseurl }}/doc
 E' anche possibile definire un gruppo di link di secondaria importanza che si posizionano automaticamente sul lato destro del menù e con caratteri leggermente più piccoli.
 
 Su smartphone
-1. La visualizzazione è comandata dal bottone *hamburger* nella **[barra istituzonale]({{ site.baseurl }}/docs/componenti-lombardia/header#barra-istituzonale)**
+1. La visualizzazione è comandata dal bottone *hamburger* nella **[barra istituzionale]({{ site.baseurl }}/docs/componenti-lombardia/header#barra-istituzionale)**
 2. Le voci sono visualizzate in verticale (per questione di spazio) su un pannello a comparsa con scorrimento orizzontale dal lato sinistro e con oscuramento della pagina sottostante.
 
 A scorrimento in basso
