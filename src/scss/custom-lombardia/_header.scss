@@ -8,7 +8,6 @@
         }
       }
       .it-header-navbar-wrapper {
-//        margin-top: -5px;
         .menu-wrapper {
           .it-brand-wrapper {
             &.cloned {
@@ -33,23 +32,3 @@
     }
   }
 }
-
-
-//small - tablet
-@media (min-width: #{map-get($grid-breakpoints, sm)}) {
-}
-
-//Tablet vertical
-@media (min-width: #{map-get($grid-breakpoints, md)}) {
-}
-
-//Tablet horizontal / small desktop
-@media (min-width: #{map-get($grid-breakpoints, lg)}) {
-}
-
-//Desktop
-@media (min-width: #{map-get($grid-breakpoints, xl)}) {
-}
-
-  
-  

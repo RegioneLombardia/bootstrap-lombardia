@@ -1,0 +1,40 @@
+.it25-sidebar-wrapper {
+  background-color: $neutral-1-a1;
+  order: 0;
+
+  .it25-sidebar-links {
+    padding: 0;
+
+    .link-list-wrapper {
+      ul.link-list > li > a {
+        font-size: 0.889rem;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      @supports (position: sticky) {
+        max-height: calc(100vh - 5rem);
+      }
+    }
+
+    // Override collapse behaviors
+    @include media-breakpoint-up(md) {
+      display: block !important;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      position: sticky;
+      top: 5rem;
+      height: calc(100vh - 5rem);
+      overflow-y: auto;
+    }
+    padding: 1.5rem 0;
+  }
+
+  @include media-breakpoint-up(xl) {
+    flex: 0 1 320px;
+  }
+
+}

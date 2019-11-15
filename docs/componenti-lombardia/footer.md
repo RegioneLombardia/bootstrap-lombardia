@@ -6,13 +6,11 @@ group: componenti-lombardia
 toc: true
 ---
 
-## Come usarlo
+## Footer standard
 
-Copiare il codice HTML all'interno delle proprie pagine web inserendolo in fondo al tag `body`.
-
-Può essere personalizzato nel testo, ma è importante ... 
-
-### Footer Applicativi Web
+Deve contenere come ultima riga il *copyright* e, al di sopra, il nome dell'applicativo.  
+In mezzo è opportuno inserire i link di servizio usuali quali Cookie policy, Privacy, Contatti, ecc.  
+Se i link in questione sono molti è meglio organizzarli su righe e colonne, lasciando che l'altezza del *footer* cresca di conseguenza.
 
 <div class="bd-example">
 {% include esempi-lombardia/footer.html %}
@@ -23,9 +21,17 @@ Può essere personalizzato nel testo, ma è importante ...
 {% endhighlight %}
 
 
-#### Note
-All'interno del tag footer il div con classe container-fluid e px-3 mantiene la distanza di 16 pixel dal bordo sinistro della videata.
+Nota:
+La dicitura del copyright è strutturata in modo da andare a capo a blocchi a seconda della dimensione dello schermo.
 
-Il div che contiene il nome dell'appliativo, ha classe my-4, che crea un margine di 24 pixel sopra e sotto il testo.
+## Footer minimo
 
-La dicitura del copyright è strutturata in modo da andare a capo a blocchi a seconda della dimensione dello schermo. 
+Nel caso in cui serva un footer sottile, il minimo consentito è quello riportato nell'esempio qui sotto.
+
+<div class="bd-example">
+{% include esempi-lombardia/footer_minimo.html %}
+</div>
+
+{% highlight html %}
+{% include esempi-lombardia/footer_minimo.html %}
+{% endhighlight %}

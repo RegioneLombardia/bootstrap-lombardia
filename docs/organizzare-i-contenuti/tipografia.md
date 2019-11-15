@@ -31,17 +31,6 @@ utilizzare la classe `text-sans-serif`.
 <p class="text-sans-serif">0123456789</p>
 {% endcapture %}{% include example.html content=example %}
 
-### Lora
-
-È un carattere più adatto a testi lunghi, introdotto per la sua leggibilità,
-nato espressamente per la lettura su display. Può essere utilizzato applicando
-la classe `text-serif`.
-
-{% capture example %}
-<p class="text-serif">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-<p class="text-serif">abcdefghijklmnopqrstuvwxyz</p>
-<p class="text-serif">0123456789</p>
-{% endcapture %}{% include example.html content=example %}
 
 ### Roboto Mono
 
@@ -203,7 +192,7 @@ Per mettere in risalto un paragrafo è sufficiente aggiungere la classe `.lead`.
 ### Personalizzazione dei paragrafi
 
 È possibile stilizzare correttamente lo stile anche nel caso vengano utilizzati
-semplicemente gli elementi HTML5 per il trattamento di testo. 
+semplicemente gli elementi HTML5 per il trattamento di testo.
 
 {% capture example %}
 <p>Esempio di testo <u>sottolineato</u>.</p>
@@ -230,7 +219,7 @@ e [utilità di colore]({{ site.baseurl }}/docs/utilities/colori/).
 {% capture callout %}
 ##### Accessibilità
 
-È fondamentale evidenziare i link presenti in un paragrafo in modo adeguato, utilizzando la forma (grassetto, sottolineato) oltre al colore per indicare la presenza di un collegamento ipertestuale. 
+È fondamentale evidenziare i link presenti in un paragrafo in modo adeguato, utilizzando la forma (grassetto, sottolineato) oltre al colore per indicare la presenza di un collegamento ipertestuale.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
 Nel rispetto delle regole di accessibilità vigenti, Bootstrap Italia mantiene la sottolineatura ai link di tipo `<a>`. Nel caso di link già in evidenza (menu principali, liste di link, link in grassetto, ecc.), è possibile rimuovere la sottolineatura utilizzando la classe `.text-decoration-none`.

@@ -1,29 +1,40 @@
-<div class="it-header-center-wrapper">
+<div class="it-header-center-wrapper it25-barra-ist">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-center-content-wrapper">
-        {% if page.sidebar %}
-          <button class="btn btn-xs btn-outline-primary d-md-none px-2" type="button" data-toggle="collapse"
-                  data-target="#sidebar-docs-nav" aria-controls="sidebar-docs-nav" aria-expanded="false"
-                  aria-label="Apri/chuidi menu navigazione">
-            <svg class="icon">
-              <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-burger"></use>
-            </svg>
-          </button>
-        {% endif %}        
           <div class="it-brand-wrapper">
+
+            <div class="it25-hamburger-btn-wrapper">
+              <button aria-controls="nav10" aria-expanded="false" aria-controls="nav10"
+                      aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                      data-target="#nav10" type="button">
+                <svg class="icon">
+                  <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+
+              <div class="it25-close-div">
+                <button class="btn btn-xs close-menu" type="button" data-target="#nav10" aria-controls="nav10" aria-label="Chiudi menù" >
+                  <svg class="icon">
+                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
             <a href="#">
-              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="d-none d-lg-block">
+              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
               <div class="it-brand-text">
                 ACRONIMO Nome applicativo
               </div>
             </a>
-          </div>
+          </div> <!-- end it-brand-wrapper -->
+
           <div class="it-right-zone">
-            <div class="it-search-wrapper d-none d-lg-flex">
-              <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
-              <button class="btn p-0 my-2 my-sm-0" type="submit" aria-label="Esegui ricerca">
+            <div class="it-search-wrapper">
+              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
+              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
                 <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-search"></use></svg>
               </button>
             </div>

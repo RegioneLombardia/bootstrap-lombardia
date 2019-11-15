@@ -1,7 +1,7 @@
 - title: Componenti Principali
   pages:
     - title: logo
-      status: 'to do'
+      url: componenti-lombardia/logo
     - title: colori
       url: utilities/colori-custom
     - title: tipografia
@@ -10,15 +10,15 @@
       url: utilities/icone
     - title: header
       url: componenti-lombardia/header
-      status: 'work in progress'
     - title: footer
       url: componenti-lombardia/footer
-      status: 'work in progress'
-    - title: menu
-      status: 'to do'
+    - title: menu orizzontale
+      url: componenti-lombardia/menu-orizzontale
     - title: barra utente
-      status: 'to do'
-    
+      url: componenti-lombardia/barra-utente
+    - title: sidebar
+      url: componenti-lombardia/sidebar
+
 - title: Componenti Singole
   pages:
     - title: paginatore
@@ -28,7 +28,7 @@
     - title: buttons
       url: componenti/bottoni
     - title: tab bar
-      url: componenti/tab 
+      url: componenti/tab
     - title: radio button
       url: form/radio-button
     - title: check box
@@ -61,11 +61,16 @@
 - title: Schermate Composte
   pages:
     - title: Tabella complessa
-      url: esempi-lombardia/pag_tabella 
+      url: esempi-lombardia/pag_tabella
     - title: Form / Input Fields
       url: esempi-lombardia/pag_form
     - title: Wizard
       url: componenti/steppers
       status: 'to do'
     - title: Sidebar
-      url: esempi-lombardia/pag_sidebar 
+      url: esempi-lombardia/pag_sidebar
+    - title: Profilo utente
+      url: esempi-lombardia/pag_profilo_utente
+    - title: Pagina Test
+      url: esempi-lombardia/pag_test
+      status: 'work in progess'

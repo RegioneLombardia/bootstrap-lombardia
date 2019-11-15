@@ -34,7 +34,7 @@
   },
   "repository": "https://github.com/RegioneLombardia/bootstrap-lombardia",
   "author": "Azienda Regionale Innovazione e Acquisti",
-  "license": "EUPL-1.2",
+  "license": "BSD-3-Clause",
   "browserslist": [
     "last 2 versions",
     "> 1%"
