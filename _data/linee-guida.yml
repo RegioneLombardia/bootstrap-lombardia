@@ -62,7 +62,7 @@
   pages:
     - title: Tabella complessa
       url: esempi-lombardia/pag_tabella
-    - title: Form / Input Fields
+    - title: Form
       url: esempi-lombardia/pag_form
     - title: Wizard
       url: componenti/steppers
@@ -71,6 +71,3 @@
       url: esempi-lombardia/pag_sidebar
     - title: Profilo utente
       url: esempi-lombardia/pag_profilo_utente
-    - title: Pagina Test
-      url: esempi-lombardia/pag_test
-      status: 'work in progess'
