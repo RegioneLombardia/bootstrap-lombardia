@@ -5,18 +5,18 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
+<meta name="description" content="Pagina di testo con menù verticale">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
 <meta name="generator" content="Jekyll v3.8.5">
 
-<title>Pagina di testo con menù verticale · Bootstrap Lombardia</title>
+<title>pag_sidebar · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201910241642" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201911151550" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201910241642" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201911151550" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -34,14 +34,14 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@teamdigitaleIT">
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="twitter:title" content="Pagina di testo con menù verticale">
-<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
+<meta name="twitter:title" content="pag_sidebar">
+<meta name="twitter:description" content="Pagina di testo con menù verticale">
 <meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
 
 <!-- Facebook -->
 <meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/esempi-lombardia/pag_sidebar/">
-<meta property="og:title" content="Pagina di testo con menù verticale">
-<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
+<meta property="og:title" content="pag_sidebar">
+<meta property="og:description" content="Pagina di testo con menù verticale">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
 <meta property="og:image:type" content="image/png">
@@ -73,20 +73,20 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
   </head>
   <body>
-    <header class="it-header-wrapper it-header-sticky">
-<div class="it-header-slim-wrapper">
+    <header class="it25-sidebar">
+<div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
-          <a class="d-lg-block navbar-brand" href="#">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-lg-none">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none">
           </a>
           <div class="header-slim-right-zone">
             <div class="nav-item">
               <a class="btn btn-primary btn-icon btn-full" href="#" title="Impostazioni" aria-label="Impostazionni">
                 <svg class="icon icon-white"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"></use></svg>
-                <span class="d-none d-lg-block">Impostazioni</span>
+                <span class="d-none d-md-block">Impostazioni</span>
               </a>
             </div>
             <div class="nav-item dropdown">
@@ -115,7 +115,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                 <svg class="icon icon-white">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
                 </svg>
-              <span class="d-none d-lg-block">Accedi all'area personale</span>
+              <span class="d-none d-md-block">Accedi all'area personale</span>
             </a>
           </div>
         </div>
@@ -124,33 +124,43 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 </div>
 
-  <div class="it-nav-wrapper">
-    <div class="it-header-center-wrapper">
+<div class="it-header-center-wrapper it25-barra-ist">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-center-content-wrapper">
-        
-          <button class="btn btn-xs btn-outline-primary d-md-none px-2" type="button" data-toggle="collapse"
-                  data-target="#sidebar-docs-nav" aria-controls="sidebar-docs-nav" aria-expanded="false"
-                  aria-label="Apri/chuidi menu navigazione">
-            <svg class="icon">
-              <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
-            </svg>
-          </button>
-                
           <div class="it-brand-wrapper">
+
+            <div class="it25-hamburger-btn-wrapper">
+              <button aria-controls="it25-main-nav" aria-expanded="false"
+                      aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                      data-target="#it25-main-nav" type="button">
+                <svg class="icon">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+
+              <div class="it25-close-div">
+                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù" >
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
             <a href="#">
-              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="d-none d-lg-block">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
               <div class="it-brand-text">
                 ACRONIMO Nome applicativo
               </div>
             </a>
-          </div>
+          </div> <!-- end it-brand-wrapper -->
+
           <div class="it-right-zone">
-            <div class="it-search-wrapper d-none d-lg-flex">
-              <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
-              <button class="btn p-0 my-2 my-sm-0" type="submit" aria-label="Esegui ricerca">
+            <div class="it-search-wrapper">
+              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
+              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
                 <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-search"></use></svg>
               </button>
             </div>
@@ -160,65 +170,60 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     </div>
   </div>
 </div>
-    
-  </div>    
+
 </header>
 
 <div class="container-fluid">
   <div class="row flex-xl-nowrap">
-    <div class="col-12 col-md-3 col-xl-2 bd-sidebar neutral-1-bg-a1">
-      <nav class="bd-links collapse"  id="sidebar-docs-nav">
-    <div class="sidebar-wrapper">
-      <h3 class="no_toc">SIDEBAR</h3>
-      <div class="sidebar-linklist-wrapper">
+    <div class="col-12 col-md-3 col-xl-2">
+      <div class="it25-sidebar-wrapper">
+  <nav class="it25-sidebar-links collapse"  id="it25-main-nav">
+      <div class="sidebar-wrapper">
+        <h3 class="no_toc">SIDEBAR</h3>
+        <div class="sidebar-linklist-wrapper">
 
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li><h3>Intestazione 1</h3></li>
-            <li>
-              <ul class="link-sublist">
-                <li><a class="list-item" href="#"><span>Link 1a</span></a>
-                </li>
-                <li><a class="list-item active" href="#"><span>Link 2a</span></a>
-                </li>
-                <li><a class="list-item" href="#"><span>Link 3a</span></a>
-                </li>
-              </ul>
-            </li>
-            <li><h3>Intestazione 2</h3></li>
-            <li>
-              <ul class="link-sublist">
-                <li><a class="list-item" href="#"><span>Link 1b</span></a></li>
-                <li><a class="list-item disabled" href="#"><span>Link 2b</span></a></li>
-                <li><a class="list-item" href="#"><span>Link 3b</span></a></li>
-              </ul>
-            </li>
-            <li><h3>Intestazione 3</h3></li>
-            <li>
-              <ul class="link-sublist">
-                <li><a class="list-item" href="#"><span>Link 1c</span></a>
-                  <ul class="link-sublist">
-                    <li><a class="list-item" href="#"><span>Link 21</span></a></li>
-                    <li><a class="list-item disabled" href="#"><span>Link 22</span></a></li>
-                    <li><a class="list-item" href="#"><span>Link 23</span></a></li>
-                  </ul>
-                </li>
-                <li><a class="list-item" href="#"><span>Link 2c</span></a></li>
-                <li><a class="list-item" href="#"><span>Link 3c</span></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        
-      </div> <!-- end sidebar-linklist-wrapper -->
-    </div> <!-- end sidebar-wrapper -->
-</nav>
+          <div class="link-list-wrapper">
+            <ul class="link-list">
+              <li><h3>Intestazione 1</h3></li>
+              <li>
+                <ul class="link-sublist">
+                  <li><a class="list-item" href="#"><span>Link 1a</span></a>
+                  </li>
+                  <li><a class="list-item active" href="#"><span>Link 2a</span></a>
+                  </li>
+                  <li><a class="list-item" href="#"><span>Link 3a</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li><h3>Intestazione 2</h3></li>
+              <li>
+                <ul class="link-sublist">
+                  <li><a class="list-item" href="#"><span>Link 1b</span></a></li>
+                  <li><a class="list-item disabled" href="#"><span>Link 2b</span></a></li>
+                  <li><a class="list-item" href="#"><span>Link 3b</span></a></li>
+                </ul>
+              </li>
+              <li><h3>Intestazione 3</h3></li>
+              <li>
+                <ul class="link-sublist">
+                  <li><a class="list-item" href="#"><span>Link 1c</span></a>
+                    <ul class="link-sublist">
+                      <li><a class="list-item" href="#"><span>Link 21</span></a></li>
+                      <li><a class="list-item disabled" href="#"><span>Link 22</span></a></li>
+                      <li><a class="list-item" href="#"><span>Link 23</span></a></li>
+                    </ul>
+                  </li>
+                  <li><a class="list-item" href="#"><span>Link 2c</span></a></li>
+                  <li><a class="list-item" href="#"><span>Link 3c</span></a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
-
-
-
-
-          
+        </div> <!-- end sidebar-linklist-wrapper -->
+      </div> <!-- end sidebar-wrapper -->
+  </nav>
+</div>
 
     </div>
 
@@ -301,9 +306,14 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 </div>
 <footer class="footer">
-  <div class="container-fluid px-3">
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-12 my-3">
+      <div class="col-12 my-4 font-weight-bold">
+        ACCREDITAS Sistema di accreditamento
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
         <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
         <span class="d-inline-block"> - tutti i diritti riservati</span>
         <span class="d-inline-block"> - C.F. 80050050154</span>
@@ -325,7 +335,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201910241642"></script><!-- Notification per tornare alla pagina principale -->
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201911151550"></script><!-- Notification per tornare alla pagina principale -->
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">
     <svg class="icon">

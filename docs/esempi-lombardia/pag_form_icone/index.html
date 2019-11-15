@@ -12,11 +12,11 @@
 <title>Template pagina form con icone · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201910241642" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201911151550" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201910241642" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201911151550" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -73,20 +73,19 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
   </head>
   <body>
-    <header class="it-header-wrapper it-header-sticky">
-<div class="it-header-slim-wrapper">
+    <div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
-          <a class="d-lg-block navbar-brand" href="#">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-lg-none">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none">
           </a>
           <div class="header-slim-right-zone">
             <div class="nav-item">
               <a class="btn btn-primary btn-icon btn-full" href="#" title="Impostazioni" aria-label="Impostazionni">
                 <svg class="icon icon-white"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-settings"></use></svg>
-                <span class="d-none d-lg-block">Impostazioni</span>
+                <span class="d-none d-md-block">Impostazioni</span>
               </a>
             </div>
             <div class="nav-item dropdown">
@@ -115,7 +114,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                 <svg class="icon icon-white">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
                 </svg>
-              <span class="d-none d-lg-block">Accedi all'area personale</span>
+              <span class="d-none d-md-block">Accedi all'area personale</span>
             </a>
           </div>
         </div>
@@ -124,25 +123,43 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 </div>
 
-  <div class="it-nav-wrapper">
-    <div class="it-header-center-wrapper">
+<div class="it-header-center-wrapper it25-barra-ist">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-center-content-wrapper">
-                
           <div class="it-brand-wrapper">
+
+            <div class="it25-hamburger-btn-wrapper">
+              <button aria-controls="it25-main-nav" aria-expanded="false"
+                      aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                      data-target="#it25-main-nav" type="button">
+                <svg class="icon">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+
+              <div class="it25-close-div">
+                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù" >
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
             <a href="#">
-              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="d-none d-lg-block">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
               <div class="it-brand-text">
                 ACRONIMO Nome applicativo
               </div>
             </a>
-          </div>
+          </div> <!-- end it-brand-wrapper -->
+
           <div class="it-right-zone">
-            <div class="it-search-wrapper d-none d-lg-flex">
-              <input class="form-control mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
-              <button class="btn p-0 my-2 my-sm-0" type="submit" aria-label="Esegui ricerca">
+            <div class="it-search-wrapper">
+              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca">
+              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
                 <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-search"></use></svg>
               </button>
             </div>
@@ -152,151 +169,21 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     </div>
   </div>
 </div>
-    
-      <div class="it-header-navbar-wrapper">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <nav class="navbar navbar-expand-lg has-megamenu">
-            <button aria-controls="nav10" aria-expanded="false"
-                    aria-label="Toggle navigation" class="custom-navbar-toggler"
-                    data-target="#nav10" type="button">
-              <svg class="icon">
-                <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
-              </svg>
-            </button>
-            <div class="navbar-collapsable" id="nav10">
-              <div class="overlay"></div>
-              <div class="close-div sr-only">
-                <button class="btn close-menu" type="button">
-                  <span class="it-close"></span>close
-                </button>
-              </div>
-              <div class="menu-wrapper">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><span>Amministrazione</span></a>
-                  </li>
-                  <li class="nav-item active">
-                    <a class="nav-link active" href="#"><span>link active </span><span class="sr-only">voce selezionata</span></a>
-                  </li>
-                  <li class="nav-item"><a class="nav-link disabled" href="#"><span>link disabled</span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span>link 3 </span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="#"><span>link 4</span></a></li>                    
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                      <span>Dropdown</span>
-                      <svg class="icon icon-xs">
-                        <use xlink:href="/dist/svg/sprite.svg#it-expand"></use>
-                      </svg>
-                    </a>
-                    <div class="dropdown-menu">
-                      <div class="link-list-wrapper">
-                        <ul class="link-list">
-                          <li>
-                            <h3 class="no_toc" id="heading-es-1">Heading</h3>
-                          </li>
-                          <li><a class="list-item" href="#"><span>Link list 1</span></a></li>
-                          <li><a class="list-item" href="#"><span>Link list 2</span></a></li>
-                          <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
-                          <li><span class="divider"></span></li>
-                          <li><a class="list-item" href="#"><span>Link list 4</span></a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="nav-item dropdown megamenu">
-                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                      <span>Megamenu</span>
-                      <svg class="icon icon-xs">
-                        <use xlink:href="/dist/svg/sprite.svg#it-expand"></use>
-                      </svg>
-                    </a>
-                    <div class="dropdown-menu">
-                      <div class="row">
-                        <div class="col-12 col-lg-4">
-                          <div class="link-list-wrapper">
-                            <ul class="link-list">
-                              <li>
-                                <h3 class="no_toc">Heading 1</h3>
-                              </li>
-                              <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="link-list-wrapper">
-                            <ul class="link-list">
-                              <li>
-                                <h3 class="no_toc">Heading 2</h3>
-                              </li>
-                              <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div class="col-12 col-lg-4">
-                          <div class="link-list-wrapper">
-                            <ul class="link-list">
-                              <li>
-                                <h3 class="no_toc">Heading 3</h3>
-                              </li>
-                              <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                              <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </li>                    
-                </ul>
-                <ul class="navbar-nav navbar-secondary">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Link secondario 1</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Link secondario 2</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">
-                      Link secondario 3</a>
-                  </li>
-                  <li class="nav-item ">
-                    <a class="nav-link " href="#">
-                      <span class="font-weight-bold">Tutti gli argomenti...</span>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-  </div>    
-</header>
+
 
 <main>
-<div class="my-1">
+<div class="it25-barra-utente">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-6 neutral-1-color-a10 neutral-1-bg-a1 px-3">
+      <div class="col-6">
         <svg class="icon icon-primary icon-xs"><use xlink:href="/dist/svg/sprite.svg#it-user"></use></svg>
         <span class="font-weight-light">Utente: </span><span class="font-weight-semibold">Mario Rossi</span>
         <span class="font-weight-light"> C.F.: </span><span class="font-weight-semibold">RSSMRA62A29I754</span>
       </div>
-      <div class="col-6 neutral-1-color-a10 neutral-1-bg-a1 px-3 text-right">
+      <div class="col-6 text-right">
         <svg class="icon icon-primary icon-xs"><use xlink:href="/dist/svg/sprite.svg#it-user"></use></svg>
         <span class="font-weight-light">Operatore: </span><span class="font-weight-semibold">TEST ESAR2 </span>
-        <span class="font-weight-light">Ruolo: </span><span class="font-weight-semibold">AMMINISTRATORE</span>
+        <span class="font-weight-light">Ruolo: </span><span class="font-weight-semibold">ADMIN</span>
       </div>
     </div>
   </div>
@@ -518,36 +405,52 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 </div>
 
-<!-- *****************************************************************************************************+ -->    
+<!-- *****************************************************************************************************+ -->
       <div class="row">
-        <div class="col-12">    
+        <div class="col-12">
           <div class="float-right">
-            <button type="button" class="btn btn-outline-primary">Annulla</button>    
+            <button type="button" class="btn btn-outline-primary">Annulla</button>
             <button type="button" class="btn btn-primary">Invio</button>
-          </div>    
-        </div>    
-      </div>    
-<!-- *****************************************************************************************************+ -->    
+          </div>
+        </div>
+      </div>
+<!-- *****************************************************************************************************+ -->
     </form>
   </div>
 </main>
 <footer class="footer">
-  <div class="container-fluid px-3">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-12 my-4 font-weight-bold">
         ACCREDITAS Sistema di accreditamento
       </div>
     </div>
     <div class="row">
-      <div class="col-12">
-        <nav>
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="">Voce 1</a></li>
-            <li class="list-inline-item"><a href="">Voce 2</a></li>
-            <li class="list-inline-item"><a href="">Voce 3</a></li>
-            <li class="list-inline-item"><a href="">Voce 4</a></li>
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Privacy</a></li>
+            <li class="list-item"><a href="">Accessibilità</a></li>
+            <li class="list-item"><a href="">Cookie policy</a></li>
           </ul>
-        </nav>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Note legali</a></li>
+            <li class="list-item"><a href="">Contatti</a></li>
+            <li class="list-item"><a href="">Credits</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li class="list-item"><a href="">Voce 7</a></li>
+            <li class="list-item"><a href="">Voce 8</a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="row">
@@ -560,7 +463,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
       </div>
     </div>
   </div>
-</footer>   
+</footer>
 
 
 <a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top">
@@ -573,7 +476,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201910241642"></script><!-- Notification per tornare alla pagina principale -->
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201911151550"></script><!-- Notification per tornare alla pagina principale -->
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">
     <svg class="icon">
