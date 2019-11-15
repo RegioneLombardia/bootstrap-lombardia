@@ -111,3 +111,46 @@ Il `<div>` principale è caratterizzato dalle classi `it-header-center-wrapper` 
 Al suo interno il `div` con classe `it-header-center-content-wrapper` contiene due `div` che posizionano il loro contenuto verso il lato sinistro e destro della barra, che hanno rispettivamente le classi: `it-brand-wrapper` e `it-right-zone`.  
 
 In  `it-brand-wrapper` oltre al logo della Regione Lombardia e al nome dell'applicativo, sono contenuti 2 bottoni che appaiono solo sugli schermi di minori dimensioni, alternativamente per aprire o chiudere il **[menù orizzontale]({{ site.baseurl }}/docs/componenti-lombardia/menu-orizzontale/)** o la **[sidebar]({{ site.baseurl }}/docs/componenti-lombardia/sidebar/)** eventualmente presenti nella pagina.
+
+
+
+### Bottone hamburger
+
+Il bottone *hamburger* compare nella *barra istituzionale* a sinistra del logo di Regione Lombardia, quando lo schermo è di piccole dimensioni, per consentire di aprire e chiudere il *menù orizzontale* o la *sidebar*.  
+Una volta premuto il bottone l'icona *hamburger* è sostituita da una "X" per segnalare che premendolo nuovamente il menù (o la sidebar) scomparirà.
+
+Il menù orizzontale è visualizzato immediatamente se la finestra ha **[dimensioni]({{ site.baseurl }}/docs/organizzare-gli-spazi/griglie/#le-opzioni)** `lg` o `xl`.    
+Quindi il bottone *hamburger* compare quando le dimensioni della pagina sono `xs` o `sm` o `md`.  
+La sidebar invece compare anche sugli schermi `md` e, di conseguenza, il relativo bottone *hamburger* solo per pagine `xs` o `sm`.  
+
+Per ottenere questo comportamento, la struttura HTML dell'header della pagina deve essere di questo tipo:
+
+Per il menù orizzontale
+{% highlight html %}
+<header class="it25-menu"> (oppure semplicemente <header>)
+  . . . top bar . . .
+  . . . barra istituzionale . . .
+  . . . barra utente (facoltativa) . . .
+  . . . menu orizzontale . . .
+</header>
+{% endhighlight %}
+
+Per la sidebar
+{% highlight html %}
+<header class="it25-sidebar">
+  . . . top bar . . .
+  . . . barra istituzionale . . .
+  . . . barra utente (facoltativa) . . .
+</header>
+{% endhighlight %}
+
+La *sidebar* poi va inserita nel `body` della pagina (vedi esempio **[pagina con sidebar]({{ site.baseurl }}/docs/esempi-lombardia/pag_sidebar/)**).
+
+Nel caso in cui non si abbiano né l'una né l'altra, e quindi il bottone *hamburger* non vada mai visualizzato, la struttura deve essere:
+{% highlight html %}
+<header class="it25-none">
+  . . . top bar . . .
+  . . . barra istituzionale . . .
+  . . . barra utente (facoltativa) . . .
+</header>
+{% endhighlight %}
