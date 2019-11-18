@@ -13,8 +13,8 @@ Definisci colori di background, bordi, colore di testo attraverso specifiche cla
 
 <div class="bd-example-border-utils">
   <p>
-  I colori primari sono il Blu Italia e il bianco.<br>
-  Il <strong class="primary-color">Blu Italia</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
+  I colori primari sono il Verde Lombardia e il bianco.<br>
+  Il <strong class="primary-color">Verde Lombardia</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
   </p>
   <div class="primary-color-container">
     <div class="square-color primary-bg">
