@@ -2,7 +2,7 @@
 layout: docs
 title: Footer
 description: Footer per il fondo pagina.
-group: componenti-lombardia
+group: componenti-principali
 toc: true
 ---
 

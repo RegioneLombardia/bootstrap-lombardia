@@ -2,7 +2,7 @@
 layout: docs
 title: Barra utente
 description: Barra Utente e Operatore
-group: componenti-lombardia
+group: componenti-principali
 toc: false
 ---
 

@@ -3,18 +3,17 @@
     <div class="sidebar-linklist-wrapper">
       <div class="link-list-wrapper">
         <ul class="link-list">
-          {%- assign link = group.pages | first -%}
-          {%- assign link_slug = link.title | slugify -%}
-          {%- assign group_slug = group.title | slugify -%}
-          {%- assign active = nil -%}
-          {%- assign expanded = 'false' -%}
-
-          {%- if page.group == group_slug -%}
-          {%- assign active = 'active' -%}
-          {%- assign expanded = 'true' -%}
-          {%- endif -%}
-
           {%- for group in site.data.linee-guida -%}
+            {%- assign link = group.pages | first -%}
+            {%- assign link_slug = link.title | slugify -%}
+            {%- assign group_slug = group.title | slugify -%}
+            {%- assign active = nil -%}
+            {%- assign expanded = 'false' -%}
+
+            {%- if page.group == group_slug -%}
+            {%- assign active = 'active' -%}
+            {%- assign expanded = 'true' -%}
+            {%- endif -%}
             <li>
               <a class="list-item large medium right-icon {% unless active == nil %}active{% endunless %}" href="#collapse-guida-{{ forloop.index }}" data-toggle="collapse" aria-expanded="{{expanded}}" aria-controls="collapse-guida-{{ forloop.index }}">
                 <span>{{ group.title }}</span>
@@ -53,7 +52,7 @@
                 {%- endfor -%}
               </ul>
             </li>
-          {%- endfor -%}        
+          {%- endfor -%}
         </ul>
       </div>
     </div>

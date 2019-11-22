@@ -1,0 +1,29 @@
+- category: 'Pagine complete'
+  mockups:
+    - title: Tabella
+    - title: Form
+    - title: Wizard
+      status: 'to do'
+    - title: Sidebar
+    - title: Profilo utente
+
+- category: Ritagli
+  snippets:
+    - title: Account posta
+    - title: Barra Istituzionale
+    - title: Barra Utente
+    - title: Checkboxes
+    - title: Datepickers
+    - title: Filtri tabella
+    - title: Footer
+    - title: Footer minimo
+    - title: Indirizzo
+    - title: Menu Orizzontale
+    - title: Paginazione
+    - title: Radiobuttons
+    - title: Sidebar
+    - title: Tabella
+    - title: Testo
+    - title: Toggles
+    - title: Topbar
+    - title: Topbar thin

@@ -2,7 +2,7 @@
 layout: docs
 title: Sidebar
 description: Barra laterale di navigazione
-group: componenti-lombardia
+group: componenti-principali
 toc: false
 ---
 

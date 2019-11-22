@@ -2,7 +2,7 @@
 layout: docs
 title: Header
 description: Header applicativi Web.
-group: componenti-lombardia
+group: componenti-principali
 toc: true
 ---
 

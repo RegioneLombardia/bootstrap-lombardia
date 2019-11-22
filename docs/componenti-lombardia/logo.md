@@ -2,7 +2,7 @@
 layout: docs
 title: Logo
 description: Uso del logo di Regione Lombardia
-group: componenti-lombardia
+group: componenti-principali
 toc: false
 ---
 

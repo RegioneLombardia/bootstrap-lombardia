@@ -2,7 +2,7 @@
 layout: docs
 title: Menu orizzontale
 description: Menù principale di navigazione
-group: componenti-lombardia
+group: componenti-principali
 toc: false
 ---
 
