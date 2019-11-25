@@ -151,14 +151,8 @@
 @import 'utilities/icons';
 
 // Componenti lombardia
-@import 'custom-lombardia/headerslim';
-@import 'custom-lombardia/headercenter';
-@import 'custom-lombardia/headernavbar';
-@import 'custom-lombardia/header';
-@import "custom-lombardia/pager.scss";
-@import "custom-lombardia/form-datepicker.scss";
-
-@import "custom-lombardia/footer";
-
-@import "custom-lombardia/topbar";
+@import "custom-lombardia/it25-header";
 @import "custom-lombardia/sidebar";
+@import "custom-lombardia/footer";
+@import "custom-lombardia/pager";
+@import "custom-lombardia/form-datepicker";

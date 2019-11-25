@@ -7,6 +7,17 @@ header {
 
 .it25-top-bar {
 
+  .it-header-slim-wrapper-content {
+    .navbar-brand {
+      img {
+        height: 40px;
+      }
+    }
+    .header-slim-right-zone {
+      font-weight: 600;
+    }
+  }
+
   &.shrink {
     position: sticky;
     top: 0;
@@ -27,16 +38,40 @@ header {
   top: $it25-top-bar-height-shrink;
   transition: 0.4s;
   z-index: 3;
+  border-bottom: 1px solid $neutral-1-a1;
+
+  .it-header-center-content-wrapper {
+    .it-brand-wrapper {
+      display: flex;
+      img {
+        height: 41px;
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          height: 54px;
+        }
+        margin-right: 24px;
+      }
+      .it-brand-text {
+        margin-left: 10px;
+        line-height: 1.555;
+        font-weight: 700;
+      }
+    }
+    .it-search-wrapper {
+      margin: 4px 0;
+      border: 2px solid #cacacc;
+      border-radius: 4px;
+
+      input[type='search'] {
+        border-bottom: 0;
+      }
+    }
+  }
 
   img.it25-header-logo {
     display: none;
     @media (min-width: #{map-get($grid-breakpoints, md)}) {
       display: block;
     }
-  }
-
-  .it-brand-wrapper {
-    display: flex;
   }
 
   .it25-close-div {
@@ -90,7 +125,7 @@ header {
   top: #{$it25-top-bar-height-shrink + $it25-barra-ist-height-shrink};
   transition: 0.4s;
   z-index: 3;
-  background-color: $neutral-1-a1;
+  background-color: $neutral-2;
   color: $neutral-1-a10;
   min-height: $it25-barra-utente-min-height;
   padding-left: $spacer;
@@ -105,9 +140,30 @@ header {
   left: 0;
   bottom: 0;
   z-index: 3;
+  border-bottom: 1px solid $neutral-2;
 
   &.postUserBar {
     top: #{$it25-top-bar-height-shrink + $it25-barra-ist-height-shrink + $it25-barra-utente-min-height};
+  }
+
+  .navbar {
+    .navbar-collapsable {
+      .navbar-nav {
+        li {
+          a.nav-link {
+            color: $gray-primary;
+            font-weight: bold;
+            padding: $nav-link-padding-y $nav-link-padding-x;
+
+            &.dropdown-toggle {
+              svg {
+                fill: $gray-primary;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 
   @media (max-width: #{map-get($grid-breakpoints, lg)}) {
