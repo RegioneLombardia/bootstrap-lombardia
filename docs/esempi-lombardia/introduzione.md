@@ -3,7 +3,7 @@ layout: docs
 title: Il Codice
 description: Il codice delle "Schermate Composte"
 group: schermate-composte
-toc: true
+toc: false
 ---
 
 I lnk sottostanti consentono di visualizzare direttamente il codice che compone le pagine di esempio contenute nelle linee guida.
