@@ -12,14 +12,14 @@
 <title>Colori Custom · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201911251153" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201912030849" rel="stylesheet">
 
 <!-- Documentation extras -->
 
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet">
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201911251153" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201912030849" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -142,6 +142,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                       <span>tipografia</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/organizzare-i-contenuti/testo/">
+                      <span>testi</span></a>
+                    <ul class="link-sublist"></ul>
+                  </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/utilities/icone/">
                       <span>icone</span></a>
                     <ul class="link-sublist"></ul>
@@ -258,8 +262,8 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                       <span>Form</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/steppers/">
-                      <span>Wizard</span><span class="badge badge-secondary text-white">to do</span></a>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_wizard/">
+                      <span>Wizard</span><span class="badge badge-secondary text-white">work in progress</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_sidebar/">
@@ -625,11 +629,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <li class="toc-entry toc-h3"><a href="#complementari-e-triadici">Complementari e triadici</a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h2"><a href="#varianti-colori-secondari">Varianti colori secondari</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#complementari-e-triadici-1">Complementari e triadici</a></li>
-</ul>
-</li>
 <li class="toc-entry toc-h2"><a href="#colori-neutrali">Colori neutrali</a></li>
 <li class="toc-entry toc-h2"><a href="#varianti-colori-neutrali">Varianti colori neutrali</a></li>
 <li class="toc-entry toc-h2"><a href="#grigi-chiari">Grigi chiari</a></li>
@@ -642,7 +641,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Colori Custom</h1>
           <p class="bd-lead">Modifica colori di background, testo e bordi con colori custom.</p>
-          <p>Definisci colori di background, bordi, colore di testo attraverso specifiche classi.</p>
+          <p>Definisce colori di background, bordi, colore di testo attraverso specifiche classi.</p>
 
 <h2 id="colori-primari">Colori Primari</h2>
 
@@ -789,13 +788,13 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <div class="primary-color-container">
   <div class="square-color complementary-1-bg">
-    <span>#d92a27</span>
+    <span>#D92A27</span>
   </div>
   <div class="square-color complementary-2-bg">
-    <span>#ff9900</span>
+    <span>#FF9900</span>
   </div>
   <div class="square-color complementary-3-bg">
-    <span>#42b357</span>
+    <span>#42B357</span>
   </div>
   <div class="clearfix"></div>
 </div>
@@ -820,19 +819,19 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </div>
 
 <hr />
+<!--
+## Varianti colori secondari
 
-<h2 id="varianti-colori-secondari">Varianti colori secondari</h2>
+### Complementari e triadici
+I colori Complementari possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
 
-<h3 id="complementari-e-triadici-1">Complementari e triadici</h3>
-<p>I colori Complementari possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe</p>
+**Utilizzo delle classi:**
 
-<p><strong>Utilizzo delle classi:</strong></p>
+`.complementary-(+ 1/2/3 )-bg- + variante-colore` : per background color <br>
+`.complementary-(+ 1/2/3 )-color- + variante-colore` : per text color<br>
+`.complementary-(+ 1/2/3 )-border-color- + variante-colore` : per border color
 
-<p><code class="highlighter-rouge">.complementary-(+ 1/2/3 )-bg- + variante-colore</code> : per background color <br />
-<code class="highlighter-rouge">.complementary-(+ 1/2/3 )-color- + variante-colore</code> : per text color<br />
-<code class="highlighter-rouge">.complementary-(+ 1/2/3 )-border-color- + variante-colore</code> : per border color</p>
-
-<p>(es. <code class="highlighter-rouge">.complementary-1-bg-a5</code> per utilizzare come background il colore complementare <strong>1</strong> con variante <strong>a4</strong> )</p>
+(es. `.complementary-1-bg-a5` per utilizzare come background il colore complementare **1** con variante **a4** )
 
 <div class="exclude-a11y-check">
 <div class="bd-example">
@@ -987,15 +986,18 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 </div>
-
+-->
 <h2 id="colori-neutrali">Colori neutrali</h2>
 
 <div class="primary-color-container">
 <div class="square-color neutral-1-bg">
 <span class="white-color">#003254</span>
 </div>
+<div class="square-color" style="border: 1px solid #000; background-color: #fcfcff">
+<span>#FCFCFF</span>
+</div>
 <div class="square-color neutral-2-bg">
-<span>#e6e9f2</span>
+<span>#E6E9F2</span>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -1169,11 +1171,11 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201911251153"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201912030849"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js" integrity="sha256-hIvIxeqhGZF+VVeM55k0mJvWpQ6gTkWk3Emc+NmowYA=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?201911251153"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?201912030849"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/EaselJS/1.0.2/easeljs.min.js"></script>
@@ -1190,7 +1192,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png", id:"cover-7"}
   ];
 </script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?201911251153"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?201912030849"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({

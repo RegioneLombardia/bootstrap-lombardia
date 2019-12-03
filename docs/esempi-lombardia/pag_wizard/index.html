@@ -9,7 +9,7 @@
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
 <meta name="generator" content="Jekyll v3.8.5">
 
-<title>CookieBar · Bootstrap Lombardia</title>
+<title>Template pagina wizard · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
 <link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201912030849" rel="stylesheet">
@@ -34,13 +34,13 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@teamdigitaleIT">
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="twitter:title" content="CookieBar">
+<meta name="twitter:title" content="Template pagina wizard">
 <meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/esempi/cookiebar/">
-<meta property="og:title" content="CookieBar">
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/esempi-lombardia/pag_wizard/">
+<meta property="og:title" content="Template pagina wizard">
 <meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
@@ -74,28 +74,130 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </head>
   <body>
     <style>
-  .cookiebar {
-    display: block !important;
-  }
-  @media (min-width: 768px) {
-    .cookiebar {
-      display: flex !important;
-    }
-  }
+.it25-wizard {
+  height: 100px;
+}
+.it25-wizard .container {
+  border: 1px solid green;
+  padding: 30px 6px;
+}
+.col {
+  display: flex;
+  justify-content: center;
+}
+.row {
+  position: relative;
+  height: 48px;
+}
+.row::after {
+  content: ' ';
+  width: 100%;
+  background-color: green;
+  position: relative;
+  height: 5px;
+  right: 0;
+  z-index: -1;
+}
+
+.it-pin-wrapper {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+}
+.pin-icon {
+  border-radius: 48px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid lightgray;
+  background-color: white;
+}
+.active .pin-icon {
+  background-color: green;
+  border-color: green;
+}
+.confirmed .pin-icon {
+  border-color: green;
+}
+svg {
+  fill: lightgray!important;
+}
+.active svg {
+  fill: white!important;
+}
+.confirmed svg {
+  fill: green!important;
+}
+
 </style>
 
-<div class="cookiebar">
-  <p>
-    Questo sito utilizza cookie tecnici, analytics e di terze parti.
-    <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.
-  </p>
-  <div class="cookiebar-buttons">
-    <a href="#" class="cookiebar-btn"
-      >Preferenze<span class="sr-only">cookies</span></a
-    >
-    <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">
-      Accetto<span class="sr-only"> i cookies</span>
-    </button>
+
+<div class="it25-wizard">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="it-pin-wrapper confirmed">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper confirmed">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-calendar"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper active">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-list"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-card"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-calendar"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-list"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-card"></use></svg>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="it-pin-wrapper">
+          <div class="pin-icon">
+            <svg class="icon"><use xlink:href="/dist/svg/sprite.svg#it-calendar"></use></svg>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </div>
 </div>
 
