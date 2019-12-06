@@ -16,6 +16,6 @@ Per rendere meno oneroso il lavoro di integrazione degli aggiornamenti pubblicat
 Alla documentazione originale viene premessa la sezione **Linee Guida** che spiega **cosa utilizzare e cosa no**, dei vari componenti, per rimanere all'interno delle **specifiche esigenze della Regione Lombardia**, lasciando poi il dettaglio tecnico del funzionamento delle singole parti alla *documentazione*.
 
 {% capture callout %}
-####  <svg class="icon icon-warning icon-lg"><use xlink:href="/dist/svg/sprite.svg#it-warning-circle"></use></svg> Raccomandazione Importante
+####  <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Raccomandazione Importante
 Prima di utilizzare un componente od una variante cromatica o tipografica, si **consiglia vivamente** di consultare la relativa parte delle **linee guida**, e controllare gli eventuali **avvisi e restrizioni d'uso**.
 {% endcapture %}{% include callout.html content=callout type="warning" %}
