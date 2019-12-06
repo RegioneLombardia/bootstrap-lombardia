@@ -1,0 +1,15 @@
+.it25-wizard {
+  .row {
+    position: relative;
+//    padding-top: $v-gap * 6;
+    //padding-bottom: $v-gap*6;
+    &::after {
+      content: "muuuuuu!";
+      width: 100%;
+      background-color: $primary;
+      position: absolute;
+      height: 30px;
+      right: 0;
+    }
+  }
+}

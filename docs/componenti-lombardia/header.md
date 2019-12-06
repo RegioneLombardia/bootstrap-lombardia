@@ -24,7 +24,7 @@ E' composto da due parti, entrambe obbligatorie:
 2. barra istituzionale
 
 ## Top bar
-Può contenere voci di servizio quali: Home, Contatti, Assistenza, Numero verde, Login/Logout, Impostazioni, Scelta lingua, ecc.
+Può contenere voci di servizio quali: Login/Logout (quindi la gestione del profilo utente tramite le voci del dropdown), Scelta lingua, Assistenza.
 
 <div class="bd-example">
 {% include esempi-lombardia/topbar.html %}
@@ -34,19 +34,19 @@ Può contenere voci di servizio quali: Home, Contatti, Assistenza, Numero verde,
 {% include esempi-lombardia/topbar.html %}
 {% endhighlight %}
 
-Nel momento in cui la pagina viene caricata a video, la barra è alta 56 pixel.  
+Nel momento in cui la pagina viene caricata a video, la barra è alta 58 pixel.  
 Rimane fissa in cima alla pagina quando questa scorre verso l'alto.
 
 Su smartphone
-1. Appare il logo della Regione Lombardia in bianco
+1. Appare il logo della Regione Lombardia in negativo
 2. Le voci servizio sono ridotte a icona
 
 Su Desktop
-1. Il logo della Regione Lombardia in bianco non è visualizzato
+1. Il logo della Regione Lombardia in negativo non è visualizzato
 2. Le voci di servizio hanno la dicitura
 
 Quando la pagina scorre verso il basso:
-- le voci servizio e l'eventuale logo banco scompaiono
+- le voci servizio e l'eventuale logo in negativo scompaiono
 - l'altezza si riduce a 20 pixel
 
 ### Top bar sottile
@@ -66,14 +66,14 @@ Su smartphone la top bar sottile inizialmente apparirà comunque alta 56 pixel p
 
 ## Barra istituzionale
 
-**Deve** contenere il **logo** e il **nome dell'applicativo**, preceduto dall' **acronimo** se esiste.  
-**Può** contenere il **campo di ricerca** a destra.
+**Deve** contenere il **logo** di Regione Lombardia e il **nome dell'applicativo**, preceduto dall' **acronimo** se esiste.  
+**Può** contenere l'**hamburger menu** a sinistra del logo di Regione Lombardia e il **campo di ricerca** a destra.
 
 L'altezza iniziale della barra è di 94 pixel su schermi grandi, di 80 su schermi piccoli.  
 A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si restringe a 50 pixel.
 
 Su smartphone
-1. Il logo della Regione Lombardia scompare (viene sostituito dal logo bianco sulla top bar)
+1. Il logo della Regione Lombardia scompare (viene sostituito dal logo in negativo sulla top bar)
 2. Il nome dell'applicativo si riduce di dimensione
 3. L'eventuale campo di ricerca è ridotto a icona
 4. Compare il pulsante hamburger per l'apertura del menù orizzontale o della sidebar.
@@ -116,10 +116,10 @@ In  `it-brand-wrapper` oltre al logo della Regione Lombardia e al nome dell'appl
 
 ### Bottone hamburger
 
-Il bottone *hamburger* compare nella *barra istituzionale* a sinistra del logo di Regione Lombardia, quando lo schermo è di piccole dimensioni, per consentire di aprire e chiudere il *menù orizzontale* o la *sidebar*.  
+Il bottone *hamburger* compare nella *barra istituzionale* a sinistra del logo di Regione Lombardia.  
 Una volta premuto il bottone l'icona *hamburger* è sostituita da una "X" per segnalare che premendolo nuovamente il menù (o la sidebar) scomparirà.
 
-Il menù orizzontale è visualizzato immediatamente se la finestra ha **[dimensioni]({{ site.baseurl }}/docs/organizzare-gli-spazi/griglie/#le-opzioni)** `lg` o `xl`.    
+Il menu orizzontale è visualizzato immediatamente se la finestra ha **[dimensioni]({{ site.baseurl }}/docs/organizzare-gli-spazi/griglie/#le-opzioni)** `lg` o `xl`.    
 Quindi il bottone *hamburger* compare quando le dimensioni della pagina sono `xs` o `sm` o `md`.  
 La sidebar invece compare anche sugli schermi `md` e, di conseguenza, il relativo bottone *hamburger* solo per pagine `xs` o `sm`.  
 
@@ -154,3 +154,10 @@ Nel caso in cui non si abbiano né l'una né l'altra, e quindi il bottone *hambu
   . . . barra utente (facoltativa) . . .
 </header>
 {% endhighlight %}
+
+
+### Due loghi
+Nella *barra istituzionale* è possibile inserire un secondo logo utilizzando un tag `img` con le classi `it25-header-logo d-none d-md-block`.  
+Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento responsivo.
+
+E' possibile vedere un esempio nella pagina **[form]({{ site.baseurl }}/docs/esempi-lombardia/pag_form/)**.

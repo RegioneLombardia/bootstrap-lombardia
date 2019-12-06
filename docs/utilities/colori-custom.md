@@ -13,12 +13,12 @@ Definisci colori di background, bordi, colore di testo attraverso specifiche cla
 
 <div class="bd-example-border-utils">
   <p>
-  I colori primari sono il Verde Lombardia e il bianco.<br>
-  Il <strong class="primary-color">Verde Lombardia</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
+  I colori primari sono il Blu Italia e il bianco.<br>
+  Il <strong class="primary-color">Blu Italia</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
   </p>
   <div class="primary-color-container">
     <div class="square-color primary-bg">
-      <span class="white-color">#2A7A38</span>
+      <span class="white-color">#0066CC</span>
     </div>
     <div class="square-color white-bg shadow">
       <span>#FFFFFF</span>
@@ -103,17 +103,49 @@ Il colore primario possiede tre tipologie di varianti cromatiche. Per utilizzarl
 
 ## Colori secondari
 
+### Analoghi
+
+Ai colori monocromatici può essere affiancato un accent color, definito così perche si tratta di un colore molto luminoso, serve ad attirare l’attenzione.
+
+Devono essere usati in modo parsimonioso.
+
+<div class="primary-color-container">
+  <div class="square-color analogue-1-bg">
+    <span class="white-color">#3126ff</span>
+  </div>
+  <div class="square-color analogue-2-bg">
+    <span>#0bd9d2</span>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+<br>
+**Utilizzo delle classi:**
+
+`.analogue-(+ 1/2 +)-bg`  : per background color <br>
+`.analogue-(+ 1/2 +)-color` : per text color<br>
+`.analogue-(+ 1/2 +)-border-color`  : per border color
+
+<div class="exclude-a11y-check">
+{% capture example %}
+<div class="analogue-1-bg p-3"><span class="white-color">Testo bianco su background colore analogo 1</span></div>
+<div class="analogue-2-bg p-3"><span class="analogue-1-color">Testo colore analogo 1 su background colore analogo 2</span></div>
+{% endcapture %}{% include example.html content=example %}
+</div>
+
+---
+
 ### Complementari e triadici
 
 <div class="primary-color-container">
   <div class="square-color complementary-1-bg">
-    <span>#d92a27</span>
+    <span>#f73e5a</span>
   </div>
   <div class="square-color complementary-2-bg">
     <span>#ff9900</span>
   </div>
   <div class="square-color complementary-3-bg">
-    <span>#42b357</span>
+    <span>#00cf86</span>
   </div>
   <div class="clearfix"></div>
 </div>
@@ -136,6 +168,72 @@ Il colore primario possiede tre tipologie di varianti cromatiche. Per utilizzarl
 ---
 
 ## Varianti colori secondari
+
+### Analoghi
+I colori analoghi possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
+
+**Utilizzo delle classi:**
+
+`.analogue-(+ 1/2 )-bg- + variante-colore` : per background color <br>
+`.analogue-(+ 1/2 )-color- + variante-colore` : per text color<br>
+`.analogue-(+ 1/2 )-border-color- + variante-colore` : per border color
+
+(es. `.analogue-1-bg-a5` per utilizzare come background il colore analogo **1** con variante **a5** )
+
+<div class="exclude-a11y-check">
+{% capture example %}
+<div class="row">
+	<div class="col-md-3">
+		<div class="c-line analogue-1-bg-a1">a1 </div>
+		<div class="c-line analogue-1-bg-a2">a2 </div>
+		<div class="c-line analogue-1-bg-a3">a3 </div>
+		<div class="c-line white-color analogue-1-bg-a4">a4 </div>
+		<div class="c-line white-color analogue-1-bg-a5">a5 </div>
+		<div class="c-line white-color analogue-1-bg-a6">a6 </div>
+		<div class="c-line white-color analogue-1-bg-a7">a7 </div>
+		<div class="c-line white-color analogue-1-bg-a8">a8 </div>
+		<div class="c-line white-color analogue-1-bg-a9">a9 </div>
+		<div class="c-line white-color analogue-1-bg-a10">a10 </div>
+		<div class="c-line white-color analogue-1-bg-a11">a11 </div>
+		<div class="c-line white-color analogue-1-bg-a12">a12 </div>
+	</div>
+	<div class="col-md-3">
+		<div class="c-line white-color analogue-1-bg-b1">b1</div>
+		<div class="c-line white-color analogue-1-bg-b2">b2</div>
+		<div class="c-line white-color analogue-1-bg-b3">b3</div>
+		<div class="c-line white-color analogue-1-bg-b4">b4</div>
+		<div class="c-line white-color analogue-1-bg-b5">b5</div>
+		<div class="c-line white-color analogue-1-bg-b6">b6</div>
+		<div class="c-line white-color analogue-1-bg-b7">b7</div>
+		<div class="c-line white-color analogue-1-bg-b8">b8</div>
+	</div>
+	<div class="col-md-3">
+		<div class="c-line analogue-2-bg-a1">a1</div>
+		<div class="c-line analogue-2-bg-a2">a2</div>
+		<div class="c-line analogue-2-bg-a3">a3</div>
+		<div class="c-line analogue-2-bg-a4">a4</div>
+		<div class="c-line analogue-2-bg-a5">a5</div>
+		<div class="c-line analogue-2-bg-a6">a6</div>
+		<div class="c-line analogue-2-bg-a7">a7</div>
+		<div class="c-line analogue-2-bg-a8">a8</div>
+		<div class="c-line white-color analogue-2-bg-a9">a9</div>
+		<div class="c-line white-color analogue-2-bg-a10">a10</div>
+		<div class="c-line white-color analogue-2-bg-a11">a11</div>
+		<div class="c-line white-color analogue-2-bg-a12">a12</div>
+	</div>
+	<div class="col-md-3">
+		<div class="c-line white-color analogue-2-bg-b1">b1</div>
+		<div class="c-line white-color analogue-2-bg-b2">b2</div>
+		<div class="c-line white-color analogue-2-bg-b3">b3</div>
+		<div class="c-line white-color analogue-2-bg-b4">b4</div>
+		<div class="c-line white-color analogue-2-bg-b5">b5</div>
+		<div class="c-line white-color analogue-2-bg-b6">b6</div>
+		<div class="c-line white-color analogue-2-bg-b7">b7</div>
+		<div class="c-line white-color analogue-2-bg-b8">b8</div>
+	</div>
+</div>
+{% endcapture %}{% include example.html content=example %}
+</div>
 
 ### Complementari e triadici
 I colori Complementari possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
@@ -231,10 +329,10 @@ I colori Complementari possiedono due tipologie di varianti cromatiche. Per util
 
 <div class="primary-color-container">
 <div class="square-color neutral-1-bg">
-<span class="white-color">#003254</span>
+<span class="white-color">#17324d</span>
 </div>
 <div class="square-color neutral-2-bg">
-<span>#e6e9f2</span>
+<span>#e6ecf2</span>
 </div>
 <div class="clearfix"></div>
 </div>

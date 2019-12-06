@@ -3,11 +3,16 @@
     - title: logo
       url: componenti-lombardia/logo
     - title: colori
-      url: utilities/colori-custom
+      url: componenti-lombardia/colori
     - title: tipografia
-      url: organizzare-i-contenuti/tipografia
+      url: componenti-lombardia/tipografia
+      status: 'to do'
+    - title: testi
+      url: componenti-lombardia/testo
+      status: 'to do'
     - title: icone
-      url: utilities/icone
+      url: componenti-lombardia/icone
+      status: 'to do'
     - title: header
       url: componenti-lombardia/header
     - title: footer
@@ -18,6 +23,9 @@
       url: componenti-lombardia/barra-utente
     - title: sidebar
       url: componenti-lombardia/sidebar
+    - title: wizard
+      url: componenti-lombardia/wizard
+      status: 'work in progress'
 
 - title: Componenti Singole
   pages:
@@ -65,8 +73,8 @@
     - title: Form
       url: esempi-lombardia/pag_form
     - title: Wizard
-      url: componenti/steppers
-      status: 'to do'
+      url: esempi-lombardia/pag_wizard
+      status: 'work in progress'
     - title: Sidebar
       url: esempi-lombardia/pag_sidebar
     - title: Profilo utente

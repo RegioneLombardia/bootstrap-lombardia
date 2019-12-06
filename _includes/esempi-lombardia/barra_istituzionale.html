@@ -25,7 +25,9 @@
 
             <a href="#">
               <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
-<!--              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block"> -->
+        {% if page.double-logo %}
+             <img src="{{ site.baseurl }}/dist/assets/img/logo-aria.png" alt="logo azienda regionale innovazione e acquisti" class="it25-header-logo d-none d-md-block">
+        {% endif %}
               <div class="it-brand-text">
                 ACRONIMO Nome applicativo
               </div>

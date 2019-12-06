@@ -1,8 +1,15 @@
   <div class="sidebar-wrapper">
     <h3 class="no_toc">Linee guida</h3>
+
     <div class="sidebar-linklist-wrapper">
       <div class="link-list-wrapper">
         <ul class="link-list">
+          <li>
+            <a class="list-item {% unless active == nil %} {{ active }}{% endunless %}" href="{{ site.baseurl }}/docs/componenti-lombardia/introduzione">
+              <span>Introduzione</span>
+            </a>
+          </li>
+
           {%- for group in site.data.linee-guida -%}
             {%- assign link = group.pages | first -%}
             {%- assign link_slug = link.title | slugify -%}
