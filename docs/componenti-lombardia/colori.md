@@ -21,10 +21,10 @@ toc: true
    </div>
 
 <br>
-{% capture callout %}
 
 ### Codici e classi
 
+{% capture callout %}
 #### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Codici e classi dei colori nella documentazione
 I codici esadecimali dei colori mostrati in **[Colori Custom]({{ site.baseurl }}/docs/utilities/colori-custom/)** sia per il colore primario che per i complementari e i triadici, spesso **non corrispondono al colore visualizzato**.  
 {% endcapture %}{% include callout.html content=callout type="warning" %}
