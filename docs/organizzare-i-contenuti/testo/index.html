@@ -12,14 +12,14 @@
 <title>Testo · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201912030849" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201912061534" rel="stylesheet">
 
 <!-- Documentation extras -->
 
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet">
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201912030849" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201912061534" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -103,7 +103,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.2.2/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.2.3/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -122,9 +122,15 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <nav class="collapse bd-links" id="bd-docs-nav">  <div class="sidebar-wrapper">
     <h3 class="no_toc">Linee guida</h3>
+
     <div class="sidebar-linklist-wrapper">
       <div class="link-list-wrapper">
-        <ul class="link-list"><li>
+        <ul class="link-list">
+          <li>
+            <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/introduzione">
+              <span>Introduzione</span>
+            </a>
+          </li><li>
               <a class="list-item large medium right-icon " href="#collapse-guida-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-1">
                 <span>Componenti Principali</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -134,20 +140,20 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                       <span>logo</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/utilities/colori-custom/">
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/colori/">
                       <span>colori</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/organizzare-i-contenuti/tipografia/">
-                      <span>tipografia</span></a>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/tipografia/">
+                      <span>tipografia</span><span class="badge badge-secondary text-white">to do</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/organizzare-i-contenuti/testo/">
-                      <span>testi</span></a>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/testo/">
+                      <span>testi</span><span class="badge badge-secondary text-white">to do</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/utilities/icone/">
-                      <span>icone</span></a>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/icone/">
+                      <span>icone</span><span class="badge badge-secondary text-white">to do</span></a>
                     <ul class="link-sublist"></ul>
                   </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/header/">
@@ -168,6 +174,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                   </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/sidebar/">
                       <span>sidebar</span></a>
+                    <ul class="link-sublist"></ul>
+                  </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/wizard/">
+                      <span>wizard</span><span class="badge badge-secondary text-white">work in progress</span></a>
                     <ul class="link-sublist"></ul>
                   </li></ul>
             </li><li>
@@ -620,9 +630,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <h3>Testo</h3>
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#allineamento-del-testo">Allineamento del testo</a></li>
+<li class="toc-entry toc-h2"><a href="#testo-per-esteso-e-overflow">Testo per esteso e overflow</a></li>
 <li class="toc-entry toc-h2"><a href="#trasformazione-del-testo">Trasformazione del testo</a></li>
 <li class="toc-entry toc-h2"><a href="#carattere-grassetto-e-corsivo">Carattere grassetto e corsivo</a></li>
-<li class="toc-entry toc-h2"><a href="#colore-del-testo">Colore del Testo</a></li>
+<li class="toc-entry toc-h2"><a href="#monospace">Monospace</a></li>
 </ul>
   </div>
 </div>
@@ -634,12 +645,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
           <p class="bd-lead">Documentazione e esempi di strumenti per il controllo dell’allineamento nelle aree di testo, dello stile del carattere e altro.</p>
           <h2 id="allineamento-del-testo">Allineamento del testo</h2>
 
-<p>Un testo deve essere composto con allineamento a sinistra.<br />
-Nei casi in cui si preveda del corpo testo a margine posto a sinistra, questo è allineato a destra.<br />
-L’allineamento giustificato e senza sillabazione è invece sempre da evitare per l’incongrua spaziatura delle parole e la minore leggibilità che comporta.</p>
-
-<!--
-Riallinea facilmente il contenuto dei componenti con le classi di allineamento testo.
+<p>Riallinea facilmente il contenuto dei componenti con le classi di allineamento testo.</p>
 
 <div class="bd-example">
 
@@ -647,8 +653,7 @@ Riallinea facilmente il contenuto dei componenti con le classi di allineamento t
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-justify"</span><span class="nt">&gt;</span>Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
-
-Per l'allineamento a sinistra, a destra e centrale sono disponibili classi che si adattano in base alla griglia utilizzata.
+<p>Per l’allineamento a sinistra, a destra e centrale sono disponibili classi che si adattano in base alla griglia utilizzata.</p>
 
 <div class="bd-example">
 
@@ -670,10 +675,9 @@ Per l'allineamento a sinistra, a destra e centrale sono disponibili classi che s
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-lg-left"</span><span class="nt">&gt;</span>Testo allineato a sinistra per dimensioni LG (large) o maggiori.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-xl-left"</span><span class="nt">&gt;</span>Testo allineato a sinistra per dimensioni XL (extra-large) o maggiori.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
+<h2 id="testo-per-esteso-e-overflow">Testo per esteso e overflow</h2>
 
-## Testo per esteso e overflow
-
-Previeni l'andare a capo del testo con la classe `.text-nowrap`.
+<p>Previeni l’andare a capo del testo con la classe <code class="highlighter-rouge">.text-nowrap</code>.</p>
 
 <div class="bd-example">
 
@@ -685,36 +689,34 @@ Previeni l'andare a capo del testo con la classe `.text-nowrap`.
   Questo testo oltrepassa il contenitore.
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-
-Per contenuti più lunghi puoi aggiungere la classe `.text-truncate` per troncare il testo con i punti di sospensione. **Necessita della classe `display: inline-block` oppure `display: block`**.
+<p>Per contenuti più lunghi puoi aggiungere la classe <code class="highlighter-rouge">.text-truncate</code> per troncare il testo con i punti di sospensione. <strong>Necessita della classe <code class="highlighter-rouge">display: inline-block</code> oppure <code class="highlighter-rouge">display: block</code></strong>.</p>
 
 <div class="bd-example">
 
-<!-- Block level - ->
+<!-- Block level -->
 <div class="row">
   <div class="col-2 text-truncate">
     Praeterea iter est quasdam res quas ex communi.
   </div>
 </div>
 
-<!-- Inline level - ->
+<!-- Inline level -->
 <span class="d-inline-block text-truncate" style="max-width: 150px;">
   Praeterea iter est quasdam res quas ex communi.
 </span>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Block level - -&gt;
-&lt;div class="row"&gt;
-  &lt;div class="col-2 text-truncate"&gt;
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Block level --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2 text-truncate"</span><span class="nt">&gt;</span>
     Praeterea iter est quasdam res quas ex communi.
-  &lt;/div&gt;
-&lt;/div&gt;
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
-&lt;!-- Inline level - -&gt;
-&lt;span class="d-inline-block text-truncate" style="max-width: 150px;"&gt;
+<span class="c">&lt;!-- Inline level --&gt;</span>
+<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-inline-block text-truncate"</span> <span class="na">style=</span><span class="s">"max-width: 150px;"</span><span class="nt">&gt;</span>
   Praeterea iter est quasdam res quas ex communi.
-&lt;/span&gt;</span></code></pre></figure>
+<span class="nt">&lt;/span&gt;</span></code></pre></figure>
 
--->
 <h2 id="trasformazione-del-testo">Trasformazione del testo</h2>
 
 <p>Trasforma il testo presente nei componenti con una delle classi per la scrittura in maiuscolo.</p>
@@ -749,11 +751,9 @@ Per contenuti più lunghi puoi aggiungere la classe `.text-truncate` per troncar
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-weight-light"</span><span class="nt">&gt;</span>Testo sottile.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"font-italic"</span><span class="nt">&gt;</span>Testo in corsivo.<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
-<!--
-## Monospace
+<h2 id="monospace">Monospace</h2>
 
-Formatta il testo con carattere a larghezza costante con la classe `.text-monospace`.
-
+<p>Formatta il testo con carattere a larghezza costante con la classe <code class="highlighter-rouge">.text-monospace</code>.</p>
 
 <div class="bd-example">
 
@@ -761,16 +761,6 @@ Formatta il testo con carattere a larghezza costante con la classe `.text-monosp
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"text-monospace"</span><span class="nt">&gt;</span>Testo monospace<span class="nt">&lt;/p&gt;</span></code></pre></figure>
 
--->
-
-<h2 id="colore-del-testo">Colore del Testo</h2>
-
-<p>Il colore del body text deve essere tale da garantire un rapporto di contrasto minimo con lo sfondo di 4,5:1 (AA) come stabilito dalle specifiche di accessibilità.<br />
-Ad esempio:</p>
-<ul>
-  <li>un testo nero su fondo bianco avrà un valore HEX compreso tra #000000 e #666666, oppure un’opacità tra il 100% e 60%;</li>
-  <li>un testo blu come ad esempio #001A33 può essere utilizzato fino ad un massimo di 70% di opacità.</li>
-</ul>
 
         </main>
       </div>
@@ -788,11 +778,11 @@ Ad esempio:</p>
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201912030849"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201912061534"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js" integrity="sha256-hIvIxeqhGZF+VVeM55k0mJvWpQ6gTkWk3Emc+NmowYA=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?201912030849"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?201912061534"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/EaselJS/1.0.2/easeljs.min.js"></script>
@@ -809,7 +799,7 @@ Ad esempio:</p>
     {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png", id:"cover-7"}
   ];
 </script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?201912030849"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?201912061534"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
