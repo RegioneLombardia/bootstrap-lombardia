@@ -1,0 +1,12 @@
+.nav-tabs {
+  //tabs with icon and text
+  &.nav-tabs-icon-text {
+    &.icon-right {
+      //icons
+      .icon {
+        margin-left: 8px;
+        margin-right: 0;
+      }
+    }
+  }
+}

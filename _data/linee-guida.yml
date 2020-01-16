@@ -1,83 +1,107 @@
 - title: Componenti Principali
   pages:
     - title: logo
-      url: componenti-lombardia/logo
-    - title: colori
-      url: componenti-lombardia/colori
-    - title: tipografia
-      url: componenti-lombardia/tipografia
-      status: 'to do'
-    - title: testi
-      url: componenti-lombardia/testo
-      status: 'to do'
-    - title: icone
-      url: componenti-lombardia/icone
-      status: 'to do'
+      url: componenti-principali/logo
     - title: header
-      url: componenti-lombardia/header
-    - title: footer
-      url: componenti-lombardia/footer
+      url: componenti-principali/header
     - title: menu orizzontale
-      url: componenti-lombardia/menu-orizzontale
+      url: componenti-principali/menu-orizzontale
     - title: barra utente
-      url: componenti-lombardia/barra-utente
+      url: componenti-principali/barra-utente
     - title: sidebar
-      url: componenti-lombardia/sidebar
-    - title: wizard
-      url: componenti-lombardia/wizard
-      status: 'work in progress'
+      url: componenti-principali/sidebar
+    - title: footer
+      url: componenti-principali/footer
 
-- title: Componenti Singole
+- title: Navigazione
   pages:
+    - title: megamenu
+      url: navigazione/megamenu
     - title: paginatore
-      url: componenti/paginazione
+      url: navigazione/paginatore
+    - title: link list
+      url: navigazione/link-list
     - title: breadcrumbs
-      url: menu-di-navigazione/breadcrumbs
-    - title: buttons
-      url: componenti/bottoni
-    - title: tab bar
-      url: componenti/tab
-    - title: radio button
-      url: form/radio-button
-    - title: check box
-      url: form/checkbox
-    - title: toggle
-      url: form/toggles
-    - title: input fields
-      url: form/input
-    - title: modal
-      url: componenti/modale
-    - title: tooltip
-      url: componenti/tooltip
-    - title: popover
-      url: componenti/popover
-    - title: calendario
-      url: form/input-calendario
-    - title: indicatori di progresso
-      url: componenti/progress-indicators
-    - title: accordion
-      url: componenti/collapse
-    - title: overlay
-      url: componenti/overlay
-    - title: card
-      url: componenti/card
-    - title: cookiebar
-      url: componenti/cookiebar
-    - title: carousel
-      url: componenti/carousel
+      url: navigazione/breadcrumbs
 
-- title: Schermate Composte
+- title: Utilità
+  pages:
+    - title: colori
+      url: utilità/colori
+    - title: tipografia
+      url: utilità/tipografia
+    - title: icone
+      url: utilità/icone
+    - title: ombre e angoli
+      url: utilità/ombre-angoli
+
+- title: Call to action
+  pages:
+    - title: bottoni
+      url: call-to-action/bottoni
+    - title: tab bar
+      url: call-to-action/tab-bar
+
+- title: Informazioni
+  pages:
+    - title: accordion
+      url: informazioni/accordion
+    - title: overlay
+      url: informazioni/overlay
+    - title: calendario
+      url: informazioni/calendario
+    - title: tabella
+      url: informazioni/tabella
+    - title: card
+      url: informazioni/card
+    - title: cookie bar
+      url: informazioni/cookiebar
+    - title: carousel
+#      url: informazioni/carousel
+      url: to-do
+      status: "to do"
+
+- title: Inserimento
+  pages:
+    - title: check box
+#     url: inserimento/check box
+      url: to-do
+      status: "to do"
+    - title: toggle
+#     url: inserimento/toggle
+      url: to-do
+      status: "to do"
+    - title: input fields
+#     url: inserimento/input-fields
+      url: to-do
+      status: "to do"
+    - title: wizard
+#     url: inserimento/wizard
+      url: to-do
+      status: "to do"
+    - title: modal, tooltip, popover
+#     url: inserimento/modal-tooltip-popover
+      url: to-do
+      status: "to do"
+    - title: progress bar
+#     url: inserimento/progress-bar
+      url: to-do
+      status: "to do"
+
+- title: Esempi
   pages:
     - title: Tabella complessa
-      url: esempi-lombardia/pag_tabella
+      url: esempi/pag_tabella
     - title: Form
-      url: esempi-lombardia/pag_form
+      url: esempi/pag_form
     - title: Wizard
-      url: esempi-lombardia/pag_wizard
+      url: esempi/pag_wizard
       status: 'work in progress'
     - title: Sidebar
-      url: esempi-lombardia/pag_sidebar
+      url: esempi/pag_sidebar
     - title: Profilo utente
-      url: esempi-lombardia/pag_profilo_utente
+      url: esempi/pag_profilo_utente
+    - title: Cookiebar
+      url: esempi/pag_cookiebar
     - title: Il codice
-      url: esempi-lombardia/introduzione
+      url: esempi/introduzione

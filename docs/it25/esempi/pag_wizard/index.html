@@ -1,0 +1,132 @@
+---
+layout: base
+title: Template pagina wizard
+---
+<style>
+.it25-wizard {
+/*  height: 100px; */
+  border: 2px solid green;
+/*  padding: 20px 6px; */
+/*  margin: 10px; */
+}
+.it25-wizard::after {
+  content: ' ';
+  width: 96%;
+  background-color: green;
+  position: absolute;
+  height: 4px;
+  right: 10px;
+  top: 41px;
+  z-index: -1;
+}
+.it-pin-wrapper {
+  display: flex;
+  align-items: center;
+/*  position: absolute; */
+  z-index: 5;
+  background-color: white;
+}
+.pin-icon {
+  border-radius: 48px;
+  width: 48px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  display: flex;
+  border: 2px solid lightgray;
+  background-color: white;
+}
+.active .pin-icon {
+  background-color: green;
+  border-color: green;
+}
+.confirmed .pin-icon {
+  border-color: green;
+}
+svg {
+  fill: lightgray!important;
+}
+.active svg {
+  fill: white!important;
+}
+.confirmed svg {
+  fill: green!important;
+}
+</style>
+
+<header class="it25-none">
+{% include esempi-lombardia/topbar.html %}
+{% include esempi-lombardia/barra_istituzionale.html %}
+{% include esempi-lombardia/barra_utente.html %}
+</<header>
+
+<main>
+
+
+
+
+  <div class="container p-5">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="primary-color">Cerca la sistemazione adatta a te</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h5>Queste informazioni ci aiuteranno a capire meglio le tue esigenze.</h5>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="it25-wizard">
+          <div class="d-flex justify-content-between py-3">
+            <div class="it-pin-wrapper confirmed">
+              <div class="pin-icon">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
+              </div>
+            </div>
+            <div class="it-pin-wrapper active">
+              <div class="pin-icon">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-calendar"></use></svg>
+              </div>
+            </div>
+            <div class="it-pin-wrapper">
+              <div class="pin-icon">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-list"></use></svg>
+              </div>
+            </div>
+            <div class="it-pin-wrapper">
+              <div class="pin-icon">
+                <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-card"></use></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-12">
+        <div class="d-flex justify-content-around">
+          <div class="shadow-sm p-3 mb-5 bg-white">
+            <div class="d-flex justify-content-center">
+              <svg class="icon icon-primary icon-xl"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-user"></use></svg>
+            </div>
+            <div class="text-center">Soluzione singola</div>
+          </div>
+          <div class="shadow-sm p-3 mb-5 bg-white">
+            <svg class="icon icon-primary icon-xl"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-user"></use></svg>
+            <svg class="icon icon-primary icon-xl"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-user"></use></svg>
+            <div class="text-center">In condivisione</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+{% include esempi-lombardia/footer_minimo.html %}

@@ -6,7 +6,7 @@
           span {
             background: $primary-a2;
           }
-        }        
+        }
         &.curDay,
         &.curMonth,
         &.curYear {
@@ -25,8 +25,15 @@
             font-weight: 700;
           }
         }
-        
-      }    
+
+      }
     }
+  }
+}
+
+.it-datepicker-wrapper {
+  .datepicker-calendar {
+    min-width: 280px;
+    max-width: 350px;
   }
 }

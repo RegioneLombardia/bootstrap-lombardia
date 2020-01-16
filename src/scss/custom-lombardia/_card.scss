@@ -1,0 +1,37 @@
+.card {
+  border: $card-border-width solid $card-border-color;
+  border-radius: 4px;
+  .card-img-top {
+     border-top-left-radius: 3px;
+     border-top-right-radius: 3px;
+  }
+  .card-header {
+    background-color: rgba($black, .03);
+    font-weight: bold;
+    padding: 12px 24px;
+  }
+  .card-tag {
+    color: $primary;
+    border: 1px solid $primary;
+  }
+  .card-body {
+    .category-top {
+      text-transform: unset;
+    }
+    .card-title {
+      color: inherit;
+    }
+    .card-text {
+      color: unset;
+      font-family: unset;
+      font-size: unset;
+      line-height: unset;
+    }
+  }
+  .card-link {
+    text-decoration: underline;
+  }
+  &:after {
+    content: none;
+  }
+}

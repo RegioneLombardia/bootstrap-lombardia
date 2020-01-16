@@ -7,12 +7,12 @@ redirect_from:
   - /docs/
 toc: true
 title: Introduzione
-description: Come usare Bootstrap Lombardia nel tuo progetto
+description: Come usare Bootstrap Regione Lombardia nel tuo progetto
 ---
 
 ## Caricare la libreria
 
-Per utilizzare il codice compilato di Bootstrap Italia nel tuo progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui: 
+Per utilizzare il codice compilato di {{ site.data.short.bl }} nel tuo progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui:
 
 <!--
 <a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
@@ -30,9 +30,9 @@ Per utilizzare il codice compilato di Bootstrap Italia nel tuo progetto, è suff
 La versione più recente tra le [release di progetto](https://github.com/RegioneLombardia/bootstrap-lombardia/releases) contiene anche tutti i miglioramenti e le correzioni disponibili fino ad oggi.
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
-Se preferisci usare i file sorgente di Bootstrap Lombardia nel tuo progetto attraverso il package manager **npm**, puoi fare riferimento a [queste indicazioni]({{ site.baseurl }}/docs/come-iniziare/introduzione#utilizzo-come-dipendenza).
+Se preferisci usare i file sorgente di {{ site.data.short.bl }} nel tuo progetto attraverso il package manager **npm**, puoi fare riferimento a [queste indicazioni]({{ site.baseurl }}/docs/come-iniziare/introduzione#utilizzo-come-dipendenza).
 
-Le librerie Javascript e CSS di Bootstrap Lombardia personalizzano e comprendono anche il codice originale di **Bootstrap {{ site.bootstrap_version }}**, ereditandone quindi tutte i selettori, le funzionalità, ecc., che sono consultabili al sito di Bootstrap stesso.
+Le librerie Javascript e CSS di {{ site.data.short.bl }} personalizzano e comprendono anche il codice originale di **Bootstrap {{ site.bootstrap_version }}**, ereditandone quindi tutte i selettori, le funzionalità, ecc., che sono consultabili al sito di Bootstrap stesso.
 
 
 Di seguito le informazioni per l'utilizzo dei singoli file.
@@ -129,7 +129,7 @@ In breve, si dovrebbe ottenere qualcosa di simile a ciò che segue:
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="./bootstrap-lombardia.min.css">
   </head>
@@ -141,19 +141,19 @@ In breve, si dovrebbe ottenere qualcosa di simile a ciò che segue:
 </html>
 {% endhighlight %}
 
-Questo è tutto ciò che è sufficiente per avere a disposizione le funzionalità e gli stili di Bootstrap Lombardia.
+Questo è tutto ciò che è sufficiente per avere a disposizione le funzionalità e gli stili di {{ site.data.short.bl }}.
 
 ### Altri esempi
 
 Assieme a questa documentazione, si possono consultare una vasta quantità di esempi, consultabili sia alla sezione [esempi]({{ site.baseurl }}/docs/esempi/) e [progetti]({{ site.baseurl }}/docs/progetti/) di questo sito, che [sul sito di Bootstrap](https://getbootstrap.com/docs/{{ site.bootstrap_minor }}/examples/), con i quali è possibile iniziare a personalizzare la tua pagina semplicemente copiando il loro codice sorgente.
 
-Il codice sorgente di tali esempi si può trovare anche nel repository di Bootstrap Lombardia, nella [cartella `docs/esempi/`](https://github.com/RegioneLombardia/bootstrap-lombardia/tree/master/docs/esempi).
+Il codice sorgente di tali esempi si può trovare anche nel repository di {{ site.data.short.bl }}, nella [cartella `docs/esempi/`](https://github.com/RegioneLombardia/bootstrap-lombardia/tree/master/docs/esempi).
 
 Tra i [progetti]({{ site.baseurl }}/docs/progetti/) si possono trovare molti riferimenti a progetti terzi che fanno uso di Bootstrap Italia, come i temi per alcuni CMS, generatori di siti statici e framework per il web.
 
 ## Utilizzo come dipendenza
 
-Alternativamente, se si utilizza [Webpack](https://webpack.github.io/) o altri module bundler per l'inclusione di librerie esterne attraverso `npm`, è possibile aggiungere Bootstrap Lombardia come dipendenza con il seguente comando:
+Alternativamente, se si utilizza [Webpack](https://webpack.github.io/) o altri module bundler per l'inclusione di librerie esterne attraverso `npm`, è possibile aggiungere {{ site.data.short.bl }} come dipendenza con il seguente comando:
 
 {% highlight sh %}
 npm i bootstrap-lombardia --save
@@ -161,7 +161,7 @@ npm i bootstrap-lombardia --save
 
 ## Impostazioni globali
 
-Il framework Bootstrap, e di conseguenza il tema Bootstrap Lombardia, utilizza e richiede alcune impostazioni globali di cui è bene essere al corrente durante lo sviluppo, che tendono *normalizzare* gli stili tra i vari browser. Di seguito alcune di esse.
+Il framework Bootstrap, e di conseguenza il tema {{ site.data.short.bl }}, utilizza e richiede alcune impostazioni globali di cui è bene essere al corrente durante lo sviluppo, che tendono *normalizzare* gli stili tra i vari browser. Di seguito alcune di esse.
 
 ### Doctype HTML5
 
@@ -200,7 +200,7 @@ Si possono trovare dettagli aggiuntivi alla [pagina corrispondente](https://getb
 
 ### Reboot
 
-Infine, per _normalizzare_ alcuni comportamenti cross-browser, Bootstrap Lombardia eredita da Bootstrap il cosiddetto "[Reboot]({{ site.baseurl }}/docs/organizzare-i-contenuti/introduzione/#reboot)", una serie di regole CSS che correggono inconsistenze tra browsers e dispositivi.
+Infine, per _normalizzare_ alcuni comportamenti cross-browser, {{ site.data.short.bl }} eredita da Bootstrap il cosiddetto "[Reboot]({{ site.baseurl }}/docs/organizzare-i-contenuti/introduzione/#reboot)", una serie di regole CSS che correggono inconsistenze tra browsers e dispositivi.
 
 ---
 

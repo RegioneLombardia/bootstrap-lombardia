@@ -1,9 +1,12 @@
 <nav class="collapse bd-links" id="bd-docs-nav">
   {%- assign page_slug = page.url | split: '/' | last -%}
 
-  {% include linee-guida-sidebar.html %}
-  
   <div class="sidebar-wrapper">
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="{{ site.baseurl }}/docs/it25/introduzione">Linee Guida </a></span>
+      <svg class="icon icon-primary"><use xlink:href="/dist/svg/sprite.svg#it-external-link"></use></svg>
+    </button>
+
     <h3 class="no_toc">Documentazione</h3>
     <div class="sidebar-linklist-wrapper">
       <div class="link-list-wrapper">
@@ -23,7 +26,6 @@
               {% if group.pages == nil %}
                 <a class="list-item active" href="{{ site.baseurl }}/docs/{{ group_slug }}/"><span>{{ group.title }}</span></a>
               {% else %}
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon {% unless active == nil %}active{% endunless %}" href="#collapse-{{ forloop.index }}" data-toggle="collapse" aria-expanded="{{expanded}}" aria-controls="collapse-{{ forloop.index }}">
                 <span>{{ group.title }}</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -51,4 +53,5 @@
       </div>
     </div>
   </div>
+
 </nav>
