@@ -12,14 +12,14 @@
 <title>Toolbar · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?201912061608" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202001161547" rel="stylesheet">
 
 <!-- Documentation extras -->
 
 
 <link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet">
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?201912061608" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202001161547" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -82,14 +82,20 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
       </div>
     </a>
 
-    <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
+    <header style="background-color: #003254;" class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
   <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
-      <div class="d-flex flex-row">
-        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="36px" alt="logo regione lombardia" class="d-none d-md-block">
-        <div class="d-flex flex-column pl-3 pl-sm-4">
-          <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
-          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Italia Homepage" title="Bootstrap Italia Homepage">
+      <div class="d-flex flex-row"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 74"
+  
+   height="48"
+  >
+  <g fill="#FFF">
+    <path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"></path>
+  </g>
+</svg>
+<div class="d-flex flex-column pl-3 pl-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Italia</h1>
+          <h2 class="bd-logo-subtitle">Il tema Bootstrap 4 per <span class="d-none d-sm-inline">lo sviluppo di applicazioni web per </span>la PA</h2>
         </div>
       </div>
     </a>
@@ -100,19 +106,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     </button>
     
 
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-      <li class="nav-item pr-2">
-        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.2.3/bootstrap-lombardia.zip" aria-label="Download">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
-        </a>
-      </li>
-      <li class="nav-item pr-2">
-        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
-        </a>
-      </li>
-    </ul>
+    <div class="navbar-brand">
+      <strong>Copia della Documentazione di Bootstrap Italia ricompilata per Regione Lombardia</strong>
+    </div>
+
   </div>
 </header>
 
@@ -120,187 +117,17 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <nav class="collapse bd-links" id="bd-docs-nav">  <div class="sidebar-wrapper">
-    <h3 class="no_toc">Linee guida</h3>
+          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bootstrap-lombardia/docs/it25/introduzione">Linee Guida </a></span>
+      <svg class="icon icon-primary"><use xlink:href="/dist/svg/sprite.svg#it-external-link"></use></svg>
+    </button>
 
-    <div class="sidebar-linklist-wrapper">
-      <div class="link-list-wrapper">
-        <ul class="link-list">
-          <li>
-            <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/introduzione">
-              <span>Introduzione</span>
-            </a>
-          </li><li>
-              <a class="list-item large medium right-icon " href="#collapse-guida-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-1">
-                <span>Componenti Principali</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-              </a>
-              <ul class="link-sublist collapse " id="collapse-guida-1"><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/logo/">
-                      <span>logo</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/colori/">
-                      <span>colori</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/tipografia/">
-                      <span>tipografia</span><span class="badge badge-secondary text-white">to do</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/testo/">
-                      <span>testi</span><span class="badge badge-secondary text-white">to do</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/icone/">
-                      <span>icone</span><span class="badge badge-secondary text-white">to do</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/header/">
-                      <span>header</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/footer/">
-                      <span>footer</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/menu-orizzontale/">
-                      <span>menu orizzontale</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/barra-utente/">
-                      <span>barra utente</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/sidebar/">
-                      <span>sidebar</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti-lombardia/wizard/">
-                      <span>wizard</span><span class="badge badge-secondary text-white">work in progress</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li></ul>
-            </li><li>
-              <a class="list-item large medium right-icon " href="#collapse-guida-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-2">
-                <span>Componenti Singole</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-              </a>
-              <ul class="link-sublist collapse " id="collapse-guida-2"><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/paginazione/">
-                      <span>paginatore</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/breadcrumbs/">
-                      <span>breadcrumbs</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/bottoni/">
-                      <span>buttons</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tab/">
-                      <span>tab bar</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/form/radio-button/">
-                      <span>radio button</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/form/checkbox/">
-                      <span>check box</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/form/toggles/">
-                      <span>toggle</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/form/input/">
-                      <span>input fields</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/modale/">
-                      <span>modal</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
-                      <span>tooltip</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/popover/">
-                      <span>popover</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/form/input-calendario/">
-                      <span>calendario</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/progress-indicators/">
-                      <span>indicatori di progresso</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/collapse/">
-                      <span>accordion</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/overlay/">
-                      <span>overlay</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/card/">
-                      <span>card</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/cookiebar/">
-                      <span>cookiebar</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/carousel/">
-                      <span>carousel</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li></ul>
-            </li><li>
-              <a class="list-item large medium right-icon " href="#collapse-guida-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-3">
-                <span>Schermate Composte</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-              </a>
-              <ul class="link-sublist collapse " id="collapse-guida-3"><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_tabella/">
-                      <span>Tabella complessa</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_form/">
-                      <span>Form</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_wizard/">
-                      <span>Wizard</span><span class="badge badge-secondary text-white">work in progress</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_sidebar/">
-                      <span>Sidebar</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/pag_profilo_utente/">
-                      <span>Profilo utente</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/esempi-lombardia/introduzione/">
-                      <span>Il codice</span></a>
-                    <ul class="link-sublist"></ul>
-                  </li></ul>
-            </li></ul>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="sidebar-wrapper">
     <h3 class="no_toc">Documentazione</h3>
     <div class="sidebar-linklist-wrapper">
       <div class="link-list-wrapper">
         <ul class="link-list"><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1">
                 <span>Come iniziare</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -324,7 +151,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-2">
                 <span>Organizzare gli spazi</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -369,7 +195,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-3">
                 <span>Organizzare i contenuti</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -411,7 +236,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon active" href="#collapse-4" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-4">
                 <span>Menu di navigazione</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -456,7 +280,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-5">
                 <span>Componenti</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -549,7 +372,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-6" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-6">
                 <span>Form</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -588,7 +410,6 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
               
             </li><li>
               
-              <!-- One:usare ID -->
               <a class="list-item large medium right-icon " href="#collapse-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-7">
                 <span>Utilities</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
@@ -620,6 +441,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
       </div>
     </div>
   </div>
+
 </nav>
 
         </div>
@@ -2335,11 +2157,11 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?201912061608"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202001161547"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.1/clipboard.min.js" integrity="sha256-hIvIxeqhGZF+VVeM55k0mJvWpQ6gTkWk3Emc+NmowYA=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" integrity="sha256-+u54FaX9J+k40eAcg5K2YzICSQjrEYBI9gju5nE3HfY=" crossorigin="anonymous"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?201912061608"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202001161547"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tweenjs/1.0.2/tweenjs.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/EaselJS/1.0.2/easeljs.min.js"></script>
@@ -2356,7 +2178,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png", id:"cover-7"}
   ];
 </script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?201912061608"></script>
+<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?202001161547"></script>
 <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.js"></script>
 <script>
   docsearch({
