@@ -63,14 +63,12 @@
 
 - title: Inserimento
   pages:
+    - title: radio buttons
+      url: inserimento/radio-buttons
     - title: check box
-#     url: inserimento/check box
-      url: to-do
-      status: "to do"
+      url: inserimento/check-box
     - title: toggle
-#     url: inserimento/toggle
-      url: to-do
-      status: "to do"
+      url: inserimento/toggle
     - title: input fields
 #     url: inserimento/input-fields
       url: to-do
@@ -79,14 +77,12 @@
 #     url: inserimento/wizard
       url: to-do
       status: "to do"
-    - title: modal, tooltip, popover
-#     url: inserimento/modal-tooltip-popover
-      url: to-do
-      status: "to do"
+    - title: popover
+      url: inserimento/popover
+    - title: tooltip
+      url: inserimento/tooltip
     - title: progress bar
-#     url: inserimento/progress-bar
-      url: to-do
-      status: "to do"
+      url: inserimento/progress-bar
 
 - title: Esempi
   pages:

@@ -35,3 +35,8 @@ $box-shadow-lg:               1px 8px 24px 1px rgba(0, 0, 0, 0.35) !default;
 
 // Card
 $card-p-color: $primary;
+
+// Tooltip
+$tooltip-arrow-height:              .5rem !default;
+$tooltip-bg:                        $gray-primary;
+$tooltip-arrow-color:               $tooltip-bg !default;
