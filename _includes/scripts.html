@@ -49,6 +49,7 @@
 {%- endif -%}
 
 {%- if page.layout == "base" -%}
+{%- unless page.url contains "it25" -%}
 <!-- Notification per tornare alla pagina principale -->
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">
@@ -71,4 +72,5 @@
     notificationShow('notification-esempi')
   })
 </script>
+{%- endunless -%}
 {%- endif -%}

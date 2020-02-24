@@ -53,7 +53,7 @@ $(function() {
       testUserBar();
       shrinkHeader();
     }
-    $(window).on('load', initHeader);
+    initHeader();
     $(window).on('scroll', shrinkHeader);
     $(window).on('resize', shrinkHeader);
     $('.it-search-wrapper').on('show.bs.collapse', setSearchContainerPosition);

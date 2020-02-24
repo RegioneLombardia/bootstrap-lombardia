@@ -14,11 +14,18 @@ toc: yes
 
 
 ## Dimensioni
+La dimensione di un bottone va adeguata:
+1. Al tipo di **schermo** sul quale viene visualizzato  
+su uno smartphone non deve occupare troppo spazio ma nemmeno essere troppo piccolo da risultare difficile da cliccare utilizzando il pollice
+2. All'**importanza dell'azione** che il bottone compie  
+maggiore dimensione per maggiore importanza.
+
+
 Le *{{ site.data.short.rl-guide }}* prevedono **tre dimensioni principali** di bottoni: **small**, **medium**, e **large**, corrispondenti alle classi `btn-sm`, `btn` e `btn-lg`.
 
 Il bottone di *due righe* mostrato è stato ottenuto fissandone la larghezza, cosa che però ne limita la reponsività.
 
-Il testo all'interno di un bottone va su più righe qualora non ci sia abbastanza spazio orizzontale.  
+Il testo all'interno di un bottone va automaticamente su **più righe** qualora non ci sia **abbastanza spazio orizzontale**.  
 Si raccomanda quindi di usare **diciture essenziali** per i bottoni, ponendo all'esterno di essi il testo necessario a chiarire l'azione eseguita.
 
 
@@ -66,7 +73,22 @@ Si raccomanda quindi di usare **diciture essenziali** per i bottoni, ponendo all
 <button type="button" class="btn btn-primary btn-lg" style="max-width: 160px;">Lorem ipsum dolor sit</button>
 {% endhighlight %}
 
+
+
 ## Gerarchia
+
+1. Bottone Primario  
+Una videata dovrebbe contenere un **unico** bottone primario, che va utilizzato per richiamare l'attenzione dell'utente sull'**azione principale** da compiere, quella che costituisce lo lo scopo della videata stessa.
+
+2. Bottone Outline  
+Può essere utilizzato per:
+* la **negazione** dell'azione stessa (es. *Annulla* o *Torna Indietro*)
+* un'**azione complementare** come l'aggiunta di dati prima di procedere
+* la richiesta di ulteriori informazioni (il classico bottone *Per saperne di più*).
+
+3. Bottoni Secondari  
+Servono per eseguire azioni secondarie e normalmente non necessarie (es. la configurazione di speciali opzioni).
+
 {% capture example %}
 <div class="it25-btn-example">
   <button type="button" class="btn btn-primary">Primary</button>
@@ -90,7 +112,26 @@ Normalmente la larghezza del bottone è **determinata dalla lunghezza della *lab
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 
-## Mini-button
+## Posizione
+I bottoni devono essere posizionati dove l'**utente** si aspetta di trovarli.  
+* I pulsanti di **Conferma**, **Annulla**, **Torna Indietro** vanno posti **in fondo alla pagina** perché l'utente deve leggere tutto il contenuto della pagina prima di decidere di premere l'uno o l'altro.
+* I pulsanti di richiesta **informazioni** o di inserimento di ulteriori **opzioni** è bene siano **vicini ai dati** cui quelle informazioni si riferiscono o che quelle opzioni vanno ad integrare.
+
+
+
+## Bottoni speciali
+
+### Danger
+Può essere utilizzato solo per azioni che comportano la **cancellazione non reversibile di dati**, per indurre l'utente a riflettere prima di premerlo.
+{% capture example %}
+<div class="it25-btn-example">
+  <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-outline-danger">Danger outline</button>
+</div>
+{% endcapture %}{% include example.html content=example %}
+
+
+### Mini-button
 Esiste anche la classe `btn-xs` per creare bottoni di dimensioni molto piccole.  
 **Da utilizzare con attenzione**, in quanto può rendere il bottone difficile da premere con le dita su smartphone.
 
@@ -100,7 +141,7 @@ Esiste anche la classe `btn-xs` per creare bottoni di dimensioni molto piccole.
 {% endcapture %}{% include example.html content=example %}
 
 
-## Tag
+### Tag
 **Da utilizzare con attenzione**, per il motivo di cui sopra, anche il bottone arrotondato di minime dimensioni ottenibile con la classe `btn-tag`.
 
 {% capture example %}
@@ -323,6 +364,6 @@ La *dicitura*, **nel bottone con icona**, **deve sempre essere compresa in un ta
 
 {% capture callout %}
 ####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
+Il contenuto di questa pagina si riferisce ai seguenti punti della {{ site.data.short.dt }}:
 - **[Bottoni]({{ site.baseurl }}/docs/componenti/bottoni/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}

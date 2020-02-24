@@ -4,7 +4,7 @@ title: Introduzione
 toc: true
 ---
 
-Bootstrap Regione Lombardia è una customizzazione di Boostrap Italia per **adeguarlo alle Linee Guida per il design degli applicativi di Regione Lombardia**.
+Bootstrap Regione Lombardia è una customizzazione di Boostrap Italia per **adeguarlo alle {{ site.data.short.rl-guide }}**.
 
 E' quindi un **[fork del progetto Bootstrap Italia](https://github.com/italia/bootstrap-italia/network/members)**, presente su GitHub, da cui eredita i componenti, le funzionalità e tutti i relativi aggiornamenti e correzioni.
 
@@ -24,8 +24,8 @@ Per quanto riguarda l'utilizzo di CSS, Javascript, fonts, icone compresi nel fil
 
 
 ### Documentazione
-La **Documentazione tecnica** completa cui fare riferimento per l'utilizzo dei componenti è quella **originale di Bootstrap Italia**, **[ricompilata per Regione Lombardia]({{ site.baseurl }}/docs/informazioni/)**.    
+La **{{ site.data.short.dt }}** completa cui fare riferimento per l'utilizzo dei componenti è quella **[originale ricompilata per Regione Lombardia]({{ site.baseurl }}/docs/informazioni/)**.    
 
-Per rispettare le Linee Guida della Regione Lombardia e la sua Brand Identity, **va utilizzato solo un sottoinsieme** sia delle varianti cromatiche e tipografiche, che dei componenti, che si hanno a disposizione in quanto ereditati dalla libreria originaria.
+Per rispettare le **[{{ site.data.short.rl-guide }}]({{ site.url }}/docs/it25/download/Linee_guida_Applicativi.pdf)** e il **[{{ site.data.short.ivd }}]({{ site.url }}/docs/it25/download/Identita_visiva_digitale_RL.pdf)**, **va utilizzato solo un sottoinsieme** sia delle varianti cromatiche e tipografiche, che dei componenti, che si hanno a disposizione in quanto ereditati dalla libreria originaria.
 
-La qui presente **guida di Bootstrap Regione Lombardia** indica quali componenti utilizzare, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostra una serie di esempi pratici (le *Schermate Composte*), che possono essere utilizzati come base da cui partire.
+La qui presente **guida di Bootstrap Regione Lombardia** indica quali componenti utilizzare, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostra una serie di **Esempi** che possono essere utilizzati come base da cui partire.

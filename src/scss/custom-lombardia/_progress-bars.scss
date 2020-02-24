@@ -1,7 +1,10 @@
 .progress {
-  height: 10px;
-  border-radius: 5px;
-}
-.progress-bar {
-  border-radius: 5px;
+  &.progress-lg {
+    height: 10px;
+    border-radius: 5px;
+
+    .progress-bar {
+      border-radius: 5px;
+    }
+  }
 }

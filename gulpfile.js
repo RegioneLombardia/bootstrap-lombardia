@@ -63,6 +63,7 @@ const Paths = {
     'src/js/plugins/rating.js',
     'src/js/plugins/dimmer.js',
     'src/js/plugins/it25-header.js',
+    'src/js/plugins/it25-forms.js',
     'src/js/' + pkg.name + '.js',
   ],
 

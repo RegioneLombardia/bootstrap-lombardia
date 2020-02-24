@@ -63,20 +63,16 @@
 
 - title: Inserimento
   pages:
+    - title: input fields
+      url: inserimento/input-fields
     - title: radio buttons
       url: inserimento/radio-buttons
     - title: check box
       url: inserimento/check-box
     - title: toggle
       url: inserimento/toggle
-    - title: input fields
-#     url: inserimento/input-fields
-      url: to-do
-      status: "to do"
     - title: wizard
-#     url: inserimento/wizard
-      url: to-do
-      status: "to do"
+      url: inserimento/wizard
     - title: popover
       url: inserimento/popover
     - title: tooltip
@@ -92,7 +88,6 @@
       url: esempi/pag_form
     - title: Wizard
       url: esempi/pag_wizard
-      status: 'work in progress'
     - title: Sidebar
       url: esempi/pag_sidebar
     - title: Profilo utente
