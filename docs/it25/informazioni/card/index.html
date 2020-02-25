@@ -12,11 +12,11 @@
 <title>Card · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202001240938" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202002251608" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202001240938" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202002251608" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -80,7 +80,8 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     </a>
 
     <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
-  <div class="container">
+  <!--div class="container"-->
+  <div class="container-fluid">
     <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
         <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
@@ -96,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.1/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.2/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -251,6 +252,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                   <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
                 </a>
                 <ul class="link-sublist collapse " id="collapse-guida-6"><li>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/">
+                        <span>input fields</span></a>
+                      <ul class="link-sublist"></ul>
+                    </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
                         <span>radio buttons</span></a>
                       <ul class="link-sublist"></ul>
@@ -263,12 +268,8 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                         <span>toggle</span></a>
                       <ul class="link-sublist"></ul>
                     </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/to-do/">
-                        <span>input fields</span><span class="badge badge-secondary text-white">to do</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/to-do/">
-                        <span>wizard</span><span class="badge badge-secondary text-white">to do</span></a>
+                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/wizard/">
+                        <span>wizard</span></a>
                       <ul class="link-sublist"></ul>
                     </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/popover/">
@@ -298,7 +299,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                       <ul class="link-sublist"></ul>
                     </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">
-                        <span>Wizard</span><span class="badge badge-secondary text-white">work in progress</span></a>
+                        <span>Wizard</span></a>
                       <ul class="link-sublist"></ul>
                     </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">
@@ -818,6 +819,6 @@ E’ bene inserire 2 o 3 card in ognuno, e possibilmente di tipologia omogenea, 
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202001240938"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202002251608"></script>
   </body>
 </html>

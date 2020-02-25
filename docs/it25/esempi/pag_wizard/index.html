@@ -12,11 +12,11 @@
 <title>Template pagina wizard · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202001240938" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202002251608" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202001240938" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202002251608" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -73,60 +73,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
   </head>
   <body>
-    <style>
-.it25-wizard {
-/*  height: 100px; */
-  border: 2px solid green;
-/*  padding: 20px 6px; */
-/*  margin: 10px; */
-}
-.it25-wizard::after {
-  content: ' ';
-  width: 96%;
-  background-color: green;
-  position: absolute;
-  height: 4px;
-  right: 10px;
-  top: 41px;
-  z-index: -1;
-}
-.it-pin-wrapper {
-  display: flex;
-  align-items: center;
-/*  position: absolute; */
-  z-index: 5;
-  background-color: white;
-}
-.pin-icon {
-  border-radius: 48px;
-  width: 48px;
-  height: 48px;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  display: flex;
-  border: 2px solid lightgray;
-  background-color: white;
-}
-.active .pin-icon {
-  background-color: green;
-  border-color: green;
-}
-.confirmed .pin-icon {
-  border-color: green;
-}
-svg {
-  fill: lightgray!important;
-}
-.active svg {
-  fill: white!important;
-}
-.confirmed svg {
-  fill: green!important;
-}
-</style>
-
-<header class="it25-none">
+    <header class="it25-none">
 <div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
     <div class="row">
@@ -239,70 +186,90 @@ svg {
 </<header>
 
 <main>
-
-
-
-
-  <div class="container p-5">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h1 class="primary-color">Cerca la sistemazione adatta a te</h1>
-      </div>
+  <div class="container py-3">
+    <div class="text-center my-3">
+      <h1 class="primary-color">Cerca la sistemazione adatta a te</h1>
     </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <h5>Queste informazioni ci aiuteranno a capire meglio le tue esigenze.</h5>
-      </div>
+    <div class="text-center my-2">
+      <h5>Queste informazioni ci aiuteranno a capire meglio le tue esigenze.</h5>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        <div class="it25-wizard">
-          <div class="d-flex justify-content-between py-3">
-            <div class="it-pin-wrapper confirmed">
-              <div class="pin-icon">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
-              </div>
-            </div>
-            <div class="it-pin-wrapper active">
-              <div class="pin-icon">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"></use></svg>
-              </div>
-            </div>
-            <div class="it-pin-wrapper">
-              <div class="pin-icon">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-list"></use></svg>
-              </div>
-            </div>
-            <div class="it-pin-wrapper">
-              <div class="pin-icon">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-card"></use></svg>
-              </div>
-            </div>
-          </div>
+    <div class="steppers mt-5">
+      <div class="it25-wizard">
+  <ul>
+    <li class="it-pin-wrapper confirmed">
+      <span class="sr-only">Scelta periodo</span>
+      <span class="sr-only">Confermato</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Periodo">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper active">
+      <span class="sr-only">Tipologia alloggio</span>
+      <span class="sr-only">Attivo</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Tipologia">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-calendar"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper error">
+      <span class="sr-only">Optionals</span>
+      <span class="sr-only">Errore</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Optionals">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-list"></use></svg>
+      </span>
+    </li>
+    <li class="it-pin-wrapper">
+      <span class="sr-only">Pagamento</span>
+      <span class="pin-icon" data-toggle="tooltip" data-placement="top" title="Pagamento">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-card"></use></svg>
+      </span>
+    </li>
+  </ul>
+</div>
+
+
+      <div class="steppers-content" aria-live="polite">
+        <div class="text-center mt-5 mb-3">
+          <h3 class="primary-color">Che cosa stai cercando?</h3>
         </div>
-      </div>
-    </div>
-
-
-    <div class="row">
-      <div class="col-12">
         <div class="d-flex justify-content-around">
-          <div class="shadow-sm p-3 mb-5 bg-white">
+          <div class="shadow-sm p-3 mb-3 bg-white border border-light" style="width: 12rem;">
+              <div class="d-flex justify-content-center">
+                <svg class="icon icon-primary icon-xl"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
+              </div>
+              <div class="form-check">
+                <input name="gruppo1" type="radio" id="radio1">
+                <label for="radio1">Soluzione singola</label>
+              </div>
+          </div>
+          <div class="shadow-sm p-3 mb-3 bg-white border border-light" style="width: 12rem;">
             <div class="d-flex justify-content-center">
               <svg class="icon icon-primary icon-xl"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
+              <svg class="icon icon-primary icon-xl"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
             </div>
-            <div class="text-center">Soluzione singola</div>
-          </div>
-          <div class="shadow-sm p-3 mb-5 bg-white">
-            <svg class="icon icon-primary icon-xl"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
-            <svg class="icon icon-primary icon-xl"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use></svg>
-            <div class="text-center">In condivisione</div>
+            <div class="form-check">
+              <input name="gruppo1" type="radio" id="radio2">
+              <label for="radio2">In condivisione</label>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <nav class="steppers-nav">
+  <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-prev">
+    <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-chevron-left"></use></svg>Indietro
+  </button>
+  <ul class="steppers-dots it25">
+    <li class="done"><span class="sr-only">Step 1 di 6 - Confermato</span></li>
+    <li class="done"><span class="sr-only">Step 2 di 6 - Confermato</span></li>
+    <li class="done"><span class="sr-only">Step 3 di 6 - Confermato</span></li>
+    <li><span class="sr-only">Step 4 di 6</span></li>
+    <li><span class="sr-only">Step 5 di 6</span></li>
+    <li><span class="sr-only">Step 6 di 6</span></li>
+  </ul>
+  <button type="button" class="btn btn-primary btn-sm steppers-btn-save">Conferma</button>
+</nav>
 
+    </div> <!-- end steppers -->
   </div>
 </main>
 
@@ -326,31 +293,18 @@ svg {
 </footer>
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    });
+  })
+</script>
+
     
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202001240938"></script><!-- Notification per tornare alla pagina principale -->
-<div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
-  <h5 id="notification-esempi-title">
-    <svg class="icon">
-      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle"></use></svg>Esempio di utilizzo
-  </h5>
-  <p>
-    <a href="/bootstrap-lombardia/docs/esempi/">Torna alla pagina principale degli esempi</a>
-  </p>
-  <button type="button" class="btn notification-close">
-    <svg class="icon">
-      <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close"></use>
-    </svg>
-    <span class="sr-only">Chiudi notifica: Titolo notification</span>
-  </button>
-</div>
-
-<script>
-  $(document).ready(function() {
-    notificationShow('notification-esempi')
-  })
-</script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202002251608"></script>
   </body>
 </html>
