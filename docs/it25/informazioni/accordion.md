@@ -101,7 +101,7 @@ Aggiungendo ad ogni elemento `.collapse` l'attributo `data-parent` con il relati
     </div>
     <div id="accordion1" class="collapse" role="tabpanel" aria-labelledby="headingA1" data-parent="#accordionDiv1">
       <div class="collapse-body">
-        {% include esempi-lombardia/account_posta.html %}
+        {% include esempi-lombardia/account_posta2.html %}
       </div>
     </div>
     <div class="collapse-header" id="headingA2">
@@ -111,7 +111,7 @@ Aggiungendo ad ogni elemento `.collapse` l'attributo `data-parent` con il relati
     </div>
     <div id="accordion2" class="collapse" role="tabpanel" aria-labelledby="headingA2" data-parent="#accordionDiv1">
       <div class="collapse-body">
-        {% include esempi-lombardia/indirizzo.html %}
+        {% include esempi-lombardia/indirizzo2.html %}
       </div>
     </div>
     <div class="collapse-header" id="headingA3">
@@ -121,7 +121,7 @@ Aggiungendo ad ogni elemento `.collapse` l'attributo `data-parent` con il relati
     </div>
     <div id="accordion3" class="collapse" role="tabpanel" aria-labelledby="headingA3" data-parent="#accordionDiv1">
       <div class="collapse-body">
-        {% include esempi-lombardia/toggles.html %}
+        {% include esempi-lombardia/toggles2.html %}
       </div>
     </div>
   </div>
@@ -178,7 +178,7 @@ Aggiungendo la classe `.collapse-left-icon` al wrapper l'icona chevron (<svg cla
     </div>
     <div id="collapse1-lft" class="collapse show" role="tabpanel" aria-labelledby="heading1-lft">
       <div class="collapse-body">
-        {% include esempi-lombardia/account_posta.html %}
+        {% include esempi-lombardia/account_posta3.html %}
       </div>
     </div>
     <div class="collapse-header" id="heading2-lft">
@@ -188,7 +188,7 @@ Aggiungendo la classe `.collapse-left-icon` al wrapper l'icona chevron (<svg cla
     </div>
     <div id="collapse2-lft" class="collapse" role="tabpanel" aria-labelledby="heading2-lft">
       <div class="collapse-body">
-        {% include esempi-lombardia/indirizzo.html %}
+        {% include esempi-lombardia/indirizzo3.html %}
       </div>
     </div>
     <div class="collapse-header" id="heading3-lft">
@@ -198,7 +198,7 @@ Aggiungendo la classe `.collapse-left-icon` al wrapper l'icona chevron (<svg cla
     </div>
     <div id="collapse3-lft" class="collapse" role="tabpanel" aria-labelledby="heading3-lft">
       <div class="collapse-body">
-        {% include esempi-lombardia/toggles.html %}
+        {% include esempi-lombardia/toggles3.html %}
       </div>
     </div>
   </div>

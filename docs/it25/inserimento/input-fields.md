@@ -89,8 +89,8 @@ Con questa configurazione, se il campo è vuoto la **label** viene visualizzata 
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-01">Label</label>
-        <input type="text" class="form-control" id="input-field-01" name="input-field-01">
+        <label for="input-field-07">Label</label>
+        <input type="text" class="form-control" id="input-field-07" name="input-field-07">
       </div>
     </div>
     <div class="form-group col-4">
@@ -98,8 +98,8 @@ Con questa configurazione, se il campo è vuoto la **label** viene visualizzata 
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-02">Label</label>
-        <input type="text" class="form-control" id="input-field-02" name="input-field-02" placeholder="placeholder">
+        <label for="input-field-08">Label</label>
+        <input type="text" class="form-control" id="input-field-08" name="input-field-08" placeholder="placeholder">
       </div>
     </div>
     <div class="form-group col-4">
@@ -107,8 +107,8 @@ Con questa configurazione, se il campo è vuoto la **label** viene visualizzata 
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-03">Label</label>
-        <input type="text" class="form-control" id="input-field-03" name="input-field-03" value="Valore del campo">
+        <label for="input-field-09">Label</label>
+        <input type="text" class="form-control" id="input-field-09" name="input-field-09" value="Valore del campo">
       </div>
     </div>
   </div>
@@ -135,18 +135,18 @@ E' facoltativo. E' molto opportuno nel caso si debba segnalare l'avvenuta conval
 <form>
   <div class="form-row">
     <div class="form-group col-4">
-      <label class="sr-only" for="input-field-01">label non visibile ma letta da screen-reader</label>
-      <input type="text" class="form-control is-valid" id="input-field-01" name="input-field-01" value="Text input ">
+      <label class="sr-only" for="input-field-10">label non visibile ma letta da screen-reader</label>
+      <input type="text" class="form-control is-valid" id="input-field-10" name="input-field-10" value="Text input ">
       <div class="valid-feedback">Validato!</div>
     </div>
     <div class="form-group col-4">
-      <label class="sr-only" for="input-field-02">label non visibile ma letta da screen-reader</label>
-      <input type="text" class="form-control is-valid warning" id="input-field-02" name="input-field-02" value="Text input ">
+      <label class="sr-only" for="input-field-11">label non visibile ma letta da screen-reader</label>
+      <input type="text" class="form-control is-valid warning" id="input-field-11" name="input-field-11" value="Text input ">
       <div class="warning-feedback">Possibili problemi.</div>
     </div>
     <div class="form-group col-4">
-      <label class="sr-only" for="input-field-03">label non visibile ma letta da screen-reader</label>
-      <input type="text" class="form-control is-invalid" id="input-field-03" name="input-field-03" value="Text input ">
+      <label class="sr-only" for="input-field-12">label non visibile ma letta da screen-reader</label>
+      <input type="text" class="form-control is-invalid" id="input-field-12" name="input-field-12" value="Text input ">
       <div class="invalid-feedback">Errore bloccante!</div>
     </div>
   </div>
@@ -168,8 +168,8 @@ Il testo del messaggio va incluso in in un *div* di classe `valid/invalid/warnin
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-01">Label</label>
-        <input type="text" class="form-control is-valid" id="input-field-01" name="input-field-01" value="Text input ">
+        <label for="input-field-13">Label</label>
+        <input type="text" class="form-control is-valid" id="input-field-13" name="input-field-13" value="Text input ">
         <div class="valid-feedback">Validato!</div>
       </div>
     </div>
@@ -178,8 +178,8 @@ Il testo del messaggio va incluso in in un *div* di classe `valid/invalid/warnin
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-02">Label</label>
-        <input type="text" class="form-control is-valid warning" id="input-field-02" name="input-field-02" value="Text input ">
+        <label for="input-field-14">Label</label>
+        <input type="text" class="form-control is-valid warning" id="input-field-14" name="input-field-14" value="Text input ">
         <div class="warning-feedback">Possibili problemi.</div>
       </div>
     </div>
@@ -188,8 +188,8 @@ Il testo del messaggio va incluso in in un *div* di classe `valid/invalid/warnin
         <div class="input-group-prepend">
           <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-mail"></use></svg></div>
         </div>
-        <label for="input-field-03">Label</label>
-        <input type="text" class="form-control is-invalid" id="input-field-03" name="input-field-03" value="Text input ">
+        <label for="input-field-15">Label</label>
+        <input type="text" class="form-control is-invalid" id="input-field-15" name="input-field-15" value="Text input ">
         <div class="invalid-feedback">Errore bloccante!</div>
       </div>
     </div>
