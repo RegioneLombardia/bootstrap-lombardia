@@ -12,8 +12,7 @@ E' quindi un **[fork del progetto Bootstrap Italia](https://github.com/italia/bo
 ### Come usare Bootstrap Regione Lombardia
 Per utilizzare il codice compilato di Bootstrap Regione Lombardia, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, che è possibile trovare qui:
 
-<a href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Regione Lombardia v{{ site.current_version }}</a>
-
+<a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Regione Lombardia v{{ site.current_version }}</a>
 
 E' anche possibile usare i file sorgente di Bootstrap Regione Lombardia attraverso il package manager **npm**.  
 {% highlight sh %}
