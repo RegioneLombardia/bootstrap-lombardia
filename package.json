@@ -45,9 +45,9 @@
     "src/"
   ],
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
-    "@babel/preset-env": "^7.2.3",
+    "@babel/core": "^7.8.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
     "@octokit/rest": "^15.2.6",
     "browser-sync": "^2.26.7",
     "conventional-changelog": "^1.1.24",
