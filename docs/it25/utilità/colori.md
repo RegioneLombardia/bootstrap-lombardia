@@ -34,7 +34,7 @@ I colori visualizzati sono invece impostati tramite **variabili** che sono state
 
 {% capture callout %}
 ####  <svg class="icon icon-success icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-check-circle"></use></svg> Utilizzare le classi di colore
-Per ottenere i colori corrispondenti alla palette del Sistema di identità visiva digitale di Regione Lombardia, **utilizzate le classi** specificate nella documentazione.  
+Per ottenere i colori corrispondenti alla palette del {{ site.data.short.ivd }}, **utilizzate le classi** specificate nella documentazione.  
 Il colore risultante sarà quello che vedete nella documentazione e aderente alle linee guida.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
@@ -113,3 +113,13 @@ Anche **[queste varianti]({{ site.baseurl }}/docs/utilities/colori-custom/#varia
 #### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Grigi chiari
 **[Questi grigi]({{ site.baseurl }}/docs/utilities/colori-custom/#grigi-chiari)**, possono essere utilizzati, se serve, facendo attenzione al fatto che sono semitrasparenti.  
 {% endcapture %}{% include callout.html content=callout type="warning" %}
+
+
+{% capture callout %}
+####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti
+Il contenuto di questa pagina si riferisce ai seguenti punti della {{ site.data.short.dt }}:
+- **[Colori custom]({{ site.baseurl }}/docs/utilities/colori-custom/)**
+
+Per quanto riguarda le classi predisposte per applicare colori a testo e sfondi si veda:
+-  **[Colori]({{ site.baseurl }}/docs/utilities/colori/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}

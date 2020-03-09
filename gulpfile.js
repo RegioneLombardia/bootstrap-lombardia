@@ -57,13 +57,15 @@ const Paths = {
     'src/js/plugins/imgresponsive.js',
     //'src/js/plugins/timepicker.js',
     'src/js/plugins/input-number.js',
-    'src/js/plugins/carousel.js',
+/*  'src/js/plugins/carousel.js',
+sostituito da it25-carousel */
     'src/js/plugins/transfer.js',
     'src/js/plugins/select.js',
     'src/js/plugins/rating.js',
     'src/js/plugins/dimmer.js',
     'src/js/plugins/it25-header.js',
     'src/js/plugins/it25-forms.js',
+    'src/js/plugins/it25-carousel.js',
     'src/js/' + pkg.name + '.js',
   ],
 

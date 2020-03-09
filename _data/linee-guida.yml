@@ -57,9 +57,7 @@
     - title: cookie bar
       url: informazioni/cookiebar
     - title: carousel
-#      url: informazioni/carousel
-      url: to-do
-      status: "to do"
+      url: informazioni/carousel
 
 - title: Inserimento
   pages:
