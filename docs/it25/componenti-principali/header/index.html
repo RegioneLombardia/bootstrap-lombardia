@@ -12,11 +12,11 @@
 <title>Header · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202003091544" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004140900" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202003091544" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004140900" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -257,7 +257,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                       <ul class="link-sublist"></ul>
                     </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
-                        <span>radio buttonsgit</span></a>
+                        <span>radio buttons</span></a>
                       <ul class="link-sublist"></ul>
                     </li><li>
                       <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/check-box/">
@@ -369,6 +369,99 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     display: none;
   }
 </style>
+
+<div class="bd-example">
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
+                <span>ITA</span>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                        <li><a class="list-item" href="#"><span>ENG</span></a></li>
+                        <li><a class="list-item" href="#"><span>ESP</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
+                </svg>
+              <span class="d-none d-md-block">Login</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+
+            <div class="it25-hamburger-btn-wrapper">
+              <button aria-controls="it25-main-nav" aria-expanded="false" aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu" data-target="#it25-main-nav" type="button">
+                <svg class="icon">
+                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
+                </svg>
+              </button>
+
+              <div class="it25-close-div">
+                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù">
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <a href="#">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+        
+              <div class="it-brand-text">
+                ACRONIMO Nome applicativo
+              </div>
+            </a>
+          </div> <!-- end it-brand-wrapper -->
+
+          <div class="it-right-zone">
+            <div class="it-search-wrapper">
+              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca" />
+              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
 
 <p>E’ composto da due parti, entrambe obbligatorie:</p>
 <ol>
@@ -731,6 +824,6 @@ Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202003091544"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004140900"></script>
   </body>
 </html>
