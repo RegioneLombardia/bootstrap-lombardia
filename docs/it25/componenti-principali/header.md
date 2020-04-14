@@ -18,6 +18,9 @@ toc: true
   }
 </style>
 
+<div class="bd-example">
+{% include esempi-lombardia/header.html %}
+</div>
 
 E' composto da due parti, entrambe obbligatorie:
 1. top bar
