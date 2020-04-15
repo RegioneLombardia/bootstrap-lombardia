@@ -104,7 +104,7 @@ Se si utilizzano, **i tooltip vanno attivati** come di consueto.
 
 {% capture example %}
 <div class="steppers">
-{% include esempi-lombardia/it25-wizard.html %}
+{% include esempi-lombardia/it25_wizard.html %}
 </div> <!-- end div class="steppers" -->
 <script>
   document.addEventListener("DOMContentLoaded", function() {

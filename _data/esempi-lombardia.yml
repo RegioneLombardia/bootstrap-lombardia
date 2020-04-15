@@ -3,27 +3,40 @@
     - title: Tabella
     - title: Form
     - title: Wizard
-      status: 'to do'
     - title: Sidebar
     - title: Profilo utente
+    - title: Cookiebar
 
 - category: Ritagli
   snippets:
     - title: Account posta
     - title: Barra Istituzionale
     - title: Barra Utente
+    - title: Card_semplice
+    - title: Card_bottone
+    - title: Card_con_foto
+    - title: Card_header
+    - title: Card_link-list
     - title: Checkboxes
+    - title: Cookiebar
     - title: Datepickers
     - title: Filtri tabella
     - title: Footer
     - title: Footer minimo
     - title: Indirizzo
+    - title: It25-wizard
     - title: Menu Orizzontale
+    - title: Pan_anagrafica
+    - title: Pan_badge
+    - title: Pan_rifcontratto
+    - title: Pan_utenze
     - title: Paginazione
     - title: Radiobuttons
     - title: Sidebar
+    - title: Slides
     - title: Tabella
     - title: Testo
     - title: Toggles
     - title: Topbar
     - title: Topbar thin
+    - title: Wizard-nav

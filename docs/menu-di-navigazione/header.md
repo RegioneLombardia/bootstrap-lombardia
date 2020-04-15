@@ -43,8 +43,8 @@ Il **cambio lingua** è gestito con il componente [**dropdown**]({{ site.baseurl
               </a>
               <div class="link-list-wrapper collapse" id="menu1">
                 <ul class="link-list">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a class="active" href="#">Link 2 Active</a></li>
+                  <li><a class="list-item" href="#">Link 1</a></li>
+                  <li><a class="list-item active" href="#">Link 2 Active</a></li>
                 </ul>
               </div>
             </nav>
@@ -71,7 +71,7 @@ Il **cambio lingua** è gestito con il componente [**dropdown**]({{ site.baseurl
               </div>
             </div>
             <div class="it-access-top-wrapper">
-              <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+              <a class="btn btn-primary btn-sm" href="#">Accedi</a>
             </div>
           </div>
         </div>
@@ -171,8 +171,8 @@ Per cambiare tema all'header slim è sufficiente aggiungere la classe `theme-lig
               </a>
               <div class="link-list-wrapper collapse" id="menu2">
                 <ul class="link-list">
-                  <li><a href="#">Link 1</a></li>
-                  <li><a class="active" href="#">Link 2 Active</a></li>
+                  <li><a class="list-item" href="#">Link 1</a></li>
+                  <li><a class="list-item active" href="#">Link 2 Active</a></li>
                 </ul>
               </div>
             </nav>
@@ -199,7 +199,7 @@ Per cambiare tema all'header slim è sufficiente aggiungere la classe `theme-lig
               </div>
             </div>
             <div class="it-access-top-wrapper">
-              <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+              <a class="btn btn-primary btn-sm" href="#">Accedi</a>
             </div>
           </div>
         </div>
@@ -946,8 +946,8 @@ Al menù di navigazione principale può essere aggiunto anche un menù di naviga
                 </a>
                 <div class="link-list-wrapper collapse" id="menu4">
                   <ul class="link-list">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a class="active" href="#">Link 2 Active</a></li>
+                    <li><a class="list-item" href="#">Link 1</a></li>
+                    <li><a class="list-item active" href="#">Link 2 Active</a></li>
                   </ul>
                 </div>
               </nav>
@@ -974,7 +974,7 @@ Al menù di navigazione principale può essere aggiunto anche un menù di naviga
                 </div>
               </div>
               <div class="it-access-top-wrapper">
-                <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+                <a class="btn btn-primary btn-sm" href="#">Accedi</a>
               </div>
             </div>
           </div>
@@ -1168,8 +1168,8 @@ Verrà creata un ombra per enfatizzarlo rispetto alla pagina in cui è contenuto
                 </a>
                 <div class="link-list-wrapper collapse" id="menu3">
                   <ul class="link-list">
-                    <li><a href="#">Link 1</a></li>
-                    <li><a class="active" href="#">Link 2 Active</a></li>
+                    <li><a class="list-item" href="#">Link 1</a></li>
+                    <li><a class="list-item active" href="#">Link 2 Active</a></li>
                   </ul>
                 </div>
               </nav>
@@ -1196,7 +1196,7 @@ Verrà creata un ombra per enfatizzarlo rispetto alla pagina in cui è contenuto
                 </div>
               </div>
               <div class="it-access-top-wrapper">
-                <button class="btn btn-primary btn-sm" href="#" type="button">Accedi</button>
+                <a class="btn btn-primary btn-sm" href="#">Accedi</a>
               </div>
             </div>
           </div>
