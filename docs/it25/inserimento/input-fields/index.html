@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.0.0">
+<meta name="generator" content="Jekyll v4.1.0">
 
 <title>Input-fields · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -97,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.4/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.5/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -392,9 +392,9 @@ Chiarisce alcuni concetti base della formattazione dei campi di input e della co
 
 <h3 id="senza-label">senza label</h3>
 
-<p>Nel caso non abbia un label, <strong>deve</strong> avere almeno un <em>placeholder</em> e una label <code class="highlighter-rouge">sr-only</code> o, in alternativa, un <code class="highlighter-rouge">aria-label</code>, che saranno lette dalle tecnologie assistive.<br />
+<p>Nel caso non abbia un label, <strong>deve</strong> avere almeno un <em>placeholder</em> e una label <code class="language-plaintext highlighter-rouge">sr-only</code> o, in alternativa, un <code class="language-plaintext highlighter-rouge">aria-label</code>, che saranno lette dalle tecnologie assistive.<br />
 Il <strong>placeholder</strong> da solo <strong>non basta</strong>, perché sparisce quando il campo contiene un valore.<br />
-Inoltre è bene specificare <strong>solo una</strong> tra <code class="highlighter-rouge">sr-only</code> e <code class="highlighter-rouge">aria-label</code>, perché potrebbero venire lette entrambe.</p>
+Inoltre è bene specificare <strong>solo una</strong> tra <code class="language-plaintext highlighter-rouge">sr-only</code> e <code class="language-plaintext highlighter-rouge">aria-label</code>, perché potrebbero venire lette entrambe.</p>
 
 <div class="bd-example">
 <form>
@@ -458,8 +458,8 @@ Inoltre è bene specificare <strong>solo una</strong> tra <code class="highlight
 
 <h3 id="con-icona">con icona</h3>
 
-<p>In questo caso l’<em>input-field</em> va inserito in un <em>div</em> con classe <code class="highlighter-rouge">input group</code>.<br />
-All’interno di questo, prima dell’input-field, va inserito un ulteriore <em>div</em> di classe <code class="highlighter-rouge">input-group-prepend</code> che conterrà l’icona da visualizzare.</p>
+<p>In questo caso l’<em>input-field</em> va inserito in un <em>div</em> con classe <code class="language-plaintext highlighter-rouge">input group</code>.<br />
+All’interno di questo, prima dell’input-field, va inserito un ulteriore <em>div</em> di classe <code class="language-plaintext highlighter-rouge">input-group-prepend</code> che conterrà l’icona da visualizzare.</p>
 
 <p>Con questa configurazione, se il campo è vuoto la <strong>label</strong> viene visualizzata solo quando il campo prende il focus.</p>
 
@@ -584,9 +584,9 @@ E’ facoltativo. E’ molto opportuno nel caso si debba segnalare l’avvenuta 
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/form&gt;</span></code></pre></figure>
 
-<p>La visualizzazione del messaggio al di sotto del campo e dell’icona colorata a fianco, avviene aggiungendo la classe <code class="highlighter-rouge">is-valid</code> o <code class="highlighter-rouge">is-invalid</code> sul <em>tag</em> <code class="highlighter-rouge">input</code>.<br />
-Per visualizzare il messaggio di <em>warning</em> il tag input deve avere <strong>entrambe</strong> le classi <code class="highlighter-rouge">is-valid</code> e <code class="highlighter-rouge">warning</code>.<br />
-Il testo del messaggio va incluso in in un <em>div</em> di classe <code class="highlighter-rouge">valid/invalid/warning-feedback</code>, che ne determina anche la colorazione.</p>
+<p>La visualizzazione del messaggio al di sotto del campo e dell’icona colorata a fianco, avviene aggiungendo la classe <code class="language-plaintext highlighter-rouge">is-valid</code> o <code class="language-plaintext highlighter-rouge">is-invalid</code> sul <em>tag</em> <code class="language-plaintext highlighter-rouge">input</code>.<br />
+Per visualizzare il messaggio di <em>warning</em> il tag input deve avere <strong>entrambe</strong> le classi <code class="language-plaintext highlighter-rouge">is-valid</code> e <code class="language-plaintext highlighter-rouge">warning</code>.<br />
+Il testo del messaggio va incluso in in un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">valid/invalid/warning-feedback</code>, che ne determina anche la colorazione.</p>
 
 <h3 id="validazione-con-label-e-icona">Validazione con label e icona</h3>
 
@@ -693,6 +693,6 @@ Il testo del messaggio va incluso in in un <em>div</em> di classe <code class="h
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004151616"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script>
   </body>
 </html>

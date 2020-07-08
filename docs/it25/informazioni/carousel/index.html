@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.0.0">
+<meta name="generator" content="Jekyll v4.1.0">
 
 <title>Carousel · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -97,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.4/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.5/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -372,24 +372,24 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <h2 id="struttura">Struttura</h2>
 <h4 id="contenitore-principale">Contenitore principale</h4>
-<p>Un tag <em>div</em> con classi <code class="highlighter-rouge">it-carousel-wrapper</code> e <code class="highlighter-rouge">it-carousel-landscape-abstract-three-cols</code>.</p>
+<p>Un tag <em>div</em> con classi <code class="language-plaintext highlighter-rouge">it-carousel-wrapper</code> e <code class="language-plaintext highlighter-rouge">it-carousel-landscape-abstract-three-cols</code>.</p>
 
 <h4 id="titolo">Titolo</h4>
-<p>All’interno del <em>contenitore principale</em> può essere inserito un <em>div</em> di classe <code class="highlighter-rouge">it-header-block</code> ed il <strong>testo</strong> a sua volta inserito in un <strong>ulteriore div</strong> di classe <code class="highlighter-rouge">it-header-block-title</code>.</p>
+<p>All’interno del <em>contenitore principale</em> può essere inserito un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">it-header-block</code> ed il <strong>testo</strong> a sua volta inserito in un <strong>ulteriore div</strong> di classe <code class="language-plaintext highlighter-rouge">it-header-block-title</code>.</p>
 
 <h4 id="contenitore-delle-card">Contenitore delle card</h4>
-<p>Al di sotto dell’eventuale titolo, il <em>div</em> con le classi <code class="highlighter-rouge">it-carousel-all</code> e <code class="highlighter-rouge">owl-carousel</code>, in cui scorreranno le card o immagini, .</p>
+<p>Al di sotto dell’eventuale titolo, il <em>div</em> con le classi <code class="language-plaintext highlighter-rouge">it-carousel-all</code> e <code class="language-plaintext highlighter-rouge">owl-carousel</code>, in cui scorreranno le card o immagini, .</p>
 
-<p>A queste possono essere aggiunte una serie di ulteriori classi utili per dimensionare e distanziare tra loro le card/immagini: <code class="highlighter-rouge">it-card-bg</code>, <code class="highlighter-rouge">it-img-card</code>, <code class="highlighter-rouge">it-big-img</code> e <code class="highlighter-rouge">it-standard-image</code>. Verranno spiegate poi nel dettaglio.</p>
+<p>A queste possono essere aggiunte una serie di ulteriori classi utili per dimensionare e distanziare tra loro le card/immagini: <code class="language-plaintext highlighter-rouge">it-card-bg</code>, <code class="language-plaintext highlighter-rouge">it-img-card</code>, <code class="language-plaintext highlighter-rouge">it-big-img</code> e <code class="language-plaintext highlighter-rouge">it-standard-image</code>. Verranno spiegate poi nel dettaglio.</p>
 
-<p>Sempre allo stesso <em>div</em> contenitore delle card/immagini possono essere applicate altre due classi, specifiche di <em>Bootstrap Regione Lombardia</em>: <code class="highlighter-rouge">it25-carousel-nav</code> e <code class="highlighter-rouge">it25-carousel-autoplay</code>.<br />
+<p>Sempre allo stesso <em>div</em> contenitore delle card/immagini possono essere applicate altre due classi, specifiche di <em>Bootstrap Regione Lombardia</em>: <code class="language-plaintext highlighter-rouge">it25-carousel-nav</code> e <code class="language-plaintext highlighter-rouge">it25-carousel-autoplay</code>.<br />
 Servono rispettivamente a far comparire le <strong>frecce di avanti/indietro</strong> di un passo (di default non compaiono), e ad attivare lo <strong>scorrimento automatico</strong> ogni 5 secondi.</p>
 
 <h4 id="serie-di-wrapper-uno-per-ogni-elemento">Serie di wrapper uno per ogni elemento</h4>
-<p>All’interno del <em>contenitore delle card</em>, un <em>div</em> di classe <code class="highlighter-rouge">it-single-slide-wrapper</code> per ogni <em>slide</em> della serie da far scorrere.</p>
+<p>All’interno del <em>contenitore delle card</em>, un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">it-single-slide-wrapper</code> per ogni <em>slide</em> della serie da far scorrere.</p>
 
-<p>A sua volta all’interno dei questo <em>wrapper</em> un <strong>ulteriore div</strong> di classe <code class="highlighter-rouge">card-wrapper</code>, <strong>necessario</strong> anche se il contenuto è in realtà un immagine.<br />
-Eventualmente può essere agginta a questo anche la classe <code class="highlighter-rouge">card-space</code> per distanziare gli elementi tra di loro.</p>
+<p>A sua volta all’interno dei questo <em>wrapper</em> un <strong>ulteriore div</strong> di classe <code class="language-plaintext highlighter-rouge">card-wrapper</code>, <strong>necessario</strong> anche se il contenuto è in realtà un immagine.<br />
+Eventualmente può essere agginta a questo anche la classe <code class="language-plaintext highlighter-rouge">card-space</code> per distanziare gli elementi tra di loro.</p>
 
 <h2 id="esempi">Esempi</h2>
 
@@ -509,9 +509,9 @@ Eventualmente può essere agginta a questo anche la classe <code class="highligh
 
 <p>In questo esempio sono state usate in particolare le classi:</p>
 <ul>
-  <li><code class="highlighter-rouge">it-header-block</code> e <code class="highlighter-rouge">it-header-block-title</code> per i <em>div</em> nidificati contenenti il <strong>titolo</strong></li>
-  <li><code class="highlighter-rouge">it-card-bg</code> sul <em>div</em> del <strong>contenitore delle card</strong></li>
-  <li><code class="highlighter-rouge">card-space</code> su <strong>tutti</strong> i <em>div</em> contenti le <strong>singole card</strong> per distanziarle tra loro.</li>
+  <li><code class="language-plaintext highlighter-rouge">it-header-block</code> e <code class="language-plaintext highlighter-rouge">it-header-block-title</code> per i <em>div</em> nidificati contenenti il <strong>titolo</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">it-card-bg</code> sul <em>div</em> del <strong>contenitore delle card</strong></li>
+  <li><code class="language-plaintext highlighter-rouge">card-space</code> su <strong>tutti</strong> i <em>div</em> contenti le <strong>singole card</strong> per distanziarle tra loro.</li>
 </ul>
 
 <h3 id="immagini-grandi">Immagini grandi</h3>
@@ -613,14 +613,14 @@ Eventualmente può essere agginta a questo anche la classe <code class="highligh
 <ul>
   <li>sul <em>div</em> del <strong>contenitore delle card</strong> le classi
     <ul>
-      <li><code class="highlighter-rouge">it-img-card</code> per la gestione di <strong>card immagine</strong></li>
-      <li><code class="highlighter-rouge">it-big-img</code> per ottenere una <strong>dimensione grande delle immagini</strong></li>
-      <li><code class="highlighter-rouge">it25-carousel-autoplay</code> per attivare lo <strong>scorrimento automatico</strong> delle immagini.</li>
+      <li><code class="language-plaintext highlighter-rouge">it-img-card</code> per la gestione di <strong>card immagine</strong></li>
+      <li><code class="language-plaintext highlighter-rouge">it-big-img</code> per ottenere una <strong>dimensione grande delle immagini</strong></li>
+      <li><code class="language-plaintext highlighter-rouge">it25-carousel-autoplay</code> per attivare lo <strong>scorrimento automatico</strong> delle immagini.</li>
     </ul>
   </li>
   <li>su <strong>tutti</strong> i <em>div</em> di classe <strong>card-wrapper</strong> un <strong>ulteriore div</strong> con le classi
     <ul>
-      <li><code class="highlighter-rouge">card</code> e <code class="highlighter-rouge">card-img</code> per la <strong>formattazione delle singole card immagine</strong></li>
+      <li><code class="language-plaintext highlighter-rouge">card</code> e <code class="language-plaintext highlighter-rouge">card-img</code> per la <strong>formattazione delle singole card immagine</strong></li>
     </ul>
   </li>
 </ul>
@@ -712,8 +712,8 @@ Eventualmente può essere agginta a questo anche la classe <code class="highligh
 
 <p>In questo esempio, rispetto al precedente, sono state usate, sul <em>div</em> del <strong>contenitore delle card</strong>, le classi:</p>
 <ul>
-  <li><code class="highlighter-rouge">it-standard-image</code> che dà <strong>dimensioni inferiori alle immagini</strong>, consentendo, su schermi grandi, di vederne 3 alla volta.</li>
-  <li><code class="highlighter-rouge">it25-carousel-nav</code> che fa apparire le <strong>frecce di avanzamento/ritorno</strong>.</li>
+  <li><code class="language-plaintext highlighter-rouge">it-standard-image</code> che dà <strong>dimensioni inferiori alle immagini</strong>, consentendo, su schermi grandi, di vederne 3 alla volta.</li>
+  <li><code class="language-plaintext highlighter-rouge">it25-carousel-nav</code> che fa apparire le <strong>frecce di avanzamento/ritorno</strong>.</li>
 </ul>
 
 <p>Si noti che i <strong>punti</strong> sotto le slide, su schermi grandi, sono <strong>solo 2</strong>, ed ognuno <strong>scorre 3 immagini alla volta</strong>, così come le frecce.<br />
@@ -842,8 +842,8 @@ Eventualmente può essere agginta a questo anche la classe <code class="highligh
 
 <p>Rispetto al precedente esempio <strong>Titolo e Card</strong> qui è stato aggiunto:</p>
 <ul>
-  <li>una <code class="highlighter-rouge">background-image</code> sul <em>div</em> <strong>contenitore delle card</strong></li>
-  <li>uno sfondo bianco per la classe <code class="highlighter-rouge">owl-dots</code> che caratterizza il <strong>div che contiene i punti cliccabili</strong>.
+  <li>una <code class="language-plaintext highlighter-rouge">background-image</code> sul <em>div</em> <strong>contenitore delle card</strong></li>
+  <li>uno sfondo bianco per la classe <code class="language-plaintext highlighter-rouge">owl-dots</code> che caratterizza il <strong>div che contiene i punti cliccabili</strong>.
 Quest’ultimo <em>div</em> tra l’altro, <strong>non va specificato</strong> nel codice HTML, perché <strong>viene automaticamente aggiunto via Javascript</strong> da <em>Bootstrap Regione Lombardia</em>.</li>
 </ul>
 
@@ -917,6 +917,6 @@ Quando verrà rilasciato un componente sostitutivo, si provvederà a personalizz
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004151616"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script>
   </body>
 </html>

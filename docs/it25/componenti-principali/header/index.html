@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Header applicativi Web.">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.0.0">
+<meta name="generator" content="Jekyll v4.1.0">
 
 <title>Header · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -97,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.4/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.5/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -584,7 +584,7 @@ Rimane fissa in cima alla pagina quando questa scorre verso l’alto.</p>
 </ul>
 
 <h3 id="top-bar-sottile">Top bar sottile</h3>
-<p>Nel caso in cui non si abbiano voci di servizio da inserire, la top bar può essere ridotta ad un’altezza di 20 pixel già alla comparsa della pagina, aggiungendo la classe <code class="highlighter-rouge">thin</code> al <code class="highlighter-rouge">div</code> principale del componente.</p>
+<p>Nel caso in cui non si abbiano voci di servizio da inserire, la top bar può essere ridotta ad un’altezza di 20 pixel già alla comparsa della pagina, aggiungendo la classe <code class="language-plaintext highlighter-rouge">thin</code> al <code class="language-plaintext highlighter-rouge">div</code> principale del componente.</p>
 
 <div class="bd-example">
 <div class="it-header-slim-wrapper it25-top-bar thin">
@@ -759,19 +759,19 @@ A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si r
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Il <code class="highlighter-rouge">&lt;div&gt;</code> principale è caratterizzato dalle classi <code class="highlighter-rouge">it-header-center-wrapper</code> e <code class="highlighter-rouge">it25-barra-ist</code>.<br />
-Al suo interno il <code class="highlighter-rouge">div</code> con classe <code class="highlighter-rouge">it-header-center-content-wrapper</code> contiene due <code class="highlighter-rouge">div</code> che posizionano il loro contenuto verso il lato sinistro e destro della barra, che hanno rispettivamente le classi: <code class="highlighter-rouge">it-brand-wrapper</code> e <code class="highlighter-rouge">it-right-zone</code>.</p>
+<p>Il <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> principale è caratterizzato dalle classi <code class="language-plaintext highlighter-rouge">it-header-center-wrapper</code> e <code class="language-plaintext highlighter-rouge">it25-barra-ist</code>.<br />
+Al suo interno il <code class="language-plaintext highlighter-rouge">div</code> con classe <code class="language-plaintext highlighter-rouge">it-header-center-content-wrapper</code> contiene due <code class="language-plaintext highlighter-rouge">div</code> che posizionano il loro contenuto verso il lato sinistro e destro della barra, che hanno rispettivamente le classi: <code class="language-plaintext highlighter-rouge">it-brand-wrapper</code> e <code class="language-plaintext highlighter-rouge">it-right-zone</code>.</p>
 
-<p>In  <code class="highlighter-rouge">it-brand-wrapper</code> oltre al logo della Regione Lombardia e al nome dell’applicativo, sono contenuti 2 bottoni che appaiono solo sugli schermi di minori dimensioni, alternativamente per aprire o chiudere il <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">menù orizzontale</a></strong> o la <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">sidebar</a></strong> eventualmente presenti nella pagina.</p>
+<p>In  <code class="language-plaintext highlighter-rouge">it-brand-wrapper</code> oltre al logo della Regione Lombardia e al nome dell’applicativo, sono contenuti 2 bottoni che appaiono solo sugli schermi di minori dimensioni, alternativamente per aprire o chiudere il <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">menù orizzontale</a></strong> o la <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">sidebar</a></strong> eventualmente presenti nella pagina.</p>
 
 <h3 id="bottone-hamburger">Bottone hamburger</h3>
 
 <p>Il bottone <em>hamburger</em> compare nella <em>barra istituzionale</em> a sinistra del logo di Regione Lombardia.<br />
 Una volta premuto il bottone l’icona <em>hamburger</em> è sostituita da una “X” per segnalare che premendolo nuovamente il menù (o la sidebar) scomparirà.</p>
 
-<p>Il menu orizzontale è visualizzato immediatamente se la finestra ha <strong><a href="/bootstrap-lombardia/docs/organizzare-gli-spazi/griglie/#le-opzioni">dimensioni</a></strong> <code class="highlighter-rouge">lg</code> o <code class="highlighter-rouge">xl</code>.  <br />
-Quindi il bottone <em>hamburger</em> compare quando le dimensioni della pagina sono <code class="highlighter-rouge">xs</code> o <code class="highlighter-rouge">sm</code> o <code class="highlighter-rouge">md</code>.<br />
-La sidebar invece compare anche sugli schermi <code class="highlighter-rouge">md</code> e, di conseguenza, il relativo bottone <em>hamburger</em> solo per pagine <code class="highlighter-rouge">xs</code> o <code class="highlighter-rouge">sm</code>.</p>
+<p>Il menu orizzontale è visualizzato immediatamente se la finestra ha <strong><a href="/bootstrap-lombardia/docs/organizzare-gli-spazi/griglie/#le-opzioni">dimensioni</a></strong> <code class="language-plaintext highlighter-rouge">lg</code> o <code class="language-plaintext highlighter-rouge">xl</code>.  <br />
+Quindi il bottone <em>hamburger</em> compare quando le dimensioni della pagina sono <code class="language-plaintext highlighter-rouge">xs</code> o <code class="language-plaintext highlighter-rouge">sm</code> o <code class="language-plaintext highlighter-rouge">md</code>.<br />
+La sidebar invece compare anche sugli schermi <code class="language-plaintext highlighter-rouge">md</code> e, di conseguenza, il relativo bottone <em>hamburger</em> solo per pagine <code class="language-plaintext highlighter-rouge">xs</code> o <code class="language-plaintext highlighter-rouge">sm</code>.</p>
 
 <p>Per ottenere questo comportamento, la struttura HTML dell’header della pagina deve essere di questo tipo:</p>
 
@@ -792,7 +792,7 @@ La sidebar invece compare anche sugli schermi <code class="highlighter-rouge">md
   . . . barra utente (facoltativa) . . .
 <span class="nt">&lt;/header&gt;</span></code></pre></figure>
 
-<p>La <em>sidebar</em> poi va inserita nel <code class="highlighter-rouge">body</code> della pagina (vedi esempio <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">pagina con sidebar</a></strong>).</p>
+<p>La <em>sidebar</em> poi va inserita nel <code class="language-plaintext highlighter-rouge">body</code> della pagina (vedi esempio <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">pagina con sidebar</a></strong>).</p>
 
 <p>Nel caso in cui non si abbiano né l’una né l’altra, e quindi il bottone <em>hamburger</em> non vada mai visualizzato, la struttura deve essere:</p>
 
@@ -803,7 +803,7 @@ La sidebar invece compare anche sugli schermi <code class="highlighter-rouge">md
 <span class="nt">&lt;/header&gt;</span></code></pre></figure>
 
 <h3 id="due-loghi">Due loghi</h3>
-<p>Nella <em>barra istituzionale</em> è possibile inserire un secondo logo utilizzando un tag <code class="highlighter-rouge">img</code> con le classi <code class="highlighter-rouge">it25-header-logo d-none d-md-block</code>.<br />
+<p>Nella <em>barra istituzionale</em> è possibile inserire un secondo logo utilizzando un tag <code class="language-plaintext highlighter-rouge">img</code> con le classi <code class="language-plaintext highlighter-rouge">it25-header-logo d-none d-md-block</code>.<br />
 Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento responsivo.</p>
 
 <p>E’ possibile vedere un esempio nella pagina <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">form</a></strong>.</p>
@@ -824,6 +824,6 @@ Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004151616"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script>
   </body>
 </html>

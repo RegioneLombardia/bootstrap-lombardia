@@ -37,11 +37,15 @@ you can [create an issue](https://github.com/italia/bootstrap-italia/issues).
 ## How to contribute
 
 Would you like to help with Bootstrap Italia? **You are in the right place!**
- 
+
 If you have not already done so, start by spending a few minutes to deepen your knowledge on [design guidelines for Italian public digital services](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/) (in italian), and refer to the [instructions on how to contribute to Bootstrap Italia](https://github.com/italia/bootstrap-italia/blob/master/CONTRIBUTING.md) (in italian).
 
 At this point, you'll need to configure the local environment to compile the source files and generate them
 of the documentation. You can find all the information necessary for this purpose at the [page related to the compilation tools](https://translate.google.it/translate?hl=it&sl=it&tl=en&u=https%3A%2F%2Fitalia.github.io%2Fbootstrap-italia%2Fdocs%2Fcome-iniziare%2Fstrumenti-di-compilazione%2F) (automatic translation by Google Translate).
+
+### Acknowledgments
+
+A special thanks to [Spottino](https://github.com/Spottino) for the redesign of the library's icons, [avol-io](https://github.com/avol-io), [gtico80](https://github.com/gtico80), [smartm0use](https://github.com/smartm0use) and many others for their valuable contributions, and anyone who raised issues, used the library or just shared it!
 
 ## Third-party licenses
 
@@ -49,31 +53,38 @@ of the documentation. You can find all the information necessary for this purpos
 
 Software components distributed with Bootstrap Italia that have their own different license from CC0 are listed below.
 
-- [jQuery](https://jquery.com/) © jQuery Foundation, MIT
-- [Popper.js](https://popper.js.org/) © Federico Zivolo and contributors, MIT
-- [Bootstrap 4](https://getbootstrap.com/) © Twitter, Inc., MIT
-- [Bootstrap Select](https://developer.snapappointments.com/bootstrap-select/) © SnapAppointments, LLC, MIT
-- [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) © Owl (David Deutsch), MIT
+- [jQuery](https://jquery.com/) © jQuery Foundation, MIT license
+- [Popper.js](https://popper.js.org/) © Federico Zivolo and contributors, MIT license
+- [Bootstrap 4](https://getbootstrap.com/) © Twitter, Inc., MIT license
+- [Bootstrap Select](https://developer.snapappointments.com/bootstrap-select/) © SnapAppointments, LLC, MIT license
+- [Owl Carousel 2](https://owlcarousel2.github.io/OwlCarousel2/) © Owl (David Deutsch), MIT license
 - [jQuery Easing](http://gsgd.co.uk/sandbox/jquery/easing/) © George McGinley Smith, BSD
 
 ### Main dependencies for the compilation and development phase
 
-- [Jekyll](https://jekyllrb.com), © Tom Preston-Werner and Jekyll contributors, licenza MIT
-- [HTML-proofer](https://github.com/gjtorikian/html-proofer), © Garen Torikian, licenza MIT
+- [Jekyll](https://jekyllrb.com), © Tom Preston-Werner and Jekyll contributors, MIT license
+- [HTML-proofer](https://github.com/gjtorikian/html-proofer), © Garen Torikian, MIT license
 - [Browser Sync](https://www.browsersync.io/) Apache License Version 2.0
 - [conventional-changelog](https://github.com/conventional-changelog/conventional-changelog/) © conventional-changelog team, ISC License
-- [GulpJS](https://gulpjs.com/), © Blaine Bublitz, Eric Schoffstall and other contributors, licenza MIT
-- [Babel](https://babeljs.io/), © Sebastian McKenzie, licenza MIT
-- [Prettier](https://prettier.io/), © James Long and contributors, licenza MIT
-- [node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, licenza MIT
-- [Octokit rest.js](https://octokit.github.io/rest.js/) © 2012 Cloud9 IDE, Inc. (Mike de Boer), 2017-2018 Octokit contributors, licenza MIT
+- [GulpJS](https://gulpjs.com/), © Blaine Bublitz, Eric Schoffstall and other contributors, MIT license
+- [Babel](https://babeljs.io/), © Sebastian McKenzie, MIT license
+- [Prettier](https://prettier.io/), © James Long and contributorsv
+- [node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, MIT license
+- [Octokit rest.js](https://octokit.github.io/rest.js/) © 2012 Cloud9 IDE, Inc. (Mike de Boer), 2017-2018 Octokit contributors, MIT license
+
+### Main dependencies for the documentation
+
+The components used for the documentation site but not redistributed with the Bootstrap Italia library are listed below:
+
+- [tsParticles](https://particles.matteobruni.it/#bubble) © Matteo Bruni, MIT license
+- [clipboard.js](https://clipboardjs.com/) © Zeno Rocha, MIT license
+- [AnchorJS](https://www.bryanbraun.com/anchorjs/) © Bryan Braun, MIT license
+- [Algolia DocSearch](https://docsearch.algolia.com/) © Algolia, MIT license
 
 Bootstrap Italia is **BSD 3-Clause** licensed:
 
 [![License](https://img.shields.io/github/license/italia/bootstrap-italia.svg)](https://github.com/italia/bootstrap-italia/blob/master/LICENSE)
 
-<a href="https://www.browserstack.com/
-" target="_blank"><img src="https://p14.zdusercontent.com/attachment/1015988/Acl6uTyvwHnAmpEiRm9p8eh1R?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ewB9aVdbiHzfkiZdbgrc2Q.s1B7FuA_Wdegrj1PBZ0pVGgjWhzuJD8yTKRptv2BxFNe-KQSsaVtbkBer5X2rNq81mHZ_kEuAOigMPjgorAAzTUA5AmP_OX4JQJdQk96Vg3UggORRd4UDSdS-tF4o4evvo_8f3cciZcBBiFuqm-GXAclqWRusZxHITpEM7OHNvvMSDV35zbOO0zLwTnHKNQL715Ozitqrx_Q94yYO9NUM-h6jrN76MM5hLdM2umQXsrd0JH5EMp7tp8yDAAyNtoqZUiNFxCh0o1dUAFgZodntaLkGOv4Gzzj5kb7iBWS6JY.Ev5PtLdgCYcC4799H6-GEg" 
-alt="BrowserStack logo" width="200" height="105" /></a>
+<a href="https://www.browserstack.com/" target="_blank"><img src="docs/assets/img/browserstack-logo.png" alt="BrowserStack logo" width="270" height="79" /></a>
 
 We are using BrowserStack for interactive cross browser testing. They are sponsoring our open source project!

@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.0.0">
+<meta name="generator" content="Jekyll v4.1.0">
 
 <title>Tab bar · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -97,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.4/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.5/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -393,7 +393,7 @@ Le tab <strong>non devono essere usate</strong> per spezzettare un contenuto che
 <h3 id="solo-icone">Solo icone</h3>
 <p>Questo tipo di <em>tab</em> sono da utilizzare solo <strong>quando si hanno problemi di spazio</strong>, in quanto il significato dell’icona non sempre risulta chiaro per gli utenti.<br />
 E’ fortemente consigliato aggiungere un <strong><a href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">tooltip</a></strong> per aiutare la comprensione.<br />
-Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire una descrizione</strong> in uno span di classe <code class="highlighter-rouge">sr-only</code> o con un testo alternativo.</p>
+Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire una descrizione</strong> in uno span di classe <code class="language-plaintext highlighter-rouge">sr-only</code> o con un testo alternativo.</p>
 
 <div class="bd-example">
 <ul class="nav nav-tabs">
@@ -468,7 +468,7 @@ Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire
 
 <h3 id="testo-e-icone">Testo e Icone</h3>
 <p>Le <em>Linee Guida per il design degli applicativi di Regione Lombardia</em> prevedono che l’icona sia posizionata a destra del testo, cosa non prevista da boostrap-italia.<br />
-Per distanziare correttamente l’icona dal testo è necessario specificare la classe <code class="highlighter-rouge">icon-right</code> sul tag <code class="highlighter-rouge">ul</code> che contiene i tab.</p>
+Per distanziare correttamente l’icona dal testo è necessario specificare la classe <code class="language-plaintext highlighter-rouge">icon-right</code> sul tag <code class="language-plaintext highlighter-rouge">ul</code> che contiene i tab.</p>
 
 <div class="bd-example">
 <ul class="nav nav-tabs nav-tabs-icon-text icon-right">
@@ -653,8 +653,8 @@ Le tab sono tutte testuali.</li>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h3 id="i-tabpan">I tabpan</h3>
-<p>I pannelli visualizati dai tab sono inseriti all’interno di un <em>div</em> di classe <code class="highlighter-rouge">tab-content</code> e <code class="highlighter-rouge">it25-data-output</code>.<br />
-Quest’ultima classe è specifica di Bootstrap Regione Lombardia e applica a tutte le coppie di tag <code class="highlighter-rouge">label</code> e <code class="highlighter-rouge">span</code> un piccolo spaziatura tra la label ed il dato e rende quest’ultimo in grassetto.</p>
+<p>I pannelli visualizati dai tab sono inseriti all’interno di un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">tab-content</code> e <code class="language-plaintext highlighter-rouge">it25-data-output</code>.<br />
+Quest’ultima classe è specifica di Bootstrap Regione Lombardia e applica a tutte le coppie di tag <code class="language-plaintext highlighter-rouge">label</code> e <code class="language-plaintext highlighter-rouge">span</code> un piccolo spaziatura tra la label ed il dato e rende quest’ultimo in grassetto.</p>
 
 <p>Ognuno dei <em>panel</em> ha poi una struttura di questo tipo:</p>
 
@@ -673,14 +673,14 @@ Quest’ultima classe è specifica di Bootstrap Regione Lombardia e applica a tu
 
 <p>Sul <em>div</em> principale si notano:</p>
 <ul>
-  <li>la classe <code class="highlighter-rouge">fade</code> che provica il passaggio in <em>dissolvenza</em> tra un pannello e l’altro</li>
-  <li>l’<code class="highlighter-rouge">id</code> che deve corrispondere all’attributo <code class="highlighter-rouge">href</code> del tab corrispondente</li>
-  <li>l’attributo <code class="highlighter-rouge">aria-labelledby</code> per l’accessibilità, che informa concisamente sui dati contenuti nel pannello stesso.</li>
+  <li>la classe <code class="language-plaintext highlighter-rouge">fade</code> che provica il passaggio in <em>dissolvenza</em> tra un pannello e l’altro</li>
+  <li>l’<code class="language-plaintext highlighter-rouge">id</code> che deve corrispondere all’attributo <code class="language-plaintext highlighter-rouge">href</code> del tab corrispondente</li>
+  <li>l’attributo <code class="language-plaintext highlighter-rouge">aria-labelledby</code> per l’accessibilità, che informa concisamente sui dati contenuti nel pannello stesso.</li>
 </ul>
 
-<p>Ogni riga contenuta nel pannello è compresa in un <em>div</em> di classe <code class="highlighter-rouge">d-flex justify_content-between</code>, che fa sì che la distanza tra i singoli <em>div</em> contenenti le coppie <em>label + span</em> sia ottimizzata automaticamente in base allo spazio a disposizione, andando a capo automaticamente qualora sia necessario, evitando sovrapposizioni.</p>
+<p>Ogni riga contenuta nel pannello è compresa in un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">d-flex justify_content-between</code>, che fa sì che la distanza tra i singoli <em>div</em> contenenti le coppie <em>label + span</em> sia ottimizzata automaticamente in base allo spazio a disposizione, andando a capo automaticamente qualora sia necessario, evitando sovrapposizioni.</p>
 
-<p>Le coppie di tag <code class="highlighter-rouge">label</code> e <code class="highlighter-rouge">span</code> per la formattazione font normale e grassetto da parte della classe <code class="highlighter-rouge">it25-data-output</code> del pannello.</p>
+<p>Le coppie di tag <code class="language-plaintext highlighter-rouge">label</code> e <code class="language-plaintext highlighter-rouge">span</code> per la formattazione font normale e grassetto da parte della classe <code class="language-plaintext highlighter-rouge">it25-data-output</code> del pannello.</p>
 
 <h2 id="altri-dettagli">Altri dettagli</h2>
 <p>Ulteriori informazioni e possibilità circa la costruzione e il funzionamento delle tab bar, in particolare per quanto riguarda l’<strong>accessibilità</strong>, possono essere trovate nella <strong><a href="/bootstrap-lombardia/docs/componenti/tab/">Documentazione di Bootstrap Italia</a></strong>.</p>
@@ -688,7 +688,7 @@ Quest’ultima classe è specifica di Bootstrap Regione Lombardia e applica a tu
 <div class="bd-callout bd-callout-danger">
 <h4 id="-sfondo-scuro"><svg class="icon icon-danger icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use></svg> Sfondo scuro</h4>
 <p>Le tab bar con sfondo scuro <strong>NON VANNO MAI UTILIZZATE</strong>.  <br />
-Quindi la classe <code class="highlighter-rouge">nav-dark</code> non deve mai essere usata.</p>
+Quindi la classe <code class="language-plaintext highlighter-rouge">nav-dark</code> non deve mai essere usata.</p>
 </div>
 
 <div class="bd-callout bd-callout-info">
@@ -718,6 +718,6 @@ Quindi la classe <code class="highlighter-rouge">nav-dark</code> non deve mai es
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004151616"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script>
   </body>
 </html>

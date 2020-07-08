@@ -7,16 +7,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA">
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.0.0">
+<meta name="generator" content="Jekyll v4.1.0">
 
 <title>Wizard · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202004151616" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
 
 <!-- Favicons -->
 <link rel="icon" href="/bootstrap-lombardia/favicon.ico">
@@ -97,7 +97,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
       <li class="nav-item pr-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.4/bootstrap-lombardia.zip" aria-label="Download">
+           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.3.5/bootstrap-lombardia.zip" aria-label="Download">
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
         </a>
       </li>
@@ -385,24 +385,24 @@ In questo caso deve essere segnalato se l’avanzamento si è fermato per qualch
   <span class="nt">&lt;/nav&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Tutto il <em>wizard</em> va inserito all’interno di un <em>div</em> di classe <code class="highlighter-rouge">steppers</code>.
+<p>Tutto il <em>wizard</em> va inserito all’interno di un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">steppers</code>.
 All’interno di questo si distinguono tre parti principali:</p>
 <ol>
   <li><em>Header</em><br />
-<strong>Facoltativo</strong> e costituito da un elenco non ordinato (tag <code class="highlighter-rouge">ul</code> e una serie di <code class="highlighter-rouge">li</code>)<br />
+<strong>Facoltativo</strong> e costituito da un elenco non ordinato (tag <code class="language-plaintext highlighter-rouge">ul</code> e una serie di <code class="language-plaintext highlighter-rouge">li</code>)<br />
 Sono previsti due tipi principali di header: <strong>standard</strong> e <strong>grafico</strong> spiegati più sotto in dettaglio.</li>
   <li><em>Content</em><br />
-Un <em>div</em> di classe <code class="highlighter-rouge">steppers-content</code> e con l’attributo <code class="highlighter-rouge">aria-live="polite"</code> destinato a contenere il <strong>corpo specifico di ogni singolo passo</strong> del wizard, dove l’utente compie scelte o inserisce dati.</li>
+Un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">steppers-content</code> e con l’attributo <code class="language-plaintext highlighter-rouge">aria-live="polite"</code> destinato a contenere il <strong>corpo specifico di ogni singolo passo</strong> del wizard, dove l’utente compie scelte o inserisce dati.</li>
   <li><em>Nav</em><br />
-Un tag <em>nav</em> di classe <code class="highlighter-rouge">steppers-nav</code> contenente i <strong>bottoni</strong> di <em>avanti/indietro</em> e/o <em>salva/conferma</em> per procedere od annullare i passi del wizard stesso ed <strong>eventualmente</strong> una <strong>barra o puntini di progressione</strong> che mostrano lo stato di avanzamento complessivo.</li>
+Un tag <em>nav</em> di classe <code class="language-plaintext highlighter-rouge">steppers-nav</code> contenente i <strong>bottoni</strong> di <em>avanti/indietro</em> e/o <em>salva/conferma</em> per procedere od annullare i passi del wizard stesso ed <strong>eventualmente</strong> una <strong>barra o puntini di progressione</strong> che mostrano lo stato di avanzamento complessivo.</li>
 </ol>
 
 <h3 id="header-standard">Header Standard</h3>
 
-<p>Questo tag <em>ul</em> di classe <code class="highlighter-rouge">steppers-header</code> è la versione <strong><a href="/bootstrap-lombardia/docs/componenti/steppers/#varianti-intestazione">testo e icone</a></strong> standard di <em>Bootstrap Italia</em>.<br />
+<p>Questo tag <em>ul</em> di classe <code class="language-plaintext highlighter-rouge">steppers-header</code> è la versione <strong><a href="/bootstrap-lombardia/docs/componenti/steppers/#varianti-intestazione">testo e icone</a></strong> standard di <em>Bootstrap Italia</em>.<br />
 Icone e testo sono inizialmente grigi e si colorano passo dopo passo.</p>
 
-<p>E’ responsivo e sui dispositivi mobili visualizza solo il passo attivo e lo <code class="highlighter-rouge">steppers-index</code> (esempio <em>2/4</em>) [per vederlo occorre restingere le dimensioni della finestra].<br />
+<p>E’ responsivo e sui dispositivi mobili visualizza solo il passo attivo e lo <code class="language-plaintext highlighter-rouge">steppers-index</code> (esempio <em>2/4</em>) [per vederlo occorre restingere le dimensioni della finestra].<br />
 Tuttavia <strong>non gestisce automaticamente un alto numero di passi</strong>: su desktop, se i passi sono troppi per essere contenuti orizzontalmente nello schermo, l’elenco si estende oltre il bordo destro della finestra, facendo comparire la barra di scorrimento orizzontale.<br />
 Diventa quindi necessario <strong>gestire da programma la visualizzazione di solo pochi passi</strong> <em>intorno</em> a quello attivo.</p>
 
@@ -444,12 +444,12 @@ Diventa quindi necessario <strong>gestire da programma la visualizzazione di sol
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h4 id="stati">Stati</h4>
-<p>Sui tag <em>li</em> di ognuno dei passi va associata la <strong>classe</strong> che indica lo <strong>stato di avanzamento</strong> e che determina la colorazione di ogni <em>punto</em>: <code class="highlighter-rouge">confirmed</code>, <code class="highlighter-rouge">active</code>, <code class="highlighter-rouge">error</code>.<br />
+<p>Sui tag <em>li</em> di ognuno dei passi va associata la <strong>classe</strong> che indica lo <strong>stato di avanzamento</strong> e che determina la colorazione di ogni <em>punto</em>: <code class="language-plaintext highlighter-rouge">confirmed</code>, <code class="language-plaintext highlighter-rouge">active</code>, <code class="language-plaintext highlighter-rouge">error</code>.<br />
 L’<strong>assenza di stato</strong> dà il <strong>colore grigio</strong> di default per i passi ancora da eseguire.<br />
-Nota: lo stato <code class="highlighter-rouge">error</code> è una personalizzazione specifica di Bootstrap Regione Lombardia.</p>
+Nota: lo stato <code class="language-plaintext highlighter-rouge">error</code> è una personalizzazione specifica di Bootstrap Regione Lombardia.</p>
 
 <h4 id="steppers-index">Steppers index</h4>
-<p>A differenza della versione contenuta all’interno della Documentazione di Bootstrap Italia, lo <code class="highlighter-rouge">steppers-index</code> è stato inserito in un <strong>tag span</strong> anziché <code class="highlighter-rouge">li</code>; in questo modo uno screen reader non segnalerà un numero di voci maggiore di quello reale dei passi mostrati nello <code class="highlighter-rouge">steppers-header</code>.</p>
+<p>A differenza della versione contenuta all’interno della Documentazione di Bootstrap Italia, lo <code class="language-plaintext highlighter-rouge">steppers-index</code> è stato inserito in un <strong>tag span</strong> anziché <code class="language-plaintext highlighter-rouge">li</code>; in questo modo uno screen reader non segnalerà un numero di voci maggiore di quello reale dei passi mostrati nello <code class="language-plaintext highlighter-rouge">steppers-header</code>.</p>
 
 <h3 id="header-grafico">Header grafico</h3>
 
@@ -457,11 +457,11 @@ Nota: lo stato <code class="highlighter-rouge">error</code> è una personalizzaz
 E’ caratterizzato da icone all’interno di grossi punti, inizialmente grigi, che si colorano passo dopo passo.<br />
 Benché responsivo è comunque adatto ad un numero limitato di passi.</p>
 
-<p>E’ composto da un <em>div</em> principale di classe <code class="highlighter-rouge">it25-wizard</code> e da una serie di <em>tag</em> <code class="highlighter-rouge">li</code> di classe <code class="highlighter-rouge">it-pin-wrapper</code>.<br />
+<p>E’ composto da un <em>div</em> principale di classe <code class="language-plaintext highlighter-rouge">it25-wizard</code> e da una serie di <em>tag</em> <code class="language-plaintext highlighter-rouge">li</code> di classe <code class="language-plaintext highlighter-rouge">it-pin-wrapper</code>.<br />
 Anche in questo caso, associando la classe che indica lo stato di avanzamento si determina la colorazione di ogni <em>punto</em>.</p>
 
 <p>E’ <strong>fortemente consigliato</strong> aggiungere un <strong><a href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">tooltip</a></strong> per aiutare la comprensione.<br />
-Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire una descrizione</strong> in uno span di classe <code class="highlighter-rouge">sr-only</code> o con un testo alternativo.</p>
+Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire una descrizione</strong> in uno span di classe <code class="language-plaintext highlighter-rouge">sr-only</code> o con un testo alternativo.</p>
 
 <p>Se si utilizzano, <strong>i tooltip vanno attivati</strong> come di consueto.</p>
 
@@ -589,20 +589,20 @@ Inoltre, per questioni di accessibilità, è sempre <strong>obbligatorio fornire
 <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- end div class="steppers" --&gt;</span></code></pre></figure>
 
 <h4 id="buttons">Buttons</h4>
-<p><em>Bootstrap Italia</em> prevede 4 classi specifiche per i bottoni dello <code class="highlighter-rouge">steppers-nav</code>:</p>
+<p><em>Bootstrap Italia</em> prevede 4 classi specifiche per i bottoni dello <code class="language-plaintext highlighter-rouge">steppers-nav</code>:</p>
 <ul>
-  <li><code class="highlighter-rouge">steppers-btn-prev</code> e <code class="highlighter-rouge">steppers-btn-next</code> per i bottoni di indietro e avanti <strong>senza convalida</strong> dei dati</li>
-  <li><code class="highlighter-rouge">steppers-btn-save</code> e <code class="highlighter-rouge">steppers-btn-confirm</code> per l’<strong>avanzamento con convalida</strong>.</li>
+  <li><code class="language-plaintext highlighter-rouge">steppers-btn-prev</code> e <code class="language-plaintext highlighter-rouge">steppers-btn-next</code> per i bottoni di indietro e avanti <strong>senza convalida</strong> dei dati</li>
+  <li><code class="language-plaintext highlighter-rouge">steppers-btn-save</code> e <code class="language-plaintext highlighter-rouge">steppers-btn-confirm</code> per l’<strong>avanzamento con convalida</strong>.</li>
 </ul>
 
-<p>Per quanto riguarda gli ultimi due, la loro unica differenza è l’applicazione di un <code class="highlighter-rouge">margin-left: auto</code> per <code class="highlighter-rouge">steppers-btn-confirm</code>, che lo sposta <strong>forzatamente verso il lato destro</strong> del <em>nav</em>.<br />
-Ciò non avviene per <code class="highlighter-rouge">steppers-btn-save</code>, che <strong>si posiziona quindi a seconda</strong> delle regole applicate al suo contenitore.</p>
+<p>Per quanto riguarda gli ultimi due, la loro unica differenza è l’applicazione di un <code class="language-plaintext highlighter-rouge">margin-left: auto</code> per <code class="language-plaintext highlighter-rouge">steppers-btn-confirm</code>, che lo sposta <strong>forzatamente verso il lato destro</strong> del <em>nav</em>.<br />
+Ciò non avviene per <code class="language-plaintext highlighter-rouge">steppers-btn-save</code>, che <strong>si posiziona quindi a seconda</strong> delle regole applicate al suo contenitore.</p>
 
 <h4 id="dots-o-progess-bar">Dots o Progess bar</h4>
-<p>Quando la procedura prevede un numero di passi maggiore di 4, è consigliabile aggiungere degli indicatori di avanzamento allo <code class="highlighter-rouge">steppers-nav</code>.<br />
+<p>Quando la procedura prevede un numero di passi maggiore di 4, è consigliabile aggiungere degli indicatori di avanzamento allo <code class="language-plaintext highlighter-rouge">steppers-nav</code>.<br />
 <em>Bootstrap Italia</em> però visualizza i <em>pallini</em> o la <em>progress bar</em> <strong>solo su smartphone</strong>.<br />
-Per visualizzarli anche su <strong>desktop</strong>, è stata predisposta la classe <code class="highlighter-rouge">it25</code> da <strong>aggiungere</strong> a <code class="highlighter-rouge">steppers-dot</code> o <code class="highlighter-rouge">steppers-progress</code>.<br />
-Per l’accessibilità è <strong>necessario</strong> che i tag <em>li</em> contengano uno <em>span</em> con classe <code class="highlighter-rouge">sr-only</code>, utilizzato dagli screen reader, con un testo indicante il numero di step e lo stato.</p>
+Per visualizzarli anche su <strong>desktop</strong>, è stata predisposta la classe <code class="language-plaintext highlighter-rouge">it25</code> da <strong>aggiungere</strong> a <code class="language-plaintext highlighter-rouge">steppers-dot</code> o <code class="language-plaintext highlighter-rouge">steppers-progress</code>.<br />
+Per l’accessibilità è <strong>necessario</strong> che i tag <em>li</em> contengano uno <em>span</em> con classe <code class="language-plaintext highlighter-rouge">sr-only</code>, utilizzato dagli screen reader, con un testo indicante il numero di step e lo stato.</p>
 
 <div class="bd-callout bd-callout-danger">
 <h4 id="-versione-su-sfondo-scuro"><svg class="icon icon-danger icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use></svg> Versione su sfondo scuro</h4>
@@ -639,6 +639,6 @@ Per l’accessibilità è <strong>necessario</strong> che i tag <em>li</em> cont
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202004151616"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script>
   </body>
 </html>
