@@ -31,6 +31,12 @@ Prima di tutto assicurati che sia un problema relativo al tema Bootstrap Lombard
 (in tal caso puoi fare riferimento al [repository di Bootstrap](https://github.com/twbs/bootstrap)), poi
 dai un'occhiata a come [creare una issue](https://github.com/RegioneLombardia/bootstrap-lombardia/blob/master/CONTRIBUTING.md#creare-una-issue).
 
+### Ringraziamenti
+
+Molte persone hanno contribuito volontariamente al miglioramento di Bootstrap Italia!
+
+Ringraziamo in particolare [Spottino](https://github.com/Spottino) per la (ri)progettazione delle icone presenti nella libreria, [avol-io](https://github.com/avol-io), [gtico80](https://github.com/gtico80), [smartm0use](https://github.com/smartm0use) e moltissimi altri per i preziosi contributi, e tutti coloro che segnalandoci issue, usando la libreria o semplicemente facendola conoscere ci aiutano a renderla migliore per tutti!
+
 ## Licenze software dei componenti di terze parti
 
 ### Componenti distribuiti con Bootstrap Lombardia
@@ -56,12 +62,19 @@ Vengono di seguito elencati i componenti distribuiti con Bootstrap Italia che ha
 - Compilazione SASS [node-sass](https://github.com/sass/node-sass/), © Andrew Nesbitt, licenza MIT
 - GitHub REST API client per JavaScript [Octokit rest.js](https://octokit.github.io/rest.js/) © 2012 Cloud9 IDE, Inc. (Mike de Boer), 2017-2018 Octokit contributors, licenza MIT
 
+### Componenti utilizzati per la documentazione
+
+Di seguito sono elencati invece i componenti utilizzati per il sito della documentazione ma non ridistribuiti nella libreria Bootstrap Italia
+
+- [tsParticles](https://particles.matteobruni.it/#bubble) © Matteo Bruni, licenza MIT
+- [clipboard.js](https://clipboardjs.com/) © Zeno Rocha, licenza MIT
+- [AnchorJS](https://www.bryanbraun.com/anchorjs/) © Bryan Braun, licenza MIT
+- [Algolia DocSearch](https://docsearch.algolia.com/) © Algolia, licenza MIT
+
 La licenza di Bootstrap Italia è **BSD 3-Clause** ed è visibile nel file LICENSE:
 
 [![License](https://img.shields.io/github/license/RegioneLombardia/bootstrap-lombardia.svg)](https://github.com/RegioneLombardia/bootstrap-lombardia/blob/master/LICENSE)
 
-<a href="https://www.browserstack.com/
-" target="_blank"><img src="https://p14.zdusercontent.com/attachment/1015988/Acl6uTyvwHnAmpEiRm9p8eh1R?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ewB9aVdbiHzfkiZdbgrc2Q.s1B7FuA_Wdegrj1PBZ0pVGgjWhzuJD8yTKRptv2BxFNe-KQSsaVtbkBer5X2rNq81mHZ_kEuAOigMPjgorAAzTUA5AmP_OX4JQJdQk96Vg3UggORRd4UDSdS-tF4o4evvo_8f3cciZcBBiFuqm-GXAclqWRusZxHITpEM7OHNvvMSDV35zbOO0zLwTnHKNQL715Ozitqrx_Q94yYO9NUM-h6jrN76MM5hLdM2umQXsrd0JH5EMp7tp8yDAAyNtoqZUiNFxCh0o1dUAFgZodntaLkGOv4Gzzj5kb7iBWS6JY.Ev5PtLdgCYcC4799H6-GEg"
-alt="BrowserStack logo" width="200" height="105" /></a>
+<a href="https://www.browserstack.com/" target="_blank"><img src="docs/assets/img/browserstack-logo.png" alt="BrowserStack logo" width="270" height="79" /></a>
 
 We are using BrowserStack for interactive cross browser testing. They are sponsoring our open source project!

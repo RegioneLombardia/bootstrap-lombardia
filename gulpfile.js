@@ -214,6 +214,13 @@ gulp.task('documentation-scss-min', () => {
     .pipe(touch())
 })
 
+gulp.task('documentation-js-vendor', () => {
+  return gulp
+    .src('docs/assets/src/js/vendor/*.min.js')
+    .pipe(gulp.dest(Paths.DIST_DOCUMENTATION + '/js/vendor'))
+    .pipe(touch())
+})
+
 gulp.task('documentation-js-min', () => {
   return gulp
     .src(Paths.SOURCE_DOCUMENTATION_JS)
@@ -317,7 +324,7 @@ gulp.task(
 
 gulp.task(
   'build-documentation',
-  gulp.series('documentation-scss-min', 'documentation-js-min')
+  gulp.series('documentation-scss-min', 'documentation-js-vendor', 'documentation-js-min')
 )
 
 // Sync
