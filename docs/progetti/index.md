@@ -2,7 +2,7 @@
 layout: docs
 group: progetti
 title: Progetti
-redirect_from: "/progetti/"
+redirect_from: '/progetti/'
 toc: true
 ---
 
@@ -21,7 +21,7 @@ toc: true
         {% endif %}
         {% if forloop.first %}<div class="row">{% endif %}
           <div class="col-sm-6 my-4">
-            <a href="{{ example_url }}" target="_blank" rel="noopener noreferrer" class="d-inline-block text-uppercase font-weight-bold">{{ example.name }}<svg class="icon icon-primary icon-sm mb-1"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-chevron-right"></use></svg>{%- if example.status %}<span class="badge badge-warning badge-pill mx-2 text-white">{{ example.status }}</span>{%- endif -%}</a>
+            <a href="{{ example_url }}" target="_blank" rel="noopener noreferrer" class="d-inline-block text-uppercase font-weight-bold">{{ example.name }}<svg class="icon icon-primary icon-sm mb-1"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-chevron-right"></use></svg>{%- if example.status %}<span class="badge badge-warning badge-pill mx-2 text-white">{{ example.status }}</span>{%- endif -%}</a>
             <p class="text-muted">{{ example.description }}</p>
           </div>
         {% if forloop.last %}</div>{% endif %}

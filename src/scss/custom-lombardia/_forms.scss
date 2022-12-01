@@ -1,0 +1,19 @@
+.form-check {
+  [type='checkbox'] {
+    &:disabled:checked + label::after {
+      background-color: #b1b1b3;
+    }
+  }
+}
+
+label.output {
+  position: absolute;
+  transform: translateY(-75%);
+  font-size: .777rem;
+  font-weight: 600;
+}
+
+div.output-field {
+  padding: 8px;
+  font-weight: 700;
+}

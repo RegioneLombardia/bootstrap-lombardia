@@ -58,6 +58,8 @@
       url: informazioni/cookiebar
     - title: carousel
       url: informazioni/carousel
+    - title: carousel-legacy
+      url: informazioni/carousel-legacy
 
 - title: Inserimento
   pages:

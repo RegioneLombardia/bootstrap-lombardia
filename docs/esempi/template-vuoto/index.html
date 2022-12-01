@@ -2,25 +2,26 @@
 layout: base
 title: Template vuoto
 ---
-<div class="it-header-wrapper">
+
+<header class="it-header-wrapper">
   <div class="it-header-slim-wrapper">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="it-header-slim-wrapper-content">
-            <a class="d-none d-lg-block navbar-brand" href="#">Ente appartenenza/Owner</a>
+            <a class="d-none d-lg-block navbar-brand" href="#">Ente appartenenza</a>
             <div class="nav-mobile">
-              <nav>
-                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menu-principale" role="button" aria-expanded="false" aria-controls="menu-principale">
-                  <span>Ente appartenenza/Owner</span>
-                  <svg class="icon">
-                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
+              <nav aria-label="Navigazione secondaria">
+                <a class="it-opener d-lg-none" data-toggle="collapse" href="#menuC1" role="button" aria-expanded="false" aria-controls="menuC1">
+                  <span>Ente appartenenza</span>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
                   </svg>
                 </a>
-                <div class="link-list-wrapper collapse" id="menu-principale">
+                <div class="link-list-wrapper collapse" id="menuC1">
                   <ul class="link-list">
                     <li><a class="list-item" href="#">Link 1</a></li>
-                    <li><a class="list-item" href="#">Link 2 Active</a></li>
+                    <li><a class="list-item" href="#">Link 2</a></li>
                   </ul>
                 </div>
               </nav>
@@ -28,9 +29,10 @@ title: Template vuoto
             <div class="it-header-slim-right-zone">
               <div class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                  <span class="sr-only">Selezione lingua: lingua selezionata</span>
                   <span>ITA</span>
                   <svg class="icon d-none d-lg-block">
-                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
+                    <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
                   </svg>
                 </a>
                 <div class="dropdown-menu">
@@ -38,7 +40,7 @@ title: Template vuoto
                     <div class="col-12">
                       <div class="link-list-wrapper">
                         <ul class="link-list">
-                          <li><a class="list-item" href="#"><span>ITA</span></a></li>
+                          <li><a class="list-item" href="#"><span>ITA <span class="sr-only">selezionata</span></span></a></li>
                           <li><a class="list-item" href="#"><span>ENG</span></a></li>
                         </ul>
                       </div>
@@ -63,12 +65,12 @@ title: Template vuoto
             <div class="it-header-center-content-wrapper">
               <div class="it-brand-wrapper">
                 <a href="#">
-                  <svg class="icon">
-                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-code-circle"></use>
+                  <svg class="icon" aria-hidden="true">
+                    <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pa"></use>
                   </svg>
                   <div class="it-brand-text">
-                    <h2 class="no_toc">Lorem Ipsum</h2>
-                    <h3 class="no_toc d-none d-md-block">Inserire qui la tag line</h3>
+                    <div class="it-brand-title">Nome dell'Istituzione</div>
+                    <div class="it-brand-tagline d-none d-md-block">Tag line dell'Istituzione</div>
                   </div>
                 </a>
               </div>
@@ -79,21 +81,21 @@ title: Template vuoto
                     <li>
                       <a href="#" aria-label="Facebook" target="_blank">
                         <svg class="icon">
-                          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-facebook"></use>
+                          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-facebook"></use>
                         </svg>
                       </a>
                     </li>
                     <li>
                       <a href="#" aria-label="Github" target="_blank">
                         <svg class="icon">
-                          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-github"></use>
+                          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-github"></use>
                         </svg>
                       </a>
                     </li>
                     <li>
-                      <a href="#" target="_blank" aria-label="Twitter">
+                      <a href="#" aria-label="Twitter" target="_blank">
                         <svg class="icon">
-                          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-twitter"></use>
+                          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-twitter"></use>
                         </svg>
                       </a>
                     </li>
@@ -101,9 +103,9 @@ title: Template vuoto
                 </div>
                 <div class="it-search-wrapper">
                   <span class="d-none d-md-block">Cerca</span>
-                  <a class="search-link rounded-icon" href="#" aria-label="Cerca">
+                  <a class="search-link rounded-icon" aria-label="Cerca nel sito" href="#">
                     <svg class="icon">
-                      <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use>
+                      <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use>
                     </svg>
                   </a>
                 </div>
@@ -117,63 +119,65 @@ title: Template vuoto
       <div class="container">
         <div class="row">
           <div class="col-12">
-
-            <nav class="navbar navbar-expand-lg has-megamenu">
-              <button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-target="#navC1">
                 <svg class="icon">
-                  <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-burger"></use>
+                  <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-burger"></use>
                 </svg>
               </button>
-              <div class="navbar-collapsable" id="nav10">
-                <div class="overlay"></div>
-                <div class="close-div sr-only">
-                  <button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+              <div class="navbar-collapsable" id="navC1" style="display: none;">
+                <div class="overlay" style="display: none;"></div>
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="sr-only">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-close-big"></use>
+                    </svg>
+                  </button>
                 </div>
                 <div class="menu-wrapper">
                   <ul class="navbar-nav">
-                    <li class="nav-item active"><a class="nav-link active" href="#"><span>link 1 attivo</span><span class="sr-only">current</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span>link 2</span></a></li>
-                    <li class="nav-item"><a class="nav-link disabled" href="#"><span>link 3 disabilitato</span></a></li>
+                    <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
+                    <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span>Link 4</span></a></li>
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <span>Esempio di Dropdown</span>
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" id="mainNavDropdownC1">
+                        <span>Menu Dropdown</span>
                         <svg class="icon icon-xs">
-                          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
+                          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
                         </svg>
                       </a>
-                      <div class="dropdown-menu">
+                      <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdownC1">
                         <div class="link-list-wrapper">
+                          <div class="link-list-heading">Sezione</div>
                           <ul class="link-list">
-                            <li>
-                              <h3 class="no_toc" id="heading">Heading</h3>
-                            </li>
-                            <li><a class="list-item" href="#"><span>Link list 1</span></a></li>
-                            <li><a class="list-item" href="#"><span>Link list 2</span></a></li>
-                            <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                            <li><a class="list-item" href="#"><span>Link lista 1</span></a></li>
+                            <li><a class="list-item" href="#"><span>Link lista 2</span></a></li>
+                            <li><a class="list-item" href="#"><span>Link lista 3</span></a></li>
                             <li><span class="divider"></span></li>
-                            <li><a class="list-item" href="#"><span>Link list 4</span></a></li>
+                            <li><a class="list-item" href="#"><span>Link lista 4</span></a></li>
                           </ul>
                         </div>
                       </div>
                     </li>
                     <li class="nav-item dropdown megamenu">
-                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
-                        <span>Esempio di Megamenu</span>
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false" id="mainNavMegamenuC1">
+                        <span>Megamenu</span>
                         <svg class="icon icon-xs">
-                          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
+                          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-expand"></use>
                         </svg>
                       </a>
-                      <div class="dropdown-menu">
+                      <div class="dropdown-menu" role="region" aria-labelledby="mainNavMegamenuC1">
                         <div class="row">
                           <div class="col-12 col-lg-4">
                             <div class="link-list-wrapper">
+                              <div class="link-list-heading">Sezione 1</div>
                               <ul class="link-list">
-                                <li>
-                                  <h3 class="no_toc">Heading 1</h3>
-                                </li>
-                                <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 1</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 2</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 3</span></a></li>
                               </ul>
                             </div>
                           </div>
@@ -181,11 +185,11 @@ title: Template vuoto
                             <div class="link-list-wrapper">
                               <ul class="link-list">
                                 <li>
-                                  <h3 class="no_toc">Heading 2</h3>
+                                  <div class="link-list-heading">Sezione 2</div>
                                 </li>
-                                <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 4</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 5</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 6</span></a></li>
                               </ul>
                             </div>
                           </div>
@@ -193,11 +197,11 @@ title: Template vuoto
                             <div class="link-list-wrapper">
                               <ul class="link-list">
                                 <li>
-                                  <h3 class="no_toc">Heading 3</h3>
+                                  <div class="link-list-heading">Sezione 3</div>
                                 </li>
-                                <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-                                <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 7</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 8</span></a></li>
+                                <li><a class="list-item" href="#"><span>Link lista 9</span></a></li>
                               </ul>
                             </div>
                           </div>
@@ -206,7 +210,6 @@ title: Template vuoto
                     </li>
                   </ul>
                 </div>
-
               </div>
             </nav>
           </div>
@@ -214,14 +217,16 @@ title: Template vuoto
       </div>
     </div>
   </div>
-</div>
+</header>
 
 <div class="container my-4">
   <h1>Lorem Ipsum</h1>
-  <p>Ab illo tempore, ab est sed immemorabili.<br/>
-    Ullamco laboris nisi ut aliquid ex ea commodi consequat.<br/>
-    Quis aute iure reprehenderit in voluptate velit esse.<br/>
-    Petierunt uti sibi concilium totius Galliae in diem certam indicere.</p>
+  <p>
+    Ab illo tempore, ab est sed immemorabili.<br />
+    Ullamco laboris nisi ut aliquid ex ea commodi consequat.<br />
+    Quis aute iure reprehenderit in voluptate velit esse.<br />
+    Petierunt uti sibi concilium totius Galliae in diem certam indicere.
+  </p>
   <p>Pellentesque habitant morbi tristique senectus et netus.</p>
 </div>
 
@@ -309,12 +314,15 @@ title: Template vuoto
           <div class="col-lg-4 col-md-4 pb-2">
             <h4><a href="#" title="Vai alla pagina: Contatti">Contatti</a></h4>
             <p>
-              <strong>Comune di Lorem Ipsum</strong><br> Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
+              <strong>Comune di Lorem Ipsum</strong><br />
+              Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
             </p>
             <div class="link-list-wrapper">
               <ul class="footer-list link-list clearfix">
                 <li><a class="list-item" href="#" title="Vai alla pagina: Posta Elettronica Certificata">Posta Elettronica Certificata</a></li>
-                <li><a class="list-item" href="#" title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico">URP - Ufficio Relazioni con il Pubblico</a></li>
+                <li>
+                  <a class="list-item" href="#" title="Vai alla pagina: URP - Ufficio Relazioni con il Pubblico">URP - Ufficio Relazioni con il Pubblico</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -325,10 +333,30 @@ title: Template vuoto
             <div class="pb-2">
               <h4><a href="#" title="Vai alla pagina: Seguici su">Seguici su</a></h4>
               <ul class="list-inline text-left social">
-                <li class="list-inline-item"><a class="p-2 text-white" href="#" target="_blank"><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-designers-italia"></use></svg><span class="sr-only">Designers Italia</span></a></li>
-                <li class="list-inline-item"><a class="p-2 text-white" href="#" target="_blank"><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-twitter"></use></svg><span class="sr-only">Twitter</span></a></li>
-                <li class="list-inline-item"><a class="p-2 text-white" href="#" target="_blank"><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-medium"></use></svg><span class="sr-only">Medium</span></a></li>
-                <li class="list-inline-item"><a class="p-2 text-white" href="#" target="_blank"><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-behance"></use></svg><span class="sr-only">Behance</span></a></li>
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="#" target="_blank"
+                    ><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-designers-italia"></use></svg
+                    ><span class="sr-only">Designers Italia</span></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="#" target="_blank"
+                    ><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-twitter"></use></svg
+                    ><span class="sr-only">Twitter</span></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="#" target="_blank"
+                    ><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-medium"></use></svg
+                    ><span class="sr-only">Medium</span></a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a class="p-2 text-white" href="#" target="_blank"
+                    ><svg class="icon icon-sm icon-white align-top"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-behance"></use></svg
+                    ><span class="sr-only">Behance</span></a
+                  >
+                </li>
               </ul>
             </div>
             <div class="pb-2">
@@ -360,7 +388,7 @@ title: Template vuoto
         <li class="list-inline-item"><a href="#" title="Note Legali">Media policy</a></li>
         <li class="list-inline-item"><a href="#" title="Note Legali">Note legali</a></li>
         <li class="list-inline-item"><a href="#" title="Privacy-Cookies">Privacy policy</a></li>
-        <li class="list-inline-item"><a href="#" title="Mappa del sito">Mappa del sito</a> </li>
+        <li class="list-inline-item"><a href="#" title="Mappa del sito">Mappa del sito</a></li>
       </ul>
     </div>
   </div>

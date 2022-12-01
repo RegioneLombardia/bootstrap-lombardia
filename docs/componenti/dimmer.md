@@ -20,13 +20,13 @@ Un Dimmer occupa tutta l'altezza e la larghezza dell'elemento all'interno del qu
 
 L'elemento contenitore deve avere la classe `.dimmable` mentre il Dimmer avrà un ID univoco che sarà utilizzato per l'attivazione e l'occultamento attraverso i seguenti comandi:
 
-{% highlight js %}
-  // mostra Dimmer
-  $('#ID_ELEMENTO').dimmerShow();
+```js
+// mostra Dimmer
+$('#ID_ELEMENTO').dimmerShow()
 
-  // nascondi Dimmer
-  $('#ID_ELEMENTO').dimmerHide();
-{% endhighlight %}
+// nascondi Dimmer
+$('#ID_ELEMENTO').dimmerHide()
+```
 
 ## Esempio
 
@@ -43,11 +43,12 @@ Il testo è contenuto all'interno di un tag `<p>` e può essere preceduto da un'
 </div>
 
 {% capture example %}
+
 <div class="row dimmable">
   <div class="dimmer" id="dimmer1">
     <div class="dimmer-inner">
       <div class="dimmer-icon">
-        <svg class="icon icon-xl"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-unlocked"></use></svg>
+        <svg class="icon icon-xl"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-unlocked"></use></svg>
       </div>
       <p>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.</p>
     </div>
@@ -104,6 +105,7 @@ Aggiungendo la classe `.dimmer-primary` al wrapper del Dimmer si ottiene una ver
 </div>
 
 {% capture example %}
+
 <div class="row dimmable">
   <div class="dimmer dimmer-primary" id="dimmer2">
     <div class="dimmer-inner">
@@ -149,7 +151,6 @@ Aggiungendo la classe `.dimmer-primary` al wrapper del Dimmer si ottiene una ver
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-
 ## Dimmer con Azioni
 
 Un Dimmer può contenere tasti collegati ad azioni ed un titolo descrittivo.
@@ -165,6 +166,7 @@ I bottoni vanno inseriti in un `<div>` con classi `.dimmer-buttons` e `.bg-dark`
 </div>
 
 {% capture example %}
+
 <div class="row dimmable">
   <div class="dimmer" id="dimmer3">
     <div class="dimmer-inner">
@@ -227,6 +229,7 @@ Aggiungendo la classe `.dimmer-primary` al wrapper del Dimmer si ottiene una ver
 </div>
 
 {% capture example %}
+
 <div class="row dimmable">
   <div class="dimmer dimmer-primary" id="dimmer4">
     <div class="dimmer-inner">

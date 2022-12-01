@@ -52,10 +52,7 @@ const Cookiebar = (($) => {
     // Public
 
     show(element) {
-      $(element)
-        .addClass(ClassName.SHOW)
-        .attr('aria-hidden', 'false')
-        .attr('aria-live', 'polite')
+      $(element).addClass(ClassName.SHOW).attr('aria-hidden', 'false').attr('aria-live', 'polite')
     }
 
     close(element) {
@@ -81,24 +78,22 @@ const Cookiebar = (($) => {
     _setCookieEU() {
       var exdate = new Date()
       exdate.setDate(exdate.getDate() + COOKIE_EXPIRE)
-      var c_value =
-        escape(COOKIE_VALUE) +
-        (COOKIE_EXPIRE == null ? '' : '; expires=' + exdate.toUTCString())
+      var c_value = escape(COOKIE_VALUE) + (COOKIE_EXPIRE == null ? '' : '; expires=' + exdate.toUTCString())
       document.cookie = COOKIE_NAME + '=' + c_value + '; path=/'
     }
 
     _getSelectorFromElement(element) {
-      var selector = element.getAttribute('data-target');
+      var selector = element.getAttribute('data-target')
 
       if (!selector || selector === '#') {
-        var hrefAttr = element.getAttribute('href');
-        selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : '';
+        var hrefAttr = element.getAttribute('href')
+        selector = hrefAttr && hrefAttr !== '#' ? hrefAttr.trim() : ''
       }
 
       try {
-        return document.querySelector(selector) ? selector : null;
+        return document.querySelector(selector) ? selector : null
       } catch (err) {
-        return null;
+        return null
       }
     }
 
@@ -125,25 +120,19 @@ const Cookiebar = (($) => {
     }
 
     _removeElement(element) {
-      $(element)
-        .removeClass(ClassName.SHOW)
-        .attr('aria-hidden', 'true')
-        .attr('aria-live', 'off')
+      $(element).removeClass(ClassName.SHOW).attr('aria-hidden', 'true').attr('aria-live', 'off')
 
       this._destroyElement(element)
     }
 
     _destroyElement(element) {
-      $(element)
-        .detach()
-        .trigger(Event.CLOSED)
-        .remove()
+      $(element).detach().trigger(Event.CLOSED).remove()
     }
 
     // Static
 
     static _jQueryInterface(config) {
-      return this.each(function() {
+      return this.each(function () {
         const $element = $(this)
         let data = $element.data(DATA_KEY)
 
@@ -162,7 +151,7 @@ const Cookiebar = (($) => {
     }
 
     static _handleAccept(cookiebarInstance) {
-      return function(event) {
+      return function (event) {
         if (event) {
           event.preventDefault()
         }
@@ -172,7 +161,7 @@ const Cookiebar = (($) => {
     }
 
     static _handleConsent(cookiebarInstance) {
-      return function(event) {
+      return function (event) {
         if (event) {
           event.preventDefault()
         }
@@ -203,11 +192,7 @@ const Cookiebar = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  $(document).on(
-    Event.CLICK_DATA_API,
-    Selector.ACCEPT,
-    Cookiebar._handleAccept(new Cookiebar())
-  )
+  $(document).on(Event.CLICK_DATA_API, Selector.ACCEPT, Cookiebar._handleAccept(new Cookiebar()))
 
   $(window).on(Event.LOAD_DATA_API, () => {
     const cookiebars = $.makeArray($(Selector.COOKIE_BAR))
@@ -228,7 +213,7 @@ const Cookiebar = (($) => {
 
   $.fn[NAME] = Cookiebar._jQueryInterface
   $.fn[NAME].Constructor = Cookiebar
-  $.fn[NAME].noConflict = function() {
+  $.fn[NAME].noConflict = function () {
     $.fn[NAME] = JQUERY_NO_CONFLICT
     return Cookiebar._jQueryInterface
   }

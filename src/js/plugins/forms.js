@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   const inputSelector =
     'input[type="text"],' +
     'input[type="password"],' +
@@ -12,64 +12,47 @@ $(function() {
 
   const inputFileSelector = 'input[type="file"]'
 
-  const handleLabelWidth = $input => {
-    const labelsForInput = $input.siblings('label:not(.active)')
-    if (labelsForInput && labelsForInput.length) {
-      let labelWidth =
-        labelsForInput[0].offsetWidth > $input[0].offsetWidth - 20
-          ? $input[0].offsetWidth
-          : 'auto'
-      $(labelsForInput[0]).css('width', labelWidth)
-    }
-  }
-
   $(document)
-    .on('focus', inputSelector, e => {
+    .on('focus', inputSelector, (e) => {
       const $this = $(e.target)
-      $this.siblings('label, i').addClass('active')
-      const labelsForInput = $this.siblings('label')
-      if (labelsForInput && labelsForInput.length) {
-        $(labelsForInput[0]).css('width', 'auto')
-      }
+      const labelSelector = "label[for='" + $this.attr('id') + "']"
+      $(labelSelector).addClass('active')
     })
-    .on('blur', inputSelector, e => {
+    .on('blur', inputSelector, (e) => {
       const $this = $(e.target)
       const noValue = !$this.val()
       const noPlaceholder = !$this.attr('placeholder')
-
       if (noValue && noPlaceholder) {
-        $this.siblings('label, i').removeClass('active')
-        handleLabelWidth($this)
+        $("label[for='" + $this.attr('id') + "']").removeClass('active')
       }
     })
-    .on('change', inputSelector, e => {
+    .on('change', inputSelector, (e) => {
       const $this = $(e.target)
       updateTextFields($this)
       validateField($this)
     })
-    .on('blur', inputFileSelector, e => {
+    .on('blur', inputFileSelector, (e) => {
       const $this = $(e.target)
-      $this.siblings('label').addClass('active')
+      $("label[for='" + $this.attr('id') + "']").addClass('active')
     })
-    .on('change', inputFileSelector, e => {
+    .on('change', inputFileSelector, (e) => {
       const $this = $(e.target)
       var numFiles = e.currentTarget.files.length
       var nomiFiles = ''
       var multi = ''
-      for (i = 0; i < numFiles; i++) {
-        fileSize = parseInt(e.currentTarget.files[i].size, 10) / 1024
-        filesize = Math.round(fileSize)
-        nomiFiles =
-          nomiFiles + e.currentTarget.files[i].name + ' (' + filesize + 'kb); '
+      for (var i = 0; i < numFiles; i++) {
+        var fileSize = parseInt(e.currentTarget.files[i].size, 10) / 1024
+        var filesize = Math.round(fileSize)
+        nomiFiles = nomiFiles + e.currentTarget.files[i].name + ' (' + filesize + 'kb); '
       }
       if (numFiles > 1) {
         multi = numFiles + ' file da caricare: '
       }
-      $this.siblings('.form-file-name').text(multi + nomiFiles)
+      $("label[for='" + $this.attr('id') + "']label[class='form-file-name']").text(multi + nomiFiles)
     })
 
-  const updateTextFields = $input => {
-    const $labelAndIcon = $input.siblings('label, i')
+  const updateTextFields = ($input) => {
+    const $labelAndIcon = $("label[for='" + $input.attr('id') + "']")
     const hasValue = $input.val().length
     const hasPlaceholder = !!$input.attr('placeholder')
     if (hasValue || hasPlaceholder) {
@@ -79,7 +62,7 @@ $(function() {
     }
   }
 
-  const validateField = $input => {
+  const validateField = ($input) => {
     if ($input.hasClass('validate')) {
       const value = $input.val()
       const noValue = !value.length
@@ -107,28 +90,18 @@ $(function() {
         const hasDefaultValue = !!$this.val()
         const hasPlaceholder = !!$this.attr('placeholder')
         if (hasDefaultValue || hasPlaceholder) {
-          $this
-            .siblings('label, i')
+          $("label[for='" + $this.attr('id') + "']")
             .css('transition', 'none')
             .addClass('active')
         }
 
         if (!hasDefaultValue && !hasPlaceholder) {
-          $this.siblings('label, i').removeClass('active')
-          handleLabelWidth($this)
+          $("label[for='" + $this.attr('id') + "']").removeClass('active')
         }
       })
   }
 
-  $(window).resize(function() {
-    $(inputSelector).each((index, input) => {
-      let $this = $(input)
-      handleLabelWidth($this)
-    })
-  })
-
   handleLabelPosition()
 
   $(document).on('changed.bs.form-control', handleLabelPosition)
-
 })

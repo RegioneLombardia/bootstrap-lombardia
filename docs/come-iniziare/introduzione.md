@@ -12,13 +12,9 @@ description: Come usare Bootstrap Regione Lombardia nel tuo progetto
 
 ## Caricare la libreria
 
-Per utilizzare il codice compilato di {{ site.data.short.bl }} nel tuo progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui:
+Per utilizzare il codice compilato di {{ site.data.short.bl }} nel proprio progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui un file CSS, un Javascript, i fonts e una SVG sprite, il tutto scaricabile qui:
 
-<!--
 <a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
--->
-
-<a href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary">Scarica Bootstrap Lombardia v{{ site.current_version }}</a>
 
 {% capture callout %}
 
@@ -41,7 +37,7 @@ Di seguito le informazioni per l'utilizzo dei singoli file.
 
 Una volta scaricato e decompresso il file, all'interno della cartella `css` sarà presente un file CSS minificato (`bootstrap-lombardia.min.css`) con la sua [sourcemap](https://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) (opzionale).
 
-Per includere questo file all'interno del tuo progetto sarà quindi sufficiente aggiungere il tag `<link>` di seguito riportato all'interno del tag `<head>` della pagina, prima di ogni altro CSS già presente, eventualmente correggendo il riferimento al percorso del file:
+Per includere questo file all'interno del proprio progetto sarà sufficiente aggiungere il tag `<link>` di seguito riportato all'interno del tag `<head>` della pagina, prima di ogni altro CSS già presente, eventualmente correggendo il riferimento al percorso del file:
 
 {% highlight html %}
 <link rel="stylesheet" href="./bootstrap-lombardia.min.css">
@@ -49,7 +45,7 @@ Per includere questo file all'interno del tuo progetto sarà quindi sufficiente 
 
 ### Javascript
 
-All'interno della cartella `js` saranno invece presenti due file, che si differenziano soltanto per l'inclusione _in linea_ delle librerie *jQuery*, *popper.js* e *Owl Carousel* (quest'ultimo necessario soltanto se presenti componenti di tipo [Carousel]({{ site.baseurl }}/docs/componenti/carousel)). Vediamo nel dettaglio di cosa si tratta:
+All'interno della cartella `js` saranno invece presenti due file, che si differenziano soltanto per l'inclusione _in linea_ delle librerie _jQuery_ e _popper.js_. Vediamo nel dettaglio di cosa si tratta:
 
 <table class="table table-bordered">
   <thead>
@@ -57,7 +53,6 @@ All'interno della cartella `js` saranno invece presenti due file, che si differe
       <th scope="col">JS files</th>
       <th scope="col">Popper</th>
       <th scope="col">jQuery</th>
-      <th scope="col">OwlCarousel</th>
     </tr>
   </thead>
   <tbody>
@@ -80,8 +75,7 @@ All'interno della cartella `js` saranno invece presenti due file, che si differe
   </tbody>
 </table>
 
-In questo caso, dopo aver copiato i file all'interno del vostro progetto, sarà sufficiente inserire una versione dei tag `<script>` di seguito riportati alla fine della pagina HTML, giusto prima della chiusura del tag `</body>`. Si potrà quindi **scegliere** se includere la versione `*.bundle.*` o caricare i singoli file separatamente (questo può rendersi necessario, ad esempio, se jQuery è già incluso nel vostro sito per altri motivi).
-
+In questo caso, dopo aver copiato i file all'interno del progetto, sarà sufficiente inserire una versione dei tag `<script>` di seguito riportati alla fine della pagina HTML, giusto prima della chiusura del tag `</body>`. Si potrà quindi **scegliere** se includere la versione `*.bundle.*` o caricare i singoli file separatamente (questo può rendersi necessario, ad esempio, se jQuery è già incluso nel vostro sito per altri motivi).
 
 ### Fonts
 È necessario anche includere i file relativi ai font referenziati nel CSS, mantenendo i path dei singoli font utilizzato nei [file sorgente della libreria](https://github.com/RegioneLombardia/bootstrap-lombardia/releases/tag/v{{ site.current_version }}). Il path di base della cartella dei font può essere impostato utilizzando la variabile globale **prima** del caricamento della libreria Javascript di Bootstrap Lombardia:
@@ -100,7 +94,7 @@ Per informazioni, si può fare riferimento alla [documentazione sull'utilizzo de
 
 #### Versione "bundle"
 
-Includendo la versione `*.bundle.*`, non sarà necessario aggiungere ulteriori riferimenti a jQuery, Popper.js e Owl Carousel, in quanto già inclusi nel file `bootstrap-lombardia.bundle.min.js`.
+Includendo la versione `*.bundle.*`, non sarà necessario aggiungere ulteriori riferimenti a jQuery, Popper.js, in quanto già inclusi nel file `bootstrap-lombardia.bundle.min.js`.
 
 {% highlight html %}
 <script src="./bootstrap-lombardia.bundle.min.js"></script>
@@ -108,12 +102,11 @@ Includendo la versione `*.bundle.*`, non sarà necessario aggiungere ulteriori r
 
 #### Versione semplice
 
-Al contrario, nel caso si preferisca caricare jQuery, Popper.js e Owl Carousel separatamente, sarà necessario includere i tag `<script>` come mostrato di seguito:
+Al contrario, nel caso si preferisca caricare jQuery e Popper.js separatamente, sarà necessario includere i tag `<script>` come mostrato di seguito:
 
 {% highlight html %}
 {{ site.cdn.jquery }}
 {{ site.cdn.popper }}
-{{ site.cdn.owlcarousel }}
 <script src="./bootstrap-lombardia.min.js"></script>
 {% endhighlight %}
 
@@ -122,13 +115,13 @@ Al contrario, nel caso si preferisca caricare jQuery, Popper.js e Owl Carousel s
 
 In breve, si dovrebbe ottenere qualcosa di simile a ciò che segue:
 
-{% highlight html %}
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="./bootstrap-lombardia.min.css">
@@ -139,7 +132,7 @@ In breve, si dovrebbe ottenere qualcosa di simile a ciò che segue:
     <script src="./bootstrap-lombardia.bundle.min.js"></script>
   </body>
 </html>
-{% endhighlight %}
+```
 
 Questo è tutto ciò che è sufficiente per avere a disposizione le funzionalità e gli stili di {{ site.data.short.bl }}.
 
@@ -167,34 +160,34 @@ Il framework Bootstrap, e di conseguenza il tema {{ site.data.short.bl }}, utili
 
 Bootstrap richiede l'uso del doctype HTML5.
 
-{% highlight html %}
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="it">
   ...
 </html>
-{% endhighlight %}
+```
 
 ### Meta tag responsive
 
-Bootstrap è sviluppato in modalità *mobile first*: per assicurare un rendering e una gestione dello zoom ottimale per ogni dispositivo, è necessario **aggiungere il meta tag responsive che segue** all'interno del tag `<head>`.
+Bootstrap è sviluppato in modalità _mobile first_: per assicurare un rendering e una gestione dello zoom ottimale per ogni dispositivo, è necessario **aggiungere il meta tag responsive che segue** all'interno del tag `<head>`.
 
-{% highlight html %}
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{% endhighlight %}
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+```
 
-Puoi vedere un'esempio di tale codice applicato nella [pagina html di esempio](#pagina-html-di-esempio).
+È possibile visualizzare un'esempio di tale codice applicato nella [pagina html di esempio](#pagina-html-di-esempio).
 
 ### Box-sizing
 
-Per un migliore dimensionamento degli elementi nella pagina, Bootstrap imposta il valore di `box-sizing` da `content-box` a `border-box`. Questo assicura che ogni `padding` non abbia effetto sulla dimensione finale di un elemento, ma a volte può causare qualche problema con codice di terze parti come Google Maps o Google Custom Search Engine.
+Per un migliore dimensionamento degli elementi nella pagina, Bootstrap occorre impostare il valore di `box-sizing` da `content-box` a `border-box`. Questo assicura che ogni `padding` non abbia effetto sulla dimensione finale di un elemento, ma a volte può causare qualche problema con codice di terze parti come Google Maps o Google Custom Search Engine.
 
 Nelle rare occasioni sia necessario sovrascrivere il comportamento impostato da Bootstrap, sarà sufficiente utilizzare codice simile a quanto segue:
 
-{% highlight css %}
+```css
 .selettore-per-creare-eccezione {
   box-sizing: content-box;
 }
-{% endhighlight %}
+```
 
 Si possono trovare dettagli aggiuntivi alla [pagina corrispondente](https://getbootstrap.com/docs/{{ site.bootstrap_minor }}/getting-started/introduction/#box-sizing) sul sito ufficiale di Bootstrap.
 
@@ -206,5 +199,5 @@ Infine, per _normalizzare_ alcuni comportamenti cross-browser, {{ site.data.shor
 
 ###### Continua la lettura >
 
-Se ti interessa contribuire alla libreria o sapere come funziona il processo di compilazione dei file e la creazione della documentazione di Bootstrap Italia,
-continua a leggere alla pagina [strumenti di compilazione]({{ site.baseurl }}/docs/come-iniziare/strumenti-di-compilazione/).
+Se ti interessa contribuire alla libreria e sapere come funziona il processo di compilazione dei file e la creazione della documentazione di Bootstrap Italia,
+continua a leggere alla pagina [strumenti di compilazione e contribuzione]({{ site.baseurl }}/docs/come-iniziare/strumenti-di-compilazione/).

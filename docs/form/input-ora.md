@@ -9,20 +9,48 @@ description: Campi input con bottoni per agevolare la selezione di un orario
 
 Il componente input time, o timepicker, è un componente personalizzato per la selezione di un orario.
 
+### Input ora
+
 {% capture callout %}
+**Compatibilità con Internet Explorer 11**
+
+L'input type="time" non è supportato da IE11, se ne consiglia l'utilizzo congiuntamente al plugin [Just Validate](https://just-validate.dev/) per verificare l'effettiva validità del campo su Internet Explorer.
+{% endcapture %}{% include callout.html content=callout type="warning" %}
+
+Assicurarsi di aggiungere alla label la classe **`active`** per impedire la sovrapposizione della label al campo.
+
+{% capture example %}
+
+<div class="form-group">
+  <label class="active" for="timeStandard">Timepicker standard</label>
+  <input class="form-control" id="timeStandard" type="time">
+</div>
+{% endcapture %}{% include example.html content=example %}
+### Input ora custom
+
+{% capture callout %}
+**Il componente verrà deprecato nella prossima release di Bootstrap Italia**
+
+Il componente timepicker custom presenta alcuni problemi di accessibilità. Se ne sconsiglia l'utilizzo.
+{% endcapture %}{% include callout.html content=callout type="danger" %}
+
+{% capture callout %}
+
 #### Note importanti
 
 Assicurati di aggiungere sempre l'attributo **`id`** ai seguenti tag:
- - **`<input class="form-control>`** : L'input di testo che riceve i valori selezionati.
- - **`<input class="spinnerHour">`** : L'input di testo per i valori ora.
- - **`<input class="spinnerMin">`** : L'input di testo per i valori minuti.
- - **`<button class="btnHourUp">`** : Il pulsante che aumenta il valore ora.
- - **`<button class="btnHourDown">`** : Il pulsante che diminuisce il valore ora.
- - **`<button class="btnMinUp">`** : Il pulsante che aumenta il valore minuti.
- - **`<button class="btnMinDown">`** : Il pulsante che diminuisce il valore minuti.
-{% endcapture %}{% include callout.html content=callout type="warning" %}
+
+- **`<input class="form-control>`** : L'input di testo che riceve i valori selezionati.
+- **`<input class="spinnerHour">`** : L'input di testo per i valori ora.
+- **`<input class="spinnerMin">`** : L'input di testo per i valori minuti.
+- **`<button class="btnHourUp">`** : Il pulsante che aumenta il valore ora.
+- **`<button class="btnHourDown">`** : Il pulsante che diminuisce il valore ora.
+- **`<button class="btnMinUp">`** : Il pulsante che aumenta il valore minuti.
+- **`<button class="btnMinDown">`** : Il pulsante che diminuisce il valore minuti.
+  {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 {% capture example %}
+
 <div class="it-timepicker-wrapper">
   <section class="time-spinner">
     <div class="error_container" role="alert" aria-atomic="true"></div>
@@ -31,13 +59,13 @@ Assicurati di aggiungere sempre l'attributo **`id`** ai seguenti tag:
       <div>
         <div class="calendar-input-container">
           <div class="form-group">
+            <label for="txtTime1">Label timepicker</label>
             <input class="form-control txtTime" id="txtTime1" type="text" placeholder="hh:mm">
             <button class="btn-time" id="btnTime1" aria-label="Time picker - Scadenza">
               <svg class="icon">
-                <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-clock"></use>
+                <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-clock"></use>
               </svg>
             </button>
-            <label for="txtTime1">Label timepicker</label>
           </div>
         </div>
       </div>
@@ -71,10 +99,12 @@ Assicurati di aggiungere sempre l'attributo **`id`** ai seguenti tag:
 {% endcapture %}{% include example.html content=example %}
 
 ### Versione scura
+
 Per utilizzare il Datepicker in versione scura, aggiungere la classe `.theme-dark` al div `it-timepicker-wrapper`
 Clicca sull'icona per visualizzare il datepicker.
 
 {% capture example %}
+
 <div class="it-timepicker-wrapper theme-dark">
   <section class="time-spinner">
     <div class="error_container" role="alert" aria-atomic="true"></div>
@@ -83,13 +113,13 @@ Clicca sull'icona per visualizzare il datepicker.
       <div>
         <div class="calendar-input-container">
           <div class="form-group">
+            <label for="txtTime2">Label timepicker</label>
             <input class="form-control txtTime" id="txtTime2" type="text" placeholder="hh:mm">
             <button class="btn-time" id="btnTime2" aria-label="Time picker - Scadenza">
               <svg class="icon">
-                <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-clock"></use>
+                <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-clock"></use>
               </svg>
             </button>
-            <label for="txtTime2">Label timepicker</label>
           </div>
         </div>
       </div>

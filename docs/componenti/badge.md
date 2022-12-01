@@ -17,20 +17,20 @@ La grandezza di ogni badge si adatta come dimensione a quella del font (misurato
 <div class="h6">Titolo di esempio <span class="badge badge-secondary">New</span></div>
 </div>
 
-{% highlight html %}
+```html
 <h1>Titolo di esempio <span class="badge badge-secondary">New</span></h1>
 <h2>Titolo di esempio <span class="badge badge-secondary">New</span></h2>
 <h3>Titolo di esempio <span class="badge badge-secondary">New</span></h3>
 <h4>Titolo di esempio <span class="badge badge-secondary">New</span></h4>
 <h5>Titolo di esempio <span class="badge badge-secondary">New</span></h5>
 <h6>Titolo di esempio <span class="badge badge-secondary">New</span></h6>
-{% endhighlight %}
+```
 
 I badge possono essere utilizzati come parte di link o pulsanti per fornire un contatore.
 
 {% capture example %}
 <button type="button" class="btn btn-primary">
-  Notifiche <span class="badge badge-light">4</span>
+Notifiche <span class="badge badge-light">4</span>
 </button>
 {% endcapture %}{% include example.html content=example %}
 
@@ -40,8 +40,8 @@ A meno che il contesto non sia chiaro (come con l'esempio "Notifiche", dove si c
 
 {% capture example %}
 <button type="button" class="btn btn-primary">
-  Profilo <span class="badge badge-light">9</span>
-  <span class="sr-only">Messaggi non letti</span>
+Profilo <span class="badge badge-light">9</span>
+<span class="sr-only">Messaggi non letti</span>
 </button>
 {% endcapture %}{% include example.html content=example %}
 

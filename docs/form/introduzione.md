@@ -6,8 +6,8 @@ toc: true
 title: Introduzione
 description: Elementi e stili per la creazione di form accessibili e responsivi
 redirect_from:
-  - "/form/"
-  - "/docs/form/"
+  - '/form/'
+  - '/docs/form/'
 ---
 
 All'interno di un form, nella visualizzazione predefinita gli elementi sono allineati verticalmente, ma è possibile utilizzare classi aggiuntive per variare questo tipo di layout.
@@ -16,38 +16,39 @@ Bootstrap Italia applica automaticamente a tutti i form `display: block` e `widt
 
 ## Organizzazione dei campi
 
-Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare la classe `.form-group` per ogni singolo blocco, in questo modo l'elemento input, l'etichetta, il testo di aiuto opzionale e la messaggistica di validazione otterranno lo stile grafico e le funzionalità predisposte per loro. Puoi usarlo con `<fieldset>`, `<div>` o qualsiasi altro elemento.
+Per raggruppare correttamente gli elementi di un modulo form è bene utilizzare la classe `.form-group` per ogni singolo blocco, in questo modo l'elemento input, l'etichetta, il testo di aiuto opzionale e la messaggistica di validazione otterranno lo stile grafico e le funzionalità predisposte per loro. Si può usare con `<fieldset>`, `<div>` o qualsiasi altro elemento.
 
 ### Dimensionamento delle colonne
 
 Strutture più complesse possono essere costruite usando il sistema a griglia, da utilizzare per layout che richiedono più colonne, larghezze diverse e opzioni di allineamento aggiuntive. La classe `.form-row` ne assicura una corretta spaziatura.
 
-Puoi scegliere di dare una dimensione a una colonna, ad esempio dandogli una classe `.col-7`, mentre le restanti `.col` si divideranno il resto dello spazio.
+Si può scegliere di dare una dimensione a una colonna, ad esempio dandogli una classe `.col-7`, mentre le restanti `.col` si divideranno il resto dello spazio.
 
 {% capture example %}
+
 <div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <input type="text" class="form-control" id="formNome">
       <label for="formNome">Nome</label>
+      <input type="text" class="form-control" id="formNome">
     </div>
     <div class="form-group col-md-6">
-      <input type="text" class="form-control" id="formCognome">
       <label for="formCognome">Cognome</label>
+      <input type="text" class="form-control" id="formCognome">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-7">
-      <input type="text" class="form-control" id="Citta">
       <label for="Citta">Città</label>
+      <input type="text" class="form-control" id="Citta">
     </div>
     <div class="form-group col">
-      <input type="text" class="form-control" id="Comune">
       <label for="Comune">Comune</label>
+      <input type="text" class="form-control" id="Comune">
     </div>
     <div class="form-group col">
-      <input type="text" class="form-control" id="CAP">
       <label for="CAP">CAP</label>
+      <input type="text" class="form-control" id="CAP">
     </div>
   </div>
 </div>
@@ -56,40 +57,42 @@ Puoi scegliere di dare una dimensione a una colonna, ad esempio dandogli una cla
 Ecco l'esempio di una struttura più complessa creata con il sistema a griglie.
 
 {% capture example %}
+
 <div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email">
       <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email">
     </div>
     <div class="form-group col-md-6">
+      <label for="exampleInputPassword">Password</label>
       <input type="password" class="form-control input-password" id="exampleInputPassword" placeholder="inserisci la tua password">
       <span class="password-icon" aria-hidden="true">
-        <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
-        <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
+        <svg class="password-icon-visible icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
       </span>
-      <label for="exampleInputPassword">Password</label>
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col">
-      <input type="text" class="form-control" id="inputAddress" placeholder="Via Roma, 1">
       <label for="inputAddress">Indirizzo</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Via Roma, 1">
     </div>
   </div>
   <div class="form-row">
     <div class="form-group col-md-6">
-      <input type="text" class="form-control" id="inputCity">
       <label for="inputCity">Comune</label>
+      <input type="text" class="form-control" id="inputCity">
     </div>
     <div class="form-group col-md-2">
-      <input type="text" class="form-control" id="inputCAP">
       <label for="inputCAP">CAP</label>
+      <input type="text" class="form-control" id="inputCAP">
     </div>
     <div class="col-md-4">
-      <div class="bootstrap-select-wrapper">
-        <label>Provincia</label>
-        <select title="Scegli un'opzione">
+      <div class="select-wrapper">
+        <label for="defaultSelect">Provincia</label>
+        <select id="defaultSelect">
+          <option selected="" value="">Scegli un'opzione</option>
           <option value="Value 1">Opzione 1</option>
           <option value="Value 2">Opzione 2</option>
           <option value="Value 3">Opzione 3</option>
@@ -124,6 +127,7 @@ Ecco l'esempio di una struttura più complessa creata con il sistema a griglie.
 L'esempio seguente usa una delle utilità di flexbox per centrare verticalmente il contenuto e cambiando `.col` con `.col-auto` in modo che le colonne occupino solo lo spazio necessario. In altre parole, la colonna si dimensiona in base al contenuto. È possibile usarlo anche quando sono presenti altre colonne con dimensioni specifiche (es.: `col-sm-3`).
 
 {% capture example %}
+
 <div class="form-row align-items-center">
   <div class="col-auto">
     <label class="sr-only" for="inlineFormInput">Nome</label>
@@ -156,7 +160,7 @@ L'esempio seguente usa una delle utilità di flexbox per centrare verticalmente 
 
 ##### Alternative alle etichette nascoste
 
-Le tecnologie assistive come gli screenreader avranno problemi con i tuoi moduli se non includi un'etichetta per ogni input. Per questi moduli in linea, puoi nascondere le etichette usando la classe `.sr-only`. Esistono altri metodi alternativi per fornire un'etichetta per le tecnologie assistive, come l'attributo `aria-label`,` aria-labelledby` o `title`. Se nessuno di questi è presente, le tecnologie assistive possono ricorrere all'uso dell'attributo `placeholder`, se presente, ma è sconsigliato.
+Le tecnologie assistive come gli screenreader avranno problemi con i tuoi moduli se non includi un'etichetta per ogni input. Per questi moduli in linea, si può nascondere le etichette usando la classe `.sr-only`. Esistono altri metodi alternativi per fornire un'etichetta per le tecnologie assistive, come l'attributo `aria-label`,` aria-labelledby` o `title`. Se nessuno di questi è presente, le tecnologie assistive possono ricorrere all'uso dell'attributo `placeholder`, se presente, ma è sconsigliato.
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 ## Disabilitazione di campi
@@ -172,125 +176,211 @@ Aggiungi l'attributo booleano `disabled` su un input per impedire le interazioni
 Aggiungi l'attributo `disabled` al `<fieldset>` per disabilitare tutti gli elementi del form contenuti.
 
 {% capture example %}
+
 <div>
   <fieldset disabled aria-label="Form disabilitato">
     <legend>Esempio di form disabilitato</legend>
-    <div class="form-group">
-      <input type="text" id="disabledTextInput" class="form-control" placeholder="input disabilitato">
-      <label for="disabledTextInput">Input </label>
-    </div>
-    <div class="form-group">
-      <div class="bootstrap-select-wrapper">
-        <label>Field Label</label>
-        <select disabled title="Seleziona una opzione">
-          <option value="Value 1">Opzione 1</option>
-          <option value="Value 2">Opzione 2</option>
-          <option value="Value 3">Opzione 3</option>
-          <option value="Value 4">Opzione 4</option>
-          <option value="Value 5">Opzione 5</option>
-        </select>
+      <div class="row mt-4">
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label for="disabledFieldsetInput">Input </label>
+            <input type="text" id="disabledFieldsetInput" class="form-control" placeholder="Input disabilitato">
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <div class="select-wrapper">
+              <label for="disabledFieldsetSelect">Provincia</label>
+              <select id="disabledFieldsetSelect">
+                <option selected="" value="">Select disabilitata</option>
+                <option value="Value 1">Opzione 1</option>
+                <option value="Value 2">Opzione 2</option>
+                <option value="Value 3">Opzione 3</option>
+                <option value="Value 4">Opzione 4</option>
+                <option value="Value 5">Opzione 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled>
-      <label class="form-check-label" for="disabledFieldsetCheck">
-        Check disabilitato
-      </label>
-    </div>
-    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      <div class="row mb-4">
+        <div class="col-12 col-md-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck1">
+            <label class="form-check-label" for="disabledFieldsetCheck1">
+              Check disabilitato 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck2">
+            <label class="form-check-label" for="disabledFieldsetCheck2">
+              Check disabilitato 2
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-check">
+            <input name="gruppo1" type="radio" id="disabledFieldsetRadio1" checked>
+            <label for="disabledFieldsetRadio1">
+              Radio disabilitato 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input name="gruppo1" type="radio" id="disabledFieldsetRadio2">
+            <label for="disabledFieldsetRadio2">
+              Radio disabilitato 2
+            </label>
+          </div>
+        </div>
+      </div>
+    <button class="btn btn-primary mt-3">Submit</button>
   </fieldset>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
 {% capture callout %}
 
-#### Compatibilità Cross-browser
+#### Compatibilità cross-browser
 
-Mentre Bootstrap applicherà questi stili in tutti i browser, Internet Explorer 11 e successivi non supportano completamente l'attributo `disabled` nel `<fieldset>`. Usa un JavaScript personalizzato per disabilitare il fieldset in questi browser.
+Mentre Bootstrap applicherà questi stili in tutti i browser, Internet Explorer 11 e successivi non supportano completamente l'attributo `disabled` nel `<fieldset>`. Si utilizzi codice JavaScript personalizzato per disabilitare il fieldset in questi browser.
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 ## Validazione
 
-Fornisci un feedback ai tuoi utenti con la validazione del form HTML5 [disponibile nei browser supportati](https://caniuse.com/#feat=form-validation). Scegli tra le risposte di convalida predefinite del browser o implementa messaggi personalizzati con le classi integrate inizializzate con JavaScript.
+Per la validazione dei forms è stato utilizzato il plugin [Just Validate](https://just-validate.dev/)
 
 ### Come funziona
 
-Ecco come funziona la validazione dei form:
-
-- La validazione viene applicata tramite due pseudo-classi CSS: `:invalid` e `:valid`. Si applicano agli elementi `<input>`, `<select>` e `<textarea>`.
-- In alternativa esistono le classi `.is-invalid` e `.is-valid` che possono essere usate al posto delle pseudo-classi per una validazione lato server. Non richiedono la presenza della classe  `.was-validated` nel contenitore padre.
-- A causa dei vincoli nel modo in cui i CSS funzionano, non possiamo (al momento) applicare gli stili a un `<label>` che precede un controllo del form nel DOM senza l'aiuto del codice JavaScript personalizzato.
-- Tutti i browser moderni supportano le [constraint validation API](https://www.w3.org/TR/html5/sec-forms.html#the-constraint-validation-api), una serie di metodi JavaScript per la convalida dei controlli del modulo.
-- I messaggi di feedback possono utilizzare le (diversi da un browser all'altro e non stilizzati tramite CSS) o gli stili di feedback personalizzati con HTML e CSS aggiuntivi.
-- Puoi fornire messaggi di validazioni personalizzati con `setCustomValidity` in JavaScript.
-
-Tenendo presente tutto questo, prendi in considerazione i seguenti esempi personalizzati per convalidare i moduli.
+Per il funzionamento e le opzioni disponibili, si consiglia di consultare la [documentazione](https://just-validate.dev/).
 
 ### Stili personalizzati
 
-Per i messaggi personalizzati di convalida del form, dovrai aggiungere l'attributo booleano `novalidate` al tuo `<form>`. Questo disabiliterà le descrizioni di feedback predefinite del browser, ma fornirà comunque l'accesso alle API di validazione JavaScript. Prova a cliccare sul pulsante `Invia` del modulo sottostante; Javascript intercetterà l'evento e mostrerà i feedback all'utente. Vedrai così gli stili `:invalid` e `:valid` applicati ai controlli del modulo.
+I campi che necessitano di validazione acquisiranno all'invio del form le classi css definite nello script che attiva il plugin. Nel nostro caso le classi saranno `is-invalid` e `just-validate-success-field`. I messaggi di errore avranno classe `just-validate-error-label`.
+
+Di seguito un esempio di form validato con Just Validate.
 
 {% capture example %}
-<form class="needs-validation" novalidate>
+
+<form class="needs-validation" id="justValidateForm">
   <div class="form-row">
-    <div class="form-group col-md-4 mb-3">
-      <input type="text" class="form-control" id="validationCustom01" value="Mario" required>
+    <div class="form-group col-md-3 mb-4">
       <label for="validationCustom01">Nome</label>
-      <div class="valid-feedback">Validato!</div>
+      <input type="text" class="form-control" id="validationCustom01" value="Mario" required>
     </div>
-    <div class="form-group col-md-4 mb-3">
-      <input type="text" class="form-control" id="validationCustom02" value="Rossi" required>
+    <div class="form-group col-md-3 mb-4">
       <label for="validationCustom02">Cognome</label>
-      <div class="valid-feedback">Validato!</div>
+      <input type="text" class="form-control" id="validationCustom02" value="Rossi" required>
     </div>
-    <div class="form-group col-md-4 mb-3">
-      <input type="text" class="form-control" id="validationCustomUsername" required>
+    <div class="form-group col-md-3 mb-4">
       <label for="validationCustomUsername">Username</label>
-      <div class="invalid-feedback">Per favore scegli un username.</div>
+      <input type="text" class="form-control" id="validationCustomUsername" required>
+    </div>
+    <div class="form-group col-md-3 mb-4">
+      <label for="validationAge">Età (minimo 18 anni)</label>
+      <input type="number" class="form-control" id="validationAge" value="18" min="18" step="1" required>
     </div>
   </div>
   <div class="form-row">
-    <div class="form-group col-md-6 mb-3">
-      <input type="text" class="form-control" id="validationCustom03" required>
+    <div class="form-group col-md-6 mb-4">
       <label for="validationCustom03">Città</label>
-      <div class="invalid-feedback">Per favore inserisci un nome di città valido.</div>
+      <input type="text" class="form-control" id="validationCustom03" required>
     </div>
-    <div class="form-group col-md-3 mb-3">
-      <input type="text" class="form-control" id="validationCustom04" required>
+    <div class="form-group col-md-3 mb-4">
       <label for="validationCustom04">Provincia</label>
-      <div class="invalid-feedback">Per favore inserisci un nome di provincia valida.</div>
+      <input type="text" class="form-control" id="validationCustom04" required>
     </div>
-    <div class="form-group col-md-3 mb-3">
+    <div class="form-group col-md-3 mb-4">
+      <label for="validationCustom05">CAP (5 cifre)</label>
       <input type="text" class="form-control" id="validationCustom05" required>
-      <label for="validationCustom05">CAP</label>
-      <div class="invalid-feedback">Per favore inserisci un CAP valido.</div>
     </div>
   </div>
   <div class="form-check">
     <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
     <label class="form-check-label" for="invalidCheck">Accetto i termini e le condizioni.</label>
-    <div class="invalid-feedback">Devi accettare i termini e le condizioni prima di inviare il modulo.</div>
   </div>
   <button class="btn btn-primary mt-3" type="submit">Invia</button>
 </form>
 
 <script>
-(function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    var forms = document.getElementsByClassName('needs-validation');
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-      }, false);
-      form.classList.add('was-validated');
+  document.addEventListener("DOMContentLoaded", function() {
+    const validate = new window.JustValidateIt('#justValidateForm', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: true,
     });
-  }, false);
-})();
+    
+    validate
+      .addField('#validationCustom01', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+      .addField('#validationCustom02', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+      .addField('#validationCustom03', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+      .addField('#validationCustom04', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+      .addField('#validationCustomUsername', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+      .addField('#validationAge', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+        {
+          rule: 'minNumber',
+          value: 18,
+          errorMessage: 'Deve essere maggiore di 17'
+        },
+      ])
+      .addField('#validationCustom05', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+        {
+          rule: 'minLength',
+          value: 5,
+          errorMessage: 'Inserire 5 cifre'
+        },
+        {
+          rule: 'maxLength',
+          value: 5,
+          errorMessage: 'Inserire 5 cifre'
+        },
+        {
+          rule: 'number',
+          errorMessage: 'Inserire un numero'
+        },
+      ])
+      .addField('#invalidCheck', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto'
+        },
+      ])
+  })
 </script>
+
 {% endcapture %}{% include example.html content=example %}
 
 ---

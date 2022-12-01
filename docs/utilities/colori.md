@@ -8,7 +8,8 @@ description: Una serie di classi di utilità per applicare colori a testi e sfon
 ---
 
 {% capture callout %}
-##### Accessibilità
+
+#### Accessibilità
 
 Il colore è uno degli strumenti principali per la trasmissione delle informazioni, ma non dimenticare mai di affiancare all'uso del colore altri mezzi più espliciti. Leggi la sezione sull'[uso del colore](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#uso-del-colore) delle Linee Guida di design per maggiori informazioni.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
@@ -25,8 +26,11 @@ Puoi trovare maggiori informazioni sulla palette di colori a disposizione alla p
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
+
 <p class="p-3 mb-2 text-{{ color.name }}{% if color.name == "light" %} bg-dark{% endif %}">.text-{{ color.name }}</p>{% endfor %}
+
 <p class="p-3 mb-2 text-muted">.text-muted</p>
+
 <p class="p-3 mb-2 text-white bg-dark">.text-white</p>
 {% endcapture %}{% include example.html content=example %}
 
@@ -36,7 +40,9 @@ Allo stesso modo di quanto avviene per il testo, le classi `bg-*` permettono di 
 
 {% capture example %}
 {% for color in site.data.theme-colors %}
+
 <div class="p-3 mb-2 bg-{{ color.name }} text-white">.bg-{{ color.name }}</div>{% endfor %}
+
 <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
 {% endcapture %}{% include example.html content=example %}
 

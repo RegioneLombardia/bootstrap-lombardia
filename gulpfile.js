@@ -1,5 +1,8 @@
+const gulpSass = require('gulp-sass')
+const nodeSass = require('sass')
+
 const gulp = require('gulp'),
-  sass = require('gulp-sass'),
+  sass = gulpSass(nodeSass),
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps'),
   cleanCSS = require('gulp-clean-css'),
@@ -22,7 +25,9 @@ const Paths = {
   VENDOR_JS: [
     'node_modules/jquery/dist/jquery.js',
     'node_modules/popper.js/dist/umd/popper.js',
-    'node_modules/owl.carousel/dist/owl.carousel.js',
+    'node_modules/just-validate/dist/just-validate.production.min.js',
+    'node_modules/just-validate-plugin-date/dist/just-validate-plugin-date.production.min.js',
+    'node_modules/accessible-autocomplete/dist/accessible-autocomplete.min.js',
   ],
   SOURCE_JS: [
     'node_modules/bootstrap/dist/js/bootstrap.js',
@@ -57,30 +62,43 @@ const Paths = {
     'src/js/plugins/imgresponsive.js',
     'src/js/plugins/timepicker.js',
     'src/js/plugins/input-number.js',
-/*  'src/js/plugins/carousel.js',
-sostituito da it25-carousel */
+/*  'src/js/plugins/carousel-legacy.js',
+    'src/js/plugins/carousel.js',
+sostituiti da:
+    it25-carousel-legacy.js
+    it25-carousel.js */
     'src/js/plugins/transfer.js',
     'src/js/plugins/select.js',
     'src/js/plugins/rating.js',
     'src/js/plugins/dimmer.js',
     'src/js/plugins/it25-header.js',
     'src/js/plugins/it25-forms.js',
+    'src/js/plugins/it25-carousel-legacy.js',
     'src/js/plugins/it25-carousel.js',
+    'src/js/plugins/datepicker-validation.js',
     'src/js/' + pkg.name + '.js',
+    'src/js/plugins/version.js',
+    'src/js/plugins/justvalidate-it.js',
+    'src/js/plugins/content-watcher.js',
+    'src/js/plugins/class-watcher.js',
+    'src/js/plugins/side-menu.js',
+    'src/js/plugins/collapse.js',
   ],
 
   SOURCE_SCSS: 'src/scss/' + pkg.name + '.scss',
   SOURCE_DOCUMENTATION_SCSS: 'docs/assets/src/scss/docs.scss',
-  SOURCE_DOCUMENTATION_JS: [
-    'docs/assets/src/js/cover-animation.js',
-    'docs/assets/src/js/docs.js',
-  ],
+  SOURCE_DOCUMENTATION_JS: ['docs/assets/src/js/cover-animation.js', 'docs/assets/src/js/docs.js'],
+  SOURCE_CAROUSEL_JS: ['node_modules/owl.carousel/dist/owl.carousel.min.js', 'node_modules/@splidejs/splide/dist/js/splide.min.js'],
+  SOURCE_CAROUSEL_CSS: ['node_modules/owl.carousel/dist/assets/owl.carousel.min.css', 'node_modules/@splidejs/splide/dist/css/splide-core.min.css'],
   DIST: 'dist',
   DIST_DOCUMENTATION: 'docs/assets/dist',
   SCSS_WATCH: 'src/scss/**/**',
   JS_WATCH: 'src/js/**/**',
   SCSS_DOCUMENTATION_WATCH: 'docs/assets/src/scss/**/**',
   JS_DOCUMENTATION_WATCH: 'docs/assets/src/js/**/**',
+  SVG_WATCH: 'src/svg',
+  FONTS_WATCH: 'src/fonts',
+  ASSETS_WATCH: 'src/assets',
 }
 
 const bootstrapItaliaBanner = [
@@ -93,6 +111,7 @@ const bootstrapItaliaBanner = [
   '',
 ].join('\n')
 
+const jqueryToGlobVar = 'var $ = jQuery.noConflict();\n'
 const jqueryCheck =
   "if (typeof jQuery === 'undefined') {\n" +
   "  throw new Error('Bootstrap\\'s JavaScript requires jQuery. jQuery must be included before Bootstrap\\'s JavaScript.')\n" +
@@ -104,6 +123,13 @@ const jqueryVersionCheck =
   "    throw new Error('Bootstrap\\'s JavaScript requires at least jQuery v1.9.1 but less than v4.0.0')\n" +
   '  }\n' +
   '}(jQuery);\n'
+
+// Force reload
+
+gulp.task('force-reload', (done) => {
+  browserSync.reload()
+  done()
+})
 
 // Library related tasks
 
@@ -146,6 +172,9 @@ gulp.task('js-min', () => {
               modules: false,
               loose: true,
               exclude: ['transform-typeof-symbol'],
+              targets: {
+                browsers: require('browserslist-config-design-italia')
+              }
             },
           ],
         ],
@@ -154,6 +183,7 @@ gulp.task('js-min', () => {
     )
     .pipe(uglify())
     .pipe(gap.prependText(jqueryVersionCheck, '\n\n'))
+    .pipe(gap.prependText(jqueryToGlobVar, '\n\n'))
     .pipe(gap.prependText(jqueryCheck, '\n\n'))
     .pipe(gap.prependText(bootstrapItaliaBanner, '\n\n'))
     .pipe(
@@ -172,10 +202,17 @@ gulp.task('js-bundle-min', () => {
     .pipe(concat(pkg.name + '.bundle.js'))
     .pipe(sourcemaps.init())
     .pipe(replace(/^(export|import).*/gm, ''))
+    .pipe(gap.appendText(jqueryToGlobVar))
     .pipe(
       babel({
         compact: true,
-        presets: [['@babel/env', { modules: false, loose: true }]],
+        presets: [['@babel/env', {
+          modules: false,
+          loose: true,
+          targets: {
+            browsers: require('browserslist-config-design-italia')
+          }
+        }]],
         plugins: ['@babel/plugin-proposal-object-rest-spread'],
       })
     )
@@ -221,6 +258,22 @@ gulp.task('documentation-js-vendor', () => {
     .pipe(touch())
 })
 
+gulp.task('carousel-js-vendor', () => {
+  return gulp
+    .src(Paths.SOURCE_CAROUSEL_JS)
+    .pipe(gulp.dest(Paths.DIST_DOCUMENTATION + '/js/vendor'))
+    .pipe(gulp.dest(Paths.DIST + '/js/vendor'))
+    .pipe(touch())
+})
+
+gulp.task('carousel-css-vendor', () => {
+  return gulp
+    .src(Paths.SOURCE_CAROUSEL_CSS)
+    .pipe(gulp.dest(Paths.DIST_DOCUMENTATION + '/css/vendor'))
+    .pipe(gulp.dest(Paths.DIST + '/css/vendor'))
+    .pipe(touch())
+})
+
 gulp.task('documentation-js-min', () => {
   return gulp
     .src(Paths.SOURCE_DOCUMENTATION_JS)
@@ -234,7 +287,7 @@ gulp.task('documentation-js-min', () => {
     .pipe(touch())
 })
 
-gulp.task('svg-sprite', function() {
+gulp.task('svg-sprite', function () {
   return gulp
     .src('src/svg/it-*.svg')
     .pipe(
@@ -275,56 +328,44 @@ gulp.task('fonts', () => {
 
 // Main Jekyll task
 
-gulp.task('jekyll', done => {
+gulp.task('jekyll', (done) => {
   const jekyll =
     process.platform === 'win32'
-      ? spawn('jekyll.bat', [
-          'build',
-          '--watch',
-          '--incremental',
-          '--drafts',
-          '--config',
-          '_config.yml',
-        ])
-      : spawn('bundle', [
-          'exec',
-          'jekyll',
-          'build',
-          '--watch',
-          '--incremental',
-          '--drafts',
-          '--config',
-          '_config.yml',
-        ])
+      ? spawn('jekyll.bat', ['build', '--watch', '--incremental', '--drafts', '--config', '_config.yml', '--force_polling'])
+      : spawn('bundle', ['exec', 'jekyll', 'build', '--watch', '--incremental', '--drafts', '--config', '_config.yml', '--force_polling'])
 
-  const jekyllOutput = buffer => {
+  const jekyllOutput = (buffer) => {
     log('Jekyll: ' + buffer.toString())
-    if (buffer.toString().indexOf('done') > -1) done() // TODO trovare un modo migliore per verificare quando Jekyll ha completato
+    if (buffer.toString().indexOf('done') > -1) {
+      browserSync.reload()
+      done() // TODO trovare un modo migliore per verificare quando Jekyll ha completato
+    }
   }
 
   jekyll.stdout.on('data', jekyllOutput)
   jekyll.stderr.on('data', jekyllOutput)
 })
 
-// Library
+// CSS
+gulp.task('build-css', gulp.series('scss-min'))
+// SVG
+gulp.task('build-svg', gulp.series('svg-sprite'))
+// js
+gulp.task('build-js', gulp.series('js-min', 'js-bundle-min'))
+// fonts
+gulp.task('build-fonts', gulp.series('fonts'))
 
-gulp.task(
-  'build-library',
-  gulp.series(
-    'svg-sprite',
-    'scss-min',
-    'js-min',
-    'js-bundle-min',
-    'fonts',
-    'assets'
-  )
-)
+// Assets
+gulp.task('build-assets', gulp.series('assets'))
+
+// Library
+gulp.task('build-library', gulp.series('svg-sprite', 'scss-min', 'js-min', 'js-bundle-min', 'fonts', 'assets', 'force-reload'))
 
 // Documentation
 
 gulp.task(
   'build-documentation',
-  gulp.series('documentation-scss-min', 'documentation-js-vendor', 'documentation-js-min')
+  gulp.series('documentation-scss-min', 'documentation-js-vendor', 'carousel-js-vendor', 'documentation-js-min', 'carousel-css-vendor', 'force-reload')
 )
 
 // Sync
@@ -333,17 +374,23 @@ gulp.task('sync', () => {
   browserSync.init({
     files: [DOCUMENTATION_DESTINATION + '/**'],
     port: 4000,
+    open: false,
     server: {
       baseDir: DOCUMENTATION_DESTINATION,
     },
   })
 
-  gulp.watch([Paths.SCSS_WATCH, Paths.JS_WATCH], gulp.series('build-library'))
+  gulp.watch([Paths.SCSS_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-css'))
 
-  gulp.watch(
-    [Paths.SCSS_DOCUMENTATION_WATCH, Paths.JS_DOCUMENTATION_WATCH],
-    gulp.series('build-documentation')
-  )
+  gulp.watch([Paths.JS_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-js'))
+
+  gulp.watch([Paths.SVG_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-svg'))
+
+  gulp.watch([Paths.FONTS_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-fonts'))
+
+  gulp.watch([Paths.ASSETS_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-assets'))
+
+  gulp.watch([Paths.SCSS_DOCUMENTATION_WATCH, Paths.JS_DOCUMENTATION_WATCH], { interval: 1000, usePolling: true }, gulp.series('build-documentation'))
 })
 
 // Main build task

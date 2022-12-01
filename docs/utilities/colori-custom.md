@@ -41,13 +41,14 @@ Definisci colori di background, bordi, colore di testo attraverso specifiche cla
 `.primary-border-color` : per border color<br>
 
 ### Varianti monocromatiche del colore base
+
 Il colore primario possiede tre tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
 
 **Utilizzo delle classi:**
 
-`.primary-bg- + variante-colore`  : per background color <br>
+`.primary-bg- + variante-colore` : per background color <br>
 `.primary-color- + variante-colore` : per text color<br>
-`.primary-border-color- + variante-colore`  : per border color
+`.primary-border-color- + variante-colore` : per border color
 
 (es. `.primary-bg-a5` per utilizzare come background il colore primario con variante **a5** )
 
@@ -100,7 +101,6 @@ Il colore primario possiede tre tipologie di varianti cromatiche. Per utilizzarl
 {% endcapture %}{% include example.html content=example %}
 </div>
 
-
 ## Colori secondari
 
 ### Analoghi
@@ -122,9 +122,9 @@ Devono essere usati in modo parsimonioso.
 <br>
 **Utilizzo delle classi:**
 
-`.analogue-(+ 1/2 +)-bg`  : per background color <br>
+`.analogue-(+ 1/2 +)-bg` : per background color <br>
 `.analogue-(+ 1/2 +)-color` : per text color<br>
-`.analogue-(+ 1/2 +)-border-color`  : per border color
+`.analogue-(+ 1/2 +)-border-color` : per border color
 
 <div class="exclude-a11y-check">
 {% capture example %}
@@ -153,9 +153,9 @@ Devono essere usati in modo parsimonioso.
 <br>
 **Utilizzo delle classi:**
 
-`.complementary-(+ 1/2/3 +)-bg`  : per background color <br>
+`.complementary-(+ 1/2/3 +)-bg` : per background color <br>
 `.complementary-(+ 1/2/3 +)-color` : per text color<br>
-`.complementary-(+ 1/2/3 +)-border-color`  : per border color
+`.complementary-(+ 1/2/3 +)-border-color` : per border color
 
 <div class="exclude-a11y-check">
 {% capture example %}
@@ -170,6 +170,7 @@ Devono essere usati in modo parsimonioso.
 ## Varianti colori secondari
 
 ### Analoghi
+
 I colori analoghi possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
 
 **Utilizzo delle classi:**
@@ -183,59 +184,60 @@ I colori analoghi possiedono due tipologie di varianti cromatiche. Per utilizzar
 <div class="exclude-a11y-check">
 {% capture example %}
 <div class="row">
-	<div class="col-md-3">
-		<div class="c-line analogue-1-bg-a1">a1 </div>
-		<div class="c-line analogue-1-bg-a2">a2 </div>
-		<div class="c-line analogue-1-bg-a3">a3 </div>
-		<div class="c-line white-color analogue-1-bg-a4">a4 </div>
-		<div class="c-line white-color analogue-1-bg-a5">a5 </div>
-		<div class="c-line white-color analogue-1-bg-a6">a6 </div>
-		<div class="c-line white-color analogue-1-bg-a7">a7 </div>
-		<div class="c-line white-color analogue-1-bg-a8">a8 </div>
-		<div class="c-line white-color analogue-1-bg-a9">a9 </div>
-		<div class="c-line white-color analogue-1-bg-a10">a10 </div>
-		<div class="c-line white-color analogue-1-bg-a11">a11 </div>
-		<div class="c-line white-color analogue-1-bg-a12">a12 </div>
-	</div>
-	<div class="col-md-3">
-		<div class="c-line white-color analogue-1-bg-b1">b1</div>
-		<div class="c-line white-color analogue-1-bg-b2">b2</div>
-		<div class="c-line white-color analogue-1-bg-b3">b3</div>
-		<div class="c-line white-color analogue-1-bg-b4">b4</div>
-		<div class="c-line white-color analogue-1-bg-b5">b5</div>
-		<div class="c-line white-color analogue-1-bg-b6">b6</div>
-		<div class="c-line white-color analogue-1-bg-b7">b7</div>
-		<div class="c-line white-color analogue-1-bg-b8">b8</div>
-	</div>
-	<div class="col-md-3">
-		<div class="c-line analogue-2-bg-a1">a1</div>
-		<div class="c-line analogue-2-bg-a2">a2</div>
-		<div class="c-line analogue-2-bg-a3">a3</div>
-		<div class="c-line analogue-2-bg-a4">a4</div>
-		<div class="c-line analogue-2-bg-a5">a5</div>
-		<div class="c-line analogue-2-bg-a6">a6</div>
-		<div class="c-line analogue-2-bg-a7">a7</div>
-		<div class="c-line analogue-2-bg-a8">a8</div>
-		<div class="c-line white-color analogue-2-bg-a9">a9</div>
-		<div class="c-line white-color analogue-2-bg-a10">a10</div>
-		<div class="c-line white-color analogue-2-bg-a11">a11</div>
-		<div class="c-line white-color analogue-2-bg-a12">a12</div>
-	</div>
-	<div class="col-md-3">
-		<div class="c-line white-color analogue-2-bg-b1">b1</div>
-		<div class="c-line white-color analogue-2-bg-b2">b2</div>
-		<div class="c-line white-color analogue-2-bg-b3">b3</div>
-		<div class="c-line white-color analogue-2-bg-b4">b4</div>
-		<div class="c-line white-color analogue-2-bg-b5">b5</div>
-		<div class="c-line white-color analogue-2-bg-b6">b6</div>
-		<div class="c-line white-color analogue-2-bg-b7">b7</div>
-		<div class="c-line white-color analogue-2-bg-b8">b8</div>
-	</div>
+  <div class="col-md-3">
+    <div class="c-line analogue-1-bg-a1">a1 </div>
+    <div class="c-line analogue-1-bg-a2">a2 </div>
+    <div class="c-line analogue-1-bg-a3">a3 </div>
+    <div class="c-line white-color analogue-1-bg-a4">a4 </div>
+    <div class="c-line white-color analogue-1-bg-a5">a5 </div>
+    <div class="c-line white-color analogue-1-bg-a6">a6 </div>
+    <div class="c-line white-color analogue-1-bg-a7">a7 </div>
+    <div class="c-line white-color analogue-1-bg-a8">a8 </div>
+    <div class="c-line white-color analogue-1-bg-a9">a9 </div>
+    <div class="c-line white-color analogue-1-bg-a10">a10 </div>
+    <div class="c-line white-color analogue-1-bg-a11">a11 </div>
+    <div class="c-line white-color analogue-1-bg-a12">a12 </div>
+  </div>
+  <div class="col-md-3">
+    <div class="c-line white-color analogue-1-bg-b1">b1</div>
+    <div class="c-line white-color analogue-1-bg-b2">b2</div>
+    <div class="c-line white-color analogue-1-bg-b3">b3</div>
+    <div class="c-line white-color analogue-1-bg-b4">b4</div>
+    <div class="c-line white-color analogue-1-bg-b5">b5</div>
+    <div class="c-line white-color analogue-1-bg-b6">b6</div>
+    <div class="c-line white-color analogue-1-bg-b7">b7</div>
+    <div class="c-line white-color analogue-1-bg-b8">b8</div>
+  </div>
+  <div class="col-md-3">
+    <div class="c-line analogue-2-bg-a1">a1</div>
+    <div class="c-line analogue-2-bg-a2">a2</div>
+    <div class="c-line analogue-2-bg-a3">a3</div>
+    <div class="c-line analogue-2-bg-a4">a4</div>
+    <div class="c-line analogue-2-bg-a5">a5</div>
+    <div class="c-line analogue-2-bg-a6">a6</div>
+    <div class="c-line analogue-2-bg-a7">a7</div>
+    <div class="c-line analogue-2-bg-a8">a8</div>
+    <div class="c-line white-color analogue-2-bg-a9">a9</div>
+    <div class="c-line white-color analogue-2-bg-a10">a10</div>
+    <div class="c-line white-color analogue-2-bg-a11">a11</div>
+    <div class="c-line white-color analogue-2-bg-a12">a12</div>
+  </div>
+  <div class="col-md-3">
+    <div class="c-line white-color analogue-2-bg-b1">b1</div>
+    <div class="c-line white-color analogue-2-bg-b2">b2</div>
+    <div class="c-line white-color analogue-2-bg-b3">b3</div>
+    <div class="c-line white-color analogue-2-bg-b4">b4</div>
+    <div class="c-line white-color analogue-2-bg-b5">b5</div>
+    <div class="c-line white-color analogue-2-bg-b6">b6</div>
+    <div class="c-line white-color analogue-2-bg-b7">b7</div>
+    <div class="c-line white-color analogue-2-bg-b8">b8</div>
+  </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
 </div>
 
 ### Complementari e triadici
+
 I colori Complementari possiedono due tipologie di varianti cromatiche. Per utilizzarle è sufficiente utilizzare la relativa classe
 
 **Utilizzo delle classi:**
@@ -340,9 +342,9 @@ I colori Complementari possiedono due tipologie di varianti cromatiche. Per util
 <br>
 **Utilizzo delle classi:**
 
-`.neutral-(+ 1/2 +)-bg`  : per background color <br>
+`.neutral-(+ 1/2 +)-bg` : per background color <br>
 `.neutral-(+ 1/2 +)-color` : per text color<br>
-`.neutral-(+ 1/2 +)-border-color`  : per border color
+`.neutral-(+ 1/2 +)-border-color` : per border color
 
 <div class="exclude-a11y-check">
 {% capture example %}

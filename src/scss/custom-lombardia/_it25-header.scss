@@ -35,6 +35,16 @@ header {
 
 }
 
+.it-header-slim-wrapper {
+	.it-header-slim-wrapper-content {
+		.header-slim-right-zone {
+			.btn-full {
+				padding: 17px;
+			}
+		}
+	}
+}
+
 .it25-barra-ist {
   top: $it25-top-bar-height-shrink;
   transition: 0.4s;

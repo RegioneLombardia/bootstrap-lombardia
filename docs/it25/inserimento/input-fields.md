@@ -198,6 +198,17 @@ Il testo del messaggio va incluso in in un *div* di classe `valid/invalid/warnin
 {% endcapture %}{% include example.html content=example %}
 
 
+### Campi di solo output
+Nei form, quando è necessario mostrare campi di solo ouput inframmezzati a quelli di input, per mantenere un aspetto coerente per dimensioni e allineamento, è possibile usare per le *label* la classe `output` e per il dato in tag *div* di classe `output-field`.
+<div class="bd-example">
+{% include esempi-lombardia/account_posta.html %}
+</div>
+
+{% highlight html %}
+{% include esempi-lombardia/account_posta.html %}
+{% endhighlight %}
+
+
 
 {% capture callout %}
 ####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti

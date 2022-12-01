@@ -53,3 +53,7 @@ prepros-6.config
 
 # Changelog test
 changelog.txt
+
+# Ignore cache file from linters
+.eslintcache
+.stylelintcache

@@ -2,19 +2,17 @@
  * sticky-header js lib
  * @ Fabio Fumis
  */
-;(function() {
+;(function () {
   const elSticky = document.querySelector('.it-header-sticky')
-
-  if (!!elSticky) {
-    function isHidden(el) {
-      let hidden = false
-      if (el) {
-        const style = window.getComputedStyle(el)
-        hidden = style.display === 'none' || style.visibility === 'hidden'
-      }
-      return hidden
+  function isHidden(el) {
+    let hidden = false
+    if (el) {
+      const style = window.getComputedStyle(el)
+      hidden = style.display === 'none' || style.visibility === 'hidden'
     }
-
+    return hidden
+  }
+  if (elSticky) {
     const elToggler = document.querySelector('.custom-navbar-toggler')
     const isDesktop = isHidden(elToggler)
 
@@ -23,7 +21,7 @@
 
     let runCheckSticky = undefined
 
-    const initSticky = isDesktop => {
+    const initSticky = (isDesktop) => {
       const elSlim = document.querySelector('.it-header-slim-wrapper')
       const elCenter = document.querySelector('.it-header-center-wrapper')
       const elNavbar = document.querySelector('.it-header-navbar-wrapper')
@@ -49,21 +47,16 @@
             const clonedSearch = elSearch ? elSearch.cloneNode(true) : null
             const clonedUser = elUser ? elUser.cloneNode(true) : null
 
-            if (clonedBrand)
-              target
-                .insertBefore(clonedBrand, target.childNodes[0])
-                .classList.add('cloned')
-            if (clonedSearch)
-              target.appendChild(clonedSearch).classList.add('cloned')
-            if (clonedUser)
-              target
-                .appendChild(clonedUser)
-                .classList.add('cloned')
-                .remove('show')
+            if (clonedBrand) target.insertBefore(clonedBrand, target.childNodes[0]).classList.add('cloned-header')
+            if (clonedSearch) target.appendChild(clonedSearch).classList.add('cloned-header')
+            if (clonedUser) {
+              target.appendChild(clonedUser).classList.add('cloned-header')
+              target.appendChild(clonedUser).classList.remove('show')
+            }
           } else {
-            const clonedItems = document.getElementsByClassName('cloned')
+            const clonedItems = document.getElementsByClassName('cloned-header')
             clonedItems &&
-              Array.from(clonedItems).forEach(item => {
+              Array.from(clonedItems).forEach((item) => {
                 item.parentElement.removeChild(item)
               })
 
@@ -74,12 +67,7 @@
         }
 
         if (toAdd) {
-          elSticky.nextElementSibling.style.paddingTop =
-            navbarHeight +
-            (isDesktop
-              ? navOffsetTop - scrollToGap
-              : navbarHeight - scrollToGap) +
-            'px'
+          elSticky.nextElementSibling.style.paddingTop = navbarHeight + (isDesktop ? navOffsetTop - scrollToGap : navbarHeight - scrollToGap) + 'px'
         } else {
           elSticky.nextElementSibling.style.paddingTop = 0 + 'px'
         }
@@ -104,6 +92,10 @@
           if (nbh !== navbarHeight) scrollToGap = navbarHeight - nbh
         } else if (window.scrollY + scrollToGap < navOffsetTop && isSticky) {
           toggleOff()
+        }
+        const target = document.querySelector(':target')
+        if (target) {
+          target.style.setProperty('--sticky-height', elNavbar.offsetHeight + 'px')
         }
       }
 

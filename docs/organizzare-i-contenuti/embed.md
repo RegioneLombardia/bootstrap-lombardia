@@ -20,6 +20,7 @@ Estendi ogni oggetto simile a un `<iframe>` aggiungendo al suo contenitore la cl
 relative. La classe `.embed-responsive-item` non è strettamente necessaria, ma ne incoraggiamo l'utilizzo.
 
 {% capture example %}
+
 <div class="embed-responsive embed-responsive-16by9">
   <iframe class="embed-responsive-item" title="Video YouTube" src="https://www.youtube.com/embed/RaHmGbBOP84" allowfullscreen></iframe>
 </div>
@@ -29,7 +30,7 @@ relative. La classe `.embed-responsive-item` non è strettamente necessaria, ma 
 
 Le proporzioni possono essere personalizzate con delle classi apposite.
 
-{% highlight html %}
+```html
 <!-- 21:9 aspect ratio -->
 <div class="embed-responsive embed-responsive-21by9">
   <iframe class="embed-responsive-item" src="..."></iframe>
@@ -49,4 +50,4 @@ Le proporzioni possono essere personalizzate con delle classi apposite.
 <div class="embed-responsive embed-responsive-1by1">
   <iframe class="embed-responsive-item" src="..."></iframe>
 </div>
-{% endhighlight %}
+```

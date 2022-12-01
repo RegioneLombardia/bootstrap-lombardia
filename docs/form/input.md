@@ -11,7 +11,7 @@ description: Elementi e stili per la creazione di input accessibili e responsivi
   /* Style override for Documentation purposes - Autocomplete*/
   #testAutocomplete1, #testAutocomplete2 {
     position: static;
-		display: block;
+    display: block;
   }
 </style>
 
@@ -22,26 +22,27 @@ Per il corretto funzionamento degli elementi di tipo `<input>`, è di fondamenta
 Per l'inserimento guidato di campi di tipo numerico si può anche utilizzare l'elemento dedicato che fornisce migliorie per la validazione e per l'esperienza complessiva, descritto alla [pagina dedicata all'input numerico]({{ site.baseurl }}/docs/form/input-numerico/).
 
 {% capture example %}
+
 <div>
   <div class="form-group">
-    <input type="text" class="form-control" id="exampleInputText">
     <label for="exampleInputText">Campo di tipo testuale</label>
+    <input type="text" class="form-control" id="exampleInputText">
   </div>
   <div class="form-group">
-    <input type="email" class="form-control" id="exampleInputEmail1">
     <label for="exampleInputEmail1">Campo di tipo email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1">
   </div>
   <div class="form-group">
-    <input type="number" class="form-control" id="exampleInputNumber">
     <label for="exampleInputNumber">Campo di tipo numerico</label>
+    <input type="number" class="form-control" id="exampleInputNumber">
   </div>
   <div class="form-group">
-    <input type="tel" class="form-control" id="exampleInputTelephone">
     <label for="exampleInputTelephone">Campo di tipo telefono</label>
+    <input type="tel" class="form-control" id="exampleInputTelephone">
   </div>
   <div class="form-group">
+    <label class="active" for="exampleInputTime">Campo di tipo ora</label>
     <input type="time" class="form-control" id="exampleInputTime" min="9:00" max="18:00">
-    <label for="exampleInputTime">Campo di tipo ora</label>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -51,6 +52,7 @@ Per l'inserimento guidato di campi di tipo numerico si può anche utilizzare l'e
 Si può includere un'etichetta che si riposiziona automaticamente quando l'utente utilizza il campo di testo.
 
 {% capture example %}
+
 <div class="form-group">
   <label for="formGroupExampleInput">Etichetta di esempio</label>
   <input type="text" class="form-control" id="formGroupExampleInput">
@@ -60,6 +62,7 @@ Si può includere un'etichetta che si riposiziona automaticamente quando l'utent
 Si può abbinare all'etichetta un _placeholder_ (testo di esempio) per ulteriore chiarezza.
 
 {% capture example %}
+
 <div class="form-group">
   <label for="formGroupExampleInput2">Etichetta di esempio</label>
   <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Testo di esempio">
@@ -68,7 +71,6 @@ Si può abbinare all'etichetta un _placeholder_ (testo di esempio) per ulteriore
 
 In caso di necessità, è anche possibile utilizzare un ulteriore contenuto testuale sotto il campo di testo, aggiungendo un elemento `<small>` con classe `.form-text` all'interno di `.form-group`. Può essere esteso usando le classi di utilità come `.text-muted`.
 
-
 {% capture callout %}
 **Associazione del testo di aiuto con gli elementi del modulo form**
 
@@ -76,13 +78,14 @@ Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo 
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 {% capture example %}
+
 <div class="form-group">
   <label for="formGroupExampleInputWithHelp">Etichetta di esempio</label>
-  <input 
-    type="text" 
-    class="form-control" 
-    id="formGroupExampleInputWithHelp" 
-    placeholder="Testo di esempio" 
+  <input
+    type="text"
+    class="form-control"
+    id="formGroupExampleInputWithHelp"
+    placeholder="Testo di esempio"
     aria-describedby="formGroupExampleInputWithHelpDescription"
   >
   <small id="formGroupExampleInputWithHelpDescription" class="form-text text-muted">Ulteriore testo informativo</small>
@@ -92,10 +95,11 @@ Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo 
 ### Input con icona o bottoni
 
 {% capture example %}
+
 <div class="form-group">
   <div class="input-group">
     <div class="input-group-prepend">
-      <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
+      <div class="input-group-text"><svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
     </div>
     <label for="input-group-1">Con Etichetta</label>
     <input type="text" class="form-control" id="input-group-1" name="input-group-1">
@@ -107,7 +111,7 @@ Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo 
 <div class="form-group">
   <div class="input-group">
     <div class="input-group-prepend">
-      <div class="input-group-text"><svg class="icon icon-sm icon-danger"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
+      <div class="input-group-text"><svg class="icon icon-sm icon-danger"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
     </div>
     <label for="input-group-2">Con Etichetta e placeholder</label>
     <input type="text" class="form-control" id="input-group-2" name="input-group-2" placeholder="Lorem Ipsum">
@@ -119,7 +123,7 @@ Il testo di aiuto deve essere esplicitamente associato agli elementi del mudulo 
 <div class="form-group">
   <div class="input-group">
       <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
+        <div class="input-group-text"><svg class="icon icon-sm icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pencil"></use></svg></div>
       </div>
       <label for="input-group-3">Con Etichetta e bottone "primary"</label>
       <input type="text" class="form-control" id="input-group-3" name="input-group-3">
@@ -179,23 +183,24 @@ Per rendere più semplice l'inserimento della password, l'elemento è stato dota
 </table>
 
 {% capture example %}
+
 <div>
   <div class="form-group">
+    <label for="exampleInputPassword">Password con label, placeholder e testo di aiuto</label>
     <input type="password" class="form-control input-password" id="exampleInputPassword" aria-labelledby="infoPassword">
     <span class="password-icon" aria-hidden="true">
-      <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
+      <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
     </span>
-    <label for="exampleInputPassword">Password con label, placeholder e testo di aiuto</label>
     <small id="infoPassword" class="form-text text-muted">Inserisci almeno 8 caratteri e una lettera maiuscola</small>
   </div>
   <div class="form-group">
+    <label for="exampleInputPassword3">Password con strength meter</label>
     <input type="password" class="form-control input-password input-password-strength-meter" data-enter-pass="Puoi usare un testo di aiuto personalizzato" id="exampleInputPassword3">
     <span class="password-icon" aria-hidden="true">
-      <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-visible"></use></svg>
+      <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-password-invisible"></use></svg>
     </span>
-    <label for="exampleInputPassword3">Password con strength meter</label>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -205,9 +210,10 @@ Per rendere più semplice l'inserimento della password, l'elemento è stato dota
 Aggiungi l'attributo `disabled` ad un input per impedire la modifica del valore contenuto e non inviare i dati in esso contenuti.
 
 {% capture example %}
+
 <div class="form-group">
-  <input class="form-control" type="text" id="input-text-disabled" disabled>
   <label for="input-text-disabled">Contenuto disabilitato</label>
+  <input class="form-control" type="text" id="input-text-disabled" disabled>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -216,9 +222,10 @@ Aggiungi l'attributo `disabled` ad un input per impedire la modifica del valore 
 Aggiungi l'attributo `readonly` ad un input per impedire la modifica del valore contenuto.
 
 {% capture example %}
+
 <div class="form-group">
-  <input class="form-control" type="text" id="input-text-read-only" readonly>
   <label for="input-text-read-only">Contenuto in sola lettura</label>
+  <input class="form-control" type="text" id="input-text-read-only" readonly>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -227,22 +234,24 @@ Aggiungi l'attributo `readonly` ad un input per impedire la modifica del valore 
 Se per qualche motivo vuoi avere gli elementi `<input readonly>` nella forma stilizzata come testo normale usa la classe `.form-control-plaintext` anziché `.form-control`.
 
 {% capture example %}
+
 <div>
   <div class="form-group">
-    <input class="form-control-plaintext" type="text" id="input-text-read-only-2" readonly>
     <label for="input-text-read-only-2">Contenuto in sola lettura</label>
+    <input class="form-control-plaintext" value="Sola lettura" type="text" id="input-text-read-only-2" readonly>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-## Input con risultato ricerca o autocompletamento
+## Ricerca con autocompletamento
 
 Per ottenere un input con un risultato ricerca o un autocomplete statico è necessario aggiungere all'input la classe `.autocomplete` e l'attributo `data-autocomplete` con un JSON da filtrare.
 
 L'icona della lente è contenuta in uno `<span>` con classe `.autocomplete-icon`, nascosta agli screen reader dall'attributo `aria-hidden="true"`.
 
 {% capture callout %}
-##### Accessibilità
+
+#### Accessibilità
 
 La descrizione accessibile del campo è ottenuta con una label nascosta visivamente dalla classe `.sr-only`.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
@@ -257,13 +266,15 @@ L'elenco dei risultati generati dalla ricerca è una lista `<ul>` con classe `.a
 Il testo corrispondente alla ricerca (_"ite"_, nell'esempio) deve essere racchiuso in un tag `<mark>`.
 
 {% capture example %}
+
 <div class="form-group">
+  <label for="autocomplete-one" class="sr-only">Cerca nel sito</label>
   <input type="search" class="autocomplete" placeholder="Testo da cercare"
     id="autocomplete-one"
     name="autocomplete-one"
     data-autocomplete="[]">
   <span class="autocomplete-icon" aria-hidden="true">
-    <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
+    <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
   </span>
   <ul class="autocomplete-list" id="testAutocomplete1">
     <li>
@@ -290,7 +301,7 @@ Il testo corrispondente alla ricerca (_"ite"_, nell'esempio) deve essere racchiu
     <li>
       <a href="#">
         <svg class="icon icon-sm">
-          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
+          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
         </svg>
         <span class="autocomplete-list-text">
           <span>List <mark>Ite</mark>m</span><em>Label</em>
@@ -300,7 +311,7 @@ Il testo corrispondente alla ricerca (_"ite"_, nell'esempio) deve essere racchiu
     <li>
       <a href="#">
         <svg class="icon icon-sm">
-          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
+          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
         </svg>
         <span class="autocomplete-list-text">
           <span>List <mark>Ite</mark>m</span><em>Label</em>
@@ -310,7 +321,7 @@ Il testo corrispondente alla ricerca (_"ite"_, nell'esempio) deve essere racchiu
     <li>
       <a href="#">
         <svg class="icon icon-sm">
-          <use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
+          <use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use>
         </svg>
         <span class="autocomplete-list-text">
           <span>List <mark>Ite</mark>m</span><em>Label</em>
@@ -318,22 +329,23 @@ Il testo corrispondente alla ricerca (_"ite"_, nell'esempio) deve essere racchiu
       </a>
     </li>
   </ul>
-  <label for="autocomplete-one" class="sr-only">Cerca nel sito</label>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-### Autocomplete grande
+### Ricerca con autocompletamento grande
 
 Per ottenere una versione grande dell'Autocomplete, indicata ad esempio per intestazioni di pagina ed overaly dedicati, aggiungere la classe `.autocomplete-wrapper-big` al contenitore `.form-group`.
 
 {% capture example %}
+
 <div class="form-group autocomplete-wrapper-big">
+  <label for="autocomplete-two" class="sr-only">Cerca nel sito</label>
   <input type="search" class="autocomplete" placeholder="Testo da cercare"
     id="autocomplete-two"
     name="autocomplete-two"
     data-autocomplete="[]">
   <span class="autocomplete-icon" aria-hidden="true">
-    <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
+    <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
   </span>
   <ul class="autocomplete-list" id="testAutocomplete2">
     <li>
@@ -358,7 +370,7 @@ Per ottenere una versione grande dell'Autocomplete, indicata ad esempio per inte
     </li>
     <li>
       <a href="#">
-        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pa"></use></svg>
+        <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-pa"></use></svg>
         <span class="autocomplete-list-text">
           <span>Comune di <mark>Pi</mark>sa</span><em>Amministrazione</em>
         </span>
@@ -366,18 +378,17 @@ Per ottenere una versione grande dell'Autocomplete, indicata ad esempio per inte
     </li>
     <li>
       <a href="#">
-        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use></svg>
+        <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-file"></use></svg>
         <span class="autocomplete-list-text">
           <span>Linee guida per i cataloghi pubblica amministrazione</span><em>Documento</em>
         </span>
       </a>
     </li>
   </ul>
-  <label for="autocomplete-two" class="sr-only">Cerca nel sito</label>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-### Autocompletamento con dati
+### Ricerca con autocompletamento e dati
 
 Questo autocompletamento è collegato, tramite l'attributo `data-autocomplete`, ad una lista di oggetti nella quale sono presenti:
 
@@ -389,15 +400,16 @@ Questi sono i minimi dati necessari per il corretto funzionamento dell'autocompl
 Cerca una regione italiana per verificarne il comportamento.
 
 {% capture example %}
+
 <div class="form-group">
+  <label for="autocomplete-regioni" class="sr-only">Cerca nel sito</label>
   <input type="search" class="autocomplete" placeholder="Testo da cercare"
     id="autocomplete-regioni"
     name="autocomplete-regioni"
     data-autocomplete='{{ site.data.autocomplete.regioni | jsonify }}'>
   <span class="autocomplete-icon" aria-hidden="true">
-    <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
+    <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
   </span>
-  <label for="autocomplete-regioni" class="sr-only">Cerca nel sito</label>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -411,15 +423,16 @@ Questo Autocomplete è collegato, sempre tramite l'attributo `data-autocomplete`
 Cerca ad esempio _"Italia"_ per verificarne il comportamento.
 
 {% capture example %}
+
 <div class="form-group">
+  <label for="autocomplete-test" class="sr-only">Cerca nel sito</label>
   <input type="search" class="autocomplete" placeholder="Testo da cercare"
     id="autocomplete-test"
     name="autocomplete-test"
     data-autocomplete='{{ site.data.autocomplete.nazioni | jsonify }}'>
   <span class="autocomplete-icon" aria-hidden="true">
-    <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
+    <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprite.svg#it-search"></use></svg>
   </span>
-  <label for="autocomplete-test" class="sr-only">Cerca nel sito</label>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -430,10 +443,11 @@ Per permettere agli utenti di inserire del testo (ad esempio per lasciare commen
 Includendo l'elemento all'interno di un `.form-group`, la label assumerà lo stesso comportamento dinamico dei campi di input.
 
 {% capture example %}
+
 <div>
   <div class="form-group">
-    <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
     <label for="exampleFormControlTextarea1">Esempio di area di testo</label>
+    <textarea id="exampleFormControlTextarea1" rows="3"></textarea>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -445,18 +459,17 @@ Includendo l'elemento all'interno di un `.form-group`, la label assumerà lo ste
 È possibile modificare la dimensione dell'elemento utilizzando le classi `.form-control-lg` e `.form-control-sm`, che modificano la grandezza del carattere e la spaziatura interna.
 
 {% capture example %}
+
 <div>
   <div class="form-group">
-    <input type="text" class="form-control form-control-lg" id="input-text-lg" placeholder="Inserisci il tuo nome">
     <label for="input-text-lg">.form-control-lg</label>
+    <input type="text" class="form-control form-control-lg" id="input-text-lg" placeholder="Inserisci il tuo nome">
   </div>
   <div class="form-group">
-    <input type="text" class="form-control form-control-sm" id="input-text-sm" placeholder="Inserisci il tuo nome">
     <label for="input-text-lg">.form-control-sm</label>
+    <input type="text" class="form-control form-control-sm" id="input-text-sm" placeholder="Inserisci il tuo nome">
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
-
-
 
 {% endcomment %}

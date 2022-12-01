@@ -1,5 +1,6 @@
 ---
 layout: it25_docs
+splide: true
 title: Carousel
 group: informazioni
 toc: yes
@@ -41,104 +42,127 @@ Eventualmente può essere agginta a questo anche la classe `card-space` per dist
 
 ### Titolo e Card
 <div class="bd-example">
-  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide">
     <div class="it-header-block">
       <div class="it-header-block-title">
         <h2 class="no_toc">Titolo del Carousel</h2>
       </div>
     </div>  
-    <div class="it-carousel-all owl-carousel it-card-bg">
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_semplice.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_bottone.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_header.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_semplice.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_bottone.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_header.html %}
-        </div>
-      </div>
+    <div class="splide__track pl-lg-3 pr-lg-3">
+      <ul class="splide__list it-carousel-all">
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_semplice.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_bottone.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_header.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_semplice.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_bottone.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_header.html %}
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
 {% highlight html %}
-<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide">
   <div class="it-header-block">
     <div class="it-header-block-title">
       <h2 class="no_toc">Titolo del Carousel</h2>
     </div>
-  </div>
-  <div class="it-carousel-all owl-carousel it-card-bg">
-    <div class="it-single-slide-wrapper">
-      <div class="card-wrapper card-space">
-       include esempi-lombardia/card_semplice.html
-      </div>
-    </div>
-    . . .
-    . . .
+  </div>  
+  <div class="splide__track pl-lg-3 pr-lg-3">
+    <ul class="splide__list it-carousel-all">
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper card-space">
+           include esempi-lombardia/card_semplice.html 
+          </div>
+        </div>
+      </li>
+      . . .
+      . . .
+    </ul>
   </div>
 </div>
 {% endhighlight %}
 
 In questo esempio sono state usate in particolare le classi:
 - `it-header-block` e `it-header-block-title` per i *div* nidificati contenenti il **titolo**
-- `it-card-bg` sul *div* del **contenitore delle card**
-- `card-space` su **tutti** i *div* contenti le **singole card** per distanziarle tra loro.
+- `it-single-slide-wrapper` sul *div* del **contenitore delle card**
+- `card-wrapper card-space` su **tutti** i *div* contenti le **singole card** per distanziarle tra loro.
 
 
 ### Immagini grandi
 <div class="bd-example">
-  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-    <div class="it-carousel-all owl-carousel it-img-card it-big-img it25-carousel-autoplay">
-      {% include esempi-lombardia/slides.html %}
+  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide it25-carousel-autoplay">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% include esempi-lombardia/slides_splide.html %}
+      </ul>
     </div>
   </div>
 </div>
 {% highlight html %}
-<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-  <div class="it-carousel-all owl-carousel it-img-card it-big-img it25-carousel-autoplay">
-    <div class="it-single-slide-wrapper">
-      <div class="card-wrapper">
-        <div class="card card-img">
-          <div class="img-responsive-wrapper">
-            <div class="img-responsive">
-              <div class="img-wrapper">
-                <img src="{{ site.baseurl }}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide it25-carousel-autoplay">
+  <div class="splide__track">
+    <ul class="splide__list">
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper">
+          <div class="card-wrapper">
+            <div class="card card-img ">
+              <div class="img-responsive-wrapper">
+                <div class="img-responsive">
+                  <div class="img-wrapper">
+                    <img src="{{ site.baseurl }}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano">
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    . . .
-    . . .
+      </li>  
+      . . .
+      . . .
+    </ul>
   </div>
 </div>
 {% endhighlight %}
 
 In questo esempio sono state usate in particolare:
-- sul *div* del **contenitore delle card** le classi
-  - `it-img-card` per la gestione di **card immagine**
+- sul *div* del **wrapper principale** la classe
   - `it-big-img` per ottenere una **dimensione grande delle immagini**
   - `it25-carousel-autoplay` per attivare lo **scorrimento automatico** delle immagini.
 - su **tutti** i *div* di classe **card-wrapper** un **ulteriore div** con le classi
@@ -148,25 +172,44 @@ E' da notare che le immagini vengono **tagliate e riproporzionate automaticament
 
 ### Immagini standard
 <div class="bd-example">
-  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-    <div class="it-carousel-all owl-carousel it-img-card it-standard-image it25-carousel-nav">
-      {% include esempi-lombardia/slides.html %}
+  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-standard-img splide">
+    <div class="splide__track">
+      <ul class="splide__list">
+        {% include esempi-lombardia/slides_splide.html %}
+      </ul>
+    </div>
+    <div class="splide__arrows d-flex justify-content-between">
+      <button class="splide__arrow splide__arrow--prev btn btn-xs">
+        <svg class="icon icon-lg icon-primary"><use href="/dist/svg/sprite.svg#it-arrow-left-triangle"></use></svg>
+      </button>
+      <button class="splide__arrow splide__arrow--next btn btn-xs">
+        <svg class="icon icon-lg icon-primary"><use href="/dist/svg/sprite.svg#it-arrow-right-triangle"></use></svg>
+      </button>
     </div>
   </div>
 </div>
 {% highlight html %}
-<div class="bd-example">
-  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
-    <div class="it-carousel-all owl-carousel it-img-card it-standard-image it25-carousel-nav">
-       include esempi-lombardia/slides.html
-    </div>
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-standard-img splide">
+  <div class="splide__track">
+    <ul class="splide__list">
+      include esempi-lombardia/slides_splide.html
+    </ul>
+  </div>
+  <div class="splide__arrows d-flex justify-content-between">
+    <button class="splide__arrow splide__arrow--prev btn btn-xs">
+      <svg class="icon icon-lg icon-primary"><use href="/dist/svg/sprite.svg#it-arrow-left-triangle"></use></svg>
+    </button>
+    <button class="splide__arrow splide__arrow--next btn btn-xs">
+      <svg class="icon icon-lg icon-primary"><use href="/dist/svg/sprite.svg#it-arrow-right-triangle"></use></svg>
+    </button>
   </div>
 </div>
 {% endhighlight %}
 
-In questo esempio, rispetto al precedente, sono state usate, sul *div* del **contenitore delle card**, le classi:
-- `it-standard-image` che dà **dimensioni inferiori alle immagini**, consentendo, su schermi grandi, di vederne 3 alla volta.
-- `it25-carousel-nav` che fa apparire le **frecce di avanzamento/ritorno**.
+In questo esempio, rispetto al precedente, è stata usata, sul *div* del **contenitore delle card**, la classe:
+- `it-standard-img` che dà **dimensioni inferiori alle immagini**, consentendo, su schermi grandi, di vederne 3 alla volta.
+
+Inoltre, per far apparire le **frecce di avanzamento/ritorno**, l'html necessario è contenuto nel *div* di classe: `splide__arrows`
 
 Si noti che i **punti** sotto le slide, su schermi grandi, sono **solo 2**, ed ognuno **scorre 3 immagini alla volta**, così come le frecce.  
 **Su schermi piccoli invece i punti diventano 6**, e come le frecce, scorrono **una sola immagine** alla volta.
@@ -174,111 +217,76 @@ Si noti che i **punti** sotto le slide, su schermi grandi, sono **solo 2**, ed o
 
 ### Sfondo Immagine
 <div class="bd-example">
-  <style>
-  .owl-dots {
-    background-color: #fff;
-  }
-  </style>
-  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+  <div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide">
     <div class="it-header-block">
       <div class="it-header-block-title">
         <h2 class="no_toc">Titolo del Carousel</h2>
       </div>
     </div>  
-    <div class="it-carousel-all owl-carousel it-card-bg"
+    <div class="splide__track pl-lg-3 pr-lg-3"
         style='background-image: url("{{ site.baseurl }}/dist/assets/img/bike-sharing.jpg");
                background-size: cover;'>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_semplice.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_bottone.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_header_long.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_semplice.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_bottone.html %}
-        </div>
-      </div>
-      <div class="it-single-slide-wrapper">
-        <div class="card-wrapper card-space">
-        {% include esempi-lombardia/card_header_long.html %}
-        </div>
-      </div>
+      <ul class="splide__list it-carousel-all">
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_semplice.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_bottone.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_header.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_semplice.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_bottone.html %}
+            </div>
+          </div>
+        </li>
+        <li class="splide__slide">
+          <div class="it-single-slide-wrapper">
+            <div class="card-wrapper card-space">
+            {% include esempi-lombardia/card_header.html %}
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
-  </div>""
+  </div>
 </div>
 {% highlight html %}
-<style>
-.owl-dots {
-  background-color: #fff;
-}
-</style>
-<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide">
  . . .
- <div class="it-carousel-all owl-carousel it-card-bg"
-     style='background-image: url("{{ site.baseurl }}/dist/assets/img/bike-sharing.jpg");
-            background-size: cover;'>
- . . .              
+  <div class="splide__track pl-lg-3 pr-lg-3"
+      style='background-image: url("{{ site.baseurl }}/dist/assets/img/bike-sharing.jpg");
+              background-size: cover;'>
+ . . . 
 {% endhighlight %}
 
 Rispetto al precedente esempio **Titolo e Card** qui è stato aggiunto:
 - una `background-image` sul *div* **contenitore delle card**
-- uno sfondo bianco per la classe `owl-dots` che caratterizza il **div che contiene i punti cliccabili**.
-Quest'ultimo *div* tra l'altro, **non va specificato** nel codice HTML, perché **viene automaticamente aggiunto via Javascript** da *{{ site.data.short.bl }}*.
 
 Si noti che nonostante le dimensioni delle card siano tra loro anche molto differenti, il carousel riesce a gestirle rimanendo stabile.
 
-
-### Schema riepilogativo
-Questo schema cerca di evidenziare ordinatamente le classi utilizzate in questi esempi e le combinazioni valide.  
-Il criterio secondo cui è stato scritto è il seguente:
-1. le classi sono **identate come i div** cui vanno associate
-2. per il *contenitore delle immagini* **ogni riga mostra una delle combinazioni possibili**
-
-<pre>
-// Contenitore principale
-it-carousel-wrapper + it-carousel-landscape-abstract-three-cols
-
-   // Titolo (facoltativo)
-   it-header-block
-      it-header-block-title
-
-   // Contenitore delle card o immagini
-   it-carousel-all + owl-carousel
-          "               "       + it-card-bg
-          "               "       + it-img-card
-          "               "       +     "       + it-big-img
-          "               "       +     "       + it-standard-image
-                                  // utilizzabili indipendentemente
-          "               "       +  it25-carousel-nav
-          "               "       +  it25-carousel-autoplay
-
-      // Uno per ogni card o immagine                            
-      it-single-slide-wrapper
-         card-wrapper
-              "       + card-space
-</pre>
-
-
-{% capture callout %}
-#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Owl Carousel obsoleto
-Il plugin **[Owl Carousel](https://owlcarousel2.github.io/OwlCarousel2/docs/started-welcome.html)** utilizzato da {{ site.data.short.bi }} per il componente Carousel, è destinato alla **[Dismissione](https://github.com/italia/bootstrap-italia/issues/376)**.  
-Quando verrà rilasciato un componente sostitutivo, si provvederà a personalizzarlo per {{ site.data.short.rl }}.  
-{% endcapture %}{% include callout.html content=callout type="warning" %}
 
 {% capture callout %}
 ####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti

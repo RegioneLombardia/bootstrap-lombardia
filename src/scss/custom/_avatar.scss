@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 .avatar {
   display: inline-flex;
   overflow: hidden;
@@ -28,10 +30,12 @@
     position: absolute;
   }
   // text fix for ie11
+  /* stylelint-disable */
   _:-ms-fullscreen,
   p {
     transform: translateX(-50%) translateY(-50%);
   }
+  /* stylelint-enable */
   // icon
   .icon {
     height: 16px; // default size equals to md
@@ -180,7 +184,7 @@
       height: 15px;
     }
     .avatar-status {
-      top: $avatar-base-size/48;
+      top: math.div($avatar-base-size, 48);
     }
   }
   &.size-xl {
@@ -203,7 +207,7 @@
       bottom: $avatar-base-size;
     }
     .avatar-status {
-      top: $avatar-base-size/4;
+      top: $avatar-base-size * 0.25;
     }
   }
   &.size-xxl {
@@ -428,9 +432,3 @@ a.avatar {
   }
 }
 // stacked group ------------------------------------------- END
-
-//Tablet vertical
-@media (min-width: #{map-get($grid-breakpoints, md)}) {
-  .avatar {
-  }
-}

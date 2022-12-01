@@ -10,13 +10,13 @@ toc: true
 
 Classi per il posizionamento, tra loro non sono presenti le varianti per gestire il responsive.
 
-{% highlight html %}
+```html
 <div class="position-static">...</div>
 <div class="position-relative">...</div>
 <div class="position-absolute">...</div>
 <div class="position-fixed">...</div>
 <div class="position-sticky">...</div>
-{% endhighlight %}
+```
 
 ## Posizione fissa in alto
 
@@ -24,19 +24,19 @@ Posiziona un elemento in alto al viewport. Attraverso l'utilizzo di ogni classe 
 _fixed_, ancorandosi al viewport (cioè la finestra del browser) ed uscendo quindi dal normale flusso di posizionamento
 del documento.
 Assicurati quindi di comprendere appieno le implicazioni della [posizione `fixed`](https://developer.mozilla.org/en-US/docs/Web/CSS/position#fixed)
-nel tuo progetto; potrebbe essere necessario aggiungere CSS aggiuntivi. 
+nel tuo progetto; potrebbe essere necessario aggiungere CSS aggiuntivi.
 
-{% highlight html %}
+```html
 <div class="fixed-top">...</div>
-{% endhighlight %}
+```
 
 ## Posizione fissa in basso
 
 Specularmente al paragrafo precedente, posiziona un elemento in basso al viewport.
 
-{% highlight html %}
+```html
 <div class="fixed-bottom">...</div>
-{% endhighlight %}
+```
 
 ## Sticky top
 
@@ -47,6 +47,6 @@ La classe `.sticky-top` usa la proprietà `position: sticky` che non è sopporta
 racchiuso all'interno di una query `@supports` limitandone così l'uso ai soli browser che ne sopportino la proprietà
 correttamente.
 
-{% highlight html %}
+```html
 <div class="sticky-top">...</div>
-{% endhighlight %}
+```

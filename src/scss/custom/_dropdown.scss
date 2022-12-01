@@ -34,6 +34,72 @@
       &[x-placement='top-start'] {
         animation: dropdownFadeInTop forwards $dropdown-menu-animation-speed;
       }
+      //-menu on left
+      &[x-placement='left-start'] {
+        animation: dropdownFadeInTop forwards $dropdown-menu-animation-speed;
+        &:before {
+          top: 20px;
+          right: -6px;
+          left: auto;
+        }
+      }
+      //-menu on right
+      &[x-placement='right-start'] {
+        animation: dropdownFadeInTop forwards $dropdown-menu-animation-speed;
+        &:before {
+          top: 20px;
+          left: -6px;
+        }
+      }
+    }
+  }
+
+  //dropup
+  &.dropup {
+    .btn-dropdown {
+      &:after {
+        display: none;
+      }
+      &[aria-expanded='true'] {
+        .icon-expand {
+          transform: scaleY(1);
+        }
+      }
+      .icon-expand {
+        transform: scaleY(-1);
+      }
+    }
+  }
+  //dropright
+  &.dropright {
+    .btn-dropdown {
+      &:after {
+        display: none;
+      }
+      &[aria-expanded='true'] {
+        .icon-expand {
+          transform: rotate(90deg);
+        }
+      }
+      .icon-expand {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+  //dropright
+  &.dropleft {
+    .btn-dropdown {
+      &:before {
+        display: none;
+      }
+      &[aria-expanded='true'] {
+        .icon-expand {
+          transform: rotate(-90deg);
+        }
+      }
+      .icon-expand {
+        transform: rotate(90deg);
+      }
     }
   }
 }
@@ -91,14 +157,16 @@
     }
   }
 
+  //header
+  h3,
+  .link-list-heading {
+    line-height: $link-list-line-height;
+    margin-bottom: 0;
+  }
+
   //link list finetuning
   .link-list {
     margin-bottom: 0;
-    //header
-    h3 {
-      line-height: $link-list-line-height;
-      margin-bottom: 0;
-    }
   }
 
   //notch
@@ -127,6 +195,12 @@
   //dark version
   &.dark {
     background-color: $neutral-1-a8;
+    .link-list-wrapper {
+      h3,
+      .link-list-heading {
+        color: #fff;
+      }
+    }
     .link-list-wrapper ul {
       span.divider {
         background: #2e465e;
@@ -135,7 +209,6 @@
         //link list colors and hovers
         a span,
         a:hover span,
-        h3,
         i {
           color: #fff;
         }

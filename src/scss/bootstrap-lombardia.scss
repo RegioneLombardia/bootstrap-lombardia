@@ -1,8 +1,6 @@
-@import 'node_modules/bootstrap-select/sass/bootstrap-select';
-
-@import 'node_modules/owl.carousel/src/scss/core';
-@import 'node_modules/owl.carousel/src/scss/animate';
-@import 'node_modules/owl.carousel/src/scss/autoheight';
+// bootstrap italia version variable
+// useful to check for the current version
+@import 'custom/version';
 
 // funzioni e variabili colore
 @import 'functions';
@@ -57,6 +55,7 @@
 @import 'node_modules/bootstrap/scss/toasts';
 
 // Customizzazioni e nuovi componenti
+@import 'custom/bootstrap-select';
 @import 'custom/type';
 @import 'custom/grid';
 @import 'custom/tables';
@@ -64,6 +63,7 @@
 @import 'custom/modal';
 @import 'custom/collapse';
 @import 'custom/carousel';
+@import 'custom/carousel-legacy';
 @import 'custom/calendar';
 @import 'custom/alert';
 @import 'custom/buttons';
@@ -121,6 +121,9 @@
 @import 'custom/point-list';
 @import 'custom/rating-list';
 @import 'custom/badge';
+@import 'custom/print';
+@import 'custom/just-validate';
+@import 'custom/accessible-autocomplete';
 
 // datepicker
 @import 'custom/form-datepicker';
@@ -167,3 +170,8 @@
 @import "custom-lombardia/it25-data-output";
 @import 'custom-lombardia/collapse';
 @import "custom-lombardia/carousel";
+@import 'custom-lombardia/forms';
+@import "custom-lombardia/form-toggles";
+
+//accessible autocomplete
+@import '../../node_modules/accessible-autocomplete/src/autocomplete.css';

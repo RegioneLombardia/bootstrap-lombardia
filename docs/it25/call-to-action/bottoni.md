@@ -126,7 +126,9 @@ Può essere utilizzato solo per azioni che comportano la **cancellazione non rev
 {% capture example %}
 <div class="it25-btn-example">
   <button type="button" class="btn btn-danger">Danger</button>
+  <button type="button" class="btn btn-danger disabled">Disabled</button>
   <button type="button" class="btn btn-outline-danger">Danger outline</button>
+  <button type="button" class="btn btn-outline-danger disabled">Disabled</button>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
