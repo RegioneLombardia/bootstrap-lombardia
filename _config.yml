@@ -56,7 +56,7 @@ twitter: 'https://twitter.com/designersITA'
 twitter_handle: '@designersITA'
 
 # Versions
-current_version:		0.3.5
+current_version:		0.4.0
 bootstrap-italia_version:		1.6.3
 bootstrap_version: 4.6.1
 bootstrap_minor: 4.5
