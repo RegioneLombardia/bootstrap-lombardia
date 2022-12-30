@@ -5,13 +5,40 @@ layout: default
 <main id="content">
   <div class="d-flex align-items-center justify-content-center main-content">
     <div class="container">
+
       <div class="row">
         <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
-          <p class="mt-5"><strong>Bootstrap Lombardia</strong> è una customizzazione di <strong>Bootstrap Italia</strong> per la Regione Lombardia.</p>
+        {% capture callout %}
+#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Attenzione!
+<p>Stiamo aggiornando il <strong>Design System</strong> di {{ site.data.short.rl }}!</p>
+<p><strong>Sarà creata una nuova versione di {{ site.data.short.bl }}</strong> allineata al nuovo Design System ed alla <strong><a href="https://italia.github.io/bootstrap-italia/" target="_blank" rel="noopener" title="Documentazione Bootstrap Italia versione 2.x">nuova versione 2.x di {{ site.data.short.bi }}</a></strong>, basata su <strong><a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" title="Sito ufficiale Bootstrap">Bootstrap 5</a></strong>, che andrà a sostituire la versione attualmente disponibile, allineata alla <strong><a href="https://italia.github.io/bootstrap-italia/1.x/" target="_blank" rel="noopener" title="Documentazione Bootstrap Italia versione 1.x">vecchia versione 1.x di {{ site.data.short.bi }}</a></strong> .</p>
+
+<p>Stiamo aggiungendo un <strong>repository dei modelli e dei componenti grafici</strong> utili per la progettazione delle interfacce di mobile app, applicativi web e Minisiti, <strong>in formato vettoriale</strong>.<br/>
+E' possibile consultare le librerie in <strong>Figma</strong> tramite i seguenti link:
+<ul>
+  <li><a href="https://www.figma.com/file/JLJyZqDgxNXIJbROFdiEsp/Linee-guida-di-design-per-Mobile-app?node-id=0%3A1&t=MBMNeYTof6hbT5DB-1" target="_blank" rel="noopener">Mobile app</a></li>
+  <li><a href="https://www.figma.com/file/iiT3mdLxyE1eMGgAkomJau/Linee-guida-di-design-per-Applicativi-web?node-id=0%3A1&t=NBTOQbEOz7oGaaXS-1" target="_blank" rel="noopener">Applicativi Web</a></li>
+  <li><a href="https://www.figma.com/file/4a5t64PJzLuZbSRUAHlqlo/Linee-guida-di-design-per-Minisiti?node-id=0%3A1&t=F2eeTBQS9kzQ2ZOI-1" target="_blank" rel="noopener">Minisiti</a></li>
+</ul>
+</p>
+<p>Per la progettazione di <strong>Mobile App</strong> e <strong>Minisiti</strong>, si consiglia di <strong>fare riferimento</strong> alle nuove <strong>Linee Guida per il design inserite all'interno delle librerie Figma</strong></p>
+<p>Per il design e lo sviluppo degli <strong>Applicativi Web invece</strong>, è ancora <strong>consentito l'uso di questa versione di {{ site.data.short.bl }}</strong></p>
+<!--
+<p>Questa versione <strong>{{ site.current_version}}</strong> di {{ site.data.short.bl }} è allineata alla <strong><a href="https://italia.github.io/bootstrap-italia/1.x/">vecchia versione 1.x</a></strong> (precisamente la <strong>{{ site.bootstrap-italia_version}}</strong>) di {{ site.data.short.bi }}.</p>
+<p>E' in corso la revisione del <strong><a href="https://www.figma.com/file/AMUqhnwTiEmcNJSfE1vcfi/Contributi-ARIA?node-id=482%3A32970&t=nCcMEneLA2h3madP-1">Design System</a></strong> della {{ site.data.short.rl }}, sia per quanto riguarda il Portale Istituzione che gli Applicativi Web, i Minisiti e le Mobile App.</p>
+<p>Sarà creata una nuova versione di {{ site.data.short.bl }} allineata sia al nuovo Design System che alla <strong><a href="https://italia.github.io/bootstrap-italia/">nuova versione 2.x</a></strong> di {{ site.data.short.bi }}, basata su <strong><a href="https://getbootstrap.com/">Bootstrap 5</a></strong></p>
+-->
+{% endcapture %}{% include callout.html content=callout type="warning" %}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
+          <p class="mt-2"><strong>{{ site.data.short.bl }}</strong> è una customizzazione di <strong>Bootstrap Italia</strong> per la Regione Lombardia.</p>
           <p>La libreria <strong>Bootstrap Italia</strong> è il modo più semplice e sicuro per costruire interfacce web <strong>moderne</strong>, <strong>inclusive</strong> e <strong>semplici da mantenere</strong>.</p>
           <p>
             Completamente <strong>open-source</strong>, costruita sulle fondamenta di
-            <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer" title="Repository GitHub di Bootstrap"
+            <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/" target="_blank" rel="noopener noreferrer" title="Documentazione Bootstrap versione 4.6"
               >Bootstrap {{ site.bootstrap_version }}</a
             >, di cui eredita tutte le funzionalità, componenti, griglie e classi di utilità, personalizzandole secondo le
             <a
@@ -21,7 +48,7 @@ layout: default
               rel="noopener noreferrer"
               >Linee Guida di Design per i siti web della Pubblica Amministrazione</a
             >, <strong>Bootstrap Italia</strong> usa i pattern e i componenti definiti nello
-            <a href="https://designers.italia.it/kit/ui-kit/" target="_blank" title="User Interface Kit" rel="noopener noreferrer"
+            <a href="https://designers.italia.it/kit/ui-kit/" target="_blank" title="User Interface Kit" rel="noopener"
               >UI Kit di Designers Italia</a
             >
             e li trasforma in codice già pronto all'uso!
