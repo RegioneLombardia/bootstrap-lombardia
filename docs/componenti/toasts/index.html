@@ -1,77 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
   <head>
     
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.">
-<meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.1.0">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message." />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Toasts · Bootstrap Lombardia</title>
 
+
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
 
 <!-- Documentation extras -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet" />
 
-
-<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet">
-
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
 
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico">
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC">
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png">
-
-<link rel="manifest" href="/bootstrap-lombardia/docs/assets/img/favicons/manifest.webmanifest">
-<meta name="msapplication-config" content="/bootstrap-lombardia/docs/assets/img/favicons/browserconfig.xml">
-
-<meta name="theme-color" content="#0066CC">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@teamdigitaleIT">
-<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="twitter:title" content="Toasts">
-<meta name="twitter:description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.">
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
+<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Toasts" />
+<meta name="twitter:description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message." />
+<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/componenti/toasts/">
-<meta property="og:title" content="Toasts">
-<meta property="og:description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-
-
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/componenti/toasts/" />
+<meta property="og:title" content="Toasts" />
+<meta property="og:description" content="Push notifications to your visitors with a toast, a lightweight and easily customizable alert message." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
-// Disabilita tracciamento se il cookie cookies_consent non esiste
-if (document.cookie.indexOf('cookies_consent=true') === -1) {
-  window['ga-disable-UA-114758441-1'] = true;
-}
+  // Disabilita tracciamento se il cookie cookies_consent non esiste
+  if (document.cookie.indexOf('cookies_consent=true') === -1) {
+    window['ga-disable-UA-114758441-1'] = true
+  }
 </script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ;(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r
+    ;(i[r] =
+      i[r] ||
+      function () {
+        ;(i[r].q = i[r].q || []).push(arguments)
+      }),
+      (i[r].l = 1 * new Date())
+    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+    a.async = 1
+    a.src = g
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
+  ga('create', 'UA-114758441-1', 'auto')
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview')
 </script>
 <!-- End Google Analytics -->
-
 
 
   </head>
@@ -116,8 +119,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"><nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
     <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
       <span><a href="/bootstrap-lombardia/docs/it25/introduzione">Linee Guida </a></span>
       <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
@@ -309,6 +311,9 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/callout/">
                       <span>Callout</span></a>
                   </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/carousel-legacy/">
+                      <span>Carousel Legacy</span></a>
+                  </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/carousel/">
                       <span>Carousel</span></a>
                   </li><li>
@@ -392,6 +397,9 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                     <a class="list-item " href="/bootstrap-lombardia/docs/form/input-ora/">
                       <span>Input Ora</span></a>
                   </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/form/autocompletamento/">
+                      <span>Autocompletamento</span></a>
+                  </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/form/upload/">
                       <span>Upload</span></a>
                   </li><li>
@@ -446,14 +454,12 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 
 </nav>
+</div>
 
-        </div>
-
-        
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
+         <div class="d-none d-xl-block col-xl-2 bd-toc">
   <div class="sidebar-wrapper">
     <h3>Toasts</h3>
-    <ul class="section-nav">
+    <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#overview">Overview</a></li>
 <li class="toc-entry toc-h2"><a href="#examples">Examples</a>
 <ul>
@@ -475,8 +481,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </ul>
   </div>
 </div>
-
-        
+ 
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Toasts</h1>
@@ -503,9 +508,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>Toasts are as flexible as you need and have very little required markup. At a minimum, we require a single element to contain your “toasted” content and strongly encourage a dismiss button.</p>
 
 <div class="bd-example bg-light">
+
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+    <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
     <strong class="mr-auto ml-2">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -519,7 +525,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
     <span class="nt">&lt;small&gt;</span>11 mins ago<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -536,9 +542,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>Toasts are slightly translucent, too, so they blend over whatever they might appear over. For browsers that support the <code class="language-plaintext highlighter-rouge">backdrop-filter</code> CSS property, we’ll also attempt to blur the elements under a toast.</p>
 
 <div class="bd-example bg-dark">
+
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+    <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
     <strong class="mr-auto ml-2">Bootstrap</strong>
     <small class="text-muted">11 mins ago</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -552,7 +559,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>11 mins ago<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -569,9 +576,10 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>When you have multiple toasts, we default to vertically stacking them in a readable manner.</p>
 
 <div class="bd-example bg-light">
+
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+    <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
     <strong class="mr-auto ml-2">Bootstrap</strong>
     <small class="text-muted">just now</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -585,7 +593,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header">
-    <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+    <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
     <strong class="mr-auto ml-2">Bootstrap</strong>
     <small class="text-muted">2 seconds ago</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -599,7 +607,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>just now<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -613,7 +621,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
     <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>2 seconds ago<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -630,10 +638,11 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>Place toasts with custom CSS as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the <code class="language-plaintext highlighter-rouge">.toast</code>.</p>
 
 <div class="bd-example bg-dark">
+
 <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
   <div class="toast" style="position: absolute; top: 0; right: 0;">
     <div class="toast-header">
-      <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+      <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
       <strong class="mr-auto ml-2">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -649,7 +658,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">aria-live=</span><span class="s">"polite"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"position: relative; min-height: 200px;"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">style=</span><span class="s">"position: absolute; top: 0; right: 0;"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
       <span class="nt">&lt;small&gt;</span>11 mins ago<span class="nt">&lt;/small&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -665,6 +674,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>For systems that generate more notifications, consider using a wrapping element so they can easily stack.</p>
 
 <div class="bd-example bg-dark">
+
 <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
   <!-- Position it -->
   <div style="position: absolute; top: 0; right: 0;">
@@ -672,7 +682,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <!-- Then put toasts within -->
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+        <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
         <strong class="mr-auto ml-2">Bootstrap</strong>
         <small class="text-muted">just now</small>
         <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -686,7 +696,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
     <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+        <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
         <strong class="mr-auto ml-2">Bootstrap</strong>
         <small class="text-muted">2 seconds ago</small>
         <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -697,6 +707,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         Heads up, toasts will stack automatically
       </div>
     </div>
+
   </div>
 </div>
 </div>
@@ -707,7 +718,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
     <span class="c">&lt;!-- Then put toasts within --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
         <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>just now<span class="nt">&lt;/small&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -721,7 +732,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
         <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>2 seconds ago<span class="nt">&lt;/small&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -732,19 +743,21 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
         Heads up, toasts will stack automatically
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
+
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <p>You can also get fancy with flexbox utilities to align toasts horizontally and/or vertically.</p>
 
 <div class="bd-example bg-dark">
+
 <!-- Flexbox container for aligning the toasts -->
 <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 200px;">
 
   <!-- Then put toasts within -->
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
     <div class="toast-header">
-      <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+      <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
       <strong class="mr-auto ml-2">Bootstrap</strong>
       <small>11 mins ago</small>
       <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -763,7 +776,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   <span class="c">&lt;!-- Then put toasts within --&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
       <span class="nt">&lt;small&gt;</span>11 mins ago<span class="nt">&lt;/small&gt;</span>
       <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -786,16 +799,18 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <p>As the content you’re displaying changes, be sure to update the <a href="#options"><code class="language-plaintext highlighter-rouge">delay</code> timeout</a> to ensure people have enough time to read the toast.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"polite"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span> <span class="na">data-delay=</span><span class="s">"10000"</span><span class="nt">&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"polite"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span> <span class="na">data-delay=</span><span class="s">"10000"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
 
 <p>When using <code class="language-plaintext highlighter-rouge">autohide: false</code>, you must add a close button to allow users to dismiss the toast.</p>
 
 <div class="bd-example bg-light">
+
 <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
   <div class="toast-header">
-    <svg class="icon icon-secondary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
+    <svg class="icon icon-secondary"><use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"></use></svg>
     <strong class="mr-auto ml-2">Bootstrap</strong>
     <small>11 mins ago</small>
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -809,7 +824,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"alert"</span> <span class="na">aria-live=</span><span class="s">"assertive"</span> <span class="na">aria-atomic=</span><span class="s">"true"</span> <span class="na">class=</span><span class="s">"toast"</span> <span class="na">data-autohide=</span><span class="s">"false"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toast-header"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-secondary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-code-circle"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;strong</span> <span class="na">class=</span><span class="s">"mr-auto ml-2"</span><span class="nt">&gt;</span>Bootstrap<span class="nt">&lt;/strong&gt;</span>
     <span class="nt">&lt;small&gt;</span>11 mins ago<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ml-2 mb-1 close"</span> <span class="na">data-dismiss=</span><span class="s">"toast"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
@@ -827,7 +842,8 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <p>Initialize toasts via JavaScript:</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.toast</span><span class="dl">'</span><span class="p">).</span><span class="nx">toast</span><span class="p">(</span><span class="nx">option</span><span class="p">)</span></code></pre></figure>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">.toast</span><span class="dl">'</span><span class="p">).</span><span class="nx">toast</span><span class="p">(</span><span class="nx">option</span><span class="p">)</span>
+</code></pre></div></div>
 
 <h3 id="options">Options</h3>
 
@@ -873,7 +889,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
 <p>Tutti i metodi API sono <strong>asincroni</strong> e avviano una <strong>transizione</strong>. Ritornano al chiamante non appena viene avviata la transizione ma <strong>prima che termini</strong>. Inoltre, una chiamata al metodo su un <strong>componente in transizione verrà ignorata</strong>.</p>
 
-<p>Per maggiori informazioni consulta la <a href="https://getbootstrap.com/docs/4.0/getting-started/javascript/">documentazione Javascript di Bootstrap</a> (in inglese).</p>
+<p>Per maggiori informazioni consulta la <a href="https://getbootstrap.com/docs/4.6/getting-started/javascript/">documentazione Javascript di Bootstrap</a> (in inglese).</p>
 </div>
 
 <h4 id="toastoptions"><code class="language-plaintext highlighter-rouge">$().toast(options)</code></h4>
@@ -885,19 +901,19 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 <p>Reveals an element’s toast. <strong>Returns to the caller before the toast has actually been shown</strong> (i.e. before the <code class="language-plaintext highlighter-rouge">shown.bs.toast</code> event occurs).
 You have to manually call this method, instead your toast won’t show.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#element</span><span class="dl">'</span><span class="p">).</span><span class="nx">toast</span><span class="p">(</span><span class="dl">'</span><span class="s1">show</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
+<p><code class="language-plaintext highlighter-rouge">js$('#element').toast('show')</code></p>
 
 <h4 id="toasthide"><code class="language-plaintext highlighter-rouge">.toast('hide')</code></h4>
 
 <p>Hides an element’s toast. <strong>Returns to the caller before the toast has actually been hidden</strong> (i.e. before the <code class="language-plaintext highlighter-rouge">hidden.bs.toast</code> event occurs). You have to manually call this method if you made <code class="language-plaintext highlighter-rouge">autohide</code> to <code class="language-plaintext highlighter-rouge">false</code>.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#element</span><span class="dl">'</span><span class="p">).</span><span class="nx">toast</span><span class="p">(</span><span class="dl">'</span><span class="s1">hide</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
+<p><code class="language-plaintext highlighter-rouge">js$('#element').toast('hide')</code></p>
 
 <h4 id="toastdispose"><code class="language-plaintext highlighter-rouge">.toast('dispose')</code></h4>
 
 <p>Hides an element’s toast. Your toast will remain on the DOM but won’t show anymore.</p>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#element</span><span class="dl">'</span><span class="p">).</span><span class="nx">toast</span><span class="p">(</span><span class="dl">'</span><span class="s1">dispose</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
+<p><code class="language-plaintext highlighter-rouge">js$('#element').toast('dispose')</code></p>
 
 <h3 id="events">Events</h3>
 
@@ -928,49 +944,43 @@ You have to manually call this method, instead your toast won’t show.</p>
   </tbody>
 </table>
 
-<figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myToast</span><span class="dl">'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">hidden.bs.toast</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#myToast</span><span class="dl">'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="dl">'</span><span class="s1">hidden.bs.toast</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
   <span class="c1">// do something...</span>
-<span class="p">})</span></code></pre></figure>
-
+<span class="p">})</span>
+</code></pre></div></div>
 
         </main>
       </div>
     </div>
 
-    <div class="cookiebar">
-  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
-  <div class="cookiebar-buttons">
-      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
-      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
-  </div>
-</div>
-
     
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script><script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/anchor.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/clipboard.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tsparticles.min.js"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script><script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/anchor.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/clipboard.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202007081745"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202301171043"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tweenjs.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/easeljs.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/preloadjs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tweenjs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/easeljs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/preloadjs.min.js"></script>
 
-<script>
-  var manifest = [
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-1.png", id:"cover-1"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-2.png", id:"cover-2"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-3.png", id:"cover-3"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-4.png", id:"cover-4"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-5.png", id:"cover-5"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-6.png", id:"cover-6"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png", id:"cover-7"}
-  ];
-</script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?202007081745"></script>
+  <script>
+    var manifest = [
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+    ]
+  </script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?202301171043"></script>
+  
+  
 <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/docsearch.min.js"></script>
 <script>
   docsearch({
@@ -978,13 +988,13 @@ You have to manually call this method, instead your toast won’t show.</p>
     indexName: 'bootstrap_italia',
     inputSelector: '#search-input',
     handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url;
-      url = suggestion.isLvl1 ? url.split('#')[0]: url;
+      var url = suggestion.url
+      url = suggestion.isLvl1 ? url.split('#')[0] : url
       // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url;
+      window.location.href = url
     },
-    debug: false // Set debug to true if you want to inspect the dropdown
-  });
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  })
 </script>
   </body>
 </html>

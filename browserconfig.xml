@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+          <square150x150logo src="/bootstrap-lombardia/docs/assets/img/favicons/mstile-150x150.png"/>
+            <TileColor>#2A7A38</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

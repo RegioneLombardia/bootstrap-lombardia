@@ -1,77 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
   <head>
     
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)">
-<meta name="author" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="generator" content="Jekyll v4.1.0">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Personalizzazione della libreria · Bootstrap Lombardia</title>
 
+
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202007081745" rel="stylesheet">
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
 
 <!-- Documentation extras -->
+ 
+<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet" />
 
-
-<link href="https://cdn.jsdelivr.net/npm/docsearch.js@2.6.2/dist/cdn/docsearch.min.css" rel="stylesheet">
-
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202007081745" rel="stylesheet">
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
 
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico">
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC">
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png">
-
-<link rel="manifest" href="/bootstrap-lombardia/docs/assets/img/favicons/manifest.webmanifest">
-<meta name="msapplication-config" content="/bootstrap-lombardia/docs/assets/img/favicons/browserconfig.xml">
-
-<meta name="theme-color" content="#0066CC">
-
-<!-- Twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:site" content="@teamdigitaleIT">
-<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti">
-<meta name="twitter:title" content="Personalizzazione della libreria">
-<meta name="twitter:description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)">
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
+<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Personalizzazione della libreria" />
+<meta name="twitter:description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)" />
+<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/come-iniziare/personalizzazione-della-libreria/">
-<meta property="og:title" content="Personalizzazione della libreria">
-<meta property="og:description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png">
-<meta property="og:image:type" content="image/png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-
-
-
+<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/come-iniziare/personalizzazione-della-libreria/" />
+<meta property="og:title" content="Personalizzazione della libreria" />
+<meta property="og:description" content="Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+ 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script>
-// Disabilita tracciamento se il cookie cookies_consent non esiste
-if (document.cookie.indexOf('cookies_consent=true') === -1) {
-  window['ga-disable-UA-114758441-1'] = true;
-}
+  // Disabilita tracciamento se il cookie cookies_consent non esiste
+  if (document.cookie.indexOf('cookies_consent=true') === -1) {
+    window['ga-disable-UA-114758441-1'] = true
+  }
 </script>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ;(function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r
+    ;(i[r] =
+      i[r] ||
+      function () {
+        ;(i[r].q = i[r].q || []).push(arguments)
+      }),
+      (i[r].l = 1 * new Date())
+    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
+    a.async = 1
+    a.src = g
+    m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto');
-  ga('set', 'anonymizeIp', true);
-  ga('send', 'pageview');
+  ga('create', 'UA-114758441-1', 'auto')
+  ga('set', 'anonymizeIp', true)
+  ga('send', 'pageview')
 </script>
 <!-- End Google Analytics -->
-
 
 
   </head>
@@ -116,8 +119,7 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
 
     <div class="container-fluid">
       <div class="row flex-xl-nowrap">
-        <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
-          <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
+        <div class="col-12 col-md-3 col-xl-2 bd-sidebar"><nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
     <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
       <span><a href="/bootstrap-lombardia/docs/it25/introduzione">Linee Guida </a></span>
       <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
@@ -128,18 +130,18 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
       <div class="link-list-wrapper">
         <ul class="link-list"><li>
               
-              <a class="list-item large medium right-icon " href="#collapse-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-1">
+              <a class="list-item large medium right-icon active" href="#collapse-1" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-1">
                 <span>Come iniziare</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
               </a>
-              <ul class="link-sublist collapse " id="collapse-1"><li>
+              <ul class="link-sublist collapse show" id="collapse-1"><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/introduzione/">
                       <span>Introduzione</span></a>
                   </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/strumenti-di-compilazione/">
                       <span>Strumenti di compilazione</span></a>
                   </li><li>
-                    <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/personalizzazione-della-libreria/">
+                    <a class="list-item  active" href="/bootstrap-lombardia/docs/come-iniziare/personalizzazione-della-libreria/">
                       <span>Personalizzazione della libreria</span></a>
                   </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/modificare-componenti/">
@@ -309,6 +311,9 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/callout/">
                       <span>Callout</span></a>
                   </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/componenti/carousel-legacy/">
+                      <span>Carousel Legacy</span></a>
+                  </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/componenti/carousel/">
                       <span>Carousel</span></a>
                   </li><li>
@@ -392,6 +397,9 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
                     <a class="list-item " href="/bootstrap-lombardia/docs/form/input-ora/">
                       <span>Input Ora</span></a>
                   </li><li>
+                    <a class="list-item " href="/bootstrap-lombardia/docs/form/autocompletamento/">
+                      <span>Autocompletamento</span></a>
+                  </li><li>
                     <a class="list-item " href="/bootstrap-lombardia/docs/form/upload/">
                       <span>Upload</span></a>
                   </li><li>
@@ -446,25 +454,22 @@ if (document.cookie.indexOf('cookies_consent=true') === -1) {
   </div>
 
 </nav>
+</div>
 
-        </div>
-
-        
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
+         <div class="d-none d-xl-block col-xl-2 bd-toc">
   <div class="sidebar-wrapper">
     <h3>Personalizzazione della libreria</h3>
-    <ul class="section-nav">
+    <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#sovrascrivere-le-variabili-colore">Sovrascrivere le variabili colore</a></li>
 </ul>
   </div>
 </div>
-
-        
+ 
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Personalizzazione della libreria</h1>
           <p class="bd-lead">Come personalizzare e sovrascrivere le variabili di default della libreria (es. colori, font-family, misure, ecc.)</p>
-          <p><strong>Bootstrap Italia</strong> eredita ed estende tutte le variabili di default di Bootstrap, sovrascrivendo alcuni valori in fase di compilazione e impostandone di nuovi all’occorenza.<br />
+          <p><strong>Bootstrap Italia</strong> eredita ed estende tutte le variabili di default di Bootstrap, sovrascrivendo alcuni valori in fase di compilazione e impostandone di nuovi all’occorenza.
 Un esempio fra tutti è il valore del colore <code class="language-plaintext highlighter-rouge">$primary</code> che in <strong>Bootstrap Italia</strong> è rappresentato dal colore blu <code class="language-plaintext highlighter-rouge">#0066CC</code>, tipico della libreria.</p>
 
 <p>L’utilizzo del blu <code class="language-plaintext highlighter-rouge">#0066CC</code> dovrebbe però essere riservato alle amministrazioni centrali dello Stato, e quindi ci si può trovare nella condizione di dover personalizzare i valori delle variabili colore di <strong>Bootstrap Italia</strong>, impostando nuovi valori per le proprie necessità.</p>
@@ -475,7 +480,7 @@ Un esempio fra tutti è il valore del colore <code class="language-plaintext hig
 
 <ol>
   <li>Installare <strong>Bootstrap Italia</strong> con <code class="language-plaintext highlighter-rouge">yarn/npm: yarn add bootstrap-italia --save</code></li>
-  <li>Installare <strong>node-sass</strong>: <code class="language-plaintext highlighter-rouge">yarn add node-sass</code></li>
+  <li>Installare la versione di <strong>sass</strong> che si preferisce</li>
   <li>Creare all’interno del progetto una cartella <strong>scss</strong></li>
   <li>Dentro alla cartella <strong>scss</strong> creare un file di tipo <strong>bootstrap-italia-custom.scss</strong></li>
   <li>Impostare le variabili di default da modificare con dei valori <strong>personalizzati</strong> (la maggior parte delle variabili usate da Bootstrap Italia sono visibili <a href="https://github.com/italia/bootstrap-italia/blob/master/src/scss/">qui</a>)</li>
@@ -486,14 +491,14 @@ Un esempio fra tutti è il valore del colore <code class="language-plaintext hig
 <h5 id="bootstrap-italia-playground">Bootstrap Italia Playground</h5>
 
 <div class="text-center">
-<img class="rounded" src="/bootstrap-lombardia/docs/assets/img/bootstrap-italia-playground.png" width="400" alt="Esempio di pagina personalizzata con Bootstrap Italia Playground" /> 
+<img class="rounded" src="/bootstrap-lombardia/docs/assets/img/bootstrap-italia-playground.png" width="400" alt="Esempio di pagina personalizzata con Bootstrap Italia Playground" />
 </div>
 
 <p>Il <strong>modo più semplice per creare una versione personalizzata di Bootstrap Italia</strong>, è seguire i passi indicati nel repository di esempio <strong><a href="https://github.com/italia/bootstrap-italia-playground">Bootstrap Italia Playground</a></strong>.</p>
 
 </div>
 
-<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// file: bootstrap-italia-custom.scss</span>
+<div class="language-scss highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// file: bootstrap-italia-custom.scss</span>
 
 <span class="c1">// modifica completa del template: è possibile ricompilare la libreria modificando alcune variabili SCSS</span>
 
@@ -507,28 +512,30 @@ Un esempio fra tutti è il valore del colore <code class="language-plaintext hig
 <span class="c1">// è possibile utilizzare ad esempio il sito https://rgb.to/.</span>
 
 <span class="c1">// Per l'override della famiglia di caratteri</span>
-<span class="nv">$font-family-serif</span><span class="p">:</span>      <span class="s2">"Custom Font"</span><span class="o">,</span> <span class="n">Georgia</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
-<span class="nv">$font-family-sans-serif</span><span class="p">:</span> <span class="s2">"Custom Font"</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
-<span class="nv">$font-family-monospace</span><span class="p">:</span>  <span class="s2">"Custom Font"</span><span class="o">,</span> <span class="s2">"Courier New"</span><span class="o">,</span> <span class="n">Courier</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span>
+<span class="nv">$font-family-serif</span><span class="p">:</span> <span class="s1">'Custom Font'</span><span class="o">,</span> <span class="n">Georgia</span><span class="o">,</span> <span class="nb">serif</span><span class="p">;</span>
+<span class="nv">$font-family-sans-serif</span><span class="p">:</span> <span class="s1">'Custom Font'</span><span class="o">,</span> <span class="n">Arial</span><span class="o">,</span> <span class="n">Helvetica</span><span class="o">,</span> <span class="nb">sans-serif</span><span class="p">;</span>
+<span class="nv">$font-family-monospace</span><span class="p">:</span> <span class="s1">'Custom Font'</span><span class="o">,</span> <span class="s1">'Courier New'</span><span class="o">,</span> <span class="n">Courier</span><span class="o">,</span> <span class="nb">monospace</span><span class="p">;</span>
 
 <span class="c1">// import libreria</span>
-<span class="k">@import</span> <span class="s2">"../../node_modules/bootstrap-italia/src/scss/bootstrap-italia.scss"</span><span class="p">;</span></code></pre></figure>
+<span class="k">@import</span> <span class="s1">'../../node_modules/bootstrap-italia/src/scss/bootstrap-italia.scss'</span><span class="p">;</span>
+</code></pre></div></div>
 
 <p>Ad esempio, per una applicazione costruita con ReactJS attraverso <code class="language-plaintext highlighter-rouge">create-react-app</code>, è possibile <strong>importare bootstrap-italia-custom.scss</strong> laddove serva utilizzare la libreria <strong>Bootstrap-Italia</strong>.</p>
 
-<figure class="highlight"><pre><code class="language-jsx" data-lang="jsx"><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">"</span><span class="s2">react</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="dl">"</span><span class="s2">./scss/bootstrap-italia-custom.scss</span><span class="dl">"</span><span class="p">;</span>
-<span class="k">import</span> <span class="dl">"</span><span class="s2">./App.css</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-jsx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./scss/bootstrap-italia-custom.scss</span><span class="dl">'</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span>
 
 <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
   <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className=</span><span class="s2">"App"</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">className=</span><span class="s2">"btn btn-primary"</span><span class="p">&gt;</span>Bottone di esempio<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">className</span><span class="p">=</span><span class="s">"App"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">button</span> <span class="na">className</span><span class="p">=</span><span class="s">"btn btn-primary"</span><span class="p">&gt;</span>Bottone di esempio<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">);</span>
+  <span class="p">)</span>
 <span class="p">}</span>
 
-<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span></code></pre></figure>
+<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span>
+</code></pre></div></div>
 
 <p>In questo semplice e veloce esempio, il bottone con classe <strong>.btn-primary</strong> avrà lo sfondo di colore <strong>rosso</strong> anzichè il default blu.</p>
 
@@ -536,40 +543,34 @@ Un esempio fra tutti è il valore del colore <code class="language-plaintext hig
       </div>
     </div>
 
-    <div class="cookiebar">
-  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
-  <div class="cookiebar-buttons">
-      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
-      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
-  </div>
-</div>
-
     
 
 <script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202007081745"></script><script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/anchor.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/clipboard.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tsparticles.min.js"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script><script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/anchor.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/clipboard.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202007081745"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202301171043"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tweenjs.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/easeljs.min.js"></script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/preloadjs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/tweenjs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/easeljs.min.js"></script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/preloadjs.min.js"></script>
 
-<script>
-  var manifest = [
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-1.png", id:"cover-1"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-2.png", id:"cover-2"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-3.png", id:"cover-3"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-4.png", id:"cover-4"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-5.png", id:"cover-5"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-6.png", id:"cover-6"},
-    {src:"/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png", id:"cover-7"}
-  ];
-</script>
-<script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?202007081745"></script>
+  <script>
+    var manifest = [
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+      { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+    ]
+  </script>
+  <script src="/bootstrap-lombardia/docs/assets/dist/js/cover-animation.min.js?202301171043"></script>
+  
+  
 <script src="/bootstrap-lombardia/docs/assets/dist/js/vendor/docsearch.min.js"></script>
 <script>
   docsearch({
@@ -577,13 +578,13 @@ Un esempio fra tutti è il valore del colore <code class="language-plaintext hig
     indexName: 'bootstrap_italia',
     inputSelector: '#search-input',
     handleSelected: function (input, event, suggestion) {
-      var url = suggestion.url;
-      url = suggestion.isLvl1 ? url.split('#')[0]: url;
+      var url = suggestion.url
+      url = suggestion.isLvl1 ? url.split('#')[0] : url
       // If it's a title we remove the anchor so it does not jump.
-      window.location.href = url;
+      window.location.href = url
     },
-    debug: false // Set debug to true if you want to inspect the dropdown
-  });
+    debug: false, // Set debug to true if you want to inspect the dropdown
+  })
 </script>
   </body>
 </html>
