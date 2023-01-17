@@ -138,13 +138,13 @@ Devono essere usati in modo parsimonioso.
 ### Complementari e triadici
 
 <div class="primary-color-container">
-  <div class="square-color complementary-1-bg">
+  <div class="square-color complementary-1-bg text-white">
     <span>#f73e5a</span>
   </div>
-  <div class="square-color complementary-2-bg">
+  <div class="square-color complementary-2-bg text-white">
     <span>#ff9900</span>
   </div>
-  <div class="square-color complementary-3-bg">
+  <div class="square-color complementary-3-bg text-white">
     <span>#00cf86</span>
   </div>
   <div class="clearfix"></div>
@@ -159,9 +159,9 @@ Devono essere usati in modo parsimonioso.
 
 <div class="exclude-a11y-check">
 {% capture example %}
-<div class="complementary-1-bg p-3"><span>Testo su background colore complementare 1</span></div>
-<div class="complementary-2-bg p-3"><span>Testo su background colore complementare 2</span></div>
-<div class="complementary-3-bg p-3"><span>Testo su background colore complementare 3</span></div>
+<div class="complementary-1-bg p-3 text-white"><span>Testo su background colore complementare 1</span></div>
+<div class="complementary-2-bg p-3 text-white"><span>Testo su background colore complementare 2</span></div>
+<div class="complementary-3-bg p-3 text-white"><span>Testo su background colore complementare 3</span></div>
 {% endcapture %}{% include example.html content=example %}
 </div>
 

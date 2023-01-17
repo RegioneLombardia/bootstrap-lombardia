@@ -25,9 +25,9 @@
 
 @media (min-width: #{map-get($grid-breakpoints, lg)}) {
   .steppers {
-      ul.steppers-header {
-        margin-bottom: 0;
-      }
+    ul.steppers-header {
+      margin-bottom: 0;
+    }
     .steppers-header {
       li {
         padding-top: 1rem;
@@ -59,12 +59,11 @@
   }
 }
 
-
 .it25-wizard {
   border: 2px solid $primary;
   position: relative;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
 
@@ -99,7 +98,7 @@
     background-color: $white;
   }
   svg {
-    fill: lightgray!important;
+    fill: lightgray !important;
   }
   .active {
     .pin-icon {
@@ -107,7 +106,7 @@
       border-color: $primary;
     }
     svg {
-      fill: white!important;
+      fill: white !important;
     }
   }
   .confirmed {
@@ -115,7 +114,7 @@
       border-color: $success;
     }
     svg {
-      fill: green!important;
+      fill: green !important;
     }
   }
   .error {
@@ -124,5 +123,4 @@
       border-color: $danger;
     }
   }
-
 }

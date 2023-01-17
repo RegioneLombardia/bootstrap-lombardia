@@ -2,8 +2,6 @@ $(function () {
   var carouselTarget = $('.owl-carousel.it-carousel-all')
   // parameters
   var cnav
-  var cautoplay
-  var cautoplayHoverPause
   var cloop
   var cmargin
   var citems
@@ -280,30 +278,11 @@ $(function () {
       xlmargin = 0
     }
 
-    if ($(this).hasClass('it25-carousel-nav')) {
-      cnav = true
-      mobnav = true
-      tabnav = true
-      desknav = true
-      xlnav = true
-      cnavText = ['<span class="icon icon-primary">&ltrif;</span>', '<span class="icon icon-primary">&rtrif;</span>']
-    }
-    if ($(this).hasClass('it25-carousel-autoplay')) {
-      cautoplay = true
-      cautoplayHoverPause = true
-      cloop = true
-    } else {
-      cautoplay = false
-      cautoplayHoverPause = false
-    }
-
     if ($(this).owlCarousel) {
       //carousel settings//
       $(this).owlCarousel({
         //carousel parameters
         nav: cnav,
-        autoplay: cautoplay,
-        autoplayHoverPause: cautoplayHoverPause,
         loop: cloop,
         margin: cmargin, //cmargin
         items: citems,

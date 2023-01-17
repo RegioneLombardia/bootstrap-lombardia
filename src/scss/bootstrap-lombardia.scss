@@ -154,24 +154,29 @@
 @import 'utilities/icons';
 
 // Componenti lombardia
-@import "custom-lombardia/it25-header";
-@import "custom-lombardia/sidebar";
-@import "custom-lombardia/footer";
-@import "custom-lombardia/pager";
-@import "custom-lombardia/form-datepicker";
-@import "custom-lombardia/buttons";
-@import "custom-lombardia/steppers";
-@import "custom-lombardia/card";
-@import "custom-lombardia/tab";
-@import "custom-lombardia/cookiebar";
-@import "custom-lombardia/progress-bars";
-@import "custom-lombardia/popover";
-@import "custom-lombardia/tooltip";
-@import "custom-lombardia/it25-data-output";
+@import 'custom-lombardia/it25-header';
+@import 'custom-lombardia/sidebar';
+@import 'custom-lombardia/footer';
+@import 'custom-lombardia/pager';
+@import 'custom-lombardia/form-datepicker';
+@import 'custom-lombardia/buttons';
+@import 'custom-lombardia/dialog';
+@import 'custom-lombardia/steppers';
+@import 'custom-lombardia/card';
+@import 'custom-lombardia/tab';
+@import 'custom-lombardia/cookiebar';
+@import 'custom-lombardia/navigation';
+@import 'custom-lombardia/progress-bars';
+@import 'custom-lombardia/popover';
+@import 'custom-lombardia/tooltip';
+@import 'custom-lombardia/it25-data-output';
 @import 'custom-lombardia/collapse';
-@import "custom-lombardia/carousel";
+@import 'custom-lombardia/carousel';
 @import 'custom-lombardia/forms';
-@import "custom-lombardia/form-toggles";
+@import 'custom-lombardia/form-input-upload';
+@import 'custom-lombardia/form-toggles';
+@import 'custom-lombardia/megamenu';
+@import 'custom-lombardia/timeline';
 
 //accessible autocomplete
 @import '../../node_modules/accessible-autocomplete/src/autocomplete.css';

@@ -6,6 +6,9 @@ $header-center-small-mob-height: 94px;
 // Links
 $link-decoration: none;
 
+//dialog
+//$modal-heading-color: $neutral-2-a7;
+
 //HEADER
 //Header slim
 $header-slim-height: 58px;
@@ -13,11 +16,20 @@ $header-slim-bg-color: $primary;
 $it25-top-bar-height-shrink: 20px;
 $it25-barra-ist-height-shrink: 50px;
 $it25-barra-utente-min-height: 28px;
+// Header Slim theme light
+$header-slim-theme-light-text-color: $primary;
+$header-slim-theme-light-button-hover-color: $primary-a8;
 
 //header-center
 $header-center-bg-color: $white;
 $header-center-text-color: $gray-primary;
 $header-center-max-height: 94px;
+// Header Center theme light
+$header-center-theme-light-text-color: $primary;
+
+//hero
+$hero-bg-color: $primary;
+$hero-primary-bg: rgba($primary, 0.85);
 
 // Navigation
 $navigation-toggle-button-icon-color: $primary;
@@ -29,14 +41,15 @@ $table-head-bg: $neutral-2;
 $table-striped-order: even !default;
 
 // Ombre
-$box-shadow-sm:               1px 1px 2px rgba(50, 50, 50, 0.35) !default;
-$box-shadow:                  1px 4px 8px 0 rgba(50, 50, 50, 0.15) !default;
-$box-shadow-lg:               1px 8px 24px 1px rgba(0, 0, 0, 0.35) !default;
+$box-shadow-sm: 1px 1px 2px rgba(50, 50, 50, 0.35) !default;
+$box-shadow: 1px 4px 8px 0 rgba(50, 50, 50, 0.15) !default;
+$box-shadow-lg: 1px 8px 24px 1px rgba(0, 0, 0, 0.35) !default;
 
 // Card
 $card-p-color: $primary;
+$card-link-color: $primary;
 
 // Tooltip
-$tooltip-arrow-height:              .5rem !default;
-$tooltip-bg:                        $gray-primary;
-$tooltip-arrow-color:               $tooltip-bg !default;
+$tooltip-arrow-height: 0.5rem !default;
+$tooltip-bg: $gray-primary;
+$tooltip-arrow-color: $tooltip-bg !default;

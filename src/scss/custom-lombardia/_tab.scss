@@ -9,4 +9,13 @@
       }
     }
   }
+  //vertical tabs
+  &.nav-tabs-vertical {
+    &.nav-tabs-vertical-background {
+      .nav-link.active,
+      .nav-item.show .nav-link {
+        background-color: $neutral-1-a1;
+      }
+    }
+  }
 }

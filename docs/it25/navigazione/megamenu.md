@@ -10,7 +10,7 @@ La Documentazione Tecnica mostra diverse tipologie di **[megamenu]({{ site.baseu
 
 {% capture callout %}
 ####  <svg class="icon icon-success icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-check-circle"></use></svg> Megamenu Classico
-Si raccomanda di utilizzare questo componente nella forma più semplice e pulita, utilizzando il **[megamenu classico]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#megamenu-classico)**, con o senza **[intestazione delle colonne]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#classico-con-intestazione)**.
+Si raccomanda di utilizzare questo componente nella forma più semplice e pulita, utilizzando il **[megamenu classico]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#megamenu-classico)**, con o senza **[intestazione delle colonne]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#classico-con-sezioni)**.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
 {% capture example %}

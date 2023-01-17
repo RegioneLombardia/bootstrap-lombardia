@@ -51,14 +51,14 @@ Pertanto si raccomanda di **NON UTILIZZARLI**.
 ### Complementari e triadici
 Questi colori sono normalmente utilizzati per le <span class="complementary-1-color">**segnalazioni di errore**</span>, gli <span class="complementary-2-color">**avvisi di attenzione**</span>, le informazioni di <span class="complementary-3-color">**azione eseguita correttamente**</span>.
 <div class="primary-color-container">
-  <div class="square-color complementary-1-bg">
-    <span>#D92A27</span>
+  <div class="square-color complementary-1-bg text-white">
+    <span>#D92828</span>
   </div>
-  <div class="square-color complementary-2-bg">
-    <span>#FF9900</span>
+  <div class="square-color complementary-2-bg text-white">
+    <span>#A26B13</span>
   </div>
-  <div class="square-color complementary-3-bg">
-    <span>#42B357</span>
+  <div class="square-color complementary-3-bg text-white">
+    <span>#008758</span>
   </div>
   <div class="clearfix"></div>
 </div>

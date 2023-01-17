@@ -33,7 +33,7 @@ $(function () {
     $(fadelayer).fadeOut()
     $(it25closebutton).hide()
     $(openbutton).show()
-    setTimeout(function() {
+    setTimeout(function () {
       $(target).hide()
     }, 300)
   })
@@ -53,7 +53,7 @@ $(function () {
   })
 
   //-it25 close button action
-  $(it25closebutton).on('click', function(event) {
+  $(it25closebutton).on('click', function () {
     var target = $(this).find('.close-menu').attr('data-target')
     var buttonrel = $('.it25-barra-ist').find('.custom-navbar-toggler')
     var fadelayer = $(target).find('.overlay')
@@ -63,7 +63,7 @@ $(function () {
     $(fadelayer).fadeOut()
     $(this).hide()
     $(openbutton).show()
-    setTimeout(function() {
+    setTimeout(function () {
       $(target).hide()
     }, 300)
   })

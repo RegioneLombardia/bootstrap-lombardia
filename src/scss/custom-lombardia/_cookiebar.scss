@@ -12,14 +12,13 @@
     }
   }
   .btn {
-    &.btn-primary{
+    &.btn-primary {
       background-color: $white !important;
       border: 0 !important;
       color: $neutral-1 !important;
     }
   }
 }
-
 
 //Tablet vertical
 @media (min-width: #{map-get($grid-breakpoints, md)}) {

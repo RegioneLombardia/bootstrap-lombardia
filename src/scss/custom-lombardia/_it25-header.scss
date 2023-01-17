@@ -32,17 +32,16 @@ header {
       height: $it25-top-bar-height-shrink;
     }
   }
-
 }
 
 .it-header-slim-wrapper {
-	.it-header-slim-wrapper-content {
-		.header-slim-right-zone {
-			.btn-full {
-				padding: 17px;
-			}
-		}
-	}
+  .it-header-slim-wrapper-content {
+    .header-slim-right-zone {
+      .btn-full {
+        padding: 17px;
+      }
+    }
+  }
 }
 
 .it25-barra-ist {
@@ -117,10 +116,9 @@ header {
         padding-bottom: 2px;
       }
     }
-    input[type=search] {
+    input[type='search'] {
       height: 1.5rem;
     }
-
   }
 
   @media (min-width: #{map-get($grid-breakpoints, lg)}) {
@@ -130,7 +128,6 @@ header {
       }
     }
   }
-
 }
 
 .it25-barra-utente {
@@ -144,7 +141,6 @@ header {
   padding-left: $spacer;
   padding-right: $spacer;
 }
-
 
 .it25-menu-principale {
   position: sticky;
@@ -222,11 +218,9 @@ header {
           }
         }
       }
-
     }
-
   }
-/*
+  /*
   .navbar {
     .navbar-collapsable {
       @media (min-width: #{map-get($grid-breakpoints, lg)}) {
@@ -234,5 +228,5 @@ header {
       }
     }
   }
-*/
+  */
 }
