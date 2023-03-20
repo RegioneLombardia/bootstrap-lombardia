@@ -1,8 +1,9 @@
 name: Generate new release
 on:
-  push:
-    tags:
-      - 'v2*'
+#  push:
+#    tags:
+#      - 'v2*'
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
