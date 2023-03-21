@@ -1,0 +1,15 @@
+// body
+.collapse-body {
+  padding: 24px 24px 42px;
+  .collapse-header button[aria-expanded='true']:before {
+    height: 0;
+    width: 0;
+  }
+}
+
+//header
+.collapse-header {
+  button:focus {
+    outline: 0;
+  }
+}

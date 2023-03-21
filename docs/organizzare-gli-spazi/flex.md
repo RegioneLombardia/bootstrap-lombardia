@@ -8,7 +8,7 @@ toc: true
 
 {% capture callout %}
 **Se sei poco pratico di flexbox**, puoi iniziare da [questa pratica guida su flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-background)
-(in inglese) per informazioni di carattere generale, terminologia, linee guida, e frammenti di codice, oppure giocando con
+(in inglese) per informazioni di carattere generale, terminologia,linee guida, e frammenti di codice, oppure giocando con
 [questo simpatico tutorial](http://flexboxfroggy.com/#it).
 {% endcapture %}{% include callout.html content=callout type="info" %}
 

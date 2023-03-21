@@ -1,0 +1,13 @@
+.toggles label {
+  input[type='checkbox'] {
+    &[disabled] + .lever {
+      &:after {
+        background-color: #b1b1b3;
+      }
+    }
+
+    &[disabled]:checked + .lever:after {
+      background-color: #b1b1b3;
+    }
+  }
+}

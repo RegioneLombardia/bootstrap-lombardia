@@ -1,0 +1,38 @@
+.datepicker-calendar {
+  &.default {
+    table.datepicker-grid {
+      td {
+        &:hover {
+          span {
+            background: $primary-a2;
+          }
+        }
+        &.curDay,
+        &.curMonth,
+        &.curYear {
+          background: transparent;
+
+          span {
+            background: $primary;
+            color: #fff;
+            font-weight: 700;
+          }
+        }
+        &.selectable.focus {
+          span {
+            background: $primary-a7;
+            color: #fff;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+.it-datepicker-wrapper {
+  .datepicker-calendar {
+    min-width: 280px;
+    max-width: 350px;
+  }
+}

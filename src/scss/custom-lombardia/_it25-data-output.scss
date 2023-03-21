@@ -1,0 +1,8 @@
+.it25-data-output {
+  label {
+    margin-right: 0.5rem;
+    & + span {
+      font-weight: 600;
+    }
+  }
+}

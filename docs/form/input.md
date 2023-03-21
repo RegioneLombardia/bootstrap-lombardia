@@ -440,7 +440,7 @@ Per ottenere una versione grande dell'Autocomplete, indicata ad esempio per inte
       <a href="#">
         <svg class="icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use></svg>
         <span class="autocomplete-list-text">
-          <span>Linee guida per i cataloghi pubblica amministrazione</span><em>Documento</em>
+          <span>{{ site.data.short.rl-guide }} per i cataloghi pubblica amministrazione</span><em>Documento</em>
         </span>
       </a>
     </li>

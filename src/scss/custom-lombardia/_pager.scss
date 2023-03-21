@@ -1,0 +1,9 @@
+nav.pagination-wrapper {
+  ul.pagination {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+    justify-content: flex-end;
+  }
+}

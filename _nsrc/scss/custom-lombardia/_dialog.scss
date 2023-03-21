@@ -1,0 +1,16 @@
+.modal {
+  // link list variation
+  &.it-dialog-link-list {
+    .modal-dialog {
+      .modal-content {
+        .modal-header {
+          h5 {
+            span {
+              color: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

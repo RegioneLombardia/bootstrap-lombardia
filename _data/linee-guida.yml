@@ -1,0 +1,98 @@
+- title: Componenti Principali
+  pages:
+    - title: Logo
+      url: componenti-principali/logo
+    - title: Header
+      url: componenti-principali/header
+    - title: Menu orizzontale
+      url: componenti-principali/menu-orizzontale
+    - title: Barra utente
+      url: componenti-principali/barra-utente
+    - title: Sidebar
+      url: componenti-principali/sidebar
+    - title: Footer
+      url: componenti-principali/footer
+
+- title: Navigazione
+  pages:
+    - title: Megamenu
+      url: navigazione/megamenu
+    - title: Paginatore
+      url: navigazione/paginatore
+    - title: Link list
+      url: navigazione/link-list
+    - title: Breadcrumbs
+      url: navigazione/breadcrumbs
+
+- title: Utilità
+  pages:
+    - title: Colori
+      url: utilità/colori
+    - title: Tipografia
+      url: utilità/tipografia
+    - title: Ico0ne
+      url: utilità/icone
+    - title: Ombre e angoli
+      url: utilità/ombre-angoli
+
+- title: Call to action
+  pages:
+    - title: Bottoni
+      url: call-to-action/bottoni
+    - title: Tab bar
+      url: call-to-action/tab-bar
+
+- title: Informazioni
+  pages:
+    - title: Accordion
+      url: informazioni/accordion
+    - title: Overlay
+      url: informazioni/overlay
+    - title: Calendario
+      url: informazioni/calendario
+    - title: Tabella
+      url: informazioni/tabella
+    - title: Card
+      url: informazioni/card
+    - title: Cookiebar
+      url: informazioni/cookiebar
+    - title: Carousel
+      url: informazioni/carousel
+    - title: Carousel-legacy
+      url: informazioni/carousel-legacy
+
+- title: Inserimento
+  pages:
+    - title: Input fields
+      url: inserimento/input-fields
+    - title: Radio buttons
+      url: inserimento/radio-buttons
+    - title: Check box
+      url: inserimento/check-box
+    - title: Toggle
+      url: inserimento/toggle
+    - title: Wizard
+      url: inserimento/wizard
+    - title: Popover
+      url: inserimento/popover
+    - title: Tooltip
+      url: inserimento/tooltip
+    - title: Progress bar
+      url: inserimento/progress-bar
+
+- title: Esempi
+  pages:
+    - title: Tabella complessa
+      url: esempi/pag_tabella
+    - title: Form
+      url: esempi/pag_form
+    - title: Wizard
+      url: esempi/pag_wizard
+    - title: Sidebar
+      url: esempi/pag_sidebar
+    - title: Profilo utente
+      url: esempi/pag_profilo_utente
+    - title: Cookiebar
+      url: esempi/pag_cookiebar
+    - title: Il codice
+      url: esempi/introduzione

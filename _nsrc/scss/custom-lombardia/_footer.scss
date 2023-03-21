@@ -1,0 +1,29 @@
+/* Tutti */
+.footer {
+  color: #fff;
+  background-color: $neutral-1;
+  padding: $spacer;
+
+  a {
+    color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  nav {
+    ul {
+      margin-bottom: 0;
+      font-weight: 600;
+    }
+  }
+}
+.it-footer-main {
+  .it-brand-wrapper {
+    a {
+      color: $white;
+      .icon {
+        fill: $white;
+      }
+    }
+  }
+}

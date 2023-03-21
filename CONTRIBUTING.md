@@ -42,7 +42,7 @@ Il repository di Bootstrap Italia usa alcune label per identificare le issue (cr
 
 - `accessibility` - Criticità riguardanti accessibilità.
 - `bug` - Segnalazione di malfunzionamenti nel codice o problemi tecnici con i tool di compilazione.
-- `design` - Criticità riguardanti il design dei componenti e la loro conformità alle [linee guida di design per i siti internet e i servizi digitali della PA](https://docs.italia.it/italia/design/lg-design-servizi-web/).
+- `design` - Criticità riguardanti il design dei componenti e la loro conformità alle [{{ site.data.short.rl-guide }} di design per i siti internet e i servizi digitali della PA](https://docs.italia.it/italia/design/lg-design-servizi-web/).
 - `docs` - Criticità riguardanti la documentazione dei componenti.
 - `duplicate` - Criticità o pull request duplicata.
 - `enhancement` - Criticità che possono riguardare nuovi componenti o nuove funzionalità.

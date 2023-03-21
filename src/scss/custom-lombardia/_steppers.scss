@@ -1,0 +1,130 @@
+.steppers {
+  .steppers-header {
+    ul{
+    li {
+      // states
+      &.error {
+        color: $danger;
+        font-weight: 600;
+        .icon {
+          fill: $danger;
+        }
+      }
+    }
+  }
+    // steppers
+    span {
+      &.steppers-index {
+        margin-left: auto;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: $gray-secondary;
+        display: block;
+      }
+    }
+
+    
+  }
+}
+
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  .steppers {
+    ul.steppers-header {
+      margin-bottom: 0;
+    }
+    .steppers-header {
+      li {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        &.error {
+          display: flex;
+        }
+        // error icon
+        .steppers-error {
+          margin-left: auto;
+        }
+      }
+      // index
+      span {
+        &.steppers-index {
+          display: none;
+        }
+      }
+    }
+    // navigation
+    .steppers-nav {
+      .steppers-progress,
+      .steppers-dots {
+        &.it25 {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.it25-wizard {
+  border: 2px solid $primary;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  ul {
+    display: contents;
+  }
+
+  &::after {
+    content: ' ';
+    width: 96%;
+    background-color: $primary;
+    position: absolute;
+    height: 4px;
+    right: 10px;
+    top: 39px;
+    z-index: -1;
+  }
+  .it-pin-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+  }
+  .pin-icon {
+    border-radius: 48px;
+    width: 48px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid lightgray;
+    background-color: $white;
+  }
+  svg {
+    fill: lightgray !important;
+  }
+  .active {
+    .pin-icon {
+      background-color: $primary;
+      border-color: $primary;
+    }
+    svg {
+      fill: white !important;
+    }
+  }
+  .confirmed {
+    .pin-icon {
+      border-color: $success;
+    }
+    svg {
+      fill: green !important;
+    }
+  }
+  .error {
+    .pin-icon {
+      background-color: $danger;
+      border-color: $danger;
+    }
+  }
+}

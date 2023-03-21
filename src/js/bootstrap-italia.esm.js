@@ -36,6 +36,7 @@ export { default as Tab } from './plugins/tab'
 export { default as Toast } from './plugins/toast'
 export { default as Tooltip } from './plugins/tooltip'
 export { default as loadFonts } from './plugins/fonts-loader'
+export { default as it25Header } from './plugins/it25-header'
 
 /* Side effects */
 export { default as init } from './plugins/init'

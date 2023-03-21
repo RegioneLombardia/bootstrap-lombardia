@@ -1,0 +1,38 @@
+.cookiebar {
+  background-color: $neutral-1;
+  font-weight: 600;
+  a {
+    color: $white;
+    text-decoration: underline;
+  }
+  p {
+    font-size: 0.889rem;
+    br {
+      display: block;
+    }
+  }
+  .btn {
+    &.btn-primary {
+      background-color: $white !important;
+      border: 0 !important;
+      color: $neutral-1 !important;
+    }
+  }
+}
+
+//Tablet vertical
+@media (min-width: #{map-get($grid-breakpoints, md)}) {
+  .cookiebar {
+    p {
+      width: 100%;
+    }
+  }
+}
+
+//Tablet horizontal / small desktop
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  .cookiebar {
+    max-width: unset;
+    border-radius: 0;
+  }
+}

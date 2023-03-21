@@ -1,113 +1,77 @@
 # used in documentation as site.data.nav
 
-- title: Come iniziare
-  pages:
-    - title: Introduzione
-    - title: Strumenti di compilazione
-    - title: Personalizzazione della libreria
-    - title: Modificare Componenti
-    - title: Componente base
-    - title: Migrazione dalla versione 1
+#- title: Come iniziare
+#  pages:
+#    - title: Introduzione
+#    - title: Strumenti di compilazione
+#    - title: Personalizzazione della libreria
+#    - title: Modificare Componenti
+#    - title: Componente base
+#    - title: Migrazione dalla versione 1
 
-- title: Organizzare gli spazi
+- title: Componenti Principali
   pages:
-    - title: Introduzione
-    - title: Allineamento verticale
-    - title: Bordi
-    - title: Clearfix
-    - title: Dimensionamento
-    - title: Display
-    - title: Flex
-    - title: Float
-    - title: Griglie
-    - title: Ombreggiature
-    - title: Posizionamento
-    - title: Proporzioni
-    - title: Spaziature
-
-- title: Organizzare i contenuti
-  pages:
-    - title: Introduzione
-    - title: Codice
-    - title: Immagini
-    - title: Liste
-    - title: Liste di immagini
-    - title: Tabelle
-    - title: Testo
-    - title: Tipografia
-
-- title: Menu di navigazione
-  pages:
-    - title: Introduzione
-    - title: BottomNav
-    - title: Breadcrumbs
-    - title: Header # TODO Rewiew mobile version
-    - title: Megamenu # TODO Review mobile version
-    - title: Navscroll
+    - title: Logo
+      url: componenti-principali/logo
+    - title: Header
+      url: componenti-principali/header
+    - title: Menu orizzontale
+      url: componenti-principali/menu-orizzontale
+    - title: Barra utente
+      url: componenti-principali/barra-utente
     - title: Sidebar
-    - title: Skiplinks
-    - title: Thumbnav
-    - title: Toolbar
-    - title: Torna indietro
-    - title: Torna su
+      url: componenti-principali/sidebar
+    - title: Footer
+      url: componenti-principali/footer
 
-- title: Componenti
+- title: Navigazione
   pages:
-    - title: Introduzione
-    - title: Accordion
-    - title: Affix
-    - title: Alert
-    - title: Avatar
-    - title: Badge
-    - title: Buttons
-    - title: Card
-    - title: Callout
-    - title: Carousel
-    - title: Chips
-    - title: Collapse
-    - title: Cookiebar
-    - title: Dimmer
-    - title: Dropdown
-    - title: Forward
-    - title: Hero
-    - title: Modale
-    - title: Notifiche
-    - title: Overlay
-    - title: Paginazione
-    - title: Popover
-    - title: Progress Indicators
-    - title: Rating
-    - title: Sections
-    - title: Steppers
-    - title: Sticky
-    - title: Tab
-    - title: Timeline
-    # - title: Toasts # TODO To be merged with our "Notifiche"?
-    - title: Tooltip
+    - title: Megamenu      
+    - title: Paginatore
+    - title: Link list
+    - title: Breadcrumbs
 
-- title: Form
-  pages:
-    - title: Introduzione
-    - title: Input
-    - title: Input Numerico
-    - title: Input Calendario
-    - title: Input Ora # TODO Not working properly yet
-    - title: Autocompletamento
-    - title: Upload
-    - title: Radio Button
-    - title: Select
-    - title: Checkbox
-    - title: Toggles
-    - title: Transfer
-
-- title: Utilities
+- title: Utilità
   pages:
     - title: Colori
-    - title: Colori Custom
+    - title: Tipografia
     - title: Icone
+    - title: Ombre e angoli
 
-- title: Esempi
-
-- title: Progetti
+- title: Call to action
+  pages:
+    - title: Bottoni
+    - title: Tab bar
 
 - title: Informazioni
+  pages:
+    - title: Accordion
+    - title: Overlay
+    - title: Calendario
+    - title: Tabella
+    - title: Card
+    - title: Cookiebar
+    - title: Carousel
+    # - title: Carousel-legacy
+
+- title: Inserimento
+  pages:
+    - title: Input fields
+    - title: Radio buttons
+    - title: Check box
+    - title: Toggle
+    - title: Wizard
+    - title: Popover
+    - title: Tooltip
+    - title: Progress bar
+
+- title: Esempi
+  pages:
+    - title: Tabella complessa
+    - title: Form
+    - title: Wizard
+      url: esempi/pag_wizard
+    - title: Sidebar
+    - title: Profilo utente
+    - title: Cookiebar
+    - title: Il codice

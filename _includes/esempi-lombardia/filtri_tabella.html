@@ -1,0 +1,71 @@
+  <div class="my-4">
+    <div class="container-fluid">
+      <form>
+        <div class="row">
+          <div class="form-group col-12 col-md-5 col-lg-3 mb-md-0">
+            <div class="btn-group">
+              <div class="dropdown">
+                <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azioni multiple
+                  <svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use></svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-danger icon-sm">
+                      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-circle"></use>
+                    </svg>
+                    Elimina
+                  </button>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-success icon-sm">
+                      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use>
+                    </svg>
+                    Scarica pdf
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="submit" class="btn btn-primary btn-sm">Applica</button>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-1 offset-lg-2 mb-md-0 align-self-center">
+            <div class="text-center">
+              <span class="fw-bold neutral-2-color-b5">Filtri</span>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="select-wrapper">
+              <label for="statoSelect">Stato</label>
+              <select title="Scegli" id="statoSelect">
+                <option value="1">Aperta</option>
+                <option value="2">Chiusa</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="select-wrapper">
+              <label id="parereSelect">Parere</label>
+              <select title="Scegli" for="parereSelect">
+                <option value="1">Favorevole</option>
+                <option value="2">Contrario</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="input-group">
+              <input type="text" class="form-control" id="input-group-1" name="input-group-1" placeholder="Cerca" aria-label="Cerca nel testo">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-xs" type="button" id="btn-cerca" aria-label="Cerca">
+                  <svg class="icon">
+                    <use xlink:href="{{site.baseurl }}/dist/svg/sprites.svg#it-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!-- end row -->
+      </form>
+    </div><!-- end container -->
+  </div>

@@ -1,0 +1,21 @@
+//mobile
+.it-timeline-wrapper {
+  .it-now-label {
+    color: $primary-a9;
+  }
+  .it-pin-wrapper {
+    &.it-now {
+      .pin-icon {
+        background: $primary-a9;
+      }
+      .pin-text {
+        background: $primary-a9;
+        span {
+          &:after {
+            background: $primary-a9;
+          }
+        }
+      }
+    }
+  }
+}

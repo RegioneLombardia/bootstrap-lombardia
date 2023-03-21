@@ -156,5 +156,5 @@ Tabelle ridisegnate e ricostruite con variabili CSS per un maggior controllo sul
 ## Javascript
 
 - Eliminazione di jQuery e riscrittura dei plugin in vanilla JavaScript.
-- <span class="bg-danger text-white px-2">Breaking</span> i _Data attributes_ per tutti i plugin JavaScript hanno ora un namespace per distinguere le funzionalità di Bootstrap Italia da plugin di terze parti e dal tuo codice. Es: `data-bs-toggle` invece di `data-toggle`.
+- <span class="bg-danger text-white px-2">Breaking</span> i _Data attributes_ per tutti i plugin JavaScript hanno ora un namespace per distinguere le funzionalità di Bootstrap Italia da plugin di terze parti e dal tuo codice. Es: `data-bs-toggle` invece di `data-bs-toggle`.
 - Rimossi gli underscore dai metodi pubblici statici come `_getInstance()` → `getInstance()`.

@@ -48,7 +48,7 @@ Ci si aspetta che chiunque chieda di smettere di comportarsi in modo inaccettabi
 
 Se un membro della comunità si comporta in modo inaccettabile, gli organizzatori della comunità possono intraprendere qualsiasi azione che ritengano appropriata, fino a includere un divieto temporaneo o l'espulsione definitiva dalla comunità senza preavviso.
 
-## 6. Linee guida per la segnalazione
+## 6.Linee Guida per la segnalazione
 
 Se sei soggetto a un comportamento inaccettabile o ne sei testimone o se hai altre preoccupazioni, ti preghiamo di avvisare un organizzatore della comunità il prima possibile. Puoi farlo inviando una e-mail a `coc-report@developers.italia.it`.
 

@@ -411,7 +411,9 @@ $modal-popconfirm-p-size: 0.778rem;
 $modal-popconfirm-max-width: 300px;
 
 // ##### HEADER #####
-
+$it25-top-bar-height-shrink: 20px;
+$it25-barra-ist-height-shrink: 50px;
+$it25-barra-utente-min-height: 28px;
 // Header Slim
 $header-general-padding: $v-gap * 3;
 $header-slim-height: 48px;
@@ -675,3 +677,11 @@ $badge-padding-x: 0.4em;
 //Autocomplete
 $autocomplete-border: 1px solid $gray-400 !default;
 $autocomplete-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05) !default;
+
+
+// Tables
+// $table-cell-padding: 1em !default;
+ $table-border-color: #d6dce3 !default;
+ $table-cell-text-align: left !default;
+// $table-accent-bg: #f6f7f9 !default;
+// $table-hover-bg: #e5f1fa !default;

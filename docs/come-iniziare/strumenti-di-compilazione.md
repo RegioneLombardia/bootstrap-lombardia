@@ -61,7 +61,7 @@ Tale comando crea una cartella `/dist`, dove vengono pubblicati i file compilati
 Per iniziare a modificare la libreria, la cartella d'interesse è `/src`, che contiene tutti i file sorgente, e in particolare i file:
 
 - `/src/scss/bootstrap-italia.scss`
-- `/src/js/bootstrap-italia.entry.js` (che genera il bundle)
+- `/src/js/bootstrap-lombardia.js` (che genera il bundle)
 - `/src/js/bootstrap-italia.js` (che include i moduli)
 
 ## Ottimizzare la libreria
