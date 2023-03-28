@@ -1,0 +1,26 @@
+---
+layout: base
+title: pag_tabella
+description: Template pagina con tabella
+---
+<header class="it25-menu">
+{% include esempi-lombardia/topbar.html %}
+{% include esempi-lombardia/barra_istituzionale.html %}
+{% include esempi-lombardia/barra_utente.html %}
+{% include esempi-lombardia/menu_orizzontale.html %}
+</header>
+
+<main>
+{% include esempi-lombardia/filtri_tabella.html %}
+{% include esempi-lombardia/tabella.html %}
+{% include esempi-lombardia/paginazione.html %}
+</main>
+
+{% include esempi-lombardia/footer.html %}
+
+
+<a href="#" aria-hidden="true" data-bs-attribute="back-to-top" class="back-to-top">
+  <svg class="icon icon-light">
+    <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use>
+  </svg>
+</a>

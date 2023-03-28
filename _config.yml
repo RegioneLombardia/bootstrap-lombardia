@@ -36,15 +36,15 @@ toc:
   max_level: 3
 
 # Social
-title: 'Bootstrap Italia'
-description: 'Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle Linee Guida di design per i siti internet e i servizi digitali della PA'
-authors: 'Dipartimento per la trasformazione digitale'
-authors_url: 'https://innovazione.gov.it'
+title: 'Bootstrap Lombardia'
+description:        'Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA'
+authors:            'Azienda Regionale Innovazione e Acquisti'
+authors_url:        'https://www.ariaspa.it/'
 authors_agid: "Agenzia per l'Italia Digitale"
 authors_agid_url: 'https://www.agid.gov.it/'
 social_card_path: '/docs/assets/img/favicons/social-card.png'
 social_logo_path: '/docs/assets/img/favicons/android-chrome-192x192.png'
-repo: 'https://github.com/italia/bootstrap-italia/'
+repo:               'https://github.com/RegioneLombardia/bootstrap-lombardia/'
 developers: 'https://developers.italia.it/'
 slack: 'https://slack.developers.italia.it/'
 twitter: 'https://twitter.com/designersITA'

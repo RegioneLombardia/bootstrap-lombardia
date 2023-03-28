@@ -1,0 +1,452 @@
+// HSB (https://it.wikipedia.org/wiki/Hue_Saturation_Brightness, coincidente con il modello HSV)
+// è lo spazio colore scelto per ottenere le varianti colore della tonalità primaria.
+
+// Color system
+$black: hsl(0, 0%, 0%) !default;
+$white: hsl(0, 0%, 100%) !default;
+
+$gray-100: hsl(0, 0%, 96%) !default; // color-gray-96
+$gray-200: hsl(0, 0%, 90%) !default; // color-gray-90
+$gray-300: hsl(0, 0%, 83%) !default; // color-gray-83
+$gray-400: hsl(0, 0%, 64%) !default; // color-gray-64
+$gray-500: hsl(0, 0%, 45%) !default; // color-gray-45
+$gray-600: hsl(0, 0%, 32%) !default; // color-gray-32
+$gray-700: hsl(0, 0%, 25%) !default; // color-gray-25
+$gray-800: hsl(0, 0%, 15%) !default; // color-gray-15
+$gray-900: hsl(0, 0%, 10%) !default; // color-gray-10
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900,
+  ),
+  $grays
+);
+
+@function main($key: '80') {
+  @return map-get($mains, $key);
+}
+
+// PRIMARY COLORS DEFINITION //
+// lombardia
+$primary-h: 131 !default;
+$primary-s: 66 !default;
+$primary-b: 48 !default;
+//$primary-h: 210 !default;
+//$primary-s: 100 !default;
+//$primary-b: 80 !default;
+$primary-l: 40 !default; // Kit UI
+
+$primary: hsb($primary-h, $primary-s, $primary-b) !default; // color-blue-40
+
+$primary-blue: hsb(204, 100, 33.1) !default;
+$primary-gray: hsb(201, 32.1, 51.4) !default;
+
+$indigo: hsb(243, 70, 100) !default;
+$purple: hsb(243, 40, 100) !default;
+$pink: hsb(350, 30, 100) !default;
+$red: hsl(350, 60%, 50%) !default; // color-red-50
+$orange: hsl(36, 100%, 30%) !default; // color-orange-30
+$yellow: hsb(44, 55, 100) !default;
+$green: hsl(160, 100%, 25%) !default; // color-emerald-25
+$teal: hsl(178, 90%, 32%) !default;
+$cyan: hsb(178, 100, 100) !default;
+$blue: hsb(210, 100, 90) !default;
+$light: hsb(255, 5, 95) !default;
+$dark: hsl(210, 54%, 20%) !default; // color-slate-20
+
+$yiq-text-light: $white !default;
+$yiq-text-dark: $black !default;
+
+$red-accessible: $red !default;
+$orange-accessible: $orange !default;
+$yellow-accessible: hsb(44, 100, 59) !default;
+$green-accessible: $green !default;
+
+$gray-primary: hsb(210, 38.9, 44.3) !default;
+$gray-secondary: hsl(210, 17%, 44%) !default; // color-slate-44
+$gray-tertiary: hsb(205, 35, 54) !default;
+$gray-quaternary: hsb(238, 1, 100) !default;
+$gray-border: hsl(210, 4%, 78%) !default; // color-border-subtle
+$gray-disabled: hsl(210, 3%, 85%) !default; // color-background-disabled
+$gray-label-disabled: hsl(210, 12%, 44%) !default; // color-text-disabled
+$gray-border-disabled: $gray-disabled !default; // color-border-disabled
+
+$secondary: $gray-secondary !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    'indigo': $indigo,
+    'purple': $purple,
+    'pink': $pink,
+    'red': $red,
+    'orange': $orange,
+    'yellow': $yellow,
+    'green': $green,
+    'teal': $teal,
+    'cyan': $cyan,
+    'white': $white,
+    'gray': $gray-600,
+    'gray-dark': $gray-800,
+    'blue': $blue,
+    'gray-secondary': $gray-secondary,
+    'gray-tertiary': $gray-tertiary,
+    'gray-quaternary': $gray-quaternary,
+  ),
+  $colors
+);
+
+// Border Color
+$border-color: $gray-border !default;
+
+// Info Colors
+$success: $green-accessible !default;
+$info: $secondary !default;
+$warning: $orange-accessible !default;
+$danger: $red-accessible !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+    'black': $black,
+    'white': $white,
+    '100': $gray-100,
+    '200': $gray-200,
+    '300': $gray-300,
+    '400': $gray-400,
+    '500': $gray-500,
+    '600': $gray-600,
+    '700': $gray-700,
+    '800': $gray-800,
+    '900': $gray-900,
+  ),
+  $theme-colors
+);
+
+
+// ACCENT COLORS DEFINITIONS
+// analoghi
+$analogue-1-h: 243;
+$analogue-1-s: 85;
+$analogue-1-b: 100;
+$analogue-1: hsb($analogue-1-h, $analogue-1-s, $analogue-1-b) !default;
+$analogue-2-h: 178;
+$analogue-2-s: 95;
+$analogue-2-b: 85;
+$analogue-2: hsb($analogue-2-h, $analogue-2-s, $analogue-2-b) !default;
+// lombardia
+// Complementari e triadici
+$complementary-1-h: 3.3;
+$complementary-1-s: 75;
+$complementary-1-b: 78.4;
+$complementary-1: hsb($complementary-1-h, $complementary-1-s, $complementary-1-b) !default;
+$complementary-2-h: 31.5;
+$complementary-2-s: 77.2;
+$complementary-2-b: 94.5;
+$complementary-2: hsb($complementary-2-h, $complementary-2-s, $complementary-2-b) !default;
+$complementary-3-h: 156;
+$complementary-3-s: 44;
+$complementary-3-b: 68.6;
+$complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b) !default;
+
+// NEUTRAL COLORS DEFINITIONS
+// lombardia
+$neutral-1-h: 214;
+$neutral-1-s: 64.5;
+$neutral-1-b: 29.8;
+//$neutral-1-h: 210;
+//$neutral-1-s: 70;
+//$neutral-1-b: 30;
+$neutral-1: hsb($neutral-1-h, $neutral-1-s, $neutral-1-b) !default;
+// lombardia
+$neutral-2-h: 222;
+$neutral-2-s: 4.2;
+$neutral-2-b: 94.1;
+//$neutral-2-h: 210;
+//$neutral-2-s: 5;
+//$neutral-2-b: 95;
+$neutral-2: hsb($neutral-2-h, $neutral-2-s, $neutral-2-b) !default;
+// lombardia
+$neutral-3-h: 240;
+$neutral-3-s: 1.6;
+$neutral-3-b: 100;
+$neutral-3: hsb($neutral-3-h, $neutral-3-s, $neutral-3-b) !default;
+
+// Light Greys A
+$lightgrey-a1: hsl(210, 3%, 85%); // progress-background-default
+$lightgrey-a2: #edf5fc;
+$lightgrey-a3: hsl(210, 62%, 97%); // color-background-primary-lighter
+$lightgrey-a4: #f5f9fc;
+
+// Light Greys B
+$lightgrey-b1: hsl(210, 62%, 97%); // color-background-primary-lighter
+$lightgrey-b2: #ebf2fa;
+$lightgrey-b3: #edf4fa;
+$lightgrey-b4: #f2f6fa;
+
+// Light Greys C
+$lightgrey-c1: #f7f9fa;
+$lightgrey-c2: hsl(210, 62%, 97%); // color-background-primary-lighter;
+
+//***********************************************************************
+//********************Primary color variations***************************
+//***********************************************************************
+
+//-------------------------Tinta e ombre---------------------------------
+// lombardia
+$primary-a1: hsb(128, 9.4, 92.2) !default;
+$primary-a2: hsb(129, 15.2, 87.8) !default;
+$primary-a3: hsb(128, 28.4, 81.6) !default;
+$primary-a4: hsb(133, 42.6, 77.3) !default;
+$primary-a5: hsb(140.5, 61, 71.4) !default;
+$primary-a6: hsb(152, 100, 68.6) !default;
+$primary-a7: hsb(145.5, 100, 65.5) !default;
+$primary-a8: hsb(148.5, 100, 58.8) !default;
+$primary-a9: hsb(150, 100, 51.4) !default;
+$primary-a10: hsb(153, 99.6, 41.6) !default;
+$primary-a11: hsb(152, 100, 35.3) !default;
+$primary-a12: hsb(152.5, 100, 27.5) !default;
+
+//-------------------------Toni------------------------------------------
+// lombardia
+$primary-b1: hsb(145.5, 100, 65.5) !default;
+$primary-b2: hsb(147.2, 100, 58.8) !default;
+$primary-b3: hsb(150.5, 100, 51.0) !default;
+$primary-b4: hsb(153, 100, 42.4) !default;
+$primary-b5: hsb(155.5, 100, 34.5) !default;
+$primary-b6: hsb(151, 76.5, 26.7) !default;
+$primary-b7: hsb(145, 59.2, 19.2) !default;
+$primary-b8: hsb(141, 43.8, 12.5) !default;
+
+//-------------------------Saturazione------------------------------------------
+// lombardia
+$primary-c1: hsb(120, 2.8, 97.6) !default;
+$primary-c2: hsb(107, 3.6, 96.9) !default;
+$primary-c3: hsb(113, 6.7, 93.3) !default;
+$primary-c4: hsb(115, 11.6, 88.2) !default;
+$primary-c5: hsb(118, 17.8, 83.9) !default;
+$primary-c6: hsb(124, 20.4, 80.8) !default;
+$primary-c7: hsb(124, 28.7, 76.5) !default;
+$primary-c8: hsb(124, 36, 72.9) !default;
+$primary-c9: hsb(126, 44.8, 71.0) !default;
+$primary-c10: hsb(126, 54.3, 67.8) !default;
+$primary-c11: hsb(130, 54.8, 60.8) !default;
+$primary-c12: hsb(135, 56.6, 47.8) !default;
+
+//***********************************************************************
+//********************Accent colors variations***************************
+//***********************************************************************
+// analoghi
+// tinte e ombre
+/***************************** 1 ****************************************/
+$analogue-1-a12: hsb($analogue-1-h, $analogue-1-s, 20) !default;
+$analogue-1-a11: hsb($analogue-1-h, $analogue-1-s, 30) !default;
+$analogue-1-a10: hsb($analogue-1-h, $analogue-1-s, 40) !default;
+$analogue-1-a9: hsb($analogue-1-h, $analogue-1-s, 50) !default;
+$analogue-1-a8: hsb($analogue-1-h, $analogue-1-s, 60) !default;
+$analogue-1-a7: hsb($analogue-1-h, $analogue-1-s, 70) !default;
+$analogue-1-a6: hsb($analogue-1-h, $analogue-1-s, 80) !default;
+$analogue-1-a5: hsb($analogue-1-h, $analogue-1-s - 15, 84) !default;
+$analogue-1-a4: hsb($analogue-1-h, $analogue-1-s - 30, 88) !default;
+$analogue-1-a3: hsb($analogue-1-h, $analogue-1-s - 45, 92) !default;
+$analogue-1-a2: hsb($analogue-1-h, $analogue-1-s - 60, 96) !default;
+$analogue-1-a1: hsb($analogue-1-h, $analogue-1-s - 75, 100) !default;
+
+/***************************** 2 ****************************************/
+$analogue-2-a12: hsb($analogue-2-h, $analogue-2-s, 20) !default;
+$analogue-2-a11: hsb($analogue-2-h, $analogue-2-s, 30) !default;
+$analogue-2-a10: hsb($analogue-2-h, $analogue-2-s, 40) !default;
+$analogue-2-a9: hsb($analogue-2-h, $analogue-2-s, 50) !default;
+$analogue-2-a8: hsb($analogue-2-h, $analogue-2-s, 60) !default;
+$analogue-2-a7: hsb($analogue-2-h, $analogue-2-s, 70) !default;
+$analogue-2-a6: hsb($analogue-2-h, $analogue-2-s, 80) !default;
+$analogue-2-a5: hsb($analogue-2-h, $analogue-2-s - 15, 84) !default;
+$analogue-2-a4: hsb($analogue-2-h, $analogue-2-s - 30, 88) !default;
+$analogue-2-a3: hsb($analogue-2-h, $analogue-2-s - 45, 92) !default;
+$analogue-2-a2: hsb($analogue-2-h, $analogue-2-s - 60, 96) !default;
+$analogue-2-a1: hsb($analogue-2-h, $analogue-2-s - 75, 100) !default;
+
+// toni
+/***************************** 1 ****************************************/
+$analogue-1-b1: hsb($analogue-1-h, $analogue-1-s, $analogue-1-b) !default;
+$analogue-1-b2: hsb($analogue-1-h, $analogue-1-s - 10, $analogue-1-b - 10) !default;
+$analogue-1-b3: hsb($analogue-1-h, $analogue-1-s - 20, $analogue-1-b - 20) !default;
+$analogue-1-b4: hsb($analogue-1-h, $analogue-1-s - 30, $analogue-1-b - 30) !default;
+$analogue-1-b5: hsb($analogue-1-h, $analogue-1-s - 40, $analogue-1-b - 40) !default;
+$analogue-1-b6: hsb($analogue-1-h, $analogue-1-s - 50, $analogue-1-b - 50) !default;
+$analogue-1-b7: hsb($analogue-1-h, $analogue-1-s - 60, $analogue-1-b - 60) !default;
+$analogue-1-b8: hsb($analogue-1-h, $analogue-1-s - 70, $analogue-1-b - 70) !default;
+
+/***************************** 2 ****************************************/
+$analogue-2-b1: hsb($analogue-2-h, $analogue-2-s, $analogue-2-b) !default;
+$analogue-2-b2: hsb($analogue-2-h, $analogue-2-s - 10, $analogue-2-b - 10) !default;
+$analogue-2-b3: hsb($analogue-2-h, $analogue-2-s - 20, $analogue-2-b - 20) !default;
+$analogue-2-b4: hsb($analogue-2-h, $analogue-2-s - 30, $analogue-2-b - 30) !default;
+$analogue-2-b5: hsb($analogue-2-h, $analogue-2-s - 40, $analogue-2-b - 40) !default;
+$analogue-2-b6: hsb($analogue-2-h, $analogue-2-s - 50, $analogue-2-b - 50) !default;
+$analogue-2-b7: hsb($analogue-2-h, $analogue-2-s - 60, $analogue-2-b - 60) !default;
+$analogue-2-b8: hsb($analogue-2-h, $analogue-2-s - 70, $analogue-2-b - 70) !default;
+
+// complementari
+// lombardia
+/***************************** 1 ****************************************/
+// tinte e ombre
+$complementary-1-a1: hsb(358, 28.6, 92.1) !default;
+$complementary-1-a2: hsb(355, 38.3, 90.2) !default;
+$complementary-1-a3: hsb(357, 48.0, 89.1) !default;
+$complementary-1-a4: hsb(358, 57.2, 87.1) !default;
+$complementary-1-a5: hsb(360, 67.4, 86.7) !default;
+$complementary-1-a6: hsb(2.5, 77.4, 85.1) !default;
+$complementary-1-a7: hsb(1.5, 75.1, 75.4) !default;
+$complementary-1-a8: hsb(2, 73.5, 65.1) !default;
+$complementary-1-a9: hsb(2, 75.9, 55.3) !default;
+$complementary-1-a10: hsb(2, 76.5, 45.1) !default;
+$complementary-1-a11: hsb(360, 77.6, 33.3) !default;
+$complementary-1-a12: hsb(0, 57.9, 14.9) !default;
+// toni
+$complementary-1-b1: hsb(349, 70.1, 86.7) !default;
+$complementary-1-b2: hsb(351.5, 64.1, 86.3) !default;
+$complementary-1-b3: hsb(350, 54.8, 77.3) !default;
+$complementary-1-b4: hsb(350, 45.7, 67.8) !default;
+$complementary-1-b5: hsb(350, 36.3, 57.3) !default;
+$complementary-1-b6: hsb(354, 25, 47.1) !default;
+$complementary-1-b7: hsb(360, 12.9, 36.5) !default;
+$complementary-1-b8: hsb(320, 4.4, 26.7) !default;
+
+/***************************** 2 ****************************************/
+// tinte e ombre
+$complementary-2-a1: hsb(36, 23.3, 97.6) !default;
+$complementary-2-a2: hsb(35.7, 37.9, 97.3) !default;
+$complementary-2-a3: hsb(36, 51.9, 95.3) !default;
+$complementary-2-a4: hsb(35.7, 67.1, 94.1) !default;
+$complementary-2-a5: hsb(33.7, 73, 92.9) !default;
+$complementary-2-a6: hsb(29.3, 73.5, 91.8) !default;
+$complementary-2-a7: hsb(26.7, 72.9, 83.9) !default;
+$complementary-2-a8: hsb(25.3, 70.2, 69.8) !default;
+$complementary-2-a9: hsb(25.7, 68.6, 54.9) !default;
+$complementary-2-a10: hsb(29, 67.3, 38.4) !default;
+$complementary-2-a11: hsb(30, 68.9, 23.9) !default;
+$complementary-2-a12: hsb(26, 53.3, 11.8) !default;
+// toni
+$complementary-2-b1: hsb(31.5, 72.8, 89.4) !default;
+$complementary-2-b2: hsb(33, 69.3, 79.2) !default;
+$complementary-2-b3: hsb(34, 66.7, 70.6) !default;
+$complementary-2-b4: hsb(36, 61.0, 60.4) !default;
+$complementary-2-b5: hsb(35, 51.9, 50.6) !default;
+$complementary-2-b6: hsb(40, 41.2, 40.0) !default;
+$complementary-2-b7: hsb(31, 29.9, 30.2) !default;
+$complementary-2-b8: hsb(24, 19.2, 20.4) !default;
+
+/***************************** 3 ****************************************/
+// tinte e ombre
+$complementary-3-a1: hsb(116, 6.7, 93.3) !default;
+$complementary-3-a2: hsb(113, 11.0, 89.4) !default;
+$complementary-3-a3: hsb(109, 20.3, 83.1) !default;
+$complementary-3-a4: hsb(112, 27.4, 78.8) !default;
+$complementary-3-a5: hsb(118, 34.6, 73.7) !default;
+$complementary-3-a6: hsb(126, 44.8, 71.0) !default;
+$complementary-3-a7: hsb(126, 54.3, 67.8) !default;
+$complementary-3-a8: hsb(130, 55.1, 62.0) !default;
+$complementary-3-a9: hsb(132.5, 55.4, 54.5) !default;
+$complementary-3-a10: hsb(136, 56.4, 45.9) !default;
+$complementary-3-a11: hsb(136, 57.6, 38.8) !default;
+$complementary-3-a12: hsb(134, 57.1, 30.2) !default;
+
+// toni
+$complementary-3-b1: hsb(126, 54.3, 67.8) !default;
+$complementary-3-b2: hsb(128, 54.7, 62.4) !default;
+$complementary-3-b3: hsb(133, 54.3, 54.1) !default;
+$complementary-3-b4: hsb(130, 47.9, 45.9) !default;
+$complementary-3-b5: hsb(133, 46.9, 37.6) !default;
+$complementary-3-b6: hsb(131, 43.4, 29.8) !default;
+$complementary-3-b7: hsb(131, 39.3, 22.0) !default;
+$complementary-3-b8: hsb(125, 36.1, 14.1) !default;
+
+//***********************************************************************
+//********************Neutral color variations***************************
+//***********************************************************************
+
+// tinte e ombre
+/***************************** NEUTRAL 1 ****************************************/
+// lombardia
+$neutral-1-a1: hsb(200, 3.8, 91.8) !default;
+$neutral-1-a2: hsb(206, 7.5, 83.9) !default;
+$neutral-1-a3: hsb(206, 14.4, 76.5) !default;
+$neutral-1-a4: hsb(205, 19.2, 69.4) !default;
+$neutral-1-a5: hsb(207, 23.2, 60.8) !default;
+$neutral-1-a6: hsb(204, 32.8, 53.7) !default;
+$neutral-1-a7: hsb(201, 46.7, 47.1) !default;
+$neutral-1-a8: hsb(201, 58.8, 40.0) !default;
+$neutral-1-a9: hsb(202, 81.6, 34.1) !default;
+$neutral-1-a10: hsb(203, 100, 27.8) !default;
+
+/***************************** NEUTRAL 2 ****************************************/
+// lombardia
+$neutral-2-b1: hsb(229, 6.7, 93.7) !default;
+$neutral-2-b2: hsb(219, 11.5, 78.4) !default;
+$neutral-2-b3: hsb(220, 13.5, 61.2) !default;
+$neutral-2-b4: hsb(227, 12.0, 45.9) !default;
+$neutral-2-b5: hsb(203, 16.5, 31.0) !default;
+$neutral-2-b6: hsb(206, 15.2, 18.0) !default;
+$neutral-2-b7: hsb(204, 20.0, 9.8) !default;
+
+/***************************** NEUTRAL 2 / 3 ****************************************/
+$neutral-2-a1: hsb($neutral-2-h, $neutral-2-s, $neutral-2-b) !default;
+$neutral-2-a2: hsb($neutral-2-h, $neutral-2-s + 3, $neutral-2-b - 15) !default;
+$neutral-2-a3: hsb($neutral-2-h, $neutral-2-s + 2, $neutral-2-b - 30) !default;
+$neutral-2-a4: hsb($neutral-2-h, $neutral-2-s + 2, $neutral-2-b - 45) !default;
+$neutral-2-a5: hsb($neutral-2-h, $neutral-2-s + 2, $neutral-2-b - 60) !default;
+$neutral-2-a6: hsb($neutral-2-h, $neutral-2-s + 2, $neutral-2-b - 75) !default;
+$neutral-2-a7: hsb($neutral-2-h, $neutral-2-s + 4, $neutral-2-b - 85) !default;
+
+//==================== DESIGN TOKENS VARIABLES ============================//
+
+// SEMANTIC TOKENS =========================================================
+
+// Backgrounds
+$color-background-emphasis: hsl(210, 54%, 20%); // color-slate-20
+$color-background-primary-lighter: hsl(210, 62%, 97%); // color-blue-97
+$color-background-secondary-hover: hsl(210, 33%, 28%); // color-slate-28
+$color-background-secondary-lighter: hsl(210, 3%, 85%); // color-slate-85
+$color-background-muted: $gray-100; // color-gray-96
+
+// Borders
+$color-border-secondary: hsl(210, 17%, 44%); // color-slate-44
+$color-border-subtle: hsl(210, 4%, 78%); // color-slate-78
+$color-border-warning: hsl(36, 100%, 30%); // color-orange-30
+
+// Text
+$color-text-primary-active: hsl(210, 100%, 15%); // color-blue-15
+$color-text-primary-hover: hsl(210, 100%, 30%); // color-blue-30
+$color-text-muted: hsl(210, 17%, 44%); // color-slate-44
+$color-text-base: $gray-900; // color-gray-10
+$color-text-secondary: hsl(210, 33%, 28%); // color-slate-28
+$color-text-warning: hsl(36, 100%, 30%); // color-orange-30
+
+// SPECIFIC TOKENS =========================================================
+//
+// Footer
+$footer-top-background: hsl(210, 100%, 30%); // color-blue-30
+$footer-bottom-background: hsl(210, 100%, 20%); // color-blue-20
+
+// Icons
+$icon-primary: $primary;
+$icon-secondary: $secondary;
+$icon-base: $color-text-base;

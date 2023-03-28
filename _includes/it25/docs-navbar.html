@@ -1,0 +1,34 @@
+<header class="navbar-main navbar navbar-dark bd-navbar px-3 {% if page.layout == "it25_docs" %}bd-navbar--slim{% endif %}">
+  <!--div class="container{% if page.layout == "docs" %}-fluid{% endif %}"-->
+  <div class="container-fluid">
+    <a class="navbar-brand py-2 text-decoration-none" href="{{ site.baseurl }}/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+      <div class="d-flex flex-row">
+        <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
+          <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
+          <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
+        </div>
+      </div>
+    </a>
+
+    {% if page.layout == "docs" %}
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    {% endif %}
+
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
+        <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" aria-label="Download">
+          <svg class="icon icon-sm icon-light"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
+        </a>
+      </li>
+      <li class="nav-item pe-2">
+        <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="{{ site.repo }}" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg class="icon icon-sm icon-light"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

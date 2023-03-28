@@ -1,0 +1,41 @@
+// primary blue ---------------------------------
+.primary-blue-bg {
+  background-color: $primary-blue !important;
+}
+.primary-blue-color {
+  color: $primary-blue !important;
+}
+.primary-blue-border-color {
+  border-color: $primary-blue !important;
+  &.border {
+    border-color: $primary-blue !important;
+  }
+}
+
+// primary gray ---------------------------------
+.primary-gray-bg {
+  background-color: $primary-gray !important;
+}
+.primary-gray-color {
+  color: $primary-gray !important;
+}
+.primary-gray-border-color {
+  border-color: $primary-gray !important;
+  &.border {
+    border-color: $primary-gray !important;
+  }
+}
+
+// neutral 3
+.neutral-3-bg {
+  background-color: $neutral-3 !important;
+}
+.neutral-3-color {
+  color: $neutral-3 !important;
+}
+.neutral-3-border-color- {
+  border-color: $neutral-3 !important;
+  &.border {
+    border-color: $neutral-3 !important;
+  }
+}
