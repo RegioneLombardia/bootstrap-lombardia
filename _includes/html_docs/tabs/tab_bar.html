@@ -1,0 +1,35 @@
+<ul class="nav nav-tabs nav-tabs-icon-text auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" aria-current="page">
+      {% if include.icon %}
+      <svg class="icon">
+        <use href="{{site_baseurl}}/svg/sprites.svg#it-link"></use>
+      </svg>
+      {% endif %} {% if include.text %} Tab 1 {% endif %}
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <svg class="icon">
+        <use href="{{site_baseurl}}/svg/sprites.svg#it-calendar"></use>
+      </svg>
+      Tab 2
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">
+      <svg class="icon">
+        <use href="{{site_baseurl}}/svg/sprites.svg#it-comment"></use>
+      </svg>
+      Tab 3
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" tabindex="-1">
+      <svg class="icon">
+        <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
+      </svg>
+      Tab 4
+    </a>
+  </li>
+</ul>

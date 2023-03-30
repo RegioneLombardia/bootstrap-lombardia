@@ -48,8 +48,6 @@ $primary-s: 100 !default;
 $primary-b: 80 !default;
 $primary-l: 40 !default; // Kit UI
 
-
-
 $primary: hsb($primary-h, $primary-s, $primary-b) !default; // color-blue-40
 
 $italia: $primary !default;
@@ -463,3 +461,5 @@ $footer-bottom-background: hsl(210, 100%, 20%); // color-blue-20
 $icon-primary: $primary;
 $icon-secondary: $secondary;
 $icon-base: $color-text-base;
+
+$btn-border-radius: 8px;

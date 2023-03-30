@@ -5,12 +5,32 @@ group: navigazione
 toc: false
 ---
 
-Il componente *Paginazione* di  *Bootstrap Regione Lombardia* è del tutto rispondente alle *Linee Guida*.  
-Si può quindi utilizzare qualunque forma mostrata nella {{ site.data.short.dt }}.
+Il **Paginatore** è una componente utile per indicare una serie di contenuti correlati tra **più pagine**. Tendenzialmente si trova nella parte in **basso a destra o al centro** della pagina.
 
+{% capture example %}
 
-{% capture callout %}
-####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della {{ site.data.short.dt }}:
-- **[Paginazione]({{ site.baseurl }}/docs/componenti/paginazione/)**
-{% endcapture %}{% include callout.html content=callout type="info" %}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <label class="my-3">Default</label>
+      {% include html_docs/paginatore/paginatore.html %}
+    </div>
+    <div class="col">
+      <label class="my-3">Variante con comando “more”</label>
+      {% include html_docs/paginatore/paginatore.html more=true %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <label class="my-3">Variante con jump page</label>
+      {% include html_docs/paginatore/paginatore.html jump=true %}
+    </div>
+    <div class="col">
+      <label class="my-3">Variante semplificata</label>
+       {% include html_docs/paginatore/paginatore_semplificato.html %}
+    </div>
+  </div>
+</div>
+
+{% endcapture %}
+{% include example.html content=example %}

@@ -1,0 +1,35 @@
+<nav class="pagination-wrapper justify-content-start" aria-label="Esempio di navigazione della pagina">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" aria-current="page" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    {% if include.more %}
+    <li class="page-item">
+      <span class="page-link">...</span>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">24</a></li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page"> <span class="d-inline-block d-sm-none">Pagina </span>26 </a>
+    </li>
+    {% endif %}
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  {% if include.jump %}
+  <div class="form-group">
+    <input type="text" class="form-control" id="jumpToPage" maxlength="3" />
+    <label for="jumpToPage"><span aria-hidden="true">Vai a ...</span><span class="visually-hidden">Indica la pagina desiderata</span></label>
+  </div>
+  {% endif %}
+</nav>

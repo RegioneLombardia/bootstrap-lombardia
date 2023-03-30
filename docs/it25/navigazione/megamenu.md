@@ -5,78 +5,24 @@ group: navigazione
 toc: false
 ---
 
-La Documentazione Tecnica mostra diverse tipologie di **[megamenu]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/)**.  
+Il **Megamenu** è una variante della componente dropdown. Esso presenta un **sottomenu** contenente **elenchi di link relativi ad una voce del menu di navigazione**. Si raccomanda l’utilizzo di questa componente nella forma più semplice e pulita, utilizzando il **megamenu classico**, con o senza **intestazione delle colonne** (_header_).
 
+### Megamenu Classico
 
-{% capture callout %}
-####  <svg class="icon icon-success icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use></svg> Megamenu Classico
-Si raccomanda di utilizzare questo componente nella forma più semplice e pulita, utilizzando il **[megamenu classico]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#megamenu-classico)**, con o senza **[intestazione delle colonne]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/#classico-con-sezioni)**.
-{% endcapture %}{% include callout.html content=callout type="accessibility" %}
+Il megamenu ha una struttura colonnare in cui ogni colonna richiama al suo interno la componente _lista_ per costruire l’elenco di link desiderato.
 
 {% capture example %}
-<div class="nav-item dropdown megamenu">
-  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-    <span>Megamenu</span>
-    <svg class="icon icon-xs">
-      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use>
-    </svg>
-  </a>
-  <div class="dropdown-menu">
-    <div class="row">
-      <div class="col-12 col-lg-4">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <h3 class="no_toc">Heading 1</h3>
-            </li>
-            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <h3 class="no_toc">Heading 2</h3>
-            </li>
-            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 3 </span></a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-12 col-lg-4">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <h3 class="no_toc">Heading 3</h3>
-            </li>
-            <li><a class="list-item" href="#"><span>Link list 1 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 2 </span></a></li>
-            <li><a class="list-item" href="#"><span>Link list 3</span></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+{% include html_docs/megamenu/megamenu.html section=false %}
 {% endcapture %}
 {% include example.html content=example %}
 
+### Megamenu con intestazione delle colonne
 
-{% capture callout %}
-####  <svg class="icon icon-danger icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-circle"></use></svg> Link more, call to action, immagini
-**NON UTILIZZARE**:
-- **link _more_**
-- **call to action** sia in basso che a destra
-- **immagini** inserite all'interno
-{% endcapture %}{% include callout.html content=callout type="danger" %}
+Il megamenu con intestazione delle colonne viene utilizzato quando vi sono delle categorie di liste in cui sono raggruppate le voci di menu per facilitare la ricercabilità dei contenuti.
 
+{% capture example %}
 
-{% capture callout %}
-####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
-- **[Megamenu]({{ site.baseurl }}/docs/menu-di-navigazione/megamenu/)**
-{% endcapture %}{% include callout.html content=callout type="info" %}
+{% include html_docs/megamenu/megamenu.html section=true %}
+
+{% endcapture %}
+{% include example.html content=example %}

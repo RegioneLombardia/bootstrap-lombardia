@@ -6,161 +6,40 @@ group: componenti-principali
 toc: true
 ---
 
-<!-- Style override for Documentation purposes -->
-<style>
-  @media (max-width: 991px) {
-    .it-header-slim-wrapper .it-header-slim-wrapper-content a.btn-full {
-      margin-top: -7px;
-    }
-  }
-  .it25-hamburger-btn-wrapper {
-    display: none;
-  }
-</style>
+La componente **Header** - posta sempre nella testata del layout - si ottiene dall’unione di due altre componenti: **topbar** e **barra istituzionale**.
+La **topbar**, la barra soprastante l’header, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata. In alcuni casi tale componente può essere impiegata come toolbar di servizio per l’inserimento di link quali **login**, **cambio lingua**, **assistenza** ecc.
+La componente **barra istituzionale**, fornita in diverse varianti, applicabili a seconda del dato contesto, conterrà menu di navigazione (hamburger o dropdown), loghi e titolazioni dei servizi.
 
-<div class="bd-example">
-{% include esempi-lombardia/header.html %}
-</div>
+**N.B.**: I link di servizio e le informazioni di governance relative al servizio non sono mai presenti nell’header, ma sono contenute **unicamente nel footer**.
 
-E' composto da due parti, entrambe obbligatorie:
-1. top bar
-2. barra istituzionale
+### Header Base
 
-## Top bar
-Può contenere voci di servizio quali: Login/Logout (quindi la gestione del profilo utente tramite le voci del dropdown), Scelta lingua, Assistenza.
+In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.
 
-<div class="bd-example">
-{% include esempi-lombardia/topbar.html %}
-</div>
-
+{% include html_docs/header/header_base.html %}
 {% highlight html %}
-{% include esempi-lombardia/topbar.html %}
+{% include html_docs/header/header_base.html %}
 {% endhighlight %}
 
-Nel momento in cui la pagina viene caricata a video, la barra è alta 58 pixel.  
-Rimane fissa in cima alla pagina quando questa scorre verso l'alto.
+## Header con topbar di servizio e search field
 
-Su smartphone
-1. Appare il logo della Regione Lombardia in negativo
-2. Le voci servizio sono ridotte a icona
+La topbar può accogliere informazioni come ad esempio l’accesso utente. Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.
 
-Su Desktop
-1. Il logo della Regione Lombardia in negativo non è visualizzato
-2. Le voci di servizio hanno la dicitura
-
-Quando la pagina scorre verso il basso:
-- le voci servizio e l'eventuale logo in negativo scompaiono
-- l'altezza si riduce a 20 pixel
-
-### Top bar sottile
-Nel caso in cui non si abbiano voci di servizio da inserire, la top bar può essere ridotta ad un'altezza di 20 pixel già alla comparsa della pagina, aggiungendo la classe `thin` al `div` principale del componente.
-
-<div class="bd-example">
-{% include esempi-lombardia/topbar_thin.html %}
-</div>
-
+{% include html_docs/header/header_topbar_search.html %}
 {% highlight html %}
-{% include esempi-lombardia/topbar_thin.html %}
+{% include html_docs/header/header_topbar_search.html %}
 {% endhighlight %}
 
+## Header con accesso effettuato e dropdown
 
-Su smartphone la top bar sottile inizialmente apparirà comunque alta 56 pixel per mostrare il logo della Regione Lombardia (che non è mostrato nella barra istituzionale per ragioni di spazio), per poi restringersi allo scorrimento verso il basso della pagina.
+Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio. La dimensione del menu dropdown può variare a
+seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.
 
-
-## Barra istituzionale
-
-**Deve** contenere il **logo** di Regione Lombardia e il **nome dell'applicativo**, preceduto dall' **acronimo** se esiste.  
-**Può** contenere l'**hamburger menu** a sinistra del logo di Regione Lombardia e il **campo di ricerca** a destra.
-
-L'altezza iniziale della barra è di 94 pixel su schermi grandi, di 80 su schermi piccoli.  
-A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si restringe a 50 pixel.
-
-Su smartphone
-1. Il logo della Regione Lombardia scompare (viene sostituito dal logo in negativo sulla top bar)
-2. Il nome dell'applicativo si riduce di dimensione
-3. L'eventuale campo di ricerca è ridotto a icona
-4. Compare il pulsante hamburger per l'apertura del menù orizzontale o della sidebar.
-
-A scorrimento in basso
-1. Il logo della Regione compare rimpicciolito (quello nella topbar scorre verso l'alto e non è più visibile)
-2. Il nome dell'applicativo viene ulteriormente ridotto di dimensione
-3. Il campo di ricerca scompare
-4. Il pulsante hamburger è leggermente rimpicciolito
-5. L'altezza complessiva della barra istituzionale diminuisce
-
-Su desktop
-1. Il Logo della Regione è visualizzato in grande
-2. Il nome dell'applicativo ha un font di dimensioni maggiori
-3. Il campo di ricerca è mostrato.
-4. Il pulsante hamburger non compare in quanto il menù orizzontale, o la sidebar, è mostrato.
-
-A scorrimento in basso
-1. Il Logo della Regione rimpicciolisce
-2. Il nome dell'applicativo rimpicciolisce
-3. Il campo di ricerca rimane invariato
-4. L'altezza complessiva della barra diminuisce.
-
-Nota: per poter meglio rendersi conto del comportamento della top bar e della barra istituzionale è utile richiamare una delle schermate composte, per esempio quella della **[Tabella complessa]({{ site.baseurl }}/docs/it25/esempi/pag_tabella/)**.
-
-<div class="bd-example">
-{% include esempi-lombardia/barra_istituzionale.html %}
-</div>
-
+{% include html_docs/header/header_login_dropdown.html %}
 {% highlight html %}
-{% include esempi-lombardia/barra_istituzionale.html %}
+{% include html_docs/header/header_login_dropdown.html %}
 {% endhighlight %}
 
-Il `<div>` principale è caratterizzato dalle classi `it-header-center-wrapper` e `it25-barra-ist`.  
-Al suo interno il `div` con classe `it-header-center-content-wrapper` contiene due `div` che posizionano il loro contenuto verso il lato sinistro e destro della barra, che hanno rispettivamente le classi: `it-brand-wrapper` e `it-right-zone`.  
+## Header hamburger menu
 
-In  `it-brand-wrapper` oltre al logo della Regione Lombardia e al nome dell'applicativo, sono contenuti 2 bottoni che appaiono solo sugli schermi di minori dimensioni, alternativamente per aprire o chiudere il **[menù orizzontale]({{ site.baseurl }}/docs/it25/componenti-principali/menu-orizzontale/)** o la **[sidebar]({{ site.baseurl }}/docs/it25/componenti-principali/sidebar/)** eventualmente presenti nella pagina.
-
-
-
-### Bottone hamburger
-
-Il bottone *hamburger* compare nella *barra istituzionale* a sinistra del logo di Regione Lombardia.  
-Una volta premuto il bottone l'icona *hamburger* è sostituita da una "X" per segnalare che premendolo nuovamente il menù (o la sidebar) scomparirà.
-
-Il menu orizzontale è visualizzato immediatamente se la finestra ha **[dimensioni]({{ site.baseurl }}/docs/organizzare-gli-spazi/griglie/#le-opzioni)** `lg` o `xl`.    
-Quindi il bottone *hamburger* compare quando le dimensioni della pagina sono `xs` o `sm` o `md`.  
-La sidebar invece compare anche sugli schermi `md` e, di conseguenza, il relativo bottone *hamburger* solo per pagine `xs` o `sm`.  
-
-Per ottenere questo comportamento, la struttura HTML dell'header della pagina deve essere di questo tipo:
-
-Per il menù orizzontale
-{% highlight html %}
-<header class="it25-menu"> (oppure semplicemente <header>)
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-  . . . menu orizzontale . . .
-</header>
-{% endhighlight %}
-
-Per la sidebar
-{% highlight html %}
-<header class="it25-sidebar">
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-</header>
-{% endhighlight %}
-
-La *sidebar* poi va inserita nel `body` della pagina (vedi esempio **[pagina con sidebar]({{ site.baseurl }}/docs/it25/esempi/pag_sidebar/)**).
-
-Nel caso in cui non si abbiano né l'una né l'altra, e quindi il bottone *hamburger* non vada mai visualizzato, la struttura deve essere:
-{% highlight html %}
-<header class="it25-none">
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-</header>
-{% endhighlight %}
-
-
-### Due loghi
-Nella *barra istituzionale* è possibile inserire un secondo logo utilizzando un tag `img` con le classi `it25-header-logo d-none d-md-block`.  
-Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento responsivo.
-
-E' possibile vedere un esempio nella pagina **[form]({{ site.baseurl }}/docs/it25/esempi/pag_form/)**.
+L’hamburger menu deve essere posizionato appena sotto l’header a sinistra e si richiama cliccando sulla relativa icona. Esso si utilizza quando si ha l’esigenza di trattare in forma di lista le voci del menu, quindi all’interno di applicativi con molte sezioni cui si deve dare accesso in qualsiasi punto della navigazione. E’ possibile che al mouse over lo stato delle voci cambi. In questo caso le variabili valutabili sono: voce sottolineata e colore di background grigio chiaro.

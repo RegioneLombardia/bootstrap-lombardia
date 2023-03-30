@@ -1,0 +1,105 @@
+<div class="bd-example">
+  <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#">
+              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+            </a>
+            <div class="header-slim-right-zone">
+              <div class="nav-item dropdown">
+                <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">
+                  <span>Lorem ipsum dolor sit</span>
+                  <svg class="icon icon-white">
+                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-user"></use>
+                  </svg>
+                  <svg class="icon icon-white">
+                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use>
+                  </svg>
+                </a>
+                <div class="dropdown-menu" data-popper-placement="bottom-end">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="link-list-wrapper">
+                        <ul class="link-list">
+                          <li>
+                            <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                          </li>
+                          <li>
+                            <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                          </li>
+                          <li>
+                            <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="it-header-center-wrapper it25-barra-ist">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-center-content-wrapper">
+            <div class="it-brand-wrapper">
+              <div class="it25-hamburger-btn-wrapper">
+                <button
+                  aria-controls="it25-main-nav"
+                  aria-expanded="false"
+                  aria-label="Apri menù"
+                  class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                  data-bs-target="#it25-main-nav"
+                  type="button"
+                >
+                  <svg class="icon">
+                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-burger"></use>
+                  </svg>
+                </button>
+                <div class="it25-close-div">
+                  <button class="btn btn-xs close-menu" type="button" data-bs-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù">
+                    <svg class="icon">
+                      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <a href="#">
+                <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+                {% if page.double-logo %}
+                <img
+                  src="{{ site.baseurl }}/dist/assets/img/logo-aria.png"
+                  alt="logo azienda regionale innovazione e acquisti"
+                  class="it25-header-logo d-none d-md-block"
+                />
+                {% endif %}
+                <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+              </a>
+            </div>
+            <div class="it-right-zone">
+              <div class="it-search-wrapper">
+                <input
+                  id="search-input"
+                  class="form-control d-none d-lg-flex mr-sm-2 ml-auto"
+                  type="search"
+                  placeholder="Cerca"
+                  aria-label="Testo per ricerca"
+                />
+                <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                  <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

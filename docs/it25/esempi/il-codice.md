@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Il Codice
 description: Il codice degli "Esempi"
-group: esempi
+group: schermate-composte
 toc: false
 ---
 

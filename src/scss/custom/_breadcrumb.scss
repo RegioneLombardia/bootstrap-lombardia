@@ -12,19 +12,19 @@
       }
       a {
         color: $breadcrumb-link-color;
-        font-weight: $breadcrumb-link-font-weight;
+        font-weight: normal;
       }
       &.active {
         color: $color-text-base;
         a {
-          font-weight: normal;
+          font-weight: $breadcrumb-link-font-weight;
           pointer-events: none;
         }
       }
       span.separator {
         color: $secondary;
         display: inline-block;
-        font-weight: $breadcrumb-link-font-weight;
+        font-weight: normal;
         padding: 0 $breadcrumb-link-x-padding;
       }
     }

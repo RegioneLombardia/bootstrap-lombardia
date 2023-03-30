@@ -88,7 +88,7 @@ Diventa quindi necessario **gestire da programma la visualizzazione di solo poch
 
 Sui tag _li_ di ognuno dei passi va associata la **classe** che indica lo **stato di avanzamento** e che determina la colorazione di ogni _punto_: `confirmed`, `active`, `error`.  
 L'**assenza di stato** dà il **colore grigio** di default per i passi ancora da eseguire.  
-Nota: lo stato `error` è una personalizzazione specifica di {{ site.data.short.bl }}.
+Nota: lo stato `error` è una personalizzazione specifica di {{ Bootstrap Regione Lombardia}}.
 
 #### Steppers index
 

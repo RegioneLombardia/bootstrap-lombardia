@@ -18,3 +18,31 @@
   padding: 15px;
   margin-bottom: 8px;
 }
+
+.rounded-color {
+  height: 50px;
+  min-width: 150px;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.border-custom {
+  border: 1px solid #505051;
+}
+
+.rounded-card {
+  box-shadow: 0px 8px 13px rgba(0, 51, 84, 0.1);
+  border-radius: 8px;
+  height: 90px;
+  background: #ffffff;
+  color: #003354;
+}
+
+.rounded-card-negative {
+  border-radius: 8px;
+  height: 90px;
+  background: #ffffff;
+  color: #003354;
+}

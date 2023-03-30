@@ -1,28 +1,38 @@
 ---
 layout: it25_docs
 title: Icone
-description: Icone da utilizzare
 group: utilità
 toc: false
 ---
 
-Il set di icone è quello fornito da Bootstrap Italia (vedi **[lista icone disponibili]({{ site.baseurl }}/docs/utilities/icone/#lista-delle-icone-disponibili)**).
+Le Icone proposte di seguito sono quelle proposte da AgID e disponibili all’indirizzo **[https://github.com/italia/design-icon-kit](https://github.com/italia/design-icon-kit)**. In alternativa, nel caso si necessiti di altre icone oltre a quelle fornite è ammesso l’utilizzo dell’icon pack **Icomoon**, scaricabile all’indirizzo **[https://icomoon.io/](https://icomoon.io/)**. Si consiglia di utilizzare icone appartenenti allo stesso ecosistema, ed in generale di mantenere coerenza nell’utilizzo di esse.
+{% capture example %}
 
-Per le tecniche di utilizzo si veda la relativa **[documentazione tecnica]({{ site.baseurl }}/docs/utilities/icone/)**.
-
-{% capture callout %}
-#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Icone Social
-Possono essere utilizzate **solo per link ai rispettivi siti** di pertinenza.  
-**MAI IN ALTRI CONTESTI**.  
-{% endcapture %}{% include callout.html content=callout type="warning" %}
-
-{% capture callout %}
-####  <svg class="icon icon-danger icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-circle"></use></svg> Icone Extra
-Le icone di questo gruppo **NON VANNO UTILIZZATE**, in quanto specifiche del team di sviluppo di Bootstrap Italia.  
-{% endcapture %}{% include callout.html content=callout type="danger" %}
-
-{% capture callout %}
-####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
-- **[Icone]({{ site.baseurl }}/docs/utilities/icone/)**
-{% endcapture %}{% include callout.html content=callout type="info" %}
+<div class="row">
+  {% for icona in site.data.icons.regular %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#{{icona}}"></use></svg> {{icona}}
+  </div>{% endfor %}
+</div>
+<h4 class="mt-4">File</h4>
+<div class="row">
+  {% for icona in site.data.icons.files %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#{{icona}}"></use></svg> {{icona}}
+  </div>{% endfor %}
+</div>
+<h4 class="mt-4">Piattaforme</h4>
+<div class="row">
+  {% for icona in site.data.icons.platforms %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#{{icona}}"></use></svg> {{icona}}
+  </div>{% endfor %}
+</div>
+<h4 class="mt-4">Extra</h4>
+<div class="row">
+  {% for icona in site.data.icons.extra %}
+  <div class="col-12 col-md-6 col-lg-4">
+    <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#{{icona}}"></use></svg> {{icona}}
+  </div>{% endfor %}
+</div>
+{% endcapture %}{% include example.html content=example %}

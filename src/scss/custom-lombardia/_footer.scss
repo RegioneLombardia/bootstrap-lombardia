@@ -4,6 +4,9 @@
   background-color: $neutral-1;
   padding: $spacer;
 
+  .title {
+    font-size: 16px;
+  }
   a {
     color: #fff;
   }
@@ -15,6 +18,16 @@
       margin-bottom: 0;
       font-weight: 600;
     }
+  }
+
+  .list-inline-item {
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .copyright {
+    font-size: 16px;
   }
 }
 .it-footer-main {

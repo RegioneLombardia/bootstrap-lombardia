@@ -4,65 +4,78 @@
 
 - title: Utilità
   pages:
-    - title: tipografia
-    - title: colori
-    - title: ombre e angoli
-    - title: icone
-    - title: divisori
+    - title: Tipografia
+    - title: Colori
+    - title: Ombre e angoli
+    - title: Icone
+    - title: Divisori
 
 - title: Componenti Principali
   pages:
-    - title: logo
-    - title: header
-    - title: menu orizzontale
-    - title: menu verticale
-    - title: loghi multipli
-    - title: footer
-    - title: header mobile
-    - title: footer mobile
+    - title: Logo
+      url: componenti-principali/logo
+    - title: Header
+      url: componenti-principali/header
+    - title: Menu orizzontale
+      url: componenti-principali/menu-orizzontale
+    - title: Menu Verticale
+      url: componenti-principali/menu-verticale
+    - title: Gestione Loghi Multipli
+      url: componenti-principali/gestione-loghi-multipli
+    # - title: Barra utente
+    #   url: componenti-principali/barra-utente
+    # - title: Sidebar
+    #   url: componenti-principali/sidebar
+    - title: Footer
+      url: componenti-principali/footer
 
 - title: Navigazione
   pages:
-    - title: breadcrumbs
-    - title: liste
-    - title: dropdown menu
-    - title: megamenu
-    - title: paginatore
+    - title: Breadcrumbs
+    - title: Liste
+    - title: Dropdown Menu
+    - title: Megamenu
+    - title: Paginatore
 
 - title: Call to action
   pages:
-    - title: bottoni
-    - title: tab bar
-    - title: slider
+    - title: Bottoni
+    - title: Tab bar
+    - title: Slider
 
 - title: Informazioni
   pages:
-    - title: accordion
-    - title: card
-    - title: carosello
-    - title: calendario
-    - title: time picker
-    - title: cookie bar
-    - title: overlay
-    - title: tabella
-    - title: snack bar
-    - title: cookie bar mobile
+    - title: Accordion
+    - title: Card
+    - title: Carousel
+    - title: Calendario
+    - title: Time Picker
+    - title: Cookiebar
+    - title: Overlay
+    - title: Tabella
+
+    # - title: Carousel-legacy
 
 - title: Inserimento
   pages:
-    - title: check box
-    - title: radio buttons
-    - title: toggle
-    - title: input fields
-    - title: tooltip
-    - title: popover
-    - title: wizard
-    - title: progress bar
+    - title: Check box
+    - title: Radio buttons
+    - title: Toggle
+    - title: Input fields
+    - title: Tooltip
+    - title: Popover
+    - title: Wizard
+    - title: Progress bar
 
 - title: Esempi
   pages:
     - title: Tabella complessa
     - title: Form
+    - title: Wizard
+      url: esempi/pag_wizard
+    - title: Sidebar
+    - title: Profilo utente
+    - title: Cookiebar
     - title: Il codice
 
 

@@ -8,7 +8,7 @@ toc: true
 Un tooltip può essere collegato ad un *tag HTML* per far comparire una **breve** nota esplicativa.    
 Normalmente appare al **passaggio del mouse** sull'elemento cui è collegato. Viene disegnato in modo da non sovrapporsi all'elemento stesso.
 
-Normalmente un tooltip contiene solo del **testo semplice**; anche se non è impossibile inserirvi un link, solitamente nel caso di debba farlo si usa un **[popover]({{ site.baseurl }}/docs/it25/inserimento/popover/)**.  
+Normalmente un tooltip contiene solo del **testo semplice**; anche se non è impossibile inserirvi un link, solitamente nel caso di debba farlo si usa un **[popover]({{ site.baseurl }}/docs/inserimento/popover/)**.  
 Nel caso serva il tooltip è comunque in grado contenere il testo andando a capo.
 
 ### Posizionamento
