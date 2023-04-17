@@ -23,7 +23,7 @@ oppure
 
 **[Scarica l'ultima versione della libreria »](https://github.com/italia/bootstrap-italia/releases)**
 
-## Indice
+## Indice 
 
 - [Segnalazione bug e richieste](#segnalazione-bug-e-richieste-di-aiuto)
 - [Come contribuire](#come-contribuire)
