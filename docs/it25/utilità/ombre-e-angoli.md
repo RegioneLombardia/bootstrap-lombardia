@@ -11,7 +11,9 @@ Le **Ombre** e gli **angoli** sono elementi utili per sottolineare i contenuti e
 
 I bordi arrotondati si ottengono tramite la classe `rounded-3`.
 
+<div class="bd-example">
 {% include html_docs/ombre_angoli/angoli.html %}
+</div>
 {% highlight html %}
 
 <div class="rounded-3 border-custom p-2">
@@ -21,9 +23,9 @@ I bordi arrotondati si ottengono tramite la classe `rounded-3`.
 
 ## Ombre
 
-I bordi arrotondati si ottengono tramite la classe `rounded-3`.
-
+<div class="bd-example">
 {% include html_docs/ombre_angoli/ombre.html %}
+</div>
 {% highlight html %}
 
 <div class="d-flex align-items-start flex-column mb-3">

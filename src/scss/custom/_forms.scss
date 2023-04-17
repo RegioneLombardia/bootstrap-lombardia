@@ -344,6 +344,11 @@ textarea {
       background-color: #e6e9f2;
       border-color: #e6e9f2;
     }
+
+    &:disabled.semi-checked + label::after {
+      background-color: #b1b1b3;
+      border-color: #e6e9f2;
+    }
   }
 
   [type='radio'] {
@@ -474,8 +479,8 @@ textarea {
   }
 
   input.semi-checked:not(:checked) + label::after {
-    border-color: $primary-a5; // TODO: Not found
-    background-color: $primary-a5; // TODO: Not found
+    border-color: $primary; // TODO: Not found
+    background-color: $primary; // TODO: Not found
     z-index: 0;
   }
 }

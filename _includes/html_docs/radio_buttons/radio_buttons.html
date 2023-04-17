@@ -1,0 +1,4 @@
+<div class="form-check">
+  <input id="{{include.id}}" type="radio" {% if include.checked %} checked="{{include.checked}}" {% endif %} {{include.disabled}} />
+  <label for="{{include.id}}" class="{{include.disabled}}">{{include.text}}</label>
+</div>

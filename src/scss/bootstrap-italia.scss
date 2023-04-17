@@ -5,6 +5,7 @@
 // funzioni e variabili colore
 @import 'functions';
 @import 'utilities/colors_vars';
+@import 'custom-lombardia/colors_vars';
 
 //variables
 @import 'variables';
@@ -12,6 +13,7 @@
 
 //classi colore
 @import 'utilities/colors';
+@import 'custom-lombardia/colors';
 
 // BS5 Configuration
 @import 'bootstrap/scss/functions';
@@ -168,7 +170,6 @@
 @import 'utilities/focus';
 @import 'utilities/icons';
 
-
 // Componenti lombardia
 @import 'custom-lombardia/it25-header';
 @import 'custom-lombardia/sidebar';
@@ -193,4 +194,9 @@
 @import 'custom-lombardia/form-toggles';
 @import 'custom-lombardia/megamenu';
 @import 'custom-lombardia/timeline';
-
+@import 'custom-lombardia/divider';
+@import 'custom-lombardia/snackbar';
+@import 'custom-lombardia/gallery';
+@import 'custom-lombardia/slider';
+@import 'custom-lombardia/calendar';
+@import 'custom-lombardia/clock-picker';

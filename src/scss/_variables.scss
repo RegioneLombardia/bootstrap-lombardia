@@ -101,9 +101,9 @@ $zindex-cookiebar: 1100;
 $zoom-overlay-bg: $white !default;
 
 // Border Radius - using pixels instead or rems as it has to be consistent across devices
-$border-radius: 4px !default;
-$border-radius-sm: 2px !default;
-$border-radius-lg: 8px !default;
+$border-radius: 8px !default;
+$border-radius-sm: 4px !default;
+$border-radius-lg: 10px !default;
 
 // Link and button colors
 $btn-primary-bg: $primary !default;
@@ -678,10 +678,10 @@ $badge-padding-x: 0.4em;
 $autocomplete-border: 1px solid $gray-400 !default;
 $autocomplete-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05) !default;
 
-
 // Tables
 // $table-cell-padding: 1em !default;
- $table-border-color: #d6dce3 !default;
- $table-cell-text-align: left !default;
+//$table-border-color: #d6dce3 !default;
+$table-border-color: #eceeef !default;
+$table-cell-text-align: left !default;
 // $table-accent-bg: #f6f7f9 !default;
 // $table-hover-bg: #e5f1fa !default;

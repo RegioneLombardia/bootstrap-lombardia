@@ -1,8 +1,43 @@
 {% assign buildTime = site.time | date: '%Y%m%d%H%M' %}
+<script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="{{ site.baseurl }}/dist/js/bootstrap-italia.bundle.min.js?{{ buildTime }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script type="text/javascript" src="https://rawgit.com/grudus/Timepicker/master/dist/grudus-timepicker.es5.js"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 <script>
   bootstrap.loadFonts('{{ site.baseurl }}/dist/fonts')
   bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: true,
+    },
+    1
+  )
+  new bootstrap.it25().datepicker(document.querySelector('#calendar-multiple'), {
+    enableTime: false,
+    dateFormat: 'd/m/Y',
+    mode: 'multiple',
+  })
+  new bootstrap.it25().datepicker(document.querySelector('#calendar-range'), {
+    enableTime: false,
+    dateFormat: 'd/m/Y',
+    mode: 'range',
+  })
+  new bootstrap.it25().datepicker(document.querySelector('#calendar-single'), {
+    enableTime: false,
+    dateFormat: 'd/m/Y',
+  })
+  new bootstrap.it25().datepicker(document.querySelector('#time-picker'), {
+    enableTime: true,
+    noCalendar: true,
+    dateFormat: 'H:i',
+    time_24hr: true,
+  })
+  new bootstrap.it25().clockpicker()
 </script>
 {%- if page.layout == "default" or page.layout == "docs" -%}
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/anchor.min.js"></script>
@@ -29,7 +64,6 @@
 <script src="{{ site.baseurl }}/docs/assets/src/js/cover-animation.js?{{ buildTime }}"></script>
 {%- endif -%} {%- if page.layout == "docs" -%} {% comment %}La ricerca è gestita con Algolia DocSearch https://github.com/algolia/docsearch{% endcomment %}
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/docsearch.min.js"></script>
-
 <script>
   docsearch({
     apiKey: 'a755e381c276458251a59282bae6ee93',
@@ -44,8 +78,7 @@
     debug: false, // Set debug to true if you want to inspect the dropdown
   })
 </script>
-{%- endif -%} 
-{%- if page.layout == "base" -%}
+{%- endif -%} {%- if page.layout == "base" -%}
 <!-- Notification per tornare alla pagina principale -->
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">

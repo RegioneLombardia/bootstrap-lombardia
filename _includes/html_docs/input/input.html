@@ -1,0 +1,12 @@
+<div class="form-group">
+  <label class="active {{include.display_title}}" for="formGroupExampleInputWithHelp">Etichetta di esempio</label>
+  <input
+    type="text"
+    class="form-control"
+    id="formGroupExampleInputWithHelp"
+    placeholder="Testo di esempio"
+    aria-describedby="formGroupExampleInputWithHelpDescription"
+    {{include.disabled}}
+  />
+  <small id="formGroupExampleInputWithHelpDescription" class="form-text {{include.display_info}}">Ulteriore testo informativo</small>
+</div>

@@ -5,20 +5,50 @@ group: inserimento
 toc: false
 ---
 
-
-Per fare in modo che il click su uno dei radio button provochi la **deselezione automatica degli altri**, è necessario che i radio button siano contenuti in un `div` con classe `form-group` e che l'attributo `name` di ognuno dei `tag` `input` sia lo stesso (nell'esempio riportato *"gruppo2"* ).
+Un **Radio button** (o option button) è un controllo che permette all’utente di effettuare una scelta singola esclusiva nell’ambito
+di un insieme predefinito di opzioni o possibili scelte.
 
 <div class="bd-example">
-{% include esempi-lombardia/radiobuttons.html %}
+  <div class="row">
+    <div class="col">Default</div>
+    <div class="col">Disabilitato</div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {% include html_docs/radio_buttons/radio_buttons.html text='Selezionato' checked='checked' id='1' %}
+    </div>
+    <div class="col">
+    {% include html_docs/radio_buttons/radio_buttons.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+      {% include html_docs/radio_buttons/radio_buttons.html text='Non Selezionato' id='3' %}
+      </div>
+      <div class="col">
+      {% include html_docs/radio_buttons/radio_buttons.html text='Non Selezionato' disabled='disabled' id='4' %}
+      </div>
+    </div>
 </div>
-
-{% highlight html %}
-{% include esempi-lombardia/radiobuttons.html %}
+{% highlight sh %}
+<div class="row">
+    <div class="col">Default</div>
+    <div class="col">Disabilitato</div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {% include html_docs/radio_buttons/radio_buttons.html text='Selezionato' checked='checked' id='1' %}
+    </div>
+    <div class="col">
+    {% include html_docs/radio_buttons/radio_buttons.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+      {% include html_docs/radio_buttons/radio_buttons.html text='Non Selezionato' id='3' %}
+      </div>
+      <div class="col">
+      {% include html_docs/radio_buttons/radio_buttons.html text='Non Selezionato' disabled='disabled' id='4' %}
+      </div>
+    </div>
 {% endhighlight %}
-
-
-{% capture callout %}
-####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
-- **[Radio Button]({{ site.baseurl }}/docs/form/radio-button/)**
-{% endcapture %}{% include callout.html content=callout type="info" %}

@@ -35,7 +35,9 @@ La topbar può accogliere informazioni come ad esempio l’accesso utente. Nel c
 Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio. La dimensione del menu dropdown può variare a
 seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.
 
+<div class="bd-example">
 {% include html_docs/header/header_login_dropdown.html %}
+</div>
 {% highlight html %}
 {% include html_docs/header/header_login_dropdown.html %}
 {% endhighlight %}
@@ -43,3 +45,10 @@ seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza de
 ## Header hamburger menu
 
 L’hamburger menu deve essere posizionato appena sotto l’header a sinistra e si richiama cliccando sulla relativa icona. Esso si utilizza quando si ha l’esigenza di trattare in forma di lista le voci del menu, quindi all’interno di applicativi con molte sezioni cui si deve dare accesso in qualsiasi punto della navigazione. E’ possibile che al mouse over lo stato delle voci cambi. In questo caso le variabili valutabili sono: voce sottolineata e colore di background grigio chiaro.
+
+<div class="bd-example">
+{% include html_docs/header/header_hamburger.html %}
+</div>
+{% highlight html %}
+{% include html_docs/header/header_hamburger.html %}
+{% endhighlight %}

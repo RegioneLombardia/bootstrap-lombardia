@@ -1,0 +1,45 @@
+.it25-snackbar {
+  background-color: $white;
+  border-radius: 8px;
+  .toast-header {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+    border-bottom: none;
+    color: $primary-blue;
+    border-radius: 8px;
+  }
+
+  .alert-action {
+    float: right;
+    color: $primary-gray;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+}
+
+.alert-success,
+.alert-danger,
+.alert-info,
+.alert-warning {
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  padding-left: 3rem;
+
+  .toast-header {
+    padding: 0.95rem;
+  }
+  .toast-body {
+    padding-top: 0;
+  }
+}
+
+.alert-simple {
+  border: none;
+}
+
+.alert-info {
+  border-left: 8px solid $blue-2;
+}

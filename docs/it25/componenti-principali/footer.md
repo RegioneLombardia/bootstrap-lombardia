@@ -10,11 +10,11 @@ Il Footer è la componente base ideata per il fondo pagina. Deve contenere come 
 che l’altezza del footer cresca di conseguenza.
 
 <div class="bd-example">
-{% include esempi-lombardia/footer.html %}
+{% include html_docs/footer/footer.html %}
 </div>
 
 {% highlight html %}
-{% include esempi-lombardia/footer.html %}
+{% include html_docs/footer/footer.html %}
 {% endhighlight %}
 
 Nota:
@@ -25,11 +25,11 @@ La dicitura del copyright è strutturata in modo da andare a capo a blocchi a se
 Nel caso in cui serva un footer sottile, il minimo consentito è quello riportato di seguito.
 
 <div class="bd-example">
-{% include esempi-lombardia/footer_minimo.html %}
+{% include html_docs/footer/footer_minimo.html %}
 </div>
 
 {% highlight html %}
-{% include esempi-lombardia/footer_minimo.html %}
+{% include html_docs/footer/footer_minimo.html %}
 {% endhighlight %}
 
 ### Footer con loghi multipli

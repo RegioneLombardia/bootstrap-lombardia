@@ -5,6 +5,7 @@ import init from './plugins/init'
 import loadFonts from './plugins/fonts-loader'
 import * as icons from './icons'
 import  it25Header  from './plugins/it25-header'
+import  it25  from './plugins/it25'
 
 import {
   // Bootstrap
@@ -88,5 +89,6 @@ export default {
   UploadDragDrop,
   ValidatorSelectAutocomplete,
   loadFonts,
-  it25Header
+  it25Header,
+  it25
 }

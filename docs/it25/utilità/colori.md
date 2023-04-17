@@ -21,6 +21,16 @@ colori della palette primaria.
       <span class="white-color align-middle">#2A7A38</span>
     </div>
   </div>
+    <div class="p-2">
+    <div class="rounded-color neutral-1-bg text-end">
+      <span class="white-color align-middle">#003354</span>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="rounded-color primary-gray-bg shadow text-end">
+      <span class="white-color align-middle fw-bold">#597483</span>
+    </div>
+  </div>
   <div class="p-2">
     <div class="rounded-color white-bg shadow text-end">
       <span class="align-middle">#FFFFFF</span>

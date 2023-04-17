@@ -11,7 +11,7 @@ Nel primo caso citato, ovvero quello del banner posto sopra il footer, i loghi d
 _Versione del banner con 4 loghi_
 
 {% include html_docs/loghi/singola_riga.html %}
-{% include esempi-lombardia/footer.html %}
+{% include html_docs/footer/footer.html %}
 {% highlight html %}
 {% include html_docs/loghi/singola_riga.html %}
 {% endhighlight %}
@@ -19,7 +19,7 @@ _Versione del banner con 4 loghi_
 _Versione del banner con 8 loghi_
 
 {% include html_docs/loghi/singola_riga.html doublerow=true %}
-{% include esempi-lombardia/footer.html %}
+{% include html_docs/footer/footer.html %}
 {% highlight html %}
 {% include html_docs/loghi/singola_riga.html doublerow=true %}
 {% endhighlight %}

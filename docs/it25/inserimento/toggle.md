@@ -5,21 +5,49 @@ group: inserimento
 toc: false
 ---
 
-Componente alternativo per la selezione di opzioni a **scelta multipla**.
-
-Funzionalmente è del tutto simile al checkbox, ed è possibile farlo comparire preselezionato (`checked`) e/o disabilitato nello stesso modo.
+Un **Toggle** (o switch) è un controllo che permette all’utente di scegliere la modalità on/off di un singolo settaggio – rappresentando l’analogia dell’interruttore accesso/spento.
 
 <div class="bd-example">
-{% include esempi-lombardia/toggles.html %}
+  <div class="row">
+    <div class="col">Default</div>
+    <div class="col">Disabilitato</div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Selezionato' on='leverRight' id='1' checked='checked' %}
+    </div>
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
+    </div>
+  </div>
+  <div class="row">
+      <div class="col">
+      {% include html_docs/toggle/toggle.html text='Non Selezionato' id='3' %}
+      </div>
+      <div class="col">
+      {% include html_docs/toggle/toggle.html text='Non Selezionato' disabled='disabled' id='4' %}
+      </div>
+    </div>
 </div>
-
 {% highlight html %}
-{% include esempi-lombardia/toggles.html %}
+ <div class="row">
+    <div class="col">Default</div>
+    <div class="col">Disabilitato</div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' id='1' %}
+    </div>
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Non Selezionato' id='3' %}
+    </div>
+    <div class="col">
+    {% include html_docs/toggle/toggle.html text='Non Selezionato' disabled='disabled' id='4' %}
+    </div>
+  </div>
 {% endhighlight %}
-
-
-{% capture callout %}
-####  <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
-- **[Toggles]({{ site.baseurl }}/docs/form/toggles/)**
-{% endcapture %}{% include callout.html content=callout type="info" %}

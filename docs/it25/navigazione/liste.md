@@ -20,21 +20,21 @@ Le Liste sono composte da voci attraverso le quali è possibile effettuare sessi
   <ul class="it-list">
     <li>
       <div class="list-item">
-        <div class="avatar size-lg"> <svg class="icon align-top me-1" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"> <svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span class="text">Lorem ipsum dolor</span>
         </div>
       </div>
     </li>
        <li>
       <div class="list-item">
-        <div class="avatar size-lg"> <svg class="icon align-top me-1" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"> <svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span class="text">Lorem ipsum dolor</span>
         </div>
       </div>
     </li>
        <li>
       <div class="list-item">
-        <div class="avatar size-lg"> <svg class="icon align-top me-1" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"> <svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span class="text">Lorem ipsum dolor</span>
         </div>
       </div>
@@ -97,7 +97,7 @@ Le Liste sono composte da voci attraverso le quali è possibile effettuare sessi
 <div class="it-list-wrapper">
   <ul class="it-list">
     <li>
-      <a href="#" class="list-item">
+      <a href="#" class="list-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="it-right-zone">
           <span class="text">Lorem ipsum dolor</span>
           <svg class="icon">

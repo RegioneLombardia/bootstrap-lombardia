@@ -17,3 +17,8 @@ div.output-field {
   padding: 8px;
   font-weight: 700;
 }
+
+.form-control:disabled {
+  background-color: transparent;
+  opacity: 0.7;
+}

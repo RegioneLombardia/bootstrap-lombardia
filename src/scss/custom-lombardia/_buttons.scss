@@ -1,14 +1,15 @@
 .btn-primary {
-  &.disabled {
-    color: #2a7a38;
-  }
-  &:disabled {
-    color: #2a7a38;
-  }
+  // &.disabled {
+  //   color: #2a7a38;
+  // }
+  // &:disabled {
+  //   color: #2a7a38;
+  // }
 }
 .btn-outline-primary {
   &.disabled {
     box-shadow: inset 0 0 0 2px color-hover($white);
+    color: #2a7a38;
   }
 }
 .btn-outline-secondary {
@@ -26,9 +27,9 @@
   padding: 6px 8px;
 }
 .btn-tag {
-  font-size: $card-category-size;
-  letter-spacing: $card-category-l-spacing;
-  padding: 1.5px $v-gap * 4;
+  padding: 6px 8px;
+  font-size: 14px;
+  line-height: 20px;
   border-radius: $tag-radius;
 }
 .btn-icon {
@@ -36,5 +37,16 @@
     & + * {
       margin-left: 0.25em;
     }
+  }
+}
+
+.btn-link {
+  border: none;
+  font-weight: 600;
+  color: $primary !important;
+
+  &:active,
+  &.active {
+    text-decoration: underline;
   }
 }

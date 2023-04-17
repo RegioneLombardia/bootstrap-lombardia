@@ -1,0 +1,28 @@
+<div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="img-responsive-wrapper rounded-top">
+      <div class="img-responsive">
+        <figure class="img-wrapper">
+          <img src="{{site_baseurl}}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano" />
+        </figure>
+      </div>
+    </div>
+    <div class="card-body">
+      {% if include.category %}
+      <a class="category" href="#">Lorem ipsum</a>
+      {% endif %}
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      {% if include.button %}
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+      {% endif %}
+    </div>
+    {% if include.linklist %}
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item"><a href="#">Cras justo odio</a></li>
+      <li class="list-group-item"><a href="#">Dapibus ac facilisis in</a></li>
+      <li class="list-group-item"><a href="#">Vestibulum at eros</a></li>
+    </ul>
+    {% endif %}
+  </div>
+</div>

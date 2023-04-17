@@ -22,11 +22,11 @@ Il design di default dei dropdown richiede l’applicazione della classe `.btn-d
     <div class="row">
         <div class="col">
             <div class="fst-italic">Variante Menu</div>
-            {% include esempi-lombardia/dropdown.html %}
+            {% include html_docs/dropdown/dropdown.html %}
         </div>
         <div class="col">
             <div class="fst-italic">Variante Bottone</div>
-            {% include esempi-lombardia/dropdown-button.html %}
+            {% include html_docs/dropdown/dropdown-button.html %}
             </div>
     </div>
 </div>
@@ -36,10 +36,10 @@ Il design di default dei dropdown richiede l’applicazione della classe `.btn-d
 <div class="bd-example">
     <div class="row">
         <div class="col">
-        {% include esempi-lombardia/dropdown.html %}
+        {% include html_docs/dropdown/dropdown.html %}
         </div>
         <div class="col">
-        {% include esempi-lombardia/dropdown-button.html %}
+        {% include html_docs/dropdown/dropdown-button.html %}
         </div>
     </div>
 </div>
@@ -49,7 +49,14 @@ Il design di default dei dropdown richiede l’applicazione della classe `.btn-d
 
 Le voci del menu che viene aperto al click sul pulsante possono essere personalizzate, così come il menù stesso.
 
-L'arrow di default è posto a sinistra; per spostarlo a destra o rimuoverlo è necessario utilizzare `data-popper-placement='bottom-end'` e `data-popper-placement='hidden'`.
+L'arrow di default è posto a sinistra; per spostarlo a destra o rimuoverlo è necessario utilizzare `data-popper-placement='bottom-end'` e `data-popper-placement='hidden'` nel div contenente `class="dropdown-menu"` e `data-bs-display='static'` nel bottone .
+
+```html
+<button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-bs-display="static">
+  Apri dropdown
+  <svg class="icon-expand icon icon-sm icon-light"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use></svg>
+</button>
+```
 
 {% include html_docs/dropdown/default.html %}
 

@@ -134,6 +134,27 @@ const CONFIGS = {
       },
     },
   },
+  'it-carousel-landscape-abstract-arrow': {
+    type: 'slide',
+    perPage: 1,
+    gap: 24,
+    padding: { left: 0, right: 0 },
+    arrows: true,
+    breakpoints: {
+      768: {
+        perPage: 1,
+        gap: 24,
+        padding: { left: 0, right: 0 },
+        arrows: true,
+      },
+      992: {
+        perPage: 1,
+        gap: 24,
+        padding: { left: 24, right: 24 },
+        arrows: true,
+      },
+    },
+  },
   'it-calendar-wrapper': {
     type: 'slide',
     perPage: 4,
@@ -157,6 +178,27 @@ const CONFIGS = {
         perPage: 3,
         gap: 0,
         padding: { left: 0, right: 0 },
+        arrows: false,
+      },
+    },
+  },
+  'it-carousel-landscape-abstract-two-cols': {
+    type: 'slide',
+    perPage: 2,
+    gap: 24,
+    padding: { left: 0, right: 0 },
+    arrows: false,
+    breakpoints: {
+      768: {
+        perPage: 1,
+        gap: 24,
+        padding: { left: 40, right: 40 },
+        arrows: false,
+      },
+      992: {
+        perPage: 2,
+        gap: 24,
+        padding: { left: 40, right: 40 },
         arrows: false,
       },
     },

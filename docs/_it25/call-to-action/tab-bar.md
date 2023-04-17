@@ -66,10 +66,11 @@ Inoltre, per questioni di accessibilità, è sempre **obbligatorio fornire una d
 </ul>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    $(function () {
-      $('[data-bs-toggle="tooltip"]').tooltip()
-    });
+  document.addEventListener("DOMContentLoaded", function() { 
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
   })    
 </script>
 {% endcapture %}{% include example.html content=example %}

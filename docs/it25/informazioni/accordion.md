@@ -5,69 +5,22 @@ group: informazioni
 toc: yes
 ---
 
-Può essere utilizzato per
+La componente **Accordion** permette di gestire dati e informazioni all’interno della stessa schermata. Si tratta di un serie di pannelli apribili nei quali è possibile inserire informazioni di varia natura, sia testuali che numeriche.
+Generalmente si consiglia di utilizzare un massimo **di 5/6 righe di accordion su mobile e 10/15 su desktop**.
 
-- **spezzare un output lungo** in sezioni, in modo da mostrarne una alla volta e contenere la lunghezza della pagina
-- **dividere un form** di modifica dati in piccoli pannelli, dedicati ognuno ad un argomento.
+### Versione collapse
 
-**Non** va utilizzato però **per input lunghi** e complicati o che prevedono passi successivi in quanto:
+Nella versione **collapse** dell’accordion è possibile aprire più di un pannello contemporaneamente. L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannelli chiusi.
 
-1. Rende pesante il caricamento della pagina da parte del browser
-2. Può risultare complicato segnalare errori relativi a dati che si trovano in pannelli diversi
-3. Non consente di controllare che l'utente inserisca i dati in una sequenza prestabilita.
-
-## Apertura multipla
-
-In questa versione dell’accordion è possibile **aprire più di un pannello** contemporaneamente.
-
-<div class="bd-example">
-  <div class="accordion-item">
-    <h2 class="accordion-header no_toc" id="heading1c">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
-       Account
-      </button>
-    </h2>
-    <div id="collapse1c" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1c">
-      <div class="accordion-body">
-       {% include esempi-lombardia/account_posta.html %}
-      </div>
-    </div>
-  </div>
-    <div class="accordion-item">
-    <h2 class="accordion-header no_toc" id="heading2c">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
-         Indirizzo
-      </button>
-    </h2>
-    <div id="collapse2c" class="accordion-collapse collapse" role="region" aria-labelledby="heading2c">
-      <div class="accordion-body">
-       {% include esempi-lombardia/indirizzo.html %}
-      </div>
-    </div>
-  </div>
-    <div class="accordion-item">
-    <h2 class="accordion-header no_toc" id="heading3c">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3c" aria-expanded="false" aria-controls="collapse3c">
-      Trasporti
-      </button>
-    </h2>
-    <div id="collapse3c" class="accordion-collapse collapse" role="region" aria-labelledby="heading3c">
-      <div class="accordion-body">
-       {% include esempi-lombardia/toggles.html %}
-      </div>
-    </div>
-  </div>
-</div>
-
-{% highlight html %}
+{% capture example %}
 
 <div class="accordion" id="collapseExample">
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading1c">
+    <span class="accordion-header h2" id="heading1c">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1c" aria-expanded="true" aria-controls="collapse1c">
       Account
       </button>
-    </h2>
+    </span>
     <div id="collapse1c" class="accordion-collapse collapse show" role="region" aria-labelledby="heading1c">
       <div class="accordion-body">
           {% include esempi-lombardia/account_posta.html %}
@@ -75,11 +28,11 @@ In questa versione dell’accordion è possibile **aprire più di un pannello** 
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading2c">
+    <span class="accordion-header h2" id="heading2c">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2c" aria-expanded="false" aria-controls="collapse2c">
        Indirizzo
       </button>
-    </h2>
+    </span>
     <div id="collapse2c" class="accordion-collapse collapse" role="region" aria-labelledby="heading2c">
       <div class="accordion-body">
         {% include esempi-lombardia/indirizzo.html %}
@@ -87,11 +40,11 @@ In questa versione dell’accordion è possibile **aprire più di un pannello** 
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading3c">
+    <span class="accordion-header h2" id="heading3c">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3c" aria-expanded="false" aria-controls="collapse3c">
        Trasporti
       </button>
-    </h2>
+    </span>
     <div id="collapse3c" class="accordion-collapse collapse" role="region" aria-labelledby="heading3c">
       <div class="accordion-body">
         {% include esempi-lombardia/toggles.html %}
@@ -99,72 +52,33 @@ In questa versione dell’accordion è possibile **aprire più di un pannello** 
     </div>
   </div>
 </div>
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
-## Apertura singola
+### Versione according
 
-Aggiungendo ad ogni elemento `.accordion-collapse` l'attributo `data-parent` con il relativo _ID_ del contenitore padre, l'apertura di un pannello provocherà la chiusura degli altri.
+Con la versione **according** è possibile aprire un solo pannello di contenuti alla volta. Questo per rendere chiaramente circoscritto il contenuto in oggetto.
 
-<div class="bd-example"  id="accordionExample1">
-<div class="accordion-item">
-    <h2 class="accordion-header " id="heading1">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-       Account
-      </button>
-    </h2>
-    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
-      <div class="accordion-body">
-           {% include esempi-lombardia/account_posta2.html %}
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header " id="heading2">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-      Indirizzo
-      </button>
-    </h2>
-    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
-      <div class="accordion-body">
-         {% include esempi-lombardia/indirizzo2.html %}
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header " id="heading3">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-      Trasporti
-      </button>
-    </h2>
-    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
-      <div class="accordion-body">
-        {% include esempi-lombardia/toggles2.html %}
-      </div>
-    </div>
-  </div>
-</div>
-
-{% highlight html %}
+{% capture example %}
 
 <div class="accordion" id="accordionExample1">
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading1">
+    <span class="accordion-header h2" id="heading1">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
         Account
       </button>
-    </h2>
+    </span>
     <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading1">
       <div class="accordion-body">
-         {% include esempi-lombardia/account_posta2.html %}
+       {% include esempi-lombardia/account_posta2.html %}
       </div>
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading2">
+    <span class="accordion-header h2" id="heading2">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-       Indirizzo
+        Indirizzo
       </button>
-    </h2>
+    </span>
     <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading2">
       <div class="accordion-body">
         {% include esempi-lombardia/indirizzo2.html %}
@@ -172,72 +86,117 @@ Aggiungendo ad ogni elemento `.accordion-collapse` l'attributo `data-parent` con
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading3">
+    <span class="accordion-header h2" id="heading3">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-        Trasporto
-      </button>
-    </h2>
-    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
-      <div class="accordion-body">
-       {% include esempi-lombardia/toggles2.html %}
-      </div>
-    </div>
-  </div>
-</div>
-{% endhighlight %}
-
-## Icona a sinistra
-
-Aggiungendo la classe `.accordion-left-icon` ad `.accordion`, si ottiene una variante in cui l’icona chevron che indica lo stato di apertura è sostituita da segni meno/più allineati a sinistra del titolo dell’header.
-
-<div class="bd-example accordion  accordion-left-icon" id="accordionExampleLft">
-   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading1l">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1l" aria-expanded="true" aria-controls="collapse1l">
-      Account
-      </button>
-    </h2>
-    <div id="collapse1l" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading1l">
-      <div class="accordion-body">
-        {% include esempi-lombardia/account_posta3.html %}
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header " id="heading2l">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2l" aria-expanded="false" aria-controls="collapse2l">
-      Indirizzo
-      </button>
-    </h2>
-    <div id="collapse2l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading2l">
-      <div class="accordion-body">
-         {% include esempi-lombardia/indirizzo3.html %}
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header " id="heading3l">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3l" aria-expanded="false" aria-controls="collapse3l">
         Trasporti
       </button>
-    </h2>
-    <div id="collapse3l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading3l">
+    </span>
+    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample1" role="region" aria-labelledby="heading3">
       <div class="accordion-body">
-         {% include esempi-lombardia/toggles3.html %}
+        {% include esempi-lombardia/toggles2.html %}
       </div>
     </div>
   </div>
 </div>
+{% endcapture %}{% include example.html content=example %}
 
-{% highlight html %}
+### Versione nested
+
+La versione **nested** dell’accordion permette di gestire in maniera ottimale la gerarchia delle informazioni inserite all’interno della componente, nel caso in cui si debbano inserire pannelli secondari. In questo caso, i pannelli secondari appariranno nidificati all’interno di quelli principali.
+
+{% capture example %}
+
+<div class="accordion" id="accordionExample2">
+  <div class="accordion-item">
+    <span class="accordion-header h2" id="heading1a">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1a" aria-expanded="true" aria-controls="collapse1a">
+        Elemento Accordion #1
+      </button>
+    </span>
+    <div id="collapse1a" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading1a">
+      <div class="accordion-body">
+        <div class="accordion" id="accordionExample2N">
+          <div class="accordion-item">
+            <span class="accordion-header h3" id="heading1n">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1n" aria-expanded="true" aria-controls="collapse1n">
+                Elemento Accordion annidato #1
+              </button>
+            </span>
+            <div id="collapse1n" class="accordion-collapse collapse show" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading1n">
+              <div class="accordion-body">
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <span class="accordion-header h3" id="heading2n">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2n" aria-expanded="false" aria-controls="collapse2n">
+                Elemento Accordion annidato #2
+              </button>
+            </span>
+            <div id="collapse2n" class="accordion-collapse collapse" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading2n">
+              <div class="accordion-body">
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <span class="accordion-header h3" id="heading3n">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3n" aria-expanded="false" aria-controls="collapse3n">
+                Elemento Accordion annidato #3
+              </button>
+            </span>
+            <div id="collapse3n" class="accordion-collapse collapse" data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading3n">
+              <div class="accordion-body">
+                Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <span class="accordion-header h2" id="heading2a">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2a" aria-expanded="false" aria-controls="collapse2a">
+        Elemento Accordion #2
+      </button>
+    </span>
+    <div id="collapse2a" class="accordion-collapse collapse" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading2a">
+      <div class="accordion-body">
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <span class="accordion-header h2" id="heading3a">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3a" aria-expanded="false" aria-controls="collapse3a">
+        Elemento Accordion #3
+      </button>
+    </span>
+    <div id="collapse3a" class="accordion-collapse collapse" data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading3a">
+      <div class="accordion-body">
+        Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+      </div>
+    </div>
+  </div>
+</div>
+{% endcapture %}{% include example.html content=example %}
+
+### Accordion con icone
+
+**Posizionamento delle icone**
+Le icone per l’apertura dei pannelli possono essere delle chevron ma anche altre (si veda l’esempio di seguito con +/- come icone) e possono essere poste sia a destra (come nell’esempio sopra) che a sinistra come mostrato di seguito.
+
+{% capture example %}
 
 <div class="accordion accordion-left-icon" id="accordionExampleLft">
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading1l">
+    <span class="accordion-header h2" id="heading1l">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1l" aria-expanded="true" aria-controls="collapse1l">
        Account
       </button>
-    </h2>
+    </span>
     <div id="collapse1l" class="accordion-collapse collapse show" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading1l">
       <div class="accordion-body">
         {% include esempi-lombardia/account_posta3.html %}
@@ -245,11 +204,11 @@ Aggiungendo la classe `.accordion-left-icon` ad `.accordion`, si ottiene una var
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading2l">
+    <span class="accordion-header h2" id="heading2l">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2l" aria-expanded="false" aria-controls="collapse2l">
         Indirizzo
       </button>
-    </h2>
+    </span>
     <div id="collapse2l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading2l">
       <div class="accordion-body">
         {% include esempi-lombardia/indirizzo3.html %}
@@ -257,11 +216,11 @@ Aggiungendo la classe `.accordion-left-icon` ad `.accordion`, si ottiene una var
     </div>
   </div>
   <div class="accordion-item">
-    <h2 class="accordion-header " id="heading3l">
+    <span class="accordion-header h2" id="heading3l">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3l" aria-expanded="false" aria-controls="collapse3l">
         Trasporti
       </button>
-    </h2>
+    </span>
     <div id="collapse3l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading3l">
       <div class="accordion-body">
          {% include esempi-lombardia/toggles3.html %}
@@ -269,15 +228,4 @@ Aggiungendo la classe `.accordion-left-icon` ad `.accordion`, si ottiene una var
     </div>
   </div>
 </div>
-{% endhighlight %}
-
-Per maggiori dettagli sui metodi di implementazione si veda la relativa **[documentazione tecnica]({{ site.baseurl }}/docs/componenti/collapse/#implementazione)**.
-
-{% capture callout %}
-
-#### <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-
-Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:
-
-- **[Gruppi di elementi richiudibili]({{ site.baseurl }}/docs/componenti/collapse/#gruppi-di-elementi-richiudibili)**
-  {% endcapture %}{% include callout.html content=callout type="info" %}
+{% endcapture %}{% include example.html content=example %}

@@ -1,17 +1,17 @@
 .steppers {
   .steppers-header {
-    ul{
-    li {
-      // states
-      &.error {
-        color: $danger;
-        font-weight: 600;
-        .icon {
-          fill: $danger;
+    ul {
+      li {
+        // states
+        &.error {
+          color: $danger;
+          font-weight: 600;
+          .icon {
+            fill: $danger;
+          }
         }
       }
     }
-  }
     // steppers
     span {
       &.steppers-index {
@@ -22,8 +22,6 @@
         display: block;
       }
     }
-
-    
   }
 }
 
@@ -64,7 +62,7 @@
 }
 
 .it25-wizard {
-  border: 2px solid $primary;
+  // border: 2px solid $primary;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -78,12 +76,13 @@
   &::after {
     content: ' ';
     width: 96%;
-    background-color: $primary;
+    // background-color: $primary;
     position: absolute;
     height: 4px;
     right: 10px;
     top: 39px;
     z-index: -1;
+    border-bottom: 3px dashed $primary;
   }
   .it-pin-wrapper {
     display: flex;
@@ -125,6 +124,123 @@
     .pin-icon {
       background-color: $danger;
       border-color: $danger;
+    }
+  }
+}
+
+.it25-wizard-detail {
+  // .c-stepper {
+  //   position: relative;
+  //   display: flex;
+  //   padding-top: 16px;
+  //   padding-bottom: 16px;
+  // }
+
+  // .c-stepper_item {
+  //   display: flex;
+  //   flex-direction: column;
+  //   flex: 1;
+  //   text-align: center;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+
+  // .c-stepper_card {
+  //   font-weight: 600;
+  //   font-size: 20px;
+  //   color: $primary;
+  //   border-radius: 8px;
+  //   width: 10em;
+  //   height: 50px;
+  //   align-items: center;
+  //   justify-content: center;
+  //   box-sizing: border-box;
+  //   display: flex;
+  //   border: 2px solid lightgray;
+  //   background-color: $white;
+  // }
+
+  // .c-stepper_desc {
+  //   color: grey;
+  //   font-size: clamp(0.85rem, 2vw, 1rem);
+  //   padding-left: var(--spacing);
+  //   padding-right: var(--spacing);
+  // }
+
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  .it-pin-title {
+    font-weight: 600;
+    color: $primary;
+  }
+  ul {
+    display: contents;
+  }
+
+  &::after {
+    content: ' ';
+    width: 96%;
+    background-color: $neutral-2;
+    position: absolute;
+    height: 4px;
+    right: 10px;
+    top: 39px;
+    z-index: -1;
+  }
+  .it-pin-wrapper {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+  }
+  .pin-icon {
+    border-radius: $border-radius;
+    width: 10em;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    display: flex;
+    border: 2px solid lightgray;
+    background-color: $white;
+  }
+  svg {
+    fill: lightgray !important;
+  }
+  .active {
+    .pin-icon {
+      background-color: $primary;
+      border-color: $primary;
+    }
+    svg {
+      fill: white !important;
+    }
+    .it-pin-title {
+      color: $white;
+    }
+  }
+  .confirmed {
+    .pin-icon {
+      border-color: $success;
+    }
+    svg {
+      fill: green !important;
+    }
+  }
+  .error {
+    .pin-icon {
+      background-color: $danger;
+      border-color: $danger;
+    }
+    .it-pin-title {
+      color: $white;
+    }
+  }
+  .off {
+    .it-pin-title {
+      opacity: 0.5;
     }
   }
 }

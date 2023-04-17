@@ -1,0 +1,31 @@
+.it25-gallery {
+  padding: 1.5rem;
+  // .splide__slide {
+  //   width: calc(((100% + 24px) / 2) - 24px) !important;
+  // }
+
+  .it25-image-content {
+    background-color: transparent;
+
+    .img-responsive-wrapper {
+      border-radius: 0;
+    }
+
+    .card-body,
+    .card-title {
+      color: $white;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 24px;
+    }
+  }
+  .splide__pagination button {
+    background: $white;
+  }
+  .splide__pagination button.is-active {
+    box-shadow: 0px 0px 7px 3px #ffff;
+    background: $white;
+  }
+}
