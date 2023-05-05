@@ -1,0 +1,39 @@
+.ios-icon {
+  background: $radial-gradient-1;
+  fill: $white;
+  border-radius: 14px;
+  width: 60px;
+  height: 60px;
+
+  &.xl {
+    width: 167px;
+    height: 167px;
+    border-radius: 36px;
+  }
+
+  &.lg {
+    width: 120px;
+    height: 120px;
+    border-radius: 24px;
+  }
+
+  &.sm {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  &.xs {
+    width: 29px;
+    height: 29px;
+    border-radius: 6px;
+  }
+}
+
+.a-icon {
+  background: $radial-gradient-1;
+  fill: $white;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+}

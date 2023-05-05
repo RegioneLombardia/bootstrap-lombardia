@@ -1,58 +1,19 @@
-<div class="bd-example">
-  <div class="it-header-slim-wrapper it25-top-bar">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="it-header-slim-wrapper-content">
-            <a class="navbar-brand" href="#">
-              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
+              <svg class="icon icon-white custom-circle-icon">
+                <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use>
+              </svg>
+              <span class="d-none d-md-block">Accedi</span>
+              <span class="d-none d-md-block fst-italic">o Registrati</span>
             </a>
-            <div class="header-slim-right-zone">
-              <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
-                <svg class="icon icon-white custom-circle-icon">
-                  <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use>
-                </svg>
-                <span class="d-none d-md-block">Accedi</span>
-                <span class="d-none d-md-block fst-italic">o Registrati</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="it-header-center-wrapper it25-barra-ist">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="it-header-center-content-wrapper">
-            <div class="it-brand-wrapper">
-              <a href="#">
-                <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-                {% if page.double-logo %}
-                <img
-                  src="{{ site.baseurl }}/dist/assets/img/logo-aria.png"
-                  alt="logo azienda regionale innovazione e acquisti"
-                  class="it25-header-logo d-none d-md-block"
-                />
-                {% endif %}
-                <div class="it-brand-text">ACRONIMO Nome applicativo</div>
-              </a>
-            </div>
-            <div class="it-right-zone">
-              <div class="it-search-wrapper">
-                <input
-                  id="search-input"
-                  class="form-control d-none d-lg-flex mr-sm-2 ml-auto"
-                  type="search"
-                  placeholder="Cerca"
-                  aria-label="Testo per ricerca"
-                />
-                <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                  <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </div>

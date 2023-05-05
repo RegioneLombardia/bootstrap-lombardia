@@ -1,0 +1,57 @@
+.it25-info-list {
+  border-radius: 10px;
+  padding: 0;
+
+  .accordion-item .accordion-header button {
+    text-transform: uppercase;
+    color: $primary-blue;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  .accordion {
+    border-bottom: none;
+  }
+
+  .accordion-header .accordion-button {
+    border: 1px solid #e2e2e2;
+    border-top: none;
+    border-color: #e2e2e2 !important;
+  }
+  .accordion-item:first-of-type,
+  .accordion-item:first-of-type button {
+    border-top: 1px solid #e2e2e2;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .accordion-button:not(.collapsed),
+  .accordion-body {
+    border-left: 8px solid $primary;
+    background: rgba(191, 215, 195, 0.25);
+    color: #0f324b;
+  }
+  .accordion-button:not(.collapsed) {
+    border-color: $primary !important;
+    border-bottom: none;
+    border-top: none !important;
+    border-right: none !important;
+  }
+
+  .accordion-header .accordion-button:after {
+    border: 1px solid;
+    border-radius: 50%;
+    color: $primary-blue;
+    content: url("data:image/svg+xml,<svg version='1.1' id='Livello_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve' fill='hsla(205, 67%, 18%, 1)' > <polygon points='16.5,15.4 11.6,10.5 6.7,15.4 6,14.6 11.6,9 17.2,14.6 '/> </svg>");
+  }
+  .accordion-header .accordion-button:not(.collapsed):after {
+    border: 1px solid $primary;
+    border-radius: 50%;
+    background-color: $primary;
+    content: url("data:image/svg+xml,<svg version='1.1' id='Livello_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 24 24' style='enable-background:new 0 0 24 24;' xml:space='preserve' fill='hsla(0, 0%, 100%, 1)' > <polygon points='16.5,15.4 11.6,10.5 6.7,15.4 6,14.6 11.6,9 17.2,14.6 '/> </svg>");
+  }
+}

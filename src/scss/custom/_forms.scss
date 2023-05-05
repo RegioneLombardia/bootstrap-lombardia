@@ -116,6 +116,7 @@ textarea {
   background-position: center right !important;
   background-repeat: no-repeat !important;
   background-size: 45px 45% !important;
+  background-color: transparent;
   &:disabled,
   &[readonly] {
     cursor: not-allowed;

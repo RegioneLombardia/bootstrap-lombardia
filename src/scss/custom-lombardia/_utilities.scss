@@ -1,0 +1,8 @@
+.bg-device-white {
+  background-image: url(/dist/assets/img/bg-mobile-white.png) !important;
+  background-color: $white !important;
+}
+
+.bg-device-radiant {
+  background-image: url(/dist/assets/img/bg-mobile-green.png), $radial-gradient-1 !important;
+}

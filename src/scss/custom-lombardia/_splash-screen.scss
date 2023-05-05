@@ -1,0 +1,70 @@
+.splash {
+  cursor: pointer;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  transition: all ease-in-out 600ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Titillium Web';
+
+  .hidden {
+    transition: 0.5s;
+    display: none;
+  }
+  .splash-header {
+    height: 60%;
+    color: $primary;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  &.green {
+    // background: $radial-gradient-1, url('/dist/assets/img/bg-mobile-green.png');
+    background-size: cover;
+    .splash-header {
+      height: 60%;
+      color: $white;
+    }
+    .splash-text {
+      overflow-wrap: break-word;
+      inline-size: 150px;
+      margin: auto;
+      font-size: 30px;
+      color: $white;
+      line-height: 98.6%;
+    }
+  }
+
+  &.gray {
+    background-image: url('/dist/assets/img/image-bg-rotate.png');
+    background-size: cover;
+
+    .splash-header {
+      display: flex;
+      align-items: center;
+    }
+
+    .splash-text {
+      overflow-wrap: break-word;
+      inline-size: 150px;
+      font-size: 30px;
+      line-height: 98.6%;
+    }
+
+    img,
+    .splash-text {
+      display: inline-block;
+    }
+    img {
+      vertical-align: initial;
+      margin: auto;
+    }
+  }
+}

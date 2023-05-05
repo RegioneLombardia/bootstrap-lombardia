@@ -11,6 +11,9 @@
     border-color: $primary-blue !important;
   }
 }
+.primary-blue-fill {
+  fill: $primary-blue !important;
+}
 
 // primary gray ---------------------------------
 .primary-gray-bg {
@@ -37,5 +40,27 @@
   border-color: $neutral-3 !important;
   &.border {
     border-color: $neutral-3 !important;
+  }
+}
+
+.radial-1 {
+  background: $radial-gradient-1;
+}
+
+.radial-2 {
+  background: $radial-gradient-2;
+}
+
+// secondary gray ---------------------------------
+.secondary-gray-bg {
+  background-color: $secondary-gray !important;
+}
+.secondary-gray-color {
+  color: $secondary-gray !important;
+}
+.secondary-gray-border-color {
+  border-color: $secondary-gray !important;
+  &.border {
+    border-color: $secondary-gray !important;
   }
 }

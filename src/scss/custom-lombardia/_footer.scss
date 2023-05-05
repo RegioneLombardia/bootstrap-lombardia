@@ -40,3 +40,32 @@
     }
   }
 }
+
+.it25-footer-mobile {
+  padding: 6px;
+  background: $white;
+  ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+      width: 100%;
+    }
+  }
+
+  .logo {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+  }
+  .version {
+    border-left: 1px solid #cae4ea;
+    padding-left: 0.8rem;
+  }
+}

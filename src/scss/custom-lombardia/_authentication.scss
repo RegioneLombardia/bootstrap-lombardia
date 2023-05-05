@@ -1,0 +1,120 @@
+.card-auth {
+  padding: 28px 20px;
+
+  .card-title {
+    background: linear-gradient(137.11deg, #297a38 -43.87%, #3da764 14.15%, #297a38 123.9%);
+    border-radius: 7px;
+    height: 45px;
+    text-align: center;
+    span {
+      font-weight: 700;
+      line-height: 27px;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-text {
+    &.it25-img {
+      margin: auto;
+      display: block;
+      text-align: center;
+    }
+
+    &.it25-title {
+      text-align: center;
+      font-weight: 700;
+      line-height: 27px;
+    }
+  }
+
+  .card-input {
+    margin: 0 2rem;
+    input {
+      border: 1px solid #e1e1e1;
+      border-radius: 6px;
+    }
+    .simple-link {
+      text-decoration: underline;
+      text-align: center;
+      color: #0066cc;
+      margin-top: 10px;
+      margin-bottom: 32px;
+    }
+  }
+  .it-card-footer {
+    justify-content: center;
+    .btn {
+      border-radius: 6px;
+      font-weight: 700;
+    }
+  }
+}
+
+.card-spid {
+  padding: 28px 20px;
+
+  .card {
+    background: transparent;
+  }
+  .card-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    color: #353535;
+  }
+
+  .spid {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    background: $white;
+    color: #0066cc;
+    box-sizing: content-box;
+    transition: background-color 0.2s;
+    svg {
+      fill: #0066cc !important;
+    }
+  }
+
+  .btn-spid,
+  .btn-spid:active {
+    background: #0066cc;
+    color: $white;
+    border-radius: 5px;
+    padding: 10px 12px;
+    .enter {
+      border-left: 1px solid;
+      padding-left: 6px;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .it25-img,
+  .it25-btn {
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .it25-divider {
+    width: 100%;
+    height: 2px;
+    background: $custom-range-thumb-bg;
+    margin: 1rem 0;
+  }
+
+  .it25-accesso-code {
+    font-size: 16px !important;
+  }
+}

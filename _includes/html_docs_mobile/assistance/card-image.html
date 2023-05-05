@@ -1,0 +1,16 @@
+<div class="card-wrapper it25-info-box {{include.class}}">
+  <div class="card">
+    <div class="card-body">
+      <div class="my-1">
+        <svg class="icon icon-sm primary-blue-fill"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-image"></use></svg>
+      </div>
+      {% if include.title %}
+      <a href="#">
+        <h3 class="card-title h5 primary-blue-color">{{include.action}}</h3>
+      </a>
+      {% endif %} {% if include.text %}
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing...</p>
+      {% endif %}
+    </div>
+  </div>
+</div>

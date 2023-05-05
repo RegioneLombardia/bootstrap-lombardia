@@ -1,0 +1,60 @@
+.it25-profile {
+  .header {
+    background: $radial-gradient-2;
+    border-radius: 0;
+
+    .card-title {
+      text-align: center;
+      .user-info {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: $white;
+        width: 100%;
+        display: block;
+      }
+      .user-email {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: $white;
+        width: 100%;
+        display: block;
+      }
+    }
+    .icon-user {
+      display: inline-flex;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      align-items: center;
+      box-sizing: content-box;
+      transition: background-color 0.2s;
+      border: 1px solid $white;
+    }
+
+    .user-button {
+      text-align: center;
+      button {
+        border-radius: $border-radius;
+        color: $primary;
+        padding: 6px 12px;
+      }
+    }
+  }
+}
+
+.exit,
+.exit:focus,
+.exit:hover,
+.exit:active,
+.exit:focus-visible {
+  box-shadow: none !important;
+  color: #d92828;
+  outline: none !important;
+  svg {
+    fill: #d92828;
+  }
+}

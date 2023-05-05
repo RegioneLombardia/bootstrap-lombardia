@@ -26,6 +26,20 @@
   }
 }
 
+// black
+.black-bg {
+  background-color: $black !important;
+}
+.black-color {
+  color: $black !important;
+}
+.black-border-color- {
+  border-color: $black !important;
+  &.border {
+    border-color: $black !important;
+  }
+}
+
 // primary colors tinte e ombre------------------
 
 $colorlist: $primary-a1 $primary-a2 $primary-a3 $primary-a4 $primary-a5 $primary-a6 $primary-a7 $primary-a8 $primary-a9 $primary-a10 $primary-a11 $primary-a12;

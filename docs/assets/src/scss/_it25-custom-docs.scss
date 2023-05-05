@@ -1,0 +1,120 @@
+.horizontal-scroll-example {
+  width: 21rem;
+}
+
+.bd-example-mobile {
+  background: #fbfbff;
+  border-radius: 50px;
+  padding: 2rem;
+  margin-top: 1rem;
+  filter: drop-shadow(0px 4px 13px #d9d9d9);
+
+  &.xs {
+    width: 20rem;
+    height: 15rem;
+  }
+
+  &.sm {
+    width: 25rem;
+    height: 20rem;
+  }
+
+  &.md {
+    width: 30rem;
+    height: 25rem;
+  }
+
+  &.center-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.example-card-sm {
+  width: 100px;
+  height: 80px;
+}
+
+.scroll-card-mobile {
+  height: 36vh;
+}
+
+.overlay-test {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  background: #7792a3;
+  .overlay-content {
+    position: relative;
+  }
+
+  .overlay-footer a {
+    padding: 10px;
+  }
+}
+
+.rounded-color {
+  height: 50px;
+  min-width: 150px;
+  box-sizing: border-box;
+  padding: 0.25rem;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
+.border-custom {
+  border: 1px solid #505051;
+}
+
+.rounded-card {
+  box-shadow: 0px 8px 13px rgba(0, 51, 84, 0.1);
+  border-radius: 8px;
+  height: 90px;
+  background: #ffffff;
+  color: $primary-blue;
+}
+
+.rounded-card-negative {
+  border-radius: 8px;
+  height: 90px;
+  background: #ffffff;
+  color: $primary-blue;
+}
+
+.autocomplete-list-example {
+  display: block;
+  position: relative;
+}
+
+.app-naming {
+  border-radius: 36px !important;
+  padding: 1.75rem;
+  color: #fff;
+  background-color: #597483;
+}
+
+.device,
+.device-auto {
+  width: 340px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 13px #d9d9d9;
+  overflow: hidden;
+  background: #f5f6fa;
+  iframe {
+    border-radius: 40px;
+  }
+  .splash {
+    border-radius: 40px;
+  }
+
+  .it-header-slim-wrapper-content {
+    img {
+      display: block !important;
+    }
+  }
+}
+
+.device {
+  height: 640px;
+}

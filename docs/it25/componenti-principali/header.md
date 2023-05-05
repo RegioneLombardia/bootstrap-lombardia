@@ -16,18 +16,26 @@ La componente **barra istituzionale**, fornita in diverse varianti, applicabili 
 
 In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.
 
+<div class="bd-example">
 {% include html_docs/header/header_base.html %}
+{% include html_docs/header/barra-istituzionale-base.html display='d-none' %}
+</div>
 {% highlight html %}
 {% include html_docs/header/header_base.html %}
+{% include html_docs/header/barra-istituzionale-base.html display='d-none' %}
 {% endhighlight %}
 
 ## Header con topbar di servizio e search field
 
 La topbar può accogliere informazioni come ad esempio l’accesso utente. Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.
 
+<div class="bd-example">
 {% include html_docs/header/header_topbar_search.html %}
+{% include html_docs/header/barra-istituzionale-base.html %}
+</div>
 {% highlight html %}
 {% include html_docs/header/header_topbar_search.html %}
+{% include html_docs/header/barra-istituzionale-base.html %}
 {% endhighlight %}
 
 ## Header con accesso effettuato e dropdown
@@ -40,6 +48,7 @@ seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza de
 </div>
 {% highlight html %}
 {% include html_docs/header/header_login_dropdown.html %}
+{% include html_docs/header/barra-istituzionale-base.html %}
 {% endhighlight %}
 
 ## Header hamburger menu

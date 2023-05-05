@@ -1,0 +1,35 @@
+.it25-toolbar {
+  min-height: 55px;
+  height: auto;
+
+  ul {
+    height: 55px;
+  }
+  a.active {
+    font-weight: 700;
+  }
+}
+
+.it25-toolbar-section {
+  min-height: 55px;
+  height: auto;
+
+  ul {
+    height: 55px;
+    padding: 1rem;
+  }
+  a.active,
+  a.active .icon {
+    opacity: 1;
+    color: $primary-blue !important;
+    fill: $primary-blue !important;
+  }
+
+  a {
+    opacity: 0.8;
+  }
+
+  .toolbar .toolbar-label {
+    font-weight: 400;
+  }
+}

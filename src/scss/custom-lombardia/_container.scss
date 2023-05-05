@@ -1,0 +1,25 @@
+.container-mobile {
+  text-align: center;
+
+  label {
+    width: 100%;
+  }
+
+  .btn {
+    border-radius: $border-radius;
+  }
+
+  .section {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    li {
+      display: inline-block;
+    }
+  }
+}
