@@ -1,26 +1,19 @@
 // HSB (https://it.wikipedia.org/wiki/Hue_Saturation_Brightness, coincidente con il modello HSV)
 // è lo spazio colore scelto per ottenere le varianti colore della tonalità primaria.
 
-// lombardia
-$lombardia: hsb(131, 66, 48);
-$primary: $lombardia;
-$primary-h: 131;
-$primary-s: 66;
-$primary-b: 48;
-
 // Color system
 $black: hsl(0, 0%, 0%) !default;
 $white: hsl(0, 0%, 100%) !default;
 
-$gray-100: hsb(225, 0, 90) !default;
-$gray-200: hsb(225, 0, 80) !default;
-$gray-300: hsb(225, 0, 70) !default;
-$gray-400: hsb(225, 0, 60) !default;
-$gray-500: hsb(225, 0, 50) !default;
-$gray-600: hsb(225, 0, 40) !default;
-$gray-700: hsb(225, 0, 30) !default;
-$gray-800: hsb(225, 0, 20) !default;
-$gray-900: hsb(225, 0, 10) !default;
+$gray-100: hsl(0, 0%, 96%) !default; // color-gray-96
+$gray-200: hsl(0, 0%, 90%) !default; // color-gray-90
+$gray-300: hsl(0, 0%, 83%) !default; // color-gray-83
+$gray-400: hsl(0, 0%, 64%) !default; // color-gray-64
+$gray-500: hsl(0, 0%, 45%) !default; // color-gray-45
+$gray-600: hsl(0, 0%, 32%) !default; // color-gray-32
+$gray-700: hsl(0, 0%, 25%) !default; // color-gray-25
+$gray-800: hsl(0, 0%, 15%) !default; // color-gray-15
+$gray-900: hsl(0, 0%, 10%) !default; // color-gray-10
 
 $grays: () !default;
 $grays: map-merge(
@@ -50,36 +43,35 @@ $primary-l: 40 !default; // Kit UI
 
 $primary: hsb($primary-h, $primary-s, $primary-b) !default; // color-blue-40
 
-$italia: $primary !default;
 $indigo: hsb(243, 70, 100) !default;
 $purple: hsb(243, 40, 100) !default;
 $pink: hsb(350, 30, 100) !default;
-$red: hsb(351, 75, 97) !default;
-$orange: hsb(36, 100, 100) !default;
+$red: hsl(350, 60%, 50%) !default; // color-red-50
+$orange: hsl(36, 100%, 30%) !default; // color-orange-30
 $yellow: hsb(44, 55, 100) !default;
-$green: hsb(159, 100, 80) !default;
-$teal: hsb(178, 95, 85) !default;
+$green: hsl(160, 100%, 25%) !default; // color-emerald-25
+$teal: hsl(178, 90%, 32%) !default;
 $cyan: hsb(178, 100, 100) !default;
 $blue: hsb(210, 100, 90) !default;
 $light: hsb(255, 5, 95) !default;
-$dark: hsb(210, 70, 30) !default;
+$dark: hsl(210, 54%, 20%) !default; // color-slate-20
 
 $yiq-text-light: $white !default;
 $yiq-text-dark: $black !default;
 
-$red-accessible: hsb(351, 75, 85) !default;
-$orange-accessible: hsb(36, 100, 65) !default;
+$red-accessible: $red !default;
+$orange-accessible: $orange !default;
 $yellow-accessible: hsb(44, 100, 59) !default;
-$green-accessible: hsb(159, 100, 53) !default;
+$green-accessible: $green !default;
 
 $gray-primary: hsb(210, 38.9, 44.3) !default;
-$gray-secondary: hsb(210, 29, 51) !default;
+$gray-secondary: hsl(210, 17%, 44%) !default; // color-slate-44
 $gray-tertiary: hsb(205, 35, 54) !default;
 $gray-quaternary: hsb(238, 1, 100) !default;
-$gray-border: hsb(240, 1, 70) !default;
-$gray-disabled: hsb(225, 5, 95) !default;
-$gray-label-disabled: hsb(222, 5, 79) !default;
-$gray-border-disabled: hsb(224, 8, 95) !default;
+$gray-border: hsl(210, 4%, 78%) !default; // color-border-subtle
+$gray-disabled: hsl(210, 3%, 85%) !default; // color-background-disabled
+$gray-label-disabled: hsl(210, 12%, 44%) !default; // color-text-disabled
+$gray-border-disabled: $gray-disabled !default; // color-border-disabled
 
 $secondary: $gray-secondary !default;
 
@@ -105,11 +97,6 @@ $colors: map-merge(
   ),
   $colors
 );
-
-// Main Palette
-// $primary: $blue !default;
-$primary: $color-primary !default;
-$secondary: $gray-secondary !default;
 
 // Border Color
 $border-color: $gray-border !default;
@@ -157,39 +144,25 @@ $analogue-2-s: 95;
 $analogue-2-b: 85;
 $analogue-2: hsb($analogue-2-h, $analogue-2-s, $analogue-2-b) !default;
 // Complementari e triadici
-// $complementary-1-h: 351;
-// $complementary-1-s: 75;
-// $complementary-1-b: 97;
-$complementary-1-h: 360;
-$complementary-1-s: 82;
-$complementary-1-b: 85;
+$complementary-1-h: 351;
+$complementary-1-s: 75;
+$complementary-1-b: 97;
 $complementary-1: hsb($complementary-1-h, $complementary-1-s, $complementary-1-b) !default;
-// $complementary-2-h: 36;
-// $complementary-2-s: 100;
-// $complementary-2-b: 100;
-$complementary-2-h: 37;
-$complementary-2-s: 88;
-$complementary-2-b: 64;
-// $complementary-2: hsb($complementary-2-h, $complementary-2-s, $complementary-2-b) !default;
-$complementary-2: #a26b13 !default;
-// $complementary-3-h: 159;
-// $complementary-3-s: 100;
-// $complementary-3-b: 81;
+$complementary-2-h: 36;
+$complementary-2-s: 100;
+$complementary-2-b: 100;
+$complementary-2: hsb($complementary-2-h, $complementary-2-s, $complementary-2-b) !default;
 $complementary-3-h: 159;
 $complementary-3-s: 100;
-$complementary-3-b: 53;
+$complementary-3-b: 81;
 $complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b) !default;
 
 // NEUTRAL COLORS DEFINITIONS
-// $neutral-1-h: 210;
-// $neutral-1-s: 70;
-// $neutral-1-b: 30;
-$neutral-1-h: 204;
-$neutral-1-s: 100;
-$neutral-1-b: 33;
+$neutral-1-h: 210;
+$neutral-1-s: 70;
+$neutral-1-b: 30;
 $neutral-1: hsb($neutral-1-h, $neutral-1-s, $neutral-1-b) !default;
-// $neutral-2-h: 210;
-$neutral-2-h: 225;
+$neutral-2-h: 210;
 $neutral-2-s: 5;
 $neutral-2-b: 95;
 $neutral-2: hsb($neutral-2-h, $neutral-2-s, $neutral-2-b) !default;
@@ -387,27 +360,16 @@ $complementary-3-b8: hsb($complementary-3-h, $complementary-3-s - 70, $complemen
 
 // tinte e ombre
 /***************************** NEUTRAL 1 ****************************************/
-// $neutral-1-a10: hsb($neutral-1-h, $neutral-1-s, $neutral-1-b) !default;
-// $neutral-1-a9: hsb($neutral-1-h, $neutral-1-s - 20, $neutral-1-b + 7) !default;
-// $neutral-1-a8: hsb($neutral-1-h, $neutral-1-s - 30, $neutral-1-b + 14) !default;
-// $neutral-1-a7: hsb($neutral-1-h, $neutral-1-s - 40, $neutral-1-b + 21) !default;
-// $neutral-1-a6: hsb($neutral-1-h, $neutral-1-s - 50, $neutral-1-b + 28) !default;
-// $neutral-1-a5: hsb($neutral-1-h, $neutral-1-s - 60, $neutral-1-b + 35) !default;
-// $neutral-1-a4: hsb($neutral-1-h, $neutral-1-s - 64, $neutral-1-b + 42) !default;
-// $neutral-1-a3: hsb($neutral-1-h, $neutral-1-s - 68, $neutral-1-b + 49) !default;
-// $neutral-1-a2: hsb($neutral-1-h, $neutral-1-s - 71, $neutral-1-b + 56) !default;
-// $neutral-1-a1: hsb($neutral-1-h, $neutral-1-s - 73, $neutral-1-b + 63) !default;
-
-$neutral-1-a10: hsb($neutral-1-h, $neutral-1-s, $neutral-1-b);
-$neutral-1-a9: rgba($neutral-1-a10, 0.9);
-$neutral-1-a8: rgba($neutral-1-a10, 0.8);
-$neutral-1-a7: rgba($neutral-1-a10, 0.7);
-$neutral-1-a6: rgba($neutral-1-a10, 0.6);
-$neutral-1-a5: rgba($neutral-1-a10, 0.5);
-$neutral-1-a4: rgba($neutral-1-a10, 0.4);
-$neutral-1-a3: rgba($neutral-1-a10, 0.3);
-$neutral-1-a2: rgba($neutral-1-a10, 0.2);
-$neutral-1-a1: rgba($neutral-1-a10, 0.1);
+$neutral-1-a10: hsb($neutral-1-h, $neutral-1-s, $neutral-1-b) !default;
+$neutral-1-a9: hsb($neutral-1-h, $neutral-1-s - 20, $neutral-1-b + 7) !default;
+$neutral-1-a8: hsb($neutral-1-h, $neutral-1-s - 30, $neutral-1-b + 14) !default;
+$neutral-1-a7: hsb($neutral-1-h, $neutral-1-s - 40, $neutral-1-b + 21) !default;
+$neutral-1-a6: hsb($neutral-1-h, $neutral-1-s - 50, $neutral-1-b + 28) !default;
+$neutral-1-a5: hsb($neutral-1-h, $neutral-1-s - 60, $neutral-1-b + 35) !default;
+$neutral-1-a4: hsb($neutral-1-h, $neutral-1-s - 64, $neutral-1-b + 42) !default;
+$neutral-1-a3: hsb($neutral-1-h, $neutral-1-s - 68, $neutral-1-b + 49) !default;
+$neutral-1-a2: hsb($neutral-1-h, $neutral-1-s - 71, $neutral-1-b + 56) !default;
+$neutral-1-a1: hsb($neutral-1-h, $neutral-1-s - 73, $neutral-1-b + 63) !default;
 
 /***************************** NEUTRAL 2 ****************************************/
 $neutral-2-b1: hsb($neutral-2-h, $neutral-2-s, $neutral-2-b) !default;
@@ -461,5 +423,3 @@ $footer-bottom-background: hsl(210, 100%, 20%); // color-blue-20
 $icon-primary: $primary;
 $icon-secondary: $secondary;
 $icon-base: $color-text-base;
-
-$btn-border-radius:8px;

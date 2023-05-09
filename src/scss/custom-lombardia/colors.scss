@@ -64,3 +64,26 @@
     border-color: $secondary-gray !important;
   }
 }
+
+// Patch complementary-1-color
+.complementary-1-color {
+  color: $complementary-1 !important;
+}
+// fine patch
+
+// Patch errore in b.i. sui border neutral 1 e 2
+// neutral 1
+.neutral-1-border-color {
+  border-color: $neutral-1 !important;
+  &.border {
+    border-color: $neutral-1 !important;
+  }
+}
+// neutral 2
+.neutral-2-border-color {
+  border-color: $neutral-2 !important;
+  &.border {
+    border-color: $neutral-2 !important;
+  }
+}
+// fine patch

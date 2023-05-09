@@ -22,10 +22,6 @@
       url: componenti-principali/menu-verticale
     - title: Gestione Loghi Multipli
       url: componenti-principali/gestione-loghi-multipli
-    # - title: Barra utente
-    #   url: componenti-principali/barra-utente
-    # - title: Sidebar
-    #   url: componenti-principali/sidebar
     - title: Footer
       url: componenti-principali/footer
 
@@ -54,8 +50,6 @@
     - title: Overlay
     - title: Tabella
     - title: Snackbar
-
-    # - title: Carousel-legacy
 
 - title: Inserimento
   pages:
@@ -108,6 +102,6 @@
     - title: Cookiebar
     - title: Il codice
 
-- title: Come iniziare
+- title: Installazione
 
-- title: Licenza
+- title: Crediti

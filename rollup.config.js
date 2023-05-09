@@ -14,7 +14,7 @@ export default [
   {
     input: 'src/js/bootstrap-italia.entry.js',
     output: {
-      file: 'dist/js/bootstrap-italia.bundle.min.js',
+      file: 'dist/js/bootstrap-lombardia.bundle.min.js',
       format: 'umd',
       generatedCode: 'es2015',
       name: "bootstrap"
@@ -34,7 +34,7 @@ export default [
         outputFolder: 'dist/svg',
       }),
       scss({
-        output: 'dist/css/bootstrap-italia.min.css',
+        output: 'dist/css/bootstrap-lombardia.min.css',
         outputStyle: 'compressed',
         sourceMap: true,
         watch: 'src/scss',
@@ -56,22 +56,22 @@ export default [
   {
     input: 'src/js/bootstrap-italia.entry.js',
     output: {
-      file: 'dist/js/bootstrap-italia.min.js',
+      file: 'dist/js/bootstrap-lombardia.min.js',
       format: 'umd',
       generatedCode: 'es2015',
       name: "bootstrap",
       globals: {
-        '@popperjs/core' : 'Popper', 
-        '@splidejs/splide' : 'Splide', 
-        'masonry-layout' : 'MasonryPlugin', 
+        '@popperjs/core' : 'Popper',
+        '@splidejs/splide' : 'Splide',
+        'masonry-layout' : 'MasonryPlugin',
         'accessible-autocomplete' : 'accessibleAutocomplete',
         'animejs/lib/anime.es.js' : 'anime'
       },
     },
     external: [
-      '@popperjs/core', 
-      '@splidejs/splide', 
-      'masonry-layout', 
+      '@popperjs/core',
+      '@splidejs/splide',
+      'masonry-layout',
       'accessible-autocomplete',
       'animejs/lib/anime.es.js'
     ],
@@ -90,7 +90,7 @@ export default [
         outputFolder: 'dist/svg',
       }),
       scss({
-        output: 'dist/css/bootstrap-italia.min.css',
+        output: 'dist/css/bootstrap-lombardia.min.css',
         outputStyle: 'compressed',
         sourceMap: true,
         watch: 'src/scss',
