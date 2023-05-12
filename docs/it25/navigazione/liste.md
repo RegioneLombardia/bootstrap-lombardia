@@ -5,12 +5,37 @@ group: navigazione
 toc: true
 ---
 
-Le Liste sono composte da voci attraverso le quali è possibile effettuare sessioni di navigazione all’interno di un’interfaccia. Troviamo spesso questo elemento all’interno dei menu verticali, ma possono essere presenti in diverse modalità, come ad esempio all’interno di menu fissi laterali.
-
-{% capture example %}
+Le Liste sono composte da voci attraverso le quali è possibile effettuare sessioni di navigazione all’interno di un’interfaccia.  
+Troviamo spesso questo elemento all’interno dei menu verticali, ma possono essere presenti in diverse modalità, come ad esempio all’interno di menu fissi laterali.
 {% include html_docs/liste/liste_base.html %}
+
+### Liste base
+
+##### Default
+{% capture example %}
+{% include html_docs/liste/lista_default.html %}
 {% endcapture %}
 {% include example.html content=example %}
+
+##### Con Header
+{% capture example %}
+{% include html_docs/liste/lista_con_header.html %}
+{% endcapture %}
+{% include example.html content=example %}
+
+##### Senza divider
+{% capture example %}
+{% include html_docs/liste/lista_senza_divider.html %}
+{% endcapture %}
+{% include example.html content=example %}
+
+##### Nested
+{% capture example %}
+{% include html_docs/liste/lista_nested.html %}
+{% endcapture %}
+{% include example.html content=example %}
+
+--- 
 
 ### Lista con avatar
 

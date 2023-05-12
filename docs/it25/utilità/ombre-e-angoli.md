@@ -16,7 +16,7 @@ I bordi arrotondati si ottengono tramite la classe `rounded-3`.
 {% include html_docs/ombre_angoli/angoli.html %}
 </div>
 {% highlight html %}
-<div class="border neutral-2-border-color-b7 rounded-3 p-2">
+<div class="border secondary-gray-border-color rounded-3 p-2">
   <span class="align-middle fw-semibold">BORDER RADIUS - 8 PX</span>
 </div>
 {% endhighlight %}

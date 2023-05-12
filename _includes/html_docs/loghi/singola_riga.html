@@ -1,50 +1,48 @@
-<div class="bd-example">
-  <div class="container-fluid">
-    <div class="row my-2">
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 1</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 2</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 3</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 4</h6>
-        </div>
+<div class="container-fluid">
+  <div class="row my-2">
+    <div class="col-md-3">
+      <div class="it25-footer-logo">
+        <img src="{{ site.baseurl }}/dist/assets/img/logo-aria.png" alt="logo azienda regionale innovazione acquisti" class="img-fluid p-3">
       </div>
     </div>
-    {% if include.doublerow %}
-    <div class="row my-2">
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 5</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 6</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 7</h6>
-        </div>
-      </div>
-      <div class="col-3">
-        <div class="rounded-card rounded-card d-flex justify-content-center align-items-center">
-          <h6>Logo 8</h6>
-        </div>
+    <div class="col-md-3">
+      <div class="it25-footer-logo">
+        <img src="{{ site.baseurl }}/dist/assets/img/logo_inlombardia.svg" alt="logo inlombardia" class="img-fluid p-3">
       </div>
     </div>
-    {% endif %}
+    <div class="col-md-3">
+      <div class="it25-footer-logo">
+        <img src="{{ site.baseurl }}/dist/assets/img/logo_sost_RL.jpg" alt="logo sostenibilità" class="img-fluid p-3">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="it25-footer-logo">
+        <img src="{{ site.baseurl }}/dist/assets/img/logo-difensore-regionale.jpg" alt="logo difensore regionale" class="img-fluid">
+      </div>
+    </div>
   </div>
+  {% if include.doublerow %}
+  <div class="row my-2">
+    <div class="col-3">
+      <div class="rounded-card d-flex justify-content-center align-items-center">
+        <h6>Logo 5</h6>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="rounded-card d-flex justify-content-center align-items-center">
+        <h6>Logo 6</h6>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="rounded-card d-flex justify-content-center align-items-center">
+        <h6>Logo 7</h6>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="rounded-card d-flex justify-content-center align-items-center">
+        <h6>Logo 8</h6>
+      </div>
+    </div>
+  </div>
+  {% endif %}
 </div>
