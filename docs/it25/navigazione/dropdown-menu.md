@@ -61,8 +61,24 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: `data-popper-place
 --- 
 
 ## Esempi
+<div class="bd-example no-border mb-5">
+{% include html_docs/dropdown/esempi_dropdown.html %}
+</div>
 
-{% include esempi-lombardia/esempi_dropdown_header.html %}
+{% highlight html %}
+. . . 
+<li>
+  <a class="dropdown-item list-item" href="#"><span>Azione 1</span></a>
+</li>
+. . . 
+<li>
+  <a class="dropdown-item list-item active" href="#"><span>Voce Attiva</span></a>
+</li>
+. . . 
+<li>
+  <a class="dropdown-item list-item disabled" href="#"><span>Voce disabilitata</span></a>
+</li>
+{% endhighlight %}
 
 
 {% capture callout %}

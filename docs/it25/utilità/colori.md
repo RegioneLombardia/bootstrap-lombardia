@@ -358,10 +358,6 @@ Per motivi di accessibilità, utilizzare i colori triadici all’interno di elem
 #### {{ site.data.short.dt }}
 Per l'applicazione di **colori semantici** al testo e allo sfondo si veda alla voce:
 - **[Colori]({{ site.baseurl }}/docs/utilities/colori/)**
-
-Invece <span class="complementary-1-color">**si sconsiglia la consultazione**</span> della pagina dei **[Colori custom]({{ site.baseurl }}/docs/utilities/colori-custom/)** della {{ site.data.short.dt }}, in quanto:
-- **I codici esadecimali** dei colori mostrati **non corrispondono al colore visualizzato**, perché si riferiscono ai colori originari di Bootstrap Italia.
-- Sono riportati ulteriori palette di colori (i secondari **[Analoghi]({{ site.baseurl }}/docs/utilities/colori-custom/#analoghi)** e le relative **[varianti]({{ site.baseurl }}/docs/utilities/colori-custom/#analoghi-1)**) che **non fanno parte del {{ site.data.short.ds }} di Regione Lombardia**.
 {% endcapture %}{% include callout.html content=callout type="info" %}
 
 

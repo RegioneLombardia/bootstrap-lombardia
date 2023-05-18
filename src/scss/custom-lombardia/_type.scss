@@ -1,0 +1,10 @@
+blockquote,
+.blockquote {
+  border-left: 4px solid $complementary-3;
+  &.text-end {
+    border-right: 4px solid $complementary-3;
+  }
+}
+mark {
+  background-color: $complementary-2-a2;
+}

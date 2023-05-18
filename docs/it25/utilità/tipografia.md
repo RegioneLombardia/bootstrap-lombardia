@@ -62,7 +62,6 @@ Le _Linee Guida_ per il design degli applicativi di Regione Lombardia prevedono 
     </div>
   </div>
 </div>
-
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
 

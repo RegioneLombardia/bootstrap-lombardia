@@ -1,16 +1,16 @@
 .card {
-  // border: $card-border-width solid $card-border-color;
   border-radius: 8px;
-  .card-img-top {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+  .img-responsive-wrapper.rounded-top {
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;
   }
   .card-header {
-    background-color: rgba($black, 0.03);
+    background-color: #e5e5e5;
     font-weight: bold;
     padding: 12px 24px;
     border: none;
-  }
+    border-top-left-radius: 8px !important;
+    border-top-right-radius: 8px !important;  }
   .card-tag {
     color: $primary;
     border: 1px solid $primary;
