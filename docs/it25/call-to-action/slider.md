@@ -8,52 +8,48 @@ toc: yes
 Gli **Slider** offrono la possibilità di selezionare un valore da un intervallo posto lungo una barra in maniera visiva ed immediata, presentando l’intera gamma di scelte possibili per l’utente.  
 Queste componenti sono ideali per regolare impostazioni come volume e luminosità o per applicare filtri e possono utilizzare icone su entrambe le estremità della barra per rappresentare una scala numerica o relativa.
 
-<div class="bd-example">
-    <input type="range" class="form-range" id="customRange1">
-</div>
-
-{% highlight html %}
-<input type="range" class="form-range" id="customRange1">
-{% endhighlight %}
+{% capture example %}
+<input type="range" min="0" max="100" step="1" value="10" class="form-range" id="customRange1">
+{% endcapture %}{% include example.html content=example %}
 
 ## Slider con tooltip
 
-Lo slider con tooltip è un componente javascript. Per attivarlo si deve invocare la funzione:
+{% capture example %}
+<div id="single-thumb" class="slider-container" style="margin-top:20px">
+<div class="slider"></div>
+<div class="blobs centered">
+    <div class="blob value centered"></div>
+    <div class="blob centered"></div>
+</div>
+<div class="value-text centered"></div>
+</div>
+{% endcapture %}{% include example.html content=example %}
 
-{% highlight html %}
-new bootstrap.it25().gooeyRangeSlider(document.querySelector('#single-thumb'), {
-  value: [0, 10],
-  thumbsDisabled: [true, false],
-  rangeSlideDisabled: true
-}, 1, (value) => console.log(value))
-{% endhighlight %}
-
-e deve essere incluso tra gli script della pagina il seguen CDN:
-
+Lo slider con tooltip è un componente javascript.  
+Deve essere incluso tra gli script della pagina il seguen CDN:
 {% highlight html %}
 <script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
 {% endhighlight %}
 
-Il primo parametro della funzione è l'elemento da inizializzare. Il paramentro nelle parentesi quadre determina il **valore iniziale** del range. Mentre l'ultimo parametro della funziona serve per definire una **callback** sul **change** del valore
-
-<div class="bd-example">
-    <div id="single-thumb" class="slider-container" style="margin-top:20px">
-    <div class="slider"></div>
-    <div class="blobs centered">
-        <div class="blob value centered"></div>
-        <div class="blob centered"></div>
-    </div>
-    <div class="value-text centered"></div>
-    </div>
-</div>
-
+Per attivarlo si deve invocare la funzione:
 {% highlight html %}
-<div id="single-thumb" class="slider-container">
-  <div class="slider"></div>
-  <div class="blobs centered">
-    <div class="blob value centered"></div>
-    <div class="blob centered"></div>
-  </div>
-  <div class="value-text centered"></div>
-</div>
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
 {% endhighlight %}
+
+Il primo parametro della funzione è l'*id* dell'elemento da inizializzare.  
+`min` e  `max` determinano i limiti del range.  
+`value` imposta i valori **iniziali** del range.  
+L'ultimo parametro della funzione serve per definire una **callback** sul **change** del valore.  
+(In questo esempio viene scritto nella console del browser il valore selezionato)
+
+Tutti i parametri di configurazione sono documentati **[qui](https://github.com/n3r4zzurr0/range-slider-input#parameters)**
