@@ -1,3 +1,17 @@
-.dropdown-item.active, {
+.dropdown-item.active {
   background-color: unset;
+}
+.link-list-wrapper {
+  .dropdown-item:active {
+    span {
+      color: var(--bs-dropdown-link-active-color);
+    }
+  }
+}
+//hidden
+&[data-popper-placement='hidden'] {
+  &:before {
+    width: 0;
+    height: 0;
+  }
 }

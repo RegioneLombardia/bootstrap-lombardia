@@ -134,12 +134,6 @@
       line-height: $link-list-line-height;
       margin-bottom: 0;
     }
-
-    .dropdown-item:active {
-      span {
-        color: var(--bs-dropdown-link-active-color);
-      }
-    }
   }
 
   //link list finetuning
@@ -175,14 +169,6 @@
     &:before {
       left: auto;
       right: calc($dropdown-menu-notch-position-x / 2);
-    }
-  }
-
-  //hidden
-  &[data-popper-placement='hidden'] {
-    &:before {
-      width: 0;
-      height: 0;
     }
   }
 
@@ -247,5 +233,14 @@
         left: -6px;
       }
     }
+  }
+}
+
+.dropdown-item {
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    background-color: transparent;
   }
 }

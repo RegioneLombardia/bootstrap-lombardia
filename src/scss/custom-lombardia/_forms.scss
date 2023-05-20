@@ -22,3 +22,16 @@ div.output-field {
   background-color: transparent;
   opacity: 0.7;
 }
+.form-control {
+  background-color: transparent;
+}
+
+&:disabled.semi-checked + label::after {
+  background-color: #b1b1b3;
+  border-color: #e6e9f2;
+}
+
+input.semi-checked:not(:checked) + label::after {
+  border-color: $primary; // TODO: Not found
+  background-color: $primary; // TODO: Not found
+}

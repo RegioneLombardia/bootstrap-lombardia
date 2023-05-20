@@ -5,30 +5,4 @@
       color: $white;
     }
   }
-
-  th,
-  td {
-    text-align: $table-cell-text-align;
-    border-bottom: 1px solid $table-border-color;
-    border-top: none;
-  }
-
-  &.h-sm {
-    tr {
-      height: 48px;
-    }
-    thead,
-    tbody {
-      vertical-align: middle;
-    }
-  }
-  &.h-md {
-    tr {
-      height: 80px;
-    }
-    thead,
-    tbody {
-      vertical-align: middle;
-    }
-  }
 }
