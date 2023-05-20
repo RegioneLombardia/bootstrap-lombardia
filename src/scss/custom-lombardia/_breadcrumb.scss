@@ -1,0 +1,17 @@
+.breadcrumb-container {
+  .breadcrumb {
+    .breadcrumb-item {
+      a {
+        font-weight: normal;
+      }
+      &.active {
+        a {
+          font-weight: $breadcrumb-link-font-weight;
+        }
+      }
+      span.separator {
+        font-weight: normal;
+      }
+    }
+  }
+}

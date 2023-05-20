@@ -65,6 +65,21 @@
   }
 }
 
+// black
+.black-bg {
+  background-color: $black !important;
+}
+.black-color {
+  color: $black !important;
+}
+.black-border-color- {
+  border-color: $black !important;
+  &.border {
+    border-color: $black !important;
+  }
+}
+
+
 // Patch complementary-1-color
 .complementary-1-color {
   color: $complementary-1 !important;

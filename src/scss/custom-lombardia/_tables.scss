@@ -1,11 +1,5 @@
-  th,
-  td {
-    text-align: $table-cell-text-align;
-    border-bottom: 1px solid $table-border-color;
-    border-top: none;
-  }
-
-  &.h-sm {
+.table {
+  &.it25-sm {
     tr {
       height: 48px;
     }
@@ -14,7 +8,7 @@
       vertical-align: middle;
     }
   }
-  &.h-md {
+  &.it25-md {
     tr {
       height: 80px;
     }
@@ -23,3 +17,4 @@
       vertical-align: middle;
     }
   }
+}
