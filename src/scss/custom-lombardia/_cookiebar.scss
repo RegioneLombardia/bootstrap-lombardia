@@ -11,6 +11,9 @@
       display: block;
     }
   }
+  &.show {
+    display: block;
+  }
   .btn {
     &.btn-primary {
       background-color: $white !important;

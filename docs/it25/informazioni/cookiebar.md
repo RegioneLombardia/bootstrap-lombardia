@@ -24,7 +24,18 @@ La barra in generale si compone di un breve testo informativo, un bottone per l�
 La cookie bar si attiva al caricamento della pagina, ricopre l’intera larghezza della pagina, è posizionata in basso e scompare dopo l’interazione dell’utente.  
 Per vedere il funzionamento potete guardare la pagina: [esempio Cookiebar]({{ site.baseurl }}/docs/it25/esempi/cookiebar/)
 
-{% capture example %}
+<div class="bd-example">
+<section class="cookiebar" aria-label="Gestione dei cookies" aria-live="polite">
+  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
+  <div class="mt-4">
+    <button class="btn btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
+    <a href="#" class="me-3">Preferenze<span class="visually-hidden">cookies</span></a>
+    <a href="#" class="">Privacy policy</a>
+  </div>
+</section>
+</div>
+
+{% highlight html %}
 <section class="cookiebar fade" aria-label="Gestione dei cookies" aria-live="polite">
   <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
   <div class="mt-4">
@@ -33,4 +44,4 @@ Per vedere il funzionamento potete guardare la pagina: [esempio Cookiebar]({{ si
     <a href="#" class="">Privacy policy</a>
   </div>
 </section>
-{% endcapture %}{% include example.html content=example %}
+{% endhighlight %}
