@@ -18,8 +18,17 @@ div.output-field {
   font-weight: 700;
 }
 
+.form-group {
+  input,
+  optgroup,
+  textarea {
+    color: $black;
+  }
+}
+
 .form-control:disabled {
-  background-color: transparent;
+  //background-color: transparent;
+  background-color: $neutral-2;
   opacity: 0.7;
 }
 .form-control {

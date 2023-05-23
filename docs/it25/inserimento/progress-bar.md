@@ -5,7 +5,8 @@ group: inserimento
 toc: false
 ---
 
-La **Progress bar** è una componente utile per stabilire la percentuale di completamento di un task all’interno di una pagina. Questo elemento può essere utilizzato per indicarne la percentuale di completamento, oppure come elemento aggiuntivo della componente wizard, come indicatore di una procedura.
+La **Progress bar** è una componente utile per stabilire la percentuale di completamento di un task all’interno di una pagina.  
+Questo elemento può essere utilizzato per indicarne la percentuale di completamento, oppure come elemento aggiuntivo della componente wizard, come indicatore di una procedura.
 
 {% capture example %}
 
@@ -23,10 +24,6 @@ La **Progress bar** è una componente utile per stabilire la percentuale di comp
 La barra standard è molto sottile, per ottenere un spessore maggiore va utilizzata la classe `progress-lg`.
 
 {% capture callout %}
-
-#### <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-
-Il contenuto di questa pagina si riferisce ai seguenti punti della {{ site.data.short.dt }}:
-
-- **[Progress Bar]({{ site.baseurl }}/docs/componenti/progress-indicators/#progress-bar)**
-  {% endcapture %}{% include callout.html content=callout type="info" %}
+#### {{ site.data.short.dt }}
+Per i dettagli tecnici sulla costruzione delle progress bar si veda la **[relativa pagina]({{ site.baseurl }}/docs/componenti/progress-indicators/#progress-bar)**
+{% endcapture %}{% include callout.html content=callout type="info" %}

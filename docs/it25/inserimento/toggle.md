@@ -7,47 +7,51 @@ toc: false
 
 Un **Toggle** (o switch) è un controllo che permette all’utente di scegliere la modalità on/off di un singolo settaggio – rappresentando l’analogia dell’interruttore accesso/spento.
 
-<div class="bd-example">
-  <div class="row">
-    <div class="col">Default</div>
-    <div class="col">Disabilitato</div>
-  </div>
-  <div class="row">
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Selezionato' on='leverRight' id='1' checked='checked' %}
-    </div>
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
-    </div>
-  </div>
-  <div class="row">
-      <div class="col">
-      {% include html_docs/toggle/toggle.html text='Non Selezionato' id='3' %}
+
+
+
+{% capture example %}
+  <div class="row justify-content-between">
+    <div class="col-3">
+      <div>Default</div>
+      <div class="toggles">
+        <label for="toggleEsempio1a">
+          Non selezionato
+          <input type="checkbox" id="toggleEsempio1a">
+          <span class="lever leverRight"></span>
+        </label>
       </div>
-      <div class="col">
-      {% include html_docs/toggle/toggle.html text='Non Selezionato' disabled='disabled' id='4' %}
+      <div class="toggles">
+        <label for="toggleEsempio1b">
+          Selezionato
+          <input type="checkbox" id="toggleEsempio1b" checked>
+          <span class="lever"></span>
+        </label>
       </div>
     </div>
-</div>
-{% highlight html %}
- <div class="row">
-    <div class="col">Default</div>
-    <div class="col">Disabilitato</div>
-  </div>
-  <div class="row">
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' id='1' %}
-    </div>
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Selezionato' checked='checked' disabled='disabled' id='2' %}
-    </div>
-  </div>
-  <div class="row">
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Non Selezionato' id='3' %}
-    </div>
-    <div class="col">
-    {% include html_docs/toggle/toggle.html text='Non Selezionato' disabled='disabled' id='4' %}
+    <div class="col-3">
+      <div>Disabilitato</div>
+      <div class="toggles">
+        <label for="toggleEsempio2a">
+          Non selezionato
+          <input disabled type="checkbox" id="toggleEsempio2a">
+          <span class="lever"></span>
+        </label>
+      </div>
+      <div class="toggles">
+        <label for="toggleEsempio2b">
+          Selezionato
+          <input disabled type="checkbox" id="toggleEsempio2b" checked>
+          <span class="lever leverRight"></span>
+        </label>
+      </div> 
     </div>
   </div>
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
+
+
+
+{% capture callout %}
+#### {{ site.data.short.dt }}
+Per i dettagli tecnici sulla costruzione dei toggle si veda la **[relativa pagina]({{ site.baseurl }}/docs/form/toggles/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}
