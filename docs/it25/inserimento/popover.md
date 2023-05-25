@@ -5,17 +5,17 @@ group: inserimento
 toc: true
 ---
 
-Il **Popover** è una componente che viene richiamato al click e fornisce informazioni su un determinato elemento, comando o interazione
+Il **Popover** è una componente che viene richiamato al click e fornisce informazioni su un determinato elemento, comando o interazione.
 
 ### Posizionamento
 
 {% capture example %}
-
 <div class="container">
   <div class="row">
     <div class="col-12 col-md-4 offset-md-4">
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="top"
-        title="Titolo del Popover" data-bs-html="true" data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
+        title="Titolo del Popover" data-bs-html="true"
+        data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
                <a href="#" class="popover-inner-link">More info</a>'>
         Popover in alto
       </button>
@@ -24,13 +24,15 @@ Il **Popover** è una componente che viene richiamato al click e fornisce inform
   <div class="row mt-4">
     <div class="col-12 col-md-4">
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="right"
-        title="Titolo del Popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
+        title="Titolo del Popover"
+        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
         Popover a sinistra
       </button>
     </div>
     <div class="col-12 col-md-4 offset-md-4">
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="left"
-        title="Titolo del Popover" data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
+        title="Titolo del Popover"
+        data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
         Popover a destra
       </button>
     </div>
@@ -39,7 +41,8 @@ Il **Popover** è una componente che viene richiamato al click e fornisce inform
     <div class="col-12 col-md-4 offset-md-4">
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom"
         data-bs-html="true"
-        title="Titolo del Popover" data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
+        title="Titolo del Popover"
+        data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
                <a href="#" class="popover-inner-link">More info</a>'>
         Popover in basso
       </button>
@@ -59,8 +62,7 @@ Nell'esempio qui sopra infatti, se si preme il tasto _Popover in alto_ e poi si 
 ### Abilitazione
 
 Per abilitare il funzionamento dell'esempio è stato inserito nella pagina il seguente codice:
-{% capture example %}
-
+{% highlight html %}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
@@ -69,16 +71,20 @@ Per abilitare il funzionamento dell'esempio è stato inserito nella pagina il se
     })
   })    
 </script>
+{% endhighlight %}
 
-{% endcapture %}{% include example.html content=example %}
-
-Per le altre modalità possibili sia di abilitazione dei popover sia di impostazione del tipo di comparsa e scomparsa di questi componenti, si veda la **[{{ site.data.short.dt }}]({{ site.baseurl }}/docs/componenti/popover/)**
 
 {% capture callout %}
+#### {{ site.data.short.dt }}:
+Per le altre modalità possibili sia di abilitazione dei popover sia di impostazione del tipo di comparsa e scomparsa di questi componenti, si veda la **[relativa pagina]({{ site.baseurl }}/docs/componenti/popover/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}
 
-#### <svg class="icon icon-info icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use></svg> Riferimenti
-
-Il contenuto di questa pagina si riferisce ai seguenti punti della {{ site.data.short.dt }}:
-
-- **[Popover]({{ site.baseurl }}/docs/componenti/popover/)**
-  {% endcapture %}{% include callout.html content=callout type="info" %}
+  
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  })    
+</script>

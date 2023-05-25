@@ -294,98 +294,275 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 
 ### Password field
 
+{% capture example %}
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="passwd1">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input class="form-control input-password" id="passwd1" 
+            aria-labelledby="infoPassword" />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="passwd2">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input class="form-control input-password" id="passwd2"
+            aria-labelledby="infoPassword" value="iuQ34!iwah" />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="passwd3">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input class="form-control input-password" id="passwd3"
+            aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+</div>
+{% endcapture %}{% include example.html content=example %}
+
+#### Validazione password
 <div class="bd-example">
-  <div class="row mb-5">
-    <div class="col">Stato inattivo</div>
-    <div class="col">Stato attivo</div>
-  </div>
   <div class="row">
-    <div class="col">
-  {% include html_docs/input/input_password.html disabled='disabled' id='input1' idbutton='info1' %}
-    </div>
-    <div class="col">
-    {% include html_docs/input/input_password.html id='input2' idbutton='info2' %}
-    </div>
-  </div>
-    <div class="row">
     <div class="col-6">
-    {% include html_docs/input/input_password_validazione.html %}
+{% include html_docs/input/input_password_validazione.html %}
     </div>
   </div>
 </div>
+
 {% highlight html %}
-  <div class="row mb-5">
-    <div class="col">Stato inattivo</div>
-    <div class="col">Stato attivo</div>
-  </div>
-  <div class="row">
-    <div class="col">
-    {% include html_docs/input/input_password.html disabled='disabled'  id='input3' idbutton='info3' %}
+{% include html_docs/input/input_password_validazione.html %}
+{% endhighlight %}
+
+
+---
+
+### Password field con icone
+
+{% capture example %}
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label for="passwd41">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input class="form-control input-password" id="passwd41" 
+              aria-labelledby="infoPassword" />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
-    <div class="col">
-    {% include html_docs/input/input_password.html id='input4' idbutton='info4' %}
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="passwd42">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input class="form-control input-password" id="passwd42"
+              aria-labelledby="infoPassword" value="iuQ34!iwah" />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
-    <div class="row">
-    <div class="col-6">
-    {% include html_docs/input/input_password_validazione.html %}
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="passwd43">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input class="form-control input-password" id="passwd43"
+              aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
 </div>
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
+
+
+---
 
 ### Search field
 
 <div class="bd-example">
   <div class="row mb-5">
-    <div class="col">Stato focus</div>
+    <div class="col">Ricerca</div>
     <div class="col">Suggerimenti</div>
+    <div class="col">Autocompletamento</div>
   </div>
   <div class="row">
     <div class="col">
-  {% include html_docs/input/search_field.html  %}
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+            </div>
+          </div>
+          <label for="searchField">Testo da cercare</label>
+          <input type="text" class="form-control" id="searchField">
+        </div>
+      </div> 
     </div>
     <div class="col">
-      {% include html_docs/input/search_field_esempio.html  %}
+      <div class="select-wrapper">
+        <label for="defaultSelect">Etichetta</label>
+        <select id="defaultSelect">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="Value 1">Risultato 1</option>
+          <option value="Value 2">Risultato  2</option>
+          <option value="Value 3">Risultato  3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+ {% include html_docs/input/autocompletamento.html  %}
     </div>
   </div>
 </div>
 {% highlight html %}
-{% include html_docs/input/search_field.html  %}
+. . .
+<div class="select-wrapper">
+  <label for="defaultSelect">Etichetta</label>
+  <select id="defaultSelect">
+    <option selected="" value="">Scegli un'opzione</option>
+    <option value="Value 1">Risultato 1</option>
+    <option value="Value 2">Risultato  2</option>
+    <option value="Value 3">Risultato  3</option>
+  </select>
+</div>
+...      
+{% include html_docs/input/autocompletamento.html  %}
 {% endhighlight %}
 
 ### Input number
 
-<div class="bd-example">
-  <div class="row mb-5">
-    <div class="col">Stato Inattivo</div>
-    <div class="col">Stato Attivo</div>
+{% capture example %}
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <label for="inputNumber1" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number">
+      <input type="number" data-bs-input id="inputNumber1" name="inputNumber1" step="any" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
+    </span>
   </div>
-  <div class="row">
-    <div class="col">
-  {% include html_docs/input/input_number.html value=100 id='inputNumber' disabled='disabled'  %}
-    </div>
-    <div class="col">
-     {% include html_docs/input/input_number.html value=100 id='inputNumber' %}
-    </div>
+  <div class="col">
+    <label for="inputNumber2" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number">
+      <input type="number" data-bs-input id="inputNumber2" name="inputNumber2" value="100" step="1" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
+    </span>
   </div>
-    <div class="row mb-5">
-    <div class="col-6">Formattatore</div>
-  </div>
-  <div class="row">
-    <div class="col">
-  {% include html_docs/input/input_number.html value=100 id='inputNumber' type='input-number-percentage' %}
-    </div>
-    <div class="col">
-      {% include html_docs/input/input_number.html value=100 id='inputNumber' type='input-number-currency' %}
-    </div>
+  <div class="col">
+    <label for="inputNumber3" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number disabled">
+      <input type="number" data-bs-input id="inputNumber3" name="inputNumber3" value="100" step="1" disabled />
+      <button class="input-number-add" disabled >
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub" disabled >
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
+    </span>
   </div>
 </div>
-{% highlight html %}
-{% include html_docs/input/search_field.html  %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
+
+
+{% capture example %}
+<div class="row mb-5">
+  <div class="col-4">Percentuale</div>
+  <div class="col-4">Valuta</div>
+</div>
+<div class="row">
+  <div class="col-4">
+    <label for="inputPerc1" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number input-number-percentage">
+      <input type="number" data-bs-input id="inputPerc1" name="inputPerc1" value="50" min="0" max="100" step="10" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta del 10%</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci del 10%</span>
+      </button>
+    </span>
+  </div>
+  <div class="col-4">
+    <label for="inputValuta1" class="input-number-label">Valuta</label>
+    <span class="input-number input-number-currency">
+      <input type="number" data-bs-input id="inputValuta1" name="inputValuta1" step="any" value="3.50" min="0" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore Euro</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore Euro</span>
+      </button>
+    </span>
+  </div>
+</div>
+{% endcapture %}{% include example.html content=example %}
 
 <script>
 document.getElementById("exampleInputText2").focus();
-// document.getElementById("exampleInputText5").style.color = "#000000";
 </script>

@@ -1,0 +1,9 @@
+.input-number {
+  //disabled version
+  &.disabled {
+    input[type='number'] {
+      background-color: $neutral-2;
+      opacity: 0.7;
+    }
+  }
+}
