@@ -23,6 +23,12 @@
   }
 }
 
+.btn {
+  &:not(.btn-outline-primary, .btn-outline-secondary) {
+    box-shadow: none;
+  }
+}
+
 .btn-xs {
   padding: 6px 8px;
 }

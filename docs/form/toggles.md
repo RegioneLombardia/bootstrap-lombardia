@@ -26,7 +26,7 @@ Per ottenere un interruttore con levetta basterà usare la seguente sintassi HTM
       <div class="toggles">
         <label for="toggleEsempio1b">
           Label dell'interruttore 2
-          <input type="checkbox" id="toggleEsempio1b">
+          <input type="checkbox" id="toggleEsempio1b" checked>
           <span class="lever leverRight"></span>
         </label>
       </div>

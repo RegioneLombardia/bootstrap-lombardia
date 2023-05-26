@@ -1,45 +1,45 @@
-.it25-snackbar {
-  background-color: $white;
-  border-radius: 8px;
-  .toast-header {
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
-    text-transform: uppercase;
-    border-bottom: none;
-    color: $primary-blue;
+.notification {
+  &.it25-snackbar {
     border-radius: 8px;
-  }
-
-  .alert-action {
-    float: right;
-    color: $primary-gray;
-    text-decoration: underline;
-    font-size: 14px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 13px 0 rgba(217, 217, 217, 1);
+    //title
+    .h5 {
+      font-weight: 600;
+      font-size: 16px;
+      color: $primary-blue;
+    }
+    //icon version
+    &.with-icon {
+      border-left: 8px solid;
+      &.success {
+        border-color: $success;
+      }
+      &.danger {
+        border-color: $danger;
+        .icon {
+          fill: $danger;
+        }
+      }
+      &.warning {
+        border-color: $warning;
+      }
+      &.info {
+        border-color: $info;
+        .icon {
+          fill: $info;
+        }
+      }
+    }
   }
 }
 
-.alert-success,
-.alert-danger,
-.alert-info,
-.alert-warning {
-  border-top: none;
-  border-right: none;
-  border-bottom: none;
-  padding-left: 3rem;
-
-  .toast-header {
-    padding: 0.95rem;
+//Tablet vertical
+@include media-breakpoint-up(md) {
+  .notification {
+    &.left-bottom-fix {
+      left: 16px;
+      bottom: 16px;
+    }
   }
-  .toast-body {
-    padding-top: 0;
-  }
-}
-
-.alert-simple {
-  border: none;
-}
-
-.alert-info {
-  border-left: 8px solid $info;
 }
