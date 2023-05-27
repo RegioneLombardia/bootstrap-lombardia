@@ -10,9 +10,10 @@ Questa è la **{{ site.data.short.dt }}** completa cui fare riferimento per l'ut
 Si tratta della **documentazione originale di Bootstrap-italia** ricompilata per Regione Lombardia.
  
 {% capture callout %}
-#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprite.svg#it-warning-circle"></use></svg> Leggete prima le Linee Guida
-Per rispettare le **[{{ site.data.short.rl-guide }}]({{ site.url }}/docs/it25/download/Linee_guida_Applicativi.pdf)** e il **[{{ site.data.short.ivd }}]({{ site.url }}/docs/it25/download/Identita_visiva_digitale_RL.pdf)**, **va utilizzato solo un sottoinsieme** sia delle varianti cromatiche e tipografiche, che dei componenti, presenti nella {{ site.data.short.dt }}, e che si hanno a disposizione in quanto ereditati dalla libreria originaria di {{ site.data.short.bi }}.  
+#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Leggete prima le Linee Guida
+Per rispettare le **[{{ site.data.short.rl-guide }}]({{ site.url }}/docs/it25/download/Linee-guida_Applicativi-web.pdf)** e il {{ site.data.short.ivd }}, **va utilizzato solo un sottoinsieme** sia delle varianti cromatiche e tipografiche, che dei componenti, presenti nella {{ site.data.short.dt }}, e che si hanno a disposizione in quanto ereditati dalla libreria originaria di {{ site.data.short.bi }}.  
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 
 Le *Linee Guida* **indicano quali componenti utilizzare**, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostrano una serie di **Esempi** che possono essere utilizzati come base da cui partire.
+

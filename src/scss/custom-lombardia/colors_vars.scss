@@ -25,7 +25,7 @@ $complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b
 // Info Colors
 $danger: $complementary-1;
 $warning: $complementary-2;
-$success: hsb(118, 45,69);
+$success: hsb(118, 45, 69);
 $info: hsb(210, 100, 90);
 
 // NEUTRAL COLORS DEFINITIONS
@@ -41,7 +41,6 @@ $neutral-3-h: 240;
 $neutral-3-s: 1.6;
 $neutral-3-b: 100;
 $neutral-3: hsb($neutral-3-h, $neutral-3-s, $neutral-3-b) !default;
-
 
 //***********************************************************************
 //********************Primary color variations***************************
@@ -64,7 +63,7 @@ $primary-a12: hsb(152.5, 100, 27.5) !default;
 //-------------------------Toni------------------------------------------
 $primary-b1: hsb(145.5, 100, 65.5) !default;
 $primary-b2: hsb(147.2, 100, 58.8) !default;
-$primary-b3: hsb(150.5, 100, 51.0) !default;
+$primary-b3: hsb(150.5, 100, 51) !default;
 $primary-b4: hsb(153, 100, 42.4) !default;
 $primary-b5: hsb(155.5, 100, 34.5) !default;
 $primary-b6: hsb(151, 76.5, 26.7) !default;
@@ -80,11 +79,10 @@ $primary-c5: hsb(118, 17.8, 83.9) !default;
 $primary-c6: hsb(124, 20.4, 80.8) !default;
 $primary-c7: hsb(124, 28.7, 76.5) !default;
 $primary-c8: hsb(124, 36, 72.9) !default;
-$primary-c9: hsb(126, 44.8, 71.0) !default;
+$primary-c9: hsb(126, 44.8, 71) !default;
 $primary-c10: hsb(126, 54.3, 67.8) !default;
 $primary-c11: hsb(130, 54.8, 60.8) !default;
 $primary-c12: hsb(135, 56.6, 47.8) !default;
-
 
 //***********************************************************************
 //********************Accent colors variations***************************
@@ -95,7 +93,7 @@ $primary-c12: hsb(135, 56.6, 47.8) !default;
 // tinte e ombre
 $complementary-1-a1: hsb(358, 28.6, 92.1) !default;
 $complementary-1-a2: hsb(355, 38.3, 90.2) !default;
-$complementary-1-a3: hsb(357, 48.0, 89.1) !default;
+$complementary-1-a3: hsb(357, 48, 89.1) !default;
 $complementary-1-a4: hsb(358, 57.2, 87.1) !default;
 $complementary-1-a5: hsb(360, 67.4, 86.7) !default;
 $complementary-1-a6: hsb(2.5, 77.4, 85.1) !default;
@@ -133,22 +131,22 @@ $complementary-2-a12: hsb(26, 53.3, 11.8) !default;
 $complementary-2-b1: hsb(31.5, 72.8, 89.4) !default;
 $complementary-2-b2: hsb(33, 69.3, 79.2) !default;
 $complementary-2-b3: hsb(34, 66.7, 70.6) !default;
-$complementary-2-b4: hsb(36, 61.0, 60.4) !default;
+$complementary-2-b4: hsb(36, 61, 60.4) !default;
 $complementary-2-b5: hsb(35, 51.9, 50.6) !default;
-$complementary-2-b6: hsb(40, 41.2, 40.0) !default;
+$complementary-2-b6: hsb(40, 41.2, 40) !default;
 $complementary-2-b7: hsb(31, 29.9, 30.2) !default;
 $complementary-2-b8: hsb(24, 19.2, 20.4) !default;
 
 /***************************** 3 ****************************************/
 // tinte e ombre
 $complementary-3-a1: hsb(116, 6.7, 93.3) !default;
-$complementary-3-a2: hsb(113, 11.0, 89.4) !default;
+$complementary-3-a2: hsb(113, 11, 89.4) !default;
 $complementary-3-a3: hsb(109, 20.3, 83.1) !default;
 $complementary-3-a4: hsb(112, 27.4, 78.8) !default;
 $complementary-3-a5: hsb(118, 34.6, 73.7) !default;
-$complementary-3-a6: hsb(126, 44.8, 71.0) !default;
+$complementary-3-a6: hsb(126, 44.8, 71) !default;
 $complementary-3-a7: hsb(126, 54.3, 67.8) !default;
-$complementary-3-a8: hsb(130, 55.1, 62.0) !default;
+$complementary-3-a8: hsb(130, 55.1, 62) !default;
 $complementary-3-a9: hsb(132.5, 55.4, 54.5) !default;
 $complementary-3-a10: hsb(136, 56.4, 45.9) !default;
 $complementary-3-a11: hsb(136, 57.6, 38.8) !default;
@@ -161,9 +159,8 @@ $complementary-3-b3: hsb(133, 54.3, 54.1) !default;
 $complementary-3-b4: hsb(130, 47.9, 45.9) !default;
 $complementary-3-b5: hsb(133, 46.9, 37.6) !default;
 $complementary-3-b6: hsb(131, 43.4, 29.8) !default;
-$complementary-3-b7: hsb(131, 39.3, 22.0) !default;
+$complementary-3-b7: hsb(131, 39.3, 22) !default;
 $complementary-3-b8: hsb(125, 36.1, 14.1) !default;
-
 
 //***********************************************************************
 //********************Neutral color variations***************************
@@ -178,7 +175,7 @@ $neutral-1-a4: hsb(205, 19.2, 69.4) !default;
 $neutral-1-a5: hsb(207, 23.2, 60.8) !default;
 $neutral-1-a6: hsb(204, 32.8, 53.7) !default;
 $neutral-1-a7: hsb(201, 46.7, 47.1) !default;
-$neutral-1-a8: hsb(201, 58.8, 40.0) !default;
+$neutral-1-a8: hsb(201, 58.8, 40) !default;
 $neutral-1-a9: hsb(202, 81.6, 34.1) !default;
 $neutral-1-a10: hsb(203, 100, 27.8) !default;
 
@@ -186,10 +183,10 @@ $neutral-1-a10: hsb(203, 100, 27.8) !default;
 $neutral-2-b1: hsb(229, 6.7, 93.7) !default;
 $neutral-2-b2: hsb(219, 11.5, 78.4) !default;
 $neutral-2-b3: hsb(220, 13.5, 61.2) !default;
-$neutral-2-b4: hsb(227, 12.0, 45.9) !default;
-$neutral-2-b5: hsb(203, 16.5, 31.0) !default;
-$neutral-2-b6: hsb(206, 15.2, 18.0) !default;
-$neutral-2-b7: hsb(204, 20.0, 9.8) !default;
+$neutral-2-b4: hsb(227, 12, 45.9) !default;
+$neutral-2-b5: hsb(203, 16.5, 31) !default;
+$neutral-2-b6: hsb(206, 15.2, 18) !default;
+$neutral-2-b7: hsb(204, 20, 9.8) !default;
 
 // MOBILE--------------------------------------------------------------
 $radial-gradient-1: radial-gradient(621.06% 100% at 50.13% 100%, #008342 0%, #778b9b 100%);
