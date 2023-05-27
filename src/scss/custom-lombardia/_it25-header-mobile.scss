@@ -2,11 +2,11 @@
   top: $it25-top-bar-height-shrink;
   transition: 0.4s;
   z-index: 3;
-  border-bottom: 1px solid $neutral-1-a1;
   height: 60px;
   border-bottom: 1px solid $primary;
 
   .it-header-center-content-wrapper {
+    padding: 0;
     .it-brand-wrapper {
       display: flex;
       img {
@@ -89,10 +89,6 @@
         display: inherit;
       }
     }
-  }
-
-  .it-header-center-content-wrapper {
-    padding: 0;
   }
 
   .it-brand-text {

@@ -33,6 +33,27 @@
     .splide__pagination button.is-active {
       background: $primary !important;
     }
+    &.it25-special {
+      padding: 1.8rem 0;
+      .splide__track {
+        padding: 1.25rem;
+        width: 50%;
+      }
+      .splide__pagination {
+        position: absolute;
+        left: 50%;
+        margin-left: $v-gap * 5;
+        right: 0;
+        bottom: $crs-landcape-bottom * 5;
+        text-align: left;
+        justify-content: left;
+      }
+
+      .card {
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
   }
 
   &.it-carousel-landscape-abstract-arrow {
@@ -82,38 +103,6 @@
             background: $gray-disabled;
           }
         }
-      }
-    }
-
-    .splide__pagination button {
-      background: $white;
-      border: 1px solid $primary;
-    }
-    .splide__pagination button.is-active {
-      background: $primary !important;
-    }
-  }
-
-  &.it-carousel-landscape-abstract {
-    &.it25-special {
-      padding: 1.8rem 0;
-      .splide__track {
-        padding: 1.25rem;
-        width: 50%;
-      }
-      .splide__pagination {
-        position: absolute;
-        left: 50%;
-        margin-left: $v-gap * 5;
-        right: 0;
-        bottom: $crs-landcape-bottom * 5;
-        text-align: left;
-        justify-content: left;
-      }
-
-      .card {
-        box-shadow: none;
-        border-radius: 0;
       }
     }
 

@@ -12,7 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Titillium Web';
+  font-family: $font-family-sans-serif;
 
   .hidden {
     transition: 0.5s;
