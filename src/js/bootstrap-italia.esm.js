@@ -38,6 +38,6 @@ export { default as Tooltip } from './plugins/tooltip'
 export { default as loadFonts } from './plugins/fonts-loader'
 export { default as it25Header } from './plugins/it25-header'
 export { default as it25 } from './plugins/it25'
-export { $ } from "jquery";
+export { $ } from 'jquery'
 /* Side effects */
 export { default as init } from './plugins/init'
