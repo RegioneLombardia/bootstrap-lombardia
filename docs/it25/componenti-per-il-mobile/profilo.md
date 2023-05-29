@@ -51,7 +51,7 @@ Il profilo ha l’obiettivo di conservare e mostrare:
         {% include html_docs_mobile/profile/interactive-card.html displaySvg=false displayCircle=true text='Titolo'  %}
         </div>     
           <div class="py-2">
-        {% include html_docs_mobile/profile/info-list.html %}
+        {% include html_docs_mobile/profile/info-list.html id_suff="08" %}
         </div>     
         <div class="py-2">
         {% include html_docs_mobile/profile/exit.html %}
@@ -72,6 +72,6 @@ Il profilo ha l’obiettivo di conservare e mostrare:
 {% include html_docs_mobile/profile/info-box.html display="d-block" %}
 {% include html_docs_mobile/profile/interactive-card.html displaySvg=true displayCircle=false icon1='it-file-save' icon2='it-external-link-fill' text='Termini di utilizzo' %}
 {% include html_docs_mobile/profile/interactive-card.html displaySvg=false displayCircle=true text='Titolo' %}
-{% include html_docs_mobile/profile/info-list.html %}
+{% include html_docs_mobile/profile/info-list.html id_suff="09" %}
 {% include html_docs_mobile/profile/exit.html %}
 {% endhighlight %}

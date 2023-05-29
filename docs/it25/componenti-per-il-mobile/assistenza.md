@@ -20,7 +20,7 @@ Un’opzione di supporto per servizi complessi caratterizzate da esempi di proce
     <div class="row my-5">
       <div class="col">
     <div class="py-2">
-     {% include html_docs_mobile/profile/info-list.html %}
+     {% include html_docs_mobile/profile/info-list.html id_suff='01'%}
     </div> 
     <div class="py-2">
       {% include html_docs_mobile/assistance/green-number.html %}
@@ -31,7 +31,7 @@ Un’opzione di supporto per servizi complessi caratterizzate da esempi di proce
     </div>
     <div class="col">
        <div class="py-2">
-        {% include html_docs_mobile/assistance/input-search.html %}
+        {% include html_docs_mobile/assistance/input-search.html id_suff="04" %}
        </div>
       <div class="py-2">
         {% include html_docs_mobile/assistance/survey.html text='Lorem ipsum' %}
@@ -70,10 +70,10 @@ Un’opzione di supporto per servizi complessi caratterizzate da esempi di proce
   </div>
 </div>
 {% highlight html %}
-{% include html_docs_mobile/profile/info-list.html %}
+{% include html_docs_mobile/profile/info-list.html id_suff='01'%}
 {% include html_docs_mobile/assistance/green-number.html %}
 {% include html_docs_mobile/assistance/survey.html icon=true text='Compila il questionario di gradimento' %}
-{% include html_docs_mobile/assistance/input-search.html %}
+{% include html_docs_mobile/assistance/input-search.html id_suff="05"%}
 {% include html_docs_mobile/assistance/survey.html text='Lorem ipsum' %}
 {% include html_docs_mobile/assistance/card-image.html text=true %}
 {% include html_docs_mobile/assistance/card-image.html title=true class='card-sm' %}

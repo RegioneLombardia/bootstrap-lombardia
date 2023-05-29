@@ -50,7 +50,7 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
           <input type="text" class="form-control" id="calendar-range" name="calendar-range"
                   aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aa" />
         </div>
-        <small id="formGroupExampleInputWithHelpDescription" class="form-text">Calendario selezione periodo.</small>
+        <small id="formGroupExampleInputWithHelpDescription14" class="form-text">Calendario selezione periodo.</small>
       </div>
     </div>
     <div class="col">
@@ -65,7 +65,7 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
           <input type="text" class="form-control" id="calendar-multiple" name="calendar-multiple"
                  aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aa" />
         </div>
-        <small id="formGroupExampleInputWithHelpDescription" class="form-text">Calendario selezione multipla.</small>
+        <small id="formGroupExampleInputWithHelpDescription15" class="form-text">Calendario selezione multipla.</small>
       </div>
     </div>
   </div>

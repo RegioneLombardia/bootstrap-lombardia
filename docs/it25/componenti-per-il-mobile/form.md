@@ -37,10 +37,10 @@ La lunghezza in colonne degli elementi dovrà inoltre essere la stessa per tutti
         {% include html_docs_mobile/form/errore.html  %}
       </div> 
       <div class="py-2">
-        {% include html_docs_mobile/form/input.html optionalString='*'  %}
+        {% include html_docs_mobile/form/input.html optionalString='*' id_suff="16"  %}
        </div>
         <div class="py-2">
-        {% include html_docs_mobile/form/input.html optionalString='(obbligatorio)'  %}
+        {% include html_docs_mobile/form/input.html optionalString='(obbligatorio)' id_suff="17"  %}
        </div>
 </div>
 

@@ -2,11 +2,11 @@
   <div class="card">
     <div class="form-group autocomplete-wrapper it25-search">
       <label for="autocomplete-two" class="visually-hidden">Cerca argomenti</label>
-      <input type="search" class="autocomplete" placeholder="Cerca argomenti" id="autocomplete-two" name="autocomplete-two" data-bs-autocomplete="[]" />
+      <input type="search" class="autocomplete" placeholder="Cerca argomenti" id="autocomplete-two{{include.id_suff}}" name="autocomplete-two{{include.id_suff}}" data-bs-autocomplete="[]" aria-label="ricerca con autocompletamento"/>
       <span class="autocomplete-icon" aria-hidden="true">
         <svg class="icon icon-sm black-color"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-search"></use></svg>
       </span>
-      <ul class="autocomplete-list" id="testAutocomplete2">
+      <ul class="autocomplete-list" id="testAutocomplete2{{include.id_suff}}">
         <li>
           <a href="#">
             <div class="avatar size-sm">

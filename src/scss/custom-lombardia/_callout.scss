@@ -1,0 +1,34 @@
+.callout {
+  &.callout-highlight {
+    &.success {
+      border-color: darken($success, 15%);
+    }
+    &.important {
+      border-color: $success;
+    }
+  }
+  &.success {
+    border-color: darken($success, 15%);
+    .callout-title {
+      color: darken($success, 15%);
+      .icon {
+        fill: darken($success, 15%);
+      }
+      span {
+        border-color: darken($success, 15%);
+      }
+    }
+  }
+  &.important {
+    border-color: darken($success, 15%);
+    .callout-title {
+      color: darken($success, 15%);
+      .icon {
+        fill: darken($success, 15%);
+      }
+      span {
+        border-color: darken($success, 15%);
+      }
+    }
+  }
+}

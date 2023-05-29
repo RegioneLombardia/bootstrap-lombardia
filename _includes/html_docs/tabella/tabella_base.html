@@ -3,7 +3,7 @@
     <thead class="table-light">
       <tr>
         <th scope="col" class="text-center">
-          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe" />
+          <input id="checkbox_all_b{{include.type}}" type="checkbox" aria-label="Scegli tutte le righe" />
         </th>
         <th scope="col" class="text-center">Numero</th>
         <th scope="col">Stato</th>
@@ -17,7 +17,7 @@
     </thead>
     <tbody>
       <tr>
-        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1" /></td>
+        <td class="text-center"><input id="checkbox1b{{include.type}}" type="checkbox" aria-label="Scegli riga 1" /></td>
         <th scope="row" class="text-center">###</th>
         <td>Chiusa</td>
         <td>06/09/2018</td>
@@ -32,7 +32,7 @@
         </td>
       </tr>
       <tr>
-        <td class="text-center"><input id="checkbox2" type="checkbox" aria-label="Scegli riga 2" /></td>
+        <td class="text-center"><input id="checkbox2b{{include.type}}" type="checkbox" aria-label="Scegli riga 2" /></td>
         <th scope="row" class="text-center">###</th>
         <td>Chiusa</td>
         <td>06/09/2018</td>
@@ -47,7 +47,7 @@
         </td>
       </tr>
       <tr>
-        <td class="text-center"><input id="checkbox2" type="checkbox" aria-label="Scegli riga 2" /></td>
+        <td class="text-center"><input id="checkbox3b{{include.type}}" type="checkbox" aria-label="Scegli riga 3" /></td>
         <th scope="row" class="text-center">###</th>
         <td>Chiusa</td>
         <td>06/09/2018</td>

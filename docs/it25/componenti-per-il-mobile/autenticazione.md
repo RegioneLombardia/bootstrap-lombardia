@@ -36,8 +36,8 @@ La schermata di autenticazione viene presentata all’utente di default la prima
         <div class="row">
         <div class="col-xs-12 mt-3">
         {% include html_docs_mobile/header/header-mobile.html %}
-        {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Servizio di autenticazione' showHelp='d-none' %}
-        {% include html_docs_mobile/authentication/code.html %}
+        {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Servizio di autenticazione' showHelp='d-none' id_suff='11' %}
+        {% include html_docs_mobile/authentication/code.html id_suff="12" %}
         </div>
       </div> 
       </div>
@@ -53,5 +53,5 @@ Per il background utilizzare la classe css `bg-device-white`.
 {% include html_docs_mobile/authentication/spid.html %}
 <h5 class="f-bold">Codice di sicurezza</h5>
 <p>Login veloce</p>
-{% include html_docs_mobile/authentication/code.html %}
+{% include html_docs_mobile/authentication/code.html id_suff="13" %}
 {% endhighlight %}

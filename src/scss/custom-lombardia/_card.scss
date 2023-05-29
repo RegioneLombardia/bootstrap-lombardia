@@ -5,12 +5,16 @@
     border-top-right-radius: 8px !important;
   }
   .card-header {
-    background-color: #e5e5e5;
+    //background-color: #e5e5e5;
+    background-color: lighten(#e5e5e5, 3%);
     font-weight: bold;
     padding: 12px 24px;
     border: none;
     border-top-left-radius: 8px !important;
     border-top-right-radius: 8px !important;
+    a {
+      color: $primary;
+    }
   }
   .card-tag {
     color: $primary;

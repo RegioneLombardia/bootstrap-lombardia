@@ -6,7 +6,7 @@
           <div class="it-brand-wrapper">
             <div class="it25-hamburger-btn-wrapper">
               <button
-                id="btn-hamburger-mobile"
+                id="btn-hamburger-mobile{{include.id_suff}}"
                 aria-controls="it25-main-nav"
                 aria-expanded="false"
                 aria-label="Apri menù"
@@ -34,8 +34,8 @@
     </div>
   </div>
 </div>
-<div id="it25-nav-hamburger" class="overlay">
-  <button id="it25-close-hamburger" type="button" class="btn-close close-overlay" aria-label="Close"></button>
+<div id="it25-nav-hamburger{{include.id_suff}}" class="overlay">
+  <button id="it25-close-hamburger{{include.id_suff}}" type="button" class="btn-close close-overlay" aria-label="Close"></button>
   <div class="overlay-content">
     <div class="overlay-body">
       <div class="row">

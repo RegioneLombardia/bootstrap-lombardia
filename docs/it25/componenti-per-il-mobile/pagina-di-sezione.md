@@ -14,7 +14,7 @@ Di seguito sono riportati due esempi con livelli di complessità differenti. Nel
     <div class="row my-5">
       <div class="col">
     <div class="py-2">
-      {% include html_docs_mobile/assistance/input-search.html %}
+      {% include html_docs_mobile/assistance/input-search.html id_suff="06"%}
     </div> 
     <div class="py-2">
        {% include html_docs_mobile/assistance/card-image.html text=true %}
@@ -65,7 +65,7 @@ Di seguito sono riportati due esempi con livelli di complessità differenti. Nel
 {% highlight html %}
 
 <h5 class="fw-bold">Pagina di sezione informativa</h5>
-{% include html_docs_mobile/assistance/input-search.html %}
+{% include html_docs_mobile/assistance/input-search.html id_suff="07" %}
  {% include html_docs_mobile/sections/default.html %}
 <h5 class="fw-bold">Pagina di sezione dinamica</h5>
    {% include html_docs_mobile/sections/default-dynamic.html %}
