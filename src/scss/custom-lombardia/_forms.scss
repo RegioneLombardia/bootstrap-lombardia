@@ -39,3 +39,10 @@ div.output-field {
     background-color: $primary; // TODO: Not found
   }
 }
+
+.warning-feedback {
+  color: darken($warning, 25%);
+}
+.valid-feedback {
+  color: darken($success, 15%);
+}

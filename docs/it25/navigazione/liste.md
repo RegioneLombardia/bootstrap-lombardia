@@ -31,7 +31,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
 
 ##### Nested
 {% capture example %}
-{% include html_docs/liste/lista_nested.html %}
+{% include html_docs/liste/lista_nested.html id_suff="25" %}
 {% endcapture %}
 {% include example.html content=example %}
 

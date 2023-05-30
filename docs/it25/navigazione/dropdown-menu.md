@@ -24,7 +24,7 @@ Per la variante bottone è necessario utilizzare la classe `.btn-primary`.
   <div class="row">
     <div class="col">
       <div class="fst-italic">Variante Menu</div>
-      {% include html_docs/dropdown/dropdown.html %}
+      {% include html_docs/dropdown/dropdown.html id_suff="20" %}
     </div>
     <div class="col">
       <div class="fst-italic">Variante Bottone</div>

@@ -31,10 +31,10 @@ La lunghezza in colonne degli elementi dovrà inoltre essere la stessa per tutti
 <div class="bd-example-mobile">
   <h3>Componenti</h3>
        <div class="pt-4 pb-2">
-        {% include html_docs_mobile/form/validato.html  %}
+        {% include html_docs_mobile/form/validato.html id_suff="21" %}
        </div>
       <div class="py-2">
-        {% include html_docs_mobile/form/errore.html  %}
+        {% include html_docs_mobile/form/errore.html id_suff="22" %}
       </div> 
       <div class="py-2">
         {% include html_docs_mobile/form/input.html optionalString='*' id_suff="16"  %}
@@ -48,7 +48,7 @@ La lunghezza in colonne degli elementi dovrà inoltre essere la stessa per tutti
   {% include html_docs_mobile/general/top-iphone.html %}
   {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Lorem ipsum' showHelp='d-none' %}
   <div class="pb-4">
-  {% include html_docs_mobile/form/device.html %}
+  {% include html_docs_mobile/form/device.html id_suff="23" %}
   </div>
 </div>
 

@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Time Picker
 group: informazioni
-toc: no
+toc: yes
 ---
 
 I **Time picker** aiutano gli utenti a selezionare e impostare un'ora specifica.  

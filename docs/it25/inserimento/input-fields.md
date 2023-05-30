@@ -69,23 +69,23 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="row">
   <div class="col">
     <div class="form-group">
-      <label class="active" or="exampleInputText4">Etichetta di esempio</label>
+      <label class="active" for="exampleInputText4">Etichetta di esempio</label>
       <input type="text" class="form-control" id="exampleInputText4" placeholder="Inserite dato...">
-       <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Ulteriore testo informativo</small>
+       <small id="formGroupExampleInputWithHelpDescription4" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
     <div class="form-group">
       <label class="active" for="exampleInputText5">Etichetta di esempio</label>
       <input type="text" class="form-control focus--mouse" id="exampleInputText5" value="Testo in inserim|">
-       <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Ulteriore testo informativo</small>
+       <small id="formGroupExampleInputWithHelpDescription5" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
     <div class="form-group">
       <label class="active" for="exampleInputText6">Etichetta di esempio</label>
       <input type="text" class="form-control" id="exampleInputText6" disabled value="Testo non modificabile">
-       <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Dato derivante da anagrafica</small>
+       <small id="formGroupExampleInputWithHelpDescription6" class="form-text info">Dato derivante da anagrafica</small>
     </div>
   </div>
 </div>
@@ -107,7 +107,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </div>
   <div class="form-group col-4">
     <label class="active" for="input-field-15">Etichetta di esempio</label>
-    <input type="text" class="form-control is-invalid" id="input-field-14" name="input-field-14" value="Testo immesso" />
+    <input type="text" class="form-control is-invalid" id="input-field-15" name="input-field-15" value="Testo immesso" />
      <small class="invalid-feedback {{include.display_info}}">Errore bloccante!</small>
   </div>
 </div>
@@ -147,8 +147,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" for="exampleInputText7">Etichetta di esempio</label>
-        <input type="text" class="form-control focus--mouse" id="exampleInputText7">
+        <label class="active" for="exampleInputText8">Etichetta di esempio</label>
+        <input type="text" class="form-control focus--mouse" id="exampleInputText8">
       </div>
     </div>
   </div>
@@ -160,8 +160,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label for="exampleInputText8">Etichetta di esempio</label>
-        <input type="text" class="form-control" id="exampleInputText8" disabled>
+        <label for="exampleInputText9">Etichetta di esempio</label>
+        <input type="text" class="form-control" id="exampleInputText9" disabled>
       </div>
     </div>
   </div>
@@ -175,10 +175,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" or="exampleInputText24">Etichetta di esempio</label>
+        <label class="active" for="exampleInputText24">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato...">
       </div>
-      <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Ulteriore testo informativo</small>
+      <small id="formGroupExampleInputWithHelpDescription24" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
@@ -192,7 +192,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <label class="active" for="exampleInputText25">Etichetta di esempio</label>
         <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|">
       </div>
-      <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Ulteriore testo informativo</small>
+      <small id="formGroupExampleInputWithHelpDescription25" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
@@ -206,7 +206,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <label class="active" for="exampleInputText26">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText26" disabled value="Testo non modificabile">
       </div>
-      <small id="formGroupExampleInputWithHelpDescription" class="form-text info">Dato derivante da anagrafica</small>
+      <small id="formGroupExampleInputWithHelpDescription26" class="form-text info">Dato derivante da anagrafica</small>
     </div>
   </div>
 </div>
@@ -305,24 +305,24 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <label for="passwd1">Password con label, placeholder e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd1" 
-            aria-labelledby="infoPassword" />
+            aria-labelledby="infoPassword1" />
       <span class="password-icon" aria-hidden="true">
         <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
       </span>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword1" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
   <div class="col">
     <div class="form-group">
       <label class="active" for="passwd2">Password con label, placeholder e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd2"
-            aria-labelledby="infoPassword" value="iuQ34!iwah" />
+            aria-labelledby="infoPassword2" value="iuQ34!iwah" />
       <span class="password-icon" aria-hidden="true">
         <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
       </span>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword2" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
   <div class="col">
@@ -334,7 +334,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <svg class="password-icon-visible icon icon-sm"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
       </span>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword3" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
 </div>
@@ -381,7 +381,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword4" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
   <div class="col">
@@ -400,7 +400,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword42" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
   <div class="col">
@@ -419,7 +419,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
-      <small id="infoPassword" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword43" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
 </div>

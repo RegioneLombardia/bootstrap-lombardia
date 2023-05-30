@@ -1,0 +1,18 @@
+.chip {
+  &.chip-warning {
+    border-color: darken($warning, 25%);
+    color: darken($warning, 25%);
+
+    & > .chip-label {
+      color: darken($warning, 25%);
+    }
+  }
+  &.chip-success {
+    border-color: darken($success, 15%);
+    color: darken($success, 15%);
+
+    & > .chip-label {
+      color: darken($success, 15%);
+    }
+  }
+}

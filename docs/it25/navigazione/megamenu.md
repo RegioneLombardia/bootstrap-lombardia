@@ -15,7 +15,7 @@ Si raccomanda l’utilizzo di questa componente nella forma più semplice e puli
 Il megamenu ha una struttura colonnare in cui ogni colonna richiama al suo interno la componente _lista_ per costruire l’elenco di link desiderato.
 
 {% capture example %}
-{% include html_docs/megamenu/megamenu.html section=false %}
+{% include html_docs/megamenu/megamenu.html section=false id_suff="26" %}
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -24,6 +24,6 @@ Il megamenu ha una struttura colonnare in cui ogni colonna richiama al suo inter
 Il megamenu con intestazione delle colonne viene utilizzato quando vi sono delle categorie di liste in cui sono raggruppate le voci di menu per facilitare la ricerca dei contenuti.
 
 {% capture example %}
-{% include html_docs/megamenu/megamenu.html section=true %}
+{% include html_docs/megamenu/megamenu.html section=true id_suff="27" %}
 {% endcapture %}
 {% include example.html content=example %}

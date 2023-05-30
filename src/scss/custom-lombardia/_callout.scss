@@ -4,7 +4,7 @@
       border-color: darken($success, 15%);
     }
     &.important {
-      border-color: $success;
+      border-color: darken($success, 15%);
     }
   }
   &.success {

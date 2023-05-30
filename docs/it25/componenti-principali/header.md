@@ -54,7 +54,32 @@ La dimensione del menu dropdown può variare a seconda delle esigenze, come ad e
 
 <div class="bd-example">
 {% include html_docs/header/topbar_dropdown.html %}
-{% include html_docs/header/header_search.html %}
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <a href="#">
+              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <form>
+              <div class="it-search-wrapper">
+                <input id="search-input99" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca">
+                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                    <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 </div>
 {% highlight html %}
 {% include html_docs/header/topbar_dropdown.html %}

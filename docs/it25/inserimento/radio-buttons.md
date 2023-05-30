@@ -24,12 +24,12 @@ di un insieme predefinito di opzioni o possibili scelte.
     <div class="col">
       <div>Disabilitato</div>
       <div class="form-check form-check-inline">
-        <input name="gruppo2" type="radio" id="radio1" disabled>
-        <label for="radio1">Non selezionato</label>
+        <input name="gruppo2" type="radio" id="radio3" disabled>
+        <label for="radio3">Non selezionato</label>
       </div>
       <div class="form-check form-check-inline">
-        <input name="gruppo2" type="radio" id="radio2" checked disabled>
-        <label for="radio2">Selezionato</label>
+        <input name="gruppo2" type="radio" id="radio4" checked disabled>
+        <label for="radio4">Selezionato</label>
       </div>
     </div>
   </div>

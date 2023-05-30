@@ -138,7 +138,7 @@ Devono essere usati in modo parsimonioso.
 ### Complementari e triadici
 
 <div class="primary-color-container">
-  <div class="square-color complementary-1-bg">
+  <div class="square-color complementary-1-bg white-color">
     <span>#f73e5a</span>
   </div>
   <div class="square-color complementary-2-bg">

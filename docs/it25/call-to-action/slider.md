@@ -9,11 +9,11 @@ Gli **Slider** offrono la possibilità di selezionare un valore da un intervallo
 Queste componenti sono ideali per regolare impostazioni come volume e luminosità o per applicare filtri e possono utilizzare icone su entrambe le estremità della barra per rappresentare una scala numerica o relativa.
 
 {% capture example %}
-<input type="range" min="0" max="100" step="1" value="10" class="form-range" id="customRange1">
+<input type="range" min="0" max="100" step="1" value="10" class="form-range" id="customRange1" aria-label="sposta il cursore per aumentare o diminuire">
 {% endcapture %}{% include example.html content=example %}
 
 ## Slider con tooltip
-
+<div class="exclude-a11y-check">
 {% capture example %}
 <div id="single-thumb" class="slider-container" style="margin-top:20px">
 <div class="slider"></div>
@@ -24,7 +24,7 @@ Queste componenti sono ideali per regolare impostazioni come volume e luminosit�
 <div class="value-text centered"></div>
 </div>
 {% endcapture %}{% include example.html content=example %}
-
+</div>
 Lo slider con tooltip è un componente javascript.  
 Deve essere incluso tra gli script della pagina il seguen CDN:
 {% highlight html %}

@@ -19,8 +19,8 @@ La navigazione di un’applicazione può avvenire attraverso due modalità princ
     <div class="col">
     <h5 class="fw-bold">Burger menu chiuso</h5>
       <div class="device-auto m-auto mt-5">
-       {% include html_docs_mobile/general/top-iphone.html %}
-      {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Home' %}
+      {% include html_docs_mobile/general/top-iphone.html %}
+      {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Home' id_suff="18" %}
       {% include html_docs_mobile/home/menu-burger-chiuso.html %}
       {% include html_docs_mobile/general/toolbar.html %}
       </div>
@@ -63,7 +63,7 @@ La navigazione di un’applicazione può avvenire attraverso due modalità princ
 {% highlight html %}
 
   <h5 class="fw-bold">Burger menu chiuso</h5>
-  {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Home' %}
+  {% include html_docs_mobile/header/barra-istituzionale-mobile.html title='Home' id_suff="19"%}
   {% include html_docs_mobile/home/menu-burger-chiuso.html %}
   {% include html_docs_mobile/general/toolbar.html %}
   <h5 class="fw-bold">Header con card</h5>

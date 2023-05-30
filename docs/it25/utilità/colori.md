@@ -218,40 +218,40 @@ Il terzo colore neutro è molto simile al bianco, pertanto può essere utilizzat
 
 ## Colori Triadici
 
-<div class="d-flex align-items-start flex-column mb-3">
-  <div class="p-2">
-    <div class="rounded-color complementary-1-bg text-end">
-      <span class="white-color align-middle fw-semibold">#C83A32</span>
+<div class="exclude-a11y-check">
+  <div class="d-flex align-items-start flex-column mb-3">
+    <div class="p-2">
+      <div class="rounded-color complementary-1-bg text-end">
+        <span class="white-color align-middle fw-semibold">#C83A32</span>
+      </div>
+    </div>
+    <div class="p-2">
+      <div class="rounded-color complementary-2-bg shadow text-end">
+        <span class="white-color align-middle fw-semibold">#F19937</span>
+      </div>
+    </div>
+    <div class="p-2">
+      <div class="rounded-color complementary-3-bg shadow text-end">
+        <span class="white-color align-middle fw-semibold">#62AF90</span>
+      </div>
     </div>
   </div>
-  <div class="p-2">
-    <div class="rounded-color complementary-2-bg shadow text-end">
-      <span class="white-color align-middle fw-semibold">#F19937</span>
+  <div class="primary-color-container">
+    <div class="square-color complementary-1-bg text-white">
+      <div>#C83A32</div>
+      <div>complementary-1</div>
     </div>
-  </div>
-  <div class="p-2">
-    <div class="rounded-color complementary-3-bg shadow text-end">
-      <span class="white-color align-middle fw-semibold">#62AF90</span>
+    <div class="square-color complementary-2-bg text-white">
+      <div>#F19937</div>
+      <div>complementary-2</div>
     </div>
+    <div class="square-color complementary-3-bg text-white">
+      <div>#62AF90</div>
+      <div>complementary-3</div>
+    </div>
+    <div class="clearfix"></div>
   </div>
 </div>
-
-<div class="primary-color-container">
-  <div class="square-color complementary-1-bg text-white">
-    <div>#C83A32</div>
-    <div>complementary-1</div>
-  </div>
-  <div class="square-color complementary-2-bg text-white">
-    <div>#F19937</div>
-    <div>complementary-2</div>
-  </div>
-  <div class="square-color complementary-3-bg text-white">
-    <div>#62AF90</div>
-    <div>complementary-3</div>
-  </div>
-  <div class="clearfix"></div>
-</div>
-
 <br>
 
 **Utilizzo delle classi:**

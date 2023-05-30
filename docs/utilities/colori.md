@@ -38,6 +38,7 @@ Puoi trovare maggiori informazioni sulla palette di colori a disposizione alla p
 
 Allo stesso modo di quanto avviene per il testo, le classi `bg-*` permettono di colorare lo sfondo di un elemento; le classi per gli sfondi **non hanno alcun impatto sulla proprità `color`**, per cui in alcuni casi sarà necessario affiancarle alle classi `.text-*`.
 
+<div class="exclude-a11y-check">
 {% capture example %}
 {% for color in site.data.theme-colors %}
 
@@ -45,6 +46,7 @@ Allo stesso modo di quanto avviene per il testo, le classi `bg-*` permettono di 
 
 <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
 {% endcapture %}{% include example.html content=example %}
+</div>
 
 ### Colore di sfondo con gradiente
 

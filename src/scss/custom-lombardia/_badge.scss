@@ -1,0 +1,8 @@
+.badge {
+  &.bg-warning {
+    background-color: darken($warning, 25%) !important;
+  }
+  &.bg-success {
+    background-color: darken($success, 15%) !important;
+  }
+}
