@@ -1,7 +1,7 @@
 // PRIMARY COLORS DEFINITION //
 $primary-h: 131 !default;
 $primary-s: 66 !default;
-$primary-b: 48 !default;
+$primary-b: 47.7 !default;
 $primary: hsb($primary-h, $primary-s, $primary-b) !default;
 
 $primary-blue: hsb(204, 100, 33.1) !default;
@@ -17,15 +17,15 @@ $complementary-2-h: 31.5;
 $complementary-2-s: 77.2;
 $complementary-2-b: 94.5;
 $complementary-2: hsb($complementary-2-h, $complementary-2-s, $complementary-2-b) !default;
-$complementary-3-h: 156;
-$complementary-3-s: 44;
+$complementary-3-h: 119;
+$complementary-3-s: 45;
 $complementary-3-b: 68.6;
 $complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b) !default;
 
 // Info Colors
 $danger: $complementary-1;
 $warning: $complementary-2;
-$success: hsb(118, 45, 69);
+$success: $complementary-3;
 $info: hsb(210, 100, 90);
 
 // NEUTRAL COLORS DEFINITIONS

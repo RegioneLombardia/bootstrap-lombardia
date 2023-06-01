@@ -16,7 +16,7 @@ Sono inoltre presenti delle indicazioni per la realizzazione di schermate di **A
 
 
 ### Linee Guida
-Le **Linee Guida** di Bootstrap Regione Lombardia **indicano quali componenti utilizzare**, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostrano una serie di **Esempi** che possono essere utilizzati come base da cui partire.
+Le **Linee Guida** di Bootstrap Regione Lombardia **indicano quali componenti utilizzare e come utilizzarli**, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostrano una serie di esempi che possono essere utilizzati come base da cui partire.
 
 Sono quindi **indicazioni che è indispensabile seguire** per poter ottenere un'interfaccia *accettabile* da {{ site.data.short.rl }}.
 

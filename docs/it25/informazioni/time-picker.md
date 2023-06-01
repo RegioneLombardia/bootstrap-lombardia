@@ -78,6 +78,8 @@ new bootstrap.it25().datepicker(document.querySelector('#time-picker'), {
 
 ### Time Picker con orologio
 
+**Nota:** questo tipo di time picker è adatto a smartphone e tablet. Su pc, l'utilizzo con il mouse risulta poco pratico.
+
 Il time picker con orologio si basa sull'implementazione di "Grudus Timepicker".  
 Per abilitare questa funzionalità bisogna includere tra gli scrip il seguente CDN:
 

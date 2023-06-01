@@ -15,7 +15,7 @@ Di seguito sono riportati i colori coerenti con la brand identity digitale di Re
 
   <div class="primary-color-container mb-3">
     <div class="square-color primary-bg white-color">
-      <div>#2A7A38</div>
+      <div>#297A38</div>
       <div>primary</div>
     </div>
     <div class="square-color primary-blue-bg white-color">
@@ -246,7 +246,7 @@ Il terzo colore neutro è molto simile al bianco, pertanto può essere utilizzat
       <div>complementary-2</div>
     </div>
     <div class="square-color complementary-3-bg text-white">
-      <div>#62AF90</div>
+      <div>#62AF60</div>
       <div>complementary-3</div>
     </div>
     <div class="clearfix"></div>
