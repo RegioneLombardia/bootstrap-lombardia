@@ -12,7 +12,7 @@ import inject from '@rollup/plugin-inject';
 export default [
   // Bundle version
   {
-    input: 'src/js/bootstrap-italia.entry.js',
+    input: 'src/js/bootstrap-lombardia.entry.js',
     output: {
       file: 'dist/js/bootstrap-lombardia.bundle.min.js',
       format: 'umd',
@@ -54,7 +54,7 @@ export default [
   },
   // Non-bundled version
   {
-    input: 'src/js/bootstrap-italia.entry.js',
+    input: 'src/js/bootstrap-lombardia.entry.js',
     output: {
       file: 'dist/js/bootstrap-lombardia.min.js',
       format: 'umd',
@@ -107,7 +107,7 @@ export default [
   },
   // ESM version
   {
-    input: 'src/js/bootstrap-italia.esm.js',
+    input: 'src/js/bootstrap-lombardia.esm.js',
     output: [
       {
         format: 'es',

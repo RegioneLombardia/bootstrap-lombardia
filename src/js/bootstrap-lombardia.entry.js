@@ -46,7 +46,7 @@ import {
   Masonry,
   List,
   Transfer,
-} from './bootstrap-italia.esm'
+} from './bootstrap-lombardia.esm'
 
 loadPlugin(icons)
 init()

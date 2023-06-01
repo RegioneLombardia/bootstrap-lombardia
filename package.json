@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap-italia",
-  "version": "2.3.5",
+  "name": "bootstrap-lombardia",
+  "version": "2.0.0",
   "keywords": [
     "css",
     "sass",
@@ -10,18 +10,18 @@
     "framework",
     "web"
   ],
-  "module": "dist/bootstrap-italia.esm.js",
+  "module": "dist/bootstrap-lombardia.esm.js",
   "types": "./types/index.d.ts",
   "sideEffects": [
     "*.css",
     "*.scss",
-    "dist/bootstrap-italia.esm.js",
+    "dist/bootstrap-lombardia.esm.js",
     "dist/plugins/init.js"
   ],
-  "description": "Bootstrap Italia è un tema Bootstrap 5 per la creazione di applicazioni web nel pieno rispetto delle Linee Guida di design per i siti internet e i servizi digitali della PA",
-  "homepage": "https://italia.github.io/bootstrap-italia/",
-  "style": "dist/css/bootstrap-italia.min.css",
-  "main": "dist/js/bootstrap-italia.bundle.min.js",
+  "description": "Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web conformi alle Linee Guida per il design e l’identità visiva digitale di Regione Lombardia ",
+  "homepage": "https://regionelombardia.github.io/bootstrap-lombardia/",
+  "style": "dist/css/bootstrap-lombardia.min.css",
+  "main": "dist/js/bootstrap-lombardia.bundle.min.js",
   "scripts": {
     "start": "concurrently \"npm run dev-code\" \"npm run dev-docs\" \"npm run start-bs\"",
     "build": "rollup -c",
@@ -43,8 +43,8 @@
     "test-a11y": "npx pa11y-ci --sitemap http://localhost:4000/sitemap.xml --sitemap-exclude \"/*.pdf\" --sitemap-find ^/ --sitemap-replace 'http://localhost:4000/'",
     "test-a11y-one": "npx pa11y-ci"
   },
-  "repository": "https://github.com/italia/bootstrap-italia",
-  "author": "Presidenza del Consiglio dei Ministri",
+  "repository": "https://github.com/RegioneLombardia/bootstrap-lombardia",
+  "author": "Azienda Regionale Innovazione e Acquisti",
   "license": "BSD-3-Clause",
   "files": [
     "dist/",
