@@ -11,8 +11,8 @@
       </div>
     </a>
 
-    {% if page.layout == "docs" %}
-    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+    {% if page.layout == "it25_docs" %}
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
       menu
     </button>
     {% endif %}
@@ -30,5 +30,12 @@
         </a>
       </li>
     </ul>
+
+    {% if page.layout == "it25_docs" %}
+    <div class="bd-search w-100">
+      <label for="search-input" class="visually-hidden">Cerca:</label>
+      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
+    </div>
+    {% endif %}
   </div>
 </header>

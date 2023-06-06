@@ -49,7 +49,8 @@
   new bootstrap.it25().clockpicker()
 </script>
 
-{%- if page.layout == "default" or page.layout == "docs" -%}
+{%- if page.layout == "default" or page.layout == "docs" or page.layout == "it25_docs" -%}
+<script src="{{ site.baseurl }}/docs/assets/dist/js/docs.min.js?{{ buildTime }}"></script>
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/tsparticles.min.js"></script>
@@ -71,13 +72,14 @@
     { src: '{{ site.baseurl }}/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>
-<script src="{{ site.baseurl }}/docs/assets/src/js/cover-animation.js?{{ buildTime }}"></script>
-{%- endif -%} {%- if page.layout == "docs" -%} {% comment %}La ricerca è gestita con Algolia DocSearch https://github.com/algolia/docsearch{% endcomment %}
+<!-- <script src="{{ site.baseurl }}/docs/assets/src/js/cover-animation.js?{{ buildTime }}"></script> -->
+{%- endif -%}
+{%- if page.layout == "docs" -%} {% comment %}La ricerca è gestita con Algolia DocSearch https://github.com/algolia/docsearch{% endcomment %}
 <script src="{{ site.baseurl }}/docs/assets/src/js/vendor/docsearch.min.js"></script>
 <script>
   docsearch({
     apiKey: 'a755e381c276458251a59282bae6ee93',
-    indexName: 'bootstrap_italia',
+    indexName: 'bootstrap_lombardia',
     inputSelector: '#search-input',
     handleSelected: function (input, event, suggestion) {
       var url = suggestion.url
