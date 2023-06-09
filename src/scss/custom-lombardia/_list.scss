@@ -1,0 +1,61 @@
+ul {
+  li {
+    a {
+      &.list-item {
+        &:hover:not(.disabled) {
+          text-decoration: none;
+          span {
+            color: #505051;
+            text-decoration: underline;
+          }
+          .icon {
+            fill: $primary;
+          }
+        }
+        span {
+          color: #505051;
+          font-weight: 400;
+          &.list-item-title {
+            font-weight: 600;
+          }
+        }
+        // variazione icone a collapse aperto
+        &.active {
+          span {
+            color: #505051;
+            text-decoration: none;
+            font-weight: 600;
+          }
+          .icon {
+            color: $color-text-primary-active;
+          }
+        }
+        &.disabled {
+          cursor: not-allowed;
+          span {
+            color: $gray-disabled;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Desktop
+@include media-breakpoint-up(xl) {
+  .it-list-wrapper {
+    .it-list {
+      a {
+        &.list-item {
+          &:hover {
+            box-shadow: none;
+            color: #505051;
+            text-decoration: underline;
+            background: transparent;
+            border-bottom: 1px solid $list-border-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -7,7 +7,69 @@
       .navbar-nav {
         li {
           a.nav-link {
-            color: $navigation-link-color;
+            //color: $navigation-link-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.navbar {
+  .dropdown-menu {
+    .link-list-wrapper {
+      ul li {
+        a {
+          &.list-item {
+            &.active {
+              color: #505051;
+              text-decoration: none;
+              font-weight: 600;
+
+              span {
+                color: #505051;
+              }
+            }
+          }
+          &.disabled {
+            cursor: not-allowed;
+            span {
+              color: $gray-disabled;
+            }
+          }
+
+          span {
+            color: #505051;
+          }
+
+          i {
+            color: #505051;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  .navbar {
+    .navbar-collapsable {
+      .navbar-nav {
+        li {
+          a.nav-link {
+            color: #505051;
+
+            &.dropdown-toggle {
+              svg {
+                fill: #505051;
+              }
+            }
+
+            &.active {
+              border: none;
+            }
           }
         }
       }

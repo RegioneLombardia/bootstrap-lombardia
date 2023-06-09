@@ -4,7 +4,7 @@
       .navbar-nav {
         li.megamenu {
           a.nav-link {
-            // color: $navigation-link-color;
+            //color: #505051;
             color: $navigation-link-color-desk;
           }
         }
@@ -16,25 +16,6 @@
   .custom-navbar-toggler {
     svg {
       fill: $white;
-    }
-  }
-}
-.it25-menu-principale,
-.it-header-navbar-wrapper {
-  .navbar.has-megamenu {
-    .navbar-collapsable {
-      .navbar-nav {
-        li {
-          a.nav-link {
-            color: $gray-primary;
-          }
-        }
-      }
-    }
-    .custom-navbar-toggler {
-      svg {
-        fill: $gray-primary;
-      }
     }
   }
 }

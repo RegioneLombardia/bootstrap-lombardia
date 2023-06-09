@@ -1,0 +1,18 @@
+//mobile
+.link-list-wrapper {
+  &.it25-linklist-default {
+    ul {
+      li {
+        border-bottom: 1px solid $border-color;
+      }
+    }
+  }
+  .link-list-heading {
+    color: #505051;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: #505051;
+    text-transform: uppercase;
+  }
+}

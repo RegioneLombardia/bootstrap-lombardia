@@ -22,6 +22,9 @@ $complementary-3-s: 45;
 $complementary-3-b: 68.6;
 $complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b) !default;
 
+// Border Color
+$border-color: #d9d9d9;
+
 // Info Colors
 $danger: $complementary-1;
 $warning: $complementary-2;

@@ -1,0 +1,13 @@
+@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  .it25-menu-orizzontale {
+    &.navbar {
+      background: white;
+      border-bottom: 1px solid $gray-border;
+      .navbar-collapsable {
+        .menu-wrapper {
+          background: white;
+        }
+      }
+    }
+  }
+}

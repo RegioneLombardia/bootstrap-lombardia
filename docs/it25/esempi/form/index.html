@@ -3,8 +3,9 @@ layout: base
 title: Template pagina form
 double-logo: true
 ---
-<header class="it25-menu">
-{% include esempi-lombardia/header.html %}
+<header>
+{% include html_docs/header/topbar_dropdown.html %}
+{% include html_docs/header/header_search.html %}
 {% include esempi-lombardia/menu_orizzontale.html %}
 </header>
 
@@ -30,7 +31,7 @@ double-logo: true
     </form>
   </div> <!-- end container -->
 </main>
-{% include esempi-lombardia/footer.html %}
+{% include html_docs/footer/footer.html %}
 
 <a href="#" aria-hidden="true" data-attribute="back-to-top" class="back-to-top">
   <svg class="icon icon-light">

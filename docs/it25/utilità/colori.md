@@ -232,7 +232,7 @@ Il terzo colore neutro è molto simile al bianco, pertanto può essere utilizzat
     </div>
     <div class="p-2">
       <div class="rounded-color complementary-3-bg shadow text-end">
-        <span class="white-color align-middle fw-semibold">#62AF90</span>
+        <span class="white-color align-middle fw-semibold">#62AF60</span>
       </div>
     </div>
   </div>

@@ -103,75 +103,77 @@
   }
 }
 
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 9999;
-  top: 0;
-  left: 0;
-  background-color: #00335480;
-  overflow-x: hidden;
-  transition: 0.5s;
-}
-.overlay-content {
-  position: absolute;
-  top: 0;
-  text-align: center;
-  margin-top: 0;
-  background: $white;
-  height: 100%; // calc(100% - 70px);
-  overflow-x: hidden;
-  overflow-y: auto;
-}
-.overlay a {
-  padding: 10px;
-  text-decoration: none;
-  font-size: 32px;
-  color: #7792a3;
-  display: block;
-  transition: 0.4s;
-}
-.overlay a:hover,
-.overlay a:focus {
-  color: #eeeeee;
-}
-.overlay .close {
-  position: absolute;
-  top: 10px;
-  right: 35px;
-  font-size: 50px;
-}
-@media screen and (max-height: 450px) {
+.it25-mobile {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #00335480;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  .overlay-content {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    margin-top: 0;
+    background: $white;
+    height: 100%; // calc(100% - 70px);
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
   .overlay a {
-    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    color: #7792a3;
+    display: block;
+    transition: 0.4s;
   }
-  .overlay .closed {
-    font-size: 40px;
-    top: 15px;
+  .overlay a:hover,
+  .overlay a:focus {
+    color: #eeeeee;
+  }
+  .overlay .close {
+    position: absolute;
+    top: 10px;
     right: 35px;
+    font-size: 50px;
   }
-}
+  @media screen and (max-height: 450px) {
+    .overlay a {
+      font-size: 20px;
+    }
+    .overlay .closed {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
 
-.overlay-body {
-  height: calc(100% - 70px);
-}
+  .overlay-body {
+    height: calc(100% - 70px);
+  }
 
-.overlay-footer {
-  bottom: 0;
-  height: 70px;
-  background: $white;
-  text-align: start;
-}
+  .overlay-footer {
+    bottom: 0;
+    height: 70px;
+    background: $white;
+    text-align: start;
+  }
 
-.overlay-footer,
-.overlay-content {
-  width: 60%;
-}
+  .overlay-footer,
+  .overlay-content {
+    width: 60%;
+  }
 
-.close-overlay {
-  position: absolute;
-  right: 30%;
-  top: 35px;
-  z-index: 9999;
+  .close-overlay {
+    position: absolute;
+    right: 30%;
+    top: 35px;
+    z-index: 9999;
+  }
 }

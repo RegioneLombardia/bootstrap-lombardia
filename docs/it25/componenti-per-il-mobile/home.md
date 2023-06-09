@@ -28,22 +28,24 @@ La navigazione di un’applicazione può avvenire attraverso due modalità princ
     <div class="col">
      <h5 class="fw-bold">Burger menu aperto</h5>
       <div class="device m-auto mt-5">
-    <div id="it25-nav-hamburger-test" class="overlay-test">
-          <button id="it25-close-hamburger" type="button" class="btn-close close-overlay" aria-label="Close"></button>
-          <div class="overlay-content">
-              <div class="overlay-body">
-               <div class="row">
-              <div class="col">{% include html_docs_mobile/profile/profile.html display='d-none' %}</div>
-            </div>
-            <div class="row">
-              <div class="col">{% include html_docs_mobile/general/menu-mobile.html %}</div>
-            </div>
+        <div class="it25-mobile">
+          <div id="it25-nav-hamburger-test" class="overlay-test">
+            <button id="it25-close-hamburger" type="button" class="btn-close close-overlay" aria-label="Close"></button>
+            <div class="overlay-content">
+                <div class="overlay-body">
+                <div class="row">
+                <div class="col">{% include html_docs_mobile/profile/profile.html display='d-none' %}</div>
               </div>
-            <div class="overlay-footer">
-              <a href="#">
-                <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" width="95" />
-              </a>
-          </div>
+              <div class="row">
+                <div class="col">{% include html_docs_mobile/general/menu-mobile.html %}</div>
+              </div>
+                </div>
+              <div class="overlay-footer">
+                <a href="#">
+                  <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" width="95" />
+                </a>
+            </div>
+            </div>
           </div>
         </div>
       </div>
