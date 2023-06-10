@@ -1,21 +1,3 @@
-//Tablet horizontal / small desktop
-@media (min-width: #{map-get($grid-breakpoints, lg)}) {
-  .navbar {
-    // navbar mobile
-    .navbar-collapsable {
-      /*lista menu*/
-      .navbar-nav {
-        li {
-          a.nav-link {
-            //color: $navigation-link-color;
-          }
-        }
-      }
-    }
-  }
-}
-
-
 .navbar {
   .dropdown-menu {
     .link-list-wrapper {
@@ -51,8 +33,7 @@
     }
   }
 }
-
-
+/*
 @media (min-width: #{map-get($grid-breakpoints, lg)}) {
   .navbar {
     .navbar-collapsable {
@@ -60,19 +41,9 @@
         li {
           a.nav-link {
             color: #505051;
-
-            &.dropdown-toggle {
-              svg {
-                fill: #505051;
-              }
-            }
-
-            &.active {
-              border: none;
-            }
           }
         }
       }
     }
   }
-}
+}*/

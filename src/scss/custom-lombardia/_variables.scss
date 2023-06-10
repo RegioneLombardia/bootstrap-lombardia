@@ -29,9 +29,16 @@ $hero-bg-color: $primary;
 $hero-primary-bg: rgba($primary, 0.85);
 
 // Navigation
-$navigation-toggle-button-icon-color: $primary;
-$navigation-link-active-bar-color-desk: $primary;
+// navigation light theme (desktop)
+$it25-navigation-bg-color: $white !default;
+$it25-navigation-text-color: #505051;
+$it25-navigation-megamenu-footer-bg-color: $color-background-primary-lighter !default; // UI kit
+$it25-navigation-separator-color: $neutral-1-a2 !default;
+$it25-navigation-megamenu-separator-color: $gray-border !default; // UI kit
+//$navigation-toggle-button-icon-color: $primary;
+//$navigation-link-active-bar-color-desk: $primary;
 $navigation-hamburger-size: 30px;
+
 
 // Table
 $table-head-bg: $neutral-2;

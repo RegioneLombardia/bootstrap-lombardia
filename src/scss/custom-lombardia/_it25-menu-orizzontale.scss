@@ -1,11 +1,188 @@
+//@media (min-width: #{map-get($grid-breakpoints, lg)}) {
+  //.it25-menu-orizzontale {
+    //&.navbar {
+      //background: white;
+      //border-bottom: 1px solid $gray-border;
+      //.navbar-collapsable {
+        //.menu-wrapper {
+          //background: white;
+          //.navbar-nav {
+            //li {
+              //a.nav-link {
+                //color: #505051;
+
+                //&.dropdown-toggle {
+                  //svg {
+                    //fill: #505051;
+                  //}
+                //}
+                //&.active {
+                  //border-color: white;
+                  //font-weight: 700;
+                //}
+              //}
+            //}
+          //}
+        //}
+      //}
+    //}
+  //}
+//}
+
+
+
+/*
+Personalizzazione di _custom/headernavbartheme.scss
+per il menù orizzontale.
+++++++++++++++++++++++++++++++Desktop light Theme+++++++++++++++++++++++++++++++++++++++++++++++++
+*/
 @media (min-width: #{map-get($grid-breakpoints, lg)}) {
-  .it25-menu-orizzontale {
-    &.navbar {
-      background: white;
-      border-bottom: 1px solid $gray-border;
-      .navbar-collapsable {
-        .menu-wrapper {
-          background: white;
+  .it-header-navbar-wrapper {
+    &.theme-light-desk {
+      &.it25-menu-orizzontale {
+        background: $navigation-light-bg-color;
+        box-shadow: $dropdown-box-shadow;
+        .navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
+          fill: $it25-navigation-text-color; //mod
+        }
+
+        .navbar {
+          background: transparent;
+          // navbar mobile
+          .navbar-collapsable {
+            // menu vrapper
+            .menu-wrapper {
+              background: $navigation-light-bg-color;
+              .navbar-nav {
+                .dropdown-menu {
+                  h3,
+                  .link-list-heading {
+                    color: $navigation-light-bg-color;
+                  }
+                  .link-list {
+                    h3 {
+                      color: $navigation-light-bg-color;
+                    }
+                  }
+                }
+              }
+            }
+            /*lista menu*/
+            .navbar-nav {
+              li {
+                // megamenu variation
+                &.megamenu {
+                  // external link
+                  .it-external {
+                    .link-list-wrapper {
+                      .link-list {
+                        li.it-more {
+                          a {
+                            &:before {
+                              background: $navigation-light-megamenu-separator-color;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  a.nav-link {
+                    &:before {
+                      background-color: white; //mod
+                    }
+                  }
+                  // footer cta
+                  .it-megamenu-footer {
+                    background: $navigation-light-megamenu-footer-bg-color;
+                  }
+                  .dropdown-menu {
+                    // asymettrical column
+                    .it-heading-megacolumn-wrapper {
+                      .it-heading-megacolumn {
+                        color: $navigation-light-bg-color;
+                      }
+                    }
+                    // vertical cta
+                    .it-vertical {
+                      background: $navigation-light-megamenu-footer-bg-color;
+                      .link-list-wrapper {
+                        .link-list {
+                          li {
+                            .divider {
+                              background: $navigation-light-megamenu-separator-color;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                  // description content
+                  .it-description {
+                    p {
+                      color: $navigation-light-bg-color;
+                    }
+                  }
+                }
+
+                a.nav-link {
+                  color: $it25-navigation-text-color; //mod
+                  &.active {
+                    border-bottom-color: white; //mod
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+          }
+          //dropdown
+          .dropdown-menu {
+            background: white; //mod
+            h3 {
+              font-weight: 600;
+              &.it-heading-megacolumn {
+                color: $navigation-light-bg-color;
+              }
+            }
+            &:before {
+              background: white; //mod
+            }
+            .link-list-wrapper {
+              ul {
+                li {
+                  a {
+                    &.list-item.active {
+                      color: $it25-navigation-text-color; //mod
+
+                      span {
+                        color: $it25-navigation-text-color; //mod
+                      }
+                    }
+                    &.disabled {
+                      cursor: not-allowed;
+                      span {
+                        color: $gray-disabled;
+                      }
+                    }
+                    span {
+                      color: $it25-navigation-text-color; //mod
+                    }
+                    i {
+                      color: $navigation-light-bg-color;
+                    }
+                    h3 {
+                      color: $navigation-light-bg-color;
+                    }
+                  }
+                  h3 {
+                    color: $navigation-light-bg-color;
+                  }
+                  .divider {
+                    background: $navigation-light-separator-color;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
