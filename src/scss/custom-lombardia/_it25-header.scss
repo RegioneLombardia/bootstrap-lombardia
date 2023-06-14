@@ -148,7 +148,10 @@ header {
 
 .menu-hamburger {
   width: 20rem;
-  height: 25rem;
+  height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    height: calc(100vh - $header-center-max-height - $header-slim-height);
+  }
   background-color: $white;
   position: absolute;
   display: none;
@@ -156,7 +159,11 @@ header {
     position: relative;
     top: 0;
     padding: 0;
-    height: 25rem;
+    z-index: 6;
+    height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+    @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+      height: calc(100vh - $header-center-max-height - $header-slim-height);
+    }
     .it25-sidebar-links {
       padding: 0;
     }

@@ -3,6 +3,13 @@ Personalizzazione di _custom/headernavbartheme.scss
 per il menù orizzontale.
 ++++++++++++++++++++++++++++++Desktop light Theme+++++++++++++++++++++++++++++++++++++++++++++++++
 */
+.it-header-navbar-wrapper {
+  &.theme-light-desk {
+    &.it25-menu-orizzontale {
+      background: white;
+    }
+  }
+}
 @media (min-width: #{map-get($grid-breakpoints, lg)}) {
   .it-header-navbar-wrapper {
     &.theme-light-desk {

@@ -21,7 +21,7 @@ Per utilizzare il codice compilato di Bootstrap Italia nel proprio progetto, è 
 
 il tutto scaricabile qui:
 
-<a href="https://github.com/italia/bootstrap-italia/releases/download/v{{ site.current_version }}/bootstrap-italia.zip" class="btn btn-primary disabled">Scarica Bootstrap Italia v{{ site.current_version }}</a>
+<a href="https://github.com/italia/bootstrap-italia/releases/download/v{{ site.current_version }}/bootstrap-italia.zip" class="btn btn-primary disabled">Scarica Bootstrap Italia v{{ site.bootstrap_italia_version }}</a>
 
 {% capture callout %}
 
