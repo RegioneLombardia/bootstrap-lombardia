@@ -4,9 +4,8 @@ title: Template pagina wizard
 ---
 
 <header class="it25-none">
-{% include esempi-lombardia/topbar.html %}
-{% include esempi-lombardia/barra_istituzionale.html %}
-{% include esempi-lombardia/barra_utente.html %}
+{% include html_docs/header/topbar_base.html %}
+{% include html_docs/header/header_base.html %}
 </header>
 
 <main>
@@ -52,7 +51,7 @@ title: Template pagina wizard
   </div>
 </main>
 
-{% include esempi-lombardia/footer_minimo.html %}
+{% include html_docs/footer/footer.html %}
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {

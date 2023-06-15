@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col">
+  <div class="col-6">
     <label class="fw-semibold me-5" for="gruppo2">Cittadinanza:</label>
     <div class="form-check form-check-inline">
       <input name="gruppo2" type="radio" id="radio4" checked>
@@ -13,5 +13,9 @@
       <input name="gruppo2" type="radio" id="radio6">
       <label for="radio6">Extra UE</label>
     </div>
+  </div>
+
+  <div class="col-6">
+    {% include html_docs/input/autocompletamento.html %}
   </div>
 </div>

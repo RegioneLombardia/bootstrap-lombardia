@@ -47,7 +47,7 @@ Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi 
 
 ### Abilitazione
 
-Per abilitare il funzionamento dell'esempio è stato inserito nella pagina il seguente codice:
+Per abilitare il funzionamento dei tooltip dell'esempio, è stato inserito nella pagina il seguente codice:
 
 {% highlight html %}
 <script>

@@ -92,13 +92,6 @@
       url: componenti-per-il-mobile/form
 
 - title: Esempi
-  pages:
-    - title: Tabella complessa
-    - title: Form
-    - title: Wizard
-      url: esempi/pag_wizard
-    - title: Cookiebar
-#    - title: Il codice
 
 - title: Installazione
 
