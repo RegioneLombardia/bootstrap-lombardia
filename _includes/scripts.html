@@ -1,10 +1,6 @@
 {% assign buildTime = site.time | date: '%Y%m%d%H%M' %}
 <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 <script src="{{ site.baseurl }}/dist/js/bootstrap-lombardia.bundle.min.js?{{ buildTime }}"></script>
-<script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
-<script type="text/javascript" src="https://rawgit.com/grudus/Timepicker/master/dist/grudus-timepicker.es5.js"></script>
 <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 <!--   <script>window.__PUBLIC_PATH__ = '{{ site.baseurl }}'</script> -->
 
@@ -22,31 +18,38 @@
     },
     1, (value) => console.log(value)
   )
-  new bootstrap.it25().datepicker(document.querySelector('#calendar-multiple'), {
-    allowInput: true,
-    dateFormat: 'd/m/Y',
-    locale: "it",
-    mode: 'multiple'
-  })
-  new bootstrap.it25().datepicker(document.querySelector('#calendar-range'), {
-    allowInput: true,
-    dateFormat: 'd/m/Y',
-    locale: "it",
-    mode: 'range'
-  })
-  new bootstrap.it25().datepicker(document.querySelector('#calendar-single'), {
-    allowInput: true,
-    dateFormat: 'd/m/Y',
-    locale: "it"
-  })
-  new bootstrap.it25().datepicker(document.querySelector('#time-picker'), {
-    allowInput: true,
-    enableTime: true,
-    noCalendar: true,
-    dateFormat: 'H:i',
-    time_24hr: true
-  })
-  new bootstrap.it25().clockpicker()
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
 </script>
 
 {%- if page.layout == "default" or page.layout == "docs" or page.layout == "it25_docs" -%}

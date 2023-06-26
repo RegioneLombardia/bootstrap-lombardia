@@ -100,10 +100,13 @@
     "accessible-autocomplete": "^2.0.4",
     "animejs": "^3.2.1",
     "bootstrap": "^5.2.3",
+    "flatpickr": "^4.6.13",
+    "grudus-timepicker": "^1.0.2",
     "jquery-clock-timepicker": "^2.6.3",
     "just-validate": "^3.5.1",
     "masonry-layout": "^4.2.2",
     "progressbar.js": "^1.1.0",
+    "range-slider-input": "^2.4.4",
     "uuid": "^8.3.2"
   }
 }

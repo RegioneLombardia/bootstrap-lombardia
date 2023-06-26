@@ -53,23 +53,15 @@ Essi consentono agli utenti di inserire un valore di tempo e possono essere util
 </div>
 {% endhighlight %}
 
-
-Il time picker di seguito è un componente implementato in javascript.  
+Questo time-picker è un componente implementato in javascript ed il cui codice è importato all'interno di `bootstrap-lombardia.min.js`.  
 E' stata utilizzata la libreria **flatpickr** la cui documentazione completa è reperibile a **[questo indirizzo](https://flatpickr.js.org/options/)**.
 
-Deve essere incluso tra gli script della pagina il seguente CDN:
+Per inizializzare il componente deve essere invocata la funzione seguente, passando come parametro l'elemento cui collegarla:  
 {% highlight html %}
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-{% endhighlight %}
-
-Per inizializzare il componente deve essere invocata la seguente funzione:
-
-{% highlight html %}
-new bootstrap.it25().datepicker(document.querySelector('#time-picker'), {
-  allowInput: true,
+flatpickr(document.querySelector('#time-picker'), {
   enableTime: true,
   noCalendar: true,
-  dateFormat: 'H:i',
+  dateFormat: "H:i",
   time_24hr: true
 })
 {% endhighlight %}
@@ -80,12 +72,8 @@ new bootstrap.it25().datepicker(document.querySelector('#time-picker'), {
 
 **Nota:** questo tipo di time picker è adatto a smartphone e tablet. Su pc, l'utilizzo con il mouse risulta poco pratico.
 
-Il time picker con orologio si basa sull'implementazione di "Grudus Timepicker".  
-Per abilitare questa funzionalità bisogna includere tra gli scrip il seguente CDN:
-
-{% highlight html %}
-<script type="text/javascript" src="https://rawgit.com/grudus/Timepicker/master/dist/grudus-timepicker.es5.js"></script>
-{% endhighlight %}
+Il time picker con orologio è un componente implementato in javascript ed il cui codice è importato all'interno di `bootstrap-lombardia.min.js`.  
+E' stata utilizzata la libreria **Grudus Timepicker** la cui documentazione completa è reperibile a **[questo indirizzo](https://grudus.github.io/Timepicker/)**.
 
 <div class="bd-example">
   <div class="row">
@@ -96,4 +84,9 @@ Per abilitare questa funzionalità bisogna includere tra gli scrip il seguente C
 </div>
 {% highlight html %}
 {% include html_docs/timepickers/clockpicker.html %}
+{% endhighlight %}
+
+Per inizializzare il componente deve essere invocata la funzione seguente, passando come parametro l'elemento cui collegarla:  
+{% highlight html %}
+new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
 {% endhighlight %}

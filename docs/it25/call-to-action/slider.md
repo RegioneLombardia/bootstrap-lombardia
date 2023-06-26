@@ -25,25 +25,23 @@ Queste componenti sono ideali per regolare impostazioni come volume e luminosit�
 </div>
 {% endcapture %}{% include example.html content=example %}
 </div>
-Lo slider con tooltip è un componente javascript.  
-Deve essere incluso tra gli script della pagina il seguen CDN:
-{% highlight html %}
-<script src="https://cdn.jsdelivr.net/npm/range-slider-input@2.4/dist/rangeslider.umd.min.js"></script>
-{% endhighlight %}
+
+Lo slider con tooltip è un componente implementato in javascript ed il cui codice è importato all'interno di `bootstrap-lombardia.min.js`.  
+E' basato sulla libreria **range-slider-input** la cui documentazione completa è reperibile a **[questo indirizzo](https://www.jsdelivr.com/package/npm/range-slider-input)**.
 
 Per attivarlo si deve invocare la funzione:
 {% highlight html %}
-  new bootstrap.it25().gooeyRangeSlider(
-    document.querySelector('#single-thumb'),
-    {
-      min: 0,
-      max: 100,
-      value: [0, 10],
-      thumbsDisabled: [true, false],
-      rangeSlideDisabled: false
-    },
-    1, (value) => console.log(value)
-  )
+new bootstrap.it25().gooeyRangeSlider(
+  document.querySelector('#single-thumb'),
+  {
+    min: 0,
+    max: 100,
+    value: [0, 10],
+    thumbsDisabled: [true, false],
+    rangeSlideDisabled: false
+  },
+  1, (value) => console.log(value)
+)
 {% endhighlight %}
 
 Il primo parametro della funzione è l'*id* dell'elemento da inizializzare.  

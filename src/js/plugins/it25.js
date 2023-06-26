@@ -1,3 +1,6 @@
+import rangeSlider from 'range-slider-input/dist/rangeslider.umd.min.js'
+import Timepicker from 'grudus-timepicker/dist/grudus-timepicker.js'
+
 class it25 {
   gooeyRangeSlider(element, options = {}, initialIndex = 0, onChange) {
     if (element == null) {
@@ -47,28 +50,15 @@ class it25 {
     update()
   }
 
-  datepicker(element, options = {}, onChange) {
-    if (element == null) {
-      return
-    }
-    flatpickr(element, options)
-  }
-
-  clockpicker() {
-    document.addEventListener(
+  clockpicker(element) {
+    element.addEventListener(
       'click',
       function (event) {
-        // If the clicked element doesn't have the right selector, bail
-        if (!event.target.matches('.clock-picker')) return
-
-        // Don't follow the link
-        event.preventDefault()
-
         Timepicker.showPicker({
-          time: { hours: 3, minutes: '05' },
+          time: element.value,
           handColor: '#2a7a38',
           onSubmit: (selected) => {
-            document.getElementById(event.target.id).value = selected.formatted()
+            element.value = selected.formatted()
             document.getElementById('grudus-clock').parentNode.removeChild(document.getElementById('grudus-clock'))
           },
           onClose: () => {

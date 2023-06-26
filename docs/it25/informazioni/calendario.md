@@ -73,19 +73,12 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
 {% endcapture %}{% include example.html content=example %}
 
 
-Questo calendario è un componente implementato in javascript.  
+Questo calendario è un componente implementato in javascript ed il cui codice è importato all'interno di `bootstrap-lombardia.min.js`.  
 E' stata utilizzata la libreria **flatpickr** la cui documentazione completa è reperibile a **[questo indirizzo](https://flatpickr.js.org/options/)**.
 
-Devono essere inclusi tra gli script della pagina i seguenti CDN:
+Per inizializzare il componente deve essere invocata la funzione seguente, passando come parametro l'elemento cui collegarla:  
 {% highlight html %}
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script src="https://npmcdn.com/flatpickr/dist/l10n/it.js"></script>
-{% endhighlight %}
-
-
-Per inizializzare il componente deve essere invocata la seguente funzione.  
-{% highlight html %}
-new bootstrap.it25().datepicker(document.querySelector('#calendar-single'), {
+flatpickr(document.querySelector('#calendar-single'), {
   allowInput: true,
   dateFormat: 'd/m/Y',
   locale: "it"
@@ -94,17 +87,17 @@ new bootstrap.it25().datepicker(document.querySelector('#calendar-single'), {
 
 Utilizzare il parametro **mode** per impostare la selezione multipla o di un range.
 {% highlight html %}
-new bootstrap.it25().datepicker(document.querySelector('#calendar-range'), {
-  allowInput: true,
-  dateFormat: 'd/m/Y',
-  locale: "it",
-  mode: 'range'
-})
-new bootstrap.it25().datepicker(document.querySelector('#calendar-multiple'), {
+flatpickr (document.querySelector('#calendar-multiple'), {
   allowInput: true,
   dateFormat: 'd/m/Y',
   locale: "it",
   mode: 'multiple'
+})
+flatpickr(document.querySelector('#calendar-range'), {
+  allowInput: true,
+  dateFormat: 'd/m/Y',
+  locale: "it",
+  mode: 'range'
 })
 {% endhighlight %}
 
