@@ -2,7 +2,7 @@ const replace = require('replace-in-file')
 
 const configYmlPath = '_config.yml'
 const jsPath = 'src/js/version.js'
-const scssPath = 'src/scss/custom/_version.scss'
+const scssPath = 'src/scss/custom-lombardia/_version.scss'
 // package.json is updated by `npm version major/minor/patch` or similar
 const version = require('../package.json').version
 
@@ -14,14 +14,14 @@ const configYmlOptions = {
 
 const configJsOptions = {
   files: jsPath,
-  from: /BOOTSTRAP_ITALIA_VERSION = .+/gi,
-  to: `BOOTSTRAP_ITALIA_VERSION = '${version}'`,
+  from: /BOOTSTRAP_LOMBARDIA_VERSION = .+/gi,
+  to: `BOOTSTRAP_LOMBARDIA_VERSION = '${version}'`,
 }
 
 const configScssOptions = {
   files: scssPath,
-  from: /bootstrap-italia-version:.+/gi,
-  to: `bootstrap-italia-version: '${version}';`,
+  from: /bootstrap-lombardia-version:.+/gi,
+  to: `bootstrap-lombardia-version: '${version}';`,
 }
 
 const replaceInFile = (config) => {
