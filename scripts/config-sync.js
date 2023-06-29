@@ -1,7 +1,7 @@
 const replace = require('replace-in-file')
 
 const configYmlPath = '_config.yml'
-const jsPath = 'src/js/version.js'
+const jsPath = 'src/js/it25_version.js'
 const scssPath = 'src/scss/custom-lombardia/_version.scss'
 // package.json is updated by `npm version major/minor/patch` or similar
 const version = require('../package.json').version

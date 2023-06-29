@@ -28,7 +28,7 @@ oppure
 Vuoi segnalare un bug o fare una richiesta?
 
 Prima di tutto assicurati che sia un problema relativo al tema Bootstrap Lombardia e non alle librerie da cui deriva
-(in tal caso puoi fare riferimento al [repository di Bootstrap Italia](https://github.com/italia/bootstrap-italia)).  
+(in tal caso puoi fare riferimento al [repository di Bootstrap Regione Lombardia](https://github.com/RegioneLombardia/bootstrap-lombardia)).  
 Puoi [creare una issue](https://github.com/RegioneLombardia/bootstrap-lombardia/issues) su GitHub, nella sezione apposita.
 
 

@@ -14,17 +14,19 @@ layout: default
 
           <p>Il suo scopo è facilitare il design seriale del front-end degli applicativi della {{ site.data.short.rl }}, utilizzando componenti conformi al <strong>{{ site.data.short.ivd }}</strong> a cui ci si deve attenere per mantenere la coerenza e la continuità dell’ecosistema digitale dell’Ente.</p>
 
+{% capture callout %}
+#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Attenzione! Primo rilascio della nuova versione.
+Il rilascio è stato effettuato per poter eseguire una serie di test finali.<br>
+La distribuzione è sostanzialmente funzionante e utilizzabile. Esiste però la possibilità di modifiche di rifinitura sia nell'aspetto grafico, che nell'implementazione html e javascript.<br/>
+Vi saremmo grati se ci segnalaste eventuali bug direttamente sull'<a href="https://github.com/RegioneLombardia/bootstrap-lombardia/issues" target="_blank">issue tracker</a> su github.<br/>
+Nel caso leggete prima come <a href="https://github.com/RegioneLombardia/bootstrap-lombardia/blob/master/CONTRIBUTING.md#creare-una-issue" target="_blank">creare una issue</a>.
+{% endcapture %}{% include callout.html content=callout type="warning" %}
+
           <div class="d-flex flex-column justify-content-center my-5">
             <a class="mt-2 mx-auto btn btn-primary" href="{{ site.baseurl }}/docs/it25/introduzione/">Introduzione</a>
-            <div class="mx-auto text-muted">Versione corrente: <strong>v{{ site.current_version }}</strong></div>
+            <div class="mx-auto text-muted">Versione corrente: <strong>rl{{ site.current_version }}</strong></div>
+            <div class="mx-auto text-muted">(basata su Bootstrap Italia: <strong>v{{ site.bootstrap_italia_version }}</strong> e Bootstrap <strong>v{{ site.bootstrap_version }}</strong>)</div>
           </div>
-
-{% capture callout %}
-#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Attenzione! Lavori in corso.
-Questo è un rilascio di test.
-E' possibile sia consultare la documentazione che scaricare il file <i>.zip</i> della distribuzione, per fare dei test: la distribuzione è sostanzialmente funzionante.<br/>
-Esiste però la possibilità di aggiustamenti finali sia nell'aspetto grafico, che nell'implementazione html e javascript.
-{% endcapture %}{% include callout.html content=callout type="warning" %}
 
           <p>Oltre al manuale on-line è possibile consultare:
             <div>
