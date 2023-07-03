@@ -1,9 +1,56 @@
-## [1.6.4](https://github.com/italia/bootstrap-italia/compare/v1.6.3...v1.6.4) (2022-07-12)
+## [0.4.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.4.0...v0.4.1) (2023-01-17)
 
 
-### Bug Fixes
 
-* **core:** burger icon visible on light header ([9915a75](https://github.com/italia/bootstrap-italia/commit/9915a75b0057a9b438f07efc8fd77007f86663df))
+# [0.4.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.6.3...v0.4.0) (2022-12-30)
+
+
+
+## [0.3.5](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.4.0...v0.3.5) (2020-07-08)
+
+
+
+## [0.3.4](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.3...v0.3.4) (2020-04-15)
+
+
+
+## [0.3.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.10...v0.3.3) (2020-03-09)
+
+
+
+## [0.3.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.1...v0.3.2) (2020-02-25)
+
+
+
+## [0.3.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.0...v0.3.1) (2020-01-24)
+
+
+
+# [0.3.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.9...v0.3.0) (2020-01-16)
+
+
+
+## [0.2.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.2...v0.2.3) (2019-12-06)
+
+
+
+## [0.2.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.1...v0.2.2) (2019-11-25)
+
+
+
+## [0.2.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.0...v0.2.1) (2019-11-18)
+
+
+
+# [0.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.1.6...v0.2.0) (2019-11-15)
+
+
+
+## [0.1.6](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.8...v0.1.6) (2019-10-24)
+
+
+
+## [0.1.5](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.7...v0.1.5) (2019-10-17)
 
 
 
