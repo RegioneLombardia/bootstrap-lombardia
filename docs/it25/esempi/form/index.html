@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
+
+<title>Template pagina form · Bootstrap Lombardia</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
+
+<!-- Documentation extras -->
+
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="Template pagina form" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/esempi/form/" />
+<meta property="og:title" content="Template pagina form" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <header>
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" data-bs-display="static">
+                <span>Lorem ipsum dolor sit</span>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                </svg>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu" data-popper-placement="bottom-end">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <div class="it25-hamburger-btn-wrapper">
+              <button
+                id="btn-hamburger"
+                aria-controls="it25-main-nav"
+                aria-expanded="false"
+                aria-label="Apri menù"
+                class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                data-bs-target="#it25-main-nav"
+                type="button"
+              >
+                <svg class="icon icon-primary">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="it25-close-div">
+                <button
+                  id="btn-hamburger-close"
+                  class="btn btn-xs close-menu"
+                  type="button"
+                  data-bs-target="#it25-main-nav"
+                  aria-controls="it25-main-nav"
+                  aria-label="Chiudi menù"
+                >
+                  <svg class="icon icon-primary">
+                    <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#">
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <form>
+              <div class="it-search-wrapper">
+                <input id="search-input02" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca">
+                <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                  <svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="menu-hamburger" class="menu-hamburger">
+ <div class="sidebar-wrapper it25-sidebar-wrapper">
+   <div class="sidebar-linklist-wrapper it25-sidebar-links">
+    <div class="link-list-wrapper link-list-wrapper">
+      <ul class="link-list">
+        <li>
+          <a class="list-item medium active" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</header>
+
+<main>
+  <div class="container">
+    <form class="my-5">
+      <div class="row">
+  <div class="form-group col-md-6">
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
+    <label for="inputEmail4" class="active">Email</label>
+  </div>
+  <div class="form-group col-md-4">
+    <label for="exampleInputPassword9">Password</label>
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" />
+    <div class="password-strength-meter">
+      <small
+        class="form-text text-muted"
+        data-bs-short-pass="Password molto debole"
+        data-bs-bad-pas="Password debole"
+        data-bs-good-pass="Password sicura"
+        data-bs-strong-pass="Password molto sicura"
+        >Inserisci almeno 8 caratteri e una lettera maiuscola</small
+      >
+      <div class="password-meter progress rounded-0 position-absolute">
+        <div class="row position-absolute w-100 m-0">
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+          <div class="col-3 border-start border-end border-white"></div>
+        </div>
+        <div class="progress-bar bg-muted" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+    <span class="password-icon" aria-hidden="true">
+      <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+      <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+    </span>
+    <small class="password-caps form-text text-warning position-absolute bg-white w-100">CAPS LOCK inserito</small>
+  </div>
+  <div class="form-group col-md-2">
+    <label class="output">Ticket</label>
+    <div class="output-field">AC-123-0002658</div>
+  </div>
+</div>
+
+      <div class="row">
+  <div class="form-group col-md-6">
+    <input type="text" class="form-control" id="formNome" />
+    <label for="formNome">Nome</label>
+  </div>
+  <div class="form-group col-md-6">
+    <input type="text" class="form-control" id="formCognome" />
+    <label for="formCognome">Cognome</label>
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-10">
+    <input type="text" class="form-control" id="inputAddress" />
+    <label for="inputAddress">Indirizzo</label>
+  </div>
+  <div class="form-group col-2">
+    <label for="civico" class="input-number-label">Civico</label>
+    <input type="number" id="civico" name="civico" />
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-md-6">
+    <input type="text" class="form-control" id="inputCity" />
+    <label for="inputCity">Comune</label>
+  </div>
+  <div class="form-group col-md-2">
+    <input type="number" class="form-control" id="inputCAP" />
+    <label for="inputCAP">CAP</label>
+  </div>
+  <div class="col-md-4">
+    <div class="select-wrapper">
+      <label for="defaultSelect">Provincia</label>
+      <select id="defaultSelect">
+        <option selected="" value="">Scegli un'opzione</option>
+        <option value="BG">Bergamo</option>
+        <option value="BS">Brescia</option>
+        <option value="CO">Como</option>
+        <option value="CR">Cremona</option>
+        <option value="LC">Lecco</option>
+        <option value="LO">Lodi</option>
+        <option value="MN">Mantova</option>
+        <option value="MI">Milano</option>
+        <option value="MB">Monza e Brianza</option>
+        <option value="PV">Pavia</option>
+        <option value="SO">Sondrio</option>
+        <option value="VA">Varese</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+      <div class="row mt-5 mt-md-0">
+  <div class="col-md-4 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_nascita" type="date" placeholder="gg/mm/aaaa">
+        <label class="active" for="data_nascita">Data di nascita</label>
+      </div>
+    </div>  
+  </div>  
+  <div class="col-md-4 offset-xl-3 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_da" type="date" placeholder="gg/mm/aaaa">
+        <label for="data_da">Periodo da</label>
+      </div>
+    </div>  
+  </div>  
+  <div class="col-md-4 col-xl-3">
+    <div class="it-datepicker-wrapper">
+      <div class="form-group">
+        <input class="form-control it-date-datepicker" id="data_a" type="date" placeholder="gg/mm/aaaa">
+        <label for="data_a">a</label>
+      </div>
+    </div>  
+  </div>  
+</div>
+
+      <div class="row">
+  <div class="col-6">
+    <label class="fw-semibold me-5" for="gruppo2">Cittadinanza:</label>
+    <div class="form-check form-check-inline">
+      <input name="gruppo2" type="radio" id="radio4" checked>
+      <label for="radio4">Italiana</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="gruppo2" type="radio" id="radio5">
+      <label for="radio5">Straniera UE</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input name="gruppo2" type="radio" id="radio6">
+      <label for="radio6">Extra UE</label>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="form-group">
+  <label for="autocomplete-regioni">Regione</label>
+  <input
+    type="search"
+    class="autocomplete"
+    id="autocomplete-regioni"
+    name="autocomplete-regioni"
+    data-bs-autocomplete='[{"text":"Abruzzo","link":"#"},{"text":"Basilicata","link":"#"},{"text":"Calabria","link":"#"},
+    {"text":"Campania","link":"#"},{"text":"Emilia Romagna","link":"#"},{"text":"Friuli Venezia Giulia","link":"#"},
+    {"text":"Lazio","link":"#"},{"text":"Liguria","link":"#"},{"text":"Lombardia","link":"#"},{"text":"Marche","link":"#"},
+    {"text":"Molise","link":"#"},{"text":"Piemonte","link":"#"},{"text":"Puglia","link":"#"},{"text":"Sardegna","link":"#"},
+    {"text":"Sicilia","link":"#"},{"text":"Toscana","link":"#"},{"text":"Trentino Alto Adige","link":"#"},
+    {"text":"Umbria","link":"#"},{"text":"Valle d’Aosta","link":"#"},{"text":"Veneto","link":"#"}]'
+  />
+</div>
+
+  </div>
+</div>
+
+      <div class="row">
+  <div class="col">
+    <label class="fw-semibold me-5">Mezzi utilizzati:</label>
+    <div class="form-check form-check-inline">
+      <input id="checkbox6" type="checkbox" />
+      <label for="checkbox6">Auto propria</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input id="checkbox7" type="checkbox" />
+      <label for="checkbox7">Treno</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input id="checkbox8" type="checkbox" disabled />
+      <label for="checkbox8">Car sharing</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input id="checkbox10" type="checkbox" checked="checked" />
+      <label for="checkbox10">Bike sharing</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input id="checkbox9" type="checkbox" checked="checked" disabled />
+      <label for="checkbox9">Metro/Tram/Bus</label>
+    </div>
+  </div>
+</div>
+
+      <div class="row">
+  <div class="col">
+    <label class="fw-semibold me-5">Mezzi utilizzati:</label>
+    <div class="form-check form-check-inline">
+      <div class="toggles">
+        <label for="toggleEsempio1a">
+          Auto propria
+          <input type="checkbox" id="toggleEsempio1a" />
+          <span class="lever"></span>
+        </label>
+      </div>
+    </div>
+    <div class="form-check form-check-inline">
+      <div class="toggles">
+        <label for="toggleEsempio1b">
+          Treno
+          <input type="checkbox" id="toggleEsempio1b" />
+          <span class="lever leverRight"></span>
+        </label>
+      </div>
+    </div>
+    <div class="form-check form-check-inline">
+      <div class="toggles">
+        <label for="toggleEsempio1c">
+          Car sharing
+          <input disabled type="checkbox" id="toggleEsempio1c" />
+          <span class="lever"></span>
+        </label>
+      </div>
+    </div>
+    <div class="form-check form-check-inline">
+      <div class="toggles">
+        <label for="toggleEsempio1d">
+          Bike sharing
+          <input type="checkbox" id="toggleEsempio1d" checked="checked" />
+          <span class="lever"></span>
+        </label>
+      </div>
+    </div>
+    <div class="form-check form-check-inline">
+      <div class="toggles">
+        <label for="toggleEsempio1e">
+          Metro/Tram/Bus
+          <input disabled type="checkbox" id="toggleEsempio1e" checked="checked" />
+          <span class="lever"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- *****************************************************************************************************+ -->
+      <div class="row">
+        <div class="col-12">
+          <div class="float-end">
+            <button type="button" class="btn btn-outline-primary">Annulla</button>
+            <button type="submit" class="btn btn-primary">Invio</button>
+          </div>
+        </div>
+      </div>
+<!-- *****************************************************************************************************+ -->
+    </form>
+  </div> <!-- end container -->
+</main>
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 my-4 fw-bold title">ACCREDITAS Sistema di accreditamento</div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3">
+        <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
+          <li class="list-inline-item"><a href="">Privacy</a></li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item"><a href="">Accessibilità</a></li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item"><a href="">Cookie policy</a></li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item"><a href="">Note legali</a></li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item"><a href="">Contatti</a></li>
+          <li class="list-inline-item">|</li>
+          <li class="list-inline-item"><a href="">Credits</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 my-3 copyright">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
+
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><!-- Notification per tornare alla pagina principale -->
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle"></use></svg
+    >Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bootstrap-italia/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+
+<script>
+  $(document).ready(function () {
+    notificationShow('notification-esempi')
+  })
+</script>
+  </body>
+</html>

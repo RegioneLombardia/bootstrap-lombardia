@@ -11,22 +11,23 @@
 
 <title>Input-fields · Bootstrap Lombardia</title>
 
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
-<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
-<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
 <meta name="theme-color" content="#0066CC" />
  <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
@@ -34,50 +35,38 @@
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="twitter:title" content="Input-fields" />
 <meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/it25/inserimento/input-fields/" />
+<meta property="og:url" content="/docs/it25/inserimento/input-fields/" />
 <meta property="og:title" content="Input-fields" />
 <meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookies_consent=true') === -1) {
-    window['ga-disable-UA-114758441-1'] = true
-  }
-</script>
-<script>
-  ;(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r
-    ;(i[r] =
-      i[r] ||
-      function () {
-        ;(i[r].q = i[r].q || []).push(arguments)
-      }),
-      (i[r].l = 1 * new Date())
-    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-    a.async = 1
-    a.src = g
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto')
-  ga('set', 'anonymizeIp', true)
-  ga('send', 'pageview')
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- End Google Analytics -->
 
 
   </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
       </div>
@@ -86,10 +75,10 @@
     <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
   <!--div class="container"-->
   <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-italia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
-        <div class="d-flex flex-column pl-3 pl-sm-4">
+        <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
           <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
           <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
         </div>
@@ -97,20 +86,31 @@
     </a>
 
     
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
 
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-      <li class="nav-item pr-2">
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.4.1/bootstrap-lombardia.zip" aria-label="Download">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.0.0/bootstrap-lombardia.zip" aria-label="Download">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
-      <li class="nav-item pr-2">
+      <li class="nav-item pe-2">
         <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
         </a>
       </li>
     </ul>
+
+    
+    <div class="bd-search w-100">
+      <label for="search-input" class="visually-hidden">Cerca:</label>
+      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
+    </div>
+    
   </div>
 </header>
 
@@ -119,224 +119,479 @@
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
-      <h3 class="no_toc">Linee guida</h3>
-
-      <div class="sidebar-linklist-wrapper">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <a class="list-item " href="/bootstrap-lombardia/docs/it25/introduzione">
-                <span>Introduzione</span>
-              </a>
-            </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-1">
-                  <span>Componenti Principali</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-1"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/logo/">
-                        <span>logo</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/header/">
-                        <span>header</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">
-                        <span>menu orizzontale</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/barra-utente/">
-                        <span>barra utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">
-                        <span>sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/footer/">
-                        <span>footer</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+    <h3 class="no_toc">Linee Guida</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/introduzione/"><span>Introduzione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="false"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/tipografia/"
+                >
+                  <span>Tipografia</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-2">
-                  <span>Navigazione</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-2"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/">
-                        <span>megamenu</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/paginatore/">
-                        <span>paginatore</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/link-list/">
-                        <span>link list</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/breadcrumbs/">
-                        <span>breadcrumbs</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/colori/"
+                >
+                  <span>Colori</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-3">
-                  <span>Utilità</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-3"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/colori/">
-                        <span>colori</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/tipografia/">
-                        <span>tipografia</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/icone/">
-                        <span>icone</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/ombre-angoli/">
-                        <span>ombre e angoli</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/ombre-e-angoli/"
+                >
+                  <span>Ombre e angoli</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-4">
-                  <span>Call to action</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-4"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/bottoni/">
-                        <span>bottoni</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/">
-                        <span>tab bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/icone/"
+                >
+                  <span>Icone</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-5">
-                  <span>Informazioni</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-5"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/accordion/">
-                        <span>accordion</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/overlay/">
-                        <span>overlay</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/calendario/">
-                        <span>calendario</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/tabella/">
-                        <span>tabella</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/card/">
-                        <span>card</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/cookiebar/">
-                        <span>cookie bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel/">
-                        <span>carousel</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel-legacy/">
-                        <span>carousel-legacy</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon active" href="#collapse-guida-6" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-guida-6">
-                  <span>Inserimento</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse show" id="collapse-guida-6"><li>
-                      <a class="list-item  active" href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/">
-                        <span>input fields</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
-                        <span>radio buttons</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/check-box/">
-                        <span>check box</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/toggle/">
-                        <span>toggle</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/wizard/">
-                        <span>wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/popover/">
-                        <span>popover</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">
-                        <span>tooltip</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/progress-bar/">
-                        <span>progress bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-7">
-                  <span>Esempi</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-7"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_tabella/">
-                        <span>Tabella complessa</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">
-                        <span>Form</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">
-                        <span>Wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">
-                        <span>Sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_profilo_utente/">
-                        <span>Profilo utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_cookiebar/">
-                        <span>Cookiebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/introduzione/">
-                        <span>Il codice</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/divisori/"
+                >
+                  <span>Divisori</span></a>
               </li></ul>
-        </div>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="false"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/logo/"
+                >
+                  <span>Logo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/header/"
+                >
+                  <span>Header</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-verticale/"
+                >
+                  <span>Menu Verticale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/gestione-loghi-multipli/"
+                >
+                  <span>Gestione Loghi Multipli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/footer/"
+                >
+                  <span>Footer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/breadcrumbs/"
+                >
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/liste/"
+                >
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/dropdown-menu/"
+                >
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/megamenu/"
+                >
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/paginatore/"
+                >
+                  <span>Paginatore</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/bottoni/"
+                >
+                  <span>Bottoni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/tab-bar/"
+                >
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/slider/"
+                >
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="false"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/accordion/"
+                >
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/card/"
+                >
+                  <span>Card</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/carousel/"
+                >
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/calendario/"
+                >
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/time-picker/"
+                >
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/cookiebar/"
+                >
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/overlay/"
+                >
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/tabella/"
+                >
+                  <span>Tabella</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/snackbar/"
+                >
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right active"
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="true"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-8"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/check-box/"
+                >
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/radio-buttons/"
+                >
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/toggle/"
+                >
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item  active"
+                  href="/bootstrap-italia/docs/it25/inserimento/input-fields/"
+                >
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/tooltip/"
+                >
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/popover/"
+                >
+                  <span>Popover</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/wizard/"
+                >
+                  <span>Wizard</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/progress-bar/"
+                >
+                  <span>Progress bar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-9"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-9"
+              aria-expanded="false"
+              aria-controls="collapse-9"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti per il mobile</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-9"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/introduzione/"
+                >
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/app-icon/"
+                >
+                  <span>App icon</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/splash-screen/"
+                >
+                  <span>Splash Screen</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/onboarding/"
+                >
+                  <span>Onboarding</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/autenticazione/"
+                >
+                  <span>Autenticazione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/termini-e-condizioni/"
+                >
+                  <span>Termini e condizioni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/home/"
+                >
+                  <span>Home</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/profilo/"
+                >
+                  <span>Profilo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/assistenza/"
+                >
+                  <span>Assistenza</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-dettaglio/"
+                >
+                  <span>Pagina di dettaglio</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-sezione/"
+                >
+                  <span>Pagina di sezione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/popup/"
+                >
+                  <span>Popup</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/form/"
+                >
+                  <span>Form</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
       </div>
-
-      <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
-        <span><a href="/bootstrap-lombardia/docs/informazioni">Documentazione</a></span>
-        <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
-      </button>
-
     </div>
 
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bootstrap-italia/docs/documentazione-tecnica">Doc. Tecnica</a></span>
+      <svg class="icon icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use></svg>
+    </button>
+  </div>
 </nav>
 
         </div>
@@ -346,13 +601,12 @@
   <div class="sidebar-wrapper">
     <h3>Input-fields</h3>
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#con-label">con label</a></li>
-<li class="toc-entry toc-h3"><a href="#senza-label">senza label</a></li>
-<li class="toc-entry toc-h3"><a href="#con-testo-esplicativo">con testo esplicativo</a></li>
-<li class="toc-entry toc-h3"><a href="#con-icona">con icona</a></li>
-<li class="toc-entry toc-h3"><a href="#validazione">Validazione</a></li>
-<li class="toc-entry toc-h3"><a href="#validazione-con-label-e-icona">Validazione con label e icona</a></li>
-<li class="toc-entry toc-h3"><a href="#campi-di-solo-output">Campi di solo output</a></li>
+<li class="toc-entry toc-h3"><a href="#input-field-con-istruzioni">Input field con istruzioni</a></li>
+<li class="toc-entry toc-h3"><a href="#input-field-con-icone">Input field con icone</a></li>
+<li class="toc-entry toc-h3"><a href="#password-field">Password field</a></li>
+<li class="toc-entry toc-h3"><a href="#password-field-con-icone">Password field con icone</a></li>
+<li class="toc-entry toc-h3"><a href="#search-field">Search field</a></li>
+<li class="toc-entry toc-h3"><a href="#input-number">Input number</a></li>
 </ul>
   </div>
 </div>
@@ -362,366 +616,1147 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Input-fields</h1>
           <p class="bd-lead"></p>
-          <div class="bd-callout bd-callout-accessibility">
-<h4 id="-introduzione-ai-form"><svg class="icon icon-success icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-check-circle"></use></svg> Introduzione ai Form</h4>
-<p>Si consiglia vivamente di <strong>leggere</strong> l’<strong><a href="/bootstrap-lombardia/docs/form/introduzione/">introduzione ai Form</a></strong> nella Documentazione di Bootstrap Italia, <strong>prima</strong> di procedere alla costruzione di una pagina per l’inserimento dati.<br />
-Chiarisce alcuni concetti base della formattazione dei campi di input e della composizione del Form con le classi di Bootstrap Italia.</p>
-</div>
-
-<h3 id="con-label">con label</h3>
-
-<p>Un <em>campo di input</em> è <strong>preferibile</strong> che abbia una <strong>label</strong></p>
+          <p>Gli <strong>Input fields</strong> sono le componenti dell’interfaccia dedicate all’inserimento di dati all’interno del sistema.<br />
+Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’input di dati.</p>
 
 <div class="bd-example">
-<div class="form-row">
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div></div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="exampleInputText1">Etichetta di esempio</label>
+      <input type="text" class="form-control" id="exampleInputText1" />
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="exampleInputText2">Etichetta di esempio</label>
+      <input type="text" class="form-control focus--mouse" id="exampleInputText2" />
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label for="exampleInputText3">Etichetta di esempio</label>
+      <input type="text" class="form-control" id="exampleInputText3" disabled="" />
+    </div>
+  </div>
+</div>
+<div class="row mb-5">
+  <div class="col-4">Input corretto</div>
+  <div class="col-4">Attenzione</div>
+  <div class="col-4">Errore</div>
+</div>
+<div class="row">
   <div class="form-group col-4">
-    <label for="input-field-01">Label</label>
-    <input type="text" class="form-control" id="input-field-01" name="input-field-01" />
+    <label class="active" for="input-field-10">Etichetta di esempio</label>
+    <input type="text" class="form-control is-valid" id="input-field-10" name="input-field-10" value="Testo immesso" />
   </div>
   <div class="form-group col-4">
-    <label for="input-field-02">Label</label>
-    <input type="text" class="form-control" id="input-field-02" name="input-field-02" value="Valore del campo" />
+    <label class="active" for="input-field-11">Etichetta di esempio</label>
+    <input type="text" class="form-control is-valid warning" id="input-field-11" name="input-field-11" value="Testo immesso" />
+  </div>
+  <div class="form-group col-4">
+    <label class="active" for="input-field-12">Etichetta di esempio</label>
+    <input type="text" class="form-control is-invalid" id="input-field-12" name="input-field-12" value="Testo immesso" />
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputText1"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText2"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control focus--mouse"</span> <span class="na">id=</span><span class="s">"exampleInputText2"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputText3"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText3"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Input corretto<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Attenzione<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-01"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-01"</span> <span class="na">name=</span><span class="s">"input-field-01"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-10"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-10"</span> <span class="na">name=</span><span class="s">"input-field-10"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-02"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-02"</span> <span class="na">name=</span><span class="s">"input-field-02"</span> <span class="na">value=</span><span class="s">"Valore del campo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-11"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-11"</span> <span class="na">name=</span><span class="s">"input-field-11"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-12"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-12"</span> <span class="na">name=</span><span class="s">"input-field-12"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="senza-label">senza label</h3>
+<hr />
 
-<p>Nel caso non abbia un label, <strong>deve</strong> avere almeno un <em>placeholder</em> e una label <code class="language-plaintext highlighter-rouge">sr-only</code> o, in alternativa, un <code class="language-plaintext highlighter-rouge">aria-label</code>, che saranno lette dalle tecnologie assistive.<br />
-Il <strong>placeholder</strong> da solo <strong>non basta</strong>, perché sparisce quando il campo contiene un valore.<br />
-Inoltre è bene specificare <strong>solo una</strong> tra <code class="language-plaintext highlighter-rouge">sr-only</code> e <code class="language-plaintext highlighter-rouge">aria-label</code>, perché potrebbero venire lette entrambe.</p>
+<h3 id="input-field-con-istruzioni">Input field con istruzioni</h3>
+
+<p>È preferibile inserire istruzioni nei campi di testo, ad esempio quando all’utente si richiede l’inserimento di molteplici informazioni, per agevolare la comprensione e la chiarezza.</p>
 
 <div class="bd-example">
-<div class="form-row">
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="exampleInputText4">Etichetta di esempio</label>
+      <input type="text" class="form-control" id="exampleInputText4" placeholder="Inserite dato..." />
+       <small id="formGroupExampleInputWithHelpDescription4" class="form-text info">Ulteriore testo informativo</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="exampleInputText5">Etichetta di esempio</label>
+      <input type="text" class="form-control focus--mouse" id="exampleInputText5" value="Testo in inserim|" />
+       <small id="formGroupExampleInputWithHelpDescription5" class="form-text info">Ulteriore testo informativo</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="exampleInputText6">Etichetta di esempio</label>
+      <input type="text" class="form-control" id="exampleInputText6" disabled="" value="Testo non modificabile" />
+       <small id="formGroupExampleInputWithHelpDescription6" class="form-text info">Dato derivante da anagrafica</small>
+    </div>
+  </div>
+</div>
+<div class="row mb-5">
+  <div class="col-4">Input corretto</div>
+  <div class="col-4">Attenzione</div>
+  <div class="col-4">Errore</div>
+</div>
+<div class="row">
   <div class="form-group col-4">
-    <label class="sr-only" for="input-field-03">label non visibile ma letta da screen-reader</label>
-    <input type="text" class="form-control" id="input-field-03" name="input-field-03" placeholder="placeholder" />
+    <label class="active" for="input-field-13">Etichetta di esempio</label>
+    <input type="text" class="form-control is-valid" id="input-field-13" name="input-field-13" value="Testo immesso" />
+     <small class="valid-feedback ">Validato!</small>
   </div>
   <div class="form-group col-4">
-    <input type="text" class="form-control" id="input-field-04" name="input-field-04" placeholder="placeholder" aria-label="Label" value="Valore del campo" />
+    <label class="active" for="input-field-14">Etichetta di esempio</label>
+    <input type="text" class="form-control is-valid warning" id="input-field-14" name="input-field-14" value="Testo immesso" />
+    <small class="warning-feedback ">Possibili problemi.</small>
+  </div>
+  <div class="form-group col-4">
+    <label class="active" for="input-field-15">Etichetta di esempio</label>
+    <input type="text" class="form-control is-invalid" id="input-field-15" name="input-field-15" value="Testo immesso" />
+     <small class="invalid-feedback ">Errore bloccante!</small>
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText4"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText4"</span> <span class="na">placeholder=</span><span class="s">"Inserite dato..."</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription4"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText5"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control focus--mouse"</span> <span class="na">id=</span><span class="s">"exampleInputText5"</span> <span class="na">value=</span><span class="s">"Testo in inserim|"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription5"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText6"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText6"</span> <span class="na">disabled</span> <span class="na">value=</span><span class="s">"Testo non modificabile"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription6"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Dato derivante da anagrafica<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Input corretto<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Attenzione<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"input-field-03"</span><span class="nt">&gt;</span>label non visibile ma letta da screen-reader<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-03"</span> <span class="na">name=</span><span class="s">"input-field-03"</span> <span class="na">placeholder=</span><span class="s">"placeholder"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-13"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-13"</span> <span class="na">name=</span><span class="s">"input-field-13"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"valid-feedback "</span><span class="nt">&gt;</span>Validato!<span class="nt">&lt;/small&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-04"</span> <span class="na">name=</span><span class="s">"input-field-04"</span>
-      <span class="na">placeholder=</span><span class="s">"placeholder"</span> <span class="na">aria-label=</span><span class="s">"Label"</span> <span class="na">value=</span><span class="s">"Valore del campo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-14"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-14"</span> <span class="na">name=</span><span class="s">"input-field-14"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"warning-feedback "</span><span class="nt">&gt;</span>Possibili problemi.<span class="nt">&lt;/small&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-15"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-15"</span> <span class="na">name=</span><span class="s">"input-field-15"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"invalid-feedback "</span><span class="nt">&gt;</span>Errore bloccante!<span class="nt">&lt;/small&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="con-testo-esplicativo">con testo esplicativo</h3>
-<p>Se la label non basta a rendere evidente cosa deve essere inserito, è possibile aggiungere un breve testo esplicativo al di sotto del campo stesso.</p>
+<hr />
+
+<h3 id="input-field-con-icone">Input field con icone</h3>
+
+<p>È possibile aggiungere un’icona al campo di testo come istruzione per la compilazione.</p>
 
 <div class="bd-example">
-<div class="form-row">
-  <div class="form-group col-4">
-    <label for="input-field-05">Label</label>
-    <input type="text" class="form-control" id="input-field-05" name="input-field-05" />
-    <small class="form-text text-muted">Ulteriore testo informativo</small>
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label for="exampleInputText7">Etichetta di esempio</label>
+        <input type="text" class="form-control" id="exampleInputText7" />
+      </div>
+    </div>
   </div>
-  <div class="form-group col-4">
-    <label for="input-field-06">Label</label>
-    <input type="text" class="form-control" id="input-field-06" name="input-field-06" value="Valore del campo" />
-    <small class="form-text text-muted">Ulteriore testo informativo</small>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="exampleInputText8">Etichetta di esempio</label>
+        <input type="text" class="form-control focus--mouse" id="exampleInputText8" />
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label for="exampleInputText9">Etichetta di esempio</label>
+        <input type="text" class="form-control" id="exampleInputText9" disabled="" />
+      </div>
+    </div>
   </div>
 </div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="exampleInputText24">Etichetta di esempio</label>
+        <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato..." />
+      </div>
+      <small id="formGroupExampleInputWithHelpDescription24" class="form-text info">Ulteriore testo informativo</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="exampleInputText25">Etichetta di esempio</label>
+        <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|" />
+      </div>
+      <small id="formGroupExampleInputWithHelpDescription25" class="form-text info">Ulteriore testo informativo</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="exampleInputText26">Etichetta di esempio</label>
+        <input type="text" class="form-control" id="exampleInputText26" disabled="" value="Testo non modificabile" />
+      </div>
+      <small id="formGroupExampleInputWithHelpDescription26" class="form-text info">Dato derivante da anagrafica</small>
+    </div>
+  </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-05"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-05"</span> <span class="na">name=</span><span class="s">"input-field-05"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-06"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-06"</span> <span class="na">name=</span><span class="s">"input-field-06"</span> <span class="na">value=</span><span class="s">"Valore del campo"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<h3 id="con-icona">con icona</h3>
-
-<p>In questo caso l’<em>input-field</em> va inserito in un <em>div</em> con classe <code class="language-plaintext highlighter-rouge">input group</code>.<br />
-All’interno di questo, prima dell’input-field, va inserito un ulteriore <em>div</em> di classe <code class="language-plaintext highlighter-rouge">input-group-prepend</code> che conterrà l’icona da visualizzare.</p>
-
-<p>Con questa configurazione, se il campo è vuoto la <strong>label</strong> viene visualizzata solo quando il campo prende il focus.</p>
-
-<div class="bd-example">
-<div class="form-row">
+<div class="row mb-5">
+  <div class="col-4">Input corretto</div>
+  <div class="col-4">Attenzione</div>
+  <div class="col-4">Errore</div>
+</div>
+<div class="row">
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
       </div>
-      <label for="input-field-07">Label</label>
-      <input type="text" class="form-control" id="input-field-07" name="input-field-07" />
+      <label class="active" for="input-field-30">Etichetta di esempio</label>
+      <input type="text" class="form-control is-valid" id="input-field-30" name="input-field-30" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
       </div>
-      <label for="input-field-08">Label</label>
-      <input type="text" class="form-control" id="input-field-08" name="input-field-08" placeholder="placeholder" />
+      <label class="active" for="input-field-31">Etichetta di esempio</label>
+      <input type="text" class="form-control is-valid warning" id="input-field-31" name="input-field-31" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
       </div>
-      <label for="input-field-09">Label</label>
-      <input type="text" class="form-control" id="input-field-09" name="input-field-09" value="Valore del campo" />
+      <label class="active" for="input-field-32">Etichetta di esempio</label>
+      <input type="text" class="form-control is-invalid" id="input-field-32" name="input-field-32" value="Testo immesso" />
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="form-group col-4">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
+      </div>
+      <label class="active" for="input-field-33">Etichetta di esempio</label>
+      <input type="text" class="form-control is-valid" id="input-field-33" name="input-field-33" value="Testo immesso" />
+      <small class="valid-feedback is-valid">Validato!</small>
+    </div>
+  </div>
+  <div class="form-group col-4">
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
+      </div>
+      <label class="active" for="input-field-34">Etichetta di esempio</label>
+      <input type="text" class="form-control is-valid warning" id="input-field-34" name="input-field-34" value="Testo immesso" />
+      <small class="warning-feedback is-valid warning">Possibili problemi.</small>
+    </div>
+  </div>
+  <div class="form-group col-4">
+      <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-mail"></use></svg>
+        </div>
+      </div>
+      <label class="active" for="input-field-35">Etichetta di esempio</label>
+      <input type="text" class="form-control is-invalid" id="input-field-35" name="input-field-35" value="Testo immesso" />
+      <small class="invalid-feedback is-invalid">Errore bloccante!</small>
     </div>
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputText7"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText7"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText8"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control focus--mouse"</span> <span class="na">id=</span><span class="s">"exampleInputText8"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputText9"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText9"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText24"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText24"</span> <span class="na">placeholder=</span><span class="s">"Inserite dato..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription24"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText25"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control focus--mouse"</span> <span class="na">id=</span><span class="s">"exampleInputText25"</span> <span class="na">value=</span><span class="s">"Testo in inserim|"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription25"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Ulteriore testo informativo<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"exampleInputText26"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputText26"</span> <span class="na">disabled</span> <span class="na">value=</span><span class="s">"Testo non modificabile"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription26"</span> <span class="na">class=</span><span class="s">"form-text info"</span><span class="nt">&gt;</span>Dato derivante da anagrafica<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Input corretto<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Attenzione<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-07"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-07"</span> <span class="na">name=</span><span class="s">"input-field-07"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-30"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-30"</span> <span class="na">name=</span><span class="s">"input-field-30"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-08"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-08"</span> <span class="na">name=</span><span class="s">"input-field-08"</span> <span class="na">placeholder=</span><span class="s">"placeholder"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-31"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-31"</span> <span class="na">name=</span><span class="s">"input-field-31"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-09"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"input-field-09"</span> <span class="na">name=</span><span class="s">"input-field-09"</span> <span class="na">value=</span><span class="s">"Valore del campo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-32"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-32"</span> <span class="na">name=</span><span class="s">"input-field-32"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-33"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-33"</span> <span class="na">name=</span><span class="s">"input-field-33"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"valid-feedback is-valid"</span><span class="nt">&gt;</span>Validato!<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-34"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-34"</span> <span class="na">name=</span><span class="s">"input-field-34"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"warning-feedback is-valid warning"</span><span class="nt">&gt;</span>Possibili problemi.<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"input-field-35"</span><span class="nt">&gt;</span>Etichetta di esempio<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-35"</span> <span class="na">name=</span><span class="s">"input-field-35"</span> <span class="na">value=</span><span class="s">"Testo immesso"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"invalid-feedback is-invalid"</span><span class="nt">&gt;</span>Errore bloccante!<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="validazione">Validazione</h3>
+<hr />
 
-<p><strong>Messaggio di errore</strong>:<br />
-E’ <strong>necessario</strong> spiegare l’errore, anche quando si tratta semplicemente di un campo obbligatorio lasciato in bianco od una data palesemente errata (per esempio: 30 febbraio).<br />
-Se si decide di non mettere il messaggio subito sotto il campo, deve comparire, in testa alla videata, un riquadro rosso con elenco di <strong>TUTTI gli errori</strong>, campo per campo.<br />
-E’ opportuno utilizzare questa tecnica anche quando la spiegazione dell’errore è lunga.</p>
-
-<p><strong>Messaggio di avvertimento</strong>:<br />
-Da utilizzare quando il dato immesso è valido provvisoriamente o con riserva di ulteriori controlli, oppure ha una scadenza di validità ravvicinata.<br />
-Se ne è stato emesso uno, può essere opportuno richiedere un invio/clic di <strong>conferma</strong> (ma <strong>uno solo</strong> anche in presenza di più avvisi).<br />
-Va considerato se è il caso di far apparire un riquadro giallo in testa alla pagina, per maggiore visibilità/chiarezza (soprattutto se c’è più di un messaggio).</p>
-
-<p><strong>Messaggio di convalida</strong>:<br />
-E’ facoltativo. E’ molto opportuno nel caso si debba segnalare l’avvenuta convalida del dato dopo che è stato sottoposto a controlli che hanno richiesto tempo (per esempio un avvenuto pagamento).</p>
+<h3 id="password-field">Password field</h3>
 
 <div class="bd-example">
-<div class="form-row">
-  <div class="form-group col-4">
-    <label class="sr-only" for="input-field-10">label non visibile ma letta da screen-reader</label>
-    <input type="text" class="form-control is-valid" id="input-field-10" name="input-field-10" value="Text input " />
-    <div class="valid-feedback">Validato!</div>
-  </div>
-  <div class="form-group col-4">
-    <label class="sr-only" for="input-field-11">label non visibile ma letta da screen-reader</label>
-    <input type="text" class="form-control is-valid warning" id="input-field-11" name="input-field-11" value="Text input " />
-    <div class="warning-feedback">Possibili problemi.</div>
-  </div>
-  <div class="form-group col-4">
-    <label class="sr-only" for="input-field-12">label non visibile ma letta da screen-reader</label>
-    <input type="text" class="form-control is-invalid" id="input-field-12" name="input-field-12" value="Text input " />
-    <div class="invalid-feedback">Errore bloccante!</div>
-  </div>
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"input-field-10"</span><span class="nt">&gt;</span>label non visibile ma letta da screen-reader<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-10"</span> <span class="na">name=</span><span class="s">"input-field-10"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"valid-feedback"</span><span class="nt">&gt;</span>Validato!<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"input-field-11"</span><span class="nt">&gt;</span>label non visibile ma letta da screen-reader<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-11"</span> <span class="na">name=</span><span class="s">"input-field-11"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"warning-feedback"</span><span class="nt">&gt;</span>Possibili problemi.<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"sr-only"</span> <span class="na">for=</span><span class="s">"input-field-12"</span><span class="nt">&gt;</span>label non visibile ma letta da screen-reader<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-12"</span> <span class="na">name=</span><span class="s">"input-field-12"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"invalid-feedback"</span><span class="nt">&gt;</span>Errore bloccante!<span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>La visualizzazione del messaggio al di sotto del campo e dell’icona colorata a fianco, avviene aggiungendo la classe <code class="language-plaintext highlighter-rouge">is-valid</code> o <code class="language-plaintext highlighter-rouge">is-invalid</code> sul <em>tag</em> <code class="language-plaintext highlighter-rouge">input</code>.<br />
-Per visualizzare il messaggio di <em>warning</em> il tag input deve avere <strong>entrambe</strong> le classi <code class="language-plaintext highlighter-rouge">is-valid</code> e <code class="language-plaintext highlighter-rouge">warning</code>.<br />
-Il testo del messaggio va incluso in in un <em>div</em> di classe <code class="language-plaintext highlighter-rouge">valid/invalid/warning-feedback</code>, che ne determina anche la colorazione.</p>
-
-<h3 id="validazione-con-label-e-icona">Validazione con label e icona</h3>
-
-<div class="bd-example">
-<div class="form-row">
-  <div class="form-group col-4">
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
-      </div>
-      <label for="input-field-13">Label</label>
-      <input type="text" class="form-control is-valid" id="input-field-13" name="input-field-13" value="Text input " />
-      <div class="valid-feedback">Validato!</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <label for="passwd1">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input="" class="form-control input-password" id="passwd1" aria-labelledby="infoPassword1" />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword1" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
-  <div class="form-group col-4">
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
-      </div>
-      <label for="input-field-14">Label</label>
-      <input type="text" class="form-control is-valid warning" id="input-field-14" name="input-field-14" value="Text input " />
-      <div class="warning-feedback">Possibili problemi.</div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="passwd2">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input="" class="form-control input-password" id="passwd2" aria-labelledby="infoPassword2" value="iuQ34!iwah" />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword2" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
-  <div class="form-group col-4">
-    <div class="input-group">
-      <div class="input-group-prepend">
-        <div class="input-group-text"><svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"></use></svg></div>
-      </div>
-      <label for="input-field-15">Label</label>
-      <input type="text" class="form-control is-invalid" id="input-field-15" name="input-field-15" value="Text input " />
-      <div class="invalid-feedback">Errore bloccante!</div>
+  <div class="col">
+    <div class="form-group">
+      <label class="active" for="passwd3">Password con label, placeholder e testo di aiuto</label>
+      <input type="password" data-bs-input="" class="form-control input-password" id="passwd3" aria-labelledby="infoPassword" value="iuQ34!iwah" disabled="" />
+      <span class="password-icon" aria-hidden="true">
+        <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </span>
+      <small id="infoPassword3" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-13"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid"</span> <span class="na">id=</span><span class="s">"input-field-13"</span> <span class="na">name=</span><span class="s">"input-field-13"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"valid-feedback"</span><span class="nt">&gt;</span>Validato!<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"passwd1"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd1"</span> 
+            <span class="na">aria-labelledby=</span><span class="s">"infoPassword1"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword1"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-14"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-valid warning"</span> <span class="na">id=</span><span class="s">"input-field-14"</span> <span class="na">name=</span><span class="s">"input-field-14"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"warning-feedback"</span><span class="nt">&gt;</span>Possibili problemi.<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"passwd2"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd2"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"infoPassword2"</span> <span class="na">value=</span><span class="s">"iuQ34!iwah"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword2"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-mail"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"input-field-15"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control is-invalid"</span> <span class="na">id=</span><span class="s">"input-field-15"</span> <span class="na">name=</span><span class="s">"input-field-15"</span> <span class="na">value=</span><span class="s">"Text input "</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"invalid-feedback"</span><span class="nt">&gt;</span>Errore bloccante!<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"passwd3"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd3"</span>
+            <span class="na">aria-labelledby=</span><span class="s">"infoPassword"</span> <span class="na">value=</span><span class="s">"iuQ34!iwah"</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword3"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="campi-di-solo-output">Campi di solo output</h3>
-<p>Nei form, quando è necessario mostrare campi di solo ouput inframmezzati a quelli di input, per mantenere un aspetto coerente per dimensioni e allineamento, è possibile usare per le <em>label</em> la classe <code class="language-plaintext highlighter-rouge">output</code> e per il dato in tag <em>div</em> di classe <code class="language-plaintext highlighter-rouge">output-field</code>.</p>
+<h4 id="validazione-password">Validazione password</h4>
 <div class="bd-example">
-<div class="form-row">
-  <div class="form-group col-md-6">
-    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
-    <label for="inputEmail4">Email</label>
+  <div class="row">
+    <div class="col-6">
+<div class="form-group">
+  <label for="exampleInputPassword3">Password</label>
+  <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword3" />
+  <div class="password-strength-meter">
+    <small class="form-text text-muted" data-bs-short-pass="Password molto debole" data-bs-bad-pas="Password debole" data-bs-good-pass="Password sicura" data-bs-strong-pass="Password molto sicura">Inserisci almeno 8 caratteri e una lettera maiuscola</small>
+    <div class="password-meter progress rounded-0 position-absolute">
+      <div class="row position-absolute w-100 m-0">
+        <div class="col-3 border-start border-end border-white"></div>
+        <div class="col-3 border-start border-end border-white"></div>
+        <div class="col-3 border-start border-end border-white"></div>
+        <div class="col-3 border-start border-end border-white"></div>
+      </div>
+      <div class="progress-bar bg-muted" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
   </div>
-  <div class="form-group col-md-4">
-    <input type="password" class="form-control input-password" id="exampleInputPassword" placeholder="inserisci la tua password" />
-    <span class="password-icon" aria-hidden="true">
-      <svg class="password-icon-visible icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-password-invisible"></use></svg>
+  <span class="password-icon" aria-hidden="true">
+    <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+    <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+  </span>
+  <small class="password-caps form-text text-warning position-absolute bg-white w-100">CAPS LOCK inserito</small>
+</div>
+
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword3"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"exampleInputPassword3"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"password-strength-meter"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;small</span>
+      <span class="na">class=</span><span class="s">"form-text text-muted"</span>
+      <span class="na">data-bs-short-pass=</span><span class="s">"Password molto debole"</span>
+      <span class="na">data-bs-bad-pas=</span><span class="s">"Password debole"</span>
+      <span class="na">data-bs-good-pass=</span><span class="s">"Password sicura"</span>
+      <span class="na">data-bs-strong-pass=</span><span class="s">"Password molto sicura"</span>
+      <span class="nt">&gt;</span>Inserisci almeno 8 caratteri e una lettera maiuscola<span class="nt">&lt;/small</span>
+    <span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"password-meter progress rounded-0 position-absolute"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row position-absolute w-100 m-0"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 border-start border-end border-white"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 border-start border-end border-white"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 border-start border-end border-white"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-3 border-start border-end border-white"</span><span class="nt">&gt;&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-muted"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+  <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;small</span> <span class="na">class=</span><span class="s">"password-caps form-text text-warning position-absolute bg-white w-100"</span><span class="nt">&gt;</span>CAPS LOCK inserito<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<hr />
+
+<h3 id="password-field-con-icone">Password field con icone</h3>
+
+<div class="bd-example">
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label for="passwd41">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input="" class="form-control input-password" id="passwd41" aria-labelledby="infoPassword" />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword4" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="passwd42">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input="" class="form-control input-password" id="passwd42" aria-labelledby="infoPassword" value="iuQ34!iwah" />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword42" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+  <div class="col">
+    <div class="form-group">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-key"></use></svg>
+          </div>
+        </div>
+        <label class="active" for="passwd43">Password con label, placeholder e testo di aiuto</label>
+        <input type="password" data-bs-input="" class="form-control input-password" id="passwd43" aria-labelledby="infoPassword" value="iuQ34!iwah" disabled="" />
+        <span class="password-icon" aria-hidden="true">
+          <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+        </span>
+      </div>
+      <small id="infoPassword43" class="form-text">Inserisci almeno 8 caratteri</small>
+    </div>
+  </div>
+</div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-key"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"passwd41"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd41"</span> 
+              <span class="na">aria-labelledby=</span><span class="s">"infoPassword"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword4"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-key"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"passwd42"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd42"</span>
+              <span class="na">aria-labelledby=</span><span class="s">"infoPassword"</span> <span class="na">value=</span><span class="s">"iuQ34!iwah"</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword42"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-key"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"passwd43"</span><span class="nt">&gt;</span>Password con label, placeholder e testo di aiuto<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">data-bs-input</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"passwd43"</span>
+              <span class="na">aria-labelledby=</span><span class="s">"infoPassword"</span> <span class="na">value=</span><span class="s">"iuQ34!iwah"</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"infoPassword43"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Inserisci almeno 8 caratteri<span class="nt">&lt;/small&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<hr />
+
+<h3 id="search-field">Search field</h3>
+
+<div class="bd-example">
+  <div class="row mb-5">
+    <div class="col">Ricerca</div>
+    <div class="col">Suggerimenti</div>
+    <div class="col">Autocompletamento</div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <svg class="icon icon-sm"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use></svg>
+            </div>
+          </div>
+          <label for="searchField">Testo da cercare</label>
+          <input type="text" class="form-control" id="searchField" />
+        </div>
+      </div> 
+    </div>
+    <div class="col">
+      <div class="select-wrapper">
+        <label for="defaultSelect">Etichetta</label>
+        <select id="defaultSelect">
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="Value 1">Risultato 1</option>
+          <option value="Value 2">Risultato  2</option>
+          <option value="Value 3">Risultato  3</option>
+        </select>
+      </div>
+    </div>
+    <div class="col">
+ <div class="form-group">
+  <label for="autocomplete-regioni">Regione</label>
+  <input type="search" class="autocomplete" id="autocomplete-regioni" name="autocomplete-regioni" data-bs-autocomplete="[{&quot;text&quot;:&quot;Abruzzo&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Basilicata&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Calabria&quot;,&quot;link&quot;:&quot;#&quot;},
+    {&quot;text&quot;:&quot;Campania&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Emilia Romagna&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Friuli Venezia Giulia&quot;,&quot;link&quot;:&quot;#&quot;},
+    {&quot;text&quot;:&quot;Lazio&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Liguria&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Lombardia&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Marche&quot;,&quot;link&quot;:&quot;#&quot;},
+    {&quot;text&quot;:&quot;Molise&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Piemonte&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Puglia&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Sardegna&quot;,&quot;link&quot;:&quot;#&quot;},
+    {&quot;text&quot;:&quot;Sicilia&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Toscana&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Trentino Alto Adige&quot;,&quot;link&quot;:&quot;#&quot;},
+    {&quot;text&quot;:&quot;Umbria&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Valle d’Aosta&quot;,&quot;link&quot;:&quot;#&quot;},{&quot;text&quot;:&quot;Veneto&quot;,&quot;link&quot;:&quot;#&quot;}]" />
+</div>
+
+    </div>
+  </div>
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html">. . .
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"select-wrapper"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"defaultSelect"</span><span class="nt">&gt;</span>Etichetta<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">"defaultSelect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">selected=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span><span class="nt">&gt;</span>Scegli un'opzione<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Value 1"</span><span class="nt">&gt;</span>Risultato 1<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Value 2"</span><span class="nt">&gt;</span>Risultato  2<span class="nt">&lt;/option&gt;</span>
+    <span class="nt">&lt;option</span> <span class="na">value=</span><span class="s">"Value 3"</span><span class="nt">&gt;</span>Risultato  3<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;/select&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+...      
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"autocomplete-regioni"</span><span class="nt">&gt;</span>Regione<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;input</span>
+    <span class="na">type=</span><span class="s">"search"</span>
+    <span class="na">class=</span><span class="s">"autocomplete"</span>
+    <span class="na">id=</span><span class="s">"autocomplete-regioni"</span>
+    <span class="na">name=</span><span class="s">"autocomplete-regioni"</span>
+    <span class="na">data-bs-autocomplete=</span><span class="s">'[{"text":"Abruzzo","link":"#"},{"text":"Basilicata","link":"#"},{"text":"Calabria","link":"#"},
+    {"text":"Campania","link":"#"},{"text":"Emilia Romagna","link":"#"},{"text":"Friuli Venezia Giulia","link":"#"},
+    {"text":"Lazio","link":"#"},{"text":"Liguria","link":"#"},{"text":"Lombardia","link":"#"},{"text":"Marche","link":"#"},
+    {"text":"Molise","link":"#"},{"text":"Piemonte","link":"#"},{"text":"Puglia","link":"#"},{"text":"Sardegna","link":"#"},
+    {"text":"Sicilia","link":"#"},{"text":"Toscana","link":"#"},{"text":"Trentino Alto Adige","link":"#"},
+    {"text":"Umbria","link":"#"},{"text":"Valle d’Aosta","link":"#"},{"text":"Veneto","link":"#"}]'</span>
+  <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="input-number">Input number</h3>
+
+<div class="bd-example">
+<div class="row mb-5">
+  <div class="col">Stato inattivo</div>
+  <div class="col">Stato attivo</div>
+  <div class="col">Stato disabilitato</div>
+</div>
+<div class="row">
+  <div class="col">
+    <label for="inputNumber1" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number">
+      <input type="number" data-bs-input="" id="inputNumber1" name="inputNumber1" step="any" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
     </span>
-    <label for="exampleInputPassword">Password</label>
   </div>
-  <div class="form-group col-md-2">
-    <label class="output">Ticket</label>
-    <div class="output-field">AC-123-0002658</div>
+  <div class="col">
+    <label for="inputNumber2" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number">
+      <input type="number" data-bs-input="" id="inputNumber2" name="inputNumber2" value="100" step="1" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
+    </span>
+  </div>
+  <div class="col">
+    <label for="inputNumber3" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number disabled">
+      <input type="number" data-bs-input="" id="inputNumber3" name="inputNumber3" value="100" step="1" disabled="" />
+      <button class="input-number-add" disabled="">
+        <span class="visually-hidden">Aumenta valore</span>
+      </button>
+      <button class="input-number-sub" disabled="">
+        <span class="visually-hidden">Diminuisci valore</span>
+      </button>
+    </span>
   </div>
 </div>
-
 </div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-row"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-6"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"inputEmail4"</span> <span class="na">placeholder=</span><span class="s">"inserisci il tuo indirizzo email"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputEmail4"</span><span class="nt">&gt;</span>Email<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control input-password"</span> <span class="na">id=</span><span class="s">"exampleInputPassword"</span> <span class="na">placeholder=</span><span class="s">"inserisci la tua password"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"password-icon"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-visible icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-password-visible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-      <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"password-icon-invisible icon icon-sm d-none"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-password-invisible"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato inattivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato attivo<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>Stato disabilitato<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber1"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber1"</span> <span class="na">name=</span><span class="s">"inputNumber1"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group col-md-2"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"output"</span><span class="nt">&gt;</span>Ticket<span class="nt">&lt;/label&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"output-field"</span><span class="nt">&gt;</span>AC-123-0002658<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber2"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber2"</span> <span class="na">name=</span><span class="s">"inputNumber2"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber3"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number disabled"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber3"</span> <span class="na">name=</span><span class="s">"inputNumber3"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span> <span class="na">disabled</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span> <span class="na">disabled</span> <span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<div class="bd-callout bd-callout-info">
-<h4 id="-riferimenti"><svg class="icon icon-info icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti</h4>
-<p>Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione di Bootstrap Italia:</p>
-<ul>
-  <li><strong><a href="/bootstrap-lombardia/docs/form/input/">Input</a></strong></li>
-  <li><strong><a href="/bootstrap-lombardia/docs/form/introduzione/">Form - introduzione</a></strong></li>
-</ul>
-
-<p>Si consiglia anche la lettura dei paragrafi relativi a:</p>
-<ul>
-  <li><strong><a href="/bootstrap-lombardia/docs/form/input-numerico/">Input numerico</a></strong></li>
-  <li><strong><a href="/bootstrap-lombardia/docs/form/select/">Select</a></strong></li>
-</ul>
+<div class="bd-example">
+<div class="row mb-5">
+  <div class="col-4">Percentuale</div>
+  <div class="col-4">Valuta</div>
 </div>
+<div class="row">
+  <div class="col-4">
+    <label for="inputPerc1" class="input-number-label">Lorem ipsum</label>
+    <span class="input-number input-number-percentage">
+      <input type="number" data-bs-input="" id="inputPerc1" name="inputPerc1" value="50" min="0" max="100" step="10" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta del 10%</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci del 10%</span>
+      </button>
+    </span>
+  </div>
+  <div class="col-4">
+    <label for="inputValuta1" class="input-number-label">Valuta</label>
+    <span class="input-number input-number-currency">
+      <input type="number" data-bs-input="" id="inputValuta1" name="inputValuta1" step="any" value="3.50" min="0" />
+      <button class="input-number-add">
+        <span class="visually-hidden">Aumenta valore Euro</span>
+      </button>
+      <button class="input-number-sub">
+        <span class="visually-hidden">Diminuisci valore Euro</span>
+      </button>
+    </span>
+  </div>
+</div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mb-5"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Percentuale<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>Valuta<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputPerc1"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number input-number-percentage"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputPerc1"</span> <span class="na">name=</span><span class="s">"inputPerc1"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"10"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta del 10%<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci del 10%<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputValuta1"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Valuta<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number input-number-currency"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputValuta1"</span> <span class="na">name=</span><span class="s">"inputValuta1"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="na">value=</span><span class="s">"3.50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore Euro<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore Euro<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<script>
+document.getElementById("exampleInputText2").focus();
+</script>
 
 
         </main>
       </div>
     </div>
 
-    <div class="cookiebar">
-  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
-  <div class="cookiebar-buttons">
-      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
-      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
-  </div>
-</div>
-
     
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
 
-<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><script src="/bootstrap-italia/docs/assets/dist/js/docs.min.js?202307030811"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script>
-  
+<script src="/bootstrap-italia/docs/assets/src/js/docs.js?202307030811"></script>
+
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  var manifest = [
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>
+<!-- <script src="/bootstrap-italia/docs/assets/src/js/cover-animation.js?202307030811"></script> -->
   </body>
 </html>

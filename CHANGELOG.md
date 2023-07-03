@@ -1,176 +1,229 @@
-## [0.4.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.4.0...v0.4.1) (2023-01-17)
+# [2.0.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...v2.0.0) (2023-07-03)
 
 
 
-# [0.4.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.6.3...v0.4.0) (2022-12-30)
-
-
-
-## [0.3.5](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.4.0...v0.3.5) (2020-07-08)
-
-
-
-## [0.3.4](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.3...v0.3.4) (2020-04-15)
-
-
-
-## [0.3.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.10...v0.3.3) (2020-03-09)
-
-
-
-## [0.3.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.1...v0.3.2) (2020-02-25)
-
-
-
-## [0.3.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.3.0...v0.3.1) (2020-01-24)
-
-
-
-# [0.3.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.9...v0.3.0) (2020-01-16)
-
-
-
-## [0.2.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.2...v0.2.3) (2019-12-06)
-
-
-
-## [0.2.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.1...v0.2.2) (2019-11-25)
-
-
-
-## [0.2.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.2.0...v0.2.1) (2019-11-18)
-
-
-
-# [0.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v0.1.6...v0.2.0) (2019-11-15)
-
-
-
-## [0.1.6](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.8...v0.1.6) (2019-10-24)
-
-
-
-## [0.1.5](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v1.3.7...v0.1.5) (2019-10-17)
-
-
-
-## [1.6.3](https://github.com/italia/bootstrap-italia/compare/v1.6.2...v1.6.3) (2022-06-01)
+## [2.3.5](https://github.com/italia/bootstrap-italia/compare/v2.3.4...v2.3.5) (2023-03-03)
 
 
 ### Bug Fixes
 
-* **core:** make dropdown centered with left icon ([35d9f49](https://github.com/italia/bootstrap-italia/commit/35d9f4974e587a271719d44d72727b557d803ee9))
-* **core:** target element is now visible with sticky header ([e42ec09](https://github.com/italia/bootstrap-italia/commit/e42ec09759a3bac23e1083711ae3860ddbf28dbc))
-* **core:** dropdown now works on window resize ([2adfaaf](https://github.com/italia/bootstrap-italia/commit/2adfaafc564b4b55a00d026986bc951548e60390))
+* stepper borders ([a5118f7](https://github.com/italia/bootstrap-italia/commit/a5118f7d56f61ea092f9385a7c68d4c989b1773b))
 
 
 
-## [1.6.2](https://github.com/italia/bootstrap-italia/compare/v1.6.1...v1.6.2) (2022-04-04)
-
-
-### Bug Fixes
-
-* remove scss deprecation warning for bs select ([d81e121](https://github.com/italia/bootstrap-italia/commit/d81e12157e709384d276711b87e7dc14ba41486b))
-* step with decimals in numerical input ([9157351](https://github.com/italia/bootstrap-italia/commit/91573510d2d6d1bef3809ab08f187d1b445f29b2))
-
-
-
-## [1.6.1](https://github.com/italia/bootstrap-italia/compare/v1.6.0...v1.6.1) (2022-03-29)
+## [2.3.4](https://github.com/italia/bootstrap-italia/compare/v2.3.3...v2.3.4) (2023-02-09)
 
 
 ### Bug Fixes
 
-* **core:** carousel dots length in aria label ([6ce27c5](https://github.com/italia/bootstrap-italia/commit/6ce27c54e731f1ae3d51f62d59fe6b891c342b4f))
+* restore hsb primary and new custom variables ([6c9d942](https://github.com/italia/bootstrap-italia/commit/6c9d94226a452e1c97ae787139ec6c9e042ef10e))
+* right and left padding on nav-link ([457148a](https://github.com/italia/bootstrap-italia/commit/457148a38d71512b96203b4c5dc9118a10c89bc8))
 
 
 
-# [1.6.0](https://github.com/italia/bootstrap-italia/compare/v1.5.2...v1.6.0) (2022-03-22)
+## [2.3.3](https://github.com/italia/bootstrap-italia/compare/v2.3.2...v2.3.3) (2023-02-08)
 
 
 ### Bug Fixes
 
-* **a11y:** accordion and collapse keyboard interaction ([296bae1](https://github.com/italia/bootstrap-italia/commit/296bae141a1f9b8c393c705e5960fc2311560abb))
-* **a11y:** add accordion aria-roles ([24ffcff](https://github.com/italia/bootstrap-italia/commit/24ffcff97266339155fa310fad6312c10b266417))
-* **a11y:** custom select autocomplete validation ([b4641a0](https://github.com/italia/bootstrap-italia/commit/b4641a05a96ce24a94adc93c74532a2fc96d4ae3))
-* **a11y:** drop down arrows control  ([58194e0](https://github.com/italia/bootstrap-italia/commit/58194e0b91e7ccfc55e3f5f6a918d99521e39048))
-* **a11y:** header and mobile menu interactions ([1f9610d](https://github.com/italia/bootstrap-italia/commit/1f9610d1bb58f94056d4a082745b9c7d4df09ad9))
-* accessible autocomplete style ([98d458e](https://github.com/italia/bootstrap-italia/commit/98d458eba8ab760ef9f8f288180816c77b587cc6))
-* Firefox select style ([5c4cd24](https://github.com/italia/bootstrap-italia/commit/5c4cd249727455959e56e401141e31e5cfbc2906))
-* fix remove css class error in sticky header ([992a9da](https://github.com/italia/bootstrap-italia/commit/992a9da3d375afc6ecc6936eaedb40c668d27363))
-* reintegrated font weight 600 for titillium ([4be4ddc](https://github.com/italia/bootstrap-italia/commit/4be4ddc4e9793aa482cab1e44e21be262edbdee2))
+* **deps:** add bs types to dependencies ([d65fce2](https://github.com/italia/bootstrap-italia/commit/d65fce223da59e3271e158f174bf06ff239784b6))
+* dropdown box shadow ([5e26d28](https://github.com/italia/bootstrap-italia/commit/5e26d28a0cef9962ee378b821d34a3290e4c8f1d))
+
+
+
+## [2.3.2](https://github.com/italia/bootstrap-italia/compare/v2.3.1...v2.3.2) (2023-01-27)
+
+
+### Bug Fixes
+
+* improve types ([e6c14e2](https://github.com/italia/bootstrap-italia/commit/e6c14e228eb674a0ade8420c291311e3cac8757a))
+
+
+
+## [2.3.1](https://github.com/italia/bootstrap-italia/compare/v2.3.0...v2.3.1) (2023-01-27)
+
+
+### Bug Fixes
+
+* improve types ([a9bc9b8](https://github.com/italia/bootstrap-italia/commit/a9bc9b8e40823377b458da276a6dee3f280b6943))
+
+
+
+# [2.3.0](https://github.com/italia/bootstrap-italia/compare/v2.2.0...v2.3.0) (2023-01-26)
+
+
+### Bug Fixes
+
+* **a11y:** add tab index on back to top component ([70f3f4d](https://github.com/italia/bootstrap-italia/commit/70f3f4d35d3259e0f6557befeef61e45a960cf65))
+* **a11y:** scss color adjustments ([edb2571](https://github.com/italia/bootstrap-italia/commit/edb2571dbe5df0d90b49845629e6565a979dc5d6))
+* **a11y:** separate index counter from lists on steppers ([0c4d218](https://github.com/italia/bootstrap-italia/commit/0c4d2189912a33cd5943109a5dd50c6a4b9342fe))
+* **a11y:** toolbar divider accessibility ([60792d1](https://github.com/italia/bootstrap-italia/commit/60792d17c53e1bc57a8bda87303e1c0e34d0c060))
+* abbr tag style ([1cadb9a](https://github.com/italia/bootstrap-italia/commit/1cadb9a115afc5f2b0ce3d26c346161e0ea10ff8))
+* bind events on active input labels ([b96274d](https://github.com/italia/bootstrap-italia/commit/b96274d913293beb06c7831523f13910de191eb6))
+* container max-width for xl breakpoint ([abb3fac](https://github.com/italia/bootstrap-italia/commit/abb3facbdd14430c4d0b2778cb07ba4d02e700fa))
+* main entry points to a non-existing file ([c2e68d5](https://github.com/italia/bootstrap-italia/commit/c2e68d55dedaa32a7eac35c5593f57c3c52baae6))
+* textarea validation icon ([94d979c](https://github.com/italia/bootstrap-italia/commit/94d979c15ed97f3c5b875d350898d5ea2505c426))
+
 
 ### Features
 
-* add splide carousel ([72dae01](https://github.com/italia/bootstrap-italia/commit/72dae01b26e19b09264c06b504af09063e2460cf))
-* implement just validate plugin ([8bcd482](https://github.com/italia/bootstrap-italia/commit/8bcd4823ac83d45d74b7340bf3f5c768b85aa2ec))
+* add non-bundled version ([351f907](https://github.com/italia/bootstrap-italia/commit/351f907e8346a55b60f9c914caa2737a2248cfc7))
+* new mastodon icons ([46b953b](https://github.com/italia/bootstrap-italia/commit/46b953b202b1e55ecc1d44b5de037b181e63781c))
+* upgrade to bootstrap 5.2.3 ([66fd71d](https://github.com/italia/bootstrap-italia/commit/66fd71d127d0184aab7c9771cf1caee1f7e96d36))
 
 
 
-## [1.5.2](https://github.com/italia/bootstrap-italia/compare/v1.5.1...v1.5.2) (2022-02-18)
+# [2.2.0](https://github.com/italia/bootstrap-italia/compare/v2.1.1...v2.2.0) (2023-01-01)
 
 
 ### Bug Fixes
 
-* restore the cookiebar plugin ([bfef832](https://github.com/italia/bootstrap-italia/commit/bfef832f5d3ba8e9fdea00cbb7cd93b2add68678))
+* dynamic bind for components ([4456c53](https://github.com/italia/bootstrap-italia/commit/4456c53b5d8e918f1e5530ac5a08f66d885892dd))
+* dynamic bind for input number and search autocomplete ([0085bd0](https://github.com/italia/bootstrap-italia/commit/0085bd0dda3c22209623d0e18412cfc7f8891a5b))
+* dynamic bind input upload drag and drop ([c27bcc1](https://github.com/italia/bootstrap-italia/commit/c27bcc1ef0a1b699dd8e3fc40acbf3083fa55c3b))
+* dynamic bind input, input number and input password ([4d580f5](https://github.com/italia/bootstrap-italia/commit/4d580f5acad76a7333efa2f5c0c012f91786b346))
+* header-sticky script converted to a component ([1a23929](https://github.com/italia/bootstrap-italia/commit/1a239294c2ee5b41f3a0196683c2dbe4d0bbf635))
+* move splide and autocomplete css outside js ([b396523](https://github.com/italia/bootstrap-italia/commit/b39652345137376a602fb838b5bf597d4f4b24aa))
+* new icons for medium ([cc625e5](https://github.com/italia/bootstrap-italia/commit/cc625e5a6c1b07d08fa606cd9f5f75b705d76972))
+* removed import header sticky as script ([2cde962](https://github.com/italia/bootstrap-italia/commit/2cde962e5698908e7a0bcfd1caa46454daa2127b))
 
-
-
-## [1.5.1](https://github.com/italia/bootstrap-italia/compare/v1.5.0...v1.5.1) (2022-02-09)
-
-### Bug Fixes
-
-- **core:** emit change on numeric steppers ([df3b8cb](https://github.com/italia/bootstrap-italia/commit/df3b8cbab247f624dcb2a211fad169cfe3394f09))
-- **core:** force resolution remove ([abb372a](https://github.com/italia/bootstrap-italia/commit/abb372a56c4e7ab0db391d77920df67317078b82))
 
 ### Features
 
-- add bootstrap-italia current version to home page ([51d38e4](https://github.com/italia/bootstrap-italia/commit/51d38e40486c21d147e456f15c6f98036b1d781c))
+* move js fonts loading externally ([932f68b](https://github.com/italia/bootstrap-italia/commit/932f68b5c1bc58d01b3f4fa7ba0526c851a8595f))
+* use active class when you set placeholder attribute to inputs ([675d2c2](https://github.com/italia/bootstrap-italia/commit/675d2c2cbafefa56c29b0b5f8b0b394e5d5a53f4))
 
-# [1.5.0](https://github.com/italia/bootstrap-italia/compare/v1.4.3...v1.5.0) (2022-02-08)
+
+
+## [2.1.1](https://github.com/italia/bootstrap-italia/compare/v2.1.0...v2.1.1) (2022-12-14)
+
 
 ### Bug Fixes
 
-- replaced xlink:href with href on svg icons ([509239d](https://github.com/italia/bootstrap-italia/commit/509239dd0fbe10e9a0227f0dce11b0e616fedb25))
-- add corrupted font files Titillium Web ([5f16f83](https://github.com/italia/bootstrap-italia/commit/5f16f83945ded41d32c46339b411ab5d306a68e8))
-- assign jQuery to $ as a global variable ([999cb21](https://github.com/italia/bootstrap-italia/commit/999cb21233d845df03696de5619914ec52a01c42))
-- circleci base image ([3172d81](https://github.com/italia/bootstrap-italia/commit/3172d81272d5cc5513cf76f0f24860b5e3dfc628))
-- cleanup baseurl configuration ([9aae0a6](https://github.com/italia/bootstrap-italia/commit/9aae0a69a08ffc4ae76d543e0168e582a50f1dce))
-- client side datepicker validation ([07f9d4b](https://github.com/italia/bootstrap-italia/commit/07f9d4b0df9731f4ce248cddcda5459ba4c5192d))
-- cope with color unit [forthcoming BC] ([c0118e6](https://github.com/italia/bootstrap-italia/commit/c0118e658470601807fe607a945b1285f8177b92))
-- cope with slash division [forthcoming BC] ([251febf](https://github.com/italia/bootstrap-italia/commit/251febf33c9e0799086582e61b791225ae99424c))
-- 2 columns masonry for tablet portrait ([b1e71a0](https://github.com/italia/bootstrap-italia/commit/b1e71a0e4a4a15d8d90efa8bf514aed4b4ed891e))
-- improve owl carousel accessibility ([1a16510](https://github.com/italia/bootstrap-italia/commit/1a16510a4f61e53800e72fbd780bfcb6633323cc))
-- increase tooltip font size ([90125e6](https://github.com/italia/bootstrap-italia/commit/90125e6c15635b49a7eab2ee0a061dd8e45f804f))
-- input-group button and datepicker focus status ([1be94b3](https://github.com/italia/bootstrap-italia/commit/1be94b303d6fe8816400fbe311e083ec118ce715))
-- skiplinks contrast ([0168e68](https://github.com/italia/bootstrap-italia/commit/0168e68d62432fdf207b63ed7387ad78a754dbfa))
-- dropdown positions ([0688374](https://github.com/italia/bootstrap-italia/commit/0688374fee1acd1a11eebee69198d9bba82ba1ca))
-- correct emphasis on active element ([44e062f](https://github.com/italia/bootstrap-italia/commit/44e062ff0e46f38d285929e7b236ebb96c404171))
-- navscroll opening bug ([ef68f4d](https://github.com/italia/bootstrap-italia/commit/ef68f4d7a36a406aee67d692d959b32212d930a1))
-- removed commented code ([836e7a5](https://github.com/italia/bootstrap-italia/commit/836e7a5378b32979a820550e4560e2026ae57839))
-- linklist documentation review ([71963e6](https://github.com/italia/bootstrap-italia/commit/71963e67d068e7e41358d4a8b0cea279478eb976))
-- wrong content for responsive tables ([413b49e](https://github.com/italia/bootstrap-italia/commit/413b49eb8f1288a96cfcdf5cc68466f03d4e8e73))
-- add default to all scss color variables ([c76333f](https://github.com/italia/bootstrap-italia/commit/c76333f944b7774d732ac4b928a5e7cb8ae054b8))
-- add default to link custom colors and button sass variables ([8f1b525](https://github.com/italia/bootstrap-italia/commit/8f1b525ec4674eeb3dd4f5919b396299b82aff17))
-- carousel dot accessible label ([3fbc68f](https://github.com/italia/bootstrap-italia/commit/3fbc68fa5bef66c0e480b0bab9e6ddfb1fd1652c))
-- css solution for safari masonry bug plus ie11 fix ([5aaed99](https://github.com/italia/bootstrap-italia/commit/5aaed9982d3784a2a616289abda643c6a73d3638))
-- firefox input number bug ([d8ecf5b](https://github.com/italia/bootstrap-italia/commit/d8ecf5b47ebbbfbd9651d989dfa32175d562227a))
-- focus behaviour ([4b4bce0](https://github.com/italia/bootstrap-italia/commit/4b4bce0083e7fc17ede842c717d59e3730fd6b18))
-- label position invisible behind input ([0d17d66](https://github.com/italia/bootstrap-italia/commit/0d17d669f976c555a1a1eae03839fcf7dce6869f))
-- remove label forced width ([18950b0](https://github.com/italia/bootstrap-italia/commit/18950b0da31f21264ae1363a7adae2fa9abaf8d3))
-- set mobile navbar z-index to 100 so it always stays on top ([03415c5](https://github.com/italia/bootstrap-italia/commit/03415c5512aa881e668d4c45a44f432603ea28d7))
-- specific selector for header slim dropdown ([4f080c8](https://github.com/italia/bootstrap-italia/commit/4f080c8430476f0af1a117913b60619c817d462c))
-- custom select disabled version styling alignment ([aeb8dff](https://github.com/italia/bootstrap-italia/commit/aeb8dff8503c08b351d01683f2574ff0304b1830))
-- custom colors override correctly ([74e5fac](https://github.com/italia/bootstrap-italia/commit/74e5facb39c3a6c8bbe070e545e8dbcdcc7c881d))
-- HTML required feedback not visible ([62a55df](https://github.com/italia/bootstrap-italia/commit/62a55dfffebce9cac67de2faf23b250d19168e8f))
-- remove cookiebar ([78871dc](https://github.com/italia/bootstrap-italia/commit/78871dc7cc5bc4a846b109295efb6f3ab418f096))
-- show icons on popover in docs ([8e4a819](https://github.com/italia/bootstrap-italia/commit/8e4a819a92e760987865598b04e14c7f9febfa93))
-- typo in alert.md ([583d1a7](https://github.com/italia/bootstrap-italia/commit/583d1a79997f0b387dbf86effedf433fa0eeedf9))
+* new icons for medium ([f5105bc](https://github.com/italia/bootstrap-italia/commit/f5105bc1630685c1b8aa3751f6bd77e8ea6ff0ab))
+
+
+
+# [2.1.0](https://github.com/italia/bootstrap-italia/compare/v2.0.9...v2.1.0) (2022-12-13)
+
+
+### Bug Fixes
+
+* foit using swap to display fonts ([6486e28](https://github.com/italia/bootstrap-italia/commit/6486e28a7660c6236ba8f1bf795b0d3f1e8a47e7))
+* removed duplicate style definitions ([60e5cbf](https://github.com/italia/bootstrap-italia/commit/60e5cbf8c0faa85c59f680c8c9249eb7e05d3213))
+
 
 ### Features
 
-- add global var to check the current version ([d369f16](https://github.com/italia/bootstrap-italia/commit/d369f1612e971ff1b77e7d4a863ae5e362a385bb))
-- add google social icon ([9a6dddc](https://github.com/italia/bootstrap-italia/commit/9a6dddcedd257b8dbc93fc06b0024216bf115164))
-- add regex_filter for templates ([7272125](https://github.com/italia/bootstrap-italia/commit/72721255c4e947e79af010c00fa46843fe893284))
-- update fonts with italic variants using webfonts-helper ([7cb627c](https://github.com/italia/bootstrap-italia/commit/7cb627c49ee2db3090c67f0cac1d84369e4c6642))
-- update node and tools ([2245438](https://github.com/italia/bootstrap-italia/commit/2245438055ede32a6a96b67f736d800c3e79bf6a))
-- use dart sass in place of node-sass ([3042724](https://github.com/italia/bootstrap-italia/commit/304272482081f369c855286a750017ab9780e34d))
+* new icons for files and platforms ([af25acc](https://github.com/italia/bootstrap-italia/commit/af25acc18ec9c89a1e4af0ff29ec7fb10981812d))
+
+
+
+## [2.0.9](https://github.com/italia/bootstrap-italia/compare/v2.0.8...v2.0.9) (2022-11-08)
+
+
+### Bug Fixes
+
+* **a11y:** focus on close button when opening the nav menu on mobile ([54af974](https://github.com/italia/bootstrap-italia/commit/54af974ac88108de84ef5d06751756be4f50fcd6))
+* **a11y:** prevented page scroll when nav menu is opened ([127b416](https://github.com/italia/bootstrap-italia/commit/127b41694b35cc376e5e85ba274bace9d18ca61f))
+* **core:** row-column-border on mobile interfaces ([80f8cdf](https://github.com/italia/bootstrap-italia/commit/80f8cdf9e9eeec900dddd637dc46c8ef0f60c103))
+
+
+
+## [2.0.8](https://github.com/italia/bootstrap-italia/compare/v2.0.7...v2.0.8) (2022-10-28)
+
+
+### Bug Fixes
+
+* button outline secondary shadow ([974db9d](https://github.com/italia/bootstrap-italia/commit/974db9d5aaa7b61675b57782d53ec883d4500a4c))
+* update z-index value for sticky ([d55a655](https://github.com/italia/bootstrap-italia/commit/d55a655dfb78038cb5e345bdd23cd6c627987624))
+
+
+
+## [2.0.7](https://github.com/italia/bootstrap-italia/compare/v2.0.6...v2.0.7) (2022-10-18)
+
+
+### Bug Fixes
+
+* restored left and right padding to card-body in a card-img ([bfd7298](https://github.com/italia/bootstrap-italia/commit/bfd729822a370942c155419442821f9cded5e306))
+
+
+
+## [2.0.6](https://github.com/italia/bootstrap-italia/compare/v2.0.5...v2.0.6) (2022-10-06)
+
+
+### Bug Fixes
+
+* **core:** types path in package.json ([05e743a](https://github.com/italia/bootstrap-italia/commit/05e743a4c49e7fc57b1ab656b144c0067bcf3961))
+
+
+
+## [2.0.5](https://github.com/italia/bootstrap-italia/compare/v2.0.4...v2.0.5) (2022-10-05)
+
+
+### Bug Fixes
+
+* **core:** steppers active element on desktop ([287dd99](https://github.com/italia/bootstrap-italia/commit/287dd993813532ffc9abbe7e83ee0592d61742f9))
+
+
+
+## [2.0.4](https://github.com/italia/bootstrap-italia/compare/v2.0.3...v2.0.4) (2022-09-09)
+
+
+### Bug Fixes
+
+* **core:** timeline elements spaces ([5190210](https://github.com/italia/bootstrap-italia/commit/5190210cd5b26c58ed865f1befbc76f724858e22))
+* **core:** timeline fix ([e716e77](https://github.com/italia/bootstrap-italia/commit/e716e7713e21d6ae334df073803bce0bb6c1ec12))
+* **core:** z-index nav and timeline ([bdfe095](https://github.com/italia/bootstrap-italia/commit/bdfe095f3722ff573e61e3b5b940c1973acec9f3))
+
+
+
+## [2.0.3](https://github.com/italia/bootstrap-italia/compare/v2.0.2...v2.0.3) (2022-08-24)
+
+
+### Bug Fixes
+
+* **core:** remove border on dark elements and simple cards ([8451acf](https://github.com/italia/bootstrap-italia/commit/8451acf7d1c7fc7dc58be1efaa7880264026abb8))
+
+
+
+## [2.0.2](https://github.com/italia/bootstrap-italia/compare/v2.0.1...v2.0.2) (2022-07-27)
+
+
+### Bug Fixes
+
+* **core:** icon right style ([aa28ac3](https://github.com/italia/bootstrap-italia/commit/aa28ac3f7d60583a4deb41cdf1922eb15aae3117))
+* **core:** sidebar collapsable mobile ([0f9ac18](https://github.com/italia/bootstrap-italia/commit/0f9ac1804b14ad1be164ddc03cbce5eef1928aae))
+* **core:** navscroll on scroll method ([9199e7a](https://github.com/italia/bootstrap-italia/commit/9199e7a8f12a9393c3f8d293222db59f1ec53c27))
+* dismissable chip ([df6661b](https://github.com/italia/bootstrap-italia/commit/df6661b034f986788b37571e00fd4dddf0085550))
+
+
+### Features
+
+* add WAI, remove Google Analytics ([29f672b](https://github.com/italia/bootstrap-italia/commit/29f672be2091aa77b34f82a0531b6b0fbbdb66f4))
+
+
+
+## [2.0.1](https://github.com/italia/bootstrap-italia/compare/v2.0.0...v2.0.1) (2022-07-23)
+
+
+### Bug Fixes
+
+* pin bootstrap version to 5.1.3 ([b97062e](https://github.com/italia/bootstrap-italia/commit/b97062e681f52bed9dd780769fc556c0340ee08e))
+
+
+
+# 2.0.0 (2022-07-22)
+
+
+### Bug Fixes
+
+* Lot of bug fixes on components, design and accessibility
+
+
+### Features
+
+* Adapt version 2.0.0 to Bootstrap 5
+
+
+

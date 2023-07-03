@@ -11,22 +11,23 @@
 
 <title>Tipografia · Bootstrap Lombardia</title>
 
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
-<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
-<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
 <meta name="theme-color" content="#0066CC" />
  <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
@@ -34,50 +35,38 @@
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="twitter:title" content="Tipografia" />
 <meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/it25/utilit%C3%A0/tipografia/" />
+<meta property="og:url" content="/docs/it25/utilit%C3%A0/tipografia/" />
 <meta property="og:title" content="Tipografia" />
 <meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookies_consent=true') === -1) {
-    window['ga-disable-UA-114758441-1'] = true
-  }
-</script>
-<script>
-  ;(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r
-    ;(i[r] =
-      i[r] ||
-      function () {
-        ;(i[r].q = i[r].q || []).push(arguments)
-      }),
-      (i[r].l = 1 * new Date())
-    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-    a.async = 1
-    a.src = g
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto')
-  ga('set', 'anonymizeIp', true)
-  ga('send', 'pageview')
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- End Google Analytics -->
 
 
   </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
       </div>
@@ -86,10 +75,10 @@
     <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
   <!--div class="container"-->
   <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-italia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
-        <div class="d-flex flex-column pl-3 pl-sm-4">
+        <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
           <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
           <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
         </div>
@@ -97,20 +86,31 @@
     </a>
 
     
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
 
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-      <li class="nav-item pr-2">
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.4.1/bootstrap-lombardia.zip" aria-label="Download">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.0.0/bootstrap-lombardia.zip" aria-label="Download">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
-      <li class="nav-item pr-2">
+      <li class="nav-item pe-2">
         <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
         </a>
       </li>
     </ul>
+
+    
+    <div class="bd-search w-100">
+      <label for="search-input" class="visually-hidden">Cerca:</label>
+      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
+    </div>
+    
   </div>
 </header>
 
@@ -119,224 +119,479 @@
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
-      <h3 class="no_toc">Linee guida</h3>
-
-      <div class="sidebar-linklist-wrapper">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <a class="list-item " href="/bootstrap-lombardia/docs/it25/introduzione">
-                <span>Introduzione</span>
-              </a>
-            </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-1" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-1">
-                  <span>Componenti Principali</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-1"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/logo/">
-                        <span>logo</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/header/">
-                        <span>header</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">
-                        <span>menu orizzontale</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/barra-utente/">
-                        <span>barra utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">
-                        <span>sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/footer/">
-                        <span>footer</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+    <h3 class="no_toc">Linee Guida</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/introduzione/"><span>Introduzione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right active"
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="true"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-3"><li>
+                <a
+                  class="list-item  active"
+                  href="/bootstrap-italia/docs/it25/utilità/tipografia/"
+                >
+                  <span>Tipografia</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-2">
-                  <span>Navigazione</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-2"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/">
-                        <span>megamenu</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/paginatore/">
-                        <span>paginatore</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/link-list/">
-                        <span>link list</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/breadcrumbs/">
-                        <span>breadcrumbs</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/colori/"
+                >
+                  <span>Colori</span></a>
               </li><li>
-                <a class="list-item large medium right-icon active" href="#collapse-guida-3" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-guida-3">
-                  <span>Utilità</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse show" id="collapse-guida-3"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/colori/">
-                        <span>colori</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item  active" href="/bootstrap-lombardia/docs/it25/utilità/tipografia/">
-                        <span>tipografia</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/icone/">
-                        <span>icone</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/ombre-angoli/">
-                        <span>ombre e angoli</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/ombre-e-angoli/"
+                >
+                  <span>Ombre e angoli</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-4">
-                  <span>Call to action</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-4"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/bottoni/">
-                        <span>bottoni</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/">
-                        <span>tab bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/icone/"
+                >
+                  <span>Icone</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-5">
-                  <span>Informazioni</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-5"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/accordion/">
-                        <span>accordion</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/overlay/">
-                        <span>overlay</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/calendario/">
-                        <span>calendario</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/tabella/">
-                        <span>tabella</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/card/">
-                        <span>card</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/cookiebar/">
-                        <span>cookie bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel/">
-                        <span>carousel</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel-legacy/">
-                        <span>carousel-legacy</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-6" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-6">
-                  <span>Inserimento</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-6"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/">
-                        <span>input fields</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
-                        <span>radio buttons</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/check-box/">
-                        <span>check box</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/toggle/">
-                        <span>toggle</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/wizard/">
-                        <span>wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/popover/">
-                        <span>popover</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">
-                        <span>tooltip</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/progress-bar/">
-                        <span>progress bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-7">
-                  <span>Esempi</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-7"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_tabella/">
-                        <span>Tabella complessa</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">
-                        <span>Form</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">
-                        <span>Wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">
-                        <span>Sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_profilo_utente/">
-                        <span>Profilo utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_cookiebar/">
-                        <span>Cookiebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/introduzione/">
-                        <span>Il codice</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/divisori/"
+                >
+                  <span>Divisori</span></a>
               </li></ul>
-        </div>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="false"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-4"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/logo/"
+                >
+                  <span>Logo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/header/"
+                >
+                  <span>Header</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-verticale/"
+                >
+                  <span>Menu Verticale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/gestione-loghi-multipli/"
+                >
+                  <span>Gestione Loghi Multipli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/footer/"
+                >
+                  <span>Footer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/breadcrumbs/"
+                >
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/liste/"
+                >
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/dropdown-menu/"
+                >
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/megamenu/"
+                >
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/paginatore/"
+                >
+                  <span>Paginatore</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/bottoni/"
+                >
+                  <span>Bottoni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/tab-bar/"
+                >
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/slider/"
+                >
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="false"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/accordion/"
+                >
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/card/"
+                >
+                  <span>Card</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/carousel/"
+                >
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/calendario/"
+                >
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/time-picker/"
+                >
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/cookiebar/"
+                >
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/overlay/"
+                >
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/tabella/"
+                >
+                  <span>Tabella</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/snackbar/"
+                >
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="false"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-8"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/check-box/"
+                >
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/radio-buttons/"
+                >
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/toggle/"
+                >
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/input-fields/"
+                >
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/tooltip/"
+                >
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/popover/"
+                >
+                  <span>Popover</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/wizard/"
+                >
+                  <span>Wizard</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/progress-bar/"
+                >
+                  <span>Progress bar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-9"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-9"
+              aria-expanded="false"
+              aria-controls="collapse-9"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti per il mobile</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-9"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/introduzione/"
+                >
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/app-icon/"
+                >
+                  <span>App icon</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/splash-screen/"
+                >
+                  <span>Splash Screen</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/onboarding/"
+                >
+                  <span>Onboarding</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/autenticazione/"
+                >
+                  <span>Autenticazione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/termini-e-condizioni/"
+                >
+                  <span>Termini e condizioni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/home/"
+                >
+                  <span>Home</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/profilo/"
+                >
+                  <span>Profilo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/assistenza/"
+                >
+                  <span>Assistenza</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-dettaglio/"
+                >
+                  <span>Pagina di dettaglio</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-sezione/"
+                >
+                  <span>Pagina di sezione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/popup/"
+                >
+                  <span>Popup</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/form/"
+                >
+                  <span>Form</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
       </div>
-
-      <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
-        <span><a href="/bootstrap-lombardia/docs/informazioni">Documentazione</a></span>
-        <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
-      </button>
-
     </div>
 
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bootstrap-italia/docs/documentazione-tecnica">Doc. Tecnica</a></span>
+      <svg class="icon icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use></svg>
+    </button>
+  </div>
 </nav>
 
         </div>
@@ -346,8 +601,12 @@
   <div class="sidebar-wrapper">
     <h3>Tipografia</h3>
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#font">Font</a></li>
-<li class="toc-entry toc-h2"><a href="#citazioni">Citazioni</a></li>
+<li class="toc-entry toc-h2"><a href="#font">Font</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#titillium-web">Titillium Web</a></li>
+<li class="toc-entry toc-h3"><a href="#roboto-mono">Roboto Mono</a></li>
+</ul>
+</li>
 </ul>
   </div>
 </div>
@@ -357,33 +616,135 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Tipografia</h1>
           <p class="bd-lead"></p>
-          <h2 id="font">Font</h2>
-<p>Le <em>Linee Guida per il design degli applicativi di Regione Lombardia</em> prevedono <strong>solo due</strong> famiglie di caratteri:</p>
+          <style>
+  /* Style override for Documentation purposes */
+  .no-border {
+    border: none;
+  }
+  .border-text {
+    border: 1px dashed;
+    border-radius: 40px;
+    padding: 1.25em;
+  }
+</style>
+
+<h2 id="font">Font</h2>
+
+<p>Le <em>Linee Guida</em> per il design degli applicativi di Regione Lombardia prevedono <strong>solo due</strong> famiglie di caratteri::</p>
+
 <ul>
   <li>il font senza grazie, o <em>sans serif</em>, <strong>Titillium Web</strong>.</li>
-  <li>il font <em>monospace</em> con dimensioni di caratteri normalizzate <strong>Roboto Mono</strong>.</li>
+  <li>il font <em>monospace</em> con dimensioni di caratteri normalizzate <strong><span class="font-monospace">Roboto Mono</span></strong>.</li>
 </ul>
 
-<div class="bd-callout bd-callout-danger">
-<h4 id="-font-lora"><svg class="icon icon-danger icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use></svg> Font Lora</h4>
-<p>Il font graziato, o <em>serif</em>, <strong>Lora</strong><br />
- <strong>NON VA MAI UTILIZZATO</strong>.</p>
+<h3 id="titillium-web">Titillium Web</h3>
+
+<div class="bd-example no-border">
+  <div class="row">
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col">
+            <p class="h2">Titillium Web Desktop</p>
+          </div>
+          <div class="col">
+            <p class="h1">H1 Bold 48px/60px</p>
+            <p class="h2">H2 Bold 40px/48px</p>
+            <p class="h3">H3 Bold 32px/40px</p>
+            <p class="h4">H4 SemiBold 28px/40px</p>
+            <p class="h5">H5 Regular 24px/40px</p>
+            <p class="h6">H6 SemiBold 18px/28px</p>
+            <p>Body Text Regular 18px</p>
+            <p class="small fw-semibold">Caption Small SemiBold 16px</p>
+            <p class="x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col">
+            <p class="h2">Titillium Web Mobile</p>
+          </div>
+          <div class="col">
+            <p class="h1">H1 Bold 40px/48px</p>
+            <p class="h2">H2 Bold 32px/40px</p>
+            <p class="h3">H3 Bold 28px/32px</p>
+            <p class="h4">H4 SemiBold 24px/28px</p>
+            <p class="h5">H5 Regular 20px/24px</p>
+            <p class="h6">H6 SemiBold 16px/24px</p>
+            <p>Body Text Regular 18px</p>
+            <p class="small fw-semibold">Caption Small SemiBold 16px</p>
+            <p class="x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h2 id="citazioni">Citazioni</h2>
-<p>In un applicativo Web è poco probabile che si debba riportare una citazione; in ogni caso:</p>
+<h3 id="roboto-mono">Roboto Mono</h3>
 
-<div class="bd-callout bd-callout-danger">
-<h4 id="-citazioni"><svg class="icon icon-danger icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-circle"></use></svg> Citazioni</h4>
-<p><strong>NON VANNO MAI UTILIZZATI</strong> né il <strong>tag</strong> né la <strong>classe</strong> <code class="language-plaintext highlighter-rouge">blockquote</code>.</p>
+<div class="bd-example no-border">
+  <div class="row">
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col-4 text-center">
+            <p class="h2 font-monospace">Roboto Mono</p>
+          </div>
+          <div class="col-8">
+            <p class="h1 font-monospace">H1 Bold 40px</p>
+            <p class="h2 font-monospace">H2 Bold 32px</p>
+            <p class="h3 font-monospace">H3 Bold 28px</p>
+            <p class="h4 font-monospace">H4 Bold 24px</p>
+            <p class="h5 font-monospace">H5 Regular 20px</p>
+            <p class="h6 font-monospace">H6 Bold 16px</p>
+            <p class="font-monospace">Body Text Regular 18px</p>
+            <p class="fw-semibold font-monospace small">Caption Small bold 16px</p>
+            <p class="font-monospace x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
+<div class="bd-callout bd-callout-accessibility">
+<h4 id="accessibilità">Accessibilità</h4>
+<div class="container">
+  <div class="row">
+    <div class="col-sm mt-4">
+      <h6>Lunghezza</h6>
+      Una riga di testo che permette una lettura confortevole non supera i 75
+      caratteri.<br />
+      In caso di colonne multiple la lunghezza è compresa tra 40 e 50 caratteri.<br />
+      Per i testi a margine, la lunghezza non è mai inferiore ai 12-15 caratteri.
+    </div>
+    <div class="col-sm mt-4">
+      <h6>Allineamento</h6>
+      Il testo deve essere allineato a sinistra, salvo eccezioni come ad esempio i testi a margine.<br />
+      L’allineamento giustificato e senza sillabazione è sempre da evitare per l’incongrua spaziatura delle parole e la minore leggibilità che comporta.
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm mt-4">
+      <h6>Definizione</h6>
+      I paragrafi possono essere distinti o applicando uno spazio tra di essi o in alternativa usando una indentatura di misura pari a quella del leading.
+    </div>
+    <div class="col-sm mt-4">
+      <h6>Link</h6>
+      Per distinguere i link dal testo canonico si usa la <u>sottolineatura</u> per i link all’interno di un testo, oppure il <strong>peso bold</strong> per i link isolati.
+    </div>
+  </div>
+</div>
 </div>
 
 <div class="bd-callout bd-callout-info">
-<h4 id="-riferimenti"><svg class="icon icon-info icon-lg"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle"></use></svg> Riferimenti</h4>
-<p>Il contenuto di questa pagina si riferisce ai seguenti punti della Documentazione Tecnica:</p>
-<ul>
-  <li><strong><a href="/bootstrap-lombardia/docs/organizzare-i-contenuti/tipografia/">Tipografia</a></strong></li>
-</ul>
+<h4 id="documentazione-tecnica">Documentazione tecnica</h4>
+<p>Per l’utilizzo delle classi di formattazione tipografica si consulti la <strong><a href="/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/">relativa pagina</a></strong>.</p>
 </div>
 
 
@@ -391,19 +752,80 @@
       </div>
     </div>
 
-    <div class="cookiebar">
-  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
-  <div class="cookiebar-buttons">
-      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
-      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
-  </div>
-</div>
-
     
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
 
-<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><script src="/bootstrap-italia/docs/assets/dist/js/docs.min.js?202307030811"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script>
-  
+<script src="/bootstrap-italia/docs/assets/src/js/docs.js?202307030811"></script>
+
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  var manifest = [
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>
+<!-- <script src="/bootstrap-italia/docs/assets/src/js/cover-animation.js?202307030811"></script> -->
   </body>
 </html>

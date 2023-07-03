@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Template pagina con tabella" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.2.1" />
+
+<title>pag_tabella · Bootstrap Lombardia</title>
+
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
+
+<!-- Documentation extras -->
+
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="pag_tabella" />
+<meta name="twitter:description" content="Template pagina con tabella" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/esempi/tabella-complessa/" />
+<meta property="og:title" content="pag_tabella" />
+<meta property="og:description" content="Template pagina con tabella" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <header class="it25-menu">
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <a href="#">
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="it-header-navbar-wrapper theme-light-desk it25-menu-orizzontale">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+
+        <nav class="navbar navbar-expand-lg has-megamenu">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav1" aria-expanded="false"
+          aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav1">
+            <svg class="icon icon-primary">
+              <use href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+            </svg>
+          </button>
+          <div class="navbar-collapsable" id="nav1">
+            <div class="overlay"></div>
+            <div class="close-div">
+              <button class="btn close-menu" type="button">
+                <span class="visually-hidden">Nascondi la navigazione</span>
+                <svg class="icon">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-wrapper">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#"><span>Link</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                  <a class="nav-link active" href="#"><span>Attivo</span><span class="visually-hidden">voce selezionata</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link disabled" href="#"><span>Disabled</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>Dropdown</span>
+                    <svg class="icon icon-xs">
+                      <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li>
+                          <h3 class="no_toc text-primary fw-bold" id="heading-es-1">Heading</h3>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Link list 1</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Link list 2</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Link list 3</span></a>
+                        </li>
+                        <li><span class="divider"></span></li>
+                        <li>
+                          <a class="list-item" href="#"><span>Link list 4</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown megamenu">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+                    <span>Megamenu</span>
+                    <svg class="icon icon-xs">
+                      <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu" data-popper-placement="bottom-end">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc text-primary fw-bold">Heading 1</h3>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 1 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 2 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 3 </span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc text-primary fw-bold">Heading 2</h3>
+                            </li>
+                            <li>
+                              <a class="list-item active" href="#"><span>Link list 1 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 2 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 3 </span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <h3 class="no_toc text-primary fw-bold">Heading 3</h3>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 1 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item disabled" href="#"><span>Link list 2 </span></a>
+                            </li>
+                            <li>
+                              <a class="list-item" href="#"><span>Link list 3</span></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+</header>
+
+<main>
+  <div class="my-4">
+    <div class="container-fluid">
+      <form>
+        <div class="row">
+          <div class="form-group col-12 col-md-5 col-lg-3 mb-md-0">
+            <div class="btn-group">
+              <div class="dropdown">
+                <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Azioni multiple
+                  <svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use></svg>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-danger icon-sm">
+                      <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-circle"></use>
+                    </svg>
+                    Elimina
+                  </button>
+                  <div class="dropdown-divider"></div>
+                  <button class="dropdown-item" type="button">
+                    <svg class="icon icon-success icon-sm">
+                      <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                    </svg>
+                    Scarica pdf
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="btn-group">
+              <button type="submit" class="btn btn-primary btn-sm">Applica</button>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-1 offset-lg-2 mb-md-0 align-self-center">
+            <div class="text-center">
+              <span class="fw-bold neutral-2-color-b5">Filtri</span>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="select-wrapper">
+              <label for="statoSelect">Stato</label>
+              <select title="Scegli" id="statoSelect">
+                <option value="1">Aperta</option>
+                <option value="2" selected >Chiusa</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="select-wrapper">
+              <label id="parereSelect">Parere</label>
+              <select title="Scegli" for="parereSelect">
+                <option value="1">Favorevole</option>
+                <option value="2" selected >Contrario</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group col-12 col-md-2 mb-md-0">
+            <div class="input-group">
+              <input type="text" class="form-control" id="input-group-1" name="input-group-1" placeholder="Cerca" aria-label="Cerca nel testo">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary btn-xs" type="button" id="btn-cerca" aria-label="Cerca">
+                  <svg class="icon">
+                    <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><!-- end row -->
+      </form>
+    </div><!-- end container -->
+  </div>
+
+<div class="table-responsive p-2">
+  <table class="table table-striped table-sm">
+    <caption>Lista rihieste rimborso</caption>
+    <thead class="table-light">
+      <tr>
+        <th scope="col" class="text-center">
+          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe">
+        </th>
+        <th scope="col" class="text-end">Numero/Anno</th>
+        <th scope="col">Stato</th>
+        <th scope="col">Data richiesta</th>
+        <th scope="col">Parere</th>
+        <th scope="col">Data parere</th>
+        <th scope="col" class="text-end">Importo</th>
+        <th scope="col">Cod.regionale</th>
+        <th scope="col">Cognome</th>
+        <th scope="col">Nome</th>
+        <th scope="col" class="text-center">Sesso</th>
+        <th scope="col" class="text-center">Stato</th>
+        <th scope="col" colspan="2" class="text-center">Azioni</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1"></td>
+        <th scope="row" class="text-end">2/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">1.230,16 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox2" type="checkbox" aria-label="Scegli riga 2"></td>
+        <th scope="row" class="text-end">3/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">344,10 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox3" type="checkbox" aria-label="Scegli riga 3"></td>
+        <th scope="row" class="text-end">4/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">3.534,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox4" type="checkbox" aria-label="Scegli riga 4"></td>
+        <th scope="row" class="text-end">5/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">34,05 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox5" type="checkbox" aria-label="Scegli riga 5"></td>
+        <th scope="row" class="text-end">6/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">534,11 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox6" type="checkbox" aria-label="Scegli riga 6"></td>
+        <th scope="row" class="text-end">7/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox7" type="checkbox" aria-label="Scegli riga 7"></td>
+        <th scope="row" class="text-end">8/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox8" type="checkbox" aria-label="Scegli riga 8"></td>
+        <th scope="row" class="text-end">9/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">7.634,98 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox9" type="checkbox" aria-label="Scegli riga 9"></td>
+        <th scope="row" class="text-end">10/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">34,30 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox10" type="checkbox" aria-label="Scegli riga 10"></td>
+        <th scope="row" class="text-end">11/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">3.434,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox11" type="checkbox" aria-label="Scegli riga 11"></td>
+        <th scope="row" class="text-end">12/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">444,10 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center"><input id="checkbox12" type="checkbox" aria-label="Scegli riga 12"></td>
+        <th scope="row" class="text-end">13/2015</th>
+        <td>Chiusa</td>
+        <td>06/09/2018</td>
+        <td>Contrario</td>
+        <td>06/09/2018</td>
+        <td class="text-end">984,00 €</td>
+        <td>999CV393</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">M</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-pencil"></use></svg>
+          </a>
+        </td>
+        <td class="text-center">
+          <a href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use></svg>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="my-1">
+  <nav class="pagination-wrapper" aria-label="Esempio di navigazione con ellissi/more">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#">
+          <svg class="icon icon-primary"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+          <span class="visually-hidden">Pagina precedente</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item">
+        <span class="page-link">...</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">24</a></li>
+      <li class="page-item"><a class="page-link" href="#">25</a></li>
+      <li class="page-item active">
+        <a class="page-link" href="#" aria-current="page">
+          <span class="d-inline-block d-sm-none">Pagina </span>26
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">27</a></li>
+      <li class="page-item"><a class="page-link" href="#">28</a></li>
+      <li class="page-item">
+        <span class="page-link">...</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">50</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">
+          <span class="visually-hidden">Pagina successiva</span>
+          <svg class="icon icon-primary"><use href="/bootstrap-italia/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 my-4 fw-bold">
+        ACCREDITAS Sistema di accreditamento
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <span class="d-inline-block">&copy; Copyright Regione Lombardia</span>
+        <span class="d-inline-block"> - tutti i diritti riservati</span>
+        <span class="d-inline-block"> - C.F. 80050050154</span>
+        <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
+        <span class="d-inline-block"> - 20124 Milano</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+ 
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
+
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><!-- Notification per tornare alla pagina principale -->
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle"></use></svg
+    >Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bootstrap-italia/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+
+<script>
+  $(document).ready(function () {
+    notificationShow('notification-esempi')
+  })
+</script>
+  </body>
+</html>

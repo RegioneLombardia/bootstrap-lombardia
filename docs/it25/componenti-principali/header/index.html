@@ -11,22 +11,23 @@
 
 <title>Header · Bootstrap Lombardia</title>
 
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
-<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
-<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
 <meta name="theme-color" content="#0066CC" />
  <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
@@ -34,50 +35,38 @@
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="twitter:title" content="Header" />
 <meta name="twitter:description" content="Header applicativi Web." />
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/it25/componenti-principali/header/" />
+<meta property="og:url" content="/docs/it25/componenti-principali/header/" />
 <meta property="og:title" content="Header" />
 <meta property="og:description" content="Header applicativi Web." />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookies_consent=true') === -1) {
-    window['ga-disable-UA-114758441-1'] = true
-  }
-</script>
-<script>
-  ;(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r
-    ;(i[r] =
-      i[r] ||
-      function () {
-        ;(i[r].q = i[r].q || []).push(arguments)
-      }),
-      (i[r].l = 1 * new Date())
-    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-    a.async = 1
-    a.src = g
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto')
-  ga('set', 'anonymizeIp', true)
-  ga('send', 'pageview')
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- End Google Analytics -->
 
 
   </head>
   <body>
-    <a id="skippy" class="sr-only sr-only-focusable" href="#content">
+    <a id="skippy" class="visually-hidden-focusable" href="#content">
       <div class="container">
         <span class="skiplink-text">Skip to main content</span>
       </div>
@@ -86,10 +75,10 @@
     <header class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
   <!--div class="container"-->
   <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
+    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-italia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
-        <div class="d-flex flex-column pl-3 pl-sm-4">
+        <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <div class="d-flex flex-column ps-3 ps-sm-4">
           <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
           <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
         </div>
@@ -97,20 +86,31 @@
     </a>
 
     
+    <button class="btn btn-xs btn-primary d-md-none px-2 text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      menu
+    </button>
+    
 
-    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-      <li class="nav-item pr-2">
+    <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
+      <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="http://lab.lispa.it/templates/bootstrap-lombardia/releases/download/v0.4.1/bootstrap-lombardia.zip" aria-label="Download">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-download"></use></svg><span class="sr-only">Download</span>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.0.0/bootstrap-lombardia.zip" aria-label="Download">
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
-      <li class="nav-item pr-2">
+      <li class="nav-item pe-2">
         <a title="Repository GitHub di Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center" href="https://github.com/RegioneLombardia/bootstrap-lombardia/" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-github"></use></svg><span class="sr-only">GitHub</span>
+          <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-github"></use></svg><span class="visually-hidden">GitHub</span>
         </a>
       </li>
     </ul>
+
+    
+    <div class="bd-search w-100">
+      <label for="search-input" class="visually-hidden">Cerca:</label>
+      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
+    </div>
+    
   </div>
 </header>
 
@@ -119,224 +119,479 @@
       <div class="row flex-xl-nowrap">
         <div class="col-12 col-md-3 col-xl-2 bd-sidebar">
           <nav class="collapse bd-links" id="bd-docs-nav"><div class="sidebar-wrapper">
-      <h3 class="no_toc">Linee guida</h3>
-
-      <div class="sidebar-linklist-wrapper">
-        <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li>
-              <a class="list-item " href="/bootstrap-lombardia/docs/it25/introduzione">
-                <span>Introduzione</span>
-              </a>
-            </li><li>
-                <a class="list-item large medium right-icon active" href="#collapse-guida-1" data-toggle="collapse" aria-expanded="true" aria-controls="collapse-guida-1">
-                  <span>Componenti Principali</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse show" id="collapse-guida-1"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/logo/">
-                        <span>logo</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item  active" href="/bootstrap-lombardia/docs/it25/componenti-principali/header/">
-                        <span>header</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">
-                        <span>menu orizzontale</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/barra-utente/">
-                        <span>barra utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">
-                        <span>sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/componenti-principali/footer/">
-                        <span>footer</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+    <h3 class="no_toc">Linee Guida</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/introduzione/"><span>Introduzione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-3"
+              aria-expanded="false"
+              aria-controls="collapse-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-3"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/tipografia/"
+                >
+                  <span>Tipografia</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-2" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-2">
-                  <span>Navigazione</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-2"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/">
-                        <span>megamenu</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/paginatore/">
-                        <span>paginatore</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/link-list/">
-                        <span>link list</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/navigazione/breadcrumbs/">
-                        <span>breadcrumbs</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/colori/"
+                >
+                  <span>Colori</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-3" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-3">
-                  <span>Utilità</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-3"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/colori/">
-                        <span>colori</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/tipografia/">
-                        <span>tipografia</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/icone/">
-                        <span>icone</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/utilità/ombre-angoli/">
-                        <span>ombre e angoli</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/ombre-e-angoli/"
+                >
+                  <span>Ombre e angoli</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-4" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-4">
-                  <span>Call to action</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-4"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/bottoni/">
-                        <span>bottoni</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/">
-                        <span>tab bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/icone/"
+                >
+                  <span>Icone</span></a>
               </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-5" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-5">
-                  <span>Informazioni</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-5"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/accordion/">
-                        <span>accordion</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/overlay/">
-                        <span>overlay</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/calendario/">
-                        <span>calendario</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/tabella/">
-                        <span>tabella</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/card/">
-                        <span>card</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/cookiebar/">
-                        <span>cookie bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel/">
-                        <span>carousel</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/informazioni/carousel-legacy/">
-                        <span>carousel-legacy</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-6" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-6">
-                  <span>Inserimento</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-6"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/">
-                        <span>input fields</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/">
-                        <span>radio buttons</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/check-box/">
-                        <span>check box</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/toggle/">
-                        <span>toggle</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/wizard/">
-                        <span>wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/popover/">
-                        <span>popover</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/">
-                        <span>tooltip</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/inserimento/progress-bar/">
-                        <span>progress bar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
-              </li><li>
-                <a class="list-item large medium right-icon " href="#collapse-guida-7" data-toggle="collapse" aria-expanded="false" aria-controls="collapse-guida-7">
-                  <span>Esempi</span>
-                  <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use></svg>
-                </a>
-                <ul class="link-sublist collapse " id="collapse-guida-7"><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_tabella/">
-                        <span>Tabella complessa</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">
-                        <span>Form</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_wizard/">
-                        <span>Wizard</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">
-                        <span>Sidebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_profilo_utente/">
-                        <span>Profilo utente</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/pag_cookiebar/">
-                        <span>Cookiebar</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li><li>
-                      <a class="list-item " href="/bootstrap-lombardia/docs/it25/esempi/introduzione/">
-                        <span>Il codice</span></a>
-                      <ul class="link-sublist"></ul>
-                    </li></ul>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/utilità/divisori/"
+                >
+                  <span>Divisori</span></a>
               </li></ul>
-        </div>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right active"
+              href="#collapse-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-4"
+              aria-expanded="true"
+              aria-controls="collapse-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-4"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/logo/"
+                >
+                  <span>Logo</span></a>
+              </li><li>
+                <a
+                  class="list-item  active"
+                  href="/bootstrap-italia/docs/it25/componenti-principali/header/"
+                >
+                  <span>Header</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/menu-verticale/"
+                >
+                  <span>Menu Verticale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/gestione-loghi-multipli/"
+                >
+                  <span>Gestione Loghi Multipli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-principali/footer/"
+                >
+                  <span>Footer</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-5"
+              aria-expanded="false"
+              aria-controls="collapse-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-5"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/breadcrumbs/"
+                >
+                  <span>Breadcrumbs</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/liste/"
+                >
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/dropdown-menu/"
+                >
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/megamenu/"
+                >
+                  <span>Megamenu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/navigazione/paginatore/"
+                >
+                  <span>Paginatore</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-6"
+              aria-expanded="false"
+              aria-controls="collapse-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-6"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/bottoni/"
+                >
+                  <span>Bottoni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/tab-bar/"
+                >
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/call-to-action/slider/"
+                >
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-7"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-7"
+              aria-expanded="false"
+              aria-controls="collapse-7"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-7"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/accordion/"
+                >
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/card/"
+                >
+                  <span>Card</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/carousel/"
+                >
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/calendario/"
+                >
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/time-picker/"
+                >
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/cookiebar/"
+                >
+                  <span>Cookiebar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/overlay/"
+                >
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/tabella/"
+                >
+                  <span>Tabella</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/informazioni/snackbar/"
+                >
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-8"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-8"
+              aria-expanded="false"
+              aria-controls="collapse-8"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-8"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/check-box/"
+                >
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/radio-buttons/"
+                >
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/toggle/"
+                >
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/input-fields/"
+                >
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/tooltip/"
+                >
+                  <span>Tooltip</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/popover/"
+                >
+                  <span>Popover</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/wizard/"
+                >
+                  <span>Wizard</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/inserimento/progress-bar/"
+                >
+                  <span>Progress bar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right "
+              href="#collapse-9"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-9"
+              aria-expanded="false"
+              aria-controls="collapse-9"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti per il mobile</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-italia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-9"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/introduzione/"
+                >
+                  <span>Introduzione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/app-icon/"
+                >
+                  <span>App icon</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/splash-screen/"
+                >
+                  <span>Splash Screen</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/onboarding/"
+                >
+                  <span>Onboarding</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/autenticazione/"
+                >
+                  <span>Autenticazione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/termini-e-condizioni/"
+                >
+                  <span>Termini e condizioni</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/home/"
+                >
+                  <span>Home</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/profilo/"
+                >
+                  <span>Profilo</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/assistenza/"
+                >
+                  <span>Assistenza</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-dettaglio/"
+                >
+                  <span>Pagina di dettaglio</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/pagina-di-sezione/"
+                >
+                  <span>Pagina di sezione</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/popup/"
+                >
+                  <span>Popup</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-italia/docs/it25/componenti-per-il-mobile/form/"
+                >
+                  <span>Form</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/esempi/"><span>Esempi</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-italia/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
       </div>
-
-      <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
-        <span><a href="/bootstrap-lombardia/docs/informazioni">Documentazione</a></span>
-        <svg class="icon icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-external-link"></use></svg>
-      </button>
-
     </div>
 
+    <button class="btn btn-outline-primary btn-icon" style="margin: 24px">
+      <span><a href="/bootstrap-italia/docs/documentazione-tecnica">Doc. Tecnica</a></span>
+      <svg class="icon icon-primary"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use></svg>
+    </button>
+  </div>
 </nav>
 
         </div>
@@ -346,17 +601,10 @@
   <div class="sidebar-wrapper">
     <h3>Header</h3>
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h2"><a href="#top-bar">Top bar</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#top-bar-sottile">Top bar sottile</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#barra-istituzionale">Barra istituzionale</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#bottone-hamburger">Bottone hamburger</a></li>
-<li class="toc-entry toc-h3"><a href="#due-loghi">Due loghi</a></li>
-</ul>
-</li>
+<li class="toc-entry toc-h3"><a href="#header-base">Header Base</a></li>
+<li class="toc-entry toc-h2"><a href="#header-con-topbar-di-servizio-e-search-field">Header con topbar di servizio e search field</a></li>
+<li class="toc-entry toc-h2"><a href="#header-con-accesso-effettuato-e-dropdown">Header con accesso effettuato e dropdown</a></li>
+<li class="toc-entry toc-h2"><a href="#header-hamburger-menu">Header hamburger menu</a></li>
 </ul>
   </div>
 </div>
@@ -366,18 +614,19 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Header</h1>
           <p class="bd-lead">Header applicativi Web.</p>
-          <!-- Style override for Documentation purposes -->
-<style>
-  @media (max-width: 991px) {
-    .it-header-slim-wrapper .it-header-slim-wrapper-content a.btn-full {
-      margin-top: -7px;
-    }
-  }
-  .it25-hamburger-btn-wrapper {
-    display: none;
-  }
-</style>
+          <p>La componente <strong>Header</strong> - posta sempre nella testata del layout - si ottiene dall’unione di due altre componenti: <strong>topbar</strong> e <strong>barra istituzionale</strong>.</p>
 
+<p>La <strong>topbar</strong>, la barra soprastante l’header, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata. In alcuni casi tale componente può essere impiegata come toolbar di servizio per l’inserimento di link quali <strong>login</strong>, <strong>cambio lingua</strong>, <strong>assistenza</strong> ecc.</p>
+
+<p>La componente <strong>barra istituzionale</strong>, fornita in diverse varianti, applicabili a seconda del dato contesto, conterrà menu di navigazione (hamburger o dropdown), loghi e titolazioni dei servizi.</p>
+
+<p><strong>N.B.</strong>: I link di servizio e le informazioni di governance relative al servizio non sono mai presenti nell’header, ma sono contenute <strong>unicamente nel footer</strong>.</p>
+
+<hr />
+
+<h3 id="header-base">Header Base</h3>
+
+<p>In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.</p>
 <div class="bd-example">
 <div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
@@ -385,37 +634,8 @@
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
           <a class="navbar-brand" href="#">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
           </a>
-          <div class="header-slim-right-zone">
-            <div class="nav-item dropdown">
-              <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                <span>ITA</span>
-                <svg class="icon icon-white">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
-                </svg>
-              </a>
-              <div class="dropdown-menu">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="link-list-wrapper">
-                      <ul class="link-list">
-                        <li><a class="list-item" href="#"><span>ITA</span></a></li>
-                        <li><a class="list-item" href="#"><span>ENG</span></a></li>
-                        <li><a class="list-item" href="#"><span>ESP</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
-                <svg class="icon icon-white">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
-                </svg>
-              <span class="d-none d-md-block">Login</span>
-            </a>
-          </div>
         </div>
       </div>
     </div>
@@ -428,94 +648,9 @@
       <div class="col-12">
         <div class="it-header-center-content-wrapper">
           <div class="it-brand-wrapper">
-
-            <div class="it25-hamburger-btn-wrapper">
-              <button aria-controls="it25-main-nav" aria-expanded="false" aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu" data-target="#it25-main-nav" type="button">
-                <svg class="icon">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
-                </svg>
-              </button>
-
-              <div class="it25-close-div">
-                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù">
-                  <svg class="icon">
-                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
             <a href="#">
-              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-        
-              <div class="it-brand-text">
-                ACRONIMO Nome applicativo
-              </div>
-            </a>
-          </div> <!-- end it-brand-wrapper -->
-
-          <div class="it-right-zone">
-            <div class="it-search-wrapper">
-              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca" />
-              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-</div>
-
-<p>E’ composto da due parti, entrambe obbligatorie:</p>
-<ol>
-  <li>top bar</li>
-  <li>barra istituzionale</li>
-</ol>
-
-<h2 id="top-bar">Top bar</h2>
-<p>Può contenere voci di servizio quali: Login/Logout (quindi la gestione del profilo utente tramite le voci del dropdown), Scelta lingua, Assistenza.</p>
-
-<div class="bd-example">
-<div class="it-header-slim-wrapper it25-top-bar">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
-          </a>
-          <div class="header-slim-right-zone">
-            <div class="nav-item dropdown">
-              <a aria-expanded="false" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">
-                <span>ITA</span>
-                <svg class="icon icon-white">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"></use>
-                </svg>
-              </a>
-              <div class="dropdown-menu">
-                <div class="row">
-                  <div class="col-12">
-                    <div class="link-list-wrapper">
-                      <ul class="link-list">
-                        <li><a class="list-item" href="#"><span>ITA</span></a></li>
-                        <li><a class="list-item" href="#"><span>ENG</span></a></li>
-                        <li><a class="list-item" href="#"><span>ESP</span></a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
-                <svg class="icon icon-white">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-user"></use>
-                </svg>
-              <span class="d-none d-md-block">Login</span>
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
             </a>
           </div>
         </div>
@@ -532,36 +667,23 @@
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
           <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span>
-                  <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;span&gt;</span>ITA<span class="nt">&lt;/span&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;</span>
-                <span class="nt">&lt;/svg&gt;</span>
-              <span class="nt">&lt;/a&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
-                      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
-                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ITA<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ENG<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>ESP<span class="nt">&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;</span>
-                      <span class="nt">&lt;/ul&gt;</span>
-                    <span class="nt">&lt;/div&gt;</span>
-                  <span class="nt">&lt;/div&gt;</span>
-                <span class="nt">&lt;/div&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon btn-full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Accedi all'area personale"</span> <span class="na">aria-label=</span><span class="s">"Accedi all'area personale"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-user"</span><span class="nt">&gt;&lt;/use&gt;</span>
-                <span class="nt">&lt;/svg&gt;</span>
-              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block"</span><span class="nt">&gt;</span>Login<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/a&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -570,146 +692,57 @@
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Nel momento in cui la pagina viene caricata a video, la barra è alta 58 pixel.<br />
-Rimane fissa in cima alla pagina quando questa scorre verso l’alto.</p>
+<hr />
 
-<p>Su smartphone</p>
-<ol>
-  <li>Appare il logo della Regione Lombardia in negativo</li>
-  <li>Le voci servizio sono ridotte a icona</li>
-</ol>
+<h2 id="header-con-topbar-di-servizio-e-search-field">Header con topbar di servizio e search field</h2>
 
-<p>Su Desktop</p>
-<ol>
-  <li>Il logo della Regione Lombardia in negativo non è visualizzato</li>
-  <li>Le voci di servizio hanno la dicitura</li>
-</ol>
-
-<p>Quando la pagina scorre verso il basso:</p>
-<ul>
-  <li>le voci servizio e l’eventuale logo in negativo scompaiono</li>
-  <li>l’altezza si riduce a 20 pixel</li>
-</ul>
-
-<h3 id="top-bar-sottile">Top bar sottile</h3>
-<p>Nel caso in cui non si abbiano voci di servizio da inserire, la top bar può essere ridotta ad un’altezza di 20 pixel già alla comparsa della pagina, aggiungendo la classe <code class="language-plaintext highlighter-rouge">thin</code> al <code class="language-plaintext highlighter-rouge">div</code> principale del componente.</p>
+<p>La topbar può accogliere informazioni come ad esempio l’accesso utente.<br />
+Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.</p>
 
 <div class="bd-example">
-<div class="it-header-slim-wrapper it25-top-bar thin">
+<div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
           <a class="navbar-brand" href="#">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
           </a>
+          <div class="header-slim-right-zone">
+            <a class="btn btn-primary btn-icon btn-full" href="#" title="Accedi all'area personale" aria-label="Accedi all'area personale">
+              <svg class="icon icon-white custom-circle-icon">
+                <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-key"></use>
+              </svg>
+              <span class="d-none d-md-block">Accedi</span>
+              <span class="d-none d-md-block fst-italic">o Registrati</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-</div>
-
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar thin"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;/a&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
-
-<p>Su smartphone la top bar sottile inizialmente apparirà comunque alta 56 pixel per mostrare il logo della Regione Lombardia (che non è mostrato nella barra istituzionale per ragioni di spazio), per poi restringersi allo scorrimento verso il basso della pagina.</p>
-
-<h2 id="barra-istituzionale">Barra istituzionale</h2>
-
-<p><strong>Deve</strong> contenere il <strong>logo</strong> di Regione Lombardia e il <strong>nome dell’applicativo</strong>, preceduto dall’ <strong>acronimo</strong> se esiste.<br />
-<strong>Può</strong> contenere l’<strong>hamburger menu</strong> a sinistra del logo di Regione Lombardia e il <strong>campo di ricerca</strong> a destra.</p>
-
-<p>L’altezza iniziale della barra è di 94 pixel su schermi grandi, di 80 su schermi piccoli.<br />
-A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si restringe a 50 pixel.</p>
-
-<p>Su smartphone</p>
-<ol>
-  <li>Il logo della Regione Lombardia scompare (viene sostituito dal logo in negativo sulla top bar)</li>
-  <li>Il nome dell’applicativo si riduce di dimensione</li>
-  <li>L’eventuale campo di ricerca è ridotto a icona</li>
-  <li>Compare il pulsante hamburger per l’apertura del menù orizzontale o della sidebar.</li>
-</ol>
-
-<p>A scorrimento in basso</p>
-<ol>
-  <li>Il logo della Regione compare rimpicciolito (quello nella topbar scorre verso l’alto e non è più visibile)</li>
-  <li>Il nome dell’applicativo viene ulteriormente ridotto di dimensione</li>
-  <li>Il campo di ricerca scompare</li>
-  <li>Il pulsante hamburger è leggermente rimpicciolito</li>
-  <li>L’altezza complessiva della barra istituzionale diminuisce</li>
-</ol>
-
-<p>Su desktop</p>
-<ol>
-  <li>Il Logo della Regione è visualizzato in grande</li>
-  <li>Il nome dell’applicativo ha un font di dimensioni maggiori</li>
-  <li>Il campo di ricerca è mostrato.</li>
-  <li>Il pulsante hamburger non compare in quanto il menù orizzontale, o la sidebar, è mostrato.</li>
-</ol>
-
-<p>A scorrimento in basso</p>
-<ol>
-  <li>Il Logo della Regione rimpicciolisce</li>
-  <li>Il nome dell’applicativo rimpicciolisce</li>
-  <li>Il campo di ricerca rimane invariato</li>
-  <li>L’altezza complessiva della barra diminuisce.</li>
-</ol>
-
-<p>Nota: per poter meglio rendersi conto del comportamento della top bar e della barra istituzionale è utile richiamare una delle schermate composte, per esempio quella della <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_tabella/">Tabella complessa</a></strong>.</p>
-
-<div class="bd-example">
 <div class="it-header-center-wrapper it25-barra-ist">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-center-content-wrapper">
           <div class="it-brand-wrapper">
-
-            <div class="it25-hamburger-btn-wrapper">
-              <button aria-controls="it25-main-nav" aria-expanded="false" aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu" data-target="#it25-main-nav" type="button">
-                <svg class="icon">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"></use>
-                </svg>
-              </button>
-
-              <div class="it25-close-div">
-                <button class="btn btn-xs close-menu" type="button" data-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù">
-                  <svg class="icon">
-                    <use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-
             <a href="#">
-              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-        
-              <div class="it-brand-text">
-                ACRONIMO Nome applicativo
-              </div>
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
             </a>
-          </div> <!-- end it-brand-wrapper -->
-
+          </div>
           <div class="it-right-zone">
-            <div class="it-search-wrapper">
-              <input class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca" aria-label="Testo per ricerca" />
-              <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-search"></use></svg>
-              </button>
-            </div>
+            <form>
+              <div class="it-search-wrapper">
+                <input id="search-input99" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca" />
+                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                    <svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use></svg>
+                  </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -719,47 +752,49 @@ A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si r
 
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-icon btn-full"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">title=</span><span class="s">"Accedi all'area personale"</span> <span class="na">aria-label=</span><span class="s">"Accedi all'area personale"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white custom-circle-icon"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-key"</span><span class="nt">&gt;&lt;/use&gt;</span>
+              <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block"</span><span class="nt">&gt;</span>Accedi<span class="nt">&lt;/span&gt;</span>
+              <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"d-none d-md-block fst-italic"</span><span class="nt">&gt;</span>o Registrati<span class="nt">&lt;/span&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
-
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-hamburger-btn-wrapper"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">aria-controls=</span><span class="s">"it25-main-nav"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span>
-                      <span class="na">aria-label=</span><span class="s">"Apri menù"</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler btn btn-xs it25-btn-menu"</span>
-                      <span class="na">data-target=</span><span class="s">"#it25-main-nav"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;</span>
-                <span class="nt">&lt;/svg&gt;</span>
-              <span class="nt">&lt;/button&gt;</span>
-
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-close-div"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-xs close-menu"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-target=</span><span class="s">"#it25-main-nav"</span> <span class="na">aria-controls=</span><span class="s">"it25-main-nav"</span> <span class="na">aria-label=</span><span class="s">"Chiudi menù"</span> <span class="nt">&gt;</span>
-                  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-close-big"</span><span class="nt">&gt;&lt;/use&gt;</span>
-                  <span class="nt">&lt;/svg&gt;</span>
-                <span class="nt">&lt;/button&gt;</span>
-              <span class="nt">&lt;/div&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-
             <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-lombardia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span><span class="nt">&gt;</span>
-        
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>
-                ACRONIMO Nome applicativo
-              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/a&gt;</span>
-          <span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- end it-brand-wrapper --&gt;</span>
-
+          <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca"</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprite.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-              <span class="nt">&lt;/button&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;form&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-input99"</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca..."</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                  <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/form&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -767,72 +802,566 @@ A scorrimento verso il basso rimane fissa posizionandosi sotto la top bar e si r
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Il <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> principale è caratterizzato dalle classi <code class="language-plaintext highlighter-rouge">it-header-center-wrapper</code> e <code class="language-plaintext highlighter-rouge">it25-barra-ist</code>.<br />
-Al suo interno il <code class="language-plaintext highlighter-rouge">div</code> con classe <code class="language-plaintext highlighter-rouge">it-header-center-content-wrapper</code> contiene due <code class="language-plaintext highlighter-rouge">div</code> che posizionano il loro contenuto verso il lato sinistro e destro della barra, che hanno rispettivamente le classi: <code class="language-plaintext highlighter-rouge">it-brand-wrapper</code> e <code class="language-plaintext highlighter-rouge">it-right-zone</code>.</p>
+<hr />
 
-<p>In  <code class="language-plaintext highlighter-rouge">it-brand-wrapper</code> oltre al logo della Regione Lombardia e al nome dell’applicativo, sono contenuti 2 bottoni che appaiono solo sugli schermi di minori dimensioni, alternativamente per aprire o chiudere il <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/">menù orizzontale</a></strong> o la <strong><a href="/bootstrap-lombardia/docs/it25/componenti-principali/sidebar/">sidebar</a></strong> eventualmente presenti nella pagina.</p>
+<h2 id="header-con-accesso-effettuato-e-dropdown">Header con accesso effettuato e dropdown</h2>
 
-<h3 id="bottone-hamburger">Bottone hamburger</h3>
+<p>Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio.</p>
 
-<p>Il bottone <em>hamburger</em> compare nella <em>barra istituzionale</em> a sinistra del logo di Regione Lombardia.<br />
-Una volta premuto il bottone l’icona <em>hamburger</em> è sostituita da una “X” per segnalare che premendolo nuovamente il menù (o la sidebar) scomparirà.</p>
+<p>La dimensione del menu dropdown può variare a seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.</p>
 
-<p>Il menu orizzontale è visualizzato immediatamente se la finestra ha <strong><a href="/bootstrap-lombardia/docs/organizzare-gli-spazi/griglie/#le-opzioni">dimensioni</a></strong> <code class="language-plaintext highlighter-rouge">lg</code> o <code class="language-plaintext highlighter-rouge">xl</code>.  <br />
-Quindi il bottone <em>hamburger</em> compare quando le dimensioni della pagina sono <code class="language-plaintext highlighter-rouge">xs</code> o <code class="language-plaintext highlighter-rouge">sm</code> o <code class="language-plaintext highlighter-rouge">md</code>.<br />
-La sidebar invece compare anche sugli schermi <code class="language-plaintext highlighter-rouge">md</code> e, di conseguenza, il relativo bottone <em>hamburger</em> solo per pagine <code class="language-plaintext highlighter-rouge">xs</code> o <code class="language-plaintext highlighter-rouge">sm</code>.</p>
+<div class="bd-example">
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+          <div class="header-slim-right-zone">
+            <div class="nav-item dropdown">
+              <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" data-bs-display="static">
+                <span>Lorem ipsum dolor sit</span>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-user"></use>
+                </svg>
+                <svg class="icon icon-white">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </a>
+              <div class="dropdown-menu" data-popper-placement="bottom-end">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="link-list-wrapper">
+                      <ul class="link-list">
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                        <li>
+                          <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>Per ottenere questo comportamento, la struttura HTML dell’header della pagina deve essere di questo tipo:</p>
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <a href="#">
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <form>
+              <div class="it-search-wrapper">
+                <input id="search-input98" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca" />
+                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                    <svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use></svg>
+                  </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-<p>Per il menù orizzontale</p>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"header-slim-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"nav-item dropdown"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">class=</span><span class="s">"nav-link dropdown-toggle"</span> <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-display=</span><span class="s">"static"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-user"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;/a&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">data-popper-placement=</span><span class="s">"bottom-end"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                        <span class="nt">&lt;li&gt;</span>
+                          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                        <span class="nt">&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;</span>
+                          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                        <span class="nt">&lt;/li&gt;</span>
+                        <span class="nt">&lt;li&gt;</span>
+                          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lorem ipsum dolor sit<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                        <span class="nt">&lt;/li&gt;</span>
+                      <span class="nt">&lt;/ul&gt;</span>
+                    <span class="nt">&lt;/div&gt;</span>
+                  <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it25-menu"</span><span class="nt">&gt;</span> (oppure semplicemente <span class="nt">&lt;header&gt;</span>)
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-  . . . menu orizzontale . . .
-<span class="nt">&lt;/header&gt;</span></code></pre></figure>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;form&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-input99"</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca..."</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                  <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/form&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Per la sidebar</p>
+<hr />
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it25-sidebar"</span><span class="nt">&gt;</span>
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-<span class="nt">&lt;/header&gt;</span></code></pre></figure>
+<h2 id="header-hamburger-menu">Header hamburger menu</h2>
 
-<p>La <em>sidebar</em> poi va inserita nel <code class="language-plaintext highlighter-rouge">body</code> della pagina (vedi esempio <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_sidebar/">pagina con sidebar</a></strong>).</p>
+<p>L’hamburger menu deve essere posizionato appena sotto l’header a sinistra e si richiama cliccando sulla relativa icona.</p>
 
-<p>Nel caso in cui non si abbiano né l’una né l’altra, e quindi il bottone <em>hamburger</em> non vada mai visualizzato, la struttura deve essere:</p>
+<p>Si utilizza quando si ha l’esigenza di trattare in forma di lista le voci del menu, quindi all’interno di applicativi con molte sezioni cui si deve dare accesso in qualsiasi punto della navigazione.</p>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it25-none"</span><span class="nt">&gt;</span>
-  . . . top bar . . .
-  . . . barra istituzionale . . .
-  . . . barra utente (facoltativa) . . .
-<span class="nt">&lt;/header&gt;</span></code></pre></figure>
+<p>E’ possibile che al mouse over lo stato delle voci cambi. In questo caso le variabili valutabili sono: voce sottolineata e colore di background grigio chiaro.</p>
 
-<h3 id="due-loghi">Due loghi</h3>
-<p>Nella <em>barra istituzionale</em> è possibile inserire un secondo logo utilizzando un tag <code class="language-plaintext highlighter-rouge">img</code> con le classi <code class="language-plaintext highlighter-rouge">it25-header-logo d-none d-md-block</code>.<br />
-Comparirà accanto a quello di Regione Lombardia e avrà lo stesso comportamento responsivo.</p>
+<div class="bd-example">
+<div class="it-header-slim-wrapper it25-top-bar">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-slim-wrapper-content">
+          <a class="navbar-brand" href="#">
+            <img src="/bootstrap-italia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>E’ possibile vedere un esempio nella pagina <strong><a href="/bootstrap-lombardia/docs/it25/esempi/pag_form/">form</a></strong>.</p>
+<div class="it-header-center-wrapper it25-barra-ist">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <div class="it-header-center-content-wrapper">
+          <div class="it-brand-wrapper">
+            <div class="it25-hamburger-btn-wrapper">
+              <button id="btn-hamburger" aria-controls="it25-main-nav" aria-expanded="false" aria-label="Apri menù" class="custom-navbar-toggler btn btn-xs it25-btn-menu" data-bs-target="#it25-main-nav" type="button">
+                <svg class="icon icon-primary">
+                  <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="it25-close-div">
+                <button id="btn-hamburger-close" class="btn btn-xs close-menu" type="button" data-bs-target="#it25-main-nav" aria-controls="it25-main-nav" aria-label="Chiudi menù">
+                  <svg class="icon icon-primary">
+                    <use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close-big"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <a href="#">
+              <img src="/bootstrap-italia/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
+            </a>
+          </div>
+          <div class="it-right-zone">
+            <form>
+              <div class="it-search-wrapper">
+                <input id="search-input02" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca" />
+                <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
+                  <svg class="icon"><use xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-search"></use></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="menu-hamburger" class="menu-hamburger">
+ <div class="sidebar-wrapper it25-sidebar-wrapper">
+   <div class="sidebar-linklist-wrapper it25-sidebar-links">
+    <div class="link-list-wrapper link-list-wrapper">
+      <ul class="link-list">
+        <li>
+          <a class="list-item medium active" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+        <li>
+          <a class="list-item medium" href="#"><span>Lore ipsum dolor</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper it25-top-bar"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper-content"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"navbar-brand"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl-bianco.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"d-md-none"</span> <span class="nt">/&gt;</span>
+          <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-wrapper it25-barra-ist"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-center-content-wrapper"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-wrapper"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-hamburger-btn-wrapper"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span>
+                <span class="na">id=</span><span class="s">"btn-hamburger"</span>
+                <span class="na">aria-controls=</span><span class="s">"it25-main-nav"</span>
+                <span class="na">aria-expanded=</span><span class="s">"false"</span>
+                <span class="na">aria-label=</span><span class="s">"Apri menù"</span>
+                <span class="na">class=</span><span class="s">"custom-navbar-toggler btn btn-xs it25-btn-menu"</span>
+                <span class="na">data-bs-target=</span><span class="s">"#it25-main-nav"</span>
+                <span class="na">type=</span><span class="s">"button"</span>
+              <span class="nt">&gt;</span>
+                <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                <span class="nt">&lt;/svg&gt;</span>
+              <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-close-div"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span>
+                  <span class="na">id=</span><span class="s">"btn-hamburger-close"</span>
+                  <span class="na">class=</span><span class="s">"btn btn-xs close-menu"</span>
+                  <span class="na">type=</span><span class="s">"button"</span>
+                  <span class="na">data-bs-target=</span><span class="s">"#it25-main-nav"</span>
+                  <span class="na">aria-controls=</span><span class="s">"it25-main-nav"</span>
+                  <span class="na">aria-label=</span><span class="s">"Chiudi menù"</span>
+                <span class="nt">&gt;</span>
+                  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-primary"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-close-big"</span><span class="nt">&gt;&lt;/use&gt;</span>
+                  <span class="nt">&lt;/svg&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"/bootstrap-italia/dist/assets/img/logo-rl.png"</span> <span class="na">alt=</span><span class="s">"logo regione lombardia"</span> <span class="na">class=</span><span class="s">"it25-header-logo d-none d-md-block"</span> <span class="nt">/&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-brand-text"</span><span class="nt">&gt;</span>ACRONIMO Nome applicativo<span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-right-zone"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;form&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-search-wrapper"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"search-input02"</span> <span class="na">class=</span><span class="s">"form-control d-none d-lg-flex mr-sm-2 ml-auto"</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">placeholder=</span><span class="s">"Cerca..."</span> <span class="na">aria-label=</span><span class="s">"Testo per ricerca"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn p-0 m-1"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">aria-label=</span><span class="s">"Esegui ricerca"</span><span class="nt">&gt;</span>
+                  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-italia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+                <span class="nt">&lt;/button&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/form&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"menu-hamburger"</span> <span class="na">class=</span><span class="s">"menu-hamburger"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper it25-sidebar-wrapper"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper it25-sidebar-links"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper link-list-wrapper"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item medium"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Lore ipsum dolor<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
     </div>
 
-    <div class="cookiebar">
-  <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
-  <div class="cookiebar-buttons">
-      <a href="https://designers.italia.it/privacy-policy/" class="cookiebar-btn">Privacy policy</a>
-      <button data-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="sr-only"> i cookies</span></button>
-  </div>
-</div>
-
     
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
 
-<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
+    })
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><script src="/bootstrap-italia/docs/assets/dist/js/docs.min.js?202307030811"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/anchor.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/clipboard.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script>
-  
+<script src="/bootstrap-italia/docs/assets/src/js/docs.js?202307030811"></script>
+
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/easeljs.min.js"></script>
+<script src="/bootstrap-italia/docs/assets/src/js/vendor/preloadjs.min.js"></script>
+
+<script>
+  var manifest = [
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-3.png', id: 'cover-3' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-4.png', id: 'cover-4' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-5.png', id: 'cover-5' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
+    { src: '/bootstrap-italia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
+  ]
+</script>
+<!-- <script src="/bootstrap-italia/docs/assets/src/js/cover-animation.js?202307030811"></script> -->
   </body>
 </html>

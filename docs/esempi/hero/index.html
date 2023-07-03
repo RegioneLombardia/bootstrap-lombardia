@@ -11,22 +11,23 @@
 
 <title>Hero · Bootstrap Lombardia</title>
 
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202301171043" rel="stylesheet">
+<link href="/bootstrap-italia/dist/css/bootstrap-lombardia.min.css?202307030811" rel="stylesheet" />
+
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202301171043" rel="stylesheet" />
+<link href="/bootstrap-italia/docs/assets/dist/css/docs.min.css?202307030811" rel="stylesheet" />
 
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
-<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
-<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
-<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
-<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
-<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
-<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<link rel="icon" href="/bootstrap-italia/favicon.ico" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-italia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-italia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-italia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-italia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-italia/browserconfig.xml" />
 <meta name="theme-color" content="#0066CC" />
  <!-- Twitter -->
 <meta name="twitter:card" content="summary" />
@@ -34,45 +35,33 @@
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="twitter:title" content="Hero" />
 <meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
-<meta name="twitter:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
-<meta property="og:url" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/esempi/hero/" />
+<meta property="og:url" content="/docs/esempi/hero/" />
 <meta property="og:title" content="Hero" />
 <meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
 <meta property="og:type" content="website" />
-<meta property="og:image" content="https://regionelombardia.github.io/bootstrap-lombardia//docs/assets/img/favicons/social-card.png" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
 <meta property="og:image:type" content="image/png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
- 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookies_consent=true') === -1) {
-    window['ga-disable-UA-114758441-1'] = true
-  }
-</script>
-<script>
-  ;(function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r
-    ;(i[r] =
-      i[r] ||
-      function () {
-        ;(i[r].q = i[r].q || []).push(arguments)
-      }),
-      (i[r].l = 1 * new Date())
-    ;(a = s.createElement(o)), (m = s.getElementsByTagName(o)[0])
-    a.async = 1
-    a.src = g
-    m.parentNode.insertBefore(a, m)
-  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
 
-  ga('create', 'UA-114758441-1', 'auto')
-  ga('set', 'anonymizeIp', true)
-  ga('send', 'pageview')
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
 </script>
-<!-- End Google Analytics -->
 
 
   </head>
@@ -87,7 +76,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -106,7 +95,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -183,7 +172,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -219,7 +208,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -255,7 +244,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -274,7 +263,7 @@
   <div class="img-responsive-wrapper">
     <div class="img-responsive">
       <div class="img-wrapper">
-        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="img title" alt="imagealt" />
+        <img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine" />
       </div>
     </div>
   </div>
@@ -303,18 +292,23 @@
       <div class="card-wrapper card-space">
         <div class="card card-bg">
           <div class="card-body">
-            <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
-              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <a class="read-more" href="#"
-              ><span class="text">Leggi di più</span>
-              <svg class="icon">
-                <use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-arrow-right" xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-arrow-right"></use>
-              </svg>
-            </a>
+            <div class="row">
+              <div class="col-12 col-lg-10 offset-lg-1">
+                <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a class="read-more" href="#">
+                  <span class="text">Leggi di più</span>
+                  <span class="visually-hidden">su Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</span>
+                  <svg class="icon">
+                    <use href="/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -322,32 +316,79 @@
   </div>
 </div>
  
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
+<script src="/bootstrap-italia/dist/js/bootstrap-lombardia.bundle.min.js?202307030811"></script>
+<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
+<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-italia'</script> -->
 
-<script>window.__PUBLIC_PATH__ = "/bootstrap-lombardia/dist/fonts"</script>
-
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202301171043"></script>
-  <!-- Notification per tornare alla pagina principale -->
-  <div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
-    <h5 id="notification-esempi-title">
-      <svg class="icon">
-        <use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle" xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-info-circle"></use></svg
-      >Esempio di utilizzo
-    </h5>
-    <p>
-      <a href="/bootstrap-lombardia/docs/esempi/">Torna alla pagina principale degli esempi</a>
-    </p>
-    <button type="button" class="btn notification-close">
-      <svg class="icon">
-        <use href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close" xlink:href="/bootstrap-lombardia/dist/svg/sprite.svg#it-close"></use>
-      </svg>
-      <span class="sr-only">Chiudi notifica: Titolo notification</span>
-    </button>
-  </div>
-
-  <script>
-    $(document).ready(function () {
-      notificationShow('notification-esempi')
+<script>
+  bootstrap.loadFonts('/bootstrap-italia/dist/fonts')
+  bootstrap.it25Header()
+  new bootstrap.it25().gooeyRangeSlider(
+    document.querySelector('#single-thumb'),
+    {
+      min: 0,
+      max: 100,
+      value: [0, 10],
+      thumbsDisabled: [true, false],
+      rangeSlideDisabled: false
+    },
+    1, (value) => console.log(value)
+  )
+  if (document.querySelector('#calendar-multiple') !== null ) {
+    flatpickr (document.querySelector('#calendar-multiple'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'multiple'
     })
-  </script>
+  }
+  if (document.querySelector('#calendar-range') !== null ) {
+    flatpickr(document.querySelector('#calendar-range'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it",
+      mode: 'range'
+    })
+  }
+  if (document.querySelector('#calendar-single') !== null ) {
+    flatpickr(document.querySelector('#calendar-single'), {
+      allowInput: true,
+      dateFormat: 'd/m/Y',
+      locale: "it"
+    })
+  }
+  if (document.querySelector('#time-picker') !== null ) {
+    flatpickr(document.querySelector('#time-picker'), {
+      enableTime: true,
+      noCalendar: true,
+      dateFormat: "H:i",
+      time_24hr: true
+    })
+  }
+  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+</script><!-- Notification per tornare alla pagina principale -->
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi" aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-info-circle"></use></svg
+    >Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bootstrap-italia/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bootstrap-italia/dist/svg/sprites.svg#it-close" xlink:href="/bootstrap-italia/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+
+<script>
+  $(document).ready(function () {
+    notificationShow('notification-esempi')
+  })
+</script>
   </body>
 </html>
