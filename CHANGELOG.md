@@ -1,3 +1,7 @@
+# [2.0.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...v2.0.0) (2023-07-03)
+
+
+
 ## [2.3.5](https://github.com/italia/bootstrap-italia/compare/v2.3.4...v2.3.5) (2023-03-03)
 
 
