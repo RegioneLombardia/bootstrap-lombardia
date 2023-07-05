@@ -8,9 +8,11 @@
 
 _⚠️ [La versione di Bootstrap Lombardia (basata su Bootstrap 4) è stata ufficialmente deprecata](https://github.com/italia/bootstrap-lombardia/tree/1.x)_
 
-Bootstrap Lombardia è un tema basato su [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/) conforme alle [{{ site.data.short.rl-guide }} di design per i siti internet e i servizi digitali delle Pubbliche Amministrazioni](https://docs.italia.it/italia/design/lg-design-servizi-web/).
+Bootstrap Regione Lombardia è un *fork* di Bootstrap Italia, modificato per aderire all **Sistema di Identità Visiva Digitale di Regione Lombardia**.
 
-Bootstrap Lombardia eredita tutte le funzionalità, componenti, mixins, grid system, e altro già presenti in Bootstrap 5, e le personalizza secondo le "{{ site.data.short.rl-guide }} di design per i siti internet e i servizi digitali della PA" e le indicazioni presenti nel manuale operativo di design messo a disposizione da Designers Italia. Puoi scoprire di più tramite la [pagina dedicata di Designers Italia](https://designers.italia.it/linee-guida).
+Bootstrap Italia, a sua volta, è un tema basato su [Bootstrap 5](https://getbootstrap.com/docs/5.1/getting-started/introduction/) e conforme alle [Linee Guida di design per i siti internet e i servizi digitali delle Pubbliche Amministrazioni](https://docs.italia.it/italia/design/lg-design-servizi-web/).
+
+Bootstrap Lombardia eredita tutte le funzionalità, componenti, mixins, grid system, e altro già presenti in Bootstrap 5 ed in Bootstrap Italia, e le personalizza secondo le "Linee Guida per il design e l’identità visiva digitale di Regione Lombardia". Puoi scoprire di più tramite la [Documento in formato "cartaceo"](https://regionelombardia.github.io/bootstrap-lombardia/docs/it25/download/Linee-guida_design_identita-visiva_Regione-Lombardia.pdf) che illustra gli elementi principali e fondanti dell’identità visiva di Regione Lombardia necessari a garantirne la riconoscibilità su tutti i progetti in digitale.
 
 **[Vedi la documentazione completa »](https://regionelombardia.github.io/bootstrap-lombardia/)**
 
@@ -28,13 +30,13 @@ oppure
 Vuoi segnalare un bug o fare una richiesta?
 
 Prima di tutto assicurati che sia un problema relativo al tema Bootstrap Lombardia e non alle librerie da cui deriva
-(in tal caso puoi fare riferimento al [repository di Bootstrap Regione Lombardia](https://github.com/RegioneLombardia/bootstrap-lombardia)).  
+(in tal caso puoi fare riferimento al [repository di Bootstrap Italia](https://italia.github.io/bootstrap-italia) o al [repository di Bootstrap](https://github.com/twbs/bootstrap)).  
 Puoi [creare una issue](https://github.com/RegioneLombardia/bootstrap-lombardia/issues) su GitHub, nella sezione apposita.
 
 
 ## Licenze software dei componenti di terze parti
 
-### Componenti distribuiti con Bootstrap Italia
+### Componenti distribuiti con Bootstrap Regione Lombardia
 
 Vengono di seguito elencati i componenti distribuiti con Bootstrap Lombardia che hanno una propria licenza diversa da CC0.
 
