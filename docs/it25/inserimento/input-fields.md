@@ -340,7 +340,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 </div>
 {% endcapture %}{% include example.html content=example %}
 
-##zzzzz## Validazione password
+### Validazione password
 <div class="bd-example">
   <div class="row">
     <div class="col-6">
@@ -415,8 +415,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <input type="password" data-bs-input class="form-control input-password" id="passwd43"
               aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
         <span class="password-icon" aria-hidden="true">
-          <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
-          <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{site_baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+          <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site_baseurl }}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site_baseurl }}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
       <small id="infoPassword43" class="form-text">Inserisci almeno 8 caratteri</small>
