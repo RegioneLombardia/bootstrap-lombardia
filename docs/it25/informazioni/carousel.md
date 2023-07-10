@@ -41,7 +41,7 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 <div
   class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide"
   data-bs-carousel-splide
-  style="background-image: url('{{site_baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
+  style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
   <div class="splide__track">
     <ul class="splide__list it-carousel-all">
@@ -66,7 +66,7 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 <div
   class="it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide"
   data-bs-carousel-splide
-  style="background-image: url('{{site_baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
+  style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
   <div class="splide__track">
     <ul class="splide__list">
@@ -91,7 +91,7 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 <div
   class="it-carousel-wrapper it-carousel-landscape-abstract it25-special splide"
   data-bs-carousel-splide
-  style="background-image: url('{{site_baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
+  style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
   <div class="splide__track">
     <ul class="splide__list it-carousel-all">
@@ -133,7 +133,7 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
               <div class="img-responsive-wrapper">
                 <div class="img-responsive">
                   <div class="img-wrapper">
-                    <img src="{{site_baseurl}}/dist/assets/img/bike-sharing.jpg" title="titolo immagine" alt="descrizione immagine" />
+                    <img src="{{site.baseurl}}/dist/assets/img/bike-sharing.jpg" title="titolo immagine" alt="descrizione immagine" />
                   </div>
                 </div>
               </div>

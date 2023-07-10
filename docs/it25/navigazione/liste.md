@@ -47,19 +47,19 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
   <ul class="it-list">
     <li>
       <a href="#" class="list-item">
-        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
       </a>
     </li>
     <li>
       <a href="#" class="list-item active">
-        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
       </a>
     </li>
     <li>
       <a href="#" class="list-item disabled">
-        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
+        <div class="avatar size-lg"><svg class="icon align-top" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-user"></use></svg></div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
       </a>
     </li>
@@ -79,7 +79,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
       <a href="#" class="list-item">
         <div class="it-rounded-icon">
           <svg class="icon  icon-primary">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-folder"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-folder"></use>
           </svg>
         </div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
@@ -89,7 +89,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
       <a href="#" class="list-item active">
         <div class="it-rounded-icon">
           <svg class="icon  icon-primary">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-folder"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-folder"></use>
           </svg>
         </div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
@@ -99,7 +99,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
       <a href="#" class="list-item disabled">
         <div class="it-rounded-icon">
           <svg class="icon  icon-primary">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-folder"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-folder"></use>
           </svg>
         </div>
         <div class="it-right-zone"><span>Lorem ipsum dolor</span></div>
@@ -122,7 +122,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
         <div class="it-right-zone">
           <span class="text">Lorem ipsum dolor</span>
           <svg class="icon">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
           </svg>
         </div>
       </a>
@@ -132,7 +132,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
         <div class="it-right-zone">
           <span class="text">Lorem ipsum dolor</span>
           <svg class="icon">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
           </svg>
         </div>
       </a>
@@ -142,7 +142,7 @@ Troviamo spesso questo elemento all’interno dei menu verticali, ma possono ess
         <div class="it-right-zone">
           <span class="text">Lorem ipsum dolor</span>
           <svg class="icon">
-            <use href="{{site_baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
+            <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-more-actions"></use>
           </svg>
         </div>
       </a>

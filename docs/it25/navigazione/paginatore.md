@@ -65,7 +65,7 @@ Tendenzialmente si trova nella parte in **basso a destra o al centro** della pag
 </div>
 {% highlight html %}
 . . . 
-        <svg class="icon icon-primary"><use href="{{site_baseurl}}/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+        <svg class="icon icon-primary"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-chevron-right"></use></svg>
       </a>
     </li>
   </ul>

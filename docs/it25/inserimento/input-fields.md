@@ -377,8 +377,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <input type="password" data-bs-input class="form-control input-password" id="passwd41" 
               aria-labelledby="infoPassword" />
         <span class="password-icon" aria-hidden="true">
-          <svg class="password-icon-visible icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-visible"></use></svg>
-          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
       <small id="infoPassword4" class="form-text">Inserisci almeno 8 caratteri</small>
@@ -396,8 +396,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <input type="password" data-bs-input class="form-control input-password" id="passwd42"
               aria-labelledby="infoPassword" value="iuQ34!iwah" />
         <span class="password-icon" aria-hidden="true">
-          <svg class="password-icon-visible icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-visible"></use></svg>
-          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
       <small id="infoPassword42" class="form-text">Inserisci almeno 8 caratteri</small>
@@ -415,8 +415,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         <input type="password" data-bs-input class="form-control input-password" id="passwd43"
               aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
         <span class="password-icon" aria-hidden="true">
-          <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-visible"></use></svg>
-          <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+          <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
+          <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
         </span>
       </div>
       <small id="infoPassword43" class="form-text">Inserisci almeno 8 caratteri</small>

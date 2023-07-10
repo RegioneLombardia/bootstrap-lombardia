@@ -70,7 +70,7 @@ Per motivi di accessibilità, **il testo della card non deve essere mai posizion
     <div class="img-responsive-wrapper rounded-top">
       <div class="img-responsive">
         <figure class="img-wrapper">
-          <img src="{{site_baseurl}}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano" />
+          <img src="{{site.baseurl}}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano" />
         </figure>
       </div>
     </div>
@@ -102,7 +102,7 @@ Con la versione card con link è possibile avere dei sottolink in calce alla car
     <div class="img-responsive-wrapper rounded-top">
       <div class="img-responsive">
         <figure class="img-wrapper">
-          <img src="{{site_baseurl}}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano" />
+          <img src="{{site.baseurl}}/dist/assets/img/bike-sharing.jpg" title="bike sharing" alt="parcheggio bike sharing a Milano" />
         </figure>
       </div>
     </div>
