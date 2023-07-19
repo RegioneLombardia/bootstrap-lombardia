@@ -19,10 +19,9 @@
     </div>
 
     {% if page.layout == "docs" %}
-    <div class="bd-search w-100">
-      <label for="search-input" class="visually-hidden">Cerca:</label>
-      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
-    </div>
+      <div style="height: 2.5rem" class="bd-search w-100">
+        <div id="docsearch"></div>
+      </div>
     {% endif %}
 
   </div>
