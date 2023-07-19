@@ -12,12 +12,14 @@
 <title>Divisori · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202307171249" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202307191209" rel="stylesheet" />
 
 
 <!-- Documentation extras -->
+ 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202307171249" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202307191209" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -107,10 +109,9 @@
     </ul>
 
     
-    <div class="bd-search w-100">
-      <label for="search-input" class="visually-hidden">Cerca:</label>
-      <input type="search" class="form-control" id="search-input" name="search-input" placeholder="Cerca componenti, classi, informazioni..." aria-label="Cerca..." autocomplete="off" />
-    </div>
+      <div style="height: 2.5rem" class="bd-search w-100">
+        <div id="docsearch" class="w-100"></div>
+      </div>
     
   </div>
 </header>
@@ -655,7 +656,7 @@ I divisori devono essere evidenti in un layout, ma non predominanti e dovrebbero
 
     
 <!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202307171249"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202307191209"></script>
 <!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
 <!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-lombardia'</script> -->
 
@@ -705,12 +706,12 @@ I divisori devono essere evidenti in un layout, ma non predominanti e dovrebbero
     })
   }
   new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202307171249"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202307191209"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202307171249"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202307191209"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -727,6 +728,59 @@ I divisori devono essere evidenti in un layout, ma non predominanti e dovrebbero
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202307171249"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202307191209"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+  docsearch({
+    appId: 'GYB0A8V0L6',
+    apiKey: 'c25acd22f6bc00e5710457bcf961f37c',
+    indexName: 'bootstrap-lombardia',
+    container: '#docsearch',
+    placeholder: "Cerca componenti, classi,informazioni...",
+    translations: DocSearchTranslations = {
+      button: {
+        buttonText: 'Cerca',
+        buttonAriaLabel: 'Ricerca',
+      },
+      modal: {
+        searchBox: {
+          resetButtonTitle: 'Pulisci la query',
+          resetButtonAriaLabel: 'Pulisci la query',
+          cancelButtonText: 'Cancella',
+          cancelButtonAriaLabel: 'Cancella',
+        },
+        startScreen: {
+          recentSearchesTitle: 'Recenti',
+          noRecentSearchesText: 'Nessuna ricerca recente',
+          saveRecentSearchButtonTitle: 'Salva questa ricerca',
+          removeRecentSearchButtonTitle: 'Rimuovi questa ricerca dalla history',
+          favoriteSearchesTitle: 'Preferiti',
+          removeFavoriteSearchButtonTitle: 'Rimuovi questa ricerca dai favoriti',
+        },
+        errorScreen: {
+          titleText: 'Impossibile recuperare risultati',
+          helpText: 'Prova a controllare la connessione di rete.',
+        },
+        footer: {
+          selectText: 'seleziona',
+          selectKeyAriaLabel: 'tasto Invio',
+          navigateText: 'naviga',
+          navigateUpKeyAriaLabel: 'Freccia su',
+          navigateDownKeyAriaLabel: 'Freccia giù',
+          closeText: 'chiudi',
+          closeKeyAriaLabel: 'tasto Escape',
+          searchByText: 'Search by',
+        },
+        noResultsScreen: {
+          noResultsText: 'Nessun risultato per',
+          suggestedQueryText: 'Prova ricerca per',
+          reportMissingResultsText: 'Pensi che questa ricerca dovrebbe restituire dei risultati?',
+          reportMissingResultsLinkText: 'Facci sapere.',
+        },
+      },
+    },
+    debug: true // Set debug to true if you want to inspect the modal
+  });
+</script>
   </body>
 </html>
