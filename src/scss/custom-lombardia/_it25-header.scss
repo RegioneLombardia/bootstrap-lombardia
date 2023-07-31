@@ -140,8 +140,12 @@ header {
 }
 
 .menu-hamburger {
-  width: 20rem;
-  height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+  width: 15rem;
+  overflow: auto;
+  height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
+  @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+    height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+  }
   @media (min-width: #{map-get($grid-breakpoints, lg)}) {
     height: calc(100vh - $header-center-max-height - $header-slim-height);
   }
@@ -153,7 +157,10 @@ header {
     top: 0;
     padding: 0;
     z-index: 6;
-    height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+    height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
+    @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+      height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
+    }
     @media (min-width: #{map-get($grid-breakpoints, lg)}) {
       height: calc(100vh - $header-center-max-height - $header-slim-height);
     }
