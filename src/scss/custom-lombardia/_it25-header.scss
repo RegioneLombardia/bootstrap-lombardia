@@ -139,13 +139,6 @@ header {
   }
 }
 
-.custom-circle-icon {
-  border: 1px solid;
-  border-radius: 50%;
-  width: 25px;
-  height: 25px;
-}
-
 .menu-hamburger {
   width: 20rem;
   height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
@@ -168,34 +161,4 @@ header {
       padding: 0;
     }
   }
-}
-
-.mr-1 {
-  margin-right: ($spacer * 0.25) !important;
-}
-.mr-2 {
-  margin-right: ($spacer * 0.5) !important;
-}
-.ml-1 {
-  margin-left: ($spacer * 0.25) !important;
-}
-.ml-2 {
-  margin-left: ($spacer * 0.5) !important;
-}
-
-.pr-1 {
-  padding-right: ($spacer * 0.25) !important;
-}
-.pr-2 {
-  padding-right: ($spacer * 0.5) !important;
-}
-.pl-1 {
-  padding-left: ($spacer * 0.25) !important;
-}
-.pl-2 {
-  padding-left: ($spacer * 0.5) !important;
-}
-
-.top-80 {
-  top: 80% !important;
 }
