@@ -7,7 +7,6 @@ import legacy from '@rollup/plugin-legacy'
 import nodeResolve from '@rollup/plugin-node-resolve'
 import injectProcessEnv from 'rollup-plugin-inject-process-env'
 import commonjs from 'rollup-plugin-commonjs'
-import inject from '@rollup/plugin-inject';
 
 export default [
   // Bundle version
@@ -47,9 +46,6 @@ export default [
         NODE_ENV: 'production',
       }),
       uglify(),
-      inject({
-        $: 'jquery'
-      })
     ],
   },
   // Non-bundled version

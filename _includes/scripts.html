@@ -1,8 +1,5 @@
 {% assign buildTime = site.time | date: '%Y%m%d%H%M' %}
-<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
 <script src="{{ site.baseurl }}/dist/js/bootstrap-lombardia.bundle.min.js?{{ buildTime }}"></script>
-<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
-<!--   <script>window.__PUBLIC_PATH__ = '{{ site.baseurl }}'</script> -->
 
 <script>
   bootstrap.loadFonts('{{ site.baseurl }}/dist/fonts')
@@ -151,8 +148,8 @@
 </div>
 
 <script>
-  $(document).ready(function () {
-    notificationShow('notification-esempi')
-  })
+//   $(document).ready(function () {
+//     notificationShow('notification-esempi')
+//   })
 </script>
 {%- endif -%}
