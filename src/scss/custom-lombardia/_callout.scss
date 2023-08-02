@@ -1,33 +1,33 @@
 .callout {
   &.callout-highlight {
     &.success {
-      border-color: darken($success, 15%);
+      border-color: adjust-color($success, $lightness: -15%);
     }
     &.important {
-      border-color: darken($success, 15%);
+      border-color: adjust-color($success, $lightness: -15%);
     }
   }
   &.success {
-    border-color: darken($success, 15%);
+    border-color: adjust-color($success, $lightness: -15%);
     .callout-title {
-      color: darken($success, 15%);
+      color: adjust-color($success, $lightness: -15%);
       .icon {
-        fill: darken($success, 15%);
+        fill: adjust-color($success, $lightness: -15%);
       }
       span {
-        border-color: darken($success, 15%);
+        border-color: adjust-color($success, $lightness: -15%);
       }
     }
   }
   &.important {
-    border-color: darken($success, 15%);
+    border-color: adjust-color($success, $lightness: -15%);
     .callout-title {
-      color: darken($success, 15%);
+      color: adjust-color($success, $lightness: -15%);
       .icon {
-        fill: darken($success, 15%);
+        fill: adjust-color($success, $lightness: -15%);
       }
       span {
-        border-color: darken($success, 15%);
+        border-color: adjust-color($success, $lightness: -15%);
       }
     }
   }

@@ -41,8 +41,8 @@ div.output-field {
 }
 
 .warning-feedback {
-  color: darken($warning, 25%);
+  color: adjust-color($warning, $lightness: -25%);
 }
 .valid-feedback {
-  color: darken($success, 15%);
+  color: adjust-color($success, $lightness: -15%);
 }
