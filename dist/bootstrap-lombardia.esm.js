@@ -36,6 +36,5 @@ export { default as Tooltip } from './plugins/tooltip.js';
 export { default as loadFonts } from './plugins/fonts-loader.js';
 export { default as it25Header } from './plugins/it25-header.js';
 export { default as it25 } from './plugins/it25.js';
-export { $ } from 'jquery';
 export { default as init } from './plugins/init.js';
 //# sourceMappingURL=bootstrap-lombardia.esm.js.map

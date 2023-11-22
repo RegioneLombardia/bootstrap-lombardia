@@ -12,14 +12,14 @@
 <title>Accordion · Bootstrap Lombardia</title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202307191209" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
 
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202307191209" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +96,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.0/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.0</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.0.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -1192,7 +1192,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
       </span>
       <div id="collapse2l" class="accordion-collapse collapse" data-bs-parent="#accordionExampleLft" role="region" aria-labelledby="heading2l">
         <div class="accordion-body">
-          <div class="form-row">
+          <div class="row">
   <div class="form-group col-md-6">
     <input type="text" class="form-control" id="formNome3" />
     <label for="formNome3">Nome</label>
@@ -1202,7 +1202,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     <label for="formCognome3">Cognome</label>
   </div>
 </div>
-<div class="form-row">
+<div class="row">
   <div class="form-group col-10">
     <input type="text" class="form-control" id="inputAddress3" />
     <label for="inputAddress3">Indirizzo</label>
@@ -1212,7 +1212,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     <input type="number" id="civico3" name="civico" />
   </div>
 </div>
-<div class="form-row">
+<div class="row">
   <div class="form-group col-md-6">
     <input type="text" class="form-control" id="inputCity3" />
     <label for="inputCity3">Comune</label>
@@ -1221,10 +1221,11 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     <input type="number" class="form-control" id="inputCAP3" />
     <label for="inputCAP3">CAP</label>
   </div>
-  <div class="col-md-4">
-    <div class="bootstrap-select-wrapper">
-      <label>Provincia</label>
-        <select title="Scegli una opzione" data-live-search="true" data-live-search-placeholder="Cerca opzioni">
+    <div class="col-md-4">
+    <div class="select-wrapper">
+      <label for="defaultSelect3">Provincia</label>
+      <select id="defaultSelect3">
+        <option selected="" value="">Scegli un'opzione</option>
         <option value="BG">Bergamo</option>
         <option value="BS">Brescia</option>
         <option value="CO">Como</option>
@@ -1357,10 +1358,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     </div>
 
     
-<!-- <script src="https://unpkg.com/@popperjs/core@2"></script> -->
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202307191209"></script>
-<!-- <script src="/node_modules/jquery/dist/jquery.js"></script> -->
-<!--   <script>window.__PUBLIC_PATH__ = '/bootstrap-lombardia'</script> -->
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1408,18 +1406,18 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     })
   }
   new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202307191209"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202307191209"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/preloadjs.min.js"></script>
 
-<script>
+<!--<script>
   var manifest = [
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-1.png', id: 'cover-1' },
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-2.png', id: 'cover-2' },
@@ -1429,8 +1427,8 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-6.png', id: 'cover-6' },
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
-</script>
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202307191209"></script> -->
+</script>-->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
