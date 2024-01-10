@@ -1,6 +1,6 @@
 {
   "name": "bootstrap-lombardia",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "keywords": [
     "css",
     "sass",
@@ -101,7 +101,7 @@
     "animejs": "^3.2.1",
     "bootstrap": "5.2.3",
     "design-tokens-italia": "^1.1.1",
-    "just-validate": "^3.10.0",
+    "just-validate": "^3.5.1",
     "masonry-layout": "^4.2.2",
     "progressbar.js": "^1.1.0",
     "uuid": "^8.3.2",
@@ -109,10 +109,6 @@
     "flatpickr": "^4.6.13",
     "grudus-timepicker": "^1.0.2",
     "jquery-clock-timepicker": "^2.6.3",
-    "just-validate": "^3.5.1",
-    "masonry-layout": "^4.2.2",
-    "progressbar.js": "^1.1.0",
-    "range-slider-input": "^2.4.4",
-    "uuid": "^8.3.2"
+    "range-slider-input": "^2.4.4"
   }
 }
