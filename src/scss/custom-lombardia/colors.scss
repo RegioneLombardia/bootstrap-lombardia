@@ -51,20 +51,6 @@
   background: $radial-gradient-2;
 }
 
-// secondary gray ---------------------------------
-.secondary-gray-bg {
-  background-color: $secondary-gray !important;
-}
-.secondary-gray-color {
-  color: $secondary-gray !important;
-}
-.secondary-gray-border-color {
-  border-color: $secondary-gray !important;
-  &.border {
-    border-color: $secondary-gray !important;
-  }
-}
-
 // black
 .black-bg {
   background-color: $black !important;

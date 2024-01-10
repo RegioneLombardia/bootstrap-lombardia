@@ -10,7 +10,7 @@ I tooltip sono suggerimenti personalizzati con CSS e JavaScript, utilizzano CSS3
 
 {% capture callout %}
 
-#### Accessibiltà
+#### Accessibilità
 
 I tooltip funzionano sia con la tastiera che per gli utenti dotati di tecnologia assistiva.
 
@@ -54,8 +54,8 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 
 Passa il mouse sopra i link sottostanti per visualizzare i tooltip:
 
+{% comment %}Example name: Esempi{% endcomment %}
 {% capture example %}
-
 <div class="tooltip-demo">
   <p class="font-serif muted">
     Ecco un <a href="#" data-bs-toggle="tooltip" title="Primo tooltip">bianco scenario</a><br/>
@@ -79,8 +79,8 @@ Passa il mouse sopra i link sottostanti per visualizzare i tooltip:
 
 Passa il mouse sopra i pulsanti sottostanti per vedere le quattro direzioni dei tooltip: sopra, destra, sotto, e sinistra.
 
+{% comment %}Example name: Varianti di allineamento{% endcomment %}
 {% capture example %}
-
 <div class="tooltip-demo">
   <div class="bd-example-tooltips">
     <div class="container">

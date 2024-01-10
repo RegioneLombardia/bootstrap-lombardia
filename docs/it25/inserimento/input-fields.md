@@ -28,7 +28,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </div>
   <div class="col">
     <div class="form-group">
-      <label for="exampleInputText3">Etichetta di esempio</label>
+      <label class="active" for="exampleInputText3">Etichetta di esempio</label>
       <input type="text" class="form-control" id="exampleInputText3" disabled>
     </div>
   </div>
@@ -130,11 +130,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label for="exampleInputText7">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label for="exampleInputText7">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText7">
       </div>
     </div>
@@ -143,11 +143,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="exampleInputText8">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" for="exampleInputText8">Etichetta di esempio</label>
         <input type="text" class="form-control focus--mouse" id="exampleInputText8">
       </div>
     </div>
@@ -156,11 +156,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="exampleInputText9">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label for="exampleInputText9">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText9" disabled>
       </div>
     </div>
@@ -171,11 +171,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="exampleInputText24">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" for="exampleInputText24">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato...">
       </div>
       <small id="formGroupExampleInputWithHelpDescription24" class="form-text info">Ulteriore testo informativo</small>
@@ -185,11 +185,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="exampleInputText25">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" for="exampleInputText25">Etichetta di esempio</label>
         <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|">
       </div>
       <small id="formGroupExampleInputWithHelpDescription25" class="form-text info">Ulteriore testo informativo</small>
@@ -199,11 +199,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="exampleInputText26">Etichetta di esempio</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
           </div>
         </div>
-        <label class="active" for="exampleInputText26">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText26" disabled value="Testo non modificabile">
       </div>
       <small id="formGroupExampleInputWithHelpDescription26" class="form-text info">Dato derivante da anagrafica</small>
@@ -219,33 +219,33 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-30">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-30">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid" id="input-field-30" name="input-field-30" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-31">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-31">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid warning" id="input-field-31" name="input-field-31" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-32">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-32">Etichetta di esempio</label>
       <input type="text" class="form-control is-invalid" id="input-field-32" name="input-field-32" value="Testo immesso" />
     </div>
   </div>
@@ -254,11 +254,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-33">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-33">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid" id="input-field-33" name="input-field-33" value="Testo immesso" />
       <small class="valid-feedback is-valid">Validato!</small>
     </div>
@@ -266,11 +266,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="form-group col-4">
     <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-34">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-34">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid warning" id="input-field-34" name="input-field-34" value="Testo immesso" />
       <small class="warning-feedback is-valid warning">Possibili problemi.</small>
     </div>
@@ -278,11 +278,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="form-group col-4">
       <div class="input-group">
       <div class="input-group-prepend">
+        <label class="active" for="input-field-35">Etichetta di esempio</label>
         <div class="input-group-text">
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </div>
       </div>
-      <label class="active" for="input-field-35">Etichetta di esempio</label>
       <input type="text" class="form-control is-invalid" id="input-field-35" name="input-field-35" value="Testo immesso" />
       <small class="invalid-feedback is-invalid">Errore bloccante!</small>
     </div>
@@ -303,7 +303,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="row">
   <div class="col">
     <div class="form-group">
-      <label for="passwd1">Password con label, placeholder e testo di aiuto</label>
+      <label for="passwd1">Password con label e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd1" 
             aria-labelledby="infoPassword1" />
       <span class="password-icon" aria-hidden="true">
@@ -315,7 +315,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </div>
   <div class="col">
     <div class="form-group">
-      <label class="active" for="passwd2">Password con label, placeholder e testo di aiuto</label>
+      <label class="active" for="passwd2">Password con label e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd2"
             aria-labelledby="infoPassword2" value="iuQ34!iwah" />
       <span class="password-icon" aria-hidden="true">
@@ -327,7 +327,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </div>
   <div class="col">
     <div class="form-group">
-      <label class="active" for="passwd3">Password con label, placeholder e testo di aiuto</label>
+      <label class="active" for="passwd3">Password con label e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd3"
             aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
       <span class="password-icon" aria-hidden="true">
@@ -369,11 +369,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label for="passwd41">Password con label e testo di aiuto</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
           </div>
         </div>
-        <label for="passwd41">Password con label, placeholder e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd41" 
               aria-labelledby="infoPassword" />
         <span class="password-icon" aria-hidden="true">
@@ -388,11 +388,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="passwd42">Password con label e testo di aiuto</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
           </div>
         </div>
-        <label class="active" for="passwd42">Password con label, placeholder e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd42"
               aria-labelledby="infoPassword" value="iuQ34!iwah" />
         <span class="password-icon" aria-hidden="true">
@@ -407,11 +407,11 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <div class="input-group">
         <div class="input-group-prepend">
+          <label class="active" for="passwd43">Password con label e testo di aiuto</label>
           <div class="input-group-text">
             <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
           </div>
         </div>
-        <label class="active" for="passwd43">Password con label, placeholder e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd43"
               aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
         <span class="password-icon" aria-hidden="true">
@@ -433,8 +433,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="bd-example">
   <div class="row mb-5">
     <div class="col">Ricerca</div>
+    <div class="col">Selezione</div>
     <div class="col">Suggerimenti</div>
-    <div class="col">Autocompletamento</div>
   </div>
   <div class="row">
     <div class="col">
@@ -478,7 +478,27 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </select>
 </div>
 ...      
-{% include html_docs/input/autocompletamento.html  %}
+<div class="select-wrapper">
+  <label for="accessibleAutocomplete">Provincia</label>
+  <select class="form-control" id="accessibleAutocomplete" title="Scegli una provincia" required>
+    <option selected value="">Scegli una opzione</option>
+    <option value='AG'>Agrigento</option>
+    . . .
+    <option value='VT'>Viterbo</option>
+  </select>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var selectElement = document.querySelector('#accessibleAutocomplete');
+    var selectAutocomplete = new bootstrap.SelectAutocomplete(selectElement, {
+      showAllValues: true,
+      defaultValue: '',
+      autoselect: false,
+      showNoOptionsFound: false,
+      dropdownArrow: () => '',
+    });
+  })
+</script>    
 {% endhighlight %}
 
 ### Input number

@@ -24,12 +24,12 @@ Essi consentono agli utenti di inserire un valore di tempo e possono essere util
     <div class="col-12 col-lg-4">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="time-picker">Orario</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-clock"></use></svg>
             </div>
           </div>
-          <label class="active" for="time-picker">Orario</label>
           <input type="text" class="form-control" id="time-picker" name="time-picker"
                 aria-label="indicare ore e minuti separate da due punti." />
         </div>
@@ -41,12 +41,12 @@ Essi consentono agli utenti di inserire un valore di tempo e possono essere util
 {% highlight html %}
 <div class="form-group">
   <div class="input-group">
+    <label class="active" for="time-picker">Orario</label>
     <div class="input-group-prepend">
       <div class="input-group-text">
         <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-clock"></use></svg>
       </div>
     </div>
-    <label class="active" for="time-picker">Orario</label>
     <input type="text" class="form-control" id="time-picker" name="time-picker"
           aria-label="indicare ore e minuti separate da due punti." />
   </div>

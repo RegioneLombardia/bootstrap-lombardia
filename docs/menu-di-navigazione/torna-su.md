@@ -26,6 +26,7 @@ Le animazioni sono state realizzate con il plugin javascript [AnimeJs](https://a
 
 Per visualizzare il Back to top nella posizione corretta è necessario scrollare questa pagina. L'esempio del codice sottostante sarà visibile solo a scroll avvenuto.
 
+{% comment %}Example name: Base, funzionante{% endcomment %}
 {% capture example %}
 <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top" id="example">
 <svg class="icon icon-light"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
@@ -34,6 +35,7 @@ Per visualizzare il Back to top nella posizione corretta è necessario scrollare
 
 **Per facilitare la visualizzazione delle varie versioni di Back to top disponibili i seguenti esempi saranno visualizzati in linea.**
 
+{% comment %}Example name: Base, esempio{% endcomment %}
 {% capture example %}
 <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top">
 <svg class="icon icon-light"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
@@ -44,6 +46,7 @@ Per visualizzare il Back to top nella posizione corretta è necessario scrollare
 
 Aggiungendo la classe `.back-to-top-small` al link si ottiene un pulsante di dimensioni ridotte.
 
+{% comment %}Example name: Compatto, esempio{% endcomment %}
 {% capture example %}
 <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top back-to-top-small">
 <svg class="icon icon-light"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
@@ -55,8 +58,8 @@ Aggiungendo la classe `.back-to-top-small` al link si ottiene un pulsante di dim
 
 Aggiungendo la classe `.shadow` al link si aggiunge un'ombra al pulsante.
 
+{% comment %}Example name: Con ombra, esempio{% endcomment %}
 {% capture example %}
-
 <div class="d-flex align-items-center">
   <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top shadow">
     <svg class="icon icon-light"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
@@ -69,10 +72,10 @@ Aggiungendo la classe `.shadow` al link si aggiunge un'ombra al pulsante.
 
 ### Versione per sfondo scuro
 
-Aggiungendo la classe `.dark` al link si ottiente un pulsante utilizzabile su sfondo scuro.
+Aggiungendo la classe `.dark` al link si ottiene un pulsante utilizzabile su sfondo scuro.
 
+{% comment %}Example name: Per sfondo scuro, esempio{% endcomment %}
 {% capture example %}
-
 <div class="d-flex align-items-center p-4 neutral-1-bg-a8">
   <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top dark">
     <svg class="icon icon-secondary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
@@ -85,10 +88,10 @@ Aggiungendo la classe `.dark` al link si ottiente un pulsante utilizzabile su sf
 
 #### Ombra su sfondo scuro
 
-Aggiungendo le classi `.dark` e `.shadow` al link si ottiente un pulsante con ombra utilizzabile su sfondo scuro.
+Aggiungendo le classi `.dark` e `.shadow` al link si ottiene un pulsante con ombra utilizzabile su sfondo scuro.
 
+{% comment %}Example name: Con ombra, per sfondo scuro, esempio{% endcomment %}
 {% capture example %}
-
 <div class="d-flex align-items-center p-4 neutral-1-bg-a8">
   <a href="#" aria-hidden="true" tabindex="-1" data-bs-toggle="backtotop" class="back-to-top dark shadow">
     <svg class="icon icon-secondary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>

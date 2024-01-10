@@ -39,7 +39,6 @@ fieldset {
   label {
     background-color: transparent;
     position: absolute;
-    font-weight: 600;
     line-height: calc(#{$input-height} - 1px);
     transition: 0.2s ease-out;
     top: 0;
@@ -54,8 +53,9 @@ fieldset {
     white-space: nowrap;
     padding: 0 $input-spacing-x;
     z-index: 1;
-    &.active {
+    &.active:first-child {
       transform: translateY(-75%);
+      font-weight: 600;
       font-size: $small-font-size;
       color: $input-label-color;
     }
@@ -74,7 +74,6 @@ fieldset {
 }
 
 ::placeholder {
-  font-weight: 600;
   color: $input-color-placeholder;
 }
 
@@ -98,18 +97,17 @@ textarea {
   width: 100%;
   box-shadow: none;
   transition: none;
-  font-weight: 700;
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   &::placeholder {
     color: $input-color-placeholder;
-    font-weight: 600;
   }
 }
 
 textarea {
   border: 1px solid $input-border;
   height: auto;
+  font-size: 1rem;
 }
 
 .form-control {
@@ -168,7 +166,7 @@ textarea {
   display: none;
   width: 100%;
   margin-top: 0.25rem;
-  font-size: 0.777rem;
+  font-size: 0.75rem;
   color: $warning;
 }
 
@@ -253,6 +251,9 @@ textarea {
       font-size: 1rem;
       user-select: none;
       margin-bottom: 0.5rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.125rem;
+      }
     }
 
     //focus

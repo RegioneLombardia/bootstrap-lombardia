@@ -1,3 +1,15 @@
+.bd-callout-info {
+  border-left-color: $info;
+}
+
+.bd-callout-warning {
+  border-left-color: $warning;
+}
+
+.bd-callout-danger {
+  border-left-color: $danger;
+}
+
 .horizontal-scroll-example {
   width: 21rem;
 }

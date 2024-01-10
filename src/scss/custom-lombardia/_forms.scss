@@ -9,18 +9,39 @@ div.output-field {
   padding: 8px;
   font-weight: 700;
 }
-
+.form-text {
+  color: $it25-gray;
+}
 .form-group {
   input,
   optgroup,
   textarea {
     color: $black;
   }
+
+  label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $it25-gray;
+    &.active:first-child {
+      font-weight: 700;
+    }
+  }
+
+  .input-group {
+    .input-group-prepend {
+      label {
+        &:not(.active) {
+          left: 2rem;
+        }
+      }
+    }
+  }
 }
 
 .form-control:disabled {
   //background-color: transparent;
-  background-color: $neutral-2-b1;
+  background-color: $neutral-1-a1;
   opacity: 0.7;
 }
 .form-control {
@@ -29,9 +50,20 @@ div.output-field {
 
 .form-check {
   [type='checkbox'] {
+    &:not(:checked) + label::after {
+      border-color: $neutral-1-a6;
+    }
+    &:disabled:not(:checked) + label::after {
+      border-color: #d9d9d9;
+      background-color: #fff;
+    }
+    &:disabled:checked + label::after {
+      background-color: #d9d9d9;
+      border-color: #d9d9d9;
+    }
     &:disabled.semi-checked + label::after {
-      background-color: #b1b1b3;
-      border-color: #e6e9f2;
+      background-color: #d9d9d9;
+      border-color: #d9d9d9;
     }
   }
   input.semi-checked:not(:checked) + label::after {

@@ -1,13 +1,23 @@
 .toggles label {
   input[type='checkbox'] {
-    &[disabled] + .lever {
+    &:checked + .lever {
+      background-color: #d9d9d9;
+    }
+    & + .lever {
+      background-color: #d9d9d9;
       &:after {
-        background-color: #b1b1b3;
+        background-color: $neutral-1-a6;
+      }
+    }
+    &[disabled] + .lever {
+      background-color: #d9d9d9;
+      &:after {
+        background-color: #d9d9d9;
       }
     }
 
     &[disabled]:checked + .lever:after {
-      background-color: #b1b1b3;
+      background-color: #d9d9d9;
     }
   }
 }

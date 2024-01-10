@@ -5,7 +5,7 @@ ul {
         &:hover:not(.disabled) {
           text-decoration: none;
           span {
-            color: #505051;
+            color: $it25-gray;
             text-decoration: underline;
           }
           .icon {
@@ -13,7 +13,7 @@ ul {
           }
         }
         span {
-          color: #505051;
+          color: $it25-gray;
           font-weight: 400;
           &.list-item-title {
             font-weight: 600;
@@ -22,7 +22,7 @@ ul {
         // variazione icone a collapse aperto
         &.active {
           span {
-            color: #505051;
+            color: $it25-gray;
             text-decoration: none;
             font-weight: 600;
           }
@@ -49,7 +49,7 @@ ul {
         &.list-item {
           &:hover {
             box-shadow: none;
-            color: #505051;
+            color: $it25-gray;
             text-decoration: underline;
             background: transparent;
             border-bottom: 1px solid $list-border-color;

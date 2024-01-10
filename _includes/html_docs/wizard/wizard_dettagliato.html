@@ -1,35 +1,24 @@
-<div class="it25-wizard-detail">
-  <ul>
-    <li class="it-pin-wrapper confirmed">
-      <span class="visually-hidden">Confermato</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-        title="Descrizione dello step, spiegare<br /> per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
-        <span class="it-pin-title">Scelta periodo</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper active">
-      <span class="visually-hidden">Attivo</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-      title="Descrizione dello step, spiegare<br /> per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-        <span class="it-pin-title">Tipologia alloggio</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper error">
-      <span class="visually-hidden">Errore</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-      title="Descrizione dello step, spiegare<br /> per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-list"></use></svg>
-        <span class="it-pin-title">Optionals</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper off">
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
-      title="Descrizione dello step, spiegare<br /> per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-card"></use></svg>
-        <span class="it-pin-title">Pagamento</span>
-      </div>
-    </li>
-  </ul>
+<div class="steppers">
+  <div class="steppers-header it25-wizard">
+    <ul>
+      <li class="confirmed" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+        title="<strong>Descrizione dello step</strong>:<br/>spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
+        Scelta periodo
+        <span class="visually-hidden">Confermato</span>
+      </li>
+      <li class="active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+        title="<strong>Descrizione dello step</strong>:<br/>spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+        Tipologia alloggio
+        <span class="visually-hidden">Attivo</span>
+      </li>
+      <li data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true"
+        title="<strong>Descrizione dello step</strong>:<br/>spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-list"></use></svg>
+        Optionals
+      </li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true">2/6</span>
+  </div>
 </div>

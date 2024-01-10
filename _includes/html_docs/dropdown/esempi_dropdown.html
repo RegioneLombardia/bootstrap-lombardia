@@ -1,6 +1,6 @@
-  <nav class="toolbar">
-    <ul>
-      <li>
+  <div class="bd-example no-border mb-5">
+    <div class="row mb-5">
+      <div class="col">
         <div class="dropdown">
           <button
             class="btn btn-dropdown dropdown-toggle"
@@ -8,11 +8,13 @@
             id="dropdownMenuButton1"
             data-bs-toggle="dropdown"
             aria-haspopup="true"
-            aria-expanded="false"
+            aria-expanded="true"
           >
-            Menu con voci normali
+            Dropdown 1
+            <svg class="icon-expand icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton"
+            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
             <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
@@ -28,8 +30,8 @@
             </div>
           </div>
         </div>
-      </li>
-      <li>
+      </div>
+      <div class="col">
         <div class="dropdown">
           <button
             class="btn btn-dropdown dropdown-toggle show"
@@ -39,10 +41,12 @@
             aria-haspopup="true"
             aria-expanded="true"
           >
-            Menu con voce attiva
+            Dropdown 2
+            <svg class="icon-expand icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
-            <div class="link-list-wrapper">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton"
+            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
+          <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
                   <a class="dropdown-item list-item active" href="#"><span>Voce Attiva</span></a>
@@ -57,8 +61,8 @@
             </div>
           </div>
         </div>
-      </li>
-      <li>
+      </div>
+      <div class="col">
         <div class="dropdown">
           <button
             class="btn btn-dropdown dropdown-toggle"
@@ -66,11 +70,13 @@
             id="dropdownMenuButton3"
             data-bs-toggle="dropdown"
             aria-haspopup="true"
-            aria-expanded="false"
+            aria-expanded="true"
           >
-            Menu con voce disabilitata
+            Dropdown 3
+            <svg class="icon-expand icon icon-sm"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton"
+            style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
             <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
@@ -86,7 +92,6 @@
             </div>
           </div>
         </div>
-      </li>
-    </ul>
-  </nav>
-
+      </div>
+    </div>
+  </div>

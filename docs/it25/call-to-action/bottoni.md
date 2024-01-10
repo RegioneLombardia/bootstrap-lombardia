@@ -198,7 +198,7 @@ Alcune call to action potrebbero prevedere un’icona accompagnata al testo per 
   <span class="text-start">Lorem ipsum</span>
 </button>
 <button type="button" class="btn btn-primary btn-lg">
-  <svg class="icon icon-white">
+  <svg class="icon zicon-white">
     <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
   </svg>
   <span class="text-start">Lorem ipsum</span>
@@ -221,14 +221,14 @@ I **Bottoni mini** devono essere utilizzati esclusivamente per creare un linguag
     <div class="row my-3">
       <div class="col">
        <button type="button" class="btn btn-primary btn-xs btn-me">Lorem ipsum</button>
-        <button type="button" class="btn btn-outline-primary btn-xs btn-me">Lorem ipsum</button>
+        <button type="button" class="btn btn-outline-primary btn-xs">Lorem ipsum</button>
       </div>
     </div>
   </div>
 </div>
 {% highlight html %}
 <button type="button" class="btn btn-primary btn-xs btn-me">Lorem ipsum</button>
-<button type="button" class="btn btn-outline-primary btn-xs btn-me">Lorem ipsum</button>
+<button type="button" class="btn btn-outline-primary btn-xs">Lorem ipsum</button>
 {% endhighlight %}
 
 ### Text buttons
@@ -237,11 +237,33 @@ Alcune call to action possono essere costituite da solo testo, senza un contenit
 Queste vengono applicate al menu orizzontale o in caso di hyperlink.
 
 <div class="bd-example">
-{% include html_docs/bottoni/text-buttons.html %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <a class="btn btn-lg btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-sm btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-xs btn-link" href="#" role="button">Lorem ipsum</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a class="btn btn-lg btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-sm btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-xs btn-link active" href="#" role="button">Lorem ipsum</a>
+      </div>
+    </div>
+  </div>
 </div>
 {% highlight html %}
-{% include html_docs/bottoni/text-buttons.html %}
+<a class="btn btn-lg btn-link active" href="#" role="button">Lorem ipsum</a>
+<a class="btn btn-link active" href="#" role="button">Lorem ipsum</a>
+<a class="btn btn-sm btn-link active" href="#" role="button">Lorem ipsum</a>
+<a class="btn btn-xs btn-link active" href="#" role="button">Lorem ipsum</a>
 {% endhighlight %}
+
+Nota: la **sottolineatura** è legata alla classe `active`.
 
 ### Tags
 
@@ -252,13 +274,13 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.
   <div class="container-fluid">
     <div class="row my-3">
       <div class="col">
-       <button type="button" class="btn btn-primary btn-tag" style="min-width:50px">Tag</button>
-        <button type="button" class="btn btn-outline-primary btn-tag" style="min-width:50px">Tag</button>
+       <button type="button" class="btn btn-primary btn-tag btn-me">Tag button</button>
+        <button type="button" class="btn btn-outline-primary btn-tag">Tag button</button>
       </div>
     </div>
   </div>
 </div>
 {% highlight html %}
-<button type="button" class="btn btn-primary btn-tag" style="min-width:50px">Tag</button>
-<button type="button" class="btn btn-outline-primary btn-tag" style="min-width:50px">Tag</button>
+<button type="button" class="btn btn-primary btn-tag btn-me">Tag button</button>
+<button type="button" class="btn btn-outline-primary btn-tag">Tag button</button>
 {% endhighlight %}

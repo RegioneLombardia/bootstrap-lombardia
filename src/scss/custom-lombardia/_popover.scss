@@ -1,10 +1,25 @@
 .popover {
   border: 1px solid $lightgrey-c1;
   box-shadow: 0 0 8px 5px rgba(50, 50, 50, 0.15);
-
+  .popover-body {
+    line-height: 120%;
+    font-size: 0.875rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
+    a.popover-inner-link {
+      text-transform: unset;
+      letter-spacing: normal;
+    }
+  }
   .popover-header {
+    font-size: 0.875rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 1rem;
+    }
+    font-weight: 700;
     text-transform: unset;
-    color: $complementary-3;
+    color: $primary;
     letter-spacing: normal;
   }
 }

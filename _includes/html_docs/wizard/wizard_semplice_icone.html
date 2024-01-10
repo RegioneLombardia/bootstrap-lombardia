@@ -1,31 +1,23 @@
-  <div class="it25-wizard">
+<div class="steppers">
+  <div class="steppers-header it25-wizard it25-wizard-pin">
     <ul>
-      <li class="it-pin-wrapper confirmed">
-        <span class="visually-hidden">Scelta periodo</span>
+      <li class="confirmed" data-bs-toggle="tooltip" data-bs-placement="top" title="Pagamento">
+        <svg class="icon icon-lg"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
         <span class="visually-hidden">Confermato</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Periodo">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
-        </span>
       </li>
-      <li class="it-pin-wrapper active">
-        <span class="visually-hidden">Tipologia alloggio</span>
+      <li class="error" data-bs-toggle="tooltip" data-bs-placement="bottom"  title="Optionals">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-list"></use></svg>
         <span class="visually-hidden">Attivo</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Tipologia">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-        </span>
       </li>
-      <li class="it-pin-wrapper error">
-        <span class="visually-hidden">Optionals</span>
-        <span class="visually-hidden">Errore</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Optionals">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-list"></use></svg>
-        </span>
+      <li class="active" data-bs-toggle="tooltip" data-bs-placement="bottom"  title="Tipologia alloggio">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+        <span class="visually-hidden">Attivo</span>
       </li>
-      <li class="it-pin-wrapper">
-        <span class="visually-hidden">Pagamento</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Pagamento">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-card"></use></svg>
-        </span>
+      <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pagamento">
+        <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-card"></use></svg>
       </li>
     </ul>
+    <span class="steppers-index" aria-hidden="true">3/6</span>
   </div>
+</div>
+

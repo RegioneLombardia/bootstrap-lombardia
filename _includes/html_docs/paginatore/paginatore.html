@@ -26,8 +26,8 @@
   </ul>
   {% if include.jump %}
   <div class="form-group">
-    <input type="text" class="form-control" id="jumpToPage{{include.id_suff}}" maxlength="3" />
-    <label for="jumpToPage{{include.id_suff}}"><span aria-hidden="true">Vai a ...</span><span class="visually-hidden">Indica la pagina desiderata</span></label>
+    <input type="text" class="form-control" placeholder="Vai a.." id="jumpToPage{{include.id_suff}}" maxlength="3" />
+    <label for="jumpToPage{{include.id_suff}}"><span class="visually-hidden">Indica la pagina desiderata</span></label>
   </div>
   {% endif %}
 </nav>

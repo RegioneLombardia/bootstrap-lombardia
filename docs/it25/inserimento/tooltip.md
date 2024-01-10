@@ -13,60 +13,78 @@ Quando le modali vengono chiuse, anche le descrizioni comandi e i popover all’
 Nello specifico, In base alla dimensione e alla composizione del testo un tooltip può essere composto da una o più righe.  
 Per la spiegazione di **processi** si consiglia di utilizzare un tooltip con **area più ampia** in modo da poter fornire tutte le informazioni necessarie.
 
-<div class="bd-example">
-<p>Testo Base <sup><svg class="icon sup-sub" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Breve testo esplicativo"><use href="/dist/svg/sprites.svg#it-help-circle"></use></svg></sup></p>
-</div>
-
-{% highlight html %}
+{% capture example %}
 <p>Testo Base
   <sup>
-    <svg class="icon sup-sub" data-bs-toggle="tooltip" data-bs-placement="top" title="Breve testo esplicativo">
-      <use href="/dist/svg/sprites.svg#it-help-circle"></use>
+    <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Breve testo esplicativo">
+      <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
     </svg>
   </sup>
 </p>
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
 ---
 
 ### Posizionamento
 
-{% capture example %}
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
-              title="Breve testo esplicativo">Tooltip in alto
-      </button>
+Per il posizionamento è sufficiente impostare l'attributo `data-bs-placement` sul tag `svg`.
+
+<div class="bd-example">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <p>Tooltip in alto
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>Tooltip in basso
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lorem ipsum dolor sit amet">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-12 col-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right"
-              title="Breve testo esplicativo">Tooltip a sinistra
-      </button>
-    </div>
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left"
-              title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">Tooltip a sinistra
-      </button>
-    </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom"
-              title="Breve testo esplicativo">Tooltip in basso
-      </button>
+    <div class="row mt-4">
+      <div class="col-12 col-md-4">
+        <p>Tooltip a destra
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>Tooltip a sinistra
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
     </div>
   </div>
 </div>
-{% endcapture %}{% include example.html content=example %}
+{% highlight html %}
+<svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="top" title=". . .">
+<svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="bottom" title=". . .">
+<svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="left" title=". . .">
+<svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="right" title=". . .">
+{% endhighlight %}
 
+---
 
 ### Abilitazione
 
-Per abilitare il funzionamento dell'esempio è stato inserito nella pagina il seguente codice:
+Per abilitare il funzionamento dei tooltip, nella pagina deve essere inserito il seguente codice:
 
 {% highlight html %}
 <script>

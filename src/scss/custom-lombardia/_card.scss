@@ -7,15 +7,26 @@
   .card-header {
     //background-color: #e5e5e5;
     background-color: adjust-color(#e5e5e5, $lightness: 3%);
-    font-weight: bold;
+    font-weight: 700;
+    font-size: 1.125rem;
     padding: 12px 24px;
     border: none;
     border-top-left-radius: 8px !important;
     border-top-right-radius: 8px !important;
     a {
       color: $primary;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
+  .btn-xs {
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: $btn-font-size-sm;
+  }
+
   .card-tag {
     color: $primary;
     border: 1px solid $primary;
@@ -23,6 +34,9 @@
   .card-body {
     .category-top {
       text-transform: unset;
+      a {
+        text-decoration: none;
+      }
     }
     .card-title {
       color: inherit;
@@ -30,7 +44,7 @@
     .card-text {
       color: unset;
       font-family: unset;
-      font-size: unset;
+      font-size: 1.125rem;
       line-height: unset;
     }
   }

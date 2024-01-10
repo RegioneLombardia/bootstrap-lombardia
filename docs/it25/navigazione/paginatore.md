@@ -70,8 +70,8 @@ Tendenzialmente si trova nella parte in **basso a destra o al centro** della pag
     </li>
   </ul>
   <div class="form-group">
-    <input type="text" class="form-control" id="jumpToPage28" maxlength="3" />
-    <label for="jumpToPage28"><span aria-hidden="true">Vai a ...</span><span class="visually-hidden">Indica la pagina desiderata</span></label>
+    <input type="text" class="form-control" placeholder="Vai a.." id="jumpToPage28" maxlength="3" />
+    <label for="jumpToPage28"><span class="visually-hidden">Indica la pagina desiderata</span></label>
   </div>
 </nav> 
 {% endhighlight %}

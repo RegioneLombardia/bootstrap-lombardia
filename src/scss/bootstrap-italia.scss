@@ -6,6 +6,7 @@
 @import 'functions';
 @import 'custom-lombardia/colors_vars';
 @import 'utilities/colors_vars';
+@import 'custom-lombardia/colors_vars_patch';
 
 //variables
 @import 'variables';
@@ -111,7 +112,6 @@
 @import 'custom/callout';
 @import 'custom/toolbar';
 @import 'custom/sections';
-@import 'custom/dialog';
 @import 'custom/notifications';
 @import 'custom/avatar';
 @import 'custom/thumbnav';
@@ -125,10 +125,12 @@
 @import 'custom/gridlist';
 @import 'custom/popover';
 @import 'custom/tooltip';
+@import 'custom/videoplayer';
 @import 'custom/list';
 @import 'custom/chips';
 @import 'custom/rating';
 @import 'custom/dimmer';
+@import 'custom/accept-overlay';
 @import 'custom/timeline';
 @import 'custom/anchor';
 @import 'custom/map';
@@ -175,6 +177,8 @@
 // Componenti lombardia
 @import 'custom-lombardia/tables';
 @import 'custom-lombardia/breadcrumb';
+@import 'custom-lombardia/modal';
+@import 'custom-lombardia/accordion';
 @import 'custom-lombardia/it25-header';
 @import 'custom-lombardia/sidebar';
 @import 'custom-lombardia/footer';
@@ -228,3 +232,4 @@
 @import 'custom-lombardia/callout';
 @import 'custom-lombardia/chips';
 @import 'custom-lombardia/badge';
+@import 'custom-lombardia/rating-list';

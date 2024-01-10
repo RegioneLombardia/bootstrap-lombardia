@@ -16,7 +16,7 @@ Il **Popover** è una componente che viene richiamato al click e fornisce inform
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="top"
         title="Titolo del Popover" data-bs-html="true"
         data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
-               <a href="#" class="popover-inner-link">More info</a>'>
+               <a href="#" class="popover-inner-link">altro ...</a>'>
         Popover in alto
       </button>
     </div>
@@ -43,7 +43,7 @@ Il **Popover** è una componente che viene richiamato al click e fornisce inform
         data-bs-html="true"
         title="Titolo del Popover"
         data-bs-content='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.
-               <a href="#" class="popover-inner-link">More info</a>'>
+               <a href="#" class="popover-inner-link">altro ...</a>'>
         Popover in basso
       </button>
     </div>

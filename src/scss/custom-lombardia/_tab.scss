@@ -18,6 +18,14 @@
       }
     }
   }
+  //link element
+  .nav-link {
+    color: $it25-gray;
+    .icon {
+      fill: $it25-gray;
+    }
+  }
+
   &.nav-dark {
     .nav-link {
       color: white;

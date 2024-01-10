@@ -31,10 +31,10 @@ Il componente, di altezza fissa, è ancorato al fondo della pagina e ne occupa t
 
 Ogni link `<a>` contiene un icona con classe `.icon` e una label contenuta in uno `<span>` con classe `.bottom-nav-label`.
 
-Il link `<a>` attivo possiede una una classe `.active`.
+Il link `<a>` attivo possiede una classe `.active`.
 
+{% comment %}Example name: Base{% endcomment %}
 {% capture example %}
-
 <nav class="bottom-nav">
   <ul>
     <li>
@@ -61,8 +61,8 @@ Il link `<a>` attivo possiede una una classe `.active`.
 
 I link occupano automaticamente tutto lo spazio orizzontale disponibile. Qui di seguito un esempio con 4 link.
 
+{% comment %}Example name: Base, con 4 link{% endcomment %}
 {% capture example %}
-
 <nav class="bottom-nav">
   <ul>
     <li>
@@ -97,8 +97,8 @@ I link occupano automaticamente tutto lo spazio orizzontale disponibile. Qui di 
 
 Aggiungere uno `<span>` con classe `.bottom-nav-badge` all'interno dell'icona per visualizzare dei badge con indicazioni numeriche relative, ad esempio, al numero di messaggi non letti.
 
+{% comment %}Example name: Con badge{% endcomment %}
 {% capture example %}
-
 <nav class="bottom-nav">
   <ul>
     <li>
@@ -149,8 +149,8 @@ Aggiungere uno `<span>` con classe `.bottom-nav-alert` all'interno dell'icona pe
 I badge e gli alert sono nascosti agli screen reader. Per garantire l'accessibilità è necessario aggiungere uno `<span>` con classe `.visually-hidden` all'interno della label che contenga un testo esplicativo.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
+{% comment %}Example name: Con alert{% endcomment %}
 {% capture example %}
-
 <nav class="bottom-nav">
   <ul>
     <li>

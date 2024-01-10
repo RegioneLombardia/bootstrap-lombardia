@@ -1,246 +1,64 @@
 .steppers {
   .steppers-header {
-    ul {
+    &.it25-wizard {
+      position: relative;
+      ul {
+        justify-content: space-between;
+      }
       li {
-        // states
+        background: white;
+        border: 1px solid #e5e5e5;
+        flex-grow: unset;
+        border-radius: 8px;
+        &.confirmed {
+          border-color: $primary;
+        }
+        &.active {
+          border-color: $primary;
+          background: $primary;
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
         &.error {
-          color: $danger;
-          font-weight: 600;
-          .icon {
-            fill: $danger;
+          border-color: $danger;
+          background: $danger;
+          color: white;
+          svg {
+            fill: white;
           }
         }
       }
-    }
-    // steppers
-    span {
-      &.steppers-index {
-        margin-left: auto;
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: $gray-secondary;
-        display: block;
+      &::after {
+        content: ' ';
+        width: 96%;
+        background-color: #e5e5e5;
+        position: absolute;
+        height: 0.5em;
+        right: 10px;
+        top: 35%;
+        z-index: -1;
       }
     }
-  }
-}
-
-@media (min-width: #{map-get($grid-breakpoints, lg)}) {
-  .steppers {
-    ul.steppers-header {
-      margin-bottom: 0;
-    }
-    .steppers-header {
+    &.it25-wizard-pin {
       li {
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        &.error {
-          display: flex;
-        }
-        // error icon
-        .steppers-error {
-          margin-left: auto;
-        }
-      }
-      // index
-      span {
-        &.steppers-index {
-          display: none;
+        justify-content: center;
+        border-radius: 3rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        .icon {
+          width: unset;
+          height: unset;
+          margin-right: unset;
         }
       }
-    }
-    // navigation
-    .steppers-nav {
-      .steppers-progress,
-      .steppers-dots {
-        &.it25 {
-          display: flex;
-        }
+      &::after {
+        border-bottom: 3px dashed $primary;
+        height: 1px;
       }
-    }
-  }
-}
-
-.it25-wizard {
-  // border: 2px solid $primary;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-
-  ul {
-    display: contents;
-  }
-
-  &::after {
-    content: ' ';
-    width: 96%;
-    // background-color: $primary;
-    position: absolute;
-    height: 4px;
-    right: 10px;
-    top: 39px;
-    z-index: -1;
-    border-bottom: 3px dashed $primary;
-  }
-  .it-pin-wrapper {
-    display: flex;
-    align-items: center;
-    background-color: $white;
-  }
-  .pin-icon {
-    border-radius: 48px;
-    width: 48px;
-    height: 48px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    display: flex;
-    border: 2px solid lightgray;
-    background-color: $white;
-  }
-  svg {
-    fill: lightgray !important;
-  }
-  .active {
-    .pin-icon {
-      background-color: $primary;
-      border-color: $primary;
-    }
-    svg {
-      fill: white !important;
-    }
-  }
-  .confirmed {
-    .pin-icon {
-      border-color: $success;
-    }
-    svg {
-      fill: green !important;
-    }
-  }
-  .error {
-    .pin-icon {
-      background-color: $danger;
-      border-color: $danger;
-    }
-  }
-}
-
-.it25-wizard-detail {
-  // .c-stepper {
-  //   position: relative;
-  //   display: flex;
-  //   padding-top: 16px;
-  //   padding-bottom: 16px;
-  // }
-
-  // .c-stepper_item {
-  //   display: flex;
-  //   flex-direction: column;
-  //   flex: 1;
-  //   text-align: center;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-
-  // .c-stepper_card {
-  //   font-weight: 600;
-  //   font-size: 20px;
-  //   color: $primary;
-  //   border-radius: 8px;
-  //   width: 10em;
-  //   height: 50px;
-  //   align-items: center;
-  //   justify-content: center;
-  //   box-sizing: border-box;
-  //   display: flex;
-  //   border: 2px solid lightgray;
-  //   background-color: $white;
-  // }
-
-  // .c-stepper_desc {
-  //   color: grey;
-  //   font-size: clamp(0.85rem, 2vw, 1rem);
-  //   padding-left: var(--spacing);
-  //   padding-right: var(--spacing);
-  // }
-
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  .it-pin-title {
-    font-weight: 600;
-    color: $primary;
-  }
-  ul {
-    display: contents;
-  }
-
-  &::after {
-    content: ' ';
-    width: 96%;
-    background-color: $neutral-2;
-    position: absolute;
-    height: 4px;
-    right: 10px;
-    top: 39px;
-    z-index: -1;
-  }
-  .it-pin-wrapper {
-    display: flex;
-    align-items: center;
-    background-color: $white;
-  }
-  .pin-icon {
-    border-radius: $border-radius;
-    width: 10em;
-    height: 50px;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    display: flex;
-    border: 2px solid lightgray;
-    background-color: $white;
-  }
-  svg {
-    fill: lightgray !important;
-  }
-  .active {
-    .pin-icon {
-      background-color: $primary;
-      border-color: $primary;
-    }
-    svg {
-      fill: white !important;
-    }
-    .it-pin-title {
-      color: $white;
-    }
-  }
-  .confirmed {
-    .pin-icon {
-      border-color: $success;
-    }
-    svg {
-      fill: green !important;
-    }
-  }
-  .error {
-    .pin-icon {
-      background-color: $danger;
-      border-color: $danger;
-    }
-    .it-pin-title {
-      color: $white;
-    }
-  }
-  .off {
-    .it-pin-title {
-      opacity: 0.5;
     }
   }
 }

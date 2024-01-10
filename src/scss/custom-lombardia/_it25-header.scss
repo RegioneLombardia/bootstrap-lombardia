@@ -67,6 +67,16 @@ header {
       .it-brand-text {
         line-height: 1.555;
         font-weight: 700;
+        font-size: 1.25rem;
+        @include media-breakpoint-up(sm) {
+          font-size: 1.5rem;
+        }
+        @include media-breakpoint-up(md) {
+          font-size: 1.75rem;
+        }
+        @include media-breakpoint-up(lg) {
+          font-size: 2rem;
+        }
       }
       .it25-hamburger-btn-wrapper {
         margin-right: 10px;

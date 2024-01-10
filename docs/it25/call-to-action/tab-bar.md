@@ -24,19 +24,19 @@ Ogni bar deve contenere tab **dello stesso tipo**.
   <li class="nav-item">
     <a class="nav-link" href="#">
       Label
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#">
       Label
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="#">
       Label
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
     </a>
   </li>
   <li class="nav-item">
@@ -58,19 +58,19 @@ Inoltre, poichè il significato dell'icona non sempre risulta chiaro per gli ute
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
         <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
         <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
   <li class="nav-item">
     <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-      <svg class="icon icon-primary"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+      <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
         <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>

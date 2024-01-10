@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Tabella
 group: informazioni
-toc: no
+toc: yes
 ---
 
 La **Tabella** è una serie di colonne e righe riempite di dati testuali e può essere larga quanto la pagina, senza padding (_max
@@ -14,6 +14,10 @@ E’ opportuno **non utilizzare testi troppo lunghi** ed **evidenziare** - magar
 
 I **testi** all’interno delle righe vanno **allineati a sinistra**. Le icone possono essere allineate sia a sinistra che al centro.  
 Checkbox e radio button invece vanno centrati all’interno della cella.
+
+## Tabella compatta
+
+Si ottiene aggiungendo la classe `table-sm`
 
 {% include html_docs/tabella/tabella_full.html %}
 
@@ -62,9 +66,11 @@ Checkbox e radio button invece vanno centrati all’interno della cella.
 
 ---
 
-### Tabelle base
+## Tabelle base
 
-_Righe da 48px_
+### _Righe da 48px_
+
+Si ottiene aggiungendo la classe `it25-sm`
 
 {% include html_docs/tabella/tabella_base.html type='it25-sm' %}
 
@@ -78,7 +84,9 @@ _Righe da 48px_
 </div>
 {% endhighlight %}
 
-_Righe da 80px_
+### _Righe da 80px_
+
+Si ottiene aggiungendo la classe `it25-md`
 
 {% include html_docs/tabella/tabella_base.html type='it25-md' %}
 {% highlight html %}

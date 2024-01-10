@@ -1,26 +1,34 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Lancia la demo della modale</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lancia la demo della modale</button>
 
 <!-- Modal -->
-<div class="modal fade" tabindex="-1" role="dialog" id="exampleModal" aria-labelledby="exampleModalTitle">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title h5" id="exampleModalTitle">Trova l’operatore accreditato più vicino a te</h2>
+<div class="it-example-modal">
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="modal1"
+      aria-labelledby="modal1Title" aria-describedby="modal1Description">
+      <div class="modal-dialog modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <h2 class="modal-title h5 " id="modal1Title">Trova l’operatore accreditato più vicino a te</h2>
+               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">
+                  <svg class="icon"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close"></use></svg>
+                </button>
+            </div>
+            <hr/>
+            <div class="modal-body">
+              <p id="modal1Description">Ricerca con semplicità gli operatori accreditati per i servizi al lavoro
+                utilizzando la mappa interattiva.</p>
+              <p>
+                Cliccando sulla sede prescelta si apre una finestra
+                in cui sono presenti le informazioni per contattare l’ente
+                oltre all’attività primaria dichiarata dallo stesso ente
+                (codice ATECO - Attività economiche).
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-outline-primary btn-sm" type="button" data-bs-dismiss="modal">Annulla</button>
+              <button class="btn btn-primary btn-sm" data-bs-dismiss="modal" type="button">Applica</button>
+            </div>
+         </div>
       </div>
-      <div class="modal-body">
-        <p>Ricerca con semplicità gli operatori accreditati per i servizi al lavoro utilizzando la mappa interattiva.</p>
-        <p>
-          Cliccando sulla sede prescelta si apre una finestra
-          in cui sono presenti le informazioni per contattare l’ente
-          oltre all’attività primaria dichiarata dallo stesso ente
-          (codice ATECO - Attività economiche).
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-outline-primary btn-sm" type="button" data-bs-dismiss="modal">Annulla</button>
-        <button class="btn btn-primary btn-sm" data-bs-dismiss="modal" type="button">Applica</button>
-      </div>
-    </div>
-  </div>
+   </div>
 </div>

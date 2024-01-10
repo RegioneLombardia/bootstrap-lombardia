@@ -28,7 +28,7 @@ Per vedere il funzionamento potete guardare la pagina: [esempio Cookiebar]({{ si
 <section class="cookiebar" aria-label="Gestione dei cookies" aria-live="polite">
   <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
   <div class="mt-4">
-    <button class="btn btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
+    <button class="btn btn-lg btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
     <a href="#" class="me-3">Preferenze<span class="visually-hidden">cookies</span></a>
     <a href="#" class="">Privacy policy</a>
   </div>
@@ -39,7 +39,7 @@ Per vedere il funzionamento potete guardare la pagina: [esempio Cookiebar]({{ si
 <section class="cookiebar fade" aria-label="Gestione dei cookies" aria-live="polite">
   <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
   <div class="mt-4">
-    <button data-bs-accept="cookiebar" class="btn btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
+    <button data-bs-accept="cookiebar" class="btn btn-lg btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
     <a href="#" class="me-3">Preferenze<span class="visually-hidden">cookies</span></a>
     <a href="#" class="">Privacy policy</a>
   </div>

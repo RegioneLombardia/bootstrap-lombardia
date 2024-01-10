@@ -15,8 +15,8 @@ Per la creazione del componente, è stato utilizzato il plugin [Accessible autoc
 
 Per una corretta implementazione si consiglia di consultare la [documentazione](https://alphagov.github.io/accessible-autocomplete/).
 
+{% comment %}Example name: Base {% endcomment %}
 {% capture example %}
-
 <div class="select-wrapper">
   <label for="accessibleAutocomplete">Provincia</label>
   <select class="form-control" id="accessibleAutocomplete" title="Scegli una provincia" required>
@@ -146,6 +146,13 @@ Per una corretta implementazione si consiglia di consultare la [documentazione](
   })
 </script>
 {% endcapture %}{% include example.html content=example %}
+
+Per prendere il valore della option che siamo andati a selezionare occorre agire su `_element` dell'oggetto `SelectAutocomplete`
+
+```js
+const e = selectAutocomplete._element;
+const value = e.options[e.selectedIndex].value;
+```
 
 ### Validazione
 

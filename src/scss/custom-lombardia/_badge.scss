@@ -5,4 +5,8 @@
   &.bg-success {
     background-color: adjust-color($success, $lightness: -15%) !important;
   }
+  &.badge-outline-success {
+    color: adjust-color($success, $lightness: -15%);
+    border-color: adjust-color($success, $lightness: -15%);
+  }
 }

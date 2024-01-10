@@ -1,0 +1,9 @@
+.rating-list-wrapper {
+  .rating-list {
+    .rating-list-aside {
+      &.rating-list-warning {
+        color: adjust-color($warning, $lightness: -25%) !important;
+      }
+    }
+  }
+}

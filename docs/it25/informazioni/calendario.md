@@ -25,14 +25,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-single">Data di nascita</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Data di nascita</label>
           <input type="text" class="form-control" id="calendar-single" name="calendar-single"
-                 aria-label="scrivere data." placeholder="gg/mm/aa" />
+                 aria-label="scrivere data." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription"
         class="form-text {{include.display_info}}">Calendario selezione singola.</small>
@@ -41,14 +41,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-range">Periodo da.. a..</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Periodo da.. a..</label>
           <input type="text" class="form-control" id="calendar-range" name="calendar-range"
-                  aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aa" />
+                  aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription14" class="form-text">Calendario selezione periodo.</small>
       </div>
@@ -56,14 +56,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-multiple">Indicare giorni disponibilità</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Indicare giorni disponibilità</label>
           <input type="text" class="form-control" id="calendar-multiple" name="calendar-multiple"
-                 aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aa" />
+                 aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription15" class="form-text">Calendario selezione multipla.</small>
       </div>

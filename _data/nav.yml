@@ -43,6 +43,7 @@
     - title: Breadcrumbs
     - title: Header # TODO Rewiew mobile version
     - title: Megamenu # TODO Review mobile version
+    - title: Footer
     - title: Navscroll
     - title: Sidebar
     - title: Skiplinks
@@ -84,6 +85,7 @@
     - title: Timeline
     # - title: Toasts # TODO To be merged with our "Notifiche"?
     - title: Tooltip
+    - title: Video Player
 
 - title: Form
   pages:

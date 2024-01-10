@@ -18,10 +18,12 @@ Il marchio e la sua costituzione ed applicazione sono regolati dal Brandbook eme
 
 <div class="d-flex flex-row mb-3">
   <div class="p-2 me-5"> 
-  <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
+  <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png"
+    alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
   </div>
   <div class="p-2 primary-bg rounded-3">
-  <img style="height: 65px" src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
+  <img style="height: 65px" src="{{ site.baseurl }}/dist/assets/img/logo-rl-bianco.png"
+    alt="logo regione lombardia" class="it25-header-logo d-none d-md-block">
   </div>
 </div>
 

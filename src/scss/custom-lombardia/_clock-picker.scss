@@ -54,6 +54,7 @@ $font-family_1: 'Roboto', sans-serif;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  z-index: 10;
 }
 .g-flex {
   -webkit-box-flex: 1;

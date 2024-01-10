@@ -1,9 +1,12 @@
 .tooltip {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  max-width: 15rem;
+  border-radius: $border-radius-lg;
   .tooltip-arrow {
     display: block;
   }
   .tooltip-inner {
     background-color: $tooltip-bg;
+    text-align: left;
   }
 }

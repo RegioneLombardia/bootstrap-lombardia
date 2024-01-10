@@ -1,15 +1,19 @@
-$header-slim-links-padding: 10px;
-$header-slim-ul-border: 0;
-$header-center-small-height: 94px;
-$header-center-small-mob-height: 94px;
+// Buttons
+$btn-font-size-xs: 0.75rem;
+$btn-font-size-sm: 0.875rem;
+$btn-font-weight: 700;
+$btn-border-radius: 8px;
 
-//dialog
-//$modal-heading-color: $neutral-2-a7;
+// Breadcrumbs
+$breadcrumb-link-color: $it25-gray;
 
 //HEADER
 //Header slim
 $header-slim-height: 58px;
 $header-slim-bg-color: $primary;
+$header-slim-links-padding: 10px;
+$header-slim-ul-border: 0;
+
 $it25-top-bar-height-shrink: 20px;
 $it25-barra-ist-height-shrink: 50px;
 $it25-barra-utente-min-height: 28px;
@@ -18,22 +22,48 @@ $header-slim-theme-light-text-color: $primary;
 $header-slim-theme-light-button-hover-color: $primary-a8;
 
 //header-center
+$header-center-small-height: 94px;
+$header-center-small-mob-height: 94px;
 $header-center-bg-color: $white;
 $header-center-text-color: $gray-primary;
 $header-center-max-height: 94px;
 // Header Center theme light
 $header-center-theme-light-text-color: $primary;
 
+//cards
+$card-h5-size: 1.5rem;
+$card-h5-color: $it25-gray;
+$card-category-size: 1.25rem;
+$card-category-l-spacing: normal;
+$card-category-m-bottom: 0;
+
 //hero
 $hero-bg-color: $primary;
 $hero-primary-bg: rgba($primary, 0.85);
+
+// Carousel
+$crs-dots-simension: $v-gap * 1.5;
+
+// Inputs
+$input-label-color: $it25-gray;
+$input-color-placeholder: $neutral-1-a3;
 
 // Navigation
 //$navigation-toggle-button-icon-color: $primary;
 //$navigation-link-active-bar-color-desk: $primary;
 $navigation-hamburger-size: 30px;
 // navigation light theme (desktop)
-$it25-navigation-text-color: #505051;
+$it25-navigation-text-color: $it25-gray;
+
+// Megamenu
+$megamenu-heading-text-size: 1rem;
+
+// Pager
+$pager-font-weight: 600;
+$pager-font-color: $it25-gray;
+$pager-item-border-radius: 8px;
+$pager-item-current-border: 2px solid $primary;
+$pager-disabled-color: #d9d9d9;
 
 // Table
 $table-head-bg: $neutral-2;
@@ -52,6 +82,10 @@ $card-link-color: $primary;
 $tooltip-arrow-height: 0.5rem;
 $tooltip-bg: $gray-primary;
 $tooltip-arrow-color: $tooltip-bg;
+
+// form-input-variables
+$input-font-size: 1.125rem;
+$input-font-weight: 700;
 
 // ??
 $custom-range-thumb-width: 260px;

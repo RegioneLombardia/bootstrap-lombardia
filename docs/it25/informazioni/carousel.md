@@ -10,14 +10,14 @@ Il **Carosello** non normalizza automaticamente le dimensioni della diapositiva,
 All’interno del carosello è prevista una **hero image** di background, una card che può avere un titolo, un paragrafo e una call to action.  
 E’ possibile avere anche solo un titolo ed un paragrafo.
 
-<div class="bd-example">
-{% include html_docs/carousel/carousel_singolo.html %}
+<div class="bd-example" style="background: #e5e5e5">
+{% include html_docs/carousel/carousel.html %}
 </div>
 
-```html
+{% highlight html %}
 <div class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide" data-bs-carousel-splide>
   <div class="splide__track">
-    <ul class="splide__list it-carousel-all">
+    <ul class="splide__list">
       <li class="splide__slide">
         <div class="it-single-slide-wrapper">
           include html_docs/cards/card.html
@@ -27,42 +27,17 @@ E’ possibile avere anche solo un titolo ed un paragrafo.
     </ul>
   </div>
 </div>
-```
+{% endhighlight %}
 
 ### Carosello con hero
 
 Nella versione del carosello con hero image è possibile visualizzare un’immagine di background ed al suo interno una card realizzata con le specifiche descritte sopra.
 
 <div class="bd-example">
-{% include html_docs/carousel/carousel_hero_semplice.html  %}
-</div>
-
-```html
-<div
-  class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide"
-  data-bs-carousel-splide
-  style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
->
-  <div class="splide__track">
-    <ul class="splide__list it-carousel-all">
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper">
-          include html_docs/cards/card.html
-        </div>
-      </li>
-      . . .
-    </ul>
-  </div>
-</div>
-```
-
-#### Con frecce
-
-<div class="bd-example">
 {% include html_docs/carousel/carousel_hero_arrow.html  %}
 </div>
 
-```html
+{% highlight html %}
 <div
   class="it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide"
   data-bs-carousel-splide
@@ -79,15 +54,32 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
     </ul>
   </div>
 </div>
-```
+{% endhighlight %}
 
-#### Con blocco allineato a sinistra
 
+### Senza frecce
+
+Basta aggiungere la classe `arrow-no` sul *wrapper*.
 <div class="bd-example">
-{% include html_docs/carousel/carousel.html  %}
+{% include html_docs/carousel/carousel_hero_senza_frecce.html  %}
 </div>
 
-```html
+{% highlight html %}
+<div
+  class="it-carousel-wrapper it-carousel-landscape-abstract-arrow arrow-no it-big-img it25-hero splide"
+  data-bs-carousel-splide
+  style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
+>
+{% endhighlight %}
+
+
+### Con blocco allineato a sinistra
+
+<div class="bd-example">
+{% include html_docs/carousel/carousel_all_sx.html  %}
+</div>
+
+{% highlight html %}
 <div
   class="it-carousel-wrapper it-carousel-landscape-abstract it25-special splide"
   data-bs-carousel-splide
@@ -104,7 +96,7 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
     </ul>
   </div>
 </div>
-```
+{% endhighlight %}
 
 ---
 
@@ -113,11 +105,11 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 Nella versione galleria è possibile visualizzare una serie di contenuti che scorrono.  
 Generalmente questa componente viene utilizzata nel body di una pagina, non come hero content.
 
-<div class="bd-example ">
+<div class="bd-example">
 {% include html_docs/carousel/gallery.html %}
 </div>
 
-```html
+{% highlight html %}
 <div class="neutral-1-bg it-carousel-wrapper it-carousel-landscape-abstract-two-cols splide it25-gallery" data-bs-carousel-splide>
   <div class="it-header-block">
     <div class="it-header-block-title text-center">
@@ -149,4 +141,4 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
     </ul>
   </div>
 </div>
-```
+{% endhighlight %}

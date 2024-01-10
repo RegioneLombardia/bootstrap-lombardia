@@ -14,7 +14,7 @@ description: Una serie di classi di utilità per applicare colori a testi e sfon
 Il colore è uno degli strumenti principali per la trasmissione delle informazioni, ma non dimenticare mai di affiancare all'uso del colore altri mezzi più espliciti. 
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
-Bootstrap Italia eredita gli stessi meccanisimi per la gestione dei colori di Bootstrap {{ site.bootstrap_version }}, dove i colori del tema sono descritti attraverso una variabile Sass nominata `$theme-colors`.
+Bootstrap Italia eredita gli stessi meccanismi per la gestione dei colori di Bootstrap {{ site.bootstrap_version }}, dove i colori del tema sono descritti attraverso una variabile Sass nominata `$theme-colors`.
 
 La principale novità introdotta da Bootstrap Italia è una serie di varianti della tonalità primaria _primary_ basate sullo spazio colore [HSB](https://it.wikipedia.org/wiki/Hue_Saturation_Brightness) (coincidente con il modello HSV).
 
@@ -24,9 +24,9 @@ Puoi trovare maggiori informazioni sulla palette di colori a disposizione alla p
 
 ## Colore del testo
 
+{% comment %}Example name: Testo{% endcomment %}
 {% capture example %}
 {% for color in site.data.theme-colors %}
-
 <p class="p-3 mb-2 text-{{ color.name }}{% if color.name == "light" %} bg-dark{% endif %}">.text-{{ color.name }}</p>{% endfor %}
 
 <p class="p-3 mb-2 text-muted">.text-muted</p>
@@ -36,13 +36,14 @@ Puoi trovare maggiori informazioni sulla palette di colori a disposizione alla p
 
 ## Colore di sfondo
 
-Allo stesso modo di quanto avviene per il testo, le classi `bg-*` permettono di colorare lo sfondo di un elemento; le classi per gli sfondi **non hanno alcun impatto sulla proprità `color`**, per cui in alcuni casi sarà necessario affiancarle alle classi `.text-*`.
+Allo stesso modo di quanto avviene per il testo, le classi `bg-*` permettono di colorare lo sfondo di un elemento; le classi per gli sfondi **non hanno alcun impatto sulla proprietà `color`**, per cui in alcuni casi sarà necessario affiancarle alle classi `.text-*`.
 
-<div class="exclude-a11y-check">
+
+{% comment %}Example name: Sfondo{% endcomment %}
 {% capture example %}
 {% for color in site.data.theme-colors %}
 
-<div class="p-3 mb-2 bg-{{ color.name }} text-white">.bg-{{ color.name }}</div>{% endfor %}
+<div class="p-3 mb-2 bg-{{ color.name }} {% if color.name != 'success' and color.name != 'warning' %} text-white {% endif %}">.bg-{{ color.name }}</div>{% endfor %}
 
 <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
 {% endcapture %}{% include example.html content=example %}
