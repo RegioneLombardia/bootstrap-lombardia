@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Calendario · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -602,7 +600,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Calendario</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <p>La componente <strong>Calendario</strong> può assolvere diverse funzioni all’interno di un’interfaccia: nella sua forma più semplice di data picker è spesso impiegato all’interno di processi di inserimento dati, oppure all’interno di una form.<br />
 In altre forme più complesse può assolvere una funzione comunicativa e ricoprire una posizione di maggiore visibilità.</p>
 
@@ -673,13 +671,13 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-single">Data di nascita</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Data di nascita</label>
-          <input type="text" class="form-control" id="calendar-single" name="calendar-single" aria-label="scrivere data." placeholder="gg/mm/aa" />
+          <input type="text" class="form-control" id="calendar-single" name="calendar-single" aria-label="scrivere data." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription" class="form-text ">Calendario selezione singola.</small>
       </div>
@@ -687,13 +685,13 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-range">Periodo da.. a..</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Periodo da.. a..</label>
-          <input type="text" class="form-control" id="calendar-range" name="calendar-range" aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aa" />
+          <input type="text" class="form-control" id="calendar-range" name="calendar-range" aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription14" class="form-text">Calendario selezione periodo.</small>
       </div>
@@ -701,13 +699,13 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <label class="active" for="calendar-multiple">Indicare giorni disponibilità</label>
           <div class="input-group-prepend">
             <div class="input-group-text">
               <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
             </div>
           </div>
-          <label class="active" for="data_nascita">Indicare giorni disponibilità</label>
-          <input type="text" class="form-control" id="calendar-multiple" name="calendar-multiple" aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aa" />
+          <input type="text" class="form-control" id="calendar-multiple" name="calendar-multiple" aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aaaa" />
         </div>
         <small id="formGroupExampleInputWithHelpDescription15" class="form-text">Calendario selezione multipla.</small>
       </div>
@@ -720,14 +718,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span> <span class="na">style=</span><span class="s">"margin-bottom:0px"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"calendar-single"</span><span class="nt">&gt;</span>Data di nascita<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"data_nascita"</span><span class="nt">&gt;</span>Data di nascita<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"calendar-single"</span> <span class="na">name=</span><span class="s">"calendar-single"</span>
-                 <span class="na">aria-label=</span><span class="s">"scrivere data."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aa"</span> <span class="nt">/&gt;</span>
+                 <span class="na">aria-label=</span><span class="s">"scrivere data."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aaaa"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription"</span>
         <span class="na">class=</span><span class="s">"form-text "</span><span class="nt">&gt;</span>Calendario selezione singola.<span class="nt">&lt;/small&gt;</span>
@@ -736,14 +734,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span> <span class="na">style=</span><span class="s">"margin-bottom:0px"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"calendar-range"</span><span class="nt">&gt;</span>Periodo da.. a..<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"data_nascita"</span><span class="nt">&gt;</span>Periodo da.. a..<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"calendar-range"</span> <span class="na">name=</span><span class="s">"calendar-range"</span>
-                  <span class="na">aria-label=</span><span class="s">"indicare due date separate da 'al'."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aa"</span> <span class="nt">/&gt;</span>
+                  <span class="na">aria-label=</span><span class="s">"indicare due date separate da 'al'."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aaaa"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription14"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Calendario selezione periodo.<span class="nt">&lt;/small&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -751,14 +749,14 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span> <span class="na">style=</span><span class="s">"margin-bottom:0px"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"calendar-multiple"</span><span class="nt">&gt;</span>Indicare giorni disponibilità<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
           <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">for=</span><span class="s">"data_nascita"</span><span class="nt">&gt;</span>Indicare giorni disponibilità<span class="nt">&lt;/label&gt;</span>
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"calendar-multiple"</span> <span class="na">name=</span><span class="s">"calendar-multiple"</span>
-                 <span class="na">aria-label=</span><span class="s">"indicare più date separate da una virgola."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aa"</span> <span class="nt">/&gt;</span>
+                 <span class="na">aria-label=</span><span class="s">"indicare più date separate da una virgola."</span> <span class="na">placeholder=</span><span class="s">"gg/mm/aaaa"</span> <span class="nt">/&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"formGroupExampleInputWithHelpDescription15"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Calendario selezione multipla.<span class="nt">&lt;/small&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
@@ -805,7 +803,7 @@ Inoltre bisogna fare in modo che lo screen reader dia chiare indicazioni per la 
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -852,13 +850,15 @@ Inoltre bisogna fare in modo che lo screen reader dia chiare indicazioni per la 
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -875,7 +875,7 @@ Inoltre bisogna fare in modo che lo screen reader dia chiare indicazioni per la 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -928,6 +928,54 @@ Inoltre bisogna fare in modo che lo screen reader dia chiare indicazioni per la 
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

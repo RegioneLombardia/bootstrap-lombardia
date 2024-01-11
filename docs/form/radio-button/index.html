@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Radio Button · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -547,11 +551,10 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Radio Button</h1>
-          <p class="bd-lead">Elementi e stili per la creazione di radio button accessibili.</p>
+          <p class="lead">Elementi e stili per la creazione di radio button accessibili.</p>
           <p>Per utilizzare i radio button personalizzati è necessario inserire la classe <code class="language-plaintext highlighter-rouge">.form-check</code> nell’elemento padre.</p>
 
 <div class="bd-example">
-
 <div>
   <div class="form-check">
     <input name="gruppo1" type="radio" id="radio1" checked="" />
@@ -579,7 +582,6 @@
 <p>Per allineare orizzontalmente le <code class="language-plaintext highlighter-rouge">checkbox</code> o i <code class="language-plaintext highlighter-rouge">radio</code> basterà aggiungere la classe <code class="language-plaintext highlighter-rouge">.form-check-inline</code> a qualsiasi <code class="language-plaintext highlighter-rouge">.form-check</code>.</p>
 
 <div class="bd-example">
-
 <div>
     <div class="form-check form-check-inline">
       <input name="gruppo2" type="radio" id="radio4" checked="" />
@@ -604,10 +606,9 @@
 
 <h3 id="disabilitato">Disabilitato</h3>
 
-<p>Affinchè i campi <code class="language-plaintext highlighter-rouge">checkbox</code> e <code class="language-plaintext highlighter-rouge">radio</code> risultino disabilitati occorrerà aggiungere l’attributo <code class="language-plaintext highlighter-rouge">disabled</code> all’input e la classe <code class="language-plaintext highlighter-rouge">.disabled</code> alla label relativa.</p>
+<p>Affinché i campi <code class="language-plaintext highlighter-rouge">checkbox</code> e <code class="language-plaintext highlighter-rouge">radio</code> risultino disabilitati occorrerà aggiungere l’attributo <code class="language-plaintext highlighter-rouge">disabled</code> all’input e la classe <code class="language-plaintext highlighter-rouge">.disabled</code> alla label relativa.</p>
 
 <div class="bd-example">
-
 <div>
   <div class="form-check">
     <input name="gruppo3" type="radio" class="with-gap" id="radio7" checked="" disabled="" />
@@ -635,7 +636,6 @@
 <p>Per poter raggruppare gli elementi <code class="language-plaintext highlighter-rouge">checkbox</code> e <code class="language-plaintext highlighter-rouge">radio</code> occorrerà aggiungere al <code class="language-plaintext highlighter-rouge">.form-check</code> la classe <code class="language-plaintext highlighter-rouge">.form-check-group</code>. L’elemento grafico di spunta verrà allineato alla destra del contenuto testuale.</p>
 
 <div class="bd-example">
-
 <div>
   <div class="row">
     <div class="col-5">
@@ -716,7 +716,7 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -763,13 +763,15 @@
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -786,7 +788,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -839,6 +841,54 @@
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

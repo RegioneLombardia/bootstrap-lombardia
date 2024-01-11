@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Paginazione · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -563,7 +567,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Paginazione</h1>
-          <p class="bd-lead">Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine.</p>
+          <p class="lead">Documentazione ed esempi del componente di paginazione utile per indicare una serie di contenuti correlati tra più pagine.</p>
           <h2 id="panoramica">Panoramica</h2>
 
 <p>I collegamenti della paginazione sono contenuti per praticità in un elemento <code class="language-plaintext highlighter-rouge">&lt;nav class="pagination-wrapper"&gt;</code> per dare la possibilità agli screenreader, e altre tecnologie assistive, di identificarli come una sezione di navigazione.</p>
@@ -575,7 +579,6 @@
 </div>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione della pagina">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -618,7 +621,7 @@
 
 <h2 id="stato-disabilitato-e-attivo">Stato disabilitato e attivo</h2>
 
-<p>I link della paginazione assumonono uno stato disabilitato usando la classe <code class="language-plaintext highlighter-rouge">.disabled</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>.
+<p>I link della paginazione assumono uno stato disabilitato usando la classe <code class="language-plaintext highlighter-rouge">.disabled</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code>.
 Per indicare la pagina attiva corrente utilizzare l’attributo <code class="language-plaintext highlighter-rouge">aria-current="page"</code> nel tag <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>, l’aspetto grafico cambierà di conseguenza.</p>
 
 <div class="bd-callout bd-callout-warning">
@@ -632,7 +635,6 @@ Per indicare la pagina attiva corrente utilizzare l’attributo <code class="lan
 </div>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di paginazione">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -695,7 +697,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Per centrare la navigazione aggiungere la classe <code class="language-plaintext highlighter-rouge">justify-content-center</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper justify-content-center" aria-label="Navigazione centrata">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -749,7 +750,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Per allineare a destra la navigazione aggiungere la classe <code class="language-plaintext highlighter-rouge">justify-content-end</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;.</code></p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper justify-content-end" aria-label="Navigazione allineata a destra">
   <ul class="pagination">
     <li class="page-item disabled">
@@ -803,7 +803,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Con i dovuti accorgimenti sopraelencati e inserendo alcune classi delle <a href="/bootstrap-lombardia/docs/organizzare-gli-spazi/display/">utilità display</a> si può trasformare la paginazione in base alla risoluzione del dispositivo in uso dell’utente.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione responsive della pagina">
   <ul class="pagination justify-content-center">
     <li class="page-item">
@@ -881,7 +880,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Quando è presente un grande numero di pagine è consigliabile visualizzare unicamente le pagine più prossime a quella corrente, inserendo delle ellissi (…) fra queste e la prima ed ultima pagina. Non essendo collegate a nessuna pagina le ellissi vanno inserite in un tag <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con ellissi/more">
   <ul class="pagination">
     <li class="page-item">
@@ -955,7 +953,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>La funzionalità di changer permette di scegliere da un dropdown la quantità di record da visualizzare in una pagina.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con page changer">
   <ul class="pagination">
     <li class="page-item">
@@ -1055,7 +1052,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>Con l’elemento aggiuntivo “Jump to page” l’utente può specificare un numero di pagina concreto.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con jump to page">
   <ul class="pagination">
     <li class="page-item">
@@ -1129,7 +1125,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 <p>La paginazione in versione “Simple mode” è ottimizzata per i dispositivi mobile. Può essere utilizzata anche su tablet e desktop quando il numero di pagine è ridotto.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione simple mode">
   <ul class="pagination" aria-label="Pagina 1 di 5">
     <li class="page-item disabled">
@@ -1182,7 +1177,6 @@ Sui dispositivi mobile la paginazione è centrata per default.</p>
 Notare come sia stato inserito il testo “Pagina” in un elemento <code class="language-plaintext highlighter-rouge">&lt;span class="visually-hidden"&gt;</code> invisibile su schermo ma enunciabile dagli screen reader per facilitare la comprensione agli utenti che utilizzano tecnologie assistive.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper" aria-label="Esempio di navigazione con link testuali">
   <ul class="pagination">
     <li class="page-item">
@@ -1233,10 +1227,9 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
 
 <h3 id="total-number">Total number</h3>
 
-<p>Aggiungendo al classe <code class="language-plaintext highlighter-rouge">.pagination-total</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> che contiene la paginazione è possibile indicare il numero totale di elementi o il il numero totale di elementi per pagina all’interno di un tag <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> collocato priam della chiusura del <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
+<p>Aggiungendo la classe <code class="language-plaintext highlighter-rouge">.pagination-total</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> che contiene la paginazione è possibile indicare il numero totale di elementi o il numero totale di elementi per pagina all’interno di un tag <code class="language-plaintext highlighter-rouge">&lt;p&gt;</code> collocato priam della chiusura del <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper pagination-total" aria-label="Esempio di navigazione con total number">
   <ul class="pagination">
     <li class="page-item">
@@ -1300,7 +1293,6 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
 <div class="bd-example">
-
 <nav class="pagination-wrapper pagination-total" aria-label="Esempio di navigazione con total number">
   <ul class="pagination">
     <li class="page-item">
@@ -1369,7 +1361,7 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1416,13 +1408,15 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1439,7 +1433,7 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1492,6 +1486,54 @@ Notare come sia stato inserito il testo “Pagina” in un elemento <code class=
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

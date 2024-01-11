@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Carousel · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -604,6 +602,8 @@
     <h3>Carousel</h3>
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#carosello-con-hero">Carosello con hero</a></li>
+<li class="toc-entry toc-h3"><a href="#senza-frecce">Senza frecce</a></li>
+<li class="toc-entry toc-h3"><a href="#con-blocco-allineato-a-sinistra">Con blocco allineato a sinistra</a></li>
 <li class="toc-entry toc-h3"><a href="#galleria">Galleria</a></li>
 </ul>
   </div>
@@ -613,20 +613,22 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Carousel</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <p>Il <strong>Carosello</strong> non normalizza automaticamente le dimensioni della diapositiva, pertanto è necessario un ridimensionamento.<br />
 All’interno del carosello è prevista una <strong>hero image</strong> di background, una card che può avere un titolo, un paragrafo e una call to action.<br />
 E’ possibile avere anche solo un titolo ed un paragrafo.</p>
 
-<div class="bd-example">
-<div class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide" data-bs-carousel-splide="">
+<div class="bd-example" style="background: #e5e5e5">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide" data-bs-carousel-splide="">
   <div class="splide__track">
-    <ul class="splide__list it-carousel-all">
+    <ul class="splide__list">
       <li class="splide__slide">
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -640,7 +642,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -654,7 +658,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -668,7 +674,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -682,7 +690,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -696,7 +706,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -712,9 +724,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
 
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide"</span> <span class="na">data-bs-carousel-splide</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide"</span> <span class="na">data-bs-carousel-splide</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"splide__track"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"splide__list it-carousel-all"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"splide__list"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"splide__slide"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-single-slide-wrapper"</span><span class="nt">&gt;</span>
           include html_docs/cards/card.html
@@ -723,126 +735,11 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
       . . .
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h3 id="carosello-con-hero">Carosello con hero</h3>
 
 <p>Nella versione del carosello con hero image è possibile visualizzare un’immagine di background ed al suo interno una card realizzata con le specifiche descritte sopra.</p>
-
-<div class="bd-example">
-<div class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide" data-bs-carousel-splide="" style="background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover">
-  <div class="splide__track">
-    <ul class="splide__list it-carousel-all">
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-      <li class="splide__slide">
-        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
-  <div class="card card-bg">
-    <div class="card-body">
-      <a class="category" href="#">Categoria</a>
-      <p class="card-title h5">Dolor sit amet</p>
-      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
-    </div>
-  </div>
-</div>
-</div>
-      </li>
-    </ul>
-  </div>
-</div>
-
-</div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
-  <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide"</span>
-  <span class="na">data-bs-carousel-splide</span>
-  <span class="na">style=</span><span class="s">"background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover"</span>
-<span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"splide__track"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"splide__list it-carousel-all"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"splide__slide"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-single-slide-wrapper"</span><span class="nt">&gt;</span>
-          include html_docs/cards/card.html
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/li&gt;</span>
-      . . .
-    <span class="nt">&lt;/ul&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
-
-<h4 id="con-frecce">Con frecce</h4>
 
 <div class="bd-example">
 <div class="it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide" data-bs-carousel-splide="" style="background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover">
@@ -852,7 +749,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -866,7 +765,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -880,7 +781,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -894,7 +797,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -908,7 +813,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -922,7 +829,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -938,7 +847,7 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
 
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span>
   <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide"</span>
   <span class="na">data-bs-carousel-splide</span>
   <span class="na">style=</span><span class="s">"background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover"</span>
@@ -953,20 +862,22 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
       . . .
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h4 id="con-blocco-allineato-a-sinistra">Con blocco allineato a sinistra</h4>
+<h3 id="senza-frecce">Senza frecce</h3>
 
+<p>Basta aggiungere la classe <code class="language-plaintext highlighter-rouge">arrow-no</code> sul <em>wrapper</em>.</p>
 <div class="bd-example">
-<div class="it-carousel-wrapper it-carousel-landscape-abstract it25-special splide" data-bs-carousel-splide="" style="background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-arrow arrow-no it-big-img it25-hero splide" data-bs-carousel-splide="" style="background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover">
   <div class="splide__track">
-    <ul class="splide__list it-carousel-all">
+    <ul class="splide__list">
       <li class="splide__slide">
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -980,7 +891,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -994,7 +907,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -1008,7 +923,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -1022,7 +939,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -1036,7 +955,9 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
         <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -1052,7 +973,121 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
 
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span>
+  <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract-arrow arrow-no it-big-img it25-hero splide"</span>
+  <span class="na">data-bs-carousel-splide</span>
+  <span class="na">style=</span><span class="s">"background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover"</span>
+<span class="nt">&gt;</span></code></pre></figure>
+
+<h3 id="con-blocco-allineato-a-sinistra">Con blocco allineato a sinistra</h3>
+
+<div class="bd-example">
+<div class="it-carousel-wrapper it-carousel-landscape-abstract it25-special splide" data-bs-carousel-splide="" style="background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover">
+  <div class="splide__track">
+    <ul class="splide__list it-carousel-all">
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+      <li class="splide__slide">
+        <div class="it-single-slide-wrapper"><div class="card-wrapper card-space">
+  <div class="card card-bg">
+    <div class="card-body">
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
+      <p class="card-title h5">Dolor sit amet</p>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <button type="button" class="btn btn-primary btn-xs">Scopri di più</button>
+    </div>
+  </div>
+</div>
+</div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span>
   <span class="na">class=</span><span class="s">"it-carousel-wrapper it-carousel-landscape-abstract it25-special splide"</span>
   <span class="na">data-bs-carousel-splide</span>
   <span class="na">style=</span><span class="s">"background-image: url('/bootstrap-lombardia/dist/assets/img/bike-sharing.jpg'); background-size: cover"</span>
@@ -1067,8 +1102,7 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
       . . .
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <hr />
 
@@ -1077,7 +1111,7 @@ E’ possibile avere anche solo un titolo ed un paragrafo.</p>
 <p>Nella versione galleria è possibile visualizzare una serie di contenuti che scorrono.<br />
 Generalmente questa componente viene utilizzata nel body di una pagina, non come hero content.</p>
 
-<div class="bd-example ">
+<div class="bd-example">
 <div class="neutral-1-bg it-carousel-wrapper it-carousel-landscape-abstract-two-cols splide it25-gallery" data-bs-carousel-splide="">
   <div class="it-header-block">
     <div class="it-header-block-title text-center">
@@ -1206,7 +1240,7 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
 
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"neutral-1-bg it-carousel-wrapper it-carousel-landscape-abstract-two-cols splide it25-gallery"</span> <span class="na">data-bs-carousel-splide</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"neutral-1-bg it-carousel-wrapper it-carousel-landscape-abstract-two-cols splide it25-gallery"</span> <span class="na">data-bs-carousel-splide</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-block"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-block-title text-center"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"h2 white-color border-0"</span><span class="nt">&gt;</span>Galleria<span class="nt">&lt;/span&gt;</span>
@@ -1236,15 +1270,15 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
       . . .
     <span class="nt">&lt;/ul&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-</code></pre></div></div>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
 
         </main>
       </div>
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1291,13 +1325,15 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1314,7 +1350,7 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1367,6 +1403,54 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

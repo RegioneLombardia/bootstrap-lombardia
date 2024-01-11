@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Wizard · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -614,10 +612,24 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Wizard</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <p>La componente <strong>Wizard</strong> è utile per demarcare gli step all’interno di un processo.</p>
 
 <p>Non esiste un modo univoco di disegnare questa componente. Il suo utilizzo e la sua applicazione variano a seconda del servizio e il suo design spesso è il frutto di una valutazione preliminare sulla natura del servizio.</p>
+
+<div class="bd-callout bd-callout-danger">
+<p>Breaking feature dalla versione <strong>2.1.0</strong></p>
+
+<p>Il componente è stato riscritto per ereditare pienamente il funzionamento del componente <strong><a href="/bootstrap-lombardia/docs/componenti/steppers">stepper</a></strong>.</p>
+
+<ul>
+  <li>per il <strong>wizard semplice</strong> vanno ora specificate le classi:<br />
+<code class="language-plaintext highlighter-rouge">it25-wizard</code> e <code class="language-plaintext highlighter-rouge">it25-wizard-pin</code> (invece del solo <code class="language-plaintext highlighter-rouge">it25-wizard</code>)</li>
+  <li>per il <strong>wizard dettagliato</strong> va specificata la classe:<br />
+<code class="language-plaintext highlighter-rouge">it25-wizard</code> (invece di <code class="language-plaintext highlighter-rouge">it25-wizard-detail</code>).</li>
+</ul>
+
+</div>
 
 <h3 id="wizard-semplice">Wizard semplice</h3>
 
@@ -629,63 +641,52 @@ In genere il wizard si trova tra il titolo e la parte di contenuto della compone
 <div class="bd-example">
 
 <div class="steppers">
-  <div class="it25-wizard">
+  <div class="steppers-header it25-wizard it25-wizard-pin">
     <ul>
-      <li class="it-pin-wrapper confirmed">
-        <span class="visually-hidden">Scelta periodo</span>
+      <li class="confirmed" data-bs-toggle="tooltip" data-bs-placement="top" title="Pagamento">
+        <svg class="icon icon-lg"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
         <span class="visually-hidden">Confermato</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Periodo">
-          <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
-        </span>
       </li>
-      <li class="it-pin-wrapper active">
-        <span class="visually-hidden">Tipologia alloggio</span>
+      <li class="error" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Optionals">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-list"></use></svg>
         <span class="visually-hidden">Attivo</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Tipologia">
-          <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
-        </span>
       </li>
-      <li class="it-pin-wrapper error">
-        <span class="visually-hidden">Optionals</span>
-        <span class="visually-hidden">Errore</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Optionals">
-          <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-list"></use></svg>
-        </span>
+      <li class="active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tipologia alloggio">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
+        <span class="visually-hidden">Attivo</span>
       </li>
-      <li class="it-pin-wrapper">
-        <span class="visually-hidden">Pagamento</span>
-        <span class="pin-icon" data-bs-toggle="tooltip" data-placement="top" title="Pagamento">
-          <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-card"></use></svg>
-        </span>
+      <li data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pagamento">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-card"></use></svg>
       </li>
     </ul>
+    <span class="steppers-index" aria-hidden="true">3/6</span>
   </div>
-
-<div class="it25-wizard">
-  <ul>
-    <li class="it-pin-wrapper confirmed">
-      <span class="visually-hidden">Scelta periodo</span>
-      <span class="visually-hidden">Confermato</span>
-      <span class="pin-icon text-primary" data-bs-toggle="tooltip" data-placement="top" title="Periodo"> 1 </span>
-    </li>
-    <li class="it-pin-wrapper active">
-      <span class="visually-hidden">Tipologia alloggio</span>
-      <span class="visually-hidden">Attivo</span>
-      <span class="pin-icon text-white" data-bs-toggle="tooltip" data-placement="top" title="Tipologia"> 2 </span>
-    </li>
-    <li class="it-pin-wrapper error">
-      <span class="visually-hidden">Optionals</span>
-      <span class="visually-hidden">Errore</span>
-      <span class="pin-icon text-white" data-bs-toggle="tooltip" data-placement="top" title="Optionals"> 3 </span>
-    </li>
-    <li class="it-pin-wrapper">
-      <span class="visually-hidden">Pagamento</span>
-      <span class="pin-icon text-primary" data-bs-toggle="tooltip" data-placement="top" title="Pagamento"> 4 </span>
-    </li>
-  </ul>
 </div>
 
-</div> <!-- end div class="steppers" -->
+
+<div class="steppers">
+  <div class="steppers-header it25-wizard it25-wizard-pin">
+    <ul>
+      <li class="confirmed" data-bs-toggle="tooltip" data-bs-placement="top" title="Pagamento">
+        1
+        <span class="visually-hidden">Confermato</span>
+      </li>
+      <li class="error" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Optionals">
+        2
+        <span class="visually-hidden">Attivo</span>
+      </li>
+      <li class="active" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tipologia alloggio">
+        3
+        <span class="visually-hidden">Attivo</span>
+      </li>
+      <li class="text-center" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Pagamento">
+        4
+      </li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true">3/6</span>
+  </div>
+</div>
+
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     $(function () {
@@ -695,63 +696,52 @@ In genere il wizard si trova tra il titolo e la parte di contenuto della compone
 </script>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-wizard"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers-header it25-wizard it25-wizard-pin"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;ul&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper confirmed"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Scelta periodo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"confirmed"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-lg"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Periodo"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper active"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Tipologia alloggio<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"error"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span>  <span class="na">title=</span><span class="s">"Optionals"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-list"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
         <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tipologia"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper error"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Optionals<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Optionals"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-list"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span>  <span class="na">title=</span><span class="s">"Tipologia alloggio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
-      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagamento<span class="nt">&lt;/span&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-card"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-card"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
       <span class="nt">&lt;/li&gt;</span>
     <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"steppers-index"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>3/6<span class="nt">&lt;/span&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-wizard"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper confirmed"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Scelta periodo<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Periodo"</span><span class="nt">&gt;</span> 1 <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper active"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Tipologia alloggio<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon text-white"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Tipologia"</span><span class="nt">&gt;</span> 2 <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper error"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Optionals<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon text-white"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Optionals"</span><span class="nt">&gt;</span> 3 <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Pagamento<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span>  <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span> 4 <span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
-<span class="nt">&lt;/div&gt;</span> <span class="c">&lt;!-- end div class="steppers" --&gt;</span>
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers-header it25-wizard it25-wizard-pin"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"confirmed"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
+        1
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"error"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span>  <span class="na">title=</span><span class="s">"Optionals"</span><span class="nt">&gt;</span>
+        2
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span>  <span class="na">title=</span><span class="s">"Tipologia alloggio"</span><span class="nt">&gt;</span>
+        3
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"text-center"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">"Pagamento"</span><span class="nt">&gt;</span>
+        4
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"steppers-index"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>3/6<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
 <span class="nt">&lt;script&gt;</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="nx">$</span><span class="p">(</span><span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
@@ -768,79 +758,52 @@ In genere il wizard si trova tra il titolo e la parte di contenuto della compone
 Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi e contenuti testuali e quindi di maggiori interazioni per step.</p>
 
 <div class="bd-example">
-
 <div class="steppers">
-<div class="it25-wizard-detail">
-  <ul>
-    <li class="it-pin-wrapper confirmed">
-      <span class="visually-hidden">Confermato</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
-        <span class="it-pin-title">Scelta periodo</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper active">
-      <span class="visually-hidden">Attivo</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
-        <span class="it-pin-title">Tipologia alloggio</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper error">
-      <span class="visually-hidden">Errore</span>
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-list"></use></svg>
-        <span class="it-pin-title">Optionals</span>
-      </div>
-    </li>
-    <li class="it-pin-wrapper off">
-      <div class="pin-icon text-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere.">
-        <svg class="icon icon-sm me-2"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-card"></use></svg>
-        <span class="it-pin-title">Pagamento</span>
-      </div>
-    </li>
-  </ul>
+  <div class="steppers-header it25-wizard">
+    <ul>
+      <li class="confirmed" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"></use></svg>
+        Scelta periodo
+        <span class="visually-hidden">Confermato</span>
+      </li>
+      <li class="active" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
+        Tipologia alloggio
+        <span class="visually-hidden">Attivo</span>
+      </li>
+      <li data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere.">
+        <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-list"></use></svg>
+        Optionals
+      </li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true">2/6</span>
+  </div>
 </div>
 
-</div>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it25-wizard-detail"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;ul&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper confirmed"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
-        <span class="na">title=</span><span class="s">"Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"it-pin-title"</span><span class="nt">&gt;</span>Scelta periodo<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper active"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
-      <span class="na">title=</span><span class="s">"Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"it-pin-title"</span><span class="nt">&gt;</span>Tipologia alloggio<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper error"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Errore<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
-      <span class="na">title=</span><span class="s">"Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-list"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"it-pin-title"</span><span class="nt">&gt;</span>Optionals<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"it-pin-wrapper off"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"pin-icon text-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
-      <span class="na">title=</span><span class="s">"Descrizione dello step, spiegare&lt;br /&gt; per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm me-2"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-card"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
-        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"it-pin-title"</span><span class="nt">&gt;</span>Pagamento<span class="nt">&lt;/span&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/li&gt;</span>
-  <span class="nt">&lt;/ul&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
-
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"steppers-header it25-wizard"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"confirmed"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
+        <span class="na">title=</span><span class="s">"&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-calendar"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        Scelta periodo
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Confermato<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
+        <span class="na">title=</span><span class="s">"&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-search"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        Tipologia alloggio
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">data-bs-html=</span><span class="s">"true"</span>
+        <span class="na">title=</span><span class="s">"&lt;strong&gt;Descrizione dello step&lt;/strong&gt;:&lt;br/&gt;spiegare per esteso le operazioni da compiere."</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-list"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        Optionals
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"steppers-index"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>2/6<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h3 id="abilitazione">Abilitazione</h3>
@@ -871,7 +834,7 @@ Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi 
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -918,13 +881,15 @@ Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi 
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -941,7 +906,7 @@ Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -994,6 +959,54 @@ Questo si traduce in una versione di Wizard più dettagliata, ricca di elementi 
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

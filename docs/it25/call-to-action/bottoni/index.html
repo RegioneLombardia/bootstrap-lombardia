@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Bottoni · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -618,7 +616,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Bottoni</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <style>
 .it25-btn-example .btn {
   margin: 4px 8px;
@@ -949,7 +947,7 @@ Nell’esempio:</p>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-start"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-white"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon zicon-white"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-check-circle"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
   <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-start"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/span&gt;</span>
@@ -970,14 +968,14 @@ Nell’esempio:</p>
     <div class="row my-3">
       <div class="col">
        <button type="button" class="btn btn-primary btn-xs btn-me">Lorem ipsum</button>
-        <button type="button" class="btn btn-outline-primary btn-xs btn-me">Lorem ipsum</button>
+        <button type="button" class="btn btn-outline-primary btn-xs">Lorem ipsum</button>
       </div>
     </div>
   </div>
 </div>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-xs btn-me"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-xs btn-me"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-xs"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <h3 id="text-buttons">Text buttons</h3>
 
@@ -985,17 +983,32 @@ Nell’esempio:</p>
 Queste vengono applicate al menu orizzontale o in caso di hyperlink.</p>
 
 <div class="bd-example">
-<a class="btn btn-link" href="#" role="button">Lorem ipsum</a>
-<a class="btn btn-link" href="#" role="button">Lorem ipsum</a>
-<a class="btn btn-link active" href="#" role="button">Lorem ipsum</a>
-<a class="btn btn-link active" href="#" role="button">Lorem ipsum</a>
-
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <a class="btn btn-lg btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-sm btn-link" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-xs btn-link" href="#" role="button">Lorem ipsum</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <a class="btn btn-lg btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-sm btn-link active" href="#" role="button">Lorem ipsum</a>
+        <a class="btn btn-xs btn-link active" href="#" role="button">Lorem ipsum</a>
+      </div>
+    </div>
+  </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-xs btn-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span></code></pre></figure>
+
+<p>Nota: la <strong>sottolineatura</strong> è legata alla classe <code class="language-plaintext highlighter-rouge">active</code>.</p>
 
 <h3 id="tags">Tags</h3>
 
@@ -1006,15 +1019,15 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.</p>
   <div class="container-fluid">
     <div class="row my-3">
       <div class="col">
-       <button type="button" class="btn btn-primary btn-tag" style="min-width:50px">Tag</button>
-        <button type="button" class="btn btn-outline-primary btn-tag" style="min-width:50px">Tag</button>
+       <button type="button" class="btn btn-primary btn-tag btn-me">Tag button</button>
+        <button type="button" class="btn btn-outline-primary btn-tag">Tag button</button>
       </div>
     </div>
   </div>
 </div>
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-tag"</span> <span class="na">style=</span><span class="s">"min-width:50px"</span><span class="nt">&gt;</span>Tag<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-tag"</span> <span class="na">style=</span><span class="s">"min-width:50px"</span><span class="nt">&gt;</span>Tag<span class="nt">&lt;/button&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-tag btn-me"</span><span class="nt">&gt;</span>Tag button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-outline-primary btn-tag"</span><span class="nt">&gt;</span>Tag button<span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 
         </main>
@@ -1022,7 +1035,7 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.</p>
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1069,13 +1082,15 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.</p>
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1092,7 +1107,7 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.</p>
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1145,6 +1160,54 @@ Deve essere adottato per la ricerca di informazioni basata su parole chiave.</p>
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

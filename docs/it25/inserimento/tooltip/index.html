@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Tooltip · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -613,7 +611,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Tooltip</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <p>Il <strong>Tooltip</strong> è una componente che viene richiamata al passaggio del mouse (hover) per fornire informazioni su un determinato elemento o processo.</p>
 
 <p>I tooltip - così come i <em>popover (vedere sotto)</em> - possono essere inseriti all’interno di modali secondo necessità.<br />
@@ -623,13 +621,18 @@ Quando le modali vengono chiuse, anche le descrizioni comandi e i popover all’
 Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un tooltip con <strong>area più ampia</strong> in modo da poter fornire tutte le informazioni necessarie.</p>
 
 <div class="bd-example">
-<p>Testo Base <sup><svg class="icon sup-sub" data-bs-toggle="tooltip" data-bs-placement="top" title="Breve testo esplicativo"><use href="/dist/svg/sprites.svg#it-help-circle"></use></svg></sup></p>
+<p>Testo Base
+  <sup>
+    <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Breve testo esplicativo">
+      <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+    </svg>
+  </sup>
+</p>
 </div>
-
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;p&gt;</span>Testo Base
   <span class="nt">&lt;sup&gt;</span>
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon sup-sub"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Breve testo esplicativo"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/dist/svg/sprites.svg#it-help-circle"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs icon-info align-top"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Breve testo esplicativo"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"</span><span class="nt">&gt;&lt;/use&gt;</span>
     <span class="nt">&lt;/svg&gt;</span>
   <span class="nt">&lt;/sup&gt;</span>
 <span class="nt">&lt;/p&gt;</span></code></pre></figure>
@@ -638,64 +641,63 @@ Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un to
 
 <h3 id="posizionamento">Posizionamento</h3>
 
+<p>Per il posizionamento è sufficiente impostare l’attributo <code class="language-plaintext highlighter-rouge">data-bs-placement</code> sul tag <code class="language-plaintext highlighter-rouge">svg</code>.</p>
+
 <div class="bd-example">
-<div class="container">
-  <div class="row">
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Breve testo esplicativo">Tooltip in alto
-      </button>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4">
+        <p>Tooltip in alto
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit amet">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>Tooltip in basso
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Lorem ipsum dolor sit amet">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-12 col-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="right" title="Breve testo esplicativo">Tooltip a sinistra
-      </button>
-    </div>
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">Tooltip a sinistra
-      </button>
-    </div>
-  </div>
-  <div class="row mt-4">
-    <div class="col-12 col-md-4 offset-md-4">
-      <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Breve testo esplicativo">Tooltip in basso
-      </button>
+    <div class="row mt-4">
+      <div class="col-12 col-md-4">
+        <p>Tooltip a destra
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="right" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
+      <div class="col-12 col-md-4">
+        <p>Tooltip a sinistra
+          <sup>
+            <svg class="icon icon-xs icon-info align-top" data-bs-toggle="tooltip" data-bs-placement="left" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </p>
+      </div>
     </div>
   </div>
 </div>
-</div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-4 offset-md-4"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span>
-              <span class="na">title=</span><span class="s">"Breve testo esplicativo"</span><span class="nt">&gt;</span>Tooltip in alto
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-4"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"right"</span>
-              <span class="na">title=</span><span class="s">"Breve testo esplicativo"</span><span class="nt">&gt;</span>Tooltip a sinistra
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-4 offset-md-4"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"left"</span>
-              <span class="na">title=</span><span class="s">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue."</span><span class="nt">&gt;</span>Tooltip a sinistra
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row mt-4"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-md-4 offset-md-4"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span>
-              <span class="na">title=</span><span class="s">"Breve testo esplicativo"</span><span class="nt">&gt;</span>Tooltip in basso
-      <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-  <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs icon-info align-top"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">". . ."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs icon-info align-top"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"bottom"</span> <span class="na">title=</span><span class="s">". . ."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs icon-info align-top"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"left"</span> <span class="na">title=</span><span class="s">". . ."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-xs icon-info align-top"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-bs-placement=</span><span class="s">"right"</span> <span class="na">title=</span><span class="s">". . ."</span><span class="nt">&gt;</span></code></pre></figure>
+
+<hr />
 
 <h3 id="abilitazione">Abilitazione</h3>
 
-<p>Per abilitare il funzionamento dell’esempio è stato inserito nella pagina il seguente codice:</p>
+<p>Per abilitare il funzionamento dei tooltip, nella pagina deve essere inserito il seguente codice:</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;script&gt;</span>
   <span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">DOMContentLoaded</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> 
@@ -726,7 +728,7 @@ Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un to
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -773,13 +775,15 @@ Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un to
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -796,7 +800,7 @@ Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un to
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -849,6 +853,54 @@ Per la spiegazione di <strong>processi</strong> si consiglia di utilizzare un to
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

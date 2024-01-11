@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Bordi · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -548,13 +552,14 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Bordi</h1>
-          <p class="bd-lead">Modifica lo stile di bordi e il loro arrotondamento.</p>
+          <p class="lead">Modifica lo stile di bordi e il loro arrotondamento.</p>
           <p>Aggiungi o rimuovi il bordo a un elemento. Puoi scegliere fra un bordo completo oppure un lato alla volta, secondo una
 logica aggiuntiva o sottrattiva.</p>
 
 <h3 id="aggiuntivo">Aggiuntivo</h3>
 
 <div class="bd-example-border-utils">
+
 <div class="bd-example">
 <span class="border"></span>
 <span class="border-top"></span>
@@ -573,6 +578,7 @@ logica aggiuntiva o sottrattiva.</p>
 <h3 id="sottrattivo">Sottrattivo</h3>
 
 <div class="bd-example-border-utils bd-example-border-utils-0">
+
 <div class="bd-example">
 <span class="border-0"></span>
 <span class="border-top-0"></span>
@@ -593,6 +599,7 @@ logica aggiuntiva o sottrattiva.</p>
 <p>Cambia il colore del bordo scegliendo dalla palette del tema utilizzato.</p>
 
 <div class="bd-example-border-utils">
+
 <div class="bd-example">
 
 <span class="border border-primary"></span>
@@ -615,7 +622,7 @@ logica aggiuntiva o sottrattiva.</p>
 
 <p>Classi per arrotondare facilmente gli angoli di un elemento.</p>
 
-<div class="bd-example bd-example-images">
+<div class="bd-example">
   <img src="https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine" class="rounded" alt="Esempio di immagine arrotondata" />
   <img src="https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine" class="rounded-top" alt="Esempio di immagine arrotondata in alto" />
   <img src="https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine" class="rounded-end" alt="Esempio di immagine arrotondata a destra" />
@@ -625,23 +632,21 @@ logica aggiuntiva o sottrattiva.</p>
   <img src="https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine" class="rounded-0" alt="Esempio di immagine non arrotondata (sovrascrive l'eventuale arrotondamento applicato precedentemente)" />
   <img src="https://via.placeholder.com/150x75/ebebeb/808080/?text=Immagine" class="rounded-pill" alt="Esempio di immagine arrotondata a pillola" />
 </div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-top"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-end"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-bottom"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-start"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-circle"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-0"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span> <span class="na">class=</span><span class="s">"rounded-pill"</span> <span class="nt">/&gt;</span>
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-top"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata in alto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-end"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata a destra"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-bottom"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata in basso"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-start"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata a sinistra"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-circle"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata a cerchio"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/75x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-0"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine non arrotondata (sovrascrive l'eventuale arrotondamento applicato precedentemente)"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"https://via.placeholder.com/150x75/ebebeb/808080/?text=Immagine"</span> <span class="na">class=</span><span class="s">"rounded-pill"</span> <span class="na">alt=</span><span class="s">"Esempio di immagine arrotondata a pillola"</span><span class="nt">&gt;</span></code></pre></figure>
 
         </main>
       </div>
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -688,13 +693,15 @@ logica aggiuntiva o sottrattiva.</p>
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -711,7 +718,7 @@ logica aggiuntiva o sottrattiva.</p>
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -764,6 +771,54 @@ logica aggiuntiva o sottrattiva.</p>
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

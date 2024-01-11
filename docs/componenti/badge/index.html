@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Badge · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -547,35 +551,33 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Badge</h1>
-          <p class="bd-lead">Documentazione ed esempi del componente badge, utile per piccoli contatori ed etichette.</p>
+          <p class="lead">Documentazione ed esempi del componente badge, utile per piccoli contatori ed etichette.</p>
           <p>La grandezza di ogni badge si adatta come dimensione a quella del font (misurato in unità <code class="language-plaintext highlighter-rouge">em</code>) dell’elemento in cui è contenuto.</p>
 
 <div class="bd-example">
-<div class="h1">Titolo di esempio <span class="badge bg-secondary">New</span></div>
-<div class="h2">Titolo di esempio <span class="badge bg-secondary">New</span></div>
-<div class="h3">Titolo di esempio <span class="badge bg-secondary">New</span></div>
-<div class="h4">Titolo di esempio <span class="badge bg-secondary">New</span></div>
-<div class="h5">Titolo di esempio <span class="badge bg-secondary">New</span></div>
-<div class="h6">Titolo di esempio <span class="badge bg-secondary">New</span></div>
+<div class="h1">Titolo di esempio h1<span class="badge bg-secondary">New</span></div>
+<div class="h2">Titolo di esempio h2<span class="badge bg-secondary">New</span></div>
+<div class="h3">Titolo di esempio h3<span class="badge bg-secondary">New</span></div>
+<div class="h4">Titolo di esempio h4<span class="badge bg-secondary">New</span></div>
+<div class="h5">Titolo di esempio h5<span class="badge bg-secondary">New</span></div>
+<div class="h6">Titolo di esempio h6<span class="badge bg-secondary">New</span></div>
 </div>
-
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h1&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h1&gt;</span>
-<span class="nt">&lt;h2&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
-<span class="nt">&lt;h3&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h3&gt;</span>
-<span class="nt">&lt;h4&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
-<span class="nt">&lt;h5&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h5&gt;</span>
-<span class="nt">&lt;h6&gt;</span>Titolo di esempio <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/h6&gt;</span>
-</code></pre></div></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h1"</span><span class="nt">&gt;</span>Titolo di esempio h1<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h2"</span><span class="nt">&gt;</span>Titolo di esempio h2<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h3"</span><span class="nt">&gt;</span>Titolo di esempio h3<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h4"</span><span class="nt">&gt;</span>Titolo di esempio h4<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h5"</span><span class="nt">&gt;</span>Titolo di esempio h5<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"h6"</span><span class="nt">&gt;</span>Titolo di esempio h6<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-secondary"</span><span class="nt">&gt;</span>New<span class="nt">&lt;/span&gt;&lt;/div&gt;</span></code></pre></figure>
 
 <p>I badge possono essere utilizzati come parte di link o pulsanti per fornire un contatore.</p>
 
 <div class="bd-example">
 <button type="button" class="btn btn-primary">
-Notifiche <span class="badge neutral-2-bg text-secondary">4</span>
+Notifiche <span class="badge bg-white text-secondary">4</span>
 </button>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
-Notifiche <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge neutral-2-bg text-secondary"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
+Notifiche <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-white text-secondary"</span><span class="nt">&gt;</span>4<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
 <div class="bd-callout bd-callout-accessibility">
@@ -589,12 +591,12 @@ Notifiche <span class="nt">&lt;span</span> <span class="na">class=</span><span c
 
 <div class="bd-example">
 <button type="button" class="btn btn-primary">
-Profilo <span class="badge neutral-2-bg text-secondary">9</span>
+Profilo <span class="badge bg-white text-primary">9</span>
 <span class="visually-hidden">Messaggi non letti</span>
 </button>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>
-Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge neutral-2-bg text-secondary"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
+Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"badge bg-white text-primary"</span><span class="nt">&gt;</span>9<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Messaggi non letti<span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;/button&gt;</span></code></pre></figure>
 
@@ -664,7 +666,7 @@ Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span cla
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -711,13 +713,15 @@ Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span cla
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -734,7 +738,7 @@ Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span cla
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -787,6 +791,54 @@ Profilo <span class="nt">&lt;span</span> <span class="na">class=</span><span cla
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

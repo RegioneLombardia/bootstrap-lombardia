@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Dropdown Menu · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -602,7 +600,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Dropdown Menu</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <!-- Style override for Documentation purposes -->
 <style>
  .no-border {
@@ -625,7 +623,7 @@ Per la variante bottone è necessario utilizzare la classe <code class="language
       <div class="dropdown">
   <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton20" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Apri dropdown
-    <svg class="icon-expand icon icon-sm icon-primary"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+    <svg class="icon-expand icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <div class="link-list-wrapper">
@@ -677,7 +675,7 @@ Per la variante bottone è necessario utilizzare la classe <code class="language
   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-dropdown dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">id=</span><span class="s">"dropdownMenuButton"</span>
           <span class="na">data-bs-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
     Apri dropdown
-    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-expand icon icon-sm icon-primary"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+    <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon-expand icon icon-sm"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
   <span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">aria-labelledby=</span><span class="s">"dropdownMenuButton"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
@@ -897,14 +895,15 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
 
 <h2 id="esempi">Esempi</h2>
 <div class="bd-example no-border mb-5">
-  <nav class="toolbar">
-    <ul>
-      <li>
+  <div class="bd-example no-border mb-5">
+    <div class="row mb-5">
+      <div class="col">
         <div class="dropdown">
-          <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu con voci normali
+          <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown 1
+            <svg class="icon-expand icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
             <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
@@ -920,14 +919,15 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
             </div>
           </div>
         </div>
-      </li>
-      <li>
+      </div>
+      <div class="col">
         <div class="dropdown">
           <button class="btn btn-dropdown dropdown-toggle show" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Menu con voce attiva
+            Dropdown 2
+            <svg class="icon-expand icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
-            <div class="link-list-wrapper">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
+          <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
                   <a class="dropdown-item list-item active" href="#"><span>Voce Attiva</span></a>
@@ -942,13 +942,14 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
             </div>
           </div>
         </div>
-      </li>
-      <li>
+      </div>
+      <div class="col">
         <div class="dropdown">
-          <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu con voce disabilitata
+          <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            Dropdown 3
+            <svg class="icon-expand icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
           </button>
-          <div class="dropdown-menu show" aria-labelledby="dropdownMenuButton">
+          <div class="dropdown-menu show" data-popper-placement="bottom-start" aria-labelledby="dropdownMenuButton" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(0px, 30px);">
             <div class="link-list-wrapper">
               <ul class="link-list">
                 <li>
@@ -964,10 +965,9 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
             </div>
           </div>
         </div>
-      </li>
-    </ul>
-  </nav>
-
+      </div>
+    </div>
+  </div>
 
 </div>
 
@@ -995,7 +995,7 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1042,13 +1042,15 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1065,7 +1067,7 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1118,6 +1120,54 @@ Per spostarlo a destra o rimuoverlo è necessario utilizzare: <code class="langu
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Introduzione · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -562,7 +566,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Introduzione</h1>
-          <p class="bd-lead">Come usare Bootstrap Italia nel tuo progetto.</p>
+          <p class="lead">Come usare Bootstrap Italia nel tuo progetto.</p>
           <h2 id="installazione">Installazione</h2>
 
 <p>Per utilizzare il codice compilato di Bootstrap Italia nel proprio progetto, è sufficiente scaricare ed includere nella pagina HTML alcuni file, tra cui:</p>
@@ -576,7 +580,7 @@
 
 <p>il tutto scaricabile qui:</p>
 
-<p><a href="https://github.com/italia/bootstrap-italia/releases/download/v2.0.1/bootstrap-italia.zip" class="btn btn-primary disabled">Scarica Bootstrap Italia v2.3.5</a></p>
+<p><a href="https://github.com/italia/bootstrap-italia/releases/download/v2.1.1/bootstrap-italia.zip" class="btn btn-primary disabled">Scarica Bootstrap Italia v2.7.7</a></p>
 
 <div class="bd-callout bd-callout-warning">
 <h5 id="importante">Importante!</h5>
@@ -635,7 +639,7 @@
 
 <h4 id="moduli">Moduli</h4>
 
-<p>In alternativa se si vogliono utilizzare i moduli,  è possibile importare e utilizzare singolarmente i vari componenti. Di seguito un esempio di cui potete trovare l’intero esempio completo <a href="https://github.com/astagi/demo-bsitalia-2">qui</a>.</p>
+<p>In alternativa se si vogliono utilizzare i moduli, è possibile importare e utilizzare singolarmente i vari componenti. Di seguito un esempio di cui potete trovare l’intero esempio completo <a href="https://github.com/astagi/demo-bsitalia-2">qui</a>.</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">CarouselBI</span><span class="p">,</span> <span class="nx">Alert</span><span class="p">,</span> <span class="nx">Notification</span><span class="p">,</span> <span class="nx">Tooltip</span><span class="p">,</span> <span class="nx">Sticky</span><span class="p">,</span> <span class="nx">loadFonts</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">bootstrap-italia</span><span class="dl">'</span>
 
@@ -670,7 +674,7 @@
 
 <h3 id="fonts">Fonts</h3>
 
-<p>È necessario anche includere i file relativi ai font referenziati nel CSS, mantenendo i path dei singoli font utilizzato nei <a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.0.1">file sorgente della libreria</a>. L’inclusione dei font può avvenire utilizzando CSS o JavaScript.</p>
+<p>È necessario anche includere i file relativi ai font referenziati nel CSS, mantenendo i path dei singoli font utilizzato nei <a href="https://github.com/italia/bootstrap-italia/releases/tag/v2.1.1">file sorgente della libreria</a>. L’inclusione dei font può avvenire utilizzando CSS o JavaScript.</p>
 
 <h4 id="via-css">Via CSS</h4>
 
@@ -1010,7 +1014,7 @@ continua a leggere alla pagina <a href="/bootstrap-lombardia/docs/come-iniziare/
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1057,13 +1061,15 @@ continua a leggere alla pagina <a href="/bootstrap-lombardia/docs/come-iniziare/
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1080,7 +1086,7 @@ continua a leggere alla pagina <a href="/bootstrap-lombardia/docs/come-iniziare/
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1133,6 +1139,54 @@ continua a leggere alla pagina <a href="/bootstrap-lombardia/docs/come-iniziare/
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

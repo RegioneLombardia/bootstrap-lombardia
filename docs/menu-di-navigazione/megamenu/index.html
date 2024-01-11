@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Megamenu · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item  active" href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -564,12 +568,12 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Megamenu</h1>
-          <p class="bd-lead">Visualizza un sottomenu contenente elenchi di links relativo ad una voce della navbar.</p>
+          <p class="lead">Visualizza un sottomenu contenente elenchi di links relativo ad una voce della navbar.</p>
           <h2 id="introduzione">Introduzione</h2>
 
 <p>Il megamenu, all’interno del <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code>, è una variazione del componente <a href="/bootstrap-lombardia/docs/componenti/dropdown/">dropdown</a> contenente un elenco di links.</p>
 
-<p>Per stilare correttamente il megamenu è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.has-megamenu</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav class="navbar"&gt;</code>. Ai dropdown dei quali si desidera modificare l’aspetto transformandoli in megamenu è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.has-megamenu</code> al tag <code class="language-plaintext highlighter-rouge">&lt;li class="nav-item dropdown"&gt;</code>.</p>
+<p>Per stilare correttamente il megamenu è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.has-megamenu</code> al tag <code class="language-plaintext highlighter-rouge">&lt;nav class="navbar"&gt;</code>. Ai dropdown dei quali si desidera modificare l’aspetto trasformandoli in megamenu è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.has-megamenu</code> al tag <code class="language-plaintext highlighter-rouge">&lt;li class="nav-item dropdown"&gt;</code>.</p>
 
 <p>Gli elementi megamenu contenuti nelle navbar sono gestiti come elementi di tipo <strong>collapse</strong> nella loro versione mobile.</p>
 
@@ -591,7 +595,6 @@
 <p>Il megamenu ha una struttura colonnare, ogni colonna richiama al suo interno il componente <strong><a href="/bootstrap-lombardia/docs/organizzare-i-contenuti/liste/#liste-per-menù-di-navigazione">Lista di link</a></strong> per comporre l’elenco di link desiderato</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav1">
     <svg class="icon">
@@ -745,7 +748,6 @@ La struttura colonnare dell’elemento <code class="language-plaintext highlight
 Per stilare correttamente il link è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.it-more</code> al tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> che lo contiene.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav2" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav2">
     <svg class="icon">
@@ -950,7 +952,6 @@ Per stilare correttamente il link è sufficiente aggiungere la classe <code clas
 Per inserire il titolo della sezione, è sufficiente inserire il tag <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> con classe <code class="language-plaintext highlighter-rouge">link-list-heading</code> prima del tag <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> all’inizio della lista relativa.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav3" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav3">
     <svg class="icon">
@@ -1107,7 +1108,6 @@ Per inserire il titolo della sezione, è sufficiente inserire il tag <code class
 Per aggiungere il link more è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.it-more</code> al tag <code class="language-plaintext highlighter-rouge">&lt;li&gt;</code> al fondo della lista relativa.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav4">
     <svg class="icon">
@@ -1319,7 +1319,6 @@ Per aggiungere il link more è sufficiente aggiungere la classe <code class="lan
 <p>Per aggiungere un elenco di call to action è sufficiente aggiungere dopo il tag con classe <code class="language-plaintext highlighter-rouge">.row</code> contenente l’elenco primario, il tag <code class="language-plaintext highlighter-rouge">&lt;div class="it-megamenu-footer"&gt;</code>. In questo inseriremo una struttura colonnare identica a quella della lista principale che ospiterà le liste delle call to action.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav5" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav5">
     <svg class="icon">
@@ -1525,7 +1524,6 @@ Per aggiungere il link more è sufficiente aggiungere la classe <code class="lan
 <p>All’interno dell’ultimo tag <code class="language-plaintext highlighter-rouge">&lt;div class="col-xs-12 col-lg-4"&gt;</code> inseriremo il tag <code class="language-plaintext highlighter-rouge">&lt;div class="row max-height-col"&gt;</code> che a sua volta conterrà la colonna <code class="language-plaintext highlighter-rouge">&lt;div class="col-12 it-vertical"&gt;</code> all’interno della quale andremo ad inserire la nostra lista di link contenente le call to action.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav6" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav6">
     <svg class="icon">
@@ -1729,10 +1727,9 @@ Per aggiungere il link more è sufficiente aggiungere la classe <code class="lan
 <p>Possiamo inserire a destra del megamenu un’immagine ed una descrizione riguardante la sezione.</p>
 
 <p>All’interno dell’ultimo tag <code class="language-plaintext highlighter-rouge">&lt;div class="col-xs-12 col-lg-4"&gt;</code> inseriremo il tag <code class="language-plaintext highlighter-rouge">&lt;div class="row max-height-col"&gt;</code> che a sua volta conterrà la colonna <code class="language-plaintext highlighter-rouge">&lt;div class="col-12 it-vertical it-description"&gt;</code> all’interno della quale andremo ad inserire il blocco contenente immagine e testo.<br />
-Il tag contenente immagine e descrizione sarà : <code class="language-plaintext highlighter-rouge">&lt;div class="description-content"&gt;</code>.</p>
+Il tag contenente immagine e descrizione sarà: <code class="language-plaintext highlighter-rouge">&lt;div class="description-content"&gt;</code>.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav7" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav7">
     <svg class="icon">
@@ -1981,7 +1978,6 @@ Il tag contenente immagine e descrizione sarà : <code class="language-plaintext
 Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra ed una a destra.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav8" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav8">
     <svg class="icon">
@@ -2165,7 +2161,6 @@ Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra
 <p>Possiamo creare strutture colonnari asimmetriche ed aggiungere una colonna destra contenete una lista di call to action.</p>
 
 <div class="bd-example">
-
 <nav class="navbar navbar-expand-lg has-megamenu">
   <button class="custom-navbar-toggler" type="button" aria-controls="nav9" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav9">
     <svg class="icon">
@@ -2394,7 +2389,7 @@ Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -2441,13 +2436,15 @@ Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -2464,7 +2461,7 @@ Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -2517,6 +2514,54 @@ Nell’esempio seguente abbiamo una struttura composta da due colonne a sinistra
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

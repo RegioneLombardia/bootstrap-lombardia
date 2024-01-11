@@ -1,14 +1,279 @@
-## [2.0.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...v2.0.1) (2023-11-22)
+## [2.1.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.7...v2.1.1) (2024-01-11)
+
+### Features
+* Allineamento a versione 2.7.7 di Bootstrap Italia
+
+### Bug Fixes
+
+* Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
+* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
+* **i18n:** video component italian labels ([9679e1b](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/9679e1bcc85aee8c6798870562bb04893ddcb631))
+* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
+
+
+### Features
+
+* remove bootstrap italia comuni ([35d56a2](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/35d56a266f27b53b90c4c66be0bc23513e1a86bb))
+
+
+
+# [2.1.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.7...v2.1.0) (2024-01-10)
 
 
 ### Bug Fixes
+
+* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
+* **i18n:** video component italian labels ([9679e1b](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/9679e1bcc85aee8c6798870562bb04893ddcb631))
+* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
+
+
+### Features
+
+* remove bootstrap italia comuni ([35d56a2](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/35d56a266f27b53b90c4c66be0bc23513e1a86bb))
+
+
+
+## [2.7.7](https://github.com/italia/bootstrap-italia/compare/v2.7.6...v2.7.7) (2023-11-21)
+
+
+### Bug Fixes
+
+* video js bar popup elements ([fdd9a63](https://github.com/italia/bootstrap-italia/commit/fdd9a63db3c2203ece63dced02304576c4e8361e))
+
+
+
+## [2.7.6](https://github.com/italia/bootstrap-italia/compare/v2.7.5...v2.7.6) (2023-11-16)
+
+
+### Bug Fixes
+
+* **a11y:** focus selector for tabs ([ef4d561](https://github.com/italia/bootstrap-italia/commit/ef4d561f8003202e6413efc80c41c3e611b20706))
+* chips margin ([e24854b](https://github.com/italia/bootstrap-italia/commit/e24854bcfacb95489118dbfdb5c624d23533197d))
+
+
+### Features
+
+* add sizes large and xl to standard and double spinners ([5db40d9](https://github.com/italia/bootstrap-italia/commit/5db40d99af60fbfd76d6cd2693752136786e67ad))
+
+
+
+## [2.7.5](https://github.com/italia/bootstrap-italia/compare/v2.7.4...v2.7.5) (2023-10-25)
+
+
+### Bug Fixes
+
+* hide unnecessary video controls on mobile ([b671d02](https://github.com/italia/bootstrap-italia/commit/b671d02ba36551372b6aa7ef88ee0a1f22a7c88f))
+
+
+
+## [2.7.4](https://github.com/italia/bootstrap-italia/compare/v2.7.3...v2.7.4) (2023-10-18)
+
+
+### Bug Fixes
+
+* load youtube plugin from bootstrap italia ([1b55ad3](https://github.com/italia/bootstrap-italia/commit/1b55ad3169095f638743c15dd4ed737eee2b72c3))
+
+
+
+## [2.7.3](https://github.com/italia/bootstrap-italia/compare/v2.7.2...v2.7.3) (2023-10-10)
+
+
+### Deps Fixes
+
+* progressbar.js vulnerabilities
+
+
+
+## [2.7.2](https://github.com/italia/bootstrap-italia/compare/v2.7.1...v2.7.2) (2023-10-09)
+
+
+### Bug Fixes
+
+* container-md max width ([86c2586](https://github.com/italia/bootstrap-italia/commit/86c25860857e8dbc7e51cd2a2b60494fe8dab81d))
+* player video content ([a05bcbb](https://github.com/italia/bootstrap-italia/commit/a05bcbb89212496f8a0ca3812f8badd23a266437))
+
+
+
+## [2.7.1](https://github.com/italia/bootstrap-italia/compare/v2.7.0...v2.7.1) (2023-10-05)
+
+
+### Bug Fixes
+
+* increase accept overlay opacity ([0571580](https://github.com/italia/bootstrap-italia/commit/057158095bcf001558a26b3f907b298891c95a99))
+* radio and checkbox selection ([8ac1243](https://github.com/italia/bootstrap-italia/commit/8ac124381b33ff300d2cc940d11c5296c9a8162b))
+* typography misalignments ([#975](https://github.com/italia/bootstrap-italia/issues/975)) ([8ac9001](https://github.com/italia/bootstrap-italia/commit/8ac9001b5b75b439b9bd43daf85e792d7f93edd5))
+* video overlay on firefox browser ([0e2dd00](https://github.com/italia/bootstrap-italia/commit/0e2dd008648c5b19158e584efdb3b5d0c60da4cd))
+* video player overlay check and button order ([7241a9d](https://github.com/italia/bootstrap-italia/commit/7241a9dc0a76cd6ab52794b8b64058d3bd5f9c2a))
+
+
+### Features
+
+* add android, ios and x icons ([4c39e62](https://github.com/italia/bootstrap-italia/commit/4c39e62c2b9d188daa66b442b89740abf186c0c2))
+
+
+
+# [2.7.0](https://github.com/italia/bootstrap-italia/compare/v2.6.2...v2.7.0) (2023-09-25)
+
+
+### Bug Fixes
+
+* **a11y:** nav-link anchor set focus on target ([51d69cf](https://github.com/italia/bootstrap-italia/commit/51d69cf556ea462a1eb2f62f973cb494dd35a049))
+
+
+### Features
+
+* typography update ([84f0955](https://github.com/italia/bootstrap-italia/commit/84f095561491ddaa1b6d25003b50b03ddc9e0613))
+
+
+
+## [2.6.2](https://github.com/italia/bootstrap-italia/compare/v2.6.1...v2.6.2) (2023-09-18)
+
+
+### Bug Fixes
+
+* alert color variants ([115c085](https://github.com/italia/bootstrap-italia/commit/115c085871316a5d68f9e00f17485947026ef5cb))
+* example names ([b5b7a6e](https://github.com/italia/bootstrap-italia/commit/b5b7a6e1406e06873edf08bce69502bfca146a19))
+* video overlay height on mobile ([4625d1b](https://github.com/italia/bootstrap-italia/commit/4625d1b3187859671f5eb11ef69903a25e13a9d3))
+
+
+
+## [2.6.1](https://github.com/italia/bootstrap-italia/compare/v2.6.0...v2.6.1) (2023-07-14)
+
+
+### Bug Fixes
+
+* brighter text colors ([7017ef2](https://github.com/italia/bootstrap-italia/commit/7017ef236f96df191690409bc914760c6c40bd39))
+* remove right margin from card ([4ba3977](https://github.com/italia/bootstrap-italia/commit/4ba39772b37a5610499f012da4529ea41cd149bf))
+
+
+
+# [2.6.0](https://github.com/italia/bootstrap-italia/compare/v2.5.1...v2.6.0) (2023-06-28)
+
+
+### Bug Fixes
+
+* escape selector when getting label ([9ed1057](https://github.com/italia/bootstrap-italia/commit/9ed10574dc007a18bb95d3ad5a142a171b05f9aa))
+* navscroll content checking ([08be5d9](https://github.com/italia/bootstrap-italia/commit/08be5d9b0c23e2ae37e35038b1af4cdf6afa75b9))
+
+
+### Features
+
+* add moodle icons ([54eaa72](https://github.com/italia/bootstrap-italia/commit/54eaa7253f9bdeb58c5ac4280026a2d556a5a0cc))
+* add ppt file icon ([9648379](https://github.com/italia/bootstrap-italia/commit/9648379d3c6aca9dabf791ac31fa9a4bb984ffc5))
+
+
+
+## [2.5.1](https://github.com/italia/bootstrap-italia/compare/v2.5.0...v2.5.1) (2023-06-13)
+
+
+### Bug Fixes
+
+* card with image not having padding around body text ([75d52b3](https://github.com/italia/bootstrap-italia/commit/75d52b309d2cc361ddea975b79b35725bd83b17d))
+* pager link font weight ([4a90a72](https://github.com/italia/bootstrap-italia/commit/4a90a724c81c320e12b37595fc06a77c21845b88))
+
+
+
+# [2.5.0](https://github.com/italia/bootstrap-italia/compare/v2.4.3...v2.5.0) (2023-05-29)
+
+
+### Bug Fixes
+
+* use primary variables on footer ([875d568](https://github.com/italia/bootstrap-italia/commit/875d56800be7a6505b4569296e5ef6fa68510787))
+
+
+### Features
+
+* buttons outline color variations ([07114d1](https://github.com/italia/bootstrap-italia/commit/07114d1f2b4736917c56bf38c583d847e89db284))
+
+
+
+## [2.4.3](https://github.com/italia/bootstrap-italia/compare/v2.4.2...v2.4.3) (2023-05-24)
+
+
+### Bug Fixes
+
+* **types:** return type for load fonts ([e608718](https://github.com/italia/bootstrap-italia/commit/e608718992876092627c9274540f90597f7934de))
+
+
+
+## [2.4.2](https://github.com/italia/bootstrap-italia/compare/v2.4.1...v2.4.2) (2023-05-08)
+
+
+### Bug Fixes
+
+* attempt to remove display block from active step ([5fabb2f](https://github.com/italia/bootstrap-italia/commit/5fabb2f5f62eca9eca1b203129505e494cca4cfa))
+
+
+
+## [2.4.1](https://github.com/italia/bootstrap-italia/compare/v2.4.0...v2.4.1) (2023-05-03)
+
+
+### Bug Fixes
+
+* arrow not getting white when background is primary ([f594187](https://github.com/italia/bootstrap-italia/commit/f5941879fc0d1536148beceb4e4b1ea8fd86e62c))
+* **types:** remove parameter initializer ([b33854b](https://github.com/italia/bootstrap-italia/commit/b33854b0e35625dbca0bb870de7cf63dca53144f))
+
+
+
+# [2.4.0](https://github.com/italia/bootstrap-italia/compare/v2.3.8...v2.4.0) (2023-05-02)
+
+
+### Bug Fixes
+
+* **a11y:** cards subtitles ([8ebeac1](https://github.com/italia/bootstrap-italia/commit/8ebeac127fdbfe2165cc0aaf239a8a1273af66d1))
+* add types for loadfonts ([a9cd91f](https://github.com/italia/bootstrap-italia/commit/a9cd91fd6575414d9b6a59a2e2934ca9fc867657))
+* background color for alert is white ([5344936](https://github.com/italia/bootstrap-italia/commit/534493692de7f86a7f9898152a27e1d7e9b9a204))
+
+
+### Features
+
+* add video component ([d685042](https://github.com/italia/bootstrap-italia/commit/d685042320619cbe13b882fc4de6638353816d43))
+* new callout component ([646bf41](https://github.com/italia/bootstrap-italia/commit/646bf412e83d279ee030bf8bbbf933959d4d3b36))
+
+
+
+## [2.3.8](https://github.com/italia/bootstrap-italia/compare/v2.3.7...v2.3.8) (2023-04-19)
+
+
+### Bug Fixes
+
+* **a11y:** reset white background for examples ([939e9e9](https://github.com/italia/bootstrap-italia/commit/939e9e9be2002152ffccba7fdcf1cda163e922c9))
+* add padding to cards in carousel ([d0796e2](https://github.com/italia/bootstrap-italia/commit/d0796e2ae3e08bdd65b346bb128fee1cd37b4ffa))
+* box shadow in buttons ([a593394](https://github.com/italia/bootstrap-italia/commit/a593394f4f97cf202d6e4e5f7229233736359b2d))
+* cards padding for carousel on mobile ([0023a37](https://github.com/italia/bootstrap-italia/commit/0023a37a60c7a85992b2517cbca9eeab9c38282b))
+* carousel single slide wrapper background ([25c86e4](https://github.com/italia/bootstrap-italia/commit/25c86e4f4c38f243d40c46ac9a1f0f6b6058a8ae))
+* hover on dark outline secondary button ([88481bc](https://github.com/italia/bootstrap-italia/commit/88481bc1b65441db2a39d138854735169e03f940))
+* primary and secondary outline buttons ([b1040f0](https://github.com/italia/bootstrap-italia/commit/b1040f0ed7bb9f52db04d7bb4b5c1f49e4e556d3))
+* remove background for timeline cards ([04cabf3](https://github.com/italia/bootstrap-italia/commit/04cabf360fb9754a206d1069eb66e99288fcad62))
+
+
+
+## [2.3.7](https://github.com/italia/bootstrap-italia/compare/v2.3.6...v2.3.7) (2023-04-13)
+
+
+### Bug Fixes
+
+* carousel dots on card ([0e00a55](https://github.com/italia/bootstrap-italia/commit/0e00a555f521870fb24116ef7b232d421fb256c0))
+* use same site script for cookiebar ([9c9ca62](https://github.com/italia/bootstrap-italia/commit/9c9ca62b65228de1d395828dd6caeb409035d7bb))
+
+
+
+## [2.3.6](https://github.com/italia/bootstrap-italia/compare/v2.3.5...v2.3.6) (2023-03-22)
+
+
+### Bug Fixes
+
+* horizontal nav tabs scroll ([593d130](https://github.com/italia/bootstrap-italia/commit/593d130e75160dc45561fde6daa9449b276406ff))
+
+
+## [rl2.0.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...rl2.0.1) (2023-11-22)
 
 * **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
 * scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
 
 
 
-# [2.0.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...v2.0.0) (2023-07-03)
+# [rl2.0.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.3.5...rl2.0.0) (2023-07-03)
 
 
 

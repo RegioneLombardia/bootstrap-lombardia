@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Card · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -96,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.0.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.0.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.1.1/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">rl2.1.1</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -615,7 +613,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Card</h1>
-          <p class="bd-lead"></p>
+          <p class="lead"></p>
           <p>Le <strong>Card</strong> sono dei contenitori di contenuti ed azioni relative ad una data informazione.<br />
 Possono accogliere un titolo, un paragrafo, un’immagine e una call to action formata da un link di grandezza variabile a seconda delle necessità, posizionato sempre in basso (lateralmente o al centro).</p>
 
@@ -629,7 +627,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
       <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -645,7 +645,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-wrapper card-space"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card card-bg"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"category"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Categoria<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"category-top"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"category"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Categoria<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-title h5"</span><span class="nt">&gt;</span>Dolor sit amet<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
@@ -659,7 +661,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -673,7 +677,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -687,7 +693,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -703,7 +711,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -717,7 +727,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -731,7 +743,9 @@ Possono accogliere un titolo, un paragrafo, un’immagine e una call to action f
   <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -764,7 +778,9 @@ Per motivi di accessibilità, <strong>il testo della card non deve essere mai po
     </div>
     <div class="card-body">
       
-      <a class="category" href="#">Category</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -913,7 +929,6 @@ Per motivi di accessibilità, <strong>il testo della card non deve essere mai po
       <a class="category" href="#">Category</a>
     </div>
     <div class="card-body">
-      <a class="category" href="#">Lorem ipsum</a>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -927,7 +942,9 @@ Per motivi di accessibilità, <strong>il testo della card non deve essere mai po
     <div class="card-wrapper card-space">
   <div class="card card-bg">
     <div class="card-body">
-      <a class="category" href="#">Categoria</a>
+      <div class="category-top">
+        <a class="category" href="#">Categoria</a>
+      </div>
       <p class="card-title h5">Dolor sit amet</p>
       <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -946,7 +963,6 @@ Per motivi di accessibilità, <strong>il testo della card non deve essere mai po
       <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"category"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Category<span class="nt">&lt;/a&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"category"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Lorem ipsum<span class="nt">&lt;/a&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-title h5"</span><span class="nt">&gt;</span>Dolor sit amet<span class="nt">&lt;/p&gt;</span>
       <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
       sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<span class="nt">&lt;/p&gt;</span>
@@ -996,7 +1012,7 @@ L’<strong>altezza verrà parificata</strong> su tutta la riga, e sarà uguale 
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1043,13 +1059,15 @@ L’<strong>altezza verrà parificata</strong> su tutta la riga, e sarà uguale 
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1066,7 +1084,7 @@ L’<strong>altezza verrà parificata</strong> su tutta la riga, e sarà uguale 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1119,6 +1137,54 @@ L’<strong>altezza verrà parificata</strong> su tutta la riga, e sarà uguale 
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>

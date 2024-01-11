@@ -10,16 +10,14 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Header · Bootstrap Lombardia</title>
-
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202311221406" rel="stylesheet" />
-
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202311221406" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -91,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.3.5</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -294,6 +292,9 @@
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">
                   <span>Megamenu</span></a>
               </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/footer/">
+                  <span>Footer</span></a>
+              </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/menu-di-navigazione/navscroll/">
                   <span>Navscroll</span></a>
               </li><li>
@@ -425,6 +426,9 @@
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/componenti/tooltip/">
                   <span>Tooltip</span></a>
+              </li><li>
+                <a class="list-item " href="/bootstrap-lombardia/docs/componenti/video-player/">
+                  <span>Video Player</span></a>
               </li></ul>
             
           </li><li>
@@ -544,7 +548,7 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#header-centrale">Header Centrale</a>
 <ul>
-<li class="toc-entry toc-h3"><a href="#versione-stretta">Versione stretta</a></li>
+<li class="toc-entry toc-h3"><a href="#versione-compatta">Versione compatta</a></li>
 <li class="toc-entry toc-h3"><a href="#versione-chiara-1">Versione chiara</a></li>
 </ul>
 </li>
@@ -571,7 +575,7 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Header</h1>
-          <p class="bd-lead">Documentazione ed esempi per la creazione di una testata di navigazione.</p>
+          <p class="lead">Documentazione ed esempi per la creazione di una testata di navigazione.</p>
           <style>
   /* Style override for Documentation purposes */
  .bd-example {
@@ -594,7 +598,7 @@
 <div class="bd-callout bd-callout-accessibility">
 <h4 id="accessibilità">Accessibilità</h4>
 
-<p>Condierando l’importanza dell’Header per la navigazione di un sito, si consiglia di seguire attentamente gli esempi per quanto riguarda l’utilizzo di attributi <code class="language-plaintext highlighter-rouge">ARIA</code> e labelling accessibile.</p>
+<p>Considerando l’importanza dell’Header per la navigazione di un sito, si consiglia di seguire attentamente gli esempi per quanto riguarda l’utilizzo di attributi <code class="language-plaintext highlighter-rouge">ARIA</code> e labelling accessibile.</p>
 
 <p>Il titolo del sito, “Nome dell’Istituzione” negli esempi, è contenuto in un <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> generico e non un tag <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> per evitare conflitti con gli <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> presenti nelle singole pagine. Nel caso in cui la home page fosse priva di un titolo relativo all’Istituzione (es: carousel con ultime notizie) è consigliabile applicare il tag <code class="language-plaintext highlighter-rouge">&lt;h1&gt;</code> al titolo dell’header unicamente in quella pagina.</p>
 
@@ -607,7 +611,6 @@
 Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs/componenti/dropdown/">dropdown</a>.</p>
 
 <div class="bd-example">
-
 <div class="it-header-slim-wrapper">
   <div class="container">
     <div class="row">
@@ -724,7 +727,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p>Il modificatore <code class="language-plaintext highlighter-rouge">.btn-full</code> è disponibile anche con il tema chiaro attivato da <code class="language-plaintext highlighter-rouge">.theme-light</code>.</p>
 
 <div class="bd-example">
-
 <div class="it-header-slim-wrapper">
   <div class="container">
     <div class="row">
@@ -816,7 +818,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p>Per cambiare tema all’header slim è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">theme-light</code> al tag <code class="language-plaintext highlighter-rouge">&lt;div class="it-header-slim-wrapper"&gt;</code></p>
 
 <div class="bd-example">
-
 <div class="it-header-slim-wrapper theme-light">
   <div class="container">
     <div class="row">
@@ -930,7 +931,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p><strong>Header Centrale</strong>, per mostrare il logo dell’ente e la sua descrizione, link aggiuntivi ai social media e l’accesso al motore di ricerca, se presente.</p>
 
 <div class="bd-example">
-
 <div class="it-header-center-wrapper">
   <div class="container">
     <div class="row">
@@ -1047,12 +1047,11 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<h3 id="versione-stretta">Versione stretta</h3>
+<h3 id="versione-compatta">Versione compatta</h3>
 
-<p>Per utilizzare la versione più stretta in verticale dell’header centrale è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">it-small-header</code> al tag <code class="language-plaintext highlighter-rouge">&lt;div class="it-header-center-wrapper"&gt;</code></p>
+<p>Per utilizzare la versione più compatta in verticale dell’header centrale è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">it-small-header</code> al tag <code class="language-plaintext highlighter-rouge">&lt;div class="it-header-center-wrapper"&gt;</code></p>
 
 <div class="bd-example">
-
 <div class="it-header-center-wrapper it-small-header">
   <div class="container">
     <div class="row">
@@ -1174,7 +1173,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p>Per cambiare tema all’header centrale è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">theme-light</code> al tag <code class="language-plaintext highlighter-rouge">&lt;div class="it-header-center-wrapper"&gt;</code>.</p>
 
 <div class="bd-example">
-
 <div class="it-header-center-wrapper theme-light">
   <div class="container">
     <div class="row">
@@ -1296,7 +1294,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p><strong>Header Nav</strong>, per elencare le voci di navigazione, siano esse semplici link, <a href="/bootstrap-lombardia/docs/componenti/dropdown/">menu a tendina</a> oppure <a href="/bootstrap-lombardia/docs/menu-di-navigazione/megamenu/">Megamenu</a> a tutta larghezza.</p>
 
 <div class="bd-example">
-
 <div class="it-header-navbar-wrapper">
   <div class="container">
     <div class="row">
@@ -1520,7 +1517,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <h4 id="header-nav-standard">Header Nav standard</h4>
 
 <div class="bd-example">
-
 <div class="it-header-navbar-wrapper">
   <div class="container">
     <div class="row">
@@ -1728,7 +1724,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <h4 id="header-nav-mobile-scura">Header Nav mobile scura</h4>
 
 <div class="bd-example">
-
 <div class="it-header-navbar-wrapper theme-dark-mobile">
   <div class="container">
     <div class="row">
@@ -1936,7 +1931,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <h4 id="header-nav-desktop-chiara">Header Nav desktop chiara</h4>
 
 <div class="bd-example">
-
 <div class="it-header-navbar-wrapper theme-light-desk">
   <div class="container">
     <div class="row">
@@ -2146,7 +2140,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <p>Al menù di navigazione principale può essere aggiunto anche un menù di navigazione secondario includendo a <code class="language-plaintext highlighter-rouge">.menu-wrapper</code> una seconda lista <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> con classe <code class="language-plaintext highlighter-rouge">.navbar-nav.navbar-secondary</code> e la stessa struttura dati della lista <code class="language-plaintext highlighter-rouge">.navbar-nav</code> principale.</p>
 
 <div class="bd-example">
-
 <div class="it-header-navbar-wrapper">
   <div class="container">
     <div class="row">
@@ -2234,7 +2227,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 <h2 id="header-completa">Header Completa</h2>
 
 <div class="bd-example">
-
 <header class="it-header-wrapper">
   <div class="it-header-slim-wrapper">
     <div class="container">
@@ -2674,7 +2666,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui è contenuto.</p>
 
 <div class="bd-example">
-
 <header class="it-header-wrapper it-shadow">
   <div class="it-header-slim-wrapper theme-light">
     <div class="container">
@@ -3118,7 +3109,7 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
 
 <h3 id="tramite-javascript">Tramite JavaScript</h3>
 
-<p>E’ possibile inizializzare il componente tramite JavaScript:</p>
+<p>È possibile inizializzare il componente tramite JavaScript:</p>
 
 <div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">headerSticky</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">bootstrap</span><span class="p">.</span><span class="nx">HeaderSticky</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">myHeaderSticky</span><span class="dl">'</span><span class="p">),</span> <span class="nx">options</span><span class="p">)</span>
 </code></pre></div></div>
@@ -3146,7 +3137,7 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202311221406"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -3193,13 +3184,15 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
       time_24hr: true
     })
   }
-  new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202311221406"></script>
+  if (document.querySelector('#clockpicker01') !== null ) {
+    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
+  }
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202311221406"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -3216,7 +3209,7 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202311221406"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -3269,6 +3262,54 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
     },
     debug: true // Set debug to true if you want to inspect the modal
   });
+</script><script>
+  /**
+   * Aggiungo il bottone copia negli elementi di esempio codice
+   */
+  document
+    .querySelectorAll('figure.highlight, pre.highlight')
+    .forEach(function (node) {
+      const button = document.createElement('button'),
+        divContainer = document.createElement('div');
+      divContainer.classList.add('copy-button-container');
+      button.type = 'button';
+      button.ariaLabel = 'Copia il codice negli appunti';
+      button.innerText = 'Copia';
+      button.classList.add('btn', 'btn-primary', 'btn-xs');
+      button.setAttribute('type', 'button');
+      button.addEventListener('click', function () {
+        const code = node.querySelector('code').innerText.trim();
+        navigator.clipboard.writeText(code);
+        button.innerText = 'Copiato';
+        button.classList.remove('btn-primary');
+        button.classList.add('btn-success');
+        setTimeout(() => {
+          button.classList.remove('btn-success');
+          button.classList.add('btn-primary');
+          button.innerText = 'Copia';
+        }, 5000);
+      });
+      divContainer.appendChild(button);
+      /**
+       * Snippet
+       * <div class="bd-example">
+       * </div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+
+       */
+      if (node.nodeName == 'FIGURE') {
+        node.insertBefore(divContainer, node.querySelector('pre'));
+      }
+      /*
+      * Snippet
+      * ```html
+      * ```
+      */
+      else if (node.nodeName == 'PRE') {
+        node.insertAdjacentElement('beforebegin', divContainer);
+      }
+    });
 </script>
+
   </body>
 </html>
