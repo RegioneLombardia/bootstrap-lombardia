@@ -19,22 +19,18 @@ div.output-field {
     color: $black;
   }
 
-  label {
-    font-size: 1.125rem;
-    font-weight: 600;
-    color: $it25-gray;
-    &.active:first-child {
+  input {
+    &[type='date'] {
       font-weight: 700;
     }
   }
 
-  .input-group {
-    .input-group-prepend {
-      label {
-        &:not(.active) {
-          left: 2rem;
-        }
-      }
+  label {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: $it25-gray;
+    &.active {
+      font-weight: 700;
     }
   }
 }

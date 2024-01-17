@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Dropdown Menu
 group: navigazione
-toc: false
+toc: true
 ---
 
 <!-- Style override for Documentation purposes -->

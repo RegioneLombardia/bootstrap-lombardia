@@ -24,6 +24,12 @@
     .icon {
       fill: $it25-gray;
     }
+    &.disabled {
+      color: $input-color-placeholder;
+      .icon {
+        fill: $input-color-placeholder;
+      }
+    }
   }
 
   &.nav-dark {

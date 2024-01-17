@@ -176,8 +176,8 @@
       button.classList.add('btn', 'btn-primary', 'btn-xs');
       button.setAttribute('type', 'button');
       button.addEventListener('click', function () {
-        const code = node.querySelector('code').innerText.trim();
-        navigator.clipboard.writeText(code);
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre')  ?? node.querySelector('code');
+        navigator.clipboard.writeText(code.innerText.trim());
         button.innerText = 'Copiato';
         button.classList.remove('btn-primary');
         button.classList.add('btn-success');
@@ -202,6 +202,7 @@
       * ```
       */
       else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
         node.insertAdjacentElement('beforebegin', divContainer);
       }
     });

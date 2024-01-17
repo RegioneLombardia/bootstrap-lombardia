@@ -8,12 +8,29 @@ toc: no
 La componente **Calendario** può assolvere diverse funzioni all’interno di un’interfaccia: nella sua forma più semplice di data picker è spesso impiegato all’interno di processi di inserimento dati, oppure all’interno di una form.  
 In altre forme più complesse può assolvere una funzione comunicativa e ricoprire una posizione di maggiore visibilità.
 
-<div class="bd-example">
-{% include html_docs/datepickers/datepicker.html %}
+
+{% capture example %}
+<div class="row mt-5 mt-md-0">
+  <div class="col-md-4 col-xl-3">
+    <div class="form-group">
+      <label class="active" for="data_nascita">Data di nascita</label>
+      <input type="date" id="data_nascita"/>
+    </div>
+  </div>
+  <div class="col-md-4 offset-xl-3 col-xl-3">
+    <div class="form-group">
+      <label class="active" for="data_da">Periodo da</label>
+      <input type="date" id="data_da"/>
+    </div>
+  </div>
+  <div class="col-md-4 col-xl-3">
+    <div class="form-group">
+      <label class="active" for="data_a">a</label>
+      <input type="date" id="data_a"/>
+    </div>
+  </div>
 </div>
-{% highlight html %}
-{% include html_docs/datepickers/datepicker.html %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
 ---
 
@@ -25,12 +42,10 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <span class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
+          </span>
           <label class="active" for="calendar-single">Data di nascita</label>
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
-            </div>
-          </div>
           <input type="text" class="form-control" id="calendar-single" name="calendar-single"
                  aria-label="scrivere data." placeholder="gg/mm/aaaa" />
         </div>
@@ -41,12 +56,10 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <span class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
+          </span>
           <label class="active" for="calendar-range">Periodo da.. a..</label>
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
-            </div>
-          </div>
           <input type="text" class="form-control" id="calendar-range" name="calendar-range"
                   aria-label="indicare due date separate da 'al'." placeholder="gg/mm/aaaa" />
         </div>
@@ -56,12 +69,10 @@ In altre forme più complesse può assolvere una funzione comunicativa e ricopri
     <div class="col">
       <div class="form-group" style="margin-bottom:0px">
         <div class="input-group">
+          <span class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
+          </span>
           <label class="active" for="calendar-multiple">Indicare giorni disponibilità</label>
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-calendar"></use></svg>
-            </div>
-          </div>
           <input type="text" class="form-control" id="calendar-multiple" name="calendar-multiple"
                  aria-label="indicare più date separate da una virgola." placeholder="gg/mm/aaaa" />
         </div>

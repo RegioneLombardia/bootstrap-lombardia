@@ -1,16 +1,103 @@
-## [rl2.1.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.7...v2.1.1) (2024-01-11)
+## [2.8.2](https://github.com/italia/bootstrap-italia/compare/v2.8.1...v2.8.2) (2024-01-10)
 
 
 ### Bug Fixes
 
+* removed forced underline ([1ed1bea](https://github.com/italia/bootstrap-italia/commit/1ed1bea3cc3fe0c003c65b73ea428fc0e59c0174))
+
+
+
+## [2.8.1](https://github.com/italia/bootstrap-italia/compare/v2.8.0...v2.8.1) (2023-12-18)
+
+
+### Bug Fixes
+
+* navbar mobile focus ([b29aebb](https://github.com/italia/bootstrap-italia/commit/b29aebba6f1c5a7aa253617dfe1bc8c24e3c8d30))
+
+
+
+# [2.8.0](https://github.com/italia/bootstrap-italia/compare/v2.7.12...v2.8.0) (2023-12-15)
+
+
+### Features
+
+* **a11y:** buttons and anchors changes ([5dcd6e8](https://github.com/italia/bootstrap-italia/commit/5dcd6e87571eac5a3e4de33eb0e1e01d7a9d282f))
+* **a11y:** new megamenu ([96005f7](https://github.com/italia/bootstrap-italia/commit/96005f78c9497e265a2233798f83f43f68e4543d))
+* new input with prepend icon ([825cdca](https://github.com/italia/bootstrap-italia/commit/825cdca7679e50539e3a33e61681a0ece8a0f21f))
+
+
+
+## [2.7.12](https://github.com/italia/bootstrap-italia/compare/v2.7.11...v2.7.12) (2023-12-13)
+
+
+### Bug Fixes
+
+* input group text height ([3f53e1a](https://github.com/italia/bootstrap-italia/commit/3f53e1a3bc826f22e753b5e8def97393c92a8acf))
+
+
+
+## [2.7.11](https://github.com/italia/bootstrap-italia/compare/v2.7.10...v2.7.11) (2023-12-13)
+
+
+### Bug Fixes
+
+* input height ([287d8b9](https://github.com/italia/bootstrap-italia/commit/287d8b9a7dfe9485c806cf94551b13bb1dbded68))
+* label consistency ([1ecec9b](https://github.com/italia/bootstrap-italia/commit/1ecec9bae1be43cf93bed0d55dad66b8116417cc))
+
+
+
+## [2.7.10](https://github.com/italia/bootstrap-italia/compare/v2.7.9...v2.7.10) (2023-12-07)
+
+
+### Bug Fixes
+
+* select appearance ([beeff56](https://github.com/italia/bootstrap-italia/commit/beeff5605278f5fa7c222dd852b371e1538b102c))
+
+
+
+## [2.7.9](https://github.com/italia/bootstrap-italia/compare/v2.7.8...v2.7.9) (2023-12-05)
+
+
+### Bug Fixes
+
+* create label inputs on page load ([41b26d7](https://github.com/italia/bootstrap-italia/commit/41b26d79c642d1dcf4f3a87857431f5ddf16a86d))
+* form validations ([5fcab94](https://github.com/italia/bootstrap-italia/commit/5fcab94f7ebb02486c3b3abc857e914d5f67ad19))
+
+
+
+## [2.7.8](https://github.com/italia/bootstrap-italia/compare/v2.7.7...v2.7.8) (2023-11-30)
+
+
+### Bug Fixes
+
+* active label input group ([53c303b](https://github.com/italia/bootstrap-italia/commit/53c303b91e45f6bb8cc1adc2d0d7d639f6a37096))
+* chips margins ([ee4a81e](https://github.com/italia/bootstrap-italia/commit/ee4a81edb8aa8885d2b64e733a60a43adf597ec6))
+* container xl max width ([3ce6086](https://github.com/italia/bootstrap-italia/commit/3ce60862fc5b42e8bf7784e472f5606b6b6c6964))
+* **i18n:** video component italian labels ([9679e1b](https://github.com/italia/bootstrap-italia/commit/9679e1bcc85aee8c6798870562bb04893ddcb631))
+
+
+### Features
+
+* remove bootstrap italia comuni ([35d56a2](https://github.com/italia/bootstrap-italia/commit/35d56a266f27b53b90c4c66be0bc23513e1a86bb))
+
+
+
+## [rl2.1.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.7...v2.1.1) (2024-01-11)
+
 * Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
+
 
 
 # [rl2.1.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.7...v2.1.0) (2024-01-10)
 
-### Features
-* Allineamento a versione 2.7.7 di Bootstrap Italia
+# ‼ Breaking changes ‼
 
+### Inserimento
+* [Wizard](https://regionelombardia.github.io/bootstrap-lombardia/docs/it25/inserimento/wizard/)
+
+### Features
+
+* Allineamento a versione 2.7.7 di Bootstrap Italia
 
 ### Bug Fixes
 

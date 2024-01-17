@@ -129,12 +129,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label for="exampleInputText7">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label for="exampleInputText7">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText7">
       </div>
     </div>
@@ -142,12 +140,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="exampleInputText8">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label class="active" for="exampleInputText8">Etichetta di esempio</label>
         <input type="text" class="form-control focus--mouse" id="exampleInputText8">
       </div>
     </div>
@@ -155,12 +151,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="exampleInputText9">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label class="active" for="exampleInputText9">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText9" disabled>
       </div>
     </div>
@@ -170,12 +164,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="exampleInputText24">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label class="active" for="exampleInputText24">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato...">
       </div>
       <small id="formGroupExampleInputWithHelpDescription24" class="form-text info">Ulteriore testo informativo</small>
@@ -184,12 +176,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="exampleInputText25">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label class="active" for="exampleInputText25">Etichetta di esempio</label>
         <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|">
       </div>
       <small id="formGroupExampleInputWithHelpDescription25" class="form-text info">Ulteriore testo informativo</small>
@@ -198,12 +188,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="exampleInputText26">Etichetta di esempio</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+        </span>
+        <label class="active" for="exampleInputText26">Etichetta di esempio</label>
         <input type="text" class="form-control" id="exampleInputText26" disabled value="Testo non modificabile">
       </div>
       <small id="formGroupExampleInputWithHelpDescription26" class="form-text info">Dato derivante da anagrafica</small>
@@ -218,34 +206,28 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="row">
   <div class="form-group col-4">
     <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-30">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-30">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid" id="input-field-30" name="input-field-30" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-31">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-31">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid warning" id="input-field-31" name="input-field-31" value="Testo immesso" />
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-32">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-32">Etichetta di esempio</label>
       <input type="text" class="form-control is-invalid" id="input-field-32" name="input-field-32" value="Testo immesso" />
     </div>
   </div>
@@ -253,36 +235,30 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="row">
   <div class="form-group col-4">
     <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-33">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-33">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid" id="input-field-33" name="input-field-33" value="Testo immesso" />
       <small class="valid-feedback is-valid">Validato!</small>
     </div>
   </div>
   <div class="form-group col-4">
     <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-34">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-34">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid warning" id="input-field-34" name="input-field-34" value="Testo immesso" />
       <small class="warning-feedback is-valid warning">Possibili problemi.</small>
     </div>
   </div>
   <div class="form-group col-4">
-      <div class="input-group">
-      <div class="input-group-prepend">
-        <label class="active" for="input-field-35">Etichetta di esempio</label>
-        <div class="input-group-text">
-          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
-        </div>
-      </div>
+    <div class="input-group">
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
+      </span>
+      <label class="active" for="input-field-35">Etichetta di esempio</label>
       <input type="text" class="form-control is-invalid" id="input-field-35" name="input-field-35" value="Testo immesso" />
       <small class="invalid-feedback is-invalid">Errore bloccante!</small>
     </div>
@@ -368,12 +344,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label for="passwd41">Password con label e testo di aiuto</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+        </span>
+        <label for="passwd41">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd41" 
               aria-labelledby="infoPassword" />
         <span class="password-icon" aria-hidden="true">
@@ -387,12 +361,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="passwd42">Password con label e testo di aiuto</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+        </span>
+        <label class="active" for="passwd42">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd42"
               aria-labelledby="infoPassword" value="iuQ34!iwah" />
         <span class="password-icon" aria-hidden="true">
@@ -406,12 +378,10 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <div class="input-group">
-        <div class="input-group-prepend">
-          <label class="active" for="passwd43">Password con label e testo di aiuto</label>
-          <div class="input-group-text">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
-          </div>
-        </div>
+        <span class="input-group-text">
+          <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-key"></use></svg>
+        </span>
+        <label class="active" for="passwd43">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd43"
               aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
         <span class="password-icon" aria-hidden="true">
@@ -440,11 +410,9 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="col">
       <div class="form-group">
         <div class="input-group">
-          <div class="input-group-prepend">
-            <div class="input-group-text">
-              <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-            </div>
-          </div>
+          <span class="input-group-text">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+          </span>
           <label for="searchField">Testo da cercare</label>
           <input type="text" class="form-control" id="searchField">
         </div>
@@ -511,40 +479,52 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 </div>
 <div class="row">
   <div class="col">
-    <label for="inputNumber1" class="input-number-label">Lorem ipsum</label>
-    <span class="input-number">
-      <input type="number" data-bs-input id="inputNumber1" name="inputNumber1" step="any" />
-      <button class="input-number-add">
-        <span class="visually-hidden">Aumenta valore</span>
-      </button>
-      <button class="input-number-sub">
-        <span class="visually-hidden">Diminuisci valore</span>
-      </button>
-    </span>
+    <div class="form-group">
+      <label for="inputNumber1" class="input-number-label">Lorem ipsum</label>
+      <div class="input-group input-number">
+        <input type="number" class="form-control" data-bs-input id="inputNumber1" name="inputNumber1" step="any" />
+        <span class="input-group-text align-buttons flex-column">
+          <button class="input-number-add">
+            <span class="visually-hidden">Aumenta valore</span>
+          </button>
+          <button class="input-number-sub">
+            <span class="visually-hidden">Diminuisci valore</span>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
   <div class="col">
-    <label for="inputNumber2" class="input-number-label">Lorem ipsum</label>
-    <span class="input-number">
-      <input type="number" data-bs-input id="inputNumber2" name="inputNumber2" value="100" step="1" />
-      <button class="input-number-add">
-        <span class="visually-hidden">Aumenta valore</span>
-      </button>
-      <button class="input-number-sub">
-        <span class="visually-hidden">Diminuisci valore</span>
-      </button>
-    </span>
+    <div class="form-group">
+      <label for="inputNumber2" class="input-number-label">Lorem ipsum</label>
+      <div class="input-group input-number">
+        <input type="number" data-bs-input id="inputNumber2" name="inputNumber2" value="100" step="1" />
+        <span class="input-group-text align-buttons flex-column">
+          <button class="input-number-add">
+            <span class="visually-hidden">Aumenta valore</span>
+          </button>
+          <button class="input-number-sub">
+            <span class="visually-hidden">Diminuisci valore</span>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
   <div class="col">
-    <label for="inputNumber3" class="input-number-label">Lorem ipsum</label>
-    <span class="input-number disabled">
-      <input type="number" data-bs-input id="inputNumber3" name="inputNumber3" value="100" step="1" disabled />
-      <button class="input-number-add" disabled >
-        <span class="visually-hidden">Aumenta valore</span>
-      </button>
-      <button class="input-number-sub" disabled >
-        <span class="visually-hidden">Diminuisci valore</span>
-      </button>
-    </span>
+    <div class="form-group">
+      <label for="inputNumber3" class="input-number-label">Lorem ipsum</label>
+      <div class="input-group input-number disabled">
+        <input type="number" data-bs-input id="inputNumber3" name="inputNumber3" value="100" step="1" disabled />
+        <span class="input-group-text align-buttons flex-column">
+          <button class="input-number-add" disabled >
+            <span class="visually-hidden">Aumenta valore</span>
+          </button>
+          <button class="input-number-sub" disabled >
+            <span class="visually-hidden">Diminuisci valore</span>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -557,28 +537,38 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 </div>
 <div class="row">
   <div class="col-4">
-    <label for="inputPerc1" class="input-number-label">Lorem ipsum</label>
-    <span class="input-number input-number-percentage">
-      <input type="number" data-bs-input id="inputPerc1" name="inputPerc1" value="50" min="0" max="100" step="10" />
-      <button class="input-number-add">
-        <span class="visually-hidden">Aumenta del 10%</span>
-      </button>
-      <button class="input-number-sub">
-        <span class="visually-hidden">Diminuisci del 10%</span>
-      </button>
-    </span>
+    <div class="form-group">
+      <label for="inputPerc1" class="input-number-label active">Lorem ipsum</label>
+      <div class="input-group input-number input-number-percentage">
+        <span class="input-group-text fw-semibold">%</span>
+        <input type="number" class="form-control" data-bs-input id="inputPerc1" name="inputPerc1" value="50" min="0" max="100" step="10" />
+        <span class="input-group-text align-buttons flex-column">
+          <button class="input-number-add">
+            <span class="visually-hidden">Aumenta del 10%</span>
+          </button>
+          <button class="input-number-sub">
+            <span class="visually-hidden">Diminuisci del 10%</span>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
   <div class="col-4">
-    <label for="inputValuta1" class="input-number-label">Valuta</label>
-    <span class="input-number input-number-currency">
-      <input type="number" data-bs-input id="inputValuta1" name="inputValuta1" step="any" value="3.50" min="0" />
-      <button class="input-number-add">
-        <span class="visually-hidden">Aumenta valore Euro</span>
-      </button>
-      <button class="input-number-sub">
-        <span class="visually-hidden">Diminuisci valore Euro</span>
-      </button>
-    </span>
+    <div class="form-group">
+      <label for="inputValuta1" class="input-number-label active">Valuta</label>
+      <div class="input-group input-number input-number-currency">
+        <span class="input-group-text fw-semibold">€</span>
+        <input type="number" class="form-control" data-bs-input id="inputValuta1" name="inputValuta1" step="any" value="3.50" min="0" />
+        <span class="input-group-text align-buttons flex-column">
+          <button class="input-number-add">
+            <span class="visually-hidden">Aumenta valore Euro</span>
+          </button>
+          <button class="input-number-sub">
+            <span class="visually-hidden">Diminuisci valore Euro</span>
+          </button>
+        </span>
+      </div>
+    </div>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}

@@ -26,14 +26,14 @@ Il **Popover** è una componente che viene richiamato al click e fornisce inform
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="right"
         title="Titolo del Popover"
         data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
-        Popover a sinistra
+        Popover a destra
       </button>
     </div>
     <div class="col-12 col-md-4 offset-md-4">
       <button type="button" class="btn btn-secondary" data-container="body" data-bs-toggle="popover" data-bs-placement="left"
         title="Titolo del Popover"
         data-bs-content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vel finibus augue.">
-        Popover a destra
+        Popover a sinistra
       </button>
     </div>
   </div>

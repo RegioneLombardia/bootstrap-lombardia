@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Megamenu
 group: navigazione
-toc: false
+toc: true
 ---
 
 Il **Megamenu** è una variante della componente dropdown.  

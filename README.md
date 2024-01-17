@@ -25,14 +25,13 @@ oppure
 - [Segnalazione bug e richieste](#segnalazione-bug-e-richieste-di-aiuto)
 - [Licenze software dei componenti di terze parti](#licenze-software-dei-componenti-di-terze-parti)
 
-## Segnalazione bug e richieste di aiuto
+## Segnalazioni e richieste di aiuto
 
-Vuoi segnalare un bug o fare una richiesta?
+Vuoi fare una segnalazione o una richiesta?
 
 Prima di tutto assicurati che sia un problema relativo al tema Bootstrap Lombardia e non alle librerie da cui deriva
 (in tal caso puoi fare riferimento al [repository di Bootstrap Italia](https://italia.github.io/bootstrap-italia) o al [repository di Bootstrap](https://github.com/twbs/bootstrap)).  
 Puoi [creare una issue](https://github.com/RegioneLombardia/bootstrap-lombardia/issues) su GitHub, nella sezione apposita.
-
 
 ## Licenze software dei componenti di terze parti
 

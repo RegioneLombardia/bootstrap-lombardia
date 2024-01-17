@@ -14,10 +14,8 @@ per il menù orizzontale.
   .it-header-navbar-wrapper {
     &.theme-light-desk {
       &.it25-menu-orizzontale {
-        background: $navigation-light-bg-color;
-        box-shadow: $dropdown-box-shadow;
         .navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
-          fill: $it25-navigation-text-color; //mod
+          fill: $it25-navigation-text-color;
         }
 
         .navbar {
@@ -25,83 +23,21 @@ per il menù orizzontale.
           // navbar mobile
           .navbar-collapsable {
             // menu vrapper
-            .menu-wrapper {
-              background: $navigation-light-bg-color;
-              .navbar-nav {
-                .dropdown-menu {
-                  h3,
-                  .link-list-heading {
-                    color: $navigation-light-bg-color;
-                  }
-                  .link-list {
-                    h3 {
-                      color: $navigation-light-bg-color;
-                    }
-                  }
-                }
-              }
-            }
             /*lista menu*/
             .navbar-nav {
               li {
                 // megamenu variation
                 &.megamenu {
-                  // external link
-                  .it-external {
-                    .link-list-wrapper {
-                      .link-list {
-                        li.it-more {
-                          a {
-                            &:before {
-                              background: $navigation-light-megamenu-separator-color;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
                   a.nav-link {
                     &:before {
-                      background-color: white; //mod
-                    }
-                  }
-                  // footer cta
-                  .it-megamenu-footer {
-                    background: $navigation-light-megamenu-footer-bg-color;
-                  }
-                  .dropdown-menu {
-                    // asymettrical column
-                    .it-heading-megacolumn-wrapper {
-                      .it-heading-megacolumn {
-                        color: $navigation-light-bg-color;
-                      }
-                    }
-                    // vertical cta
-                    .it-vertical {
-                      background: $navigation-light-megamenu-footer-bg-color;
-                      .link-list-wrapper {
-                        .link-list {
-                          li {
-                            .divider {
-                              background: $navigation-light-megamenu-separator-color;
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                  // description content
-                  .it-description {
-                    p {
-                      color: $navigation-light-bg-color;
+                      background-color: white;
                     }
                   }
                 }
-
                 a.nav-link {
-                  color: $it25-navigation-text-color; //mod
+                  color: $it25-navigation-text-color;
                   &.active {
-                    border-bottom-color: white; //mod
+                    border-bottom-color: white;
                     font-weight: 700;
                   }
                 }
@@ -110,25 +46,19 @@ per il menù orizzontale.
           }
           //dropdown
           .dropdown-menu {
-            background: white; //mod
-            h3 {
-              font-weight: 600;
-              &.it-heading-megacolumn {
-                color: $navigation-light-bg-color;
-              }
-            }
+            background: white;
             &:before {
-              background: white; //mod
+              background: white;
             }
             .link-list-wrapper {
               ul {
                 li {
                   a {
                     &.list-item.active {
-                      color: $it25-navigation-text-color; //mod
+                      color: $it25-navigation-text-color;
 
                       span {
-                        color: $it25-navigation-text-color; //mod
+                        color: $it25-navigation-text-color;
                       }
                     }
                     &.disabled {
@@ -138,20 +68,8 @@ per il menù orizzontale.
                       }
                     }
                     span {
-                      color: $it25-navigation-text-color; //mod
+                      color: $it25-navigation-text-color;
                     }
-                    i {
-                      color: $navigation-light-bg-color;
-                    }
-                    h3 {
-                      color: $navigation-light-bg-color;
-                    }
-                  }
-                  h3 {
-                    color: $navigation-light-bg-color;
-                  }
-                  .divider {
-                    background: $navigation-light-separator-color;
                   }
                 }
               }

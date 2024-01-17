@@ -3,6 +3,9 @@ markdown: kramdown
 highlighter: rouge
 kramdown:
   auto_ids: true
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
 permalink: pretty
 
@@ -52,7 +55,7 @@ twitter_handle: '@designersITA'
 
 # Versions
 current_version:		2.1.1
-bootstrap_italia_version: 2.7.7
+bootstrap_italia_version: 2.8.2
 bootstrap_version: 5.2.3
 bootstrap_minor: 5.1
 

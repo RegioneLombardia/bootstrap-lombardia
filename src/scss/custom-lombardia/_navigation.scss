@@ -17,7 +17,7 @@
           &.disabled {
             cursor: not-allowed;
             span {
-              color: $gray-disabled;
+              color: $input-color-placeholder;
             }
           }
 
