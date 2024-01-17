@@ -1,3 +1,14 @@
+# [2.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.0) (2024-01-17)
+
+
+### Bug Fixes
+
+* Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
+* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
+* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
+
+
+
 ## [2.8.2](https://github.com/italia/bootstrap-italia/compare/v2.8.1...v2.8.2) (2024-01-10)
 
 
