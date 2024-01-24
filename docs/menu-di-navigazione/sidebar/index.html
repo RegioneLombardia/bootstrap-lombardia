@@ -11,13 +11,13 @@
 
 <title>Sidebar · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401241042" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401241042" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.8.2</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -558,7 +558,13 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Sidebar</h1>
           <p class="lead">Barra di navigazione laterale, include liste di link e liste di link annidate.</p>
-          <h2 id="semplice">Semplice</h2>
+          <div class="bd-callout bd-callout-danger">
+<p>Breaking feature dalla versione <strong>2.8.0</strong></p>
+
+<p>Gli elementi di tipo <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code> dei collapse necessitano l’aggiunta dell’attributo <code class="language-plaintext highlighter-rouge">role="button"</code>.</p>
+</div>
+
+<h2 id="semplice">Semplice</h2>
 
 <p>La sidebar semplice può contenere:</p>
 
@@ -568,7 +574,7 @@
   <li>Lista di link secondaria</li>
 </ul>
 
-<p>Per differenziare a livello stilistico i link secondari, è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.linklist-secondary</code> all’elemento <code class="language-plaintext highlighter-rouge">&lt;div class="sidebar-linklist-wrapper"&gt;</code> contenente la <a href="/bootstrap-lombardia/docs/organizzare-i-contenuti/liste/#liste-per-menù-di-navigazione">Lista di link</a>.</p>
+<p>Per differenziare a livello stilistico i link secondari, è sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.linklist-secondary</code> all’elemento <code class="language-plaintext highlighter-rouge">&lt;div class="sidebar-linklist-wrapper"&gt;</code> contenente la <a href="/bootstrap-lombardia/docs/organizzare-i-contenuti/liste/#liste-per-menu-di-navigazione">Lista di link</a>.</p>
 
 <div class="bd-example">
 <div class="sidebar-wrapper">
@@ -603,7 +609,38 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
@@ -633,7 +670,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="con-icona">Con icona</h3>
 
@@ -692,7 +730,58 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
@@ -742,7 +831,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="con-linea-a-destra">Con linea a destra</h3>
 
@@ -781,7 +871,38 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper it-line-right-side"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper it-line-right-side"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
@@ -811,7 +932,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="con-linea-a-sinistra">Con linea a sinistra</h3>
 
@@ -850,7 +972,38 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper it-line-left-side"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper it-line-left-side"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
@@ -880,7 +1033,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="annidata">Annidata</h2>
 
@@ -893,7 +1047,7 @@
     <div class="link-list-wrapper">
       <ul class="link-list">
         <li>
-          <a class="list-item large medium right-icon active" href="#collapseOne" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+          <a class="list-item large medium right-icon active" href="#collapseOne" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
           <span class="list-item-title-icon-wrapper">
             <span>Link lista 1 (selezionato)</span>
             <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
@@ -909,7 +1063,7 @@
           </ul>
         </li>
         <li>
-          <a class="list-item large medium right-icon" href="#collapseTwo" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+          <a class="list-item large medium right-icon" href="#collapseTwo" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
             <span class="list-item-title-icon-wrapper">
               <span>Link lista 2</span>
               <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
@@ -925,7 +1079,7 @@
           </ul>
         </li>
         <li>
-          <a class="list-item large medium right-icon" href="#collapseThree" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+          <a class="list-item large medium right-icon" href="#collapseThree" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
             <span class="list-item-title-icon-wrapper">
               <span>Link lista 3</span>
               <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
@@ -957,13 +1111,82 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h3&gt;</span>Header<span class="nt">&lt;/h3&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon active"</span> <span class="na">href=</span><span class="s">"#collapseOne"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon active"</span> <span class="na">href=</span><span class="s">"#collapseOne"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span&gt;</span>Link lista 1 (selezionato)<span class="nt">&lt;/span&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-primary right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
@@ -979,7 +1202,7 @@
           <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseTwo"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseTwo"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-primary right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
@@ -995,7 +1218,7 @@
           <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseThree"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseThree"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;</span>
               <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-primary right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
@@ -1025,7 +1248,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h2 id="sidebar-versione-scura">Sidebar versione scura</h2>
 
@@ -1038,7 +1262,7 @@
     <div class="link-list-wrapper">
       <ul class="link-list">
         <li>
-          <a class="list-item large medium right-icon active" href="#collapseFour" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
+          <a class="list-item large medium right-icon active" href="#collapseFour" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
             <span class="list-item-title-icon-wrapper">
               <span>Link lista 1 (selezionato)</span><svg class="icon icon-sm icon-white right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
             </span>
@@ -1053,7 +1277,7 @@
           </ul>
         </li>
         <li>
-          <a class="list-item large medium right-icon" href="#collapseFive" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
+          <a class="list-item large medium right-icon" href="#collapseFive" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
           <span class="list-item-title-icon-wrapper">
               <span>Link lista 2</span><svg class="icon icon-sm icon-white right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
             </span>
@@ -1068,7 +1292,7 @@
           </ul>
         </li>
         <li>
-          <a class="list-item large medium right-icon" href="#collapseSix" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
+          <a class="list-item large medium right-icon" href="#collapseSix" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
             <span class="list-item-title-icon-wrapper">
               <span>Link lista 3</span><svg class="icon icon-sm icon-white right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
             </span>
@@ -1099,13 +1323,79 @@
   </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper theme-dark"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-wrapper theme-dark"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;h3&gt;</span>Header<span class="nt">&lt;/h3&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"sidebar-linklist-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon active"</span> <span class="na">href=</span><span class="s">"#collapseFour"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon active"</span> <span class="na">href=</span><span class="s">"#collapseFour"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"true"</span> <span class="na">aria-controls=</span><span class="s">"collapseOne"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;span&gt;</span>Link lista 1 (selezionato)<span class="nt">&lt;/span&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-white right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/span&gt;</span>
@@ -1120,7 +1410,7 @@
           <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseFive"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseFive"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseTwo"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-white right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/span&gt;</span>
@@ -1135,7 +1425,7 @@
           <span class="nt">&lt;/ul&gt;</span>
         <span class="nt">&lt;/li&gt;</span>
         <span class="nt">&lt;li&gt;</span>
-          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseSix"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"list-item large medium right-icon"</span> <span class="na">href=</span><span class="s">"#collapseSix"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-bs-toggle=</span><span class="s">"collapse"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-controls=</span><span class="s">"collapseThree"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"list-item-title-icon-wrapper"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-sm icon-white right"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
             <span class="nt">&lt;/span&gt;</span>
@@ -1164,7 +1454,8 @@
       <span class="nt">&lt;/ul&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 
         </main>
@@ -1172,7 +1463,7 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401241042"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1222,12 +1513,12 @@
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401241042"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401241042"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1244,7 +1535,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401241042"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -1313,8 +1604,8 @@
       button.classList.add('btn', 'btn-primary', 'btn-xs');
       button.setAttribute('type', 'button');
       button.addEventListener('click', function () {
-        const code = node.querySelector('code').innerText.trim();
-        navigator.clipboard.writeText(code);
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre')  ?? node.querySelector('code');
+        navigator.clipboard.writeText(code.innerText.trim());
         button.innerText = 'Copiato';
         button.classList.remove('btn-primary');
         button.classList.add('btn-success');
@@ -1329,7 +1620,9 @@
        * Snippet
        * <div class="bd-example">
        * </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>       * 
+</pre></td></tr></tbody></table></code></pre></figure>
 
        */
       if (node.nodeName == 'FIGURE') {
@@ -1341,6 +1634,7 @@
       * ```
       */
       else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
         node.insertAdjacentElement('beforebegin', divContainer);
       }
     });

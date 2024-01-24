@@ -11,13 +11,13 @@
 
 <title>Input Numerico · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401241042" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401241042" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.7.7</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.8.2</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -571,56 +571,106 @@ L’attributo <code class="language-plaintext highlighter-rouge">value=""</code>
 
 <div class="bd-example">
 <div class="w-100">
-  <label for="inputNumber" class="input-number-label">Input Number inserito in una colonna a tutta larghezza</label>
-  <span class="input-number">
-    <input type="number" data-bs-input="" id="inputNumber" name="inputNumber" value="100" step="any" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta valore</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci valore</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber" class="input-number-label active">Input Number inserito in una colonna a tutta larghezza</label>
+    <div class="input-group input-number">
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber" name="inputNumber" value="100" step="any" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 
 <div class="w-50 mt-5">
-  <label for="inputNumber1" class="input-number-label">Input Number inserito in una colonna di larghezza 50%</label>
-  <span class="input-number">
-    <input type="number" data-bs-input="" id="inputNumber1" name="inputNumber1" value="100" step="any" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta valore</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci valore</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber1" class="input-number-label active">Input Number inserito in una colonna di larghezza 50%</label>
+    <div class="input-group input-number">
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber1" name="inputNumber1" value="100" step="any" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Input Number inserito in una colonna a tutta larghezza<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber"</span> <span class="na">name=</span><span class="s">"inputNumber"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Input Number inserito in una colonna a tutta larghezza<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber"</span> <span class="na">name=</span><span class="s">"inputNumber"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-50 mt-5"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber1"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Input Number inserito in una colonna di larghezza 50%<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber1"</span> <span class="na">name=</span><span class="s">"inputNumber1"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber1"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Input Number inserito in una colonna di larghezza 50%<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber1"</span> <span class="na">name=</span><span class="s">"inputNumber1"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="limiti-e-step">Limiti e Step</h3>
 
@@ -628,61 +678,115 @@ L’attributo <code class="language-plaintext highlighter-rouge">value=""</code>
 
 <div class="bd-example">
 <div>
-  <label for="inputNumber2" class="input-number-label">Min, Max &amp; Step</label>
-  <span class="input-number">
-    <input type="number" data-bs-input="" id="inputNumber2" name="inputNumber2" value="100" min="-2000" max="15000" step="500" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta valore di 500</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci valore di 500</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber2" class="input-number-label active">Min, Max &amp; Step</label>
+    <div class="input-group input-number">
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber2" name="inputNumber2" value="100" min="-2000" max="15000" step="500" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber2"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Min, Max <span class="err">&amp;</span> Step<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber2"</span> <span class="na">name=</span><span class="s">"inputNumber2"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">min=</span><span class="s">"-2000"</span> <span class="na">max=</span><span class="s">"15000"</span> <span class="na">step=</span><span class="s">"500"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore di 500<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore di 500<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber2"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Min, Max <span class="err">&amp;</span> Step<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber2"</span> <span class="na">name=</span><span class="s">"inputNumber2"</span> <span class="na">value=</span><span class="s">"100"</span> <span class="na">min=</span><span class="s">"-2000"</span> <span class="na">max=</span><span class="s">"15000"</span> <span class="na">step=</span><span class="s">"500"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="valuta">Valuta</h3>
 
 <p>Per anteporre il simbolo della valuta in Euro, aggiungere la classe <code class="language-plaintext highlighter-rouge">.input-number-currency</code> al wrapper <code class="language-plaintext highlighter-rouge">.input-number</code>.</p>
 
 <div class="bd-example">
+
 <div>
-  <label for="inputNumber3" class="input-number-label">Currency</label>
-  <span class="input-number input-number-currency">
-    <input type="number" data-bs-input="" id="inputNumber3" name="inputNumber3" step="any" value="3.50" min="0" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta valore Euro</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci valore Euro</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber3" class="input-number-label active">Currency</label>
+    <div class="input-group input-number input-number-currency">
+      <span class="input-group-text fw-semibold">€</span>
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber3" name="inputNumber3" step="any" value="3.50" min="0" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore Euro</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore Euro</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber3"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Currency<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number input-number-currency"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber3"</span> <span class="na">name=</span><span class="s">"inputNumber3"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="na">value=</span><span class="s">"3.50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore Euro<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore Euro<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber3"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Currency<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number input-number-currency"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text fw-semibold"</span><span class="nt">&gt;</span>€<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber3"</span> <span class="na">name=</span><span class="s">"inputNumber3"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="na">value=</span><span class="s">"3.50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore Euro<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore Euro<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="percentuale">Percentuale</h3>
 
@@ -692,30 +796,58 @@ L’attributo <code class="language-plaintext highlighter-rouge">value=""</code>
 
 <div class="bd-example">
 <div>
-  <label for="inputNumber4" class="input-number-label">Percentage</label>
-  <span class="input-number input-number-percentage">
-    <input type="number" data-bs-input="" id="inputNumber4" name="inputNumber4" value="50" min="0" max="100" step="any" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta del 10%</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci del 10%</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber4" class="input-number-label active">Percentage</label>
+    <div class="input-group input-number input-number-percentage">
+      <span class="input-group-text fw-semibold">%</span>
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber4" name="inputNumber4" value="50" min="0" max="100" step="any" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta del 10%</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci del 10%</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber4"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Percentage<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number input-number-percentage"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber4"</span> <span class="na">name=</span><span class="s">"inputNumber4"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta del 10%<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci del 10%<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber4"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Percentage<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number input-number-percentage"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text fw-semibold"</span><span class="nt">&gt;</span>%<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber4"</span> <span class="na">name=</span><span class="s">"inputNumber4"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"any"</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta del 10%<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci del 10%<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="disabilitato">Disabilitato</h3>
 
@@ -724,30 +856,55 @@ Aggiungere anche l’attributo <code class="language-plaintext highlighter-rouge
 
 <div class="bd-example">
 <div>
-  <label for="inputNumber5" class="input-number-label">Disabled</label>
-  <span class="input-number disabled">
-    <input type="number" data-bs-input="" id="inputNumber5" name="inputNumber5" value="50" min="0" max="100" step="1" disabled="" />
-    <button class="input-number-add" disabled="">
-      <span class="visually-hidden">Aumenta valore</span>
-    </button>
-    <button class="input-number-sub" disabled="">
-      <span class="visually-hidden">Diminuisci valore</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber5" class="input-number-label active">Disabled</label>
+    <div class="input-group input-number disabled">
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber5" name="inputNumber5" value="50" min="0" max="100" step="1" disabled="" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber5"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number disabled"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber5"</span> <span class="na">name=</span><span class="s">"inputNumber5"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber5"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number disabled"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber5"</span> <span class="na">name=</span><span class="s">"inputNumber5"</span> <span class="na">value=</span><span class="s">"50"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">step=</span><span class="s">"1"</span> <span class="na">disabled</span> <span class="nt">/&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="ridimensionamento">Ridimensionamento</h3>
 
@@ -757,30 +914,55 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
 
 <div class="bd-example">
 <div class="w-100">
-  <label for="inputNumber6" class="input-number-label">Adattivo</label>
-  <span class="input-number input-number-adaptive">
-    <input type="number" data-bs-input="" id="inputNumber6" name="inputNumber6" value="99999" step="any" />
-    <button class="input-number-add">
-      <span class="visually-hidden">Aumenta valore</span>
-    </button>
-    <button class="input-number-sub">
-      <span class="visually-hidden">Diminuisci valore</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber6" class="input-number-label active">Adattivo</label>
+    <div class="input-group input-number input-number-adaptive">
+      <input type="number" class="form-control" data-bs-input="" id="inputNumber6" name="inputNumber6" value="99999" step="any" />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber6"</span> <span class="na">class=</span><span class="s">"input-number-label"</span><span class="nt">&gt;</span>Adattivo<span class="nt">&lt;/label&gt;</span>
-  <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-number input-number-adaptive"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber6"</span> <span class="na">name=</span><span class="s">"inputNumber6"</span> <span class="na">value=</span><span class="s">"99999"</span> <span class="na">step=</span><span class="s">"any"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
-    <span class="nt">&lt;/button&gt;</span>
-  <span class="nt">&lt;/span&gt;</span>
-<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"w-100"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"inputNumber6"</span> <span class="na">class=</span><span class="s">"input-number-label active"</span><span class="nt">&gt;</span>Adattivo<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group input-number input-number-adaptive"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">data-bs-input</span> <span class="na">id=</span><span class="s">"inputNumber6"</span> <span class="na">name=</span><span class="s">"inputNumber6"</span> <span class="na">value=</span><span class="s">"99999"</span> <span class="na">step=</span><span class="s">"any"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text align-buttons flex-column"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-add"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Aumenta valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"input-number-sub"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Diminuisci valore<span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
 
 <h3 id="attivazione-tramite-javascript">Attivazione tramite JavaScript</h3>
 
@@ -795,7 +977,7 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401241042"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -845,12 +1027,12 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401110942"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202401241042"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401110942"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202401241042"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -867,7 +1049,7 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401110942"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202401241042"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
@@ -936,8 +1118,8 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
       button.classList.add('btn', 'btn-primary', 'btn-xs');
       button.setAttribute('type', 'button');
       button.addEventListener('click', function () {
-        const code = node.querySelector('code').innerText.trim();
-        navigator.clipboard.writeText(code);
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre')  ?? node.querySelector('code');
+        navigator.clipboard.writeText(code.innerText.trim());
         button.innerText = 'Copiato';
         button.classList.remove('btn-primary');
         button.classList.add('btn-success');
@@ -952,7 +1134,9 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
        * Snippet
        * <div class="bd-example">
        * </div>
-<figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>       * 
+</pre></td></tr></tbody></table></code></pre></figure>
 
        */
       if (node.nodeName == 'FIGURE') {
@@ -964,6 +1148,7 @@ sufficiente aggiungere la classe <code class="language-plaintext highlighter-rou
       * ```
       */
       else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
         node.insertAdjacentElement('beforebegin', divContainer);
       }
     });

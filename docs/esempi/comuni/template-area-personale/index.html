@@ -11,11 +11,11 @@
 
 <title>Template Area Personale · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202401241042" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401110942" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202401241042" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -328,29 +328,29 @@
             <div class="nav-tabs-hidescroll mt-4 mt-md-5">
               <ul class="nav nav-tabs auto no-border no-background" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link text-primary active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"
-                    >Le mie pratiche</a
-                  >
+                  <a class="nav-link text-primary active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+                    Le mie pratiche
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"
-                    >Pagamenti</a
-                  >
+                  <a class="nav-link text-primary" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+                    Pagamenti
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"
-                    >Documenti</a
-                  >
+                  <a class="nav-link text-primary" id="tab3-tab" data-bs-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+                    Documenti
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"
-                    >Messaggi</a
-                  >
+                  <a class="nav-link text-primary" id="tab4-tab" data-bs-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+                    Messaggi
+                  </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-primary" id="tab5-tab" data-bs-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false"
-                    >Scadenze</a
-                  >
+                  <a class="nav-link text-primary" id="tab5-tab" data-bs-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+                    Scadenze
+                  </a>
                 </li>
               </ul>
             </div>
@@ -1517,7 +1517,7 @@
 </a>
 
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401110942"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202401241042"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1609,8 +1609,8 @@
       button.classList.add('btn', 'btn-primary', 'btn-xs');
       button.setAttribute('type', 'button');
       button.addEventListener('click', function () {
-        const code = node.querySelector('code').innerText.trim();
-        navigator.clipboard.writeText(code);
+        const code = node.querySelector('code td[class="code"] pre') ?? node.querySelector('code td[class="rouge-code"] pre')  ?? node.querySelector('code');
+        navigator.clipboard.writeText(code.innerText.trim());
         button.innerText = 'Copiato';
         button.classList.remove('btn-primary');
         button.classList.add('btn-success');
@@ -1624,7 +1624,9 @@
       /**
        * Snippet
        * <div class="bd-example">
-       * </div><figure class="highlight"><pre><code class="language-html" data-lang="html">       * </code></pre></figure>
+       * </div><figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+</pre></td><td class="code"><pre>       * 
+</pre></td></tr></tbody></table></code></pre></figure>
        */
       if (node.nodeName == 'FIGURE') {
         node.insertBefore(divContainer, node.querySelector('pre'));
@@ -1635,6 +1637,7 @@
       * ```
       */
       else if (node.nodeName == 'PRE') {
+        node.classList.remove("highlight");
         node.insertAdjacentElement('beforebegin', divContainer);
       }
     });
