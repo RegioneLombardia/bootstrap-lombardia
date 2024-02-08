@@ -1,43 +1,10 @@
-## [2.2.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.1) (2024-01-17)
+## [rl2.2.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.1) (2024-01-17)
 
-
-### Bug Fixes
-
-* Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
-* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
-* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
-
+# [rl2.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.0) (2024-01-17)
 
 ### Features
 
 * allineamento a versione 2.8.2 di Bootstrap Italia ([b43bc94](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b43bc946ef4f0a46442055bb4a083395d3d2a8ea))
-
-
-
-# [2.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.0) (2024-01-17)
-
-
-### Bug Fixes
-
-* Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
-* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
-* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
-
-
-### Features
-
-* allineamento a versione 2.8.2 di Bootstrap Italia ([b43bc94](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b43bc946ef4f0a46442055bb4a083395d3d2a8ea))
-
-
-
-# [2.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.0) (2024-01-17)
-
-
-### Bug Fixes
-
-* Conflitto dipendenze npm ([d8ed5bd](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d8ed5bdb0cee0b45f4dcaf5e768cf93b425bcc1e))
-* **docs:** piccole correzioni su includes ([e0e92ef](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/e0e92ef64a0575e836f278b5f1b2ebbe9c6691b7))
-* scrollbar hamburger menu su display piccoli ([b9cfdf9](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b9cfdf9d0739ab3adf6a370868957dc4eb58027c))
 
 
 
