@@ -104,3 +104,8 @@ E’ possibile che al mouse over lo stato delle voci cambi. In questo caso le va
 {% include html_docs/header/topbar_base.html %}
 {% include html_docs/header/header_hamburger.html %}
 {% endhighlight %}
+
+Per attivare l'*hamburger menu* è necessario invocare la funzione:
+```
+bootstrap.it25Header()
+```
