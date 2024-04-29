@@ -108,7 +108,10 @@ header {
   .it25-close-div {
     display: none;
     .btn {
-      padding: 1px 6px;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
     }
 
     @media (min-width: #{map-get($grid-breakpoints, lg)}) {
