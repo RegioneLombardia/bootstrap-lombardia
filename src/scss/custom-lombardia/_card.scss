@@ -54,6 +54,10 @@
   &:after {
     content: none;
   }
+  a.read-more {
+    bottom: 0;
+    font-size: 1rem;
+  }
 }
 
 .it25-card-conditions {
