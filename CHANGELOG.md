@@ -1,3 +1,36 @@
+## [rl2.2.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl(tag: rl2.2.1...rl2.2.2) (2024-04-30)
+
+### BugFixes
+
+* fix #7 ([54a0b96b3s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/54a0b96b3bfbc87359b4dff78afd5d50907309ad))
+* fix #6 ([76096a52cs](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/76096a52c8d571ff89524a17db66bdb32caa2779))
+
+
+### Features
+
+* allineamento alla 2.8.4 di bootstrap-italia ([4e43aad7fs](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/4e43aad7fc52a2769b8ee0bb766861f83afc7e01))
+
+
+
+## [2.8.4](https://github.com/italia/bootstrap-italia/compare/v2.8.3...v2.8.4) (2024-03-22)
+
+
+### Bug Fixes
+
+* callout title size ([584cac8](https://github.com/italia/bootstrap-italia/commit/584cac895b3a2a1f16a8d93b2b9739554b10cd25))
+* changed alert size and position ([204eb4f](https://github.com/italia/bootstrap-italia/commit/204eb4f20ed5f4ff318115385059196621eee0e5))
+* changes badge size ([a2123d1](https://github.com/italia/bootstrap-italia/commit/a2123d1be824c4c0d10d15ff66e9ea86b127f190))
+
+
+
+## [2.8.3](https://github.com/italia/bootstrap-italia/compare/v2.8.2...v2.8.3) (2024-03-12)
+
+
+### Bug Fixes
+
+* add threads icons ([fe62129](https://github.com/italia/bootstrap-italia/commit/fe6212965d071e19e1b785f22585937da4a93efc))
+
+
 ## [rl2.2.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.1) (2024-01-17)
 
 # [rl2.2.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.8.2...v2.2.0) (2024-01-17)
@@ -5,7 +38,6 @@
 ### Features
 
 * allineamento a versione 2.8.2 di Bootstrap Italia ([b43bc94](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/b43bc946ef4f0a46442055bb4a083395d3d2a8ea))
-
 
 
 ## [2.8.2](https://github.com/italia/bootstrap-italia/compare/v2.8.1...v2.8.2) (2024-01-10)
