@@ -14,6 +14,8 @@ per il menù orizzontale.
   .it-header-navbar-wrapper {
     &.theme-light-desk {
       &.it25-menu-orizzontale {
+        box-shadow: none;
+        border-bottom: 1px solid #e1e7ea;
         .navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
           fill: $it25-navigation-text-color;
         }
