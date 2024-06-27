@@ -36,13 +36,21 @@ header {
   .dropdown-menu[data-bs-popper] {
     top: 100% !important;
   }
-}
 
-.it-header-slim-wrapper {
   .it-header-slim-wrapper-content {
     .header-slim-right-zone {
       .btn-full {
         padding: 17px;
+        margin-top: 0;
+        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+          margin-top: -1px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, md)}) {
+          margin-top: -7px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          margin-top: 0;
+        }
       }
     }
   }
