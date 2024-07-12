@@ -65,7 +65,7 @@ Qualora si disponesse soltanto della loro versione in positivo, essi devono esse
       <div class="col-12 my-4 fw-bold title">ACCREDITAS Sistema di accreditamento</div>
     </div>
     <div class="row">
-      <div class="col-12 copyright">
+      <div class="col-12 my-3 copyright">
         <span class="d-inline-block">&copy; Copyright Regione Lombardia tutti i diritti riservati</span>
         <span class="d-inline-block"> - C.F. 80050050154</span>
         <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>

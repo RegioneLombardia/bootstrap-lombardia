@@ -8,6 +8,7 @@
     font-size: 1rem;
   }
   a {
+    text-decoration: none;
     color: #fff;
   }
   a:hover {
@@ -21,8 +22,12 @@
   }
 
   .list-inline-item {
+    margin-bottom: 0.5rem;
     a {
       font-size: 1rem;
+    }
+    &:not(:last-child) {
+      margin-right: 1.5rem;
     }
   }
 
