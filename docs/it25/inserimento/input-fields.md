@@ -435,6 +435,15 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   </div>
 </div>
 {% highlight html %}
+<div class="form-group">
+  <div class="input-group">
+    <span class="input-group-text">
+      <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
+    </span>
+    <label for="searchField">Testo da cercare</label>
+    <input type="text" class="form-control" id="searchField">
+  </div>
+</div> 
 . . .
 <div class="select-wrapper">
   <label for="defaultSelect">Etichetta</label>
