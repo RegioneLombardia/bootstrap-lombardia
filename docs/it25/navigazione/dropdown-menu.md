@@ -43,7 +43,7 @@ Per la variante bottone è necessario utilizzare la classe `.btn-primary`.
 {% include html_docs/dropdown/default.html %}
 
 L'arrow di default è posto a sinistra.  
-Per spostarlo a destra o rimuoverlo è necessario utilizzare: `data-popper-placement='bottom-end'` o `data-popper-placement='hidden'` nel <code>div</code> contenente le voci del menu che viene aperto al click.
+Per spostarlo a destra è necessario utilizzare: `data-popper-placement='bottom-end'` nel <code>div</code> contenente le voci del menu che viene aperto al click.
 
 {% capture example %}
 <div class="dropdown-menu shadow-lg" data-popper-placement="bottom-end">

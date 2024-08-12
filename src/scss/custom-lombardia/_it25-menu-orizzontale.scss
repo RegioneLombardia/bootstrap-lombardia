@@ -1,8 +1,3 @@
-/*
-Personalizzazione di _custom/headernavbartheme.scss
-per il menù orizzontale.
-++++++++++++++++++++++++++++++Desktop light Theme+++++++++++++++++++++++++++++++++++++++++++++++++
-*/
 .it-header-navbar-wrapper {
   &.theme-light-desk {
     &.it25-menu-orizzontale {
@@ -16,16 +11,12 @@ per il menù orizzontale.
       &.it25-menu-orizzontale {
         box-shadow: none;
         border-bottom: 1px solid #e1e7ea;
-        .navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
-          fill: $it25-navigation-text-color;
-        }
 
         .navbar {
           background: transparent;
           // navbar mobile
           .navbar-collapsable {
             // menu vrapper
-            /*lista menu*/
             .navbar-nav {
               li {
                 // megamenu variation
@@ -38,8 +29,10 @@ per il menù orizzontale.
                 }
                 a.nav-link {
                   color: $it25-navigation-text-color;
+                  &.dropdown-toggle svg {
+                    fill: $it25-navigation-text-color;
+                  }
                   &.active {
-                    //border-bottom-color: white;
                     font-weight: 700;
                   }
                 }
