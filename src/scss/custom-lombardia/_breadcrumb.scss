@@ -6,10 +6,8 @@
         text-decoration: none;
       }
       &.active {
-        a {
-          font-weight: 700;
-          color: $breadcrumb-link-color;
-        }
+        font-weight: 700;
+        color: $breadcrumb-link-color;
       }
       span.separator {
         font-weight: normal;
