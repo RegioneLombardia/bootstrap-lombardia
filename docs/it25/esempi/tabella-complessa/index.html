@@ -5,14 +5,23 @@ description: Template pagina con tabella
 ---
 <header class="it25-menu">
 {% include html_docs/header/topbar_base.html %}
-{% include html_docs/header/header_base.html %}
-{% include esempi-lombardia/menu_orizzontale.html %}
+{% include html_docs/header/header_hamburger.html %}
 </header>
 
 <main>
-{% include esempi-lombardia/filtri_tabella.html %}
-{% include esempi-lombardia/tabella.html %}
-{% include esempi-lombardia/paginazione.html %}
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 it25-sidebar">
+      {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
+      </div>
+      <div class="col-12 col-md-9 col-xl-10">
+      {% include esempi-lombardia/filtri_tabella.html %}
+      {% include esempi-lombardia/tabella.html %}
+      {% include esempi-lombardia/paginazione.html %}
+      </div>
+    </div>
+  </div>
 </main>
 
 {% include html_docs/footer/footer_minimo.html %}
+

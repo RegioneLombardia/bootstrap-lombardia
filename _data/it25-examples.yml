@@ -4,10 +4,10 @@
   examples:
     - name: Tabella complessa
       url: tabella-complessa
-      description: Pagina con topbar e header base, menu orizzontale, filtri, tabella, paginatore, footer minimo.
+      description: Pagina con topbar e header con bottone hamburger, menu verticale, filtri, tabella, paginatore, footer minimo.
     - name: Form
       url: form
-      description: Pagina con topbar con dropdown, header con sidebar a comparsa, form con vari tipi di campi, footer medio.
+      description: Pagina con topbar con dropdown, header base, menu orizzontale, form con vari tipi di campi, footer medio.
     - name: Cookiebar
       url: cookiebar
       description: Barra di avviso sui cookie.

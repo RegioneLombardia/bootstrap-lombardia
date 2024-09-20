@@ -8,6 +8,13 @@ header {
 .it25-top-bar {
   height: $header-slim-height;
 
+  @include media-breakpoint-down(sm) {
+    &.it-header-slim-wrapper {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   .it-header-slim-wrapper-content {
     .navbar-brand {
       img {
@@ -16,6 +23,20 @@ header {
     }
     .header-slim-right-zone {
       font-weight: 600;
+      .btn-full {
+        margin-top: 0;
+        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+          margin-top: -1px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, md)}) {
+          padding: 17px;
+          margin-top: -7px;
+        }
+        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+          padding: 17px;
+          margin-top: 0;
+        }
+      }
     }
   }
 
@@ -35,25 +56,6 @@ header {
 
   .dropdown-menu[data-bs-popper] {
     top: 100% !important;
-  }
-
-  .it-header-slim-wrapper-content {
-    .header-slim-right-zone {
-      .btn-full {
-        margin-top: 0;
-        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
-          margin-top: -1px;
-        }
-        @media (min-width: #{map-get($grid-breakpoints, md)}) {
-          padding: 17px;
-          margin-top: -7px;
-        }
-        @media (min-width: #{map-get($grid-breakpoints, lg)}) {
-          padding: 17px;
-          margin-top: 0;
-        }
-      }
-    }
   }
 }
 
@@ -89,6 +91,10 @@ header {
       }
       .it25-hamburger-btn-wrapper {
         margin-right: 10px;
+        margin-left: -40px;
+        @media (min-width: #{map-get($grid-breakpoints, sm)}) {
+          margin-left: -18px;
+        }
       }
     }
     .it-search-wrapper {

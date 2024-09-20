@@ -10,51 +10,24 @@
                 aria-controls="it25-main-nav"
                 aria-expanded="false"
                 aria-label="Apri menù"
-                class="custom-navbar-toggler btn btn-xs it25-btn-menu"
+                class="btn btn-xs d-md-none"
+                data-bs-toggle="collapse"
                 data-bs-target="#it25-main-nav"
                 type="button"
               >
                 <svg class="icon icon-primary">
-                  <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-burger"></use>
+                  <use xlink:href="/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
               </button>
-              <div class="it25-close-div">
-                <button
-                  id="btn-hamburger-close"
-                  class="btn btn-xs close-menu"
-                  type="button"
-                  data-bs-target="#it25-main-nav"
-                  aria-controls="it25-main-nav"
-                  aria-label="Chiudi menù"
-                >
-                  <svg class="icon icon-primary">
-                    <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-big"></use>
-                  </svg>
-                </button>
-              </div>
             </div>
             <a href="#">
-              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
+              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png"
+                alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
               <div class="it-brand-text">ACRONIMO Nome applicativo</div>
             </a>
-          </div>
-          <div class="it-right-zone">
-            <form>
-              <div class="it-search-wrapper">
-                <input id="search-input02" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca">
-                <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                  <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-                </button>
-              </div>
-            </form>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<div id="menu-hamburger" class="menu-hamburger">
-{% include html_docs/menu-verticale/menu-verticale-semplice.html %}
-</div>
-

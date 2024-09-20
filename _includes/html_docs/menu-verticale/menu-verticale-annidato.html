@@ -1,71 +1,133 @@
-<div class="sidebar-wrapper it25-sidebar-nestead">
+<nav class="collapse it25-vertical-menu" id="it25-main-nav">
   <div class="form-group">
-    <span class="autocomplete-icon" aria-hidden="true">
-      <svg class="icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-search"></use></svg>
-    </span>
-    <input type="search" class="autocomplete" placeholder="Cerca" id="autocomplete" name="autocomplete" data-bs-autocomplete="[]" aria-label="Testo per ricerca" />
-  </div>
-  <div class="sidebar-linklist-wrapper it25-sidebar-links">
-    <div class="link-list-wrapper">
-      <ul class="link-list">
-        <li>
-          <a class="list-item large medium right-icon active" href="#collapseOne" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseOne">
-            <span class="list-item-title-icon-wrapper">
-              <span>Lore ipsum dolor</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
-            </span>
-          </a>
-          <ul class="link-sublist collapse show" id="collapseOne">
-            <li>
-              <a class="list-item active" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="list-item large medium right-icon" href="#collapseTwo" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseTwo">
-            <span class="list-item-title-icon-wrapper">
-              <span>Lore ipsum dolor</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
-            </span>
-          </a>
-          <ul class="link-sublist collapse" id="collapseTwo">
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a class="list-item large medium right-icon" href="#collapseThree" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseThree">
-            <span class="list-item-title-icon-wrapper">
-              <span>Lore ipsum dolor</span>
-              <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
-            </span>
-          </a>
-          <ul class="link-sublist collapse" id="collapseThree">
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-            <li>
-              <a class="list-item" href="#"><span>Lore ipsum dolor</span></a>
-            </li>
-          </ul>
-        </li>
-      </ul>
+    <div class="input-group">
+      <span class="input-group-text">
+        <svg class="icon icon-sm"><use xlink:href="/dist/svg/sprites.svg#it-search"></use></svg>
+      </span>
+      <label for="searchField">Cerca</label>
+      <input type="text" class="form-control" id="searchField">
     </div>
   </div>
-</div>
+  <div class="sidebar-wrapper">
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseZero" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseZero">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse" id="collapseZero">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseUno" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseUno">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseUno">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon active" href="#collapseDue" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDue">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseDue">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseTre" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseTre">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseTre">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseQuattro" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseQuattro">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseQuattro">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="list-item large medium right-icon" href="#collapseCinque" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseCinque">
+              <span class="list-item-title-icon-wrapper">
+                <span class="fw-bold">Lorem ipsum dolor</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapseCinque">
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+              <li>
+                <a class="list-item" href="#"><span>Lorem ipsum dolor</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
