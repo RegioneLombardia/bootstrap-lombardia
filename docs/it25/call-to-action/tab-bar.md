@@ -15,7 +15,81 @@ Ogni bar deve contenere tab **dello stesso tipo**.
 
 
 <div class="bd-example">
-{% include html_docs/tabs/tab-bar.html %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <label class="my-3">Solo testo</label>
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Label</a></li>
+          <li class="nav-item"><a class="nav-link disabled" href="#">Label</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="my-3">Solo Icone</label>
+      <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+              <span class="visually-hidden">Breve testo esplicativo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+              <span class="visually-hidden">Breve testo esplicativo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+              <span class="visually-hidden">Breve testo esplicativo</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
+              <span class="visually-hidden">Breve testo esplicativo</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="my-3">Testo e Icone</label>
+        <ul class="nav nav-tabs nav-tabs-icon-text icon-right">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Label
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              Label
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              Label
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1">
+              Label
+              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -47,6 +121,7 @@ Ogni bar deve contenere tab **dello stesso tipo**.
   </li>
 </ul>
 {% endhighlight %}
+
 
 {% capture callout %}
 #### Accessibilità
@@ -83,6 +158,11 @@ Inoltre, poichè il significato dell'icona non sempre risulta chiaro per gli ute
 </ul>
 {% endcapture %}{% include example.html content=example %}
 
+### Abilitazione tooltip
+
+Per abilitare il funzionamento dei tooltip, nella pagina deve essere inserito il seguente codice:
+
+{% highlight html %}
 <script>
   document.addEventListener("DOMContentLoaded", function() { 
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -91,3 +171,15 @@ Inoltre, poichè il significato dell'icona non sempre risulta chiaro per gli ute
     })
   })    
 </script>
+{% endhighlight %}
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() { 
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  })    
+</script>
+

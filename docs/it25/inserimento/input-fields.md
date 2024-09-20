@@ -12,7 +12,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
 <div class="row mb-5">
   <div class="col">Stato inattivo</div>
   <div class="col">Stato attivo</div>
-  <div class="col">Stato disabilitato</div></div>
+  <div class="col">Stato disabilitato</div>
+</div>
 <div class="row">
   <div class="col">
     <div class="form-group">

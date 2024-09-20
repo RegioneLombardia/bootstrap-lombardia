@@ -10,10 +10,25 @@ I divisori devono essere evidenti in un layout, ma non predominanti e dovrebbero
 
 _Colore HEX: D9D9D9_
 
-<div class="bd-example">
-{% include html_docs/divisori/divisori.html %}
+{% comment %}Example name: Divisori{% endcomment %}
+{% capture example %}
+<div class="d-flex align-items-start flex-column mb-3">
+  <div class="p-2 w-100">
+    <span>1px</span>
+    <div class="divider-1"></div>
+  </div>
+  <div class="p-2 w-100">
+    <span>1px con ombra</span>
+    <div class="divider-1-shadow"></div>
+  </div>
+  <div class="p-2 w-100">
+    <span>2px</span>
+    <div class="divider-2"></div>
+  </div>
+  <div class="p-2 w-100">
+    <span>2px con ombra</span>
+    <div class="divider-2-shadow"></div>
+  </div>
 </div>
-{% highlight html %}
-{% include html_docs/divisori/divisori.html %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 

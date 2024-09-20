@@ -155,7 +155,27 @@ La corrispondenza è:
 ### Distanziamento
 
 <div class="bd-example">
-{% include html_docs/bottoni/bottoni-con-distanziamento.html %}
+  <div class="container-fluid">
+    <div class="row my-3">
+      <div class="col-3">
+        <strong>Verticale | 16px</strong>
+      </div>
+      <div class="col-9">
+        <button type="button" class="btn btn-primary btn-sm my-3">Lorem ipsum</button>
+        <br />
+        <button type="button" class="btn btn-outline-primary btn-sm">Lorem ipsum</button>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-3">
+        <strong>Orizzontale | 16px</strong>
+      </div>
+      <div class="col-9">
+        <button type="button" class="btn btn-primary btn-sm me-3">Lorem ipsum</button>
+        <button type="button" class="btn btn-outline-primary btn-sm">Lorem ipsum</button>
+      </div>
+    </div>
+  </div>
 </div>
 {% highlight html %}
 <div>
@@ -181,7 +201,112 @@ Per tutti i dettagli sulle **[spaziature]({{ site.baseurl }}/docs/organizzare-gl
 Alcune call to action potrebbero prevedere un’icona accompagnata al testo per enfatizzare l’azione e renderla più chiara e di immediata comprensione per l’utente.
 
 <div class="bd-example">
-{% include html_docs/bottoni/bottoni-con-icona.html %}
+  <div class="container-fluid">
+    <div class="row my-3">
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-sm btn-icon">
+          <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+        <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-outline-primary btn-sm btn-icon">
+          <svg class="icon icon-primary">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-secondary btn-sm btn-icon">
+          <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-icon">
+          <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-outline-primary btn-icon">
+          <svg class="icon icon-primary">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-secondary btn-icon">
+          <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-lg btn-icon">
+          <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-outline-primary btn-lg btn-icon">
+        <svg class="icon icon-primary">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-secondary btn-lg btn-icon">
+        <svg class="icon icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum</span>
+        </button>
+      </div>
+    </div>
+    <div class="row my-3">
+      <div class="col-4 text-center">
+        <button type="button" class="btn btn-primary btn-lg btn-icon" style="max-width: 200px;">
+        <svg class="icon icon-lg icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum dolor sit</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-outline-primary btn-lg btn-icon" style="max-width: 200px;">
+        <svg class="icon icon-lg icon-primary">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum dolor sit</span>
+        </button>
+      </div>
+        <div class="col-4 text-center">
+        <button type="button" class="btn btn-secondary btn-lg btn-icon" style="max-width: 200px;">
+        <svg class="icon icon-lg icon-white">
+            <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-check-circle"></use>
+          </svg>
+          <span class="text-start">Lorem ipsum dolor sit</span>
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 
 {% highlight html %}

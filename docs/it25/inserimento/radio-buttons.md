@@ -38,7 +38,7 @@ di un insieme predefinito di opzioni o possibili scelte.
 
 {% capture callout %}
 #### {{ site.data.short.dt }}
-Per i dettagli tecnici sulla costruzione delle checkbox si veda la **[relativa pagina]({{ site.baseurl }}/docs/form/radio-button/)**
+Per i dettagli tecnici sulla costruzione dei radio button si veda la **[relativa pagina]({{ site.baseurl }}/docs/form/radio-button/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
 
 

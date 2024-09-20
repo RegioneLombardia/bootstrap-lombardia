@@ -15,7 +15,7 @@ Queste componenti sono ideali per regolare impostazioni come volume e luminosit√
 ## Slider con tooltip
 <div class="exclude-a11y-check">
 {% capture example %}
-<div id="single-thumb" class="slider-container" style="margin-top:20px">
+<div id="single-thumb" class="slider-container mt-3 mb-3">
 <div class="slider"></div>
 <div class="blobs centered">
     <div class="blob value centered"></div>

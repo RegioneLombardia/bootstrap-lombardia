@@ -13,7 +13,13 @@ Si specifica che per tutti gli elementi che presentano un raggio di curvatura, q
 I bordi arrotondati si ottengono tramite la classe `rounded-3`.
 
 <div class="bd-example">
-{% include html_docs/ombre_angoli/angoli.html %}
+  <div class="d-flex align-items-start flex-column mb-3">
+    <div class="p-2">
+      <div class="border secondary-gray-border-color rounded-3 p-2">
+        <span class="align-middle fw-semibold">BORDER RADIUS - 8 PX</span>
+      </div>
+    </div>
+  </div>
 </div>
 {% highlight html %}
 <div class="border secondary-gray-border-color rounded-3 p-2">
@@ -26,7 +32,18 @@ I bordi arrotondati si ottengono tramite la classe `rounded-3`.
 I due tipi di ombra si ottengono tramite le classi `shadow-sm` e `shadow`.
 
 <div class="bd-example">
-{% include html_docs/ombre_angoli/ombre.html %}
+  <div class="d-flex align-items-start flex-column mb-3">
+    <div class="p-2">
+      <div class="rounded-3 p-2 shadow-sm">
+        <span class="align-middle fw-semibold">SHADOW - SM</span>
+      </div>
+    </div>
+    <div class="p-2">
+      <div class="rounded-3 p-2 shadow pe-5">
+        <span class="align-middle fw-semibold">SHADOW</span>
+      </div>
+    </div>
+  </div>
 </div>
 {% highlight html %}
 <div class="rounded-3 p-2 shadow-sm">

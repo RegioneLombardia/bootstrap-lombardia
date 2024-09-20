@@ -19,7 +19,7 @@ toc: true
 
 ## Font
 
-Le _Linee Guida_ per il design degli applicativi di Regione Lombardia prevedono **solo due** famiglie di caratteri::
+Le _Linee Guida_ per il design degli applicativi di Regione Lombardia prevedono **solo due** famiglie di caratteri:
 
 - il font senza grazie, o _sans serif_, **Titillium Web**.
 - il font _monospace_ con dimensioni di caratteri normalizzate **<span class="font-monospace">Roboto Mono</span>**.
@@ -27,11 +27,79 @@ Le _Linee Guida_ per il design degli applicativi di Regione Lombardia prevedono 
 
 ### Titillium Web
 
-{% include html_docs/tipografia/titillium.html %}
+<div class="bd-example no-border">
+  <div class="row">
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col">
+            <p class="h2">Titillium Web Desktop</p>
+          </div>
+          <div class="col">
+            <p class="h1">H1 Bold 48px/60px</p>
+            <p class="h2">H2 Bold 40px/48px</p>
+            <p class="h3">H3 Bold 32px/40px</p>
+            <p class="h4">H4 SemiBold 28px/40px</p>
+            <p class="h5">H5 Regular 24px/40px</p>
+            <p class="h6">H6 SemiBold 18px/28px</p>
+            <p>Body Text Regular 18px</p>
+            <p class="small fw-semibold">Caption Small SemiBold 16px</p>
+            <p class="x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col">
+            <p class="h2">Titillium Web Mobile</p>
+          </div>
+          <div class="col">
+            <p class="h1">H1 Bold 40px/48px</p>
+            <p class="h2">H2 Bold 32px/40px</p>
+            <p class="h3">H3 Bold 28px/32px</p>
+            <p class="h4">H4 SemiBold 24px/28px</p>
+            <p class="h5">H5 Regular 20px/24px</p>
+            <p class="h6">H6 SemiBold 16px/24px</p>
+            <p>Body Text Regular 18px</p>
+            <p class="small fw-semibold">Caption Small SemiBold 16px</p>
+            <p class="x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 ### Roboto Mono
 
-{% include html_docs/tipografia/roboto.html %}
+<div class="bd-example no-border">
+  <div class="row">
+    <div class="col">
+      <div class="border-text">
+        <div class="row">
+          <div class="col-4 text-center">
+            <p class="h2 font-monospace">Roboto Mono</p>
+          </div>
+          <div class="col-8">
+            <p class="h1 font-monospace">H1 Bold 40px</p>
+            <p class="h2 font-monospace">H2 Bold 32px</p>
+            <p class="h3 font-monospace">H3 Bold 28px</p>
+            <p class="h4 font-monospace">H4 Bold 24px</p>
+            <p class="h5 font-monospace">H5 Regular 20px</p>
+            <p class="h6 font-monospace">H6 Bold 16px</p>
+            <p class="font-monospace">Body Text Regular 18px</p>
+            <p class="fw-semibold font-monospace small">Caption Small bold 16px</p>
+            <p class="font-monospace x-small">Caption extra small Regular 14px</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
 
 
 {% capture callout %}

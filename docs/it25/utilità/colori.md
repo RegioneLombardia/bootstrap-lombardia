@@ -9,29 +9,50 @@ Di seguito sono riportati i colori coerenti con la brand identity digitale di Re
 **Si consiglia l’utilizzo di una palette composta da non più di 5 colori per un progetto digitale**.
 
 ## Colori Primari
-  Il <strong class="primary-color">Verde</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
+Il <strong class="primary-color">Verde</strong> è il colore identificativo dell’intera brand identity e rappresenta la radice per creare altri colori della palette primaria.
   
-  {% include html_docs/colori/colori_primari.html %}
-
-  <div class="primary-color-container mb-3">
-    <div class="square-color primary-bg white-color">
-      <div>#297A38</div>
-      <div>primary</div>
+<div class="d-flex align-items-start flex-column mb-3">
+  <div class="p-2">
+    <div class="rounded-color primary-bg text-end">
+      <span class="white-color align-middle fw-bold">#297A38</span>
     </div>
-    <div class="square-color primary-blue-bg white-color">
-      <div>#003354</div>
-      <div>primary-blue</div>
-    </div>
-    <div class="square-color primary-gray-bg white-color">
-      <div>#597483</div>
-      <div>primary-gray</div>
-    </div>
-    <div class="square-color white-bg shadow">
-      <div>#FFFFFF</div>
-      <div>white</div>
-    </div>
-    <div class="clearfix"></div>
   </div>
+  <div class="p-2">
+    <div class="rounded-color primary-blue-bg shadow text-end">
+      <span class="white-color align-middle fw-bold">#003354 </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="rounded-color primary-gray-bg shadow text-end">
+      <span class="white-color align-middle fw-bold">#597483 </span>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="rounded-color white-bg shadow text-end">
+      <span class="align-middle fw-bold">#FFFFFF</span>
+    </div>
+  </div>
+</div>
+
+<div class="primary-color-container mb-3">
+  <div class="square-color primary-bg white-color">
+    <div>#297A38</div>
+    <div>primary</div>
+  </div>
+  <div class="square-color primary-blue-bg white-color">
+    <div>#003354</div>
+    <div>primary-blue</div>
+  </div>
+  <div class="square-color primary-gray-bg white-color">
+    <div>#597483</div>
+    <div>primary-gray</div>
+  </div>
+  <div class="square-color white-bg shadow">
+    <div>#FFFFFF</div>
+    <div>white</div>
+  </div>
+  <div class="clearfix"></div>
+</div>
 
 
 **Utilizzo delle classi:**  
@@ -130,7 +151,23 @@ Per utilizzarle è sufficiente utilizzare la relativa classe
 I colori neutrali nelle linee guida sono tre, ma le classi previste riguardano solo i primi due (*blu* e *grigio*).   
 Il terzo colore neutro è molto simile al bianco, pertanto può essere utilizzato al suo posto ove necessario.
 
-{% include html_docs/colori/colori_neutrali.html %}
+<div class="d-flex align-items-start flex-column mb-3">
+  <div class="p-2">
+    <div class="rounded-color neutral-1-bg text-end">
+      <span class="white-color align-middle fw-semibold">#1B304C</span>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="rounded-color neutral-2-bg shadow text-end">
+      <span class="align-middle fw-semibold">#E6E9F0</span>
+    </div>
+  </div>
+  <div class="p-2">
+    <div class="rounded-color neutral-3-bg shadow text-end">
+      <span class="align-middle fw-semibold">#FBFBFF</span>
+    </div>
+  </div>
+</div>
 
 <div class="primary-color-container mb-3">
   <div class="square-color neutral-1-bg white-color">
@@ -273,7 +310,7 @@ Per motivi di accessibilità, utilizzare i colori triadici all’interno di elem
 `.complementary-(1/2/3)-color- + variante-colore` : per text color<br>
 `.complementary-(1/2/3)-border-color- + variante-colore` : per border color
 
-(es. `.complementary-1-bg-a5` per utilizzare come background il colore complementare **1** con variante **a4** )
+(es. `.complementary-1-bg-a5` per utilizzare come background il colore complementare **1** con variante **a5** )
 
 <div class="exclude-a11y-check">
 <div class="row">

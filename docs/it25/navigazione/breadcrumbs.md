@@ -19,7 +19,7 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">/</span></li>
     <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator">/</span></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="#">Terzo Livello</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Terzo Livello</li>
   </ol>
 </nav>
 {% endcapture %}
@@ -30,7 +30,7 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
   <ol class="breadcrumb">
     <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">&gt;</span></li>
     <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator">&gt;</span></li>
-    <li class="breadcrumb-item active" aria-current="page"><a href="#">Terzo Livello</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Terzo Livello</li>
   </ol>
 </nav>
 {% endcapture %}
@@ -56,7 +56,7 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
     </li>
     <li class="breadcrumb-item active" aria-current="page">
       <svg class="icon icon-sm icon-secondary align-top me-1" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-files"></use></svg>
-      <a href="#">Terzo Livello</a>
+      Terzo Livello
     </li>
   </ol>
 </nav>
