@@ -13,10 +13,15 @@ const CLASS_NAME_SRONLY = 'sr-only-justvalidate-bi'
 const SELECTOR_SPAN_SRONLY = `.${CLASS_NAME_SRONLY}`
 
 class FormValidate {
-  constructor(selector, config) {
+  constructor(selector, config, dictLocale) {
     this.formSelector = selector
     this.target = document.querySelector(selector)
-    this.validate = new JustValidate(selector, config)
+
+    if (dictLocale != undefined) this.validate = new JustValidate(selector, config, dictLocale)
+    else {
+      this.validate = new JustValidate(selector, config)
+    }
+
     this.config = Object.assign({}, CONFIG_DEFAULT, this.validate.globalConfig)
     this.formItems = []
 
@@ -112,17 +117,8 @@ class FormValidate {
       if (legend) {
         legend.setAttribute('aria-describedby', errIds.join(' '))
         legend.setAttribute('aria-invalid', 'true')
-
-        //not needed anymore
-        /*const span = document.createElement('span')
-        span.classList.add('sr-only')
-        span.classList.add(CLASS_NAME_SRONLY)
-        span.textContent = errTexts.join(' ')
-        legend.append(span)*/
       }
-    } /*else {
-      console.warn('[JustValidateIt] the element is invalid but no error message was found', { target })
-    }*/
+    }
   }
   /**
    * Removes the fieldset ARIA attributes
@@ -185,8 +181,5 @@ const ValidatorSelectAutocomplete = (inputId, config = {}) => {
     return result
   }
 }
-
-//window.JustValidateIt = JustValidateIt
-//window.JustValidateItValidatorSelectAutocomplete = JustValidateItValidatorSelectAutocomplete
 
 export { FormValidate, ValidatorSelectAutocomplete }

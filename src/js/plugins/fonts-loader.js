@@ -1,5 +1,9 @@
 // Create our stylesheet
-export default (path = 'dist/fonts') => {
+// export default (path = 'dist/fonts') => {
+export default (path = '/node_modules/bootstrap-lombardia/dist/fonts') => {
+  if (typeof document === 'undefined') {
+    return
+  }
   const styleNode = document.createElement('style')
   const __PUBLIC_PATH__ = window.__PUBLIC_PATH__ ? window.__PUBLIC_PATH__ : path
   styleNode.innerHTML = `
