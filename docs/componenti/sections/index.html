@@ -11,13 +11,13 @@
 
 <title>Sections · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202404301157" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202409241002" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202404301157" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202409241002" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.8.4</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.9.1</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -570,14 +570,14 @@
 <div class="bd-callout bd-callout-accessibility">
 <h4 id="accessibilità-draft">Accessibilità (draft)</h4>
 
-<p>Il titolo <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> dello snippet è solo indicativo. Il tag <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> contraddistingue una sezione semanticamente riconoscibile, associata all’id del titolo dall’attributo <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
+<p>Il titolo <code class="language-plaintext highlighter-rouge">&lt;h2&gt;</code> dello snippet è solo indicativo. Il tag <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> contraddistingue una sezione semanticamente riconoscibile, associata all’id del titolo dall’attributo <code class="language-plaintext highlighter-rouge">aria-labelledby</code>.</p>
 
-<p>Gli autori dovrebbero dividere la pagina in sezioni semantiche reali e non per solo scopo decorativo. Qualora si utilizzino sezioni al solo scopo decorativo sostituire <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> con <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> ed eliminare l’attributo <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</p>
+<p>Gli autori dovrebbero dividere la pagina in sezioni semantiche reali e non per solo scopo decorativo. Qualora si utilizzino sezioni al solo scopo decorativo sostituire <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> con <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> ed eliminare l’attributo <code class="language-plaintext highlighter-rouge">aria-labelledby</code>.</p>
 
 </div>
 
 <div class="bd-example">
-<section class="section" aria-describedby="titleEx1">
+<section class="section" aria-labelledby="titleEx1">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container">
@@ -614,7 +614,7 @@
 16
 17
 18
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section"</span> <span class="na">aria-describedby=</span><span class="s">"titleEx1"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section"</span> <span class="na">aria-labelledby=</span><span class="s">"titleEx1"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -643,7 +643,7 @@
 <p>Al componente Section può essere applicato uno sfondo di colore tenue utilizzano la classe aggiuntiva <code class="language-plaintext highlighter-rouge">.section-muted</code>.</p>
 
 <div class="bd-example">
-<section class="section section-muted" aria-describedby="titleEx2">
+<section class="section section-muted" aria-labelledby="titleEx2">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container">
@@ -680,7 +680,7 @@
 16
 17
 18
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-muted"</span> <span class="na">aria-describedby=</span><span class="s">"titleEx2"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-muted"</span> <span class="na">aria-labelledby=</span><span class="s">"titleEx2"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -707,7 +707,7 @@
 <p>Si consiglia di applicare la classe <code class="language-plaintext highlighter-rouge">.white-color</code> al contenuto (come da esempio) per garantire la leggibilità dei testi contenuti.</p>
 
 <div class="bd-example">
-<section class="section section-primary" aria-describedby="titleEx3">
+<section class="section section-primary" aria-labelledby="titleEx3">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container white-color">
@@ -744,7 +744,7 @@
 16
 17
 18
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-primary"</span> <span class="na">aria-describedby=</span><span class="s">"titleEx3"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-primary"</span> <span class="na">aria-labelledby=</span><span class="s">"titleEx3"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container white-color"</span><span class="nt">&gt;</span>
@@ -771,7 +771,7 @@
 <p>Si consiglia di applicare la classe <code class="language-plaintext highlighter-rouge">.white-color</code> al contenuto (come da esempio) per garantire la leggibilità dei testi contenuti.</p>
 
 <div class="bd-example">
-<section class="section section-neutral" aria-describedby="titleEx4">
+<section class="section section-neutral" aria-labelledby="titleEx4">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container white-color">
@@ -808,7 +808,7 @@
 16
 17
 18
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-neutral"</span> <span class="na">aria-describedby=</span><span class="s">"titleEx4"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-neutral"</span> <span class="na">aria-labelledby=</span><span class="s">"titleEx4"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container white-color"</span><span class="nt">&gt;</span>
@@ -835,7 +835,7 @@
 <p>A seconda della luminosità dell’immagine si consiglia di applicare la classe <code class="language-plaintext highlighter-rouge">.white-color</code> al contenuto (come da esempio) per garantire il corretto contrasto fra testi e sfondo.</p>
 
 <div class="bd-example">
-<section class="section section-image" style="background-image: url('https://picsum.photos/1280/720?image=811')" aria-describedby="titleEx5">
+<section class="section section-image" style="background-image: url('https://picsum.photos/1280/720?image=811')" aria-labelledby="titleEx5">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container white-color">
@@ -872,7 +872,7 @@
 16
 17
 18
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-image"</span> <span class="na">style=</span><span class="s">"background-image: url('https://picsum.photos/1280/720?image=811')"</span>  <span class="na">aria-describedby=</span><span class="s">"titleEx5"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-image"</span> <span class="na">style=</span><span class="s">"background-image: url('https://picsum.photos/1280/720?image=811')"</span>  <span class="na">aria-labelledby=</span><span class="s">"titleEx5"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container white-color"</span><span class="nt">&gt;</span>
@@ -897,7 +897,7 @@
 <p>Per aggiungere una serie di card all’interno di una Section si consiglia di utilizzare le griglie per garantire un corretto margine fra gli elementi <code class="language-plaintext highlighter-rouge">.card</code>.</p>
 
 <div class="bd-example">
-<section class="section section-muted" aria-describedby="titleEx6">
+<section class="section section-muted" aria-labelledby="titleEx6">
   <div class="section-content">
     <!-- contenuto di esempio START -->
     <div class="container">
@@ -956,7 +956,7 @@
 27
 28
 29
-</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-muted"</span>  <span class="na">aria-describedby=</span><span class="s">"titleEx6"</span><span class="nt">&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"section section-muted"</span>  <span class="na">aria-labelledby=</span><span class="s">"titleEx6"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"section-content"</span><span class="nt">&gt;</span>
     <span class="c">&lt;!-- contenuto di esempio START --&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
@@ -993,7 +993,7 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202404301157"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202409241002"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -1043,12 +1043,12 @@
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202404301157"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202409241002"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202404301157"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202409241002"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1065,7 +1065,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202404301157"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202409241002"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

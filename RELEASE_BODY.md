@@ -1,7 +1,10 @@
-## [2.8.4](https://github.com/italia/bootstrap-italia/compare/v2.8.3...v2.8.4) (2024-03-22)
+# [rl2.3.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl(tag: rl2.2.2...rl2.3.0) (2024-09-23)
 
-### Bug Fixes
+### BugFixes
 
-* callout title size ([584cac8](https://github.com/italia/bootstrap-italia/commit/584cac895b3a2a1f16a8d93b2b9739554b10cd25))
-* changed alert size and position ([204eb4f](https://github.com/italia/bootstrap-italia/commit/204eb4f20ed5f4ff318115385059196621eee0e5))
-* changes badge size ([a2123d1](https://github.com/italia/bootstrap-italia/commit/a2123d1be824c4c0d10d15ff66e9ea86b127f190))
+* piccoli dettagli visivi ([1a8c242ffs](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/1a8c242ff1f9bb6832db84722b881da6ad0b0fd5))
+* Textarea - bordatura ([59d0de8f9s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/59d0de8f9d5490463d8398561d7ef3c11e831626))
+* Menu Orizzontale - tolta ombra per schermi lg ([de96c7531s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/de96c75316cd34b09a7f2394a50fc38a969045bc))
+* TopBar - bottone accesso smartphone e tablet ([8ef5f2908s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/8ef5f2908f40a38e1dfa387db543db38bfe1e13a))
+
+
