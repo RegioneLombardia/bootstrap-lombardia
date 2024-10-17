@@ -7,6 +7,11 @@
 * Menu Orizzontale - tolta ombra per schermi lg ([de96c7531s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/de96c75316cd34b09a7f2394a50fc38a969045bc))
 * TopBar - bottone accesso smartphone e tablet ([8ef5f2908s](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/8ef5f2908f40a38e1dfa387db543db38bfe1e13a))
 
+### Features 
+* modifica menù verticale e header hamburger](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/0bf9608b2746b8fbe712efcb183cd58c602cecf5) 
+
+### !! BREAKING CHANGE !!
+Il `menù verticale` diventa `sidebar` visualizzata di default su schermi `md-lg-xl`
 
 ## [2.9.1](https://github.com/italia/bootstrap-italia/compare/v2.9.0...v2.9.1) (2024-09-17)
 
