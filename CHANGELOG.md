@@ -1,4 +1,19 @@
-# [rl2.3.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl(tag: rl2.2.2...rl2.3.0) (2024-09-23)
+# 2.4.0 (2024-11-18)
+
+
+### !! ATTENZIONE !! 
+Per rendere pienamente funzionante la CI/CD di Bootstrap Regione Lombardia:
+* sono stati **eliminati i tag delle versioni di boostrap-italia**
+* le **nuove release** di bootstrap-lombardia non avranno più il prefisso "rl" ma adotteranno quello standard "v"
+* le release di bootstrap-lombardia precedenti rimangono invariate
+* tutti i commit sia provenienti da bootstrap-italia che di bootstrap-lombardia rimangono invariati.
+
+Se si è clonato il repository dei sorgenti, per eliminare in locale i tag di bootstrap-italia ed allinearlo con quelli di bootstrap-lombardia  
+**è necessario eseguire il comando:** `git pull --prune --tags`
+
+
+
+# [rl2.3.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl2.2.2...rl2.3.0) (2024-09-23)
 
 ### BugFixes
 
@@ -85,7 +100,7 @@ Il `menù verticale` diventa `sidebar` visualizzata di default su schermi `md-lg
 * remove deprecated declaration ([f6d391b](https://github.com/italia/bootstrap-italia/commit/f6d391bd0035c789da8ed593eab2c94962f160b7))
 
 
-## [rl2.2.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl(tag: rl2.2.1...rl2.2.2) (2024-04-30)
+## [rl2.2.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/rl2.2.1...rl2.2.2) (2024-04-30)
 
 ### BugFixes
 
