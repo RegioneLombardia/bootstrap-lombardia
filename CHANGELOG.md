@@ -1,3 +1,12 @@
+## [2.4.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.4.0...v2.4.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* npm publish release ([fff6406](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/fff6406d9d9c1900b094d43c5fe3d9d175f9d7c8))
+
+
+
 # 2.4.0 (2024-11-18)
 
 
