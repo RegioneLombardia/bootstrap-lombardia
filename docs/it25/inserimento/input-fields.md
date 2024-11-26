@@ -8,6 +8,17 @@ toc: true
 Gli **Input fields** sono le componenti dell’interfaccia dedicate all’inserimento di dati all’interno del sistema.  
 Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’input di dati.
 
+Per la validazione è possibile usare [Just Validate](https://just-validate.dev/){:target="_blank"} (si veda la [doumentazione tecnica]({{ site.baseurl }}/docs/form/introduzione/#validazione) o l'[esempio Form]({{ site.baseurl }}/docs/it25/esempi/form/)).  
+Altrimenti è possibile impostare autonomamente:
+- per i *tag* `input` le classi:
+  * `is-valid`
+  * `is-valid warning`
+  * `is-invalid`
+- per i messaggi di errore, le classi
+  * `valid-feedback`
+  * `warning-feedback`
+  * `invalid-feedback`.
+
 {% capture example %}
 <div class="row mb-5">
   <div class="col">Stato inattivo</div>
@@ -71,21 +82,24 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <label class="active" for="exampleInputText4">Etichetta di esempio</label>
-      <input type="text" class="form-control" id="exampleInputText4" placeholder="Inserite dato...">
+      <input type="text" class="form-control" id="exampleInputText4" placeholder="Inserite dato..."
+        aria-describedby="formGroupExampleInputWithHelpDescription4">
        <small id="formGroupExampleInputWithHelpDescription4" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
     <div class="form-group">
       <label class="active" for="exampleInputText5">Etichetta di esempio</label>
-      <input type="text" class="form-control focus--mouse" id="exampleInputText5" value="Testo in inserim|">
+      <input type="text" class="form-control focus--mouse" id="exampleInputText5" value="Testo in inserim|"
+        aria-describedby="formGroupExampleInputWithHelpDescription5">
        <small id="formGroupExampleInputWithHelpDescription5" class="form-text info">Ulteriore testo informativo</small>
     </div>
   </div>
   <div class="col">
     <div class="form-group">
       <label class="active" for="exampleInputText6">Etichetta di esempio</label>
-      <input type="text" class="form-control" id="exampleInputText6" disabled value="Testo non modificabile">
+      <input type="text" class="form-control" id="exampleInputText6" disabled value="Testo non modificabile"
+       aria-describedby="formGroupExampleInputWithHelpDescription6">
        <small id="formGroupExampleInputWithHelpDescription6" class="form-text info">Dato derivante da anagrafica</small>
     </div>
   </div>
@@ -99,17 +113,17 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="form-group col-4">
     <label class="active" for="input-field-13">Etichetta di esempio</label>
     <input type="text" class="form-control is-valid" id="input-field-13" name="input-field-13" value="Testo immesso" />
-     <small class="valid-feedback {{include.display_info}}">Validato!</small>
+     <small class="valid-feedback">Validato!</small>
   </div>
   <div class="form-group col-4">
     <label class="active" for="input-field-14">Etichetta di esempio</label>
     <input type="text" class="form-control is-valid warning" id="input-field-14" name="input-field-14" value="Testo immesso" />
-    <small class="warning-feedback {{include.display_info}}">Possibili problemi.</small>
+    <small class="warning-feedback">Possibili problemi.</small>
   </div>
   <div class="form-group col-4">
     <label class="active" for="input-field-15">Etichetta di esempio</label>
     <input type="text" class="form-control is-invalid" id="input-field-15" name="input-field-15" value="Testo immesso" />
-     <small class="invalid-feedback {{include.display_info}}">Errore bloccante!</small>
+     <small class="invalid-feedback">Errore bloccante!</small>
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -169,7 +183,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </span>
         <label class="active" for="exampleInputText24">Etichetta di esempio</label>
-        <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato...">
+        <input type="text" class="form-control" id="exampleInputText24" placeholder="Inserite dato..."
+          aria-describedby="formGroupExampleInputWithHelpDescription24">
       </div>
       <small id="formGroupExampleInputWithHelpDescription24" class="form-text info">Ulteriore testo informativo</small>
     </div>
@@ -181,7 +196,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </span>
         <label class="active" for="exampleInputText25">Etichetta di esempio</label>
-        <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|">
+        <input type="text" class="form-control focus--mouse" id="exampleInputText25" value="Testo in inserim|"
+          aria-describedby="formGroupExampleInputWithHelpDescription25">
       </div>
       <small id="formGroupExampleInputWithHelpDescription25" class="form-text info">Ulteriore testo informativo</small>
     </div>
@@ -193,7 +209,8 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
           <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-mail"></use></svg>
         </span>
         <label class="active" for="exampleInputText26">Etichetta di esempio</label>
-        <input type="text" class="form-control" id="exampleInputText26" disabled value="Testo non modificabile">
+        <input type="text" class="form-control" id="exampleInputText26" disabled value="Testo non modificabile"
+          aria-describedby="formGroupExampleInputWithHelpDescription26">
       </div>
       <small id="formGroupExampleInputWithHelpDescription26" class="form-text info">Dato derivante da anagrafica</small>
     </div>
@@ -241,7 +258,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
       </span>
       <label class="active" for="input-field-33">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid" id="input-field-33" name="input-field-33" value="Testo immesso" />
-      <small class="valid-feedback is-valid">Validato!</small>
+      <small class="valid-feedback">Validato!</small>
     </div>
   </div>
   <div class="form-group col-4">
@@ -251,7 +268,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
       </span>
       <label class="active" for="input-field-34">Etichetta di esempio</label>
       <input type="text" class="form-control is-valid warning" id="input-field-34" name="input-field-34" value="Testo immesso" />
-      <small class="warning-feedback is-valid warning">Possibili problemi.</small>
+      <small class="warning-feedback">Possibili problemi.</small>
     </div>
   </div>
   <div class="form-group col-4">
@@ -261,7 +278,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
       </span>
       <label class="active" for="input-field-35">Etichetta di esempio</label>
       <input type="text" class="form-control is-invalid" id="input-field-35" name="input-field-35" value="Testo immesso" />
-      <small class="invalid-feedback is-invalid">Errore bloccante!</small>
+      <small class="invalid-feedback">Errore bloccante!</small>
     </div>
   </div>
 </div>
@@ -281,12 +298,12 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
   <div class="col">
     <div class="form-group">
       <label for="passwd1">Password con label e testo di aiuto</label>
-      <input type="password" data-bs-input class="form-control input-password" id="passwd1" 
-            aria-labelledby="infoPassword1" />
-      <span class="password-icon" aria-hidden="true">
+      <input type="password" data-bs-input class="form-control input-password" id="passwd1" aria-describedby="infoPassword1" />
+      <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+        <span class="visually-hidden">Mostra/Nascondi Password</span>
         <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-      </span>
+      </button>
       <small id="infoPassword1" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
@@ -294,11 +311,12 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <label class="active" for="passwd2">Password con label e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd2"
-            aria-labelledby="infoPassword2" value="iuQ34!iwah" />
-      <span class="password-icon" aria-hidden="true">
+            aria-describedby="infoPassword2" value="iuQ34!iwah" />
+      <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+        <span class="visually-hidden">Mostra/Nascondi Password</span>
         <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-      </span>
+      </button>
       <small id="infoPassword2" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
@@ -306,11 +324,12 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <label class="active" for="passwd3">Password con label e testo di aiuto</label>
       <input type="password" data-bs-input class="form-control input-password" id="passwd3"
-            aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
-      <span class="password-icon" aria-hidden="true">
+            aria-describedby="infoPassword3" value="iuQ34!iwah" disabled />
+      <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+        <span class="visually-hidden">Mostra/Nascondi Password</span>
         <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
         <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-      </span>
+      </button>
       <small id="infoPassword3" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
@@ -350,13 +369,14 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         </span>
         <label for="passwd41">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd41" 
-              aria-labelledby="infoPassword" />
-        <span class="password-icon" aria-hidden="true">
+              aria-describedby="infoPassword41" />
+        <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+          <span class="visually-hidden">Mostra/Nascondi Password</span>
           <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-        </span>
+        </button>
       </div>
-      <small id="infoPassword4" class="form-text">Inserisci almeno 8 caratteri</small>
+      <small id="infoPassword41" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
   </div>
   <div class="col">
@@ -367,11 +387,12 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         </span>
         <label class="active" for="passwd42">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd42"
-              aria-labelledby="infoPassword" value="iuQ34!iwah" />
-        <span class="password-icon" aria-hidden="true">
+              aria-describedby="infoPassword42" value="iuQ34!iwah" />
+        <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+          <span class="visually-hidden">Mostra/Nascondi Password</span>
           <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-        </span>
+        </button>
       </div>
       <small id="infoPassword42" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
@@ -384,11 +405,12 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
         </span>
         <label class="active" for="passwd43">Password con label e testo di aiuto</label>
         <input type="password" data-bs-input class="form-control input-password" id="passwd43"
-              aria-labelledby="infoPassword" value="iuQ34!iwah" disabled />
-        <span class="password-icon" aria-hidden="true">
+              aria-describedby="infoPassword43" value="iuQ34!iwah" disabled />
+        <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+          <span class="visually-hidden">Mostra/Nascondi Password</span>
           <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
           <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-        </span>
+        </button>
       </div>
       <small id="infoPassword43" class="form-text">Inserisci almeno 8 caratteri</small>
     </div>
@@ -508,7 +530,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <label for="inputNumber2" class="input-number-label">Lorem ipsum</label>
       <div class="input-group input-number">
-        <input type="number" data-bs-input id="inputNumber2" name="inputNumber2" value="100" step="1" />
+        <input type="number" class="form-control" data-bs-input id="inputNumber2" name="inputNumber2" value="100" step="1" />
         <span class="input-group-text align-buttons flex-column">
           <button class="input-number-add">
             <span class="visually-hidden">Aumenta valore</span>
@@ -524,7 +546,7 @@ Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’inp
     <div class="form-group">
       <label for="inputNumber3" class="input-number-label">Lorem ipsum</label>
       <div class="input-group input-number disabled">
-        <input type="number" data-bs-input id="inputNumber3" name="inputNumber3" value="100" step="1" disabled />
+        <input type="number" class="form-control" data-bs-input id="inputNumber3" name="inputNumber3" value="100" step="1" disabled />
         <span class="input-group-text align-buttons flex-column">
           <button class="input-number-add" disabled >
             <span class="visually-hidden">Aumenta valore</span>

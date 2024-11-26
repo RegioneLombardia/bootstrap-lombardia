@@ -5,10 +5,11 @@
   </div>
   <div class="form-group col-md-6">
     <label class="active" for="exampleInputPassword2">Password</label>
-    <input type="password" class="form-control input-password" id="exampleInputPassword2" placeholder="inserisci la tua password" />
-    <span class="password-icon" aria-hidden="true">
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword2" placeholder="inserisci la tua password" />
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
       <svg class="password-icon-visible icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-visible"></use></svg>
       <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-    </span>
+    </button>
   </div>
 </div>

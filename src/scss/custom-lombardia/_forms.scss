@@ -12,6 +12,7 @@ div.output-field {
 .form-text {
   color: $it25-gray;
 }
+
 .form-group {
   input,
   optgroup,
@@ -38,6 +39,15 @@ div.output-field {
   }
 }
 
+input {
+  &[type='checkbox'],
+  &[type='radio'] {
+    &.just-validate-success-field + label {
+      color: $it25-gray;
+    }
+  }
+}
+
 .form-control:disabled {
   //background-color: transparent;
   background-color: $neutral-1-a1;
@@ -49,6 +59,9 @@ div.output-field {
 }
 .form-control {
   background-color: transparent;
+  &.just-validate-success-field ~ .warning-feedback {
+    display: block;
+  }
 }
 
 .form-check {
