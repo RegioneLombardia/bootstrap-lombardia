@@ -1,3 +1,74 @@
+# [2.5.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.4.1...v2.5.0) (2024-11-28)
+
+
+---
+# Merge 2.9.2 -> 2.11.1 bootstrap-italia - INIZIO
+
+
+## [2.11.2](https://github.com/italia/bootstrap-italia/compare/v2.11.1...v2.11.2) (2024-11-19)
+
+
+### Bug Fixes
+
+* footer inner elements size ([#1278](https://github.com/italia/bootstrap-italia/issues/1278)) ([7c6cd63](https://github.com/italia/bootstrap-italia/commit/7c6cd63431b4c54ed4e7ad3a4014909d02b55b36))
+
+
+
+## [2.11.1](https://github.com/italia/bootstrap-italia/compare/v2.11.0...v2.11.1) (2024-11-18)
+
+
+### Bug Fixes
+
+* footer link decoration ([a507636](https://github.com/italia/bootstrap-italia/commit/a5076365b762ca61ce84a380d666eb51af4e5aa0))
+* remove extra margin ([46bfde2](https://github.com/italia/bootstrap-italia/commit/46bfde208ec2d3f0a940382fbac8ffa30e713113))
+
+
+
+# [2.11.0](https://github.com/italia/bootstrap-italia/compare/v2.10.0...v2.11.0) (2024-11-05)
+
+
+### Bug Fixes
+
+* header container size ([86c4b9b](https://github.com/italia/bootstrap-italia/commit/86c4b9b416937ad12deedf58ef59fa8f23b40ec0))
+* map marker minus icon ([6927487](https://github.com/italia/bootstrap-italia/commit/69274875402e3cceba9baa10aed2156c4e399016))
+
+
+### Features
+
+* **a11y:** improve component Timeline ([6cb5896](https://github.com/italia/bootstrap-italia/commit/6cb589639ed79215c6c9e357d308248bf1bc506b))
+* add form-control class to inputs ([a8fb742](https://github.com/italia/bootstrap-italia/commit/a8fb742892a3fe0fc143ec8d6e6223a054232c57))
+* evolve component skiplinks ([17230b2](https://github.com/italia/bootstrap-italia/commit/17230b2871d9fcb21b8d65c94a8feae7d02f7625))
+* new list link semantics and states ([0963ec8](https://github.com/italia/bootstrap-italia/commit/0963ec8ff27ec90e8afe9d7c28367f39c3841889))
+* use of figure and figcaption for images list ([cf54b3f](https://github.com/italia/bootstrap-italia/commit/cf54b3fd29173ac4e5442d7c8b10035705d45a75))
+
+
+
+# [2.10.0](https://github.com/italia/bootstrap-italia/compare/v2.9.2...v2.10.0) (2024-10-11)
+
+
+### Features
+
+* **a11y:** add accessibility features to input password ([c2a7b22](https://github.com/italia/bootstrap-italia/commit/c2a7b22f31a9e86f49a3794c6a47afa47bbb5cf8))
+* checkbox toggle and radio groups rewrite ([d661b18](https://github.com/italia/bootstrap-italia/commit/d661b1884962fc52616a6ceba705fb2c6fefc39f))
+
+
+
+## [2.9.2](https://github.com/italia/bootstrap-italia/compare/v2.9.1...v2.9.2) (2024-10-02)
+
+
+### Bug Fixes
+
+* added `form-control` class ([549fcba](https://github.com/italia/bootstrap-italia/commit/549fcba6354dc9e76bebd75aa9a70afeddb4aa4e))
+* extra space on webkit browsers ([0d7c04e](https://github.com/italia/bootstrap-italia/commit/0d7c04ec11d502252de0829f0c90fd8f3b3b1eb7))
+* remove duplicated properties ([0bf3801](https://github.com/italia/bootstrap-italia/commit/0bf3801be9c7f86485d008d9a8b27a1ec1ee45b1))
+* remove duplicated properties ([8539e6a](https://github.com/italia/bootstrap-italia/commit/8539e6a8b1e37f0a696c9a0507473e24e743ba23))
+* update icon minus ([2e45455](https://github.com/italia/bootstrap-italia/commit/2e45455d6f790d887a1558e5f4ae8d7ab87178f4))
+
+
+# Merge 2.9.2 -> 2.11.1 bootstrap-italia - FINE
+---
+
+
 ## [2.4.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.4.0...v2.4.1) (2024-11-18)
 
 

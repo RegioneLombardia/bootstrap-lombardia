@@ -11,13 +11,13 @@
 
 <title>Toggles · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411281107" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411281107" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.9.1</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.11.1</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -542,7 +542,8 @@
     <h3>Toggles</h3>
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h3"><a href="#disabilitato">Disabilitato</a></li>
-<li class="toc-entry toc-h3"><a href="#gruppi">Gruppi</a></li>
+<li class="toc-entry toc-h3"><a href="#inline">Inline</a></li>
+<li class="toc-entry toc-h3"><a href="#raggruppati-visivamente">Raggruppati visivamente</a></li>
 </ul>
   </div>
 </div>
@@ -551,7 +552,16 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Toggles</h1>
           <p class="lead">Campi di tipo “interruttore”.</p>
-          <p>Per ottenere un interruttore con levetta basterà usare la seguente sintassi HTML, gli stili CSS penseranno al resto. Il contenitore padre dovrà avere la classe <code class="language-plaintext highlighter-rouge">.toggles</code>, mentre la label conterrà sia la checkbox che uno <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> con classe <code class="language-plaintext highlighter-rouge">.lever</code>.</p>
+          <div class="bd-callout bd-callout-danger">
+<p>Breaking feature dalla versione <strong>2.10.0</strong></p>
+
+<ul>
+  <li>Il “raggruppamento” di campi di input deve prevedere l’elemento nativo <code class="language-plaintext highlighter-rouge">&lt;fieldset&gt;</code>.</li>
+  <li>Sostituire <code class="language-plaintext highlighter-rouge">aria-labelledby</code> con <code class="language-plaintext highlighter-rouge">aria-describedby</code>.</li>
+</ul>
+</div>
+
+<p>Per ottenere un interruttore con levetta basterà usare la seguente sintassi HTML, gli stili CSS penseranno al resto. Il contenitore padre dovrà avere la classe <code class="language-plaintext highlighter-rouge">.toggles</code>, mentre la label conterrà sia la checkbox che uno <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> con classe <code class="language-plaintext highlighter-rouge">.lever</code>.</p>
 
 <div class="bd-example">
 <div>
@@ -562,15 +572,6 @@
           Label dell'interruttore 1
           <input type="checkbox" id="toggleEsempio1a" />
           <span class="lever"></span>
-        </label>
-      </div>
-    </div>
-    <div class="form-check col-6">
-      <div class="toggles">
-        <label for="toggleEsempio1b">
-          Label dell'interruttore 2
-          <input type="checkbox" id="toggleEsempio1b" checked="" />
-          <span class="lever leverRight"></span>
         </label>
       </div>
     </div>
@@ -590,15 +591,6 @@
 11
 12
 13
-14
-15
-16
-17
-18
-19
-20
-21
-22
 </pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check col-6"</span><span class="nt">&gt;</span>
@@ -607,15 +599,6 @@
           Label dell'interruttore 1
           <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio1a"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check col-6"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio1b"</span><span class="nt">&gt;</span>
-          Label dell'interruttore 2
-          <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio1b"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever leverRight"</span><span class="nt">&gt;&lt;/span&gt;</span>
         <span class="nt">&lt;/label&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
@@ -639,17 +622,63 @@
         </label>
       </div>
     </div>
-    <div class="form-check col-6">
-      <div class="toggles">
-        <label for="toggleEsempio2b">
-          Label dell'interruttore 2
-          <input disabled="" type="checkbox" id="toggleEsempio2b" checked="" />
-          <span class="lever leverRight"></span>
-        </label>
-      </div>
-    </div>
   </div>
 </div>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check col-6"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio2a"</span><span class="nt">&gt;</span>
+          Label dell'interruttore 1
+          <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio2a"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h3 id="inline">Inline</h3>
+
+<p>Per allineare orizzontalmente gli interruttori basterà aggiungere la classe <code class="language-plaintext highlighter-rouge">.form-check-inline</code> a qualsiasi <code class="language-plaintext highlighter-rouge">.form-check</code>.</p>
+
+<div class="bd-example">
+<fieldset>
+  <legend>Gruppo di toggle</legend>
+  <div class="form-check form-check-inline">
+    <div class="toggles">
+      <label for="toggleEsempio3ainline">
+        Label dell'interruttore 1
+        <input type="checkbox" id="toggleEsempio3ainline" />
+        <span class="lever"></span>
+      </label>
+    </div>
+  </div>
+  <div class="form-check form-check-inline">
+    <div class="toggles">
+      <label for="toggleEsempio3binline">
+        Label dell'interruttore 2
+        <input type="checkbox" id="toggleEsempio3binline" />
+        <span class="lever leverRight"></span>
+      </label>
+    </div>
+  </div>
+</fieldset>
 </div>
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -672,39 +701,38 @@
 19
 20
 21
-22
-</pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
-  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check col-6"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio2a"</span><span class="nt">&gt;</span>
-          Label dell'interruttore 1
-          <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio2a"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check col-6"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio2b"</span><span class="nt">&gt;</span>
-          Label dell'interruttore 2
-          <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio2b"</span> <span class="na">checked</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever leverRight"</span><span class="nt">&gt;&lt;/span&gt;</span>
-        <span class="nt">&lt;/label&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
+</pre></td><td class="code"><pre><span class="nt">&lt;fieldset&gt;</span>
+  <span class="nt">&lt;legend&gt;</span>Gruppo di toggle<span class="nt">&lt;/legend&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3ainline"</span><span class="nt">&gt;</span>
+        Label dell'interruttore 1
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3ainline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-inline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3binline"</span><span class="nt">&gt;</span>
+        Label dell'interruttore 2
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3binline"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever leverRight"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/fieldset&gt;</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
-<h3 id="gruppi">Gruppi</h3>
+<h3 id="raggruppati-visivamente">Raggruppati visivamente</h3>
 
-<p>Per poter raggruppare gli elementi <strong>toggle</strong> occorrerà aggiungere al <code class="language-plaintext highlighter-rouge">.form-check</code> la classe <code class="language-plaintext highlighter-rouge">.form-check-group</code>.</p>
+<p>Per raggruppare visivamente gli elementi <strong>toggle</strong> occorrerà aggiungere al <code class="language-plaintext highlighter-rouge">.form-check</code> la classe <code class="language-plaintext highlighter-rouge">.form-check-group</code>.</p>
 
 <div class="bd-example">
 <div>
   <div class="row">
-    <div class="col-5">
+    <fieldset class="col-5">
+      <legend>Gruppo di toggle</legend>
       <div class="form-check form-check-group">
         <div class="toggles">
           <label for="toggleEsempio3a">
@@ -732,14 +760,15 @@
           </label>
         </div>
       </div>
-    </div>
+    </fieldset>
     <div class="col-2"></div>
-    <div class="col-5">
+    <fieldset class="col-5">
+      <legend>Gruppo di toggle</legend>
       <div class="form-check form-check-group">
         <div class="toggles">
           <label for="toggleEsempio3d">
             Toggle acceso
-            <input type="checkbox" id="toggleEsempio3d" aria-labelledby="toggle3d-help" checked="" />
+            <input type="checkbox" id="toggleEsempio3d" aria-describedby="toggle3d-help" checked="" />
             <span class="lever"></span>
           </label>
         </div>
@@ -749,7 +778,7 @@
         <div class="toggles">
           <label for="toggleEsempio3e">
             Toggle spento
-            <input type="checkbox" id="toggleEsempio3e" aria-labelledby="toggle3e-help" />
+            <input type="checkbox" id="toggleEsempio3e" aria-describedby="toggle3e-help" />
             <span class="lever"></span>
           </label>
         </div>
@@ -759,13 +788,13 @@
         <div class="toggles">
           <label for="toggleEsempio3f">
             Toggle disabilitato
-            <input type="checkbox" id="toggleEsempio3f" aria-labelledby="toggle3f-help" disabled="" />
+            <input type="checkbox" id="toggleEsempio3f" aria-describedby="toggle3f-help" disabled="" />
             <span class="lever"></span>
           </label>
         </div>
         <small id="toggle3f-help" class="form-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</small>
       </div>
-    </div>
+    </fieldset>
   </div>
 </div>
 </div>
@@ -835,9 +864,12 @@
 64
 65
 66
+67
+68
 </pre></td><td class="code"><pre><span class="nt">&lt;div&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;legend&gt;</span>Gruppo di toggle<span class="nt">&lt;/legend&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3a"</span><span class="nt">&gt;</span>
@@ -865,14 +897,15 @@
           <span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-2"</span><span class="nt">&gt;&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;fieldset</span> <span class="na">class=</span><span class="s">"col-5"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;legend&gt;</span>Gruppo di toggle<span class="nt">&lt;/legend&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-check form-check-group"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3d"</span><span class="nt">&gt;</span>
             Toggle acceso
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3d"</span> <span class="na">aria-labelledby=</span><span class="s">"toggle3d-help"</span> <span class="na">checked</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3d"</span> <span class="na">aria-describedby=</span><span class="s">"toggle3d-help"</span> <span class="na">checked</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -882,7 +915,7 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3e"</span><span class="nt">&gt;</span>
             Toggle spento
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3e"</span> <span class="na">aria-labelledby=</span><span class="s">"toggle3e-help"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3e"</span> <span class="na">aria-describedby=</span><span class="s">"toggle3e-help"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
@@ -892,13 +925,13 @@
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"toggles"</span><span class="nt">&gt;</span>
           <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"toggleEsempio3f"</span><span class="nt">&gt;</span>
             Toggle disabilitato
-            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3f"</span> <span class="na">aria-labelledby=</span><span class="s">"toggle3f-help"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">id=</span><span class="s">"toggleEsempio3f"</span> <span class="na">aria-describedby=</span><span class="s">"toggle3f-help"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
             <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"lever"</span><span class="nt">&gt;&lt;/span&gt;</span>
           <span class="nt">&lt;/label&gt;</span>
         <span class="nt">&lt;/div&gt;</span>
         <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"toggle3f-help"</span> <span class="na">class=</span><span class="s">"form-text"</span><span class="nt">&gt;</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero<span class="nt">&lt;/small&gt;</span>
       <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/fieldset&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 </pre></td></tr></tbody></table></code></pre></figure>
@@ -909,7 +942,7 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411190808"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411281107"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -959,12 +992,12 @@
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202411190808"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202411281107"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202411190808"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202411281107"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -981,7 +1014,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202411190808"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202411281107"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

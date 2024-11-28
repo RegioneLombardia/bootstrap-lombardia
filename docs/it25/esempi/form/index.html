@@ -11,11 +11,11 @@
 
 <title>Template pagina form · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411281107" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411281107" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -271,24 +271,28 @@
 
 <main>
   <div class="container">
-    <form class="my-5">
+    <form class="my-5" id="justValidate" action="index.html" method="post">
       <div class="row">
   <div class="form-group col-md-6">
     <label for="inputEmail4" class="active">Email</label>
     <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
   </div>
   <div class="form-group col-md-4">
-    <label for="exampleInputPassword9">Password</label>
-    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" />
+    <label for="exampleInputPassword9">Scegli password</label>
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9">
+    <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+      <span class="visually-hidden">Mostra/Nascondi Password</span>
+      <svg class="password-icon-visible icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
+      <svg class="password-icon-invisible icon icon-sm d-none"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+    </button>
+    <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
     <div class="password-strength-meter">
-      <small
-        class="form-text text-muted"
-        data-bs-short-pass="Password molto debole"
-        data-bs-bad-pas="Password debole"
-        data-bs-good-pass="Password sicura"
-        data-bs-strong-pass="Password molto sicura"
-        >Inserisci almeno 8 caratteri e una lettera maiuscola</small
-      >
+      <p id="strengthMeterInfo9" class="strength-meter-info small form-text text-muted pt-0" aria-live="polite"
+        data-bs-short-pass="Password troppo breve."
+        data-bs-bad-pas="Password debole."
+        data-bs-good-pass="Password abbastanza sicura."
+        data-bs-strong-pass="Password sicura."
+      ></p>
       <div class="password-meter progress rounded-0 position-absolute">
         <div class="row position-absolute w-100 m-0">
           <div class="col-3 border-start border-end border-white"></div>
@@ -299,11 +303,6 @@
         <div class="progress-bar bg-muted" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
       </div>
     </div>
-    <span class="password-icon" aria-hidden="true">
-      <svg class="password-icon-visible icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-    </span>
-    <small class="password-caps form-text text-warning position-absolute bg-white w-100">CAPS LOCK inserito</small>
   </div>
   <div class="form-group col-md-2">
     <label class="output">Ticket</label>
@@ -328,7 +327,7 @@
   </div>
   <div class="form-group col-2">
     <label for="civico" class="input-number-label">Civico</label>
-    <input type="number" class="form-control" id="civico" />
+    <input type="text" class="form-control" id="civico" />
   </div>
 </div>
 <div class="row">
@@ -341,23 +340,25 @@
     <input type="number" class="form-control" id="inputCAP" />
   </div>
   <div class="col-md-4">
-    <div class="select-wrapper">
-      <label for="defaultSelect">Provincia</label>
-      <select id="defaultSelect">
-        <option selected="" value="">Scegli un'opzione</option>
-        <option value="BG">Bergamo</option>
-        <option value="BS">Brescia</option>
-        <option value="CO">Como</option>
-        <option value="CR">Cremona</option>
-        <option value="LC">Lecco</option>
-        <option value="LO">Lodi</option>
-        <option value="MN">Mantova</option>
-        <option value="MI">Milano</option>
-        <option value="MB">Monza e Brianza</option>
-        <option value="PV">Pavia</option>
-        <option value="SO">Sondrio</option>
-        <option value="VA">Varese</option>
-      </select>
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="defaultSelect">Provincia</label>
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required>
+          <option selected="" value="">Scegli un'opzione</option>
+          <option value="BG">Bergamo</option>
+          <option value="BS">Brescia</option>
+          <option value="CO">Como</option>
+          <option value="CR">Cremona</option>
+          <option value="LC">Lecco</option>
+          <option value="LO">Lodi</option>
+          <option value="MN">Mantova</option>
+          <option value="MI">Milano</option>
+          <option value="MB">Monza e Brianza</option>
+          <option value="PV">Pavia</option>
+          <option value="SO">Sondrio</option>
+          <option value="VA">Varese</option>
+        </select>
+      </div>
     </div>
   </div>
 </div>
@@ -391,23 +392,28 @@
 
       <div class="row">
   <div class="col-6">
-    <label class="fw-semibold me-5" for="gruppo2">Cittadinanza:</label>
-    <div class="form-check form-check-inline">
-      <input name="gruppo2" type="radio" id="radio4" checked>
-      <label for="radio4">Italiana</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input name="gruppo2" type="radio" id="radio5">
-      <label for="radio5">Straniera UE</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input name="gruppo2" type="radio" id="radio6">
-      <label for="radio6">Extra UE</label>
+    <div class="form-group">
+      <fieldset id="gruppo2">
+        <legend>Cittadinanza</legend>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio4" checked>
+          <label for="radio4">Italiana</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio5">
+          <label for="radio5">Straniera UE</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input name="gruppo2" type="radio" id="radio6">
+          <label for="radio6">Extra UE</label>
+        </div>
+      </fieldset>
     </div>
   </div>
 
   <div class="col-6">
-    <div class="select-wrapper">
+    <div class="form-group">
+      <div class="select-wrapper">
   <label for="accessibleAutocomplete">Provincia</label>
   <select class="form-control" id="accessibleAutocomplete" title="Scegli una provincia" required>
     <option selected value="">Scegli una opzione</option>
@@ -536,83 +542,90 @@
   })
 </script>
 
-  </div>
-</div>
-
-      <div class="row">
-  <div class="col">
-    <label class="fw-semibold me-5">Mezzi utilizzati:</label>
-    <div class="form-check form-check-inline">
-      <input id="checkbox6" type="checkbox" />
-      <label for="checkbox6">Auto propria</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input id="checkbox7" type="checkbox" />
-      <label for="checkbox7">Treno</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input id="checkbox8" type="checkbox" disabled />
-      <label for="checkbox8">Car sharing</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input id="checkbox10" type="checkbox" checked="checked" />
-      <label for="checkbox10">Bike sharing</label>
-    </div>
-    <div class="form-check form-check-inline">
-      <input id="checkbox9" type="checkbox" checked="checked" disabled />
-      <label for="checkbox9">Metro/Tram/Bus</label>
     </div>
   </div>
 </div>
 
       <div class="row">
   <div class="col">
-    <label class="fw-semibold me-5">Mezzi utilizzati:</label>
-    <div class="form-check form-check-inline">
-      <div class="toggles">
-        <label for="toggleEsempio1a">
-          Auto propria
-          <input type="checkbox" id="toggleEsempio1a" />
-          <span class="lever"></span>
-        </label>
-      </div>
+    <div class="form-group">
+      <fieldset id="group_mezzi0">
+        <legend>Mezzi utilizzati</legend>
+        <div class="form-check form-check-inline">
+          <input id="checkbox6" type="checkbox" />
+          <label for="checkbox6">Auto propria</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox7" type="checkbox" />
+          <label for="checkbox7">Treno</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox8" type="checkbox" disabled />
+          <label for="checkbox8">Car sharing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox10" type="checkbox" checked="checked" />
+          <label for="checkbox10">Bike sharing</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input id="checkbox9" type="checkbox" checked="checked" />
+          <label for="checkbox9">Metro/Tram/Bus</label>
+        </div>
+      </fieldset>
     </div>
-    <div class="form-check form-check-inline">
-      <div class="toggles">
-        <label for="toggleEsempio1b">
-          Treno
-          <input type="checkbox" id="toggleEsempio1b" />
-          <span class="lever leverRight"></span>
-        </label>
+  </div>
+</div>
+
+      <div class="row">
+  <div class="col">
+    <fieldset id="group_mezzi1">
+      <legend>Mezzi utilizzati</legend>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1a">
+            Auto propria
+            <input type="checkbox" id="toggleEsempio1a" />
+            <span class="lever"></span>
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="form-check form-check-inline">
-      <div class="toggles">
-        <label for="toggleEsempio1c">
-          Car sharing
-          <input disabled type="checkbox" id="toggleEsempio1c" />
-          <span class="lever"></span>
-        </label>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1b">
+            Treno
+            <input type="checkbox" id="toggleEsempio1b" />
+            <span class="lever leverRight"></span>
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="form-check form-check-inline">
-      <div class="toggles">
-        <label for="toggleEsempio1d">
-          Bike sharing
-          <input type="checkbox" id="toggleEsempio1d" checked="checked" />
-          <span class="lever"></span>
-        </label>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1c">
+            Car sharing
+            <input disabled type="checkbox" id="toggleEsempio1c" />
+            <span class="lever"></span>
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="form-check form-check-inline">
-      <div class="toggles">
-        <label for="toggleEsempio1e">
-          Metro/Tram/Bus
-          <input disabled type="checkbox" id="toggleEsempio1e" checked="checked" />
-          <span class="lever"></span>
-        </label>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1d">
+            Bike sharing
+            <input type="checkbox" id="toggleEsempio1d" checked="checked" />
+            <span class="lever"></span>
+          </label>
+        </div>
       </div>
-    </div>
+      <div class="form-check form-check-inline">
+        <div class="toggles">
+          <label for="toggleEsempio1e">
+            Metro/Tram/Bus
+            <input disabled type="checkbox" id="toggleEsempio1e" />
+            <span class="lever"></span>
+          </label>
+        </div>
+      </div>
+    </fieldset>
   </div>
 </div>
 
@@ -627,6 +640,13 @@
       </div>
 <!-- *****************************************************************************************************+ -->
     </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div aria-live="polite" id="errorMsgContainer"></div>
+        </div>
+      </div>
+    </div>
   </div> <!-- end container -->
 </main>
 <footer class="footer">
@@ -657,8 +677,121 @@
   </div>
 </footer>
 
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const errorMessage =
+      '<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></div>'
+    const errorWrapper = document.querySelector('#errorMsgContainer')
+    const validate = new bootstrap.FormValidate('#justValidate', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: false,
+    })
+
+    validate
+      .addField('#inputEmail4', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Inserire email corretta',
+        },
+      ])
+      .addField('#exampleInputPassword9', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#formNome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#formCognome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .addField('#inputAddress', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#civico', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#inputCity', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#inputCAP', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'minNumber',
+          value: 20001,
+          errorMessage: 'I CAP della Lombardia sono superiori a 20000',
+        },
+        {
+          rule: 'maxNumber',
+          value: 46100,
+          errorMessage: 'I CAP della Lombardia non sono superiori a 46100',
+        }
+      ])
+      .addField('#defaultSelect', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#data_nascita', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#accessibleAutocomplete', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          validator: (value) => {
+            return ['Bergamo', 'Brescia', 'Como', 'Cremona', 'Lecco', 'Lodi', 'Mantova', 'Monza e della Brianza', 'Milano', 'Sondrio', 'Varese'].includes(value);
+          },
+          errorMessage: 'Puoi scegliere solo province lombarde',
+        },
+      ])
+      .addRequiredGroup('#group_mezzi0', 'Scegli almeno un’opzione')
+      .addRequiredGroup('#group_mezzi2', 'Scegli almeno un’opzione')
+      .onSuccess((event) => {
+        document.forms['justValidate'].submit()
+      })
+      .onFail((fields) => {
+        errorWrapper.innerHTML = ''
+        errorWrapper.innerHTML = errorMessage
+        errorWrapper.scrollIntoView()
+      })
+  })
+</script>
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411190808"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411281107"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')

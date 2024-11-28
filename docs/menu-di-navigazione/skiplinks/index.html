@@ -5,19 +5,19 @@
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-<meta name="description" content="Gli Skiplinks consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando l’header e il menu di navigazione." />
+<meta name="description" content="Gli Skiplinks sono scorciatoie di navigazione che consentono agli utenti di andare direttamente ai contenuti principali della pagina." />
 <meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="generator" content="Jekyll v4.2.1" />
 
 <title>Skiplinks · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411281107" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411190808" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411281107" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -34,13 +34,13 @@
 <meta name="twitter:site" content="@designersITA" />
 <meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
 <meta name="twitter:title" content="Skiplinks" />
-<meta name="twitter:description" content="Gli Skiplinks consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando l’header e il menu di navigazione." />
+<meta name="twitter:description" content="Gli Skiplinks sono scorciatoie di navigazione che consentono agli utenti di andare direttamente ai contenuti principali della pagina." />
 <meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
 
 <!-- Facebook -->
 <meta property="og:url" content="/docs/menu-di-navigazione/skiplinks/" />
 <meta property="og:title" content="Skiplinks" />
-<meta property="og:description" content="Gli Skiplinks consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando l’header e il menu di navigazione." />
+<meta property="og:description" content="Gli Skiplinks sono scorciatoie di navigazione che consentono agli utenti di andare direttamente ai contenuti principali della pagina." />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
 <meta property="og:image:type" content="image/png" />
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.9.1</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.11.1</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -541,6 +541,16 @@
   <div class="sidebar-wrapper">
     <h3>Skiplinks</h3>
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#introduzione">Introduzione</a></li>
+<li class="toc-entry toc-h2"><a href="#base">Base</a></li>
+<li class="toc-entry toc-h2"><a href="#elenco">Elenco</a></li>
+<li class="toc-entry toc-h2"><a href="#come-visualizzare-gli-skiplinks-su-macos">Come visualizzare gli skiplinks su MacOS</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#chrome">Chrome</a></li>
+<li class="toc-entry toc-h3"><a href="#safari">Safari</a></li>
+<li class="toc-entry toc-h3"><a href="#firefox">Firefox</a></li>
+</ul>
+</li>
 </ul>
   </div>
 </div>
@@ -548,17 +558,19 @@
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Skiplinks</h1>
-          <p class="lead">Gli Skiplinks consentono agli utenti di accedere direttamente al contenuto principale della pagina saltando l’header e il menu di navigazione.</p>
-          <p>È un componente particolarmente utile per coloro che utilizzando screen reader e/o navigano utilizzando la tastiera.</p>
+          <p class="lead">Gli Skiplinks sono scorciatoie di navigazione che consentono agli utenti di andare direttamente ai contenuti principali della pagina.</p>
+          <h2 id="introduzione">Introduzione</h2>
 
-<p>Gli elementi Skiplinks sono contraddistinti dalle classi:</p>
+<p>È un componente che permette a persone che navigano sequenzialmente i contenuti di aver accesso più facile a tutti i contenuti principali della pagina. È particolarmente utile per coloro che per navigare usano la tastiera o tecnologie assistive come i lettori di schermo.</p>
 
-<ul>
-  <li><code class="language-plaintext highlighter-rouge">visually-hidden</code>: renderizzati solo per gli screen reader</li>
-  <li><code class="language-plaintext highlighter-rouge">visually-hidden-focusable</code>: renderizzati solo al focus</li>
-</ul>
+<p>Deve essere il primo contenuto che si incontra nella pagina. Se è presente l’elemento <code class="language-plaintext highlighter-rouge">&lt;header&gt;</code> suggeriamo di integrarlo come primo suo elemento figlio, in modo da comprenderlo in ogni caso in un landmark di pagina.</p>
 
-<p>Per attivare la funzionalità si digita da tastiera il tasto: <strong>TAB</strong>.</p>
+<p>Gli elementi del componente Skiplinks possono essere contraddistinti con la classe <code class="language-plaintext highlighter-rouge">.visually-hidden-focusable</code> per mostrarli a schermo solo al focus. In questo caso, è importante racchiuderli in un elemento contenitore con classe <code class="language-plaintext highlighter-rouge">.skiplinks</code> per avere lo stile corretto.</p>
+
+<p>Per navigare tra gli elementi puoi usare il tasto: <strong>TAB</strong> (tabulazione).</p>
+
+<h2 id="base">Base</h2>
+<p>Inserire come primo elemento della pagina alcune scorciatoie di navigazione che portino ai contenuti principali, permettendo di saltare blocchi ripetuti su ogni pagina come posso essere l’intestazione e il menu di navigazione.</p>
 
 <div class="bd-example">
 <div class="skiplinks">
@@ -576,14 +588,62 @@
 <span class="nt">&lt;/div&gt;</span>
 </pre></td></tr></tbody></table></code></pre></figure>
 
-<div class="bd-callout bd-callout-warning">
-<h4 id="visualizzazione-degli-skiplinks-su-macos">Visualizzazione degli Skiplinks su macOS</h4>
+<h2 id="elenco">Elenco</h2>
+<p>Se la pagina è particolarmente complessa si possono inserire più collegamenti che permettano di saltare direttamente ai blocchi principali.</p>
 
-<h5 id="chrome">Chrome</h5>
+<p>Nell’esempio che segue, implementato per il sito <a href="https://designers.italia.it">Designers Italia</a>, sono inseriti due collegamenti che è utile approfondire:</p>
+
+<ul>
+  <li>un salto ad un <strong>modulo per chiedere alle persone come stanno valutando l’esperienza d’uso</strong> della pagina. Il testo dello skiplink anticipa già la domanda;</li>
+  <li>un <strong>collegamento diretto alla Dichiarazione di accessibilità disponibile sul form AgID</strong>, che accompagnerà il necessario link presente anche nel piede di pagina, per permettere a chi naviga con strumenti assistivi di trovarla facilmente senza dover scansionare tutti i contennuti.</li>
+</ul>
+
+<p>Consigliamo di non eccedere con il numero di elementi scorciatoia, altrimenti emergerebbe il bisogno di poter saltare le stesse scorciatoie.</p>
+
+<div class="bd-callout bd-callout-accessibility">
+<h4 id="accessibilità">Accessibilità</h4>
+
+<p>In questo caso è utile implementarlo come elemento <code class="language-plaintext highlighter-rouge">nav</code> con una <code class="language-plaintext highlighter-rouge">aria-label</code> dedicata che ne spieghi l’uso.</p>
+</div>
+
+<div class="bd-example">
+<nav class="skiplinks" aria-label="Scorciatoie di navigazione">
+  <ul>
+    <li class="visually-hidden-focusable"><a href="#">Vai al menu</a></li>
+    <li class="visually-hidden-focusable"><a href="#">Vai al contenuto</a></li>
+    <li class="visually-hidden-focusable"><a href="#">Questa pagina ti è stata utile?</a></li>
+    <li class="visually-hidden-focusable"><a href="#">Vai al piede</a></li>
+    <li class="visually-hidden-focusable"><a href="https://form.agid.gov.it/view/xyz">Dichiarazione di accessibilità (link esterno su sito AgID)</a></li>
+  </ul>
+</nav>
+</div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="code"><pre><span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"skiplinks"</span> <span class="na">aria-label=</span><span class="s">"Scorciatoie di navigazione"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"visually-hidden-focusable"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Vai al menu<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"visually-hidden-focusable"</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Vai al contenuto<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"visually-hidden-focusable"</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Questa pagina ti è stata utile?<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"visually-hidden-focusable"</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Vai al piede<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"visually-hidden-focusable"</span> <span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"https://form.agid.gov.it/view/xyz"</span><span class="nt">&gt;</span>Dichiarazione di accessibilità (link esterno su sito AgID)<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="come-visualizzare-gli-skiplinks-su-macos">Come visualizzare gli skiplinks su MacOS</h2>
+
+<h3 id="chrome">Chrome</h3>
 
 <p>Per attivare la funzionalità si digita da tastiera il tasto: <strong>TAB</strong>.</p>
 
-<h5 id="safari">Safari</h5>
+<h3 id="safari">Safari</h3>
 
 <p>Per attivare la navigazione via <strong>TAB</strong> è necessario:</p>
 
@@ -595,7 +655,7 @@
 
 <p>Alternativamente è possibile navigare gli elementi usando <strong>opzione+TAB</strong></p>
 
-<h5 id="firefox">Firefox</h5>
+<h3 id="firefox">Firefox</h3>
 
 <p>Le impostazioni di default di macOS non consentono la navigazione di tutti gli elementi interattivi di un sito con l’uso del pulsante TAB.
 Per attivare questa modalità è necessario modificare le preferenze di sistema come segue:</p>
@@ -610,15 +670,12 @@ Per attivare questa modalità è necessario modificare le preferenze di sistema 
 
 <p>Vedi anche la <a href="https://support.apple.com/it-it/HT204434">guida ufficiale di Apple</a>.</p>
 
-</div>
-
-
         </main>
       </div>
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411190808"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411281107"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -668,12 +725,12 @@ Per attivare questa modalità è necessario modificare le preferenze di sistema 
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202411190808"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202411281107"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202411190808"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202411281107"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -690,7 +747,7 @@ Per attivare questa modalità è necessario modificare le preferenze di sistema 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202411190808"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202411281107"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
