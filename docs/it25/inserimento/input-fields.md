@@ -8,7 +8,7 @@ toc: true
 Gli **Input fields** sono le componenti dell’interfaccia dedicate all’inserimento di dati all’interno del sistema.  
 Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’input di dati.
 
-Per la validazione è possibile usare [Just Validate](https://just-validate.dev/){:target="_blank"} (si veda la [doumentazione tecnica]({{ site.baseurl }}/docs/form/introduzione/#validazione) o l'[esempio Form]({{ site.baseurl }}/docs/it25/esempi/form/)).  
+Per la validazione è possibile usare [Just Validate](https://just-validate.dev/){:target="_blank"} (si veda la [documentazione tecnica]({{ site.baseurl }}/docs/form/introduzione/#validazione) o l'[esempio Form]({{ site.baseurl }}/docs/it25/esempi/form/)).  
 Altrimenti è possibile impostare autonomamente:
 - per i *tag* `input` le classi:
   * `is-valid`

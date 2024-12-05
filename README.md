@@ -1,7 +1,7 @@
 # Bootstrap Lombardia
 
 [![Versione](https://img.shields.io/npm/v/bootstrap-lombardia.svg?logo=npm)](https://github.com/RegioneLombardia/bootstrap-lombardia/releases)
-[![Build](https://github.com/RegioneLombardia/bootstrap-lombardia/actions/workflows/publish-release.yml/badge.svg)](https://github.com/RegioneLombardia/bootstrap-lombardia/actions)
+[![Build](https://github.com/RegioneLombardia/bootstrap-lombardia/actions/workflows/build.yml/badge.svg)](https://github.com/RegioneLombardia/bootstrap-lombardia/actions)
 [![GitHub issues](https://img.shields.io/github/issues/RegioneLombardia/bootstrap-lombardia.svg)](https://github.com/RegioneLombardia/bootstrap-lombardia/issues)
 [![License](https://img.shields.io/github/license/RegioneLombardia/bootstrap-lombardia.svg)](https://github.com/RegioneLombardia/bootstrap-lombardia/blob/main/LICENSE)
 
