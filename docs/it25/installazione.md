@@ -13,7 +13,7 @@ Per utilizzare il codice compilato di {{ site.data.short.bl }} nel proprio proge
 
 il tutto scaricabile qui:
 
-<a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary" >Scarica Bootstrap Regione Lombardia rl{{ site.current_version }}</a>
+<a href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v{{ site.current_version }}/bootstrap-lombardia.zip" class="btn btn-primary" >Scarica Bootstrap Regione Lombardia v{{ site.current_version }}</a>
 
 Le librerie Javascript e CSS di {{ site.data.short.bl }} personalizzano e comprendono anche il codice originale di **Bootstrap {{ site.bootstrap_version }}**, ereditandone quindi tutte i selettori, le funzionalità, ecc., che sono consultabili al sito di Bootstrap stesso.
 

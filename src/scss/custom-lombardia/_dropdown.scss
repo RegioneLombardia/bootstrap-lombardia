@@ -22,3 +22,10 @@
     font-weight: 600;
   }
 }
+
+.dropdown-item {
+  &.active,
+  &:active {
+    background-color: inherit;
+  }
+}

@@ -1,7 +1,15 @@
+/**
+ * --------------------------------------------------------------------------
+ * Bootstrap Italia (https://italia.github.io/bootstrap-italia/)
+ * Authors: https://github.com/italia/bootstrap-italia/blob/main/AUTHORS
+ * Licensed under BSD-3-Clause license (https://github.com/italia/bootstrap-italia/blob/main/LICENSE)
+ * --------------------------------------------------------------------------
+ */
+
 // Create our stylesheet
-// export default (path = 'dist/fonts') => {
+// export default (path = '/node_modules/bootstrap-italia/dist/fonts') => {
 export default (path = '/node_modules/bootstrap-lombardia/dist/fonts') => {
-  if (typeof document === 'undefined') {
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
     return
   }
   const styleNode = document.createElement('style')

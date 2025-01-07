@@ -1,3 +1,45 @@
+
+
+---
+# Merge 2.11.2 -> 2.12.1 bootstrap-italia - INIZIO
+
+
+## [2.12.1](https://github.com/italia/bootstrap-italia/compare/v2.12.0...v2.12.1) (2024-11-27)
+
+
+### Bug Fixes
+
+* avatar styles ([7b62980](https://github.com/italia/bootstrap-italia/commit/7b629804c4cf70838104ba49ba8e64e427136186))
+
+
+
+# [2.12.0](https://github.com/italia/bootstrap-italia/compare/v2.11.2...v2.12.0) (2024-11-25)
+
+
+### Bug Fixes
+
+* remove removed element reference from toolbar ([7ea92a4](https://github.com/italia/bootstrap-italia/commit/7ea92a4f76109a8f9eb16d6fe62c62a1f5a08b1b))
+
+
+### Features
+
+* new focus state ([a1c837b](https://github.com/italia/bootstrap-italia/commit/a1c837be9e36ffcb6bc7561a6034a293ab294e66))
+
+
+
+## [2.11.2](https://github.com/italia/bootstrap-italia/compare/v2.11.1...v2.11.2) (2024-11-19)
+
+
+### Bug Fixes
+
+* footer inner elements size ([#1278](https://github.com/italia/bootstrap-italia/issues/1278)) ([7c6cd63](https://github.com/italia/bootstrap-italia/commit/7c6cd63431b4c54ed4e7ad3a4014909d02b55b36))
+
+
+
+# Merge 2.11.2 -> 2.12.1 bootstrap-italia - FINE
+---
+
+
 # [2.5.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.4.1...v2.5.0) (2024-11-28)
 
 

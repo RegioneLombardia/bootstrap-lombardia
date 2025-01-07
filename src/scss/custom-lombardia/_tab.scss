@@ -32,6 +32,14 @@
     }
   }
 
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    border-color: transparent;
+    border-bottom-color: $primary;
+    border-bottom-width: 3px;
+    color: $primary;
+  }
+
   &.nav-dark {
     .nav-link {
       color: white;
