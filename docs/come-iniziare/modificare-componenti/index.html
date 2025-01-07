@@ -11,13 +11,13 @@
 
 <title>Modificare componenti · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202411281107" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202501070832" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202411281107" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202501070832" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.11.1</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.12.1</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -144,9 +144,6 @@
               </li><li>
                 <a class="list-item  active" href="/bootstrap-lombardia/docs/come-iniziare/modificare-componenti/">
                   <span>Modificare Componenti</span></a>
-              </li><li>
-                <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/componente-base/">
-                  <span>Componente base</span></a>
               </li><li>
                 <a class="list-item " href="/bootstrap-lombardia/docs/come-iniziare/migrazione-dalla-versione-1/">
                   <span>Migrazione dalla versione 1</span></a>
@@ -560,7 +557,7 @@
           <p class="lead">Come modificare i componenti e i moduli esistenti, e crearne di nuovi.</p>
           <h2 id="struttura-di-un-componente">Struttura di un componente</h2>
 
-<p>Ogni componente può avere una personalizzazione di stile e di funzionalità, preferibilmente attraverso l’utilizzo di un singolo file <code class="language-plaintext highlighter-rouge">scss</code> nella cartella <code class="language-plaintext highlighter-rouge">src/scss/custom/</code> e, opzionalmente, di un file <code class="language-plaintext highlighter-rouge">javascript</code> nella cartella <code class="language-plaintext highlighter-rouge">src/js/plugins/</code>. Questo permette di avere una struttura dei file semplice da comprendere e di più facile manutenzione.</p>
+<p>Ogni componente può avere una personalizzazione di stile e di funzionalità, preferibilmente attraverso l’utilizzo di un singolo file <code class="language-plaintext highlighter-rouge">scss</code> nella cartella <code class="language-plaintext highlighter-rouge">src/scss/components/</code> e, opzionalmente, di un file <code class="language-plaintext highlighter-rouge">javascript</code> nella cartella <code class="language-plaintext highlighter-rouge">src/js/plugins/</code>. Questo permette di avere una struttura dei file semplice da comprendere e di più facile manutenzione.</p>
 
 <p>Queste due cartelle, assieme alla cartella <code class="language-plaintext highlighter-rouge">docs</code> per la stesura della documentazione, sono le uniche cartelle dove avviene l’editing dei componenti.</p>
 
@@ -582,17 +579,13 @@
 
 <h3 id="personalizzazione-di-stile">Personalizzazione di stile</h3>
 
-<p>I componenti base ereditano ovviamente stili e funzionalità da <a href="https://getbootstrap.com/docs/5.1/getting-started/introduction/">Bootstrap 5.2.3</a>, di cui si può trovare il codice sorgente all’interno di <code class="language-plaintext highlighter-rouge">node_modules/bootstrap/</code>. Ovviamente, la consultazione di tale codice servirà soltanto come riferimento e nessun file all’interno di <code class="language-plaintext highlighter-rouge">node_modules</code> andrà modificato, ma esteso utilizzando quanto più possibile le variabili che Bootstrap 5.2.3 mette a disposizione.</p>
-
-<p>Per la personalizzazione dello stile di tali componenti, andranno infatti sovrascritte o aggiunte variabili nella cartella <code class="language-plaintext highlighter-rouge">src/scss/_variables.scss</code>; oppure, in caso non sia sufficiente sovrascrivere variabili, aggiungere o modificare classi e proprietà nella cartella <code class="language-plaintext highlighter-rouge">src/scss/custom/</code>. Si può notare le modalità con cui il file <code class="language-plaintext highlighter-rouge">bootstrap-italia.scss</code> importa ed estende secondo un preciso ordine gli stili e le funzioni di base di Bootstrap 5.2.3.</p>
+<p>Per la personalizzazione dello stile dei componenti, andranno sovrascritte o aggiunte variabili nella cartella <code class="language-plaintext highlighter-rouge">src/scss/base/_variables.scss</code>; oppure, in caso non sia sufficiente sovrascrivere variabili, aggiungere o modificare classi e proprietà nella cartella <code class="language-plaintext highlighter-rouge">src/scss/components/</code>. Si può notare le modalità con cui il file <code class="language-plaintext highlighter-rouge">bootstrap-italia.scss</code> importa ed estende secondo un preciso ordine gli stili e le funzioni di base di Bootstrap 5.2.3.</p>
 
 <p>Il componente dovrebbe utilizzare una classe base <code class="language-plaintext highlighter-rouge">.nome-componente</code>, che ne definisce gli stili, e dei modificatori (se necessari) che ne possano alterare alcune proprietà (es.: <code class="language-plaintext highlighter-rouge">.nome-componente-sm</code>, <code class="language-plaintext highlighter-rouge">.nome-componente-primary</code>, ecc.).</p>
 
 <h3 id="personalizzazione-di-comportamento">Personalizzazione di comportamento</h3>
 
 <p>Per l’implementazione di funzionalità dinamiche che richiedano l’uso di <code class="language-plaintext highlighter-rouge">javascript</code>, si può invece fare riferimento alla cartella <code class="language-plaintext highlighter-rouge">src/js/plugins/</code>.</p>
-
-<p>Anche in questo caso, è bene seguire la struttura per la creazione di Plugin secondo quanto è già presente nella cartella <code class="language-plaintext highlighter-rouge">node_modules/bootstrap/js/</code> e la <a href="https://getbootstrap.com/docs/5.1/getting-started/javascript/">pagina relativa all’utilizzo di Javascript</a> sul sito Bootstrap 5.2.3.</p>
 
 <h3 id="test-di-accessibilità">Test di accessibilità</h3>
 
@@ -616,15 +609,13 @@
 
 <h4 id="esempio">Esempio</h4>
 
-<p>Attraverso questo comando è possibile effettuare il test di accessibilità per il componente di esempio “<a href="/bootstrap-lombardia/docs/come-iniziare/componente-base/">componente base</a>”.</p>
+<p>Attraverso questo comando è possibile effettuare il test di accessibilità per il componente “<a href="/bootstrap-lombardia/docs/componenti/buttons/">Button</a>”.</p>
 
-<p><code class="language-plaintext highlighter-rouge">npm run test-a11y-one http://localhost:4000/docs/come-iniziare/componente-base/</code></p>
+<p><code class="language-plaintext highlighter-rouge">npm run test-a11y-one http://localhost:4000/docs/componenti/buttons//</code></p>
 
 <hr />
 
 <h6 id="continua-la-lettura-">Continua la lettura &gt;</h6>
-
-<p>Per analizzare un componente di esempio da cui partire per lo sviluppo di componenti avanzati personalizzati, puoi fare riferimento alla pagina descrittiva del <a href="/bootstrap-lombardia/docs/come-iniziare/componente-base/">componente base</a>.</p>
 
 
         </main>
@@ -632,7 +623,7 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202411281107"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202501070832"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
@@ -682,12 +673,12 @@
   if (document.querySelector('#clockpicker01') !== null ) {
     new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
   }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202411281107"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202501070832"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202411281107"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202501070832"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -704,7 +695,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202411281107"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202501070832"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

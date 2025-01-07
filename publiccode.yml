@@ -28,7 +28,7 @@ description:
       e la versione [Bootstrap
       5.2.3](https://getbootstrap.com/docs/5.1/getting-started/introduction/ "Repository GitHub di Bootstrap") per la versione 2 , di cui
       eredita tutte le funzionalità, componenti, griglie e classi di utilità,
-      personalizzandole secondo le indicazioni delle "[{{ site.data.short.rl-guide }} di design per i siti internet e i servizi digitali della
+      personalizzandole secondo le indicazioni delle "[Linee guida di design per i siti internet e i servizi digitali della
       Pubblica
       Amministrazione](https://docs.italia.it/italia/design/lg-design-servizi-web/)" e del relativo "[Manuale operativo di design](https://designers.italia.it/linee-guida)" a supporto disponibile sul sito Designers Italia.
 
@@ -72,8 +72,8 @@ maintenance:
 name: Bootstrap Italia
 platforms:
   - web
-releaseDate: '2024-11-05'
+releaseDate: '2024-11-27'
 roadmap: 'https://designers.italia.it/piano-attivita/'
 softwareType: library
-softwareVersion: v2.11.0
+softwareVersion: v2.12.1
 url: 'https://github.com/italia/bootstrap-italia'
