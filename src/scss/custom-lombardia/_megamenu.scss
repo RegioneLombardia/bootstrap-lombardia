@@ -6,3 +6,14 @@
     }
   }
 }
+// Patch per design-react-kit-lombardia: bottone chiusura megamenu/menu orizzontale su mobile
+.it25-megamenu-closer {
+  position: absolute;
+  top: 0.575rem;
+  right:  -1.25rem;
+  z-index:  1000;
+  display: none;
+  &.show {
+    display: block;
+  }
+}

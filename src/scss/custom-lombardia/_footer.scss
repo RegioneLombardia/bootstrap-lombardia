@@ -44,7 +44,17 @@
       }
     }
   }
+  .link-list-wrapper {
+    ul {
+      li {
+        a:not(.disabled) {
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
+
 
 .it25-footer-mobile {
   padding: 6px;

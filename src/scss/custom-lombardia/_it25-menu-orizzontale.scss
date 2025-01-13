@@ -2,6 +2,9 @@
   &.theme-light-desk {
     &.it25-menu-orizzontale {
       background: white;
+      .navbar-toggler {
+        border-color: transparent;
+      }
     }
   }
 }
