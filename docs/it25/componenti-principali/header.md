@@ -90,20 +90,23 @@ La dimensione del menu dropdown può variare a seconda delle esigenze, come ad e
 
 ## Bottone hamburger
 
-Il bottone hamburger serve per aprire il [menu verticale]({{ site.baseurl }}/docs/it25/componenti-principali/menu-verticale).  
-**Compare automaticamente sugli schermi di piccole dimensioni** a sinistra nella barra istituzionale.
+Normalmente la pagina di un applicativo ha un menù di navigazione principale, orizzontale o verticale.
 
+Su schermi di piccole dimensioni tale menù scompare per ragioni di spazio.  
+Compare però un *bottone hamburger* per poter aprire e chiudere il menù.
+
+Il bottone hamburger:
 {% highlight html %}
 <div class="it25-hamburger-btn-wrapper">
   <button
     id="btn-hamburger"
-    aria-controls="it25-main-nav"
-    aria-expanded="false"
-    aria-label="Apri menù"
-    class="btn btn-xs d-md-none"
-    data-bs-toggle="collapse"
-    data-bs-target="#it25-main-nav"
+    class="custom-navbar-toggler"
     type="button"
+    aria-controls="nav1"
+    aria-expanded="false"
+    aria-label="Mostra/Nascondi la navigazione"
+    data-bs-toggle="navbarcollapsible"
+    data-bs-target="#nav1"
   >
     <svg class="icon icon-primary">
       <use xlink:href="/dist/svg/sprites.svg#it-burger"></use>
@@ -112,15 +115,22 @@ Il bottone hamburger serve per aprire il [menu verticale]({{ site.baseurl }}/doc
 </div>
 {% endhighlight %}
 
-Deve essere inserito nell'header **solo se la pagina contiene il menu verticale**, all'interno di:
-{% highlight html %}
-<div class="it-brand-wrapper">
-{% endhighlight %}
-prima del link contenente il logo.
+**deve** essere inserito nell*header* all’interno di: `<div class="it-brand-wrapper">`  
+prima del link contenente il logo della Regione Lombardia.
 
-Per attivare la commutazione automatica dell'aspetto del bottone tra hamburger e "**X**" di chiusura, è necessario invocare la funzione :
+In questo modo comparirà automaticamente, sugli schermi di piccole dimensioni, a sinistra nella barra istituzionale.
+
+A seconda del tipo di menù (orizzontale, verticale o sidebar) cambiano i valori degli attributi:  
+* `class`
+* `data-bs-toggle`
+
+In particolare, **solo per il menu verticale**, per attivare il funzionamento, è necessario invocare la funzione :
 ```
 bootstrap.it25Header()
 ```
 
-Per un esempio di funzionamento all'interno di una pagina completa, si veda la [Tabella complessa]({{ site.baseurl }}/docs/it25/esempi/tabella-complessa/). 
+## Esempi
+
+Per vedere i dettagli delle diverse tipologie di menù di navigazione e bottone hamburger, e il loro funzionamento all'interno di pagine complete, si veda la pagina delgli [Esempi]({{ site.baseurl }}/docs/it25/esempi/).
+
+I dettagli tecnici del codice sono spiegati nei relativi link di **codice commentato**. 

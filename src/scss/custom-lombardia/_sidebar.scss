@@ -7,69 +7,6 @@
     font-size: 1rem;
   }
 
-  .it25-vertical-menu {
-    .sidebar-wrapper {
-      padding: 0;
-    }
-
-    .link-list-wrapper {
-      background-color: white;
-      overflow: auto;
-      ul {
-        li {
-          a {
-            border-bottom: 1px solid $gray-border;
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            span {
-              color: $black;
-              font-weight: normal;
-            }
-            &:hover:not(.disabled) {
-              span {
-                color: $black;
-                text-decoration: underline;
-                font-weight: 600;
-              }
-            }
-            &.active {
-              background-color: $neutral-1-a1;
-              border-top: 2px solid $primary;
-              span {
-                color: $black !important;
-                text-decoration: none;
-                font-weight: 600;
-              }
-              .icon {
-                color: $primary;
-              }
-            }
-            &.active:after {
-              display: none;
-            }
-            &.disabled {
-              span {
-                color: $input-color-placeholder;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    @include media-breakpoint-up(md) {
-      @supports (position: sticky) {
-        max-height: calc(100vh - $header-center-max-height - $header-slim-height);
-      }
-    }
-
-    // Override collapse behaviors
-    @include media-breakpoint-up(md) {
-      display: block !important;
-    }
-  }
-
   @include media-breakpoint-up(md) {
     @supports (position: sticky) {
       position: sticky;
@@ -82,5 +19,68 @@
 
   @include media-breakpoint-up(xl) {
     flex: 0 1 320px;
+  }
+}
+
+.it25-vertical-menu {
+  .sidebar-wrapper {
+    padding: 0;
+  }
+
+  .link-list-wrapper {
+    background-color: white;
+    overflow: auto;
+    ul {
+      li {
+        a {
+          border-bottom: 1px solid $gray-border;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          span {
+            color: $black;
+            font-weight: normal;
+          }
+          &:hover:not(.disabled) {
+            span {
+              color: $black;
+              text-decoration: underline;
+              font-weight: 600;
+            }
+          }
+          &.active {
+            background-color: $neutral-1-a1;
+            border-top: 2px solid $primary;
+            span {
+              color: $black !important;
+              text-decoration: none;
+              font-weight: 600;
+            }
+            .icon {
+              color: $primary;
+            }
+          }
+          &.active:after {
+            display: none;
+          }
+          &.disabled {
+            span {
+              color: $input-color-placeholder;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    @supports (position: sticky) {
+      max-height: calc(100vh - $header-center-max-height - $header-slim-height);
+    }
+  }
+
+  // Override collapse behaviors
+  @include media-breakpoint-up(md) {
+    display: block !important;
   }
 }

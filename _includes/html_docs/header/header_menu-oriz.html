@@ -7,13 +7,13 @@
             <div class="it25-hamburger-btn-wrapper">
               <button
                 id="btn-hamburger"
-                aria-controls="it25-main-nav"
-                aria-expanded="false"
-                aria-label="Apri menù"
-                class="btn btn-xs d-md-none"
-                data-bs-toggle="collapse"
-                data-bs-target="#it25-main-nav"
+                class="custom-navbar-toggler"
                 type="button"
+                aria-controls="nav1"
+                aria-expanded="false"
+                aria-label="Mostra/Nascondi la navigazione"
+                data-bs-toggle="navbarcollapsible"
+                data-bs-target="#nav1"
               >
                 <svg class="icon icon-primary">
                   <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-burger"></use>

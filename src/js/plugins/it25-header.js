@@ -12,12 +12,28 @@ export default function () {
     document.getElementById('btn-hamburger').setAttribute('aria-label', 'Apri menù')
   }
 
-  function initMenuHamburger() {
+  function clickMenuVert() {
+    var x = document.getElementById('it25-menu-vert')
+    if (x.style.display === 'block') {
+      x.style.display = 'none'
+    } else {
+      x.style.display = 'block'
+    }
+  }
+
+  function initMenuVert() {
     if (document.getElementById('it25-main-nav')) {
       document.getElementById('it25-main-nav').addEventListener('show.bs.collapse', setIconBurger)
       document.getElementById('it25-main-nav').addEventListener('hide.bs.collapse', setIconClose)
     }
+    if (document.getElementById('it25-menu-vert')) {
+      document.getElementById('btn-hamburger').addEventListener('click', clickMenuVert)
+    } else {
+      document.getElementById('it25-main-nav').addEventListener('show.bs.collapse', function () {
+        window.scrollTo(0, 0)
+      })
+    }
   }
 
-  initMenuHamburger()
+  initMenuVert()
 }

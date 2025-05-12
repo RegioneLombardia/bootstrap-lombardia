@@ -1,13 +1,34 @@
 - category: Pagine Complete
-  description: 'In tutti gli esempi sono presenti uno dei possibili tipi di header della Regione Lombardia e un footer.<br/>
-  Cambiando le dimensioni della finestra del browser è possibile vedere il comportamento responsivo dei componenti.'
+  description: "<p>Il <b>menù principale di navigazione</b> di un applicativo va scelto in base al numero di voci che deve contenere e alla quantità di informazione da mostrare a video.<br/>
+  I quattro esempi richiamabili qui sotto sono <b>casi tipo</b> per chiarire il concetto.</p>
+  <p>Il link all'<b>esempio fuzionante</b> apre un tab nel browser che mostra la pagina completa. Conviene <i>staccarla</i> e ridimensionarla per vedere la responsività degli elementi al suo interno.<br/>
+  Il link al <b>codice commentato</b> rimanda alla spiegazione tecnica della struttura generale del codice HTML che genera quella pagina.</p>"
+- category: Corpo pagina fluido
+  description: "Utilizza tutta la larghezza dello schermo <strong>quando devono essere mostrati molti dati</strong>."
   examples:
-    - name: Tabella complessa
-      url: tabella-complessa
-      description: Pagina con topbar e header con bottone hamburger, menu verticale, filtri, tabella, paginatore, footer minimo.
-    - name: Form
-      url: form
-      description: Pagina con topbar con dropdown, header base, menu orizzontale, form con vari tipi di campi, footer medio.
+    - name: 'Menu orizzontale'
+      url: tabella-menu-oriz
+      description: "Il menù orizzontale <strong>occupa poco spazio</strong>, ma può contenere solo pochi link.<br/>
+      Con i <strong>dropdown</strong> o i <strong>megamenù</strong> è possibile aumentarli, ma l'utente deve cliccare per vederli."
+      code_explain: true
+    - name: 'Menu verticale'
+      url: tabella-menu-vert
+      description: "Il menù verticale a comparsa è <strong>utile se le voci di menù sono molto numerose</strong>.<br/>
+      Non occupa spazio, ma deve essere aperto e chiuso con un click."
+      code_explain: true
+- category: Corpo pagina compatto
+  description: "<strong>Se i dati da mostrare non sono molti</strong>, evita che, sugli schermi grandi, le informazioni risultino troppo sparse."
+  examples:
+    - name: 'Form'
+      url: form-menu-oriz
+      description: Il <strong>container</strong> mantiene vicine le informazioni anche se lo schermo è molto ampio.
+      code_explain: true
+    - name: 'Sidebar'
+      url: form-sidebar
+      description: Avendo spazio, la <strong>sidebar</strong> permette di visualizzare molte voci di menù immediatamente, risparmiando click all'utente
+      code_explain: true
+- category: Altri esempi
+  examples:
     - name: Cookiebar
       url: cookiebar
       description: Barra di avviso sui cookie.

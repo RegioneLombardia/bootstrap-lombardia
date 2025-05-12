@@ -91,7 +91,7 @@ header {
       }
       .it25-hamburger-btn-wrapper {
         margin-right: 10px;
-        margin-left: -40px;
+        margin-left: -30px;
         @media (min-width: #{map-get($grid-breakpoints, sm)}) {
           margin-left: -18px;
         }
@@ -167,8 +167,8 @@ header {
   }
 }
 
-.menu-hamburger {
-  width: 15rem;
+#it25-menu-vert {
+  width: 20rem;
   overflow: auto;
   height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
   @media (min-width: #{map-get($grid-breakpoints, sm)}) {
