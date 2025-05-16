@@ -6,8 +6,7 @@ group: informazioni
 toc: yes
 ---
 
-Il **Carosello** non normalizza automaticamente le dimensioni della diapositiva, pertanto è necessario un ridimensionamento.  
-All’interno del carosello è prevista una **hero image** di background, una card che può avere un titolo, un paragrafo e una call to action.  
+All’interno del *carosello* è prevista una **hero image** di background, una card che può avere un titolo, un paragrafo e una call to action.  
 E’ possibile avere anche solo un titolo ed un paragrafo.
 
 <div class="bd-example" style="background: #e5e5e5">
@@ -15,7 +14,7 @@ E’ possibile avere anche solo un titolo ed un paragrafo.
 </div>
 
 {% highlight html %}
-<div class="it-carousel-wrapper it-carousel-landscape-abstract it-big-img it25-hero splide" data-bs-carousel-splide>
+<div class="it-carousel-wrapper splide it25-arrow-visible it25-hero" data-bs-carousel-splide>
   <div class="splide__track">
     <ul class="splide__list">
       <li class="splide__slide">
@@ -38,8 +37,7 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 </div>
 
 {% highlight html %}
-<div
-  class="it-carousel-wrapper it-carousel-landscape-abstract-arrow it-big-img it25-hero splide"
+<div class="it-carousel-wrapper splide it25-arrow-visible it25-hero"
   data-bs-carousel-splide
   style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
@@ -59,14 +57,13 @@ Nella versione del carosello con hero image è possibile visualizzare un’immag
 
 ### Senza frecce
 
-Basta aggiungere la classe `arrow-no` sul *wrapper*.
+Basta aggiungere la classe `it25-arrows-no` sul *wrapper*.
 <div class="bd-example">
 {% include html_docs/carousel/carousel_hero_senza_frecce.html  %}
 </div>
 
 {% highlight html %}
-<div
-  class="it-carousel-wrapper it-carousel-landscape-abstract-arrow arrow-no it-big-img it25-hero splide"
+<div class="it-carousel-wrapper splide it25-arrows-no it25-hero"
   data-bs-carousel-splide
   style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
@@ -80,8 +77,7 @@ Basta aggiungere la classe `arrow-no` sul *wrapper*.
 </div>
 
 {% highlight html %}
-<div
-  class="it-carousel-wrapper it-carousel-landscape-abstract it25-special splide"
+<div class="it-carousel-wrapper splide it25-arrows-no it25-hero it25-left"
   data-bs-carousel-splide
   style="background-image: url('{{site.baseurl}}/dist/assets/img/bike-sharing.jpg'); background-size: cover"
 >
@@ -110,7 +106,9 @@ Generalmente questa componente viene utilizzata nel body di una pagina, non come
 </div>
 
 {% highlight html %}
-<div class="neutral-1-bg it-carousel-wrapper it-carousel-landscape-abstract-two-cols splide it25-gallery" data-bs-carousel-splide>
+<div
+  class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide
+  neutral-1-bg it25-gallery" data-bs-carousel-splide >
   <div class="it-header-block">
     <div class="it-header-block-title text-center">
       <span class="h2 white-color border-0">Galleria</span>

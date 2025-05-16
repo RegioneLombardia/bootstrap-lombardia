@@ -83,8 +83,8 @@ Nel tag `<main>`, all'interno del `<div class="container-fluid">`, è presente:
 
 
 Il `<button>` con `id="btn-hamburger"` deve essere visibile solo sugli schermi di dimensione piccola,  
-quindi è **necessario specificare**: `class="btn btn-xs d-md-none"`  
-(`d-md-none` determina infatti il *display: no* per gli schermi di dimensione da media in su).
+quindi è **necessario specificare**, nell'attributo *class*: `d-md-none`  
+che determina il *display: no* per gli schermi di dimensione da media in su.
 
 Non è presente il bottone di chiusura che compare automaticamente in alto a destra nel menù che si sovrappone allo schermo.
 

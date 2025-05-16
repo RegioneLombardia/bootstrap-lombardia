@@ -33,6 +33,7 @@ div.output-field {
     font-size: 1.125rem;
     font-weight: 600;
     color: $it25-gray;
+    z-index: 2;
     &.active {
       font-weight: 700;
     }

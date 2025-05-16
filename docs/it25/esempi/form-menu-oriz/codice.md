@@ -62,6 +62,15 @@ Nel tag `<main>` il `<div class="container">` mantiene il **form** compatto al c
 Inoltre, per staccare verticalmente i campi del form dal menù orizzontale è stata usata la classe `my-5` sul tag del *form*.
 
 ---
+
+### header_menu-oriz
+
+{% highlight html %}
+  {% include html_docs/header/header_menu-oriz.html %}
+{% endhighlight %}
+
+
+---
 ## La validazione
 
 La validazione dell'input, a titolo di esempio, è stata realizzata con il seguente **script** a fondo pagina:

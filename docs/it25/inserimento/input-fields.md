@@ -478,27 +478,7 @@ Altrimenti è possibile impostare autonomamente:
   </select>
 </div>
 ...      
-<div class="select-wrapper">
-  <label for="accessibleAutocomplete">Provincia</label>
-  <select class="form-control" id="accessibleAutocomplete" title="Scegli una provincia" required>
-    <option selected value="">Scegli una opzione</option>
-    <option value='AG'>Agrigento</option>
-    . . .
-    <option value='VT'>Viterbo</option>
-  </select>
-</div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var selectElement = document.querySelector('#accessibleAutocomplete');
-    var selectAutocomplete = new bootstrap.SelectAutocomplete(selectElement, {
-      showAllValues: true,
-      defaultValue: '',
-      autoselect: false,
-      showNoOptionsFound: false,
-      dropdownArrow: () => '',
-    });
-  })
-</script>    
+ {% include html_docs/input/autocompletamento.html  %} 
 {% endhighlight %}
 
 ### Input number

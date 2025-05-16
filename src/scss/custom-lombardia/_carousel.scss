@@ -1,120 +1,94 @@
-.owl-nav {
-  font-size: 24px;
-  color: $primary;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-}
-
 .it-carousel-wrapper {
-  // Landscape abstract
-  &.it-carousel-landscape-abstract {
-    &.it25-hero {
-      padding: 1rem;
-      .splide__track {
-        padding: 1.25rem;
-        width: 50%;
-      }
-      .splide__pagination {
-        position: absolute;
-        left: 0;
-        margin-left: $v-gap * 2;
-        right: 0;
-        bottom: $crs-landcape-bottom * 5;
-        text-align: left;
-        justify-content: left;
-      }
-    }
-
-    .splide__pagination button {
-      background: $white;
-      border: 1px solid $primary;
-    }
-    .splide__pagination button.is-active {
-      background: $primary !important;
-    }
-    &.it25-special {
-      padding: 1.8rem 0;
-      .splide__track {
-        padding: 1.25rem;
-        width: 50%;
-      }
-      .splide__pagination {
-        position: absolute;
-        left: 0;
-        right: 50%;
-        bottom: $crs-landcape-bottom * 5;
-        justify-content: right;
-      }
-
-      .card {
-        box-shadow: none;
-        border-radius: 0;
-      }
-    }
-  }
-
-  &.it-carousel-landscape-abstract-arrow {
-    &.it25-hero {
-      padding: 1rem;
-      .splide__track {
-        padding: 1.25rem;
-        width: 50%;
-        margin-left: $v-gap * 5;
-      }
-      .splide__pagination {
-        position: absolute;
-        left: 0;
-        margin-left: $v-gap * 6;
-        right: 0;
-        bottom: $crs-landcape-bottom * 5;
-        text-align: left;
-        justify-content: left;
-      }
-      .splide__arrows {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
+  &.it25-arrow-visible {
+    padding: 1rem;
+    .splide__arrows {
+      position: absolute;
+      top: 50%;
+      //left: -$v-gap * 3;
+      //right: -$v-gap * 3;
+      left: 0;
+      right: 0;
+      display: flex;
+      z-index: 1;
+      justify-content: space-between;
+      pointer-events: none;
+      .splide__arrow {
+        width: $v-gap * 5;
+        height: $v-gap * 5;
+        background: $primary;
+        border: none;
         display: flex;
-        z-index: 1;
-        justify-content: space-between;
-        pointer-events: none;
-        .splide__arrow {
-          width: $v-gap * 5;
-          height: $v-gap * 5;
-          background: $primary;
-          border: none;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          pointer-events: all;
-          svg {
-            fill: $white;
-            width: $v-gap * 2;
-            height: $v-gap * 2;
-          }
-          &.splide__arrow--prev {
-            transform: rotate(180deg);
-          }
-          &[disabled] {
-            background: $gray-disabled;
-          }
+        align-items: center;
+        justify-content: center;
+        pointer-events: all;
+        svg {
+          fill: $white;
+          width: $v-gap * 2;
+          height: $v-gap * 2;
+        }
+        &.splide__arrow--prev {
+          transform: rotate(180deg);
+        }
+        &[disabled] {
+          background: $gray-disabled;
         }
       }
     }
-    &.arrow-no {
-      .splide__arrows {
-        display: none;
+  }
+  &.it25-arrows-no {
+    .splide__arrows {
+      display: none;
+    }
+  }
+  &.it25-hero {
+    .splide__track {
+      margin-left: 40px;
+      width: 50% !important;
+    }
+    .splide__pagination button {
+      border: solid 1px $primary;
+      background-color: white;
+      &.is-active {
+        background-color: $primary;
       }
     }
-
-    .splide__pagination button {
-      background: $white;
-      border: 1px solid $primary;
+  }
+  &.it25-left {
+    .splide__track {
+      margin-left: 0;
     }
-    .splide__pagination button.is-active {
-      background: $primary !important;
+    .card {
+      border-radius: 0;
+    }
+  }
+
+  &.it25-gallery {
+    padding: 1.5rem;
+
+    .it25-image-content {
+      background-color: transparent;
+
+      .img-responsive-wrapper {
+        border-radius: 0;
+      }
+
+      .card-body,
+      .card-title {
+        color: $white;
+      }
+
+      .card-title {
+        font-weight: 700;
+        font-size: 24px;
+      }
+    }
+    .splide__pagination {
+      button {
+        background: $white;
+        &.is-active {
+          background: $primary-a4;
+        }
+      }
     }
   }
 }

@@ -100,7 +100,7 @@ Il bottone hamburger:
 <div class="it25-hamburger-btn-wrapper">
   <button
     id="btn-hamburger"
-    class="custom-navbar-toggler"
+    class="custom-navbar-toggler btn btn-xs"
     type="button"
     aria-controls="nav1"
     aria-expanded="false"

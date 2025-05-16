@@ -10,9 +10,13 @@ description: Tabella e menu orizzontale
 </header>
 
 <main>
-{% include esempi-lombardia/filtri_tabella.html %}
-{% include esempi-lombardia/tabella.html %}
-{% include esempi-lombardia/paginazione.html %}
+  <div class="container-fluid">
+    <div class="col-12">
+    {% include esempi-lombardia/filtri_tabella.html %}
+    {% include esempi-lombardia/tabella.html %}
+    {% include esempi-lombardia/paginazione.html %}
+    </div>
+  </div>
 </main>
 
 {% include html_docs/footer/footer_minimo.html %}

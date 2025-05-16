@@ -15,7 +15,7 @@
   flex: 1;
 
   & > input:focus:not(.focus--mouse) {
-    @extend %focus;
+    @extend %focus !optional;
   }
 
   .ds-dropdown-menu {
