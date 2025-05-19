@@ -14,9 +14,6 @@ import loadFonts from './plugins/fonts-loader'
 import { cookies } from './plugins/util/cookies'
 import * as icons from './icons'
 import it25Header from './plugins/it25-header'
-import it25 from './plugins/it25'
-import flatpickr from 'flatpickr/dist/flatpickr.js'
-import it from 'flatpickr/dist/l10n/it.js'
 
 import {
   // Bootstrap
@@ -104,7 +101,4 @@ export default {
   loadFonts,
   cookies,
   it25Header,
-  it25,
-  flatpickr,
-  it,
 }

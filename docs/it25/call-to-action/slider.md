@@ -12,42 +12,9 @@ Queste componenti sono ideali per regolare impostazioni come volume e luminosit�
 <input type="range" min="0" max="100" step="1" value="10" class="form-range" id="customRange1" aria-label="sposta il cursore per aumentare o diminuire">
 {% endcapture %}{% include example.html content=example %}
 
-## Slider con tooltip
-<div class="exclude-a11y-check">
-{% capture example %}
-<div id="single-thumb" class="slider-container mt-3 mb-3">
-<div class="slider"></div>
-<div class="blobs centered">
-    <div class="blob value centered"></div>
-    <div class="blob centered"></div>
-</div>
-<div class="value-text centered"></div>
-</div>
-{% endcapture %}{% include example.html content=example %}
-</div>
 
-Lo slider con tooltip è un componente implementato in javascript ed il cui codice è importato all'interno di `bootstrap-lombardia.min.js`.  
-E' basato sulla libreria **range-slider-input** la cui documentazione completa è reperibile a **[questo indirizzo](https://www.jsdelivr.com/package/npm/range-slider-input)**.
+## Breaking change
 
-Per attivarlo si deve invocare la funzione:
-{% highlight html %}
-new bootstrap.it25().gooeyRangeSlider(
-  document.querySelector('#single-thumb'),
-  {
-    min: 0,
-    max: 100,
-    value: [0, 10],
-    thumbsDisabled: [true, false],
-    rangeSlideDisabled: false
-  },
-  1, (value) => console.log(value)
-)
-{% endhighlight %}
-
-Il primo parametro della funzione è l'*id* dell'elemento da inizializzare.  
-`min` e  `max` determinano i limiti del range.  
-`value` imposta i valori **iniziali** del range.  
-L'ultimo parametro della funzione serve per definire una **callback** sul **change** del valore.  
-(In questo esempio viene scritto nella console del browser il valore selezionato)
-
-Tutti i parametri di configurazione sono documentati **[qui](https://github.com/n3r4zzurr0/range-slider-input#parameters)**
+{% capture callout %}
+Eliminato **Slider con tooltip** per problemi di accessibilità.
+{% endcapture %}{% include callout-breaking.html content=callout version="2.5.3" type="danger" %}

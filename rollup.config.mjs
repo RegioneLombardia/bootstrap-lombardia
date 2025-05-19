@@ -39,9 +39,7 @@ export default [
         watch: 'src/scss',
       }),
       nodeResolve(),
-      commonjs({
-        include: 'node_modules/**'
-      }),
+      commonjs(),
       injectProcessEnv({
         NODE_ENV: 'production',
       }),
@@ -91,9 +89,7 @@ export default [
         watch: 'src/scss',
       }),
       nodeResolve(),
-      commonjs({
-        include: 'node_modules/**'
-      }),
+      commonjs(),
       injectProcessEnv({
         NODE_ENV: 'production',
       }),
