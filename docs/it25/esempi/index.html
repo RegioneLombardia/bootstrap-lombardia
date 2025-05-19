@@ -11,13 +11,13 @@
 
 <title>Esempi · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202505191443" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202505191443" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -94,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.5.2/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.5.2</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.5.3/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.5.3</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -581,6 +581,10 @@
             
           </li><li>
             
+            <a class="list-item active" href="/bootstrap-lombardia/docs/it25/breaking-change/"><span>Breaking change</span></a>
+            
+          </li><li>
+            
             <a class="list-item active" href="/bootstrap-lombardia/docs/it25/crediti/"><span>Crediti</span></a>
             
           </li></ul>
@@ -597,16 +601,6 @@
         </div>
 
         
-          <div class="d-none d-xl-block col-xl-2 bd-toc">
-  <div class="sidebar-wrapper">
-    <h3>Esempi</h3>
-    <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h3"><a href="#pagine-complete">Pagine Complete</a></li>
-</ul>
-  </div>
-</div>
-
-        
 
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Esempi</h1>
@@ -615,15 +609,23 @@
   <main class="bd-content" role="main">
     
       <h3 class="mt-2" id="pagine-complete">Pagine Complete</h3>
-      <p>In tutti gli esempi sono presenti uno dei possibili tipi di header della Regione Lombardia e un footer.<br /> Cambiando le dimensioni della finestra del browser è possibile vedere il comportamento responsivo dei componenti.</p>
+      <p><p>Il <b>menù principale di navigazione</b> di un applicativo va scelto in base al numero di voci che deve contenere e alla quantità di informazione da mostrare a video.<br /> I quattro esempi richiamabili qui sotto sono <b>casi tipo</b> per chiarire il concetto.</p> <p>Il link all'<b>esempio fuzionante</b> apre un tab nel browser che mostra la pagina completa. Conviene <i>staccarla</i> e ridimensionarla per vedere la responsività degli elementi al suo interno.<br /> Il link al <b>codice commentato</b> rimanda alla spiegazione tecnica della struttura generale del codice HTML che genera quella pagina.</p></p>
+      
+    
+      <h3 class="mt-2" id="corpo-pagina-fluido">Corpo pagina fluido</h3>
+      <p>Utilizza tutta la larghezza dello schermo <strong>quando devono essere mostrati molti dati</strong>.</p>
       
         
         
         
         <div class="row">
           <div class="col-sm-6 my-3">
-            <a href="/bootstrap-lombardia/docs/it25/esempi/tabella-complessa/" class="d-inline-block text-uppercase fw-bold">Tabella complessa<svg class="icon icon-primary icon-sm mb-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-right"></use></svg></a>
-            <p class="text-muted">Pagina con topbar e header con bottone hamburger, menu verticale, filtri, tabella, paginatore, footer minimo.</p>
+            <h4>Menu orizzontale</h4>
+            <p class="text-muted">Il menù orizzontale <strong>occupa poco spazio</strong>, ma può contenere solo pochi link.<br /> Con i <strong>dropdown</strong> o i <strong>megamenù</strong> è possibile aumentarli, ma l'utente deve cliccare per vederli.</p>
+            <p>
+              <a href="/bootstrap-lombardia/docs/it25/esempi/tabella-menu-oriz/" target="_blank">esempio funzionante</a><br />
+              <a href="/bootstrap-lombardia/docs/it25/esempi/tabella-menu-oriz//codice">codice commentato</a>
+            </p>
           </div>
         
       
@@ -632,8 +634,30 @@
         
         
           <div class="col-sm-6 my-3">
-            <a href="/bootstrap-lombardia/docs/it25/esempi/form/" class="d-inline-block text-uppercase fw-bold">Form<svg class="icon icon-primary icon-sm mb-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-right"></use></svg></a>
-            <p class="text-muted">Pagina con topbar con dropdown, header base, menu orizzontale, form con vari tipi di campi, footer medio.</p>
+            <h4>Menu verticale</h4>
+            <p class="text-muted">Il menù verticale a comparsa è <strong>utile se le voci di menù sono molto numerose</strong>.<br /> Non occupa spazio, ma deve essere aperto e chiuso con un click.</p>
+            <p>
+              <a href="/bootstrap-lombardia/docs/it25/esempi/tabella-menu-vert/" target="_blank">esempio funzionante</a><br />
+              <a href="/bootstrap-lombardia/docs/it25/esempi/tabella-menu-vert//codice">codice commentato</a>
+            </p>
+          </div>
+        </div>
+      
+    
+      <h3 class="mt-2" id="corpo-pagina-compatto">Corpo pagina compatto</h3>
+      <p><strong>Se i dati da mostrare non sono molti</strong>, evita che, sugli schermi grandi, le informazioni risultino troppo sparse.</p>
+      
+        
+        
+        
+        <div class="row">
+          <div class="col-sm-6 my-3">
+            <h4>Form</h4>
+            <p class="text-muted">Il <strong>container</strong> mantiene vicine le informazioni anche se lo schermo è molto ampio.</p>
+            <p>
+              <a href="/bootstrap-lombardia/docs/it25/esempi/form-menu-oriz/" target="_blank">esempio funzionante</a><br />
+              <a href="/bootstrap-lombardia/docs/it25/esempi/form-menu-oriz//codice">codice commentato</a>
+            </p>
           </div>
         
       
@@ -642,8 +666,30 @@
         
         
           <div class="col-sm-6 my-3">
-            <a href="/bootstrap-lombardia/docs/it25/esempi/cookiebar/" class="d-inline-block text-uppercase fw-bold">Cookiebar<svg class="icon icon-primary icon-sm mb-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-right"></use></svg></a>
+            <h4>Sidebar</h4>
+            <p class="text-muted">Avendo spazio, la <strong>sidebar</strong> permette di visualizzare molte voci di menù immediatamente, risparmiando click all'utente</p>
+            <p>
+              <a href="/bootstrap-lombardia/docs/it25/esempi/form-sidebar/" target="_blank">esempio funzionante</a><br />
+              <a href="/bootstrap-lombardia/docs/it25/esempi/form-sidebar//codice">codice commentato</a>
+            </p>
+          </div>
+        </div>
+      
+    
+      <h3 class="mt-2" id="altri-esempi">Altri esempi</h3>
+      <p></p>
+      
+        
+        
+        
+        <div class="row">
+          <div class="col-sm-6 my-3">
+            <h4>Cookiebar</h4>
             <p class="text-muted">Barra di avviso sui cookie.</p>
+            <p>
+              <a href="/bootstrap-lombardia/docs/it25/esempi/cookiebar/" target="_blank">esempio funzionante</a><br />
+              
+            </p>
           </div>
         </div>
       
@@ -656,62 +702,17 @@
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202501131348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202505191443"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-  new bootstrap.it25().gooeyRangeSlider(
-    document.querySelector('#single-thumb'),
-    {
-      min: 0,
-      max: 100,
-      value: [0, 10],
-      thumbsDisabled: [true, false],
-      rangeSlideDisabled: false
-    },
-    1, (value) => console.log(value)
-  )
-  if (document.querySelector('#calendar-multiple') !== null ) {
-    flatpickr (document.querySelector('#calendar-multiple'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'multiple'
-    })
-  }
-  if (document.querySelector('#calendar-range') !== null ) {
-    flatpickr(document.querySelector('#calendar-range'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'range'
-    })
-  }
-  if (document.querySelector('#calendar-single') !== null ) {
-    flatpickr(document.querySelector('#calendar-single'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it"
-    })
-  }
-  if (document.querySelector('#time-picker') !== null ) {
-    flatpickr(document.querySelector('#time-picker'), {
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: "H:i",
-      time_24hr: true
-    })
-  }
-  if (document.querySelector('#clockpicker01') !== null ) {
-    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-  }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202501131348"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202505191443"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202501131348"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202505191443"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -728,7 +729,7 @@
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202501131348"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202505191443"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

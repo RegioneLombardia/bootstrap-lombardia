@@ -11,13 +11,13 @@
 
 <title>Megamenu · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202505191443" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202505191443" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -94,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/rl2.5.2/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">rl2.5.2</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.5.3/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.5.3</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -578,6 +578,10 @@
           </li><li>
             
             <a class="list-item active" href="/bootstrap-lombardia/docs/it25/installazione/"><span>Installazione</span></a>
+            
+          </li><li>
+            
+            <a class="list-item active" href="/bootstrap-lombardia/docs/it25/breaking-change/"><span>Breaking change</span></a>
             
           </li><li>
             
@@ -1183,62 +1187,17 @@ Presenta un <strong>sottomenu</strong> contenente <strong>elenchi di link relati
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202501131348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202505191443"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-  new bootstrap.it25().gooeyRangeSlider(
-    document.querySelector('#single-thumb'),
-    {
-      min: 0,
-      max: 100,
-      value: [0, 10],
-      thumbsDisabled: [true, false],
-      rangeSlideDisabled: false
-    },
-    1, (value) => console.log(value)
-  )
-  if (document.querySelector('#calendar-multiple') !== null ) {
-    flatpickr (document.querySelector('#calendar-multiple'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'multiple'
-    })
-  }
-  if (document.querySelector('#calendar-range') !== null ) {
-    flatpickr(document.querySelector('#calendar-range'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'range'
-    })
-  }
-  if (document.querySelector('#calendar-single') !== null ) {
-    flatpickr(document.querySelector('#calendar-single'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it"
-    })
-  }
-  if (document.querySelector('#time-picker') !== null ) {
-    flatpickr(document.querySelector('#time-picker'), {
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: "H:i",
-      time_24hr: true
-    })
-  }
-  if (document.querySelector('#clockpicker01') !== null ) {
-    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-  }
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202501131348"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202505191443"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202501131348"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202505191443"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1255,7 +1214,7 @@ Presenta un <strong>sottomenu</strong> contenente <strong>elenchi di link relati
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202501131348"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202505191443"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

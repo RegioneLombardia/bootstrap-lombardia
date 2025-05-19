@@ -39,9 +39,7 @@ export default [
         watch: 'src/scss',
       }),
       nodeResolve(),
-      commonjs({
-        include: 'node_modules/**'
-      }),
+      commonjs(),
       injectProcessEnv({
         NODE_ENV: 'production',
       }),
@@ -51,6 +49,7 @@ export default [
   // Non-bundled version
   {
     input: 'src/js/bootstrap-lombardia.entry.js',
+    watch: false,
     output: {
       file: 'dist/js/bootstrap-lombardia.min.js',
       format: 'umd',
@@ -59,7 +58,6 @@ export default [
       globals: {
         '@popperjs/core' : 'Popper',
         '@splidejs/splide' : 'Splide',
-        'accessible-autocomplete' : 'accessibleAutocomplete',
         'animejs/lib/anime.es.js' : 'anime',
         'video.js' : 'videojs'
       },
@@ -67,7 +65,6 @@ export default [
     external: [
       '@popperjs/core',
       '@splidejs/splide',
-      'accessible-autocomplete',
       'animejs/lib/anime.es.js',
       'video.js'
     ],
@@ -92,9 +89,7 @@ export default [
         watch: 'src/scss',
       }),
       nodeResolve(),
-      commonjs({
-        include: 'node_modules/**'
-      }),
+      commonjs(),
       injectProcessEnv({
         NODE_ENV: 'production',
       }),
@@ -104,6 +99,7 @@ export default [
   // ESM version
   {
     input: 'src/js/bootstrap-lombardia.esm.js',
+    watch: false,
     output: [
       {
         format: 'es',
@@ -112,6 +108,9 @@ export default [
         dir: 'dist',
         preserveModules: true
       },
+    ],
+    plugins: [
+      commonjs(),
     ],
   },
   // Entry for documentation

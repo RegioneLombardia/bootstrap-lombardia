@@ -11,11 +11,11 @@
 
 <title>Template Singolo Argomento · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202505191443" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202501131348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202505191443" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -922,56 +922,11 @@
   </svg>
 </a>
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202501131348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202505191443"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-  new bootstrap.it25().gooeyRangeSlider(
-    document.querySelector('#single-thumb'),
-    {
-      min: 0,
-      max: 100,
-      value: [0, 10],
-      thumbsDisabled: [true, false],
-      rangeSlideDisabled: false
-    },
-    1, (value) => console.log(value)
-  )
-  if (document.querySelector('#calendar-multiple') !== null ) {
-    flatpickr (document.querySelector('#calendar-multiple'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'multiple'
-    })
-  }
-  if (document.querySelector('#calendar-range') !== null ) {
-    flatpickr(document.querySelector('#calendar-range'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it",
-      mode: 'range'
-    })
-  }
-  if (document.querySelector('#calendar-single') !== null ) {
-    flatpickr(document.querySelector('#calendar-single'), {
-      allowInput: true,
-      dateFormat: 'd/m/Y',
-      locale: "it"
-    })
-  }
-  if (document.querySelector('#time-picker') !== null ) {
-    flatpickr(document.querySelector('#time-picker'), {
-      enableTime: true,
-      noCalendar: true,
-      dateFormat: "H:i",
-      time_24hr: true
-    })
-  }
-  if (document.querySelector('#clockpicker01') !== null ) {
-    new bootstrap.it25().clockpicker(document.querySelector('#clockpicker01'))
-  }
 </script><!-- Notification per tornare alla pagina principale -->
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi"
   aria-labelledby="notification-esempi-title">
