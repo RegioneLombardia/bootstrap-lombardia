@@ -36,5 +36,6 @@ export { default as VideoPlayer } from './plugins/videoplayer.js';
 export { default as AcceptOverlay } from './plugins/accept-overlay.js';
 export { default as loadFonts } from './plugins/fonts-loader.js';
 export { default as it25Header } from './plugins/it25-header.js';
+export { default as it25 } from './plugins/it25.js';
 export { default as init } from './plugins/init.js';
 //# sourceMappingURL=bootstrap-lombardia.esm.js.map

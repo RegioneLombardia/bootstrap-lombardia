@@ -1,4 +1,4 @@
-import accessibleAutocomplete from './vendor/accessible-autocomplete.js';
+import accessibleAutocomplete from 'accessible-autocomplete';
 import BaseComponent from './base-component.js';
 import InputLabel from './input-label.js';
 
