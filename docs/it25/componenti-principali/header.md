@@ -121,8 +121,10 @@ prima del link contenente il logo della Regione Lombardia.
 In questo modo comparirà automaticamente, sugli schermi di piccole dimensioni, a sinistra nella barra istituzionale.
 
 A seconda del tipo di menù (orizzontale, verticale o sidebar) cambiano i valori degli attributi:  
-* `class`
-* `data-bs-toggle`
+* `class`  
+  in particolare **per il menù verticale va omesso** `custom-navbar-toggler`
+* `data-bs-toggle`  
+  sia per il **menù verticale** che per la **sidebar** va impostato `collapse` invece di *navbarcollapsible*
 
 In particolare, **solo per il menu verticale**, per attivare il funzionamento, è necessario invocare la funzione :
 ```
