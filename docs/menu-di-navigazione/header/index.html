@@ -11,13 +11,13 @@
 
 <title>Header · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202506041021" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202509090804" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202506041021" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202509090804" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.14.0</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.16.0</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -1597,11 +1597,10 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
       <div class="col-12">
         <!--start nav-->
         <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-          <button class="custom-navbar-toggler" type="button" aria-controls="nav1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav1">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav1" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav1">
             <svg class="icon bg-override"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use></svg>
           </button>
-          <div class="navbar-collapsable" id="nav1" style="display: none;">
-            <div class="overlay" style="display: none;"></div>
+          <div class="navbar-collapsable" id="nav1" tabindex="-1">
             <div class="close-div">
               <button class="btn close-menu" type="button">
                 <span class="visually-hidden">Nascondi la navigazione</span>
@@ -1857,18 +1856,16 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 130
 131
 132
-133
 </pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!--start nav--&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav1"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav1"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav1"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon bg-override"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav1"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav1"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -2018,11 +2015,10 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
       <div class="col-12">
         <!--start nav-->
         <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-          <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav0">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav0">
             <svg class="icon bg-override"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use></svg>
           </button>
-          <div class="navbar-collapsable" id="nav0" style="display: none;">
-            <div class="overlay" style="display: none;"></div>
+          <div class="navbar-collapsable" id="nav0" tabindex="-1">
             <div class="close-div">
               <button class="btn close-menu" type="button">
                 <span class="visually-hidden">Nascondi la navigazione</span>
@@ -2278,18 +2274,16 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 130
 131
 132
-133
 </pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!--start nav--&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav0"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav0"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav0"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav0"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon bg-override"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav0"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav0"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -2423,11 +2417,10 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
       <div class="col-12">
         <!--start nav-->
         <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-          <button class="custom-navbar-toggler" type="button" aria-controls="nav2" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav2">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav2" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav2">
             <svg class="icon bg-override"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use></svg>
           </button>
-          <div class="navbar-collapsable" id="nav2" style="display: none;">
-            <div class="overlay" style="display: none;"></div>
+          <div class="navbar-collapsable" id="nav2" tabindex="-1">
             <div class="close-div">
               <button class="btn close-menu" type="button">
                 <span class="visually-hidden">Nascondi la navigazione</span>
@@ -2683,18 +2676,16 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 130
 131
 132
-133
 </pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper theme-dark-mobile"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!--start nav--&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav2"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav2"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav2"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav2"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon bg-override"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav2"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav2"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -2828,13 +2819,12 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
       <div class="col-12">
         <!--start nav-->
         <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-          <button class="custom-navbar-toggler" type="button" aria-controls="nav3" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav3">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav3" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav3">
             <svg class="icon">
               <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use>
             </svg>
           </button>
-          <div class="navbar-collapsable" id="nav3" style="display: none;">
-            <div class="overlay" style="display: none;"></div>
+          <div class="navbar-collapsable" id="nav3" tabindex="-1">
             <div class="close-div">
               <button class="btn close-menu" type="button">
                 <span class="visually-hidden">Nascondi la navigazione</span>
@@ -3092,20 +3082,18 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 132
 133
 134
-135
 </pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper theme-light-desk"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!--start nav--&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav3"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav3"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav3"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav3"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;</span>
             <span class="nt">&lt;/svg&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav3"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav3"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -3241,11 +3229,10 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
       <div class="col-12">
         <!--start nav-->
         <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-          <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav4">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav4" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav4">
             <svg class="icon bg-override"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use></svg>
           </button>
-          <div class="navbar-collapsable" id="nav4" style="display: none;">
-            <div class="overlay" style="display: none;"></div>
+          <div class="navbar-collapsable" id="nav4" tabindex="-1">
             <div class="close-div">
               <button class="btn close-menu" type="button">
                 <span class="visually-hidden">Nascondi la navigazione</span>
@@ -3309,18 +3296,16 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 34
 35
 36
-37
 </pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
         <span class="c">&lt;!--start nav--&gt;</span>
         <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav4"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav4"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"nav4"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#nav4"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon bg-override"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
           <span class="nt">&lt;/button&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav4"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"nav4"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
             <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
               <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -3456,13 +3441,12 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
           <div class="col-12">
             <!--start nav-->
             <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
                 <svg class="icon">
                   <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
               </button>
-              <div class="navbar-collapsable" id="navC1" style="display: none;">
-                <div class="overlay" style="display: none;"></div>
+              <div class="navbar-collapsable" id="navC1" tabindex="-1">
                 <div class="close-div">
                   <button class="btn close-menu" type="button">
                     <span class="visually-hidden">Nascondi la navigazione</span>
@@ -3831,7 +3815,6 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
 236
 237
 238
-239
 </pre></td><td class="code"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it-header-wrapper"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
@@ -3936,13 +3919,12 @@ Il cambio lingua è gestito con il componente <a href="/bootstrap-lombardia/docs
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="c">&lt;!--start nav--&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"navC1"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#navC1"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"navC1"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#navC1"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;</span>
                 <span class="nt">&lt;/svg&gt;</span>
               <span class="nt">&lt;/button&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"navC1"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"navC1"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -4183,11 +4165,10 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
           <div class="col-12">
             <!--start nav-->
             <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
-              <button class="custom-navbar-toggler" type="button" aria-controls="navC2" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC2">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC2" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC2">
                 <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use></svg>
               </button>
-              <div class="navbar-collapsable" id="navC2" style="display: none;">
-                <div class="overlay" style="display: none;"></div>
+              <div class="navbar-collapsable" id="navC2" tabindex="-1">
                 <div class="close-div">
                   <button class="btn close-menu" type="button">
                     <span class="visually-hidden">Nascondi la navigazione</span>
@@ -4545,7 +4526,6 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
 230
 231
 232
-233
 </pre></td><td class="code"><pre><span class="nt">&lt;header</span> <span class="na">class=</span><span class="s">"it-header-wrapper it-shadow"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-slim-wrapper theme-light"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xxl"</span><span class="nt">&gt;</span>
@@ -4650,11 +4630,10 @@ Verrà creata un’ombra per enfatizzare l’Header rispetto alla pagina in cui 
           <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12"</span><span class="nt">&gt;</span>
             <span class="c">&lt;!--start nav--&gt;</span>
             <span class="nt">&lt;nav</span> <span class="na">class=</span><span class="s">"navbar navbar-expand-lg has-megamenu"</span> <span class="na">aria-label=</span><span class="s">"Navigazione principale"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"navC2"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#navC2"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"custom-navbar-toggler"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">aria-controls=</span><span class="s">"navC2"</span> <span class="na">aria-label=</span><span class="s">"Mostra/Nascondi la navigazione"</span> <span class="na">data-bs-toggle=</span><span class="s">"navbarcollapsible"</span> <span class="na">data-bs-target=</span><span class="s">"#navC2"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
               <span class="nt">&lt;/button&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"navC2"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"overlay"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"navbar-collapsable"</span> <span class="na">id=</span><span class="s">"navC2"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
                 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"close-div"</span><span class="nt">&gt;</span>
                   <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn close-menu"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
                     <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Nascondi la navigazione<span class="nt">&lt;/span&gt;</span>
@@ -4865,6 +4844,29 @@ componente manualmente utilizzando la classe <code class="language-plaintext hig
 
 <div class="accordion p-0 bd-callout bd-callout-danger">
   <div class="accordion-item">
+    <h4 class="accordion-header" id="#bsbrh2-15-0">
+      <button class="accordion-button text-black collapsed" type="button" style="border-top: none;" data-bs-toggle="collapse" data-bs-target="#bsbrc2-15-0" aria-controls="#bsbrc2-15-0">
+      Breaking change dalla versione&nbsp;<b>2.15.0</b>
+      </button>
+    </h4>
+    <div id="bsbrc2-15-0" class="accordion-collapse collapse" role="region" aria-labelledby="bsbrh2-15-0">
+      <div class="accordion-body">
+<p>La navbar presente negli esempi, quando aperta in versione mobile o a forte ingrandimento, è stata reimplementata come modale per migliorare l’accessibilità con le combinazioni principali di lettori di schermo, sistema operativo e browser. Modifiche principali:</p>
+<ul>
+  <li>struttura: la navbar ora utilizza un pattern dialog con backdrop</li>
+  <li>gerarchia visiva: la gestione <code class="language-plaintext highlighter-rouge">z-index</code> è allineata al componente modale</li>
+  <li>gestione del focus: implementato <code class="language-plaintext highlighter-rouge">focus-trap.js</code> per utenti da tastiera e lettori di schermo, e gestione inert</li>
+  <li>il comportamento è diverso se implementata dentro o fuori dall’elemento <code class="language-plaintext highlighter-rouge">main</code> di pagina (se presente)</li>
+</ul>
+
+<p>Se hai personalizzato il CSS della navbar, rivedi le tue modifiche per verificarne la compatibilità. Se hai modificato il comportamento JavaScript, assicurati che funzioni con il nuovo pattern dialog. Testa la tua implementazione con lettori di schermo e con utenti per verificarne l’accessibilità.</p>
+</div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion p-0 bd-callout bd-callout-danger">
+  <div class="accordion-item">
     <h4 class="accordion-header" id="#bsbrh2-8-0">
       <button class="accordion-button text-black collapsed" type="button" style="border-top: none;" data-bs-toggle="collapse" data-bs-target="#bsbrc2-8-0" aria-controls="#bsbrc2-8-0">
       Breaking change dalla versione&nbsp;<b>2.8.0</b>
@@ -4888,17 +4890,17 @@ componente manualmente utilizzando la classe <code class="language-plaintext hig
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202506041021"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202509090804"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202506041021"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202509090804"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202506041021"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202509090804"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -4915,7 +4917,7 @@ componente manualmente utilizzando la classe <code class="language-plaintext hig
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202506041021"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202509090804"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({
