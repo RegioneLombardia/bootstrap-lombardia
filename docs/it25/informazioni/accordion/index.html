@@ -11,13 +11,13 @@
 
 <title>Accordion · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202510080900" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202510080900" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -640,15 +640,19 @@ L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannel
             <div class="row">
   <div class="form-group col-md-6">
     <label for="inputEmail4" class="active">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" autocomplete="email" />
   </div>
   <div class="form-group col-md-4">
     <label for="exampleInputPassword9">Scegli password</label>
-    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9" />
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9" autocomplete="current-password" />
     <button type="button" class="password-icon btn" role="switch" aria-checked="false">
       <span class="visually-hidden">Mostra/Nascondi Password</span>
-      <svg class="password-icon-visible icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
     </button>
     <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
     <div class="password-strength-meter">
@@ -666,7 +670,7 @@ L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannel
   </div>
   <div class="form-group col-md-2">
     <label class="output">Ticket</label>
-    <div class="output-field">AC-123-0002658</div>
+    <div id="ticket-number" class="output-field">AC-123-0002658</div>
   </div>
 </div>
 
@@ -684,27 +688,27 @@ L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannel
           <div class="row">
   <div class="form-group col-md-6">
     <label for="formNome">Nome</label>
-    <input type="text" class="form-control" id="formNome" />
+    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
     <label for="formCognome">Cognome</label>
-    <input type="text" class="form-control" id="formCognome" />
+    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
     <label for="inputAddress">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress" />
+    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1" />
   </div>
   <div class="form-group col-2">
     <label for="civico" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico" />
+    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputCity">Comune</label>
-    <input type="text" class="form-control" id="inputCity" />
+    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
     <label for="inputCAP">CAP</label>
@@ -714,7 +718,7 @@ L’esempio seguente mostra l’accordion nel suo stato base, con tutti i pannel
     <div class="form-group">
       <div class="select-wrapper">
         <label for="defaultSelect">Provincia</label>
-        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required="">
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
@@ -864,15 +868,19 @@ Questo per rendere chiaramente circoscritto il contenuto in oggetto.</p>
         <div class="row">
   <div class="form-group col-md-6">
     <label class="active" for="inputEmail2">Email</label>
-    <input type="email" class="form-control" id="inputEmail2" placeholder="inserisci il tuo indirizzo email" />
+    <input type="email" class="form-control" id="inputEmail2" placeholder="inserisci il tuo indirizzo email" autocomplete="email" />
   </div>
   <div class="form-group col-md-6">
     <label class="active" for="exampleInputPassword2">Password</label>
-    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword2" placeholder="inserisci la tua password" />
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword2" placeholder="inserisci la tua password" autocomplete="current-password" />
     <button type="button" class="password-icon btn" role="switch" aria-checked="false">
       <span class="visually-hidden">Mostra/Nascondi Password</span>
-      <svg class="password-icon-visible icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
     </button>
   </div>
 </div>
@@ -891,27 +899,27 @@ Questo per rendere chiaramente circoscritto il contenuto in oggetto.</p>
           <div class="row">
   <div class="form-group col-md-6">
     <label for="formNome2">Nome</label>
-    <input type="text" class="form-control" id="formNome2" />
+    <input type="text" class="form-control" id="formNome2" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
     <label for="formCognome2">Cognome</label>
-    <input type="text" class="form-control" id="formCognome2" />
+    <input type="text" class="form-control" id="formCognome2" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
     <label for="inputAddress2">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress2" />
+    <input type="text" class="form-control" id="inputAddress2" autocomplete="address-line1" />
   </div>
   <div class="form-group col-2">
     <label for="civico2" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico2" />
+    <input type="text" class="form-control" id="civico2" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputCity2">Comune</label>
-    <input type="text" class="form-control" id="inputCity2" />
+    <input type="text" class="form-control" id="inputCity2" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
     <label for="inputCAP2">CAP</label>
@@ -921,7 +929,7 @@ Questo per rendere chiaramente circoscritto il contenuto in oggetto.</p>
     <div class="form-group">
       <div class="select-wrapper">
         <label for="defaultSelect2">Provincia</label>
-        <select id="defaultSelect2" title="Scegli una opzione" class="form-control" required="">
+        <select id="defaultSelect2" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
@@ -1178,17 +1186,21 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
         <div class="accordion-body">
           <div class="row">
   <div class="form-group col-md-6">
-    <label for="inputEmail3">Email</label>
-    <input type="email" class="form-control" id="inputEmail3" placeholder="" />
+    <label class="active" for="inputEmail3">Email</label>
+    <input type="email" class="form-control" id="inputEmail3" placeholder="" autocomplete="email" />
   </div>
   <div class="form-group col-md-6">
-    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword3" placeholder="" />
+    <label class="active" for="exampleInputPassword3">Password</label>
+    <input type="password" data-bs-input="" class="form-control input-password" id="exampleInputPassword3" placeholder="" autocomplete="current-password" />
     <button type="button" class="password-icon btn" role="switch" aria-checked="false">
       <span class="visually-hidden">Mostra/Nascondi Password</span>
-      <svg class="password-icon-visible icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
     </button>
-    <label for="exampleInputPassword3">Password</label>
   </div>
 </div>
 
@@ -1206,27 +1218,27 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
           <div class="row">
   <div class="form-group col-md-6">
     <label for="formNome3">Nome</label>
-    <input type="text" class="form-control" id="formNome3" />
+    <input type="text" class="form-control" id="formNome3" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
     <label for="formCognome3">Cognome</label>
-    <input type="text" class="form-control" id="formCognome3" />
+    <input type="text" class="form-control" id="formCognome3" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
     <label for="inputAddress3">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress3" />
+    <input type="text" class="form-control" id="inputAddress3" autocomplete="address-line1" />
   </div>
   <div class="form-group col-2">
     <label for="civico3" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico3" />
+    <input type="text" class="form-control" id="civico3" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputCity3">Comune</label>
-    <input type="text" class="form-control" id="inputCity3" />
+    <input type="text" class="form-control" id="inputCity3" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
     <label for="inputCAP3">CAP</label>
@@ -1236,7 +1248,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     <div class="form-group">
       <div class="select-wrapper">
         <label for="defaultSelect3">Provincia</label>
-        <select id="defaultSelect3" title="Scegli una opzione" class="form-control" required="">
+        <select id="defaultSelect3" title="Scegli una opzione" class="form-control" required="" autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
@@ -1371,17 +1383,17 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202509090919"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202510080900"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202509090919"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202510080900"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202509090919"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202510080900"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -1398,7 +1410,7 @@ Le icone per l’apertura dei pannelli possono essere delle chevron ma anche alt
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202509090919"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202510080900"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

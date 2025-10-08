@@ -11,11 +11,11 @@
 
 <title>es. menù verticale · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202510080900" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202510080900" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -70,7 +70,7 @@
     <div class="row">
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
             <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
           </a>
         </div>
@@ -96,7 +96,7 @@
                 data-bs-toggle="collapse"
                 data-bs-target="#it25-main-nav"
               >
-                <svg class="icon icon-primary">
+                <svg class="icon icon-primary" role="presentation">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
               </button>
@@ -118,10 +118,10 @@
   <div class="form-group">
     <div class="input-group">
       <span class="input-group-text">
-        <svg class="icon icon-sm"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
+        <svg class="icon icon-sm" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
       </span>
       <label for="searchField">Cerca</label>
-      <input type="text" class="form-control" id="searchField">
+      <input type="text" class="form-control" id="searchField" autocomplete="off">
     </div>
   </div>
   <div class="sidebar-wrapper">
@@ -132,7 +132,7 @@
             <a class="list-item large medium right-icon" href="#collapseZero" role="button" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapseZero">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse" id="collapseZero">
@@ -151,7 +151,7 @@
             <a class="list-item large medium right-icon" href="#collapseUno" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseUno">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse show" id="collapseUno">
@@ -170,7 +170,7 @@
             <a class="list-item large medium right-icon active" href="#collapseDue" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseDue">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse show" id="collapseDue">
@@ -189,7 +189,7 @@
             <a class="list-item large medium right-icon" href="#collapseTre" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseTre">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse show" id="collapseTre">
@@ -208,7 +208,7 @@
             <a class="list-item large medium right-icon" href="#collapseQuattro" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseQuattro">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse show" id="collapseQuattro">
@@ -227,7 +227,7 @@
             <a class="list-item large medium right-icon" href="#collapseCinque" role="button" data-bs-toggle="collapse" aria-expanded="true" aria-controls="collapseCinque">
               <span class="list-item-title-icon-wrapper">
                 <span class="fw-bold">Lorem ipsum dolor</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                <svg class="icon icon-sm icon-primary right" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </a>
             <ul class="link-sublist collapse show" id="collapseCinque">
@@ -254,27 +254,28 @@
 <main>
   <div class="container-fluid">
     <div class="col-12">
+    <h1 class="m-2">Titolo videata</h1>
       <div class="my-4">
     <div class="container-fluid">
-      <form>
+<!--       <form> -->
         <div class="row">
           <div class="form-group col-12 col-md-5 col-lg-3 mb-md-0">
             <div class="btn-group">
               <div class="dropdown">
                 <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   Azioni multiple
-                  <svg class="icon-expand icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+                  <svg class="icon-expand icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                   <button class="dropdown-item" type="button">
-                    <svg class="icon icon-danger icon-sm">
+                    <svg class="icon icon-danger icon-sm" role="presentation">
                       <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-circle"></use>
                     </svg>
                     Elimina
                   </button>
                   <div class="dropdown-divider"></div>
                   <button class="dropdown-item" type="button">
-                    <svg class="icon icon-success icon-sm">
+                    <svg class="icon icon-success icon-sm" role="presentation">
                       <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-file"></use>
                     </svg>
                     Scarica pdf
@@ -294,7 +295,7 @@
           <div class="form-group col-12 col-md-2 mb-md-0">
             <div class="select-wrapper">
               <label for="statoSelect">Stato</label>
-              <select title="Scegli" id="statoSelect">
+              <select title="Scegli" id="statoSelect" autocomplete="off">
                 <option value="1">Aperta</option>
                 <option value="2" selected >Chiusa</option>
               </select>
@@ -302,8 +303,8 @@
           </div>
           <div class="form-group col-12 col-md-2 mb-md-0">
             <div class="select-wrapper">
-              <label id="parereSelect">Parere</label>
-              <select title="Scegli" for="parereSelect">
+              <label for="parereSelect">Parere</label>
+              <select title="Scegli" id="parereSelect" autocomplete="off">
                 <option value="1">Favorevole</option>
                 <option value="2" selected >Contrario</option>
               </select>
@@ -311,10 +312,11 @@
           </div>
           <div class="form-group col-12 col-md-2 mb-md-0">
             <div class="input-group">
-              <input type="text" class="form-control" id="input-group-1" name="input-group-1" placeholder="Cerca" aria-label="Cerca nel testo">
+              <label for="input-group-1">Cerca Cognome</label>
+              <input type="text" class="form-control" id="input-group-1" name="input-group-1" placeholder="Cognome" autocomplete="off">
               <div class="input-group-append">
                 <button class="btn btn-outline-primary btn-xs" type="button" id="btn-cerca" aria-label="Cerca">
-                  <svg class="icon">
+                  <svg class="icon" role="presentation">
                     <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use>
                   </svg>
                 </button>
@@ -322,7 +324,7 @@
             </div>
           </div>
         </div><!-- end row -->
-      </form>
+<!--       </form> -->
     </div><!-- end container -->
   </div>
 
@@ -332,7 +334,7 @@
     <thead class="table-light">
       <tr>
         <th scope="col" class="text-center">
-          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe">
+          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe"> Tutto
         </th>
         <th scope="col" class="text-end">Numero/Anno</th>
         <th scope="col">Stato</th>
@@ -358,18 +360,18 @@
         <td>06/09/2018</td>
         <td class="text-end">1.230,16 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -382,18 +384,18 @@
         <td>06/09/2018</td>
         <td class="text-end">344,10 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -406,18 +408,18 @@
         <td>06/09/2018</td>
         <td class="text-end">3.534,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -430,18 +432,18 @@
         <td>06/09/2018</td>
         <td class="text-end">34,05 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -454,18 +456,18 @@
         <td>06/09/2018</td>
         <td class="text-end">534,11 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -478,18 +480,18 @@
         <td>06/09/2018</td>
         <td class="text-end">3.434,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -502,18 +504,18 @@
         <td>06/09/2018</td>
         <td class="text-end">3.434,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -526,18 +528,18 @@
         <td>06/09/2018</td>
         <td class="text-end">7.634,98 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -550,18 +552,18 @@
         <td>06/09/2018</td>
         <td class="text-end">34,30 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -574,18 +576,18 @@
         <td>06/09/2018</td>
         <td class="text-end">3.434,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -598,18 +600,18 @@
         <td>06/09/2018</td>
         <td class="text-end">444,10 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -622,18 +624,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -646,18 +648,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -670,18 +672,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -694,18 +696,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -718,18 +720,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -742,18 +744,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -766,18 +768,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -790,18 +792,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -814,18 +816,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -838,18 +840,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -862,18 +864,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -886,18 +888,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -910,18 +912,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -934,18 +936,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -958,18 +960,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -982,18 +984,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -1006,18 +1008,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -1030,18 +1032,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -1054,18 +1056,18 @@
         <td>06/09/2018</td>
         <td class="text-end">984,00 €</td>
         <td>999CV393</td>
+        <td>Rossi</td>
         <td>Mario</td>
-        <td>Verdi</td>
         <td class="text-center">M</td>
         <td class="text-center">C4</td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm icon-primary"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <svg class="icon icon-sm icon-primary" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pencil"></use></svg>
           </a>
         </td>
         <td class="text-center">
           <a href="#" data-toggle="tooltip" title="Elimina">
-            <svg class="icon icon-sm icon-danger"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
+            <svg class="icon icon-sm icon-danger" role="presentation"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use></svg>
           </a>
         </td>
       </tr>
@@ -1078,7 +1080,7 @@
     <ul class="pagination">
       <li class="page-item">
         <a class="page-link" href="#">
-          <svg class="icon icon-primary"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+          <svg class="icon icon-primary" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-left"></use></svg>
           <span class="visually-hidden">Pagina precedente</span>
         </a>
       </li>
@@ -1102,7 +1104,7 @@
       <li class="page-item">
         <a class="page-link" href="#">
           <span class="visually-hidden">Pagina successiva</span>
-          <svg class="icon icon-primary"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+          <svg class="icon icon-primary" role="presentation"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-chevron-right"></use></svg>
         </a>
       </li>
     </ul>
@@ -1133,12 +1135,13 @@
 </footer>
 
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202509090919"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202510080900"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
 </script><!-- Notification per tornare alla pagina principale -->
+<!--
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi"
   aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">
@@ -1159,7 +1162,7 @@
     <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
   </button>
 </div>
-
+-->
 <script>
 //   $(document).ready(function () {
 //     notificationShow('notification-esempi')

@@ -11,11 +11,11 @@
 
 <title>es. Form · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202510080900" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202509090919" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202510080900" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -64,23 +64,33 @@
 
   </head>
   <body>
-    <header>
+    <style>
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  display: flex ;
+}
+</style>
+
+<header>
 <div class="it-header-slim-wrapper it25-top-bar">
   <div class="container-fluid">
     <div class="row">
       <div class="col-12">
         <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
             <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
           </a>
           <div class="header-slim-right-zone">
             <div class="nav-item dropdown">
               <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
                 <span>Lorem ipsum dolor sit</span>
-                <svg class="icon icon-white">
+                <svg class="icon icon-white" aria-label="utente">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use>
                 </svg>
-                <svg class="icon icon-white">
+                <svg class="icon icon-white" aria-label="espandi">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
                 </svg>
               </a>
@@ -124,7 +134,7 @@
                 data-bs-toggle="navbarcollapsible"
                 data-bs-target="#nav1"
               >
-                <svg class="icon icon-primary">
+                <svg class="icon icon-primary" role="presentation">
                   <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use>
                 </svg>
               </button>
@@ -148,7 +158,7 @@
       <div class="close-div">
         <button class="btn close-menu" type="button">
           <span class="visually-hidden">Nascondi la navigazione</span>
-          <svg class="icon">
+          <svg class="icon" role="presentation">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use>
           </svg>
         </button>
@@ -167,7 +177,7 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <span>Dropdown</span>
-              <svg class="icon icon-xs">
+              <svg class="icon icon-xs" role="presentation">
                 <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
               </svg>
             </a>
@@ -197,7 +207,7 @@
           <li class="nav-item dropdown megamenu">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
               <span>Megamenu</span>
-              <svg class="icon icon-xs">
+              <svg class="icon icon-xs" role="presentation">
                 <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
               </svg>
             </a>
@@ -267,22 +277,27 @@
 </div>
 
 </header>
-
 <main>
   <div class="container">
+    <h1>Titolo form</h1>
     <form class="my-5" id="justValidate" action="index.html" method="post">
       <div class="row">
   <div class="form-group col-md-6">
     <label for="inputEmail4" class="active">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" autocomplete="email"/>
   </div>
   <div class="form-group col-md-4">
     <label for="exampleInputPassword9">Scegli password</label>
-    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9">
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9"
+      autocomplete="current-password">
     <button type="button" class="password-icon btn" role="switch" aria-checked="false">
       <span class="visually-hidden">Mostra/Nascondi Password</span>
-      <svg class="password-icon-visible icon icon-sm"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
     </button>
     <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
     <div class="password-strength-meter">
@@ -305,34 +320,34 @@
   </div>
   <div class="form-group col-md-2">
     <label class="output">Ticket</label>
-    <div class="output-field">AC-123-0002658</div>
+    <div id="ticket-number" class="output-field">AC-123-0002658</div>
   </div>
 </div>
 
       <div class="row">
   <div class="form-group col-md-6">
     <label for="formNome">Nome</label>
-    <input type="text" class="form-control" id="formNome" />
+    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
     <label for="formCognome">Cognome</label>
-    <input type="text" class="form-control" id="formCognome" />
+    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
     <label for="inputAddress">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress" />
+    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1"/>
   </div>
   <div class="form-group col-2">
     <label for="civico" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico" />
+    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputCity">Comune</label>
-    <input type="text" class="form-control" id="inputCity" />
+    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
     <label for="inputCAP">CAP</label>
@@ -342,7 +357,7 @@
     <div class="form-group">
       <div class="select-wrapper">
         <label for="defaultSelect">Provincia</label>
-        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required>
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
@@ -679,12 +694,13 @@
   })
 </script>
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202509090919"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202510080900"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
 </script><!-- Notification per tornare alla pagina principale -->
+<!--
 <div class="notification dismissable with-icon" role="alert" id="notification-esempi"
   aria-labelledby="notification-esempi-title">
   <h5 id="notification-esempi-title">
@@ -705,7 +721,7 @@
     <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
   </button>
 </div>
-
+-->
 <script>
 //   $(document).ready(function () {
 //     notificationShow('notification-esempi')
