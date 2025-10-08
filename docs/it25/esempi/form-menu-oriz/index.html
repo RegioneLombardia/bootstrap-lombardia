@@ -2,14 +2,24 @@
 layout: base
 title: es. Form
 ---
+<style>
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  display: flex ;
+}
+</style>
+
 <header>
 {% include html_docs/header/topbar_dropdown.html %}
 {% include html_docs/header/header_menu-oriz.html %}
 {% include esempi-lombardia/menu_orizzontale.html %}
 </header>
-
 <main>
   <div class="container">
+    <h1>Titolo form</h1>
     <form class="my-5" id="justValidate" action="index.html" method="post">
       {% include esempi-lombardia/account_posta.html %}
       {% include esempi-lombardia/indirizzo.html %}

@@ -4,6 +4,16 @@ title: es. Sidebar
 description: Pagina completa con form e sidebar
 double-logo: true
 ---
+<style>
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  display: flex ;
+}
+</style>
+
 <header>
 {% include html_docs/header/topbar_dropdown.html %}
 {% include html_docs/header/header_sidebar.html %}
@@ -16,6 +26,7 @@ double-logo: true
       {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
       </div>
       <div class="col-12 col-md-9">
+        <h1>Nome form</h1>
         <form class="my-5 px-5" id="justValidate" action="index.html" method="post">
           {% include esempi-lombardia/account_posta.html %}
           {% include esempi-lombardia/indirizzo.html %}

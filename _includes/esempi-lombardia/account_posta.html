@@ -1,15 +1,20 @@
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputEmail4" class="active">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" />
+    <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email" autocomplete="email"/>
   </div>
   <div class="form-group col-md-4">
     <label for="exampleInputPassword9">Scegli password</label>
-    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9">
+    <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword9" aria-describedby="strengthMeterInfo9 infoPassword9"
+      autocomplete="current-password">
     <button type="button" class="password-icon btn" role="switch" aria-checked="false">
       <span class="visually-hidden">Mostra/Nascondi Password</span>
-      <svg class="password-icon-visible icon icon-sm"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use></svg>
-      <svg class="password-icon-invisible icon icon-sm d-none"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      <svg class="password-icon-visible icon icon-sm" role="presentation">
+        <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-visible"></use>
+        </svg>
+      <svg class="password-icon-invisible icon icon-sm d-none" role="presentation">
+        <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-password-invisible"></use>
+      </svg>
     </button>
     <p id="infoPassword9" class="form-text text-muted d-block small pb-0">minimo 8 caratteri, maiuscole, numeri e caratteri speciali.</p>
     <div class="password-strength-meter">
@@ -32,6 +37,6 @@
   </div>
   <div class="form-group col-md-2">
     <label class="output">Ticket</label>
-    <div class="output-field">AC-123-0002658</div>
+    <div id="ticket-number" class="output-field">AC-123-0002658</div>
   </div>
 </div>

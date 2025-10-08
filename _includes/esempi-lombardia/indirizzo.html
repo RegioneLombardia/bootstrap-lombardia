@@ -1,27 +1,27 @@
 <div class="row">
   <div class="form-group col-md-6">
     <label for="formNome">Nome</label>
-    <input type="text" class="form-control" id="formNome" />
+    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
     <label for="formCognome">Cognome</label>
-    <input type="text" class="form-control" id="formCognome" />
+    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
     <label for="inputAddress">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress" />
+    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1"/>
   </div>
   <div class="form-group col-2">
     <label for="civico" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico" />
+    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
     <label for="inputCity">Comune</label>
-    <input type="text" class="form-control" id="inputCity" />
+    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
     <label for="inputCAP">CAP</label>
@@ -31,7 +31,7 @@
     <div class="form-group">
       <div class="select-wrapper">
         <label for="defaultSelect">Provincia</label>
-        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required>
+        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
