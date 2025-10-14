@@ -8,7 +8,7 @@
     font-size: 1rem;
   }
   a {
-    text-decoration: none;
+    //text-decoration: none;
     color: #fff;
   }
   a:hover {
@@ -41,15 +41,6 @@
       color: $white;
       .icon {
         fill: $white;
-      }
-    }
-  }
-  .link-list-wrapper {
-    ul {
-      li {
-        a:not(.disabled) {
-          text-decoration: none;
-        }
       }
     }
   }

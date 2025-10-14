@@ -62,7 +62,8 @@
                     &.disabled {
                       cursor: not-allowed;
                       span {
-                        color: $gray-disabled;
+                        //color: $gray-disabled;
+                        opacity: 0.7;
                       }
                     }
                     span {

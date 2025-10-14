@@ -3,7 +3,7 @@ ul {
     a {
       &.list-item {
         &:hover:not(.disabled) {
-          text-decoration: none;
+          //text-decoration: none;
           span {
             color: $it25-gray;
             text-decoration: underline;
