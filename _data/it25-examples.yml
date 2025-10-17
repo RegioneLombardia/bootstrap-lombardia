@@ -21,14 +21,14 @@
   examples:
     - name: 'Form'
       url: form-menu-oriz
-      description: Il <strong>container</strong> mantiene vicine le informazioni anche se lo schermo è molto ampio.
+      description: "Il <strong>container</strong> mantiene vicine le informazioni anche se lo schermo è molto ampio."
       code_explain: true
     - name: 'Sidebar'
       url: form-sidebar
-      description: Avendo spazio, la <strong>sidebar</strong> permette di visualizzare molte voci di menù immediatamente, risparmiando click all'utente
+      description: "Avendo spazio, la <strong>sidebar</strong> permette di visualizzare molte voci di menù immediatamente, risparmiando click all'utente"
       code_explain: true
 - category: Altri esempi
   examples:
     - name: Cookiebar
       url: cookiebar
-      description: Barra di avviso sui cookie.
+      description: "Barra di avviso sui cookie."
