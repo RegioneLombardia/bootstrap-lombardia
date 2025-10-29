@@ -21,28 +21,28 @@ I 3 aspetti principali sono:
 <div class="container-fluid my-5">
   <div class="row">
     <div class="col">
-        <h5 class="f-bold"> Scalabilità </h5>
-    <p>Uno degli aspetti più importanti di un'icona è la scalabilità. Poiché l'icona verrà mostrata in diversi punti della piattaforma e in diverse dimensioni, è importante       che essa mantenga la sua leggibilità e unicità.</p>
+      <h5 class="f-bold"> Scalabilità </h5>
+      Uno degli aspetti più importanti di un'icona è la scalabilità. Poiché l'icona verrà mostrata in diversi punti della piattaforma e in diverse dimensioni, è importante che essa mantenga la sua leggibilità e unicità.</p>
     </div>
     <div class="col">
-         <h5 class="f-bold"> Coerenza </h5>
-    <p>Plasmare un'immagine coerente ed unificata dell’app nella mente dell'utente aumenta la soddisfazione, la fidelizzazione e la viralità del prodotto.</p>
+      <h5 class="f-bold"> Coerenza </h5>
+      Plasmare un'immagine coerente ed unificata dell’app nella mente dell'utente aumenta la soddisfazione, la fidelizzazione e la viralità del prodotto.
     </div>
     <div class="col">
       <h5 class="f-bold"> Unicità </h5>
-    <p>Attirare l'attenzione dell'utente e sapersi distinguere dalle altre icone è un fattore fondamentale per creare unicità.</p>
+      Attirare l'attenzione dell'utente e sapersi distinguere dalle altre icone è un fattore fondamentale per creare unicità.
     </div>
   </div>
   <hr>
     <div class="row">
-    <div class="col">
-        <p>Abbraccia la semplicità e concentrati su un singolo oggetto, preferibilmente una forma o un elemento unico che mantiene i suoi contorni e le sue qualità quando viene ridimensionato.</p>
+      <div class="col">
+        Abbraccia la semplicità e concentrati su un singolo oggetto, preferibilmente una forma o un elemento unico che mantiene i suoi contorni e le sue qualità quando viene ridimensionato.
     </div>
     <div class="col">
-    <p>Allinea la palette di colori e utilizza un linguaggio di progettazione simile e coerente anche all’interno dell’applicazione, in questo modo l’icona funzionerà in armonia con l'essenza, la funzionalità ed il design dell’applicazione.</p>
+      Allinea la palette di colori e utilizza un linguaggio di progettazione simile e coerente anche all’interno dell’applicazione, in questo modo l’icona funzionerà in armonia con l'essenza, la funzionalità ed il design dell’applicazione.
     </div>
     <div class="col">
-      <p>Rimuovi i dettagli e lavora sulla astrazione delle forme. Le icone troppo complicate sono nemiche della riconoscibilità. Cerca di non essere banale e dai uno sguardo alle decine di app differenti che Regione Lombardia offre già.</p>
+      Rimuovi i dettagli e lavora sulla astrazione delle forme. Le icone troppo complicate sono nemiche della riconoscibilità. Cerca di non essere banale e dai uno sguardo alle decine di app differenti che Regione Lombardia offre già.
     </div>
   </div>
 </div>

@@ -1,8 +1,8 @@
 - category: Pagine Complete
-  description: "<p>Il <b>menù principale di navigazione</b> di un applicativo va scelto in base al numero di voci che deve contenere e alla quantità di informazione da mostrare a video.<br/>
+  description: "Il <b>menù principale di navigazione</b> di un applicativo va scelto in base al numero di voci che deve contenere e alla quantità di informazione da mostrare a video.<br/>
   I quattro esempi richiamabili qui sotto sono <b>casi tipo</b> per chiarire il concetto.</p>
   <p>Il link all'<b>esempio fuzionante</b> apre un tab nel browser che mostra la pagina completa. Conviene <i>staccarla</i> e ridimensionarla per vedere la responsività degli elementi al suo interno.<br/>
-  Il link al <b>codice commentato</b> rimanda alla spiegazione tecnica della struttura generale del codice HTML che genera quella pagina.</p>"
+  Il link al <b>codice commentato</b> rimanda alla spiegazione tecnica della struttura generale del codice HTML che genera quella pagina."
 - category: Corpo pagina fluido
   description: "Utilizza tutta la larghezza dello schermo <strong>quando devono essere mostrati molti dati</strong>."
   examples:

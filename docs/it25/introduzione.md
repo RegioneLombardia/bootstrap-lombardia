@@ -1,5 +1,6 @@
 ---
 layout: it25_docs
+group: introduzione
 title: Introduzione
 toc: true
 ---

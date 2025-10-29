@@ -1,3 +1,15 @@
+.bd-sidebar {
+  .link-list,
+  .link-sublist,
+  .list-item span {
+    font-size: 1rem;
+  }
+}
+
+.bd-example {
+  background-color: $white;
+}
+
 .bd-callout-info {
   border-left-color: $info;
 }

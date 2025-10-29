@@ -11,12 +11,12 @@
           active = 'active' -%} {%- assign expanded = 'true' -%} {%- endif -%}
           <li>
             {% if group.pages == nil %}
-            <a class="list-item active" href="{{ site.baseurl }}/docs/it25/{{ group_slug }}/"><span>{{ group.title }}</span></a>
+            <a class="list-item {{ active }}" href="{{ site.baseurl }}/docs/it25/{{ group_slug }}/"><span>{{ group.title }}</span></a>
             {% else %}
             <!-- One:usare ID -->
             <a
               role="button"
-              class="list-item large medium icon-right {% unless active == nil %}active{% endunless %}"
+              class="list-item large medium icon-right"
               href="#collapse-{{ forloop.index }}"
               data-bs-toggle="collapse"
               data-bs-target="#collapse-{{ forloop.index }}"

@@ -43,8 +43,7 @@
         text-decoration: none;
 
         &:hover {
-          color: $blue;
-          text-decoration: none;
+          text-decoration: underline;
         }
       }
     }
@@ -56,13 +55,7 @@
 //
 .bd-sidebar {
   order: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-  .link-list,
-  .link-sublist,
-  .list-item span {
-    font-size: 1rem;
-  }
+  // border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
   .bd-links {
     padding: 0;
@@ -113,5 +106,28 @@
 
   @include media-breakpoint-up(xl) {
     flex: 0 1 320px;
+  }
+
+  // Remove border from the linklist wrapper
+  .sidebar-wrapper.it-line-right-side {
+    border: 0;
+  }
+
+  .sidebar-wrapper {
+    .sidebar-linklist-wrapper {
+      .link-list-wrapper {
+        ul {
+          li {
+            a {
+              &.active {
+                &:after {
+                  left: 2px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }

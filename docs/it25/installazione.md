@@ -1,5 +1,6 @@
 ---
 layout: it25_docs
+group: installazione
 title: Installazione
 toc: true
 ---

@@ -1,5 +1,6 @@
 ---
 layout: it25_docs
+group: sistema-di-griglie
 title: Sistema di griglie
 toc: false
 --- 

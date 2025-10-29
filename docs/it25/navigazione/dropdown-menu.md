@@ -20,7 +20,7 @@ Il design di default dei dropdown richiede l’applicazione della classe `.btn-d
 I link o le voci all’interno del dropdown devono essere contenute in un elemento `.link-list`.  
 Per la variante bottone è necessario utilizzare la classe `.btn-primary`.
 
-<div class="bd-example">
+{% capture example %}
   <div class="row">
     <div class="col">
       <div class="fst-italic">Variante Menu</div>
@@ -31,12 +31,9 @@ Per la variante bottone è necessario utilizzare la classe `.btn-primary`.
       {% include html_docs/dropdown/dropdown-button.html %}
       </div>
   </div>
-</div>
+{% endcapture %}
+{% include example.html content=example %}
 
-{% highlight html %}
-{% include html_docs/dropdown/dropdown.html %}
-{% include html_docs/dropdown/dropdown-button.html %}
-{% endhighlight %}
 
 ## Default
 
