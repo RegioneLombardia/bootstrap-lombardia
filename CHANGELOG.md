@@ -1,3 +1,9 @@
+## [2.6.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.6.0...v2.6.1) (2025-11-03)
+
+
+### Bug Fixes
+
+* bottone hamburger in menu verticale [#9] (https://github.com/RegioneLombardia/bootstrap-lombardia/issues/9) ([9445f5a](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/9445f5aacde1754b30bbdf7c90e69ea8f0a11dad))
 
 ---
 # Merge 2.16.1 -> 2.17.0 bootstrap-italia - INIZIO
