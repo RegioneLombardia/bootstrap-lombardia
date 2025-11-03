@@ -5,6 +5,15 @@ group: informazioni
 toc: yes
 ---
 
+{% capture callout %}
+#### Attenzione: il componente card sarà aggiornato
+Bootstrap-italia ha reso disponibile una nuova versione del componente, che migliora l'accessibilità by design.  
+**Il componente attuale di bootstrap-lombardia**, qui documentato, **è ancora basato sulla vecchia versione.**  
+Nella prossima release verrà riscritto per adeguarsi alle nuove classi di stile. 
+
+{% endcapture %}{% include callout.html content=callout type="warning" %}
+
+
 Le **Card** sono dei contenitori di contenuti ed azioni relative ad una data informazione.  
 Possono accogliere un titolo, un paragrafo, un’immagine e una call to action formata da un link di grandezza variabile a seconda delle necessità, posizionato sempre in basso (lateralmente o al centro).
 
