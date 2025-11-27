@@ -60,6 +60,7 @@
   }
 }
 
+// inizio TODO eliminare con componenti per il mobile
 .it25-card-conditions {
   display: block;
   background: #ffffff;
@@ -100,5 +101,58 @@
       font-size: 16px;
       padding-bottom: 24px;
     }
+  }
+}
+// fine TODO eliminare con componenti per il mobile
+
+.it-card,
+article.it-card {
+  border-radius: 8px !important;
+  border-style: none !important;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1) !important;
+  .it-card-title {
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .it-card-image-wrapper {
+    img {
+      border-top-left-radius: 8px !important;
+      border-top-right-radius: 8px !important;
+    }
+  }
+  footer {
+    .it-card-category {
+      padding-left: 8px;
+      padding-right: 8px;
+      text-transform: none;
+      text-decoration: none;
+      color: $primary;
+      font-weight: 600;
+      font-size: 1.25rem;
+      &:hover {
+        color: rgb(33, 97, 45);
+        text-decoration: underline;
+      }
+    }
+  }
+  .it-card-body {
+    padding-left: 24px;
+    padding-right: 24px;
+    .it-card-text {
+      font-size: 1.125rem;
+      color: rgb(26, 26, 26);
+    }
+    footer {
+      .it-card-category {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+  .btn-xs {
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: $btn-font-size-sm;
   }
 }

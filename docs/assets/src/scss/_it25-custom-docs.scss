@@ -12,14 +12,44 @@
 
 .bd-callout-info {
   border-left-color: $info;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $info;
+  }
+  .icon-info {
+    fill: $info;
+  }
 }
 
 .bd-callout-warning {
-  border-left-color: $warning;
+  border-left-color: #d77f1d;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: #d77f1d;
+  }
+  .icon-warning {
+    fill: #d77f1d;
+  }
 }
 
 .bd-callout-danger {
   border-left-color: $danger;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $danger;
+  }
+  .icon-danger {
+    fill: $danger;
+  }
 }
 
 .horizontal-scroll-example {

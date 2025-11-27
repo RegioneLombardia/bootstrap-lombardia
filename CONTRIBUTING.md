@@ -18,7 +18,7 @@ Le label sono utili per identificare le issue (criticità), tra le principali tr
 
 - `accessibility` - Criticità riguardanti accessibilità.
 - `bug` - Segnalazione di malfunzionamenti nel codice o problemi tecnici con i tool di compilazione.
-- `design` - Criticità riguardanti il design dei componenti e la loro conformità alle [{{ site.data.short.rl-guide }} di design per i siti internet e i servizi digitali della PA](https://docs.italia.it/italia/design/lg-design-servizi-web/).
+- `design` - Criticità riguardanti il design dei componenti e la loro conformità alle [Linee Guida per il design e l’identità visiva digitale di Regione Lombardia](https://regionelombardia.github.io/bootstrap-lombardia/docs/it25/download/Linee-guida_design_identita-visiva_Regione-Lombardia.pdf).
 - `docs` - Criticità riguardanti la documentazione dei componenti.
 - `duplicate` - Criticità o pull request duplicata.
 - `enhancement` - Criticità che possono riguardare nuovi componenti o nuove funzionalità.
