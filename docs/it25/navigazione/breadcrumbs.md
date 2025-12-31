@@ -17,8 +17,8 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
 {% capture example %}
 <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">/</span></li>
-    <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator">/</span></li>
+    <li class="breadcrumb-item"><a href="#">Home</a><span class="separator" aria-hidden="true">/</span></li>
+    <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator" aria-hidden="true">/</span></li>
     <li class="breadcrumb-item active" aria-current="page">Terzo Livello</li>
   </ol>
 </nav>
@@ -28,8 +28,8 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
 {% capture example %}
 <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
   <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a><span class="separator">&gt;</span></li>
-    <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator">&gt;</span></li>
+    <li class="breadcrumb-item"><a href="#">Home</a><span class="separator" aria-hidden="true">&gt;</span></li>
+    <li class="breadcrumb-item"><a href="#">Secondo livello</a><span class="separator" aria-hidden="true">&gt;</span></li>
     <li class="breadcrumb-item active" aria-current="page">Terzo Livello</li>
   </ol>
 </nav>
@@ -48,11 +48,11 @@ Le Linee Guida per il design digitale di Regione Lombardia prevedono breadcrumbs
     <li class="breadcrumb-item">
       <svg class="icon icon-sm icon-secondary align-top me-1" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-pa"></use></svg>
       <a href="#">Home</a>
-      <span class="separator">/</span>
+      <span class="separator" aria-hidden="true">/</span>
     </li>
     <li class="breadcrumb-item">
       <svg class="icon icon-sm icon-secondary align-top me-1" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-box"></use></svg>
-      <a href="#">Secondo livello</a><span class="separator">/</span>
+      <a href="#">Secondo livello</a><span class="separator" aria-hidden="true">/</span>
     </li>
     <li class="breadcrumb-item active" aria-current="page">
       <svg class="icon icon-sm icon-secondary align-top me-1" aria-hidden="true"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-files"></use></svg>
