@@ -36,19 +36,11 @@
 .neutral-3-color {
   color: $neutral-3 !important;
 }
-.neutral-3-border-color- {
+.neutral-3-border-color {
   border-color: $neutral-3 !important;
   &.border {
     border-color: $neutral-3 !important;
   }
-}
-
-.radial-1 {
-  background: $radial-gradient-1;
-}
-
-.radial-2 {
-  background: $radial-gradient-2;
 }
 
 // black
