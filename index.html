@@ -8,6 +8,18 @@ layout: default
 
       <div class="row">
         <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
+        {% capture callout %}
+#### Attenzione!
+<p>Questa documentazione serve come test della <strong>futura versione 3</strong> di {{ site.data.short.bl }}.<br/>
+<span class="text-danger"><strong>Non è da prendere in considerazione per gli ambienti di produzione.</strong></span><br/>
+Lo sviluppo è appena iniziato ed è in fase sperimentale ed altamente instabile.
+</p>
+{% endcapture %}{% include callout.html content=callout type="danger" %}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="main-content--panel col-md-10 col-lg-8 mb-5 p-4">
           <p class="mt-2"><strong>{{ site.data.short.bl }}</strong> è una personalizzazione di
           <a href="https://italia.github.io/bootstrap-italia/" target="_blank" rel="noopener noreferrer" title="Home page di Bootstrap Italia">
               Bootstrap Italia</a> per la {{ site.data.short.rl }}.</p>
