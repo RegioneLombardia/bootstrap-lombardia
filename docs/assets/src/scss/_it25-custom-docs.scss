@@ -1,4 +1,4 @@
-.bd-sidebar {
+  .bd-sidebar {
   .link-list,
   .link-sublist,
   .list-item span {
@@ -81,7 +81,22 @@
   box-sizing: border-box;
   padding: 0.25rem;
   margin-right: 15px;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.c-square {
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 8px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .border-custom {
