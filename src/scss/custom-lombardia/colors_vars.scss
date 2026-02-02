@@ -5,34 +5,33 @@ $primary-b: 47.7 !default;
 $primary: hsb($primary-h, $primary-s, $primary-b) !default;
 
 // Green
-$primary-50:  #E4F6E8;
-$primary-100: #CAEDD0;
-$primary-200: #98DCA4;
-$primary-300: #62CA76;
-$primary-400: #3BB050;
+$primary-50: #e4f6e8;
+$primary-100: #caedd0;
+$primary-200: #98dca4;
+$primary-300: #62ca76;
+$primary-400: #3bb050;
 $primary-500: $primary;
-$primary-600: #21632D;
+$primary-600: #21632d;
 $primary-700: #184921;
 $primary-800: #113217;
-$primary-900: #08170A;
+$primary-900: #08170a;
 
 // Cold
-$primary-v7: #00AEC3;
-$primary-v6: #08B0A0;
-$primary-v5: #009B6F;
+$primary-v7: #00aec3;
+$primary-v6: #08b0a0;
+$primary-v5: #009b6f;
 // Hot
-$primary-v4: #009E3D;
-$primary-v3: #52AE32;
-$primary-v2: #95C11F;
-$primary-v1: #005D31;
+$primary-v4: #009e3d;
+$primary-v3: #52ae32;
+$primary-v2: #95c11f;
+$primary-v1: #005d31;
 // News
-$primary-v8: #00362E;
-$primary-v9: #187A6A;
-$primary-v10: #EDF7ED;
+$primary-v8: #00362e;
+$primary-v9: #187a6a;
+$primary-v10: #edf7ed;
 
 // Warm
-$primary-g1: #EEAA38;
-
+$primary-g1: #eeaa38;
 
 // NEUTRAL COLORS DEFINITIONS
 $neutral-1-h: 0;
@@ -45,18 +44,18 @@ $neutral-2-b: 51;
 $neutral-2: hsb($neutral-2-h, $neutral-2-s, $neutral-2-b);
 
 // Grey
-$grey: #5F7381;
+$grey: #5f7381;
 
 // Greys
-$grey-50:  #FBFBFB;
-$grey-100: #F6F7F9;
-$grey-200: #E6E9F0; // Disabled
-$grey-300: #B9C5CC;
-$grey-400: #91A3B0;
+$grey-50: #fbfbfb;
+$grey-100: #f6f7f9;
+$grey-200: #e6e9f0; // Disabled
+$grey-300: #b9c5cc;
+$grey-400: #91a3b0;
 $grey-500: $grey;
 $grey-600: #556875;
-$grey-700: #4A5B66;
-$grey-800: #404D57;
+$grey-700: #4a5b66;
+$grey-800: #404d57;
 $grey-900: #293339;
 
 // Triadici
@@ -72,7 +71,6 @@ $complementary-3-h: 119;
 $complementary-3-s: 45;
 $complementary-3-b: 68.6;
 $complementary-3: hsb($complementary-3-h, $complementary-3-s, $complementary-3-b) !default;
-
 
 // Info Colors
 $danger: $complementary-1;
