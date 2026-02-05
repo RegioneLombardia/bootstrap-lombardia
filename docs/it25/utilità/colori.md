@@ -60,7 +60,7 @@ Per utilizzarle è sufficiente utilizzare la relativa classe
   <div class="c-square primary-bg-300"><div>300</div><div>#62CA76</div></div>
   <div class="c-square primary-bg-400 text-black"><div>400</div><div>#3BB050</div></div>
   <div class="c-square primary-bg-500 white-color"><div>500</div><div>#297A38</div><div class="dot mt-2"></div></div>
-  <div class="c-square primary-bg-600 white-color"><div>500</div><div>#21632D</div></div>
+  <div class="c-square primary-bg-600 white-color"><div>600</div><div>#21632D</div></div>
   <div class="c-square primary-bg-700 white-color"><div>700</div><div>#184921</div></div>
   <div class="c-square primary-bg-800 white-color"><div>800</div><div>#113217</div></div>
   <div class="c-square primary-bg-900 white-color"><div>900</div><div>#08170A</div></div>
@@ -216,7 +216,6 @@ Il terzo colore neutro è il bianco, pertanto non serve una classe specifica.
 `.complementary-(1/2/3)-bg` : per background color <br>
 `.complementary-(1/2/3)-color` : per text color<br>
 `.complementary-(1/2/3)-border-color` : per border color
-
 
 {% capture callout %}
 #### {{ site.data.short.dt }}
