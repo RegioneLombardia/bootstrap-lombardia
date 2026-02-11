@@ -98,11 +98,25 @@ header {
       }
     }
     .it-search-wrapper {
-      margin: 4px 0;
-      border-bottom: 1px solid $input-border;
+      //margin: 4px 0;
+      //border-bottom: 1px solid $input-border;
 
-      input[type='search'] {
-        border-bottom: 0;
+      //input[type='search'] {
+        //border-bottom: 0;
+      //}
+      a {
+        &.rounded-icon {
+          background: $primary;
+          width: $header-center-search-size;
+          height: $header-center-search-size;
+          border-radius: $header-center-search-radius;
+          &:hover {
+            background: darken($primary, 5%);
+          }
+          svg {
+            fill: $white;
+          }
+        }
       }
     }
   }

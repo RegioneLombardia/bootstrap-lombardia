@@ -19,14 +19,12 @@ La componente **barra istituzionale**, fornita in diverse varianti, applicabili 
 ### Header Base
 
 In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.
-<div class="bd-example">
+
+{% comment %}Example name: IT25 Header Base{% endcomment %}
+{% capture example %}
 {% include html_docs/header/topbar_base.html %}
 {% include html_docs/header/header_base.html %}
-</div>
-{% highlight html %}
-{% include html_docs/header/topbar_base.html %}
-{% include html_docs/header/header_base.html %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
 ---
 
@@ -35,14 +33,11 @@ In questo esempio è riportato un header base con topbar, barra istituzionale, l
 La topbar può accogliere informazioni come ad esempio l’accesso utente.  
 Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.
 
-<div class="bd-example">
+{% comment %}Example name: IT25 Header Search{% endcomment %}
+{% capture example %}
 {% include html_docs/header/topbar_login.html %}
 {% include html_docs/header/header_search.html %}
-</div>
-{% highlight html %}
-{% include html_docs/header/topbar_login.html %}
-{% include html_docs/header/header_search.html %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
 ---
 
@@ -52,39 +47,11 @@ Il menu dropdown può contenere informazioni utili per il login, il logout e la 
 
 La dimensione del menu dropdown può variare a seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.
 
-<div class="bd-example">
-{% include html_docs/header/topbar_dropdown.html %}
-<div class="it-header-center-wrapper it25-barra-ist">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-center-content-wrapper">
-          <div class="it-brand-wrapper">
-            <a href="#">
-              <img src="{{ site.baseurl }}/dist/assets/img/logo-rl.png" alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
-            </a>
-          </div>
-          <div class="it-right-zone">
-            <form>
-              <div class="it-search-wrapper">
-                <input id="search-input98" class="form-control d-none d-lg-flex mr-sm-2 ml-auto" type="search" placeholder="Cerca..." aria-label="Testo per ricerca">
-                  <button class="btn p-0 m-1" type="submit" aria-label="Esegui ricerca">
-                    <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-search"></use></svg>
-                  </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-{% highlight html %}
+{% comment %}Example name: IT25 Header Topbar Dropdown{% endcomment %}
+{% capture example %}
 {% include html_docs/header/topbar_dropdown.html %}
 {% include html_docs/header/header_search.html %}
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example %}
 
 ---
 
