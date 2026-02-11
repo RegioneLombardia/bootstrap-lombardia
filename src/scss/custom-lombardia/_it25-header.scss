@@ -54,9 +54,20 @@ header {
     }
   }
 
-  .dropdown-menu[data-bs-popper] {
-    top: 100% !important;
+  .dropdown-menu {
+    border: 1px solid $primary;
+
+    &[data-bs-popper] {
+      top: 100% !important;
+    }
+
+    &:before {
+    width: 0;
+    height: 0;
   }
+
+  }
+
 }
 
 .it25-barra-ist {
