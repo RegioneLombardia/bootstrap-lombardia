@@ -52,6 +52,18 @@ La dimensione del menu dropdown può variare a seconda delle esigenze, come ad e
 {% include html_docs/header/topbar_dropdown.html %}
 {% include html_docs/header/header_search.html %}
 {% endcapture %}{% include example.html content=example %}
+---
+
+## Header con logo negativo
+
+Nei casi in cui deve essere presente logo specifico per l'applicativo, il logo di Regione Lombardia nella topbar deve essere visibile qualunque sia la dimensione dello schermo.
+
+{% comment %}Example name: IT25 Header Topbar Logo Negativo{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_logo-neg.html %}
+{% include html_docs/header/header_indip.html %}
+{% endcapture %}{% include example.html content=example %}
+
 
 ---
 
