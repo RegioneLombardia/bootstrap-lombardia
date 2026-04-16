@@ -1,80 +1,67 @@
 ---
-layout: it25_docs
-group: esempi
-title: Codice Form
-redirect_from: 'it25/esempi/'
-toc: true
---- 
+layout: base
+title: es. Sidebar
+description: Pagina completa con form e sidebar
+double-logo: true
+---
+<style>
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+.row {
+  display: flex ;
+}
+</style>
 
-## Struttura della pagina
-{% raw %}
-``` 
-<header>
-{% include html_docs/header/topbar_dropdown.html %}
-{% include html_docs/header/header_menu-oriz.html %}
-{% include esempi-lombardia/menu_orizzontale.html %}
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+   {% include html_docs/header/topbar.html %}
+   {% include html_docs/header/center_sidebar.html %}
 </header>
 
 <main>
-  <div class="container">
-    <form class="my-5" id="justValidate" action="index.html" method="post">
-      {% include esempi-lombardia/account_posta.html %}
-      {% include esempi-lombardia/indirizzo.html %}
-      {% include esempi-lombardia/datepickers.html %}
-      {% include esempi-lombardia/radiobuttons.html %}
-      {% include esempi-lombardia/checkboxes.html %}
-      {% include esempi-lombardia/toggles.html %}
-<!-- *****************************************************************************************************+ -->
-      <div class="row">
-        <div class="col-12">
-          <div class="float-end">
-            <button type="button" class="btn btn-outline-primary">Annulla</button>
-            <button type="submit" class="btn btn-primary">Invio</button>
-          </div>
-        </div>
+  <div class="container-fluid">
+    <div class="row flex-xl-nowrap">
+      <div class="col-12 col-md-3 col-xl-2 it25-sidebar">
+      {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
       </div>
-<!-- *****************************************************************************************************+ -->
-    </form>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div aria-live="polite" id="errorMsgContainer"></div>
+      <div class="col-12 col-md-9">
+        <h1>Nome form</h1>
+        <form class="my-5 px-5" id="justValidate" action="index.html" method="post">
+          {% include esempi-lombardia/account_posta.html %}
+          {% include esempi-lombardia/indirizzo.html %}
+          {% include esempi-lombardia/datepickers.html %}
+          {% include esempi-lombardia/radiobuttons.html %}
+          {% include esempi-lombardia/checkboxes.html %}
+          {% include esempi-lombardia/toggles.html %}
+    <!-- *****************************************************************************************************+ -->
+          <div class="row">
+            <div class="col-12">
+              <div class="float-end">
+                <button type="button" class="btn btn-outline-primary">Annulla</button>
+                <button type="submit" class="btn btn-primary">Invio</button>
+              </div>
+            </div>
+          </div>
+    <!-- *****************************************************************************************************+ -->
+        </form>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div aria-live="polite" id="errorMsgContainer"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div> <!-- end container -->
 </main>
 {% include html_docs/footer/footer.html %}
-```
-{% endraw %}
 
-
-La struttura anche in questo caso è semplice:
-
-Il tag `<header>` contienela *barra istituzionale* composta da:
-* *topbar*
-* **header_menu-oriz**  
-  descritta più sotto.
-* il *menu_orizzontale*
-  
-Nel tag `<main>` il `<div class="container">` mantiene il **form** compatto al centro dello schermo, lasciando spazio in bianco ai lati sugli schermi di ampie dimensioni.
-
-Inoltre, per staccare verticalmente i campi del form dal menù orizzontale è stata usata la classe `my-5` sul tag del *form*.
-
----
-
-### header_menu-oriz
-
-{% highlight html %}
-  {% include html_docs/header/header_menu-oriz.html %}
-{% endhighlight %}
-
-
----
-## La validazione
-
-La validazione dell'input, a titolo di esempio, è stata realizzata con il seguente **script** a fondo pagina:
-```javascript
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const errorMessage =
@@ -176,7 +163,7 @@ La validazione dell'input, a titolo di esempio, è stata realizzata con il segue
         },
       ])
       .addRequiredGroup('#group_mezzi0', 'Scegli almeno un’opzione')
-      .addRequiredGroup('#group_mezzi2', 'Scegli almeno un’opzione')
+      .addRequiredGroup('#group_mezzi1', 'Scegli almeno un’opzione')
       .onSuccess((event) => {
         document.forms['justValidate'].submit()
       })
@@ -186,6 +173,4 @@ La validazione dell'input, a titolo di esempio, è stata realizzata con il segue
         errorWrapper.scrollIntoView()
       })
   })
-</script> 
-```
-
+</script>

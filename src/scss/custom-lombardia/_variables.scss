@@ -9,17 +9,12 @@ $breadcrumb-link-color: $it25-gray;
 
 //HEADER
 //Header slim
-$header-slim-height: 58px;
+$header-slim-height: 48px;
 $header-slim-bg-color: $primary;
+$header-slim-button-color: $primary;
+$header-slim-button-hover-color: darken($primary, 5%);
 $header-slim-links-padding: 10px;
 $header-slim-ul-border: 0;
-
-$it25-top-bar-height-shrink: 20px;
-$it25-barra-ist-height-shrink: 50px;
-$it25-barra-utente-min-height: 28px;
-// Header Slim theme light
-$header-slim-theme-light-text-color: $primary;
-$header-slim-theme-light-button-hover-color: $primary-a8;
 
 //header-center
 $header-center-small-height: 94px;
@@ -52,7 +47,7 @@ $input-color-placeholder: $neutral-1-a3;
 // Navigation
 //$navigation-toggle-button-icon-color: $primary;
 //$navigation-link-active-bar-color-desk: $primary;
-$navigation-hamburger-size: 30px;
+//$navigation-hamburger-size: 30px;
 // navigation light theme (desktop)
 $it25-navigation-text-color: $it25-gray;
 

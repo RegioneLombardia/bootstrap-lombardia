@@ -9,9 +9,13 @@ toc: true
 ## Struttura della pagina
 {% raw %}
 ```
-<header>
-{% include html_docs/header/topbar_dropdown.html %}
-{% include html_docs/header/header_sidebar.html %}
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+   {% include html_docs/header/topbar.html %}
+   {% include html_docs/header/center_sidebar.html %}
 </header>
 
 <main>
@@ -21,6 +25,7 @@ toc: true
       {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
       </div>
       <div class="col-12 col-md-9">
+        <h1>Nome form</h1>
         <form class="my-5 px-5" id="justValidate" action="index.html" method="post">
           {% include esempi-lombardia/account_posta.html %}
           {% include esempi-lombardia/indirizzo.html %}
@@ -50,7 +55,7 @@ toc: true
     </div>
   </div> <!-- end container -->
 </main>
-{% include html_docs/footer/footer.html %} 
+{% include html_docs/footer/footer.html %}
 ```
 {% endraw %}
 
@@ -78,7 +83,7 @@ Nel tag `<main>`, all'interno del `<div class="container-fluid">`, è presente:
 ## header_sidebar
 
 {% highlight html %}
-  {% include html_docs/header/header_sidebar.html %}
+  {% include html_docs/header/center_sidebar.html %}
 {% endhighlight %}
 
 

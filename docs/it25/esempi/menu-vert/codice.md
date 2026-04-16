@@ -9,26 +9,30 @@ toc: true
 ## Struttura della pagina
 {% raw %}
 ```
-<header>
-  {% include html_docs/header/topbar_base.html %}
-  {% include html_docs/header/header_menu-vert.html %}
-  <div id="it25-menu-vert">
-    {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
-  </div>
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+   {% include html_docs/header/topbar.html %}
+   {% include html_docs/header/center_menu-vert.html %}
+    <div id="it25-menu-vert">
+     {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
+    </div>
 </header>
 
 <main>
   <div class="container-fluid">
-      <div class="col-12">
-      {% include esempi-lombardia/filtri_tabella.html %}
-      {% include esempi-lombardia/tabella.html %}
-      {% include esempi-lombardia/paginazione.html %}
-      </div>
+    <div class="col-12">
+    <h1 class="m-2">Titolo videata</h1>
+    {% include esempi-lombardia/filtri_tabella.html %}
+    {% include esempi-lombardia/tabella.html %}
+    {% include esempi-lombardia/paginazione.html %}
     </div>
   </div>
 </main>
 
-{% include html_docs/footer/footer_minimo.html %}
+{% include html_docs/footer/footer.html %}
 ```
 {% endraw %}
 
@@ -51,7 +55,7 @@ permette di utilizzare tutta la larghezza dello schermo.
 ## header_menu-vert
 
 {% highlight html %}
- {% include html_docs/header/header_menu-vert.html %}
+ {% include html_docs/header/center_menu-vert.html %}
 {% endhighlight %}
 
 

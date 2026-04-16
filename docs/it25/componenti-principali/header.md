@@ -6,39 +6,52 @@ group: componenti-principali
 toc: true
 ---
 
-La componente **Header** - posta sempre nella testata del layout - si ottiene dall’unione di due altre componenti: **topbar** e **barra istituzionale**.
+Area di intestazione principale di un sito o servizio che presenta l'identità visiva e il menu di navigazione primaria.
 
-La **topbar**, la barra soprastante l’header, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata. In alcuni casi tale componente può essere impiegata come toolbar di servizio per l’inserimento di link quali **login**, **cambio lingua**, **assistenza** ecc.
+La **topbar**, la barra verde soprastante, verrà sempre utilizzata come componente identitaria di Regione Lombardia e, anche nel caso non contenga alcuna funzionalità, essa sarà presente sotto forma di banda colorata  **contenente il logo di Regione Lombardia**.  
+Quando serve il componente può essere impiegato come toolbar di servizio inserendo voci quali **login**, **cambio lingua**, **assistenza** ecc.
 
-La componente **barra istituzionale**, fornita in diverse varianti, applicabili a seconda del dato contesto, conterrà menu di navigazione (hamburger o dropdown), loghi e titolazioni dei servizi.
+L' **header centrale** principale, contiene il logo dell'applicativo, se esiste, e/o Acronimo e Nome dell'applicativo.
 
-**N.B.**: I link di servizio e le informazioni di governance relative al servizio non sono mai presenti nell’header, ma sono contenute **unicamente nel footer**.
+La **barra di navigazione** orizzontale contiene le voci di menu di primo livello.  
+Quando queste sono però più di 5, meglio utilizzare un **menu verticale** a comparsa comandato da un bottone hamburger alla sinistra dell'header.
 
 ---
 
-### Header Base
+### Navigazione orizzontale
 
 In questo esempio è riportato un header base con topbar, barra istituzionale, logo di Regione Lombardia e nome del servizio.
 
-{% comment %}Example name: IT25 Header Base{% endcomment %}
-{% capture example %}
-{% include html_docs/header/topbar_base.html %}
-{% include html_docs/header/header_base.html %}
-{% endcapture %}{% include example.html content=example %}
+<header class="it-header-wrapper">
+{% include html_docs/header/topbar.html %}
+<div class="it-nav-wrapper">
+{% include html_docs/header/center_menu-oriz.html %}
+{% include html_docs/header/navbar_oriz.html %}
+</div>
+</header>
 
+{% highlight html %}
+<header class="it-header-wrapper">
+{% include html_docs/header/topbar.html %}
+<div class="it-nav-wrapper">
+{% include html_docs/header/center_menu-oriz.html %}
+{% include html_docs/header/navbar_oriz.html %}
+</div>
+</header>
+{% endhighlight %}
 ---
 
 ## Header con topbar di servizio e search field
 
 La topbar può accogliere informazioni come ad esempio l’accesso utente.  
 Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ricerca generico all’interno della barra istituzionale nella parte destra.
-
+{% raw %}
 {% comment %}Example name: IT25 Header Search{% endcomment %}
 {% capture example %}
 {% include html_docs/header/topbar_login.html %}
 {% include html_docs/header/header_search.html %}
 {% endcapture %}{% include example.html content=example %}
-
+{% endraw %}
 ---
 
 ## Header con accesso effettuato e dropdown
@@ -46,25 +59,34 @@ Nel caso in cui il servizio lo richieda, è possibile aggiungere un campo di ric
 Il menu dropdown può contenere informazioni utili per il login, il logout e la gestione del profilo utente e delle impostazioni. Queste info possono essere relative all’utente e all’operatore che sta utilizzando il servizio.
 
 La dimensione del menu dropdown può variare a seconda delle esigenze, come ad esempio per accogliere una maggiore lunghezza delle voci al suo interno.
-
+{% raw %}
 {% comment %}Example name: IT25 Header Topbar Dropdown{% endcomment %}
 {% capture example %}
 {% include html_docs/header/topbar_dropdown.html %}
 {% include html_docs/header/header_search.html %}
 {% endcapture %}{% include example.html content=example %}
+{% endraw %}
 ---
 
 ## Header con logo negativo
 
 Nei casi in cui deve essere presente logo specifico per l'applicativo, il logo di Regione Lombardia nella topbar deve essere visibile qualunque sia la dimensione dello schermo.
-
-{% comment %}Example name: IT25 Header Topbar Logo Negativo{% endcomment %}
+{% raw %}
+{% comment %}Example name: IT25 Header Topbar Logo Negativo Logo{% endcomment %}
 {% capture example %}
 {% include html_docs/header/topbar_logo-neg.html %}
-{% include html_docs/header/header_indip.html %}
+{% include html_docs/header/header_indip_logo.html %}
 {% endcapture %}{% include example.html content=example %}
+{% endraw %}
 
-
+La topbar con il logo negativo può essere utilizzata anche con il solo nome dell'applicativo
+{% raw %}
+{% comment %}Example name: IT25 Header Topbar Logo Negativo Testo{% endcomment %}
+{% capture example %}
+{% include html_docs/header/topbar_logo-neg.html %}
+{% include html_docs/header/header_indip_text.html %}
+{% endcapture %}{% include example.html content=example %}
+{% endraw %}
 ---
 
 ## Bottone hamburger

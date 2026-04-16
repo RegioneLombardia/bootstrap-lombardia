@@ -1,22 +1,26 @@
 ---
-layout: base
-title: es. Form
----
-<style>
-.form-group {
-  display: flex;
-  flex-flow: row wrap;
-}
-.row {
-  display: flex ;
-}
-</style>
+layout: it25_docs
+group: esempi
+title: Codice Form
+redirect_from: 'it25/esempi/'
+toc: true
+--- 
 
-<header>
-{% include html_docs/header/topbar_dropdown.html %}
-{% include html_docs/header/header_menu-oriz.html %}
-{% include esempi-lombardia/menu_orizzontale.html %}
+## Struttura della pagina
+{% raw %}
+``` 
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+  {% include html_docs/header/topbar.html %}
+  <div class="it-nav-wrapper">
+    {% include html_docs/header/center_menu-oriz.html %}
+    {% include html_docs/header/navbar_oriz.html %}
+  </div>
 </header>
+
 <main>
   <div class="container">
     <h1>Titolo form</h1>
@@ -49,6 +53,36 @@ title: es. Form
 </main>
 {% include html_docs/footer/footer.html %}
 
+```
+{% endraw %}
+
+
+La struttura anche in questo caso è semplice:
+
+Il tag `<header>` contienela *barra istituzionale* composta da:
+* *topbar*
+* **header_menu-oriz**  
+  descritta più sotto.
+* il *menu_orizzontale*
+  
+Nel tag `<main>` il `<div class="container">` mantiene il **form** compatto al centro dello schermo, lasciando spazio in bianco ai lati sugli schermi di ampie dimensioni.
+
+Inoltre, per staccare verticalmente i campi del form dal menù orizzontale è stata usata la classe `my-5` sul tag del *form*.
+
+---
+
+### header_menu-oriz
+
+{% highlight html %}
+  {% include html_docs/header/center_menu-oriz.html %}
+{% endhighlight %}
+
+
+---
+## La validazione
+
+La validazione dell'input, a titolo di esempio, è stata realizzata con il seguente **script** a fondo pagina:
+```javascript
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const errorMessage =
@@ -150,7 +184,7 @@ title: es. Form
         },
       ])
       .addRequiredGroup('#group_mezzi0', 'Scegli almeno un’opzione')
-      .addRequiredGroup('#group_mezzi2', 'Scegli almeno un’opzione')
+      .addRequiredGroup('#group_mezzi1', 'Scegli almeno un’opzione')
       .onSuccess((event) => {
         document.forms['justValidate'].submit()
       })
@@ -160,4 +194,6 @@ title: es. Form
         errorWrapper.scrollIntoView()
       })
   })
-</script>
+</script> 
+```
+

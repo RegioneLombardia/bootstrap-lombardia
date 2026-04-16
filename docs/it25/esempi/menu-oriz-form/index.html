@@ -1,8 +1,6 @@
 ---
 layout: base
-title: es. Sidebar
-description: Pagina completa con form e sidebar
-double-logo: true
+title: es. Form
 ---
 <style>
 .form-group {
@@ -14,43 +12,43 @@ double-logo: true
 }
 </style>
 
-<header>
-{% include html_docs/header/topbar_dropdown.html %}
-{% include html_docs/header/header_sidebar.html %}
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+  {% include html_docs/header/topbar.html %}
+  <div class="it-nav-wrapper">
+    {% include html_docs/header/center_menu-oriz.html %}
+    {% include html_docs/header/navbar_oriz.html %}
+  </div>
 </header>
 
 <main>
-  <div class="container-fluid">
-    <div class="row flex-xl-nowrap">
-      <div class="col-12 col-md-3 col-xl-2 it25-sidebar">
-      {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
+  <div class="container">
+    <h1>Titolo form</h1>
+    <form class="my-5" id="justValidate" action="index.html" method="post">
+      {% include esempi-lombardia/account_posta.html %}
+      {% include esempi-lombardia/indirizzo.html %}
+      {% include esempi-lombardia/datepickers.html %}
+      {% include esempi-lombardia/radiobuttons.html %}
+      {% include esempi-lombardia/checkboxes.html %}
+      {% include esempi-lombardia/toggles.html %}
+<!-- *****************************************************************************************************+ -->
+      <div class="row">
+        <div class="col-12">
+          <div class="float-end">
+            <button type="button" class="btn btn-outline-primary">Annulla</button>
+            <button type="submit" class="btn btn-primary">Invio</button>
+          </div>
+        </div>
       </div>
-      <div class="col-12 col-md-9">
-        <h1>Nome form</h1>
-        <form class="my-5 px-5" id="justValidate" action="index.html" method="post">
-          {% include esempi-lombardia/account_posta.html %}
-          {% include esempi-lombardia/indirizzo.html %}
-          {% include esempi-lombardia/datepickers.html %}
-          {% include esempi-lombardia/radiobuttons.html %}
-          {% include esempi-lombardia/checkboxes.html %}
-          {% include esempi-lombardia/toggles.html %}
-    <!-- *****************************************************************************************************+ -->
-          <div class="row">
-            <div class="col-12">
-              <div class="float-end">
-                <button type="button" class="btn btn-outline-primary">Annulla</button>
-                <button type="submit" class="btn btn-primary">Invio</button>
-              </div>
-            </div>
-          </div>
-    <!-- *****************************************************************************************************+ -->
-        </form>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div aria-live="polite" id="errorMsgContainer"></div>
-            </div>
-          </div>
+<!-- *****************************************************************************************************+ -->
+    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div aria-live="polite" id="errorMsgContainer"></div>
         </div>
       </div>
     </div>
