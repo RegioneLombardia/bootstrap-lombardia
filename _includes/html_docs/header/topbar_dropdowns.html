@@ -1,3 +1,4 @@
+{% if include.language=="yes" %}
 <div class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
@@ -17,8 +18,10 @@
     </div>
   </div>
 </div>
+{% endif %}
 
-<div class="nav-item dropdown d-none d-sm-inline">
+{% if include.logged=="yes" %}
+<div class="nav-item dropdown d-inline">
   <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
     <span>Nome Cognome</span>
     <svg class="icon icon-white" aria-label="utente">
@@ -58,11 +61,14 @@
     </div>
   </div>
 </div>
+{% endif %}
 
+{% if include.access=="yes" %}
 <div class="it-access-top-wrapper">
   <a class="btn btn-primary" href="#">ACCEDI
-    <svg class="icon icon-white d-none d-sm-inline" aria-label="utente">
+    <svg class="icon icon-white d-inline" aria-label="utente">
       <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-user"></use>
     </svg>
   </a>
 </div>
+{% endif %}

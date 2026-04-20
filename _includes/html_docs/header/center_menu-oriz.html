@@ -8,10 +8,14 @@
               <div class="it25-left-zone  d-flex justify-content-start">
                 <div class="it-brand-wrapper">
                   <a href="#">
+                  {% if include.logo=="yes" %}
                   <img src="{{ site.baseurl }}/dist/assets/img/logo_inlombardia.svg" alt="logo in lombardia" class="it25-header-logo" />
+                  {% endif %}
+                  {% if include.textlogo=="yes" %}
                     <div class="it-brand-text">
-                      <div class="it-brand-title d-sm-inline">ACRONIMO <span class="d-none d-md-inline">Nome applicativo</span></div>
+                      <div class="it-brand-title d-inline">ACRONIMO <span class="d-none d-md-inline">Nome applicativo</span></div>
                     </div>
+                  {% endif %}
                   </a>
                 </div>
               </div>

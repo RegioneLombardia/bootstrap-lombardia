@@ -7,8 +7,8 @@
               <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
             </a>
             <div class="it-header-slim-right-zone">
-              {% if include=="yes" %}
-              {% include html_docs/header/topbar_dropdowns.html %}
+              {% if include.dropdowns=="yes" %}
+              {% include html_docs/header/topbar_dropdowns.html language=include.language access=include.access logged=include.logged %}
               {% endif %}
             </div>
           </div>
