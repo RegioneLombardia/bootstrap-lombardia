@@ -1,4 +1,5 @@
 {% if include.language=="yes" %}
+<!-- scelta lingua -->
 <div class="nav-item dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
@@ -21,6 +22,7 @@
 {% endif %}
 
 {% if include.logged=="yes" %}
+<!-- funzioni per utente loggato -->
 <div class="nav-item dropdown d-inline">
   <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
     <span>Nome Cognome</span>
@@ -64,6 +66,7 @@
 {% endif %}
 
 {% if include.access=="yes" %}
+<!-- pulsante login utente -->
 <div class="it-access-top-wrapper">
   <a class="btn btn-primary" href="#">ACCEDI
     <svg class="icon icon-white d-inline" aria-label="utente">

@@ -58,7 +58,9 @@ export default function () {
   function initCloning() {
     if (document.getElementsByClassName('it-header-sticky').length > 0) {
       const headerCenter = document.getElementsByClassName('it-header-center-wrapper')[0]
-      if (headerCenter.classList.contains("it25-header-sidebar") || headerCenter.classList.contains("it25-header-menu-vert")) { return }
+      if (headerCenter.classList.contains('it25-header-sidebar') || headerCenter.classList.contains('it25-header-menu-vert')) {
+        return
+      }
       const brandWrapper = headerCenter.getElementsByClassName('it-brand-wrapper')[0].cloneNode(true)
       if (brandWrapper.getElementsByClassName('it25-header-logo').length > 0) {
         if (brandWrapper.getElementsByClassName('it-brand-text').length > 0) {

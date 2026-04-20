@@ -12,7 +12,7 @@ Il logotipo di Regione Lombardia si trova nella *topbar* per lasciare spazio al 
 In questo modo la brand identity del sito rimane riconoscibile sottolineando la sua affiliazione con l'ecosistema digitale.
 
 ---
-### Navigazione orizzontale
+## Navigazione orizzontale
 
 Se le voci di menu di primo livello non sono più di 5, sono disposte orizzontalmente nell'header.  
 Solo se necessario l'header può ospitare fino a un massimo di tre logotipi.  
@@ -38,7 +38,7 @@ In caso l'applicativo non abbia un logo può essere usato un acronimo e/o il nom
 <br/>
 
 ---
-### Hamburger menu
+## Hamburger menu
 
 Se le voci di menu di primo livello sono più di 5, vanno collocate in un menù verticale a comparsa, comandato da un *hamburger button*.
 
@@ -56,7 +56,7 @@ Se le voci di menu di primo livello sono più di 5, vanno collocate in un menù 
 <br/>
 
 ---
-### Accesso area privata
+## Accesso area privata
 
 La **topbar** può essere impiegata come toolbar di servizio inserendo voci quali **login**, **cambio lingua**, **assistenza** ecc.
 
@@ -80,7 +80,7 @@ Il menu dropdown può contenere link utili per il logout e la gestione del profi
 <br/>
 
 ---
-### Comportamento scroll
+## Comportamento scroll
 
 Allo scroll down:
 1. la topbar sparisce
@@ -94,7 +94,7 @@ Scrollando al top della pagina l'header torna alla versione completa.
 Per vedere il comportamento dell'header e dei diversi tipi di menù di navigazione, e il loro funzionamento all'interno di pagine complete, si vedano le pagine degli esempi.
 
 ---
-### Esempi
+## Esempi
 
 **Nota:**  
 Per ogni link si apre un tab separato in cui compare una pagina intera di esempio.  
@@ -106,12 +106,13 @@ Può essere utile "staccarla" dalle altre per provare anche vedere la responsivi
 
 
 ---
-### Utilizzo del componente
+## Utilizzo del componente
 L'header è costruito sulla base del componente [header di bootstrap-italia[({{ site.baseurl }}/docs/menu-di-navigazione/header/) che è composto da tre parti:
 1. **topbar** equivalente allo *slim header*
 2. **header centrale** 
 3. **navbar** il menu di navigazione che può essere *orizzontale*, *verticale* o *sidebar*.
 
+### Sticky header
 Il Design System di Regione Lombardia prevede l'utilizzo dell'header di tipo *sticky*.  
 Quindi gli attributi html del tag `<header>` tipicamente sono:
 
@@ -178,63 +179,45 @@ cui segue, a seconda del tipo di menù utilizzato:
 In questo caso il *menu-verticale-annidato* è inserito nel `<main>` della pagina.
 
 ---
+### Topbar
+La stuttura html della topbar è la seguente:
 
-
-___
-___
-
-# WORK IN PROGRESS
-___
-___
-
-## snippet
-
-Il codice degli *snippet html* usati per comporre le pagine degli esempi, è consultabile ai link qui sotto:
 {% highlight html %}
 {% include html_docs/header/topbar.html %}
 {% endhighlight %}
 
 
+All'interno del `<div class="it-header-slim-right-zone">` vanno posti i dropdown adatti all'applicativo:
 
-## Bottone hamburger
-
-Normalmente la pagina di un applicativo ha un menù di navigazione principale, orizzontale o verticale.
-
-Su schermi di piccole dimensioni tale menù scompare per ragioni di spazio.  
-Compare però un *bottone hamburger* per poter aprire e chiudere il menù.
-
-Il bottone hamburger:
 {% highlight html %}
-<div class="it25-hamburger-btn-wrapper">
-  <button
-    id="btn-hamburger"
-    class="custom-navbar-toggler btn btn-xs"
-    type="button"
-    aria-controls="nav1"
-    aria-expanded="false"
-    aria-label="Mostra/Nascondi la navigazione"
-    data-bs-toggle="navbarcollapsible"
-    data-bs-target="#nav1"
-  >
-    <svg class="icon icon-primary">
-      <use xlink:href="/dist/svg/sprites.svg#it-burger"></use>
-    </svg>
-  </button>
-</div>
+{% include html_docs/header/topbar_dropdowns.html language="yes" access="yes" logged="yes" %}
 {% endhighlight %}
 
-**deve** essere inserito nell*header* all’interno di: `<div class="it-brand-wrapper">`  
-prima del link contenente il logo della Regione Lombardia.
 
-In questo modo comparirà automaticamente, sugli schermi di piccole dimensioni, a sinistra nella barra istituzionale.
+---
+### Center
+Il codice per la pate centrale cambia leggermente a seconda del tipo di menù di navigazione pincipale scelto.
 
-A seconda del tipo di menù (orizzontale, verticale o sidebar) cambiano i valori degli attributi:  
-* `class`  
-  in particolare **per il menù verticale va omesso** `custom-navbar-toggler`
-* `data-bs-toggle`  
-  sia per il **menù verticale** che per la **sidebar** va impostato `collapse` invece di *navbarcollapsible*
+#### orizzontale
+{% highlight html %}
+{% include html_docs/header/center_menu-oriz.html logo="yes" textlogo="yes" %}
+{% endhighlight %}
 
-In particolare, **solo per il menu verticale**, per attivare il funzionamento, è necessario invocare la funzione :
+#### verticale
+{% highlight html %}
+{% include html_docs/header/center_menu-vert.html logo="yes" textlogo="yes" %}
+{% endhighlight %}
+
+#### sidebar
+{% highlight html %}
+{% include html_docs/header/center_sidebar.html logo="yes" textlogo="yes" %}
+{% endhighlight %}
+
+
+
+## Attivazione 
+**Per attivare il funzionamento** di tutti i tipi di menù, **è necessario invocare la funzione** :
 ```
 bootstrap.it25Header()
 ```
+
