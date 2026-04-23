@@ -1,7 +1,7 @@
 .it25-top-bar {
   &.it-header-slim-wrapper {
     height: $header-slim-height;
-    padding-top: 2px;
+    padding: 2px 4px;
   }
   .it-header-slim-wrapper-content {
     .navbar-brand {
@@ -13,6 +13,7 @@
       &.dropdown-toggle {
         text-transform: none;
         font-size: 1rem;
+        padding-right: 0;
       }
     }
     .dropdown-menu {
@@ -36,14 +37,20 @@
 .it-header-center-wrapper {
   border-bottom: 1px solid #e1e7ea;
   background-color: $white;
+  padding-left: 0;
+  padding-right: 0;
   .it-header-center-content-wrapper {
     .it25-left-zone {
       align-items: center;
     }
     .it-brand-wrapper {
+      margin-left: 6px;
       .it25-header-logo {
         margin-right: $header-center-icon-margin;
         height: 32px;
+      }
+      .it-brand-text {
+        margin-left: 12px;
       }
       .it-brand-title {
         font-size: $header-center-h2-size-mob;
@@ -60,15 +67,15 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-left: $v-gap * 2;
           transition: all 0.3s;
+          background-color: white;
 
           &:hover {
-            background: shade-color($primary, 5%);
+            background: tint-color($primary, 90%);
           }
 
           svg {
-            fill: $header-center-bg-color;
+            fill: $primary;
             width: $header-center-search-icon-size;
             height: $header-center-search-icon-size;
           }
@@ -78,13 +85,64 @@
   }
 }
 
+.it-header-wrapper {
+  // bottone hamburger menu orizzontale
+  .it-nav-wrapper {
+    .it-header-navbar-wrapper {
+      nav {
+        padding-left: 0;
+        .custom-navbar-toggler {
+          padding-left: 4px;
+          padding-right: 4px;
+        }
+      }
+    }
+  }
+  &.it-header-sticky {
+    &.is-sticky {
+      @include media-breakpoint-up(lg) {
+        .it-header-navbar-wrapper {
+          .menu-wrapper {
+            .it-search-wrapper {
+              a {
+                &.rounded-icon {
+                  background: $primary;
+                  &:hover {
+                    background: darken($primary, 5%);
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.it25-hamburger-btn-wrapper {
+  #btn-hamburger {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+}
+
 .it25-header-menu-vert {
   background: $header-center-bg-color;
   height: $header-center-max-height-mob;
   display: flex;
   align-items: center;
-  padding-left: $header-general-padding - ($grid-columns * 0.5);
-  padding-right: $header-general-padding - ($grid-columns * 0.5);
+  //padding-left: $header-general-padding - ($grid-columns * 0.5);
+  //padding-right: $header-general-padding - ($grid-columns * 0.5);
+}
+
+#it25-menu-vert {
+  width: 20rem;
+  overflow: auto;
+  height: calc(var(--it25-menuvert-height) * 1px);
+  background-color: $white;
+  position: absolute;
+  display: none;
 }
 
 .navbar {
@@ -117,8 +175,15 @@
   .it25-top-bar {
     &.it-header-slim-wrapper {
       padding-top: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
     .it-header-slim-wrapper-content {
+      a {
+        &.dropdown-toggle {
+          padding: var(--#{$prefix}nav-link-padding-y) var(--#{$prefix}nav-link-padding-x);
+        }
+      }
       .dropdown-menu {
         top: -18px !important;
 
@@ -130,6 +195,14 @@
   }
 
   .it-header-wrapper {
+    .it-nav-wrapper {
+      .it-header-navbar-wrapper {
+        nav {
+          padding-left: $v-gap * 4.5;
+          padding-right: $v-gap * 4.5;
+        }
+      }
+    }
     &.it-header-sticky {
       &.is-sticky {
         .it-header-center-wrapper {
@@ -144,7 +217,15 @@
   }
 
   .it-header-center-wrapper {
+    border-bottom: none;
     .it-header-center-content-wrapper {
+      .it25-hamburger-btn-wrapper {
+        margin-left: -12px;
+        #btn-hamburger {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+      }
       .it-brand-wrapper {
         .it25-header-logo {
           height: 48px;
@@ -161,13 +242,18 @@
           &.rounded-icon {
             width: $header-center-search-size;
             height: $header-center-search-size;
+            background-color: $primary;
+            margin-right: $v-gap * 2;
+            &:hover {
+              background: darken($primary, 5%);
+            }
+            svg {
+              fill: $header-center-bg-color;
+            }
           }
         }
       }
     }
-  }
-  .it-header-center-wrapper {
-    border-bottom: none;
   }
 
   .it-header-navbar-wrapper {
@@ -180,6 +266,7 @@
           background: $primary;
           margin-left: $v-gap * 2;
           transition: all 0.3s;
+          background-color: $primary;
           &:hover {
             background: darken($primary, 5%);
           }
@@ -198,52 +285,4 @@
       border-bottom: 1px solid #e1e7ea;
     }
   }
-}
-
-.it-header-wrapper {
-  &.it-header-sticky {
-    &.is-sticky {
-      @include media-breakpoint-up(lg) {
-        .it-header-navbar-wrapper {
-          .menu-wrapper {
-            .it-search-wrapper {
-              a {
-                &.rounded-icon {
-                  background: $primary;
-                  &:hover {
-                    background: darken($primary, 5%);
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-#it25-menu-vert {
-  width: 20rem;
-  overflow: auto;
-  height: calc(var(--it25-menuvert-height) * 1px);
-  background-color: $white;
-  position: absolute;
-  display: none;
-  //.it25-sidebar-wrapper {
-  //position: relative;
-  //top: 0;
-  //padding: 0;
-  //z-index: 6;
-  //height: calc(100vh - $header-center-max-height-mob - $header-slim-height - 15px);
-  //@media (min-width: #{map-get($grid-breakpoints, sm)}) {
-  //height: calc(100vh - $header-center-max-height-mob - $header-slim-height);
-  //}
-  //@media (min-width: #{map-get($grid-breakpoints, lg)}) {
-  //height: calc(100vh - $header-center-max-height - $header-slim-height);
-  //}
-  //.it25-sidebar-links {
-  //padding: 0;
-  //}
-  //}
 }

@@ -1,3 +1,9 @@
+.bd-navbar {
+  &.bd-navbar--slim {
+    min-height: 4rem;
+  }
+}
+
 .bd-sidebar {
   .link-list,
   .link-sublist,

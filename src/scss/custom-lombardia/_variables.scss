@@ -9,10 +9,11 @@ $breadcrumb-link-color: $it25-gray;
 
 //HEADER
 //Header slim
-$header-slim-height: 48px;
+$header-general-padding: $v-gap * 7.5;
 $header-slim-bg-color: $primary;
 $header-slim-button-color: $primary;
 $header-slim-button-hover-color: darken($primary, 5%);
+$header-slim-h-padding: 60px;
 $header-slim-links-padding: 10px;
 $header-slim-ul-border: 0;
 
@@ -20,9 +21,11 @@ $header-slim-ul-border: 0;
 $header-center-small-height: 94px;
 $header-center-small-mob-height: 94px;
 $header-center-bg-color: $white;
-$header-center-text-color: $gray-primary;
+$header-center-text-color: $black;
+$header-center-h2-weight: 400;
 $header-center-text-size: 1.125rem;
 $header-center-max-height: 94px;
+$header-center-search-size: $v-gap * 5;
 // Header Center theme light
 $header-center-theme-light-text-color: $primary;
 
