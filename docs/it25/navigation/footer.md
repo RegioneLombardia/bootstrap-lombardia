@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Footer
-group: componenti-principali
+group: navigation
 toc: false
 ---
 
