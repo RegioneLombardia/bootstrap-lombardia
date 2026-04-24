@@ -26,7 +26,7 @@ In caso l'applicativo non abbia un logo può essere usato un acronimo e/o il nom
   </div>
 </header>
 <br/>
-<header class="it-header-wrapper">
+<header class="it-header-wrapper" style="position: static">
   {% include html_docs/header/topbar.html %}
   <div class="it-nav-wrapper">
     {% include html_docs/header/center_menu-oriz.html textlogo="yes" %}
@@ -42,7 +42,7 @@ In caso l'applicativo non abbia un logo può essere usato un acronimo e/o il nom
 
 Se le voci di menu di primo livello sono più di 5, vanno collocate in un menù verticale a comparsa, comandato da un *hamburger button*.
 
-<header class="it-header-wrapper">
+<header class="it-header-wrapper" style="position: static">
   {% include html_docs/header/topbar.html dropdowns="yes" %}
   {% include html_docs/header/center_menu-vert.html logo="yes" %}
 </header>
