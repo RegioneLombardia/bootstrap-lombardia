@@ -107,7 +107,7 @@ Può essere utile "staccarla" dalle altre per provare anche vedere la responsivi
 
 ---
 ## Utilizzo del componente
-L'header è costruito sulla base del componente [header di bootstrap-italia[({{ site.baseurl }}/docs/menu-di-navigazione/header/) che è composto da tre parti:
+L'header è costruito sulla base del componente [header di bootstrap-italia]({{ site.baseurl }}/docs/menu-di-navigazione/header/) che è composto da tre parti:
 1. **topbar** equivalente allo *slim header*
 2. **header centrale** 
 3. **navbar** il menu di navigazione che può essere *orizzontale*, *verticale* o *sidebar*.

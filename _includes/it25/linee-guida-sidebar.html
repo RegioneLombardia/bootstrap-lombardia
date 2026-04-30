@@ -69,11 +69,11 @@
             <a
               role="button"
               class="list-item large medium icon-right"
-              href="#collapse-{{ forloop.index }}"
+              href="#collapse-old-{{ forloop.index }}"
               data-bs-toggle="collapse"
-              data-bs-target="#collapse-{{ forloop.index }}"
+              data-bs-target="#collapse-old-{{ forloop.index }}"
               aria-expanded="{{expanded}}"
-              aria-controls="collapse-{{ forloop.index }}"
+              aria-controls="collapse-old-{{ forloop.index }}"
             >
               <span class="list-item-title-icon-wrapper">
                 <span class="list-item-title">{{ group.title }}</span>
@@ -82,7 +82,7 @@
                 </svg>
               </span>
             </a>
-            <ul class="link-sublist collapse {% unless active == nil %}show{% endunless %}" id="collapse-{{ forloop.index }}">
+            <ul class="link-sublist collapse {% unless active == nil %}show{% endunless %}" id="collapse-old-{{ forloop.index }}">
               {%- for doc in group.pages -%} {%- assign doc_slug = doc.title | slugify -%} {%- assign active = nil -%} {%- if page.group == group_slug and
               page_slug == doc_slug -%} {%- assign active = 'active' -%} {%- endif -%}
               <li>

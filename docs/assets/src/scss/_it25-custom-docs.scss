@@ -1,6 +1,14 @@
 .bd-navbar {
+  min-height: 6rem;
   &.bd-navbar--slim {
     min-height: 4rem;
+  }
+}
+
+.main-content--panel {
+  @include media-breakpoint-up(sm) {
+    margin-top: 0;
+    box-shadow: none;
   }
 }
 

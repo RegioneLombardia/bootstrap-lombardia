@@ -5,10 +5,10 @@
 - title: Navigation
   pages:
     - title: Footer
-      url: navigation/footer
     - title: Header
-      url: navigation/header
 
 - title: Components
+  pages:
+    - title: Button
 
 - title: Esempi
