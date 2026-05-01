@@ -52,11 +52,11 @@ Sia in asse verticale che in asse orizzontale la distanza base da impostare tra 
 <div style="display: inline-flex">
 <button class="btn btn-primary btn-icon me-4">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 <button class="btn btn-primary btn-icon">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -66,12 +66,12 @@ Sia in asse verticale che in asse orizzontale la distanza base da impostare tra 
 {% capture example %}
 <button class="btn btn-primary btn-icon mb-4">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 <br />
 <button class="btn btn-primary btn-icon">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 {% endcapture %}{% include example.html content=example %}
 
@@ -91,11 +91,11 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
 <div style="display: inline-flex">
   <button class="btn btn-primary btn-icon me-4">
     <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
   <button class="btn btn-outline-primary btn-icon">
     <span>BUTTON</span>
-    <svg class="icon ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -106,11 +106,11 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
 <div class="bg-dark p-3">
   <button class="btn btn-primary btn-icon me-4">
     <span>BUTTON</span>
-    <svg class="icon icon-primary ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
   <button class="btn btn-outline-primary btn-icon">
     <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -122,11 +122,11 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
 <div style="display: inline-flex">
   <button class="btn btn-primary btn-icon me-4" disabled>
     <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
   <button class="btn btn-outline-primary btn-icon" disabled>
     <span>BUTTON</span>
-    <svg class="icon ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -138,11 +138,11 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
 <div class="bg-dark p-3">
   <button class="btn btn-primary btn-icon me-4" disabled>
     <span>BUTTON</span>
-    <svg class="icon icon-primary ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
   <button class="btn btn-outline-primary btn-icon" disabled>
     <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
