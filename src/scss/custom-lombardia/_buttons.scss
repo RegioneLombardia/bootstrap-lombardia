@@ -24,6 +24,14 @@
   }
 }
 
+.btn-circle {
+  border-radius: 50%;
+  padding: 8px;
+  &.btn-lg {
+    padding: 16px;
+  }
+}
+
 /*
 .btn-outline {
   &-primary {

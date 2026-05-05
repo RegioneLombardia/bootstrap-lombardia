@@ -146,3 +146,60 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
+
+
+## Circle button
+Il pulsante **large** va usato principalmente per la navigazione in pagina (es. *Back to top*), quello **small** per slider e azioni.
+
+#### Large
+{% comment %}Example name: IT25 Button Circle Large{% endcomment %}
+{% capture example %}
+<button class="btn btn-lg btn-primary btn-icon btn-circle me-4" aria-label="torna indietro">
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-left"></use></svg>
+</button>
+<button class="btn btn-lg btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<button class="btn btn-lg btn-primary btn-icon btn-circle me-4" disabled aria-label="torna su">
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
+</button>
+<button class="btn btn-lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai in giù">
+  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-down"></use></svg>
+</button>
+{% endcapture %}{% include example.html content=example %}
+
+#### Small
+{% comment %}Example name: IT25 Button Circle Small{% endcomment %}
+{% capture example %}
+<button class="btn btn-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<button class="btn btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<button class="btn btn-primary btn-icon btn-circle me-4" disabled aria-label="vai avantii">
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+<button class="btn lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai avantii">
+  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+</button>
+{% endcapture %}{% include example.html content=example %}
+
+#### Dark
+{% comment %}Example name: IT25 Button Circle Dark{% endcomment %}
+{% capture example %}
+<div class="bg-dark p-3">
+  <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+    <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-lg btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+    <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" disabled aria-label="vai avantii">
+    <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn btn-lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai avantii">
+    <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+{% endcapture %}{% include example.html content=example %}
