@@ -1,4 +1,102 @@
+/* Sostituzioni colori per sfondo dark
+analogue-2-a6 -> $primary-v0
+neutral-1-a10
+neutral-1-a8 -> $white
+neutral-1-a6 -> $primary-100
+neutral-1-a2 -> $primary-200
+*/
+
+// mobile
 .steppers {
+  // dark version
+  &.bg-dark {
+    .steppers-header {
+      // steppers
+      .steppers-index {
+        color: $primary-200;
+        span {
+          &.active {
+            color: $primary-v0;
+          }
+        }
+      }
+      // steps
+      li {
+        color: $primary-200;
+        .icon {
+          fill: $primary-200;
+        }
+        &.active {
+          color: $primary-v0;
+          .icon {
+            fill: $primary-v0;
+          }
+        }
+      }
+    }
+    .steppers-nav {
+      .progress-bar {
+        background: $primary-v0;
+      }
+      .steppers-dots {
+        li.done {
+          background: $primary-v0;
+        }
+      }
+    }
+  }
+}
+//Tablet horizontal / small desktop
+@include media-breakpoint-up(lg) {
+  .steppers {
+    // dark version
+    &.bg-dark {
+      .steppers-header {
+        // steps
+        li {
+          border-color: $white;
+          // active
+          &.active {
+            &:after {
+              background: $primary-v0;
+            }
+            .steppers-number {
+              background: $primary-v0;
+              border-color: $primary-v0;
+              color: $neutral-1-a10;
+            }
+          }
+          // numbers
+          .steppers-number {
+            border-color: $primary-100;
+          }
+        }
+      }
+    }
+  }
+}
+
+//mobile ONLY BUTTONS
+@media (max-width: #{map-get($grid-breakpoints, lg) - 1px}) {
+  .steppers {
+    // dark version
+    &.bg-dark {
+      // navigation
+      .steppers-nav {
+        button:not(.steppers-btn-save):not(.steppers-btn-confirm) {
+          &:hover,
+          &:focus,
+          &:active {
+            color: $primary-v0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*
   .steppers-header {
     &.it25-wizard {
       position: relative;
@@ -65,8 +163,8 @@
       }
     }
   }
-}
-
+*/
+/*
 .it25-stepper-mobile-info {
   position: relative;
   height: 100%;
@@ -156,3 +254,4 @@
     }
   }
 }
+*/

@@ -172,7 +172,7 @@ Il terzo colore neutro è il bianco, pertanto non serve una classe specifica.
   <div class="c-square grey-bg-0"><div>0</div><div>#FBFBFB</div></div>
   <div class="c-square grey-bg-100"><div>100</div><div>#F6F7F9</div></div>
   <div class="c-square grey-bg-200"><div>200</div><div>#E6E9F0</div><div class="dot mt-2"></div></div>
-  <div class="c-square grey-bg-300"><div>300</div><div>##B9C5CC</div></div>
+  <div class="c-square grey-bg-300"><div>300</div><div>#B9C5CC</div></div>
   <div class="c-square grey-bg-400 text-black"><div>400</div><div>#91A3B0</div></div>
   <div class="c-square grey-bg-500 white-color"><div>500</div><div>#5F7381</div><div class="dot mt-2"></div></div>
   <div class="c-square grey-bg-600 white-color"><div>600</div><div>#556875</div></div>

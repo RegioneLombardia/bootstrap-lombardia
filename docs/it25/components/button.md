@@ -11,7 +11,7 @@ toc: yes
 <div class="d-flex justify-content-center">
   <button class="btn btn-primary btn-icon">
     <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
@@ -25,7 +25,7 @@ Il pulsante prevede due dimensioni principali e la sua lunghezza dipende dai car
 {% capture example %}
 <button class="btn btn-lg btn-primary btn-icon">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 {% endcapture %}{% include example.html content=example %}
 
@@ -34,7 +34,7 @@ Il pulsante prevede due dimensioni principali e la sua lunghezza dipende dai car
 {% capture example %}
 <button class="btn btn-primary btn-icon align-middle">
   <span>BUTTON</span>
-  <svg class="icon icon-white ms-2"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 {% endcapture %}{% include example.html content=example %}
 

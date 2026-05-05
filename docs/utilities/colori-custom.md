@@ -340,7 +340,7 @@ I colori Complementari possiedono due tipologie di varianti cromatiche. Per util
 <span class="white-color">#17324d</span>
 </div>
 <div class="square-color neutral-2-bg">
-<span>#e6ecf2</span>
+<span class="white-color">#e6ecf2</span>
 </div>
 <div class="clearfix"></div>
 </div>
@@ -356,7 +356,7 @@ I colori Complementari possiedono due tipologie di varianti cromatiche. Per util
 {% comment %}Example name: Varianti colori neutrali{% endcomment %}
 {% capture example %}
 <div class="neutral-1-bg p-3"><span class="white-color">Testo bianco su background colore neutrale 1</span></div>
-<div class="neutral-2-bg p-3"><span>Testo su background colore neutrale 2</span></div>
+<div class="neutral-2-bg p-3"><span class="white-color">Testo su background colore neutrale 2</span></div>
 {% endcapture %}{% include example.html content=example %}
 </div>
 
@@ -377,31 +377,31 @@ I colori neutrali possiedono tre tipologie di varianti cromatiche. Per utilizzar
 {% capture example %}
 <div class="row">
   <div class="col-md-3">
-    <div class="c-line neutral-1-bg-a1">a1</div>
-    <div class="c-line neutral-1-bg-a2">a2</div>
-    <div class="c-line neutral-1-bg-a3">a3</div>
-    <div class="c-line neutral-1-bg-a4">a4</div>
-    <div class="c-line neutral-1-bg-a5">a5</div>
-    <div class="c-line neutral-1-bg-a6">a6</div>
+    <div class="c-line white-color neutral-1-bg-a1">a1</div>
+    <div class="c-line white-color neutral-1-bg-a2">a2</div>
+    <div class="c-line white-color neutral-1-bg-a3">a3</div>
+    <div class="c-line white-color neutral-1-bg-a4">a4</div>
+    <div class="c-line white-color neutral-1-bg-a5">a5</div>
+    <div class="c-line white-color neutral-1-bg-a6">a6</div>
     <div class="c-line white-color neutral-1-bg-a7">a7</div>
     <div class="c-line white-color neutral-1-bg-a8">a8</div>
     <div class="c-line white-color neutral-1-bg-a9">a9</div>
     <div class="c-line white-color neutral-1-bg-a10">a10</div>
   </div>
   <div class="col-md-3">
-    <div class="c-line neutral-2-bg-b1">b1</div>
-    <div class="c-line neutral-2-bg-b2">b2</div>
-    <div class="c-line neutral-2-bg-b3">b3</div>
-    <div class="c-line neutral-2-bg-b4">b4</div>
+    <div class="c-line white-color neutral-2-bg-b1">b1</div>
+    <div class="c-line white-color neutral-2-bg-b2">b2</div>
+    <div class="c-line white-color neutral-2-bg-b3">b3</div>
+    <div class="c-line white-color neutral-2-bg-b4">b4</div>
     <div class="c-line white-color neutral-2-bg-b5">b5</div>
     <div class="c-line white-color neutral-2-bg-b6">b6</div>
     <div class="c-line white-color neutral-2-bg-b7">b7</div>
   </div>
   <div class="col-md-3">
-    <div class="c-line neutral-2-bg-a1">a1</div>
-    <div class="c-line neutral-2-bg-a2">a2</div>
-    <div class="c-line neutral-2-bg-a3">a3</div>
-    <div class="c-line neutral-2-bg-a4">a4</div>
+    <div class="c-line white-color neutral-2-bg-a1">a1</div>
+    <div class="c-line white-color neutral-2-bg-a2">a2</div>
+    <div class="c-line white-color neutral-2-bg-a3">a3</div>
+    <div class="c-line white-color neutral-2-bg-a4">a4</div>
     <div class="c-line white-color neutral-2-bg-a5">a5</div>
     <div class="c-line white-color neutral-2-bg-a6">a6</div>
     <div class="c-line white-color neutral-2-bg-a7">a7</div>
