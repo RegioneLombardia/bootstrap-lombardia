@@ -17,8 +17,6 @@
       url: componenti-principali/menu-orizzontale
     - title: Menu Verticale
       url: componenti-principali/menu-verticale
-    - title: Gestione Loghi Multipli
-      url: componenti-principali/gestione-loghi-multipli
 
 - title: Navigazione
   pages:

@@ -1,5 +1,8 @@
 .it-footer-main {
   background-color: $primary-v1;
+  section {
+    padding: 0;
+  }
   .navbar-brand {
     img {
       height: 30px;
@@ -7,5 +10,10 @@
   }
   ul {
     margin-bottom: 0;
+  }
+}
+.it25-footer-logo {
+  img {
+    height: 40px;
   }
 }

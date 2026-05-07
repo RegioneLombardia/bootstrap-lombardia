@@ -1,4 +1,16 @@
 <footer class="it-footer">
+{% if include.multilogo=="yes" %}
+<div class="container-fluid my-3 px-3 px-md-5">
+  <h6 class="no-bold">Con il patrocinio di:</h6>
+  <div class="it25-footer-logo d-flex flex-wrap justify-content-between align-items-center">
+    <img src="{{ site.baseurl }}/docs/assets/img/unione_europea.svg" alt="logo unione europea" class="img-fluid mb-2">
+    <img src="{{ site.baseurl }}/docs/assets/img/interreg.svg" alt="logo interreg" class="img-fluid mb-2">
+    <img src="{{ site.baseurl }}/dist/assets/img/logo_inlombardia.svg" alt="logo inlombardia" class="img-fluid mb-2">
+    <img src="{{ site.baseurl }}/dist/assets/img/logo_sost_RL.jpg" alt="logo sostenibilità" class="img-fluid mb-2">
+    <img src="{{ site.baseurl }}/docs/assets/img/fesr.svg" alt="logo fesr" class="img-fluid mb-2">
+  </div>
+</div>
+{% endif %}
   <div class="it-footer-main">
     <div class="container-fluid">
       <div class="row clearfix mb-3">
@@ -48,10 +60,20 @@
           </div>
         </div>
       </section>
-      <section class="py-4 border-white border-top">
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
           <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
+            <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2"/>
           </a>
+          {% if include.logo-negativo!="yes" %}
+          <div class="h6 no-bold me-4 mb-2">ACRONIMO Nome applicativo</div>
+          {% endif %}
+          {% if include.logo-negativo=="yes" %}
+          <div class="h6 no-bold me-4 mb-2">Osservatorio epidemiologico e prevenzione</div>
+          <img src="{{ site.baseurl }}/dist/assets/img/logo-saf-lombardia.png" alt="logo scuola alta formazione lombardia" class="img-fluid me-4 mb-2">
+          <img src="{{ site.baseurl }}/dist/assets/img/logo-cna-lombardia-bianco.png" alt="logo cna lombardia" class="img-fluid me-4 mb-2">
+          {% endif %}
+        </div>
       </section>
     </div>
   </div>
