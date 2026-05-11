@@ -1,158 +1,90 @@
-.card {
-  border-radius: 8px;
-  .img-responsive-wrapper.rounded-top {
-    border-top-left-radius: 8px !important;
-    border-top-right-radius: 8px !important;
-  }
-  .card-header {
-    //background-color: #e5e5e5;
-    background-color: adjust-color(#e5e5e5, $lightness: 3%);
-    font-weight: 700;
-    font-size: 1.125rem;
-    padding: 12px 24px;
-    border: none;
-    border-top-left-radius: 8px !important;
-    border-top-right-radius: 8px !important;
-    a {
-      color: $primary;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  .btn-xs {
-    padding: 5px 10px;
-    font-weight: 700;
-    font-size: $btn-font-size-sm;
-  }
-
-  .card-tag {
-    color: $primary;
-    border: 1px solid $primary;
-  }
-  .card-body {
-    .category-top {
-      text-transform: unset;
-      a {
-        text-decoration: none;
-      }
-    }
-    .card-title {
-      color: inherit;
-    }
-    .card-text {
-      color: unset;
-      font-family: unset;
-      font-size: 1.125rem;
-      line-height: unset;
-    }
-  }
-  .card-link {
-    text-decoration: underline;
-  }
-  &:after {
-    content: none;
-  }
-  a.read-more {
-    bottom: 0;
-    font-size: 1rem;
-  }
-}
-
-// inizio TODO eliminare con componenti per il mobile
-.it25-card-conditions {
-  display: block;
-  background: #ffffff;
-  box-shadow: 0px 8px 13px rgba(0, 51, 84, 0.1);
-  border-radius: 10px;
-  padding: 25px;
-
-  .it25-scroll {
-    overflow-y: auto;
-    &::-webkit-scrollbar {
-      width: 6px;
-      height: 0.5em;
-      background: #f2f2f2;
-      border-radius: 50px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $primary;
-      border-radius: 3px;
-    }
-  }
-
-  .conditions-body {
-    padding: 10px 20px 10px 0;
-    .conditions-title {
-      color: $primary-blue;
-      font-size: 20px;
-      font-weight: 700;
-      display: flex;
-      span {
-        width: 100%;
-        display: flex;
-        align-items: center;
-      }
-    }
-
-    .conditions-text {
-      font-size: 16px;
-      padding-bottom: 24px;
-    }
-  }
-}
-// fine TODO eliminare con componenti per il mobile
-
 .it-card,
 article.it-card {
-  border-radius: 8px !important;
-  border-style: none !important;
-  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1) !important;
+  border-radius: 16px;
+  &.it25-text-only {
+    border-radius: 0;
+  }
+  padding: 1rem;
   .it-card-title {
-    padding-top: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-  }
-  .it-card-image-wrapper {
-    img {
-      border-top-left-radius: 8px !important;
-      border-top-right-radius: 8px !important;
-    }
-  }
-  footer {
-    .it-card-category {
-      padding-left: 8px;
-      padding-right: 8px;
-      text-transform: none;
-      text-decoration: none;
-      color: $primary;
-      font-weight: 600;
-      font-size: 1.25rem;
-      &:hover {
-        color: rgb(33, 97, 45);
-        text-decoration: underline;
-      }
-    }
+    color: $black;
+    font-weight: 400;
+    font-size: 1.5rem;
   }
   .it-card-body {
-    padding-left: 24px;
-    padding-right: 24px;
+    color: $black;
     .it-card-text {
-      font-size: 1.125rem;
-      color: rgb(26, 26, 26);
+      color: $black;
     }
-    footer {
-      .it-card-category {
-        padding-left: 0;
-        padding-right: 0;
+  }
+  .it-card-date {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+  }
+  .it-card-footer {
+    border-top: 0;
+  }
+  .badge {
+    width: fit-content;
+    margin: 0 0 0 1rem;
+    border-radius: 4px;
+  }
+  hr {
+    border-color: $primary;
+    opacity: 1;
+  }
+  &.it25-card-lg {
+    .it-card-title {
+      margin-top: 0.5rem;
+      font-size: 2rem;
+    }
+  }
+  &.it25-card-outline {
+    border: 2px solid $primary;
+    background-color: $white;
+  }
+  &.it25-card-primary {
+    border: 2px solid $white;
+    background-color: $primary;
+    color: $white;
+    .it-card-title {
+      color: $white;
+    }
+    .it-card-body {
+      color: $white;
+      .it-card-text {
+        color: $white;
+      }
+    }
+    .badge {
+      color: $white;
+      border-color: $white;
+    }
+    .btn {
+      &.btn-outline-primary {
+        background-color: $white;
       }
     }
   }
-  .btn-xs {
-    padding: 5px 10px;
-    font-weight: 700;
-    font-size: $btn-font-size-sm;
+  &.it25-card-dark {
+    border: 2px solid $dark;
+    background-color: $dark;
+    color: $white;
+    .it-card-title {
+      color: $white;
+    }
+    .it-card-body {
+      color: $white;
+      .it-card-text {
+        color: $white;
+      }
+    }
+    .badge {
+      color: $white;
+      border-color: $white;
+    }
+    hr {
+      border-color: $white;
+      opacity: 1;
+    }
   }
 }
