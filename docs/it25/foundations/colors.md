@@ -1,6 +1,6 @@
 ---
 layout: it25_docs
-title: Colori
+title: Colors
 group: foundations
 toc: true
 ---

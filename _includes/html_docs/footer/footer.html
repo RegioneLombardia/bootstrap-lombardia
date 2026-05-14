@@ -1,7 +1,7 @@
 <footer class="it-footer">
 {% if include.multilogo=="yes" %}
 <div class="container-fluid my-3 px-3 px-md-5">
-  <h6 class="no-bold">Con il patrocinio di:</h6>
+  <h6 class="fw-normal">Con il patrocinio di:</h6>
   <div class="it25-footer-logo d-flex flex-wrap justify-content-between align-items-center">
     <img src="{{ site.baseurl }}/docs/assets/img/unione_europea.svg" alt="logo unione europea" class="img-fluid mb-2">
     <img src="{{ site.baseurl }}/docs/assets/img/interreg.svg" alt="logo interreg" class="img-fluid mb-2">
@@ -66,10 +66,10 @@
             <img src="{{ site.baseurl }}/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2"/>
           </a>
           {% if include.logo-negativo!="yes" %}
-          <div class="h6 no-bold me-4 mb-2">ACRONIMO Nome applicativo</div>
+          <div class="h6 fw-normal me-4 mb-2">ACRONIMO Nome applicativo</div>
           {% endif %}
           {% if include.logo-negativo=="yes" %}
-          <div class="h6 no-bold me-4 mb-2">Osservatorio epidemiologico e prevenzione</div>
+          <div class="h6 fw-normal me-4 mb-2">Osservatorio epidemiologico e prevenzione</div>
           <img src="{{ site.baseurl }}/dist/assets/img/logo-saf-lombardia.png" alt="logo scuola alta formazione lombardia" class="img-fluid me-4 mb-2">
           <img src="{{ site.baseurl }}/dist/assets/img/logo-cna-lombardia-bianco.png" alt="logo cna lombardia" class="img-fluid me-4 mb-2">
           {% endif %}
