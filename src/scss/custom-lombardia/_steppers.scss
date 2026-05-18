@@ -1,4 +1,75 @@
-/* Sostituzioni colori per sfondo dark
+.steppers {
+  /* TODO vecchio wizard da eliminare */
+  .steppers-header {
+    &.it25-wizard {
+      position: relative;
+      ul {
+        justify-content: space-between;
+      }
+      li {
+        padding: calc($stepper-spacing-v / 2) calc($stepper-spacing-h / 2);
+        @include media-breakpoint-up(lg) {
+          padding: $stepper-spacing-v $stepper-spacing-h;
+        }
+        background: white;
+        border: 1px solid #e5e5e5;
+        flex-grow: unset;
+        border-radius: 8px;
+        &.confirmed {
+          border-color: $primary;
+        }
+        &.active {
+          border-color: $primary;
+          background: $primary;
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
+        &.error {
+          border-color: $danger;
+          background: $danger;
+          color: white;
+          svg {
+            fill: white;
+          }
+        }
+      }
+      &::after {
+        content: ' ';
+        width: 96%;
+        background-color: #e5e5e5;
+        position: absolute;
+        height: 0.5em;
+        right: 10px;
+        top: 35%;
+        z-index: -1;
+      }
+    }
+    &.it25-wizard-pin {
+      li {
+        justify-content: center;
+        border-radius: 3rem;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        .icon {
+          width: unset;
+          height: unset;
+          margin-right: unset;
+        }
+      }
+      &::after {
+        border-bottom: 3px dashed $primary;
+        height: 1px;
+      }
+    }
+  }
+
+  // mobile
+
+  /* Sostituzioni colori per sfondo dark
 analogue-2-a6 -> $primary-v0
 neutral-1-a10
 neutral-1-a8 -> $white
@@ -6,8 +77,6 @@ neutral-1-a6 -> $primary-100
 neutral-1-a2 -> $primary-200
 */
 
-// mobile
-.steppers {
   // dark version
   &.bg-dark {
     .steppers-header {
@@ -94,163 +163,3 @@ neutral-1-a2 -> $primary-200
     }
   }
 }
-
-/*
-  .steppers-header {
-    &.it25-wizard {
-      position: relative;
-      ul {
-        justify-content: space-between;
-      }
-      li {
-        padding: calc($stepper-spacing-v / 2) calc($stepper-spacing-h / 2);
-        @include media-breakpoint-up(lg) {
-          padding: $stepper-spacing-v $stepper-spacing-h;
-        }
-        background: white;
-        border: 1px solid #e5e5e5;
-        flex-grow: unset;
-        border-radius: 8px;
-        &.confirmed {
-          border-color: $primary;
-        }
-        &.active {
-          border-color: $primary;
-          background: $primary;
-          color: white;
-          svg {
-            fill: white;
-          }
-        }
-        &.error {
-          border-color: $danger;
-          background: $danger;
-          color: white;
-          svg {
-            fill: white;
-          }
-        }
-      }
-      &::after {
-        content: ' ';
-        width: 96%;
-        background-color: #e5e5e5;
-        position: absolute;
-        height: 0.5em;
-        right: 10px;
-        top: 35%;
-        z-index: -1;
-      }
-    }
-    &.it25-wizard-pin {
-      li {
-        justify-content: center;
-        border-radius: 3rem;
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        .icon {
-          width: unset;
-          height: unset;
-          margin-right: unset;
-        }
-      }
-      &::after {
-        border-bottom: 3px dashed $primary;
-        height: 1px;
-      }
-    }
-  }
-*/
-/*
-.it25-stepper-mobile-info {
-  position: relative;
-  height: 100%;
-
-  &.it25-dynamic {
-    background-image: url('/dist/assets/img/image-bg-rotate.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-
-  .it25-header {
-    justify-content: end;
-  }
-  .steppers-btn-jumping {
-    padding: 0 24px;
-    color: #67788b;
-  }
-
-  .steppers-header,
-  .steppers-nav {
-    box-shadow: none;
-  }
-
-  .steppers-content {
-    height: 65%;
-  }
-
-  .it25-dots {
-    justify-content: center;
-
-    .current {
-      flex-grow: 0;
-      flex-shrink: 0;
-      width: 40px !important;
-      height: 8px !important;
-      border-radius: 4px !important;
-    }
-
-    .other {
-      flex-grow: 0;
-      flex-shrink: 0;
-      width: 20px !important;
-      height: 8px !important;
-      border-radius: 4px !important;
-    }
-  }
-
-  .steppers-btn-prev,
-  .steppers-btn-next {
-    width: 100%;
-  }
-
-  .it25-dynamic-footer {
-    flex-direction: column;
-  }
-
-  .it25-flex-center {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    overflow-wrap: break-word;
-  }
-
-  .it25-progress {
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    align-items: self-start;
-    height: 8px;
-    color: $primary-blue;
-
-    .progress {
-      width: 100%;
-      height: 7px;
-      .progress-bar {
-        background: linear-gradient(90deg, #008758 0%, #597483 100%);
-        border-radius: 0px 10px 10px 0px;
-      }
-    }
-    .progress-color {
-      background-color: #dee0e5;
-    }
-  }
-}
-*/

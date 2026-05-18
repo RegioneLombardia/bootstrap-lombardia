@@ -6,12 +6,12 @@
   //disabled version
   &.disabled {
     input[type='number'] {
-      background-color: $neutral-1-a1;
+      background-color: $grey-200;
       color: $black;
       border-bottom-color: $input-border;
     }
     .input-group-text {
-      background-color: $neutral-1-a1;
+      background-color: $grey-200;
       color: $black;
       border-bottom-color: $input-border;
     }

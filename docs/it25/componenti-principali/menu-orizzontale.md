@@ -16,8 +16,9 @@ Su **smartphone** la visualizzazione del menu orizzontale è comandata dal botto
 Si vedano le voci **menu orizzontale** e **form** nella pagina degli [esempi]({{ site.baseurl }}/docs/it25/esempi/) per una migliore comprensione del possibile utilizzo.
 
 <div class="bd-example">
-{% include esempi-lombardia/menu_orizzontale.html %}
+{% include html_docs/header/navbar_oriz.html %}
 </div>
+<!-- include esempi-lombardia/menu_orizzontale.html -->
 
 {% highlight html %}
 {% include esempi-lombardia/menu_orizzontale.html %}
