@@ -1,3 +1,4 @@
+// TODO remove
 // primary blue ---------------------------------
 .primary-blue-bg {
   background-color: $primary-blue !important;
@@ -15,6 +16,7 @@
   fill: $primary-blue !important;
 }
 
+// TODO remove
 // primary gray ---------------------------------
 .primary-gray-bg {
   background-color: $primary-gray !important;
@@ -26,20 +28,6 @@
   border-color: $primary-gray !important;
   &.border {
     border-color: $primary-gray !important;
-  }
-}
-
-// neutral 3
-.neutral-3-bg {
-  background-color: $neutral-3 !important;
-}
-.neutral-3-color {
-  color: $neutral-3 !important;
-}
-.neutral-3-border-color {
-  border-color: $neutral-3 !important;
-  &.border {
-    border-color: $neutral-3 !important;
   }
 }
 
@@ -57,12 +45,6 @@
   }
 }
 
-// Patch complementary-1-color
-.complementary-1-color {
-  color: $complementary-1 !important;
-}
-// fine patch
-
 // Patch errore in b.i. sui border neutral 1 e 2
 // neutral 1
 .neutral-1-border-color {
@@ -79,3 +61,83 @@
   }
 }
 // fine patch
+
+/*
+ *  BL3
+ */
+
+// green ------------------
+$colorlist: $primary-50 $primary-100 $primary-200 $primary-300 $primary-400 $primary-500 $primary-600 $primary-700 $primary-800 $primary-900;
+
+@for $i from 1 through length($colorlist) {
+  $color: nth($colorlist, $i);
+  .primary-bg-#{($i - 1) * 100} {
+    background-color: $color !important;
+  }
+  .primary-color-#{($i - 1) * 100} {
+    color: $color !important;
+  }
+  .primary-border-color-#{($i - 1) * 100} {
+    border-color: $color !important;
+    &.border {
+      border-color: $color !important;
+    }
+  }
+}
+
+// cold / hot / news ------------------
+$colorlist: $primary-v1 $primary-v2 $primary-v3 $primary-v4 $primary-v5 $primary-v6 $primary-v7 $primary-v8 $primary-v9 $primary-v10;
+
+@for $i from 1 through length($colorlist) {
+  $color: nth($colorlist, $i);
+  .primary-bg-v#{$i} {
+    background-color: $color !important;
+  }
+  .primary-color-v#{$i} {
+    color: $color !important;
+  }
+  .primary-border-color-v#{$i} {
+    border-color: $color !important;
+    &.border {
+      border-color: $color !important;
+    }
+  }
+}
+
+// warm ------------------
+$colorlist: $primary-g1;
+
+@for $i from 1 through length($colorlist) {
+  $color: nth($colorlist, $i);
+  .primary-bg-g#{$i} {
+    background-color: $color !important;
+  }
+  .primary-color-g#{$i} {
+    color: $color !important;
+  }
+  .primary-border-color-g#{$i} {
+    border-color: $color !important;
+    &.border {
+      border-color: $color !important;
+    }
+  }
+}
+
+// greys ------------------
+$colorlist: $grey-50 $grey-100 $grey-200 $grey-300 $grey-400 $grey-500 $grey-600 $grey-700 $grey-800 $grey-900;
+
+@for $i from 1 through length($colorlist) {
+  $color: nth($colorlist, $i);
+  .grey-bg-#{($i - 1) * 100} {
+    background-color: $color !important;
+  }
+  .grey-color-#{($i - 1) * 100} {
+    color: $color !important;
+  }
+  .grey-border-color-#{($i - 1) * 100} {
+    border-color: $color !important;
+    &.border {
+      border-color: $color !important;
+    }
+  }
+}

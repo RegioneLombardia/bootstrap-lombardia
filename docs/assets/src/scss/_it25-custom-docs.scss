@@ -1,3 +1,17 @@
+.bd-navbar {
+  min-height: 6rem;
+  &.bd-navbar--slim {
+    min-height: 4rem;
+  }
+}
+
+.main-content--panel {
+  @include media-breakpoint-up(sm) {
+    margin-top: 0;
+    box-shadow: none;
+  }
+}
+
 .bd-sidebar {
   .link-list,
   .link-sublist,
@@ -8,6 +22,16 @@
 
 .bd-example {
   background-color: $white;
+}
+
+.bd-example-row {
+  .d-flex {
+    background-image: none;
+  }
+  .row {
+    background-image: none;
+    background-color: lightgrey;
+  }
 }
 
 .bd-callout-info {
@@ -81,7 +105,22 @@
   box-sizing: border-box;
   padding: 0.25rem;
   margin-right: 15px;
-  border-radius: 8px;
+  border-radius: 4px;
+}
+
+.c-square {
+  height: 100px;
+  width: 100px;
+  box-sizing: border-box;
+  padding: 15px;
+  margin: 8px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .border-custom {

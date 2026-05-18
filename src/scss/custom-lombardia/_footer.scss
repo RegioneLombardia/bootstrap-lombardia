@@ -1,84 +1,19 @@
-/* Tutti */
-.footer {
-  color: #fff;
-  background-color: $primary-blue;
-  padding: $spacer;
-
-  .title {
-    font-size: 1rem;
-  }
-  a {
-    //text-decoration: none;
-    color: #fff;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  nav {
-    ul {
-      margin-bottom: 0;
-      font-weight: 600;
-    }
-  }
-
-  .list-inline-item {
-    margin-bottom: 0.5rem;
-    a {
-      font-size: 1rem;
-    }
-    &:not(:last-child) {
-      margin-right: 1.5rem;
-    }
-  }
-
-  .copyright {
-    font-size: 0.95rem;
-  }
-}
 .it-footer-main {
-  .it-brand-wrapper {
-    a {
-      color: $white;
-      .icon {
-        fill: $white;
-      }
-    }
-  }
-}
-
-.it25-footer-mobile {
-  padding: 6px;
-  background: $white;
-  ul {
-    list-style: none;
+  background-color: $primary-v1;
+  section {
     padding: 0;
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    li {
-      display: inline-block;
-      width: 100%;
+  }
+  .navbar-brand {
+    img {
+      height: 30px;
     }
   }
-
-  .logo {
-    align-self: center;
-    justify-content: center;
-    display: flex;
-  }
-  .version {
-    border-left: 1px solid #cae4ea;
-    padding-left: 0.8rem;
+  ul {
+    margin-bottom: 0;
   }
 }
-
 .it25-footer-logo {
-  border-radius: 8px;
-  max-height: 90px;
   img {
-    max-height: 90px;
+    height: 40px;
   }
 }

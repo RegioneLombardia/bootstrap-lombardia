@@ -7,12 +7,12 @@
   description: "Utilizza tutta la larghezza dello schermo <strong>quando devono essere mostrati molti dati</strong>."
   examples:
     - name: 'Menu orizzontale'
-      url: tabella-menu-oriz
+      url: menu-oriz
       description: "Il menù orizzontale <strong>occupa poco spazio</strong>, ma può contenere solo pochi link.<br/>
       Con i <strong>dropdown</strong> o i <strong>megamenù</strong> è possibile aumentarli, ma l'utente deve cliccare per vederli."
       code_explain: true
     - name: 'Menu verticale'
-      url: tabella-menu-vert
+      url: menu-vert
       description: "Il menù verticale a comparsa è <strong>utile se le voci di menù sono molto numerose</strong>.<br/>
       Non occupa spazio, ma deve essere aperto e chiuso con un click."
       code_explain: true
@@ -20,11 +20,11 @@
   description: "<strong>Se i dati da mostrare non sono molti</strong>, evita che, sugli schermi grandi, le informazioni risultino troppo sparse."
   examples:
     - name: 'Form'
-      url: form-menu-oriz
+      url: menu-oriz-form
       description: "Il <strong>container</strong> mantiene vicine le informazioni anche se lo schermo è molto ampio."
       code_explain: true
     - name: 'Sidebar'
-      url: form-sidebar
+      url: sidebar
       description: "Avendo spazio, la <strong>sidebar</strong> permette di visualizzare molte voci di menù immediatamente, risparmiando click all'utente"
       code_explain: true
 - category: Altri esempi

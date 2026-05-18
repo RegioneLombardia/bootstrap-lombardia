@@ -1,0 +1,29 @@
+---
+layout: base
+title: es. menù orizzontale
+description: Tabella e menu orizzontale
+---
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+  {% include html_docs/header/topbar.html dropdowns="yes" language="yes" logged="yes" %}
+  <div class="it-nav-wrapper">
+    {% include html_docs/header/center_menu-oriz.html logo="yes" textlogo="yes" %}
+    {% include html_docs/header/navbar_oriz.html %}
+  </div>
+</header>
+
+<main>
+  <div class="container-fluid">
+    <div class="col-12">
+    <h1>Tabella dati</h1>
+    {% include esempi-lombardia/filtri_tabella.html %}
+    {% include esempi-lombardia/tabella.html %}
+    {% include esempi-lombardia/paginazione.html %}
+    </div>
+  </div>
+</main>
+
+{% include html_docs/footer/footer.html %}

@@ -1,0 +1,77 @@
+{% if include.language=="yes" %}
+<!-- scelta lingua -->
+<div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
+    <span>ITA</span>
+    <svg class="icon"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
+  </a>
+  <div class="dropdown-menu">
+    <div class="row">
+      <div class="col-12">
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li><a class="dropdown-item list-item" href="#"><span>ITA<span class="visually-hidden">selezionata</span></span></a></li>
+            <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if include.logged=="yes" %}
+<!-- funzioni per utente loggato -->
+<div class="nav-item dropdown d-inline">
+  <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
+    <span>Nome Cognome</span>
+    <svg class="icon icon-white" aria-label="utente">
+      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-user"></use>
+    </svg>
+    <svg class="icon icon-white" aria-label="espandi">
+      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-expand"></use>
+    </svg>
+  </a>
+  <div class="dropdown-menu" data-popper-placement="bottom-end">
+    <div class="link-list-wrapper">
+      <ul class="link-list">
+        <li>
+          <a class="list-item" href="#"><span>Impostazioni</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 2</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 3</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 4</span></a>
+        </li>
+        <li>
+          <span class="divider" role="separator"></span>
+        </li>
+        <li>
+          <a class="list-item" href="#">
+            <svg class="icon icon-primary">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-logout"></use>
+            </svg>
+            <span>Logout</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+{% if include.access=="yes" %}
+<!-- pulsante login utente -->
+<div class="it-access-top-wrapper">
+  <a class="btn btn-primary" href="#">ACCEDI
+    <svg class="icon icon-white d-inline" aria-label="utente">
+      <use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-user"></use>
+    </svg>
+  </a>
+</div>
+{% endif %}

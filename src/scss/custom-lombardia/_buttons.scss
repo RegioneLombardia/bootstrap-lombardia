@@ -1,3 +1,38 @@
+//
+// Button Sizes
+//
+.btn {
+  padding: 8px 16px;
+  height: fit-content;
+}
+.btn-xs {
+  padding: 8px 8px;
+}
+.btn-sm {
+  padding: 8px 16px;
+}
+.btn-lg {
+  padding: 12px 32px;
+}
+
+.btn-outline {
+  &-success {
+    color: adjust-color($success, $lightness: -15%);
+  }
+  &-warning {
+    color: adjust-color($warning, $lightness: -25%);
+  }
+}
+
+.btn-circle {
+  border-radius: 50%;
+  padding: 8px;
+  &.btn-lg {
+    padding: 16px;
+  }
+}
+
+/*
 .btn-outline {
   &-primary {
     color: $primary;
@@ -123,3 +158,4 @@
 .btn-mobile-radius {
   border-radius: $border-radius;
 }
+*/

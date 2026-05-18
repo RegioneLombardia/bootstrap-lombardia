@@ -60,7 +60,7 @@ Per le visualizzazione a schermo intero potete guardare la pagina di esempio: **
     <section class="cookiebar fade" aria-label="Gestione dei cookies">
         <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br>Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
         <div class="cookiebar-buttons">
-            <a href="#" class="cookiebar-btn">Preferenze<span class="visually-hidden">cookies</span></a>
+            <a href="#" class="cookiebar-btn cookiebar-confirm">Preferenze<span class="visually-hidden">cookies</span></a>
             <button data-bs-accept="cookiebar" class="cookiebar-btn cookiebar-confirm">Accetto<span class="visually-hidden"> i cookies</span></button>
         </div>
     </section>

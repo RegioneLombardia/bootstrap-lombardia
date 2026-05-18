@@ -1,72 +1,16 @@
-- title: Introduzione
-
-- title: Sistema di griglie
-
-- title: Utilità
+- title: Foundations
   pages:
-    - title: Tipografia
-    - title: Colori
-    - title: Ombre e angoli
-    - title: Icone
-    - title: Divisori
+    - title: Colors
+    - title: Typography
 
-- title: Componenti Principali
+- title: Navigation
   pages:
-    - title: Logo
-      url: componenti-principali/logo
-    - title: Header
-      url: componenti-principali/header
-    - title: Menu orizzontale
-      url: componenti-principali/menu-orizzontale
-    - title: Menu Verticale
-      url: componenti-principali/menu-verticale
-    - title: Gestione Loghi Multipli
-      url: componenti-principali/gestione-loghi-multipli
     - title: Footer
-      url: componenti-principali/footer
+    - title: Header
 
-- title: Navigazione
+- title: Components
   pages:
-    - title: Breadcrumbs
-    - title: Liste
-    - title: Dropdown Menu
-    - title: Megamenu
-    - title: Paginatore
-
-- title: Call to action
-  pages:
-    - title: Bottoni
-    - title: Tab bar
-    - title: Slider
-
-- title: Informazioni
-  pages:
-    - title: Accordion
+    - title: Button
     - title: Card
-    - title: Card old
-    - title: Carousel
-    - title: Calendario
-    - title: Time Picker
-    - title: Cookiebar
-    - title: Overlay
-    - title: Tabella
-    - title: Snackbar
-
-- title: Inserimento
-  pages:
-    - title: Check box
-    - title: Radio buttons
-    - title: Toggle
-    - title: Input fields
-    - title: Tooltip
-    - title: Popover
-    - title: Wizard
-    - title: Progress bar
 
 - title: Esempi
-
-- title: Installazione
-
-- title: Breaking change
-
-- title: Crediti

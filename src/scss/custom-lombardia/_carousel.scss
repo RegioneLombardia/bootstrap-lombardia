@@ -1,4 +1,7 @@
 .it-carousel-wrapper {
+  .card {
+    border-radius: 8px;
+  }
   &.it25-arrow-visible {
     padding: 1rem;
     .splide__arrows {

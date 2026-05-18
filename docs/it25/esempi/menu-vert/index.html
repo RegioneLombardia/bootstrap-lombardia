@@ -1,0 +1,29 @@
+---
+layout: base
+title: es. menù verticale
+description: Pagina completa con tabella e menù verticale
+---
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+   {% include html_docs/header/topbar.html dropdowns="yes" language="yes" logged="yes" %}
+   {% include html_docs/header/center_menu-vert.html logo="yes" textlogo="yes" %}
+    <div id="it25-menu-vert">
+     {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
+    </div>
+</header>
+
+<main>
+  <div class="container-fluid">
+    <div class="col-12">
+    <h1 class="m-2">Titolo videata</h1>
+    {% include esempi-lombardia/filtri_tabella.html %}
+    {% include esempi-lombardia/tabella.html %}
+    {% include esempi-lombardia/paginazione.html %}
+    </div>
+  </div>
+</main>
+
+{% include html_docs/footer/footer.html %}
