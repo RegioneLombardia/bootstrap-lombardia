@@ -86,7 +86,7 @@ Lasciando il valore di default, che per il tag `div` è `block` con `column-gap`
 Il pulsante prevede due tipologie: primario e secondario, che si invertono a seconda dello sfondo *light* (di default) o *dark*.
 
 #### sfondo light
-{% comment %}Example name: IT25 Button Primary light{% endcomment %}
+{% comment %}Example name: IT25 Button background white{% endcomment %}
 {% capture example %}
 <div style="display: inline-flex">
   <button class="btn btn-primary btn-icon me-4">
@@ -99,9 +99,25 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
   </button>
 </div>
 {% endcapture %}{% include example.html content=example %}
+
+#### sfondo primary
+{% comment %}Example name: IT25 Button background primary{% endcomment %}
+{% capture example %}
+<div class="bg-primary p-3">
+  <button class="btn btn-outline-white btn-icon me-4">
+    <span>BUTTON</span>
+    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+  <button class="btn  bg-white btn-icon">
+    <span>BUTTON</span>
+    <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  </button>
+</div>
+{% endcapture %}{% include example.html content=example %}
+
 
 #### sfondo dark
-{% comment %}Example name: IT25 Button Primary dark{% endcomment %}
+{% comment %}Example name: IT25 Button background dark{% endcomment %}
 {% capture example %}
 <div class="bg-dark p-3">
   <button class="btn btn-primary btn-icon me-4">
@@ -116,34 +132,46 @@ Il pulsante prevede due tipologie: primario e secondario, che si invertono a sec
 {% endcapture %}{% include example.html content=example %}
 
 
-#### stato disabled light
-{% comment %}Example name: IT25 Button Primary light disabled{% endcomment %}
+#### stato disabled
+{% comment %}Example name: IT25 Button disabeld{% endcomment %}
 {% capture example %}
-<div style="display: inline-flex">
-  <button class="btn btn-primary btn-icon me-4" disabled>
-    <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-  <button class="btn btn-outline-primary btn-icon" disabled>
-    <span>BUTTON</span>
-    <svg class="icon ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-</div>
-{% endcapture %}{% include example.html content=example %}
-
-
-#### stato disabled dark
-{% comment %}Example name: IT25 Button Primary dark disabled{% endcomment %}
-{% capture example %}
-<div class="bg-dark p-3">
-  <button class="btn btn-primary btn-icon me-4" disabled>
-    <span>BUTTON</span>
-    <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-  <button class="btn btn-outline-primary btn-icon" disabled>
-    <span>BUTTON</span>
-    <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <div class="p-3">
+      <button class="btn btn-primary btn-icon me-4" disabled>
+        <span>BUTTON</span>
+        <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+      <button class="btn btn-outline-primary btn-icon" disabled>
+        <span>BUTTON</span>
+        <svg class="icon ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <div class="bg-primary p-3">
+      <button class="btn btn-outline-white btn-icon me-4" disabled>
+        <span>BUTTON</span>
+        <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+      <button class="btn btn-outline-primary bg-white btn-icon" disabled>
+        <span>BUTTON</span>
+        <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <div class="bg-dark p-3">
+      <button class="btn btn-primary btn-icon me-4" disabled>
+        <span>BUTTON</span>
+        <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+      <button class="btn btn-outline-primary btn-icon" disabled>
+        <span>BUTTON</span>
+        <svg class="icon icon-white ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+    </div>
+  </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
 
@@ -172,34 +200,54 @@ Il pulsante **large** va usato principalmente per la navigazione in pagina (es. 
 {% comment %}Example name: IT25 Button Circle Small{% endcomment %}
 {% capture example %}
 <button class="btn btn-primary btn-icon btn-circle me-4" aria-label="vai avantii">
-  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-left"></use></svg>
 </button>
 <button class="btn btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
   <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
 </button>
 <button class="btn btn-primary btn-icon btn-circle me-4" disabled aria-label="vai avantii">
-  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
 </button>
 <button class="btn lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai avantii">
-  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+  <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-down"></use></svg>
 </button>
 {% endcapture %}{% include example.html content=example %}
 
-#### Dark
+#### Sfondi
 {% comment %}Example name: IT25 Button Circle Dark{% endcomment %}
 {% capture example %}
-<div class="bg-dark p-3">
-  <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" aria-label="vai avantii">
-    <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-  <button class="btn btn-lg btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
-    <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-  <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" disabled aria-label="vai avantii">
-    <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
-  <button class="btn btn-lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai avantii">
-    <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
-  </button>
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="bg-primary p-3">
+      <button class="btn btn-lg btn-outline-white btn-icon btn-circle me-4" aria-label="vai avantii">
+        <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-left"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-outline-primary bg-white btn-icon btn-circle me-4" aria-label="vai avantii">
+        <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-outline-white btn-icon btn-circle me-4" disabled aria-label="vai avantii">
+        <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-outline-primary bg-white btn-icon btn-circle" disabled aria-label="vai avantii">
+        <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-down"></use></svg>
+      </button>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="bg-dark p-3">
+      <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+        <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-left"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-outline-primary btn-icon btn-circle me-4" aria-label="vai avantii">
+        <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-primary btn-icon btn-circle me-4" disabled aria-label="vai avantii">
+        <svg class="icon icon-primary"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-up"></use></svg>
+      </button>
+      <button class="btn btn-lg btn-outline-primary btn-icon btn-circle" disabled aria-label="vai avantii">
+        <svg class="icon icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-down"></use></svg>
+      </button>
+    </div>
+  </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
