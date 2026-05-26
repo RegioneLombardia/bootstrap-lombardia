@@ -1,5 +1,4 @@
 .steppers {
-  /* TODO vecchio wizard da eliminare */
   .steppers-header {
     &.it25-wizard {
       position: relative;
@@ -7,6 +6,7 @@
         justify-content: space-between;
       }
       li {
+        z-index: 1;
         padding: calc($stepper-spacing-v / 2) calc($stepper-spacing-h / 2);
         @include media-breakpoint-up(lg) {
           padding: $stepper-spacing-v $stepper-spacing-h;
@@ -34,35 +34,24 @@
             fill: white;
           }
         }
-      }
-      &::after {
-        content: ' ';
-        width: 96%;
-        background-color: #e5e5e5;
-        position: absolute;
-        height: 0.5em;
-        right: 10px;
-        top: 35%;
-        z-index: -1;
-      }
-    }
-    &.it25-wizard-pin {
-      li {
-        justify-content: center;
-        border-radius: 3rem;
-        width: 3rem;
-        height: 3rem;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        .icon {
-          width: unset;
-          height: unset;
-          margin-right: unset;
+        &.not-first {
+          margin-left: 1rem;
+        }
+        &.not-last {
+          margin-right: 1rem;
         }
       }
       &::after {
-        border-bottom: 3px dashed $primary;
-        height: 1px;
+        content: ' ';
+        width: 100%;
+        background-color: #e5e5e5;
+        position: absolute;
+        height: 0.5em;
+        top: 35%;
+        z-index: -1;
+        @include media-breakpoint-up(lg) {
+          z-index: 0;
+        }
       }
     }
   }
@@ -70,12 +59,12 @@
   // mobile
 
   /* Sostituzioni colori per sfondo dark
-analogue-2-a6 -> $primary-v0
-neutral-1-a10
-neutral-1-a8 -> $white
-neutral-1-a6 -> $primary-100
-neutral-1-a2 -> $primary-200
-*/
+    analogue-2-a6 -> $primary-v0
+    neutral-1-a10
+    neutral-1-a8 -> $white
+    neutral-1-a6 -> $primary-100
+    neutral-1-a2 -> $primary-200
+  */
 
   // dark version
   &.bg-dark {

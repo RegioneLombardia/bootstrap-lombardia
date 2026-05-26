@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
-title: Tabella
-group: informazioni
+title: Table
+group: components
 toc: yes
 ---
 
@@ -19,7 +19,22 @@ Checkbox e radio button invece vanno centrati all’interno della cella.
 
 Si ottiene aggiungendo la classe `table-sm`
 
-{% include html_docs/tabella/tabella_full.html %}
+<div class="table-responsive">
+  <table class="table table-striped table-sm">
+    <caption>
+      Lista richieste rimborso
+    </caption>
+    {% include html_docs/tabella/testata_tabella.html %}
+    <tbody>
+      {% for i in (1..5) %}
+        {% include html_docs/tabella/riga_tabella.html %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+<!--  include html_docs/tabella/tabella_full.html -->
 
 {% highlight html %}
 <div class="table-responsive">
@@ -27,37 +42,9 @@ Si ottiene aggiungendo la classe `table-sm`
     <caption>
       Lista richieste rimborso
     </caption>
-    <thead class="table-light">
-      <tr>
-        <th scope="col" class="text-center">
-          <input id="checkbox_all" type="checkbox" aria-label="Scegli tutte le righe" />
-        </th>
-        <th scope="col" class="text-center">Numero</th>
-        <th scope="col">Stato</th>
-        <th scope="col">Data richiesta</th>
-        <th scope="col" class="text-center">Importo</th>
-        <th scope="col">Cognome</th>
-        <th scope="col">Nome</th>
-        <th scope="col" class="text-center">Stato</th>
-        <th scope="col" colspan="2" class="text-center">Azioni</th>
-      </tr>
-    </thead>
+{% include html_docs/tabella/testata_tabella.html %}
     <tbody>
-      <tr>
-        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1" /></td>
-        <th scope="row" class="text-center">###</th>
-        <td>Chiusa</td>
-        <td>06/09/2018</td>
-        <td class="text-center">1.230,16 €</td>
-        <td>Mario</td>
-        <td>Verdi</td>
-        <td class="text-center">C4</td>
-        <td class="text-center">
-          <a href="#" data-toggle="tooltip" title="Modifica">
-            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-settings"></use></svg>
-          </a>
-        </td>
-      </tr>
+{% include html_docs/tabella/riga_tabella.html %}
       . . .
     </tbody>
   </table>
@@ -72,12 +59,23 @@ Si ottiene aggiungendo la classe `table-sm`
 
 Si ottiene aggiungendo la classe `it25-sm`
 
-{% include html_docs/tabella/tabella_base.html type='it25-sm' %}
+<div class="table-responsive">
+  <table class="table table-striped it25-sm">
+    {% include html_docs/tabella/testata_tabella.html %}
+    <tbody>
+      {% for i in (1..3) %}
+        {% include html_docs/tabella/riga_tabella.html %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
 
 {% highlight html %}
 <div class="table-responsive">
   <table class="table table-striped it25-sm">
-    <thead class="table-light">
+    <thead class="table-primary">
     . . .
     </tbody>
   </table>
@@ -88,13 +86,30 @@ Si ottiene aggiungendo la classe `it25-sm`
 
 Si ottiene aggiungendo la classe `it25-md`
 
-{% include html_docs/tabella/tabella_base.html type='it25-md' %}
+<div class="table-responsive">
+  <table class="table table-striped it25-md">
+    {% include html_docs/tabella/testata_tabella.html %}
+    <tbody>
+      {% for i in (1..3) %}
+        {% include html_docs/tabella/riga_tabella.html %}
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
 {% highlight html %}
 <div class="table-responsive">
   <table class="table table-striped it25-md">
-    <thead class="table-light">
+    <thead class="table-primary">
     . . .
     </tbody>
   </table>
 </div>
 {% endhighlight %}
+
+
+{% capture callout %}
+## {{ site.data.short.dt }}
+Per ulteriori dettagli tecnici sulle tabelle si veda la voce:  
+**[{{ site.data.short.link }}Tabelle]({{ site.baseurl }}/docs/organizzare-i-contenuti/tabelle/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}

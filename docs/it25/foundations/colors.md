@@ -218,9 +218,9 @@ Il terzo colore neutro è il bianco, pertanto non serve una classe specifica.
 `.complementary-(1/2/3)-border-color` : per border color
 
 {% capture callout %}
-#### {{ site.data.short.dt }}
-Per l'applicazione di **colori semantici** al testo e allo sfondo si veda alla voce:
-- **[Colori]({{ site.baseurl }}/docs/utilities/colori/)**
+## {{ site.data.short.dt }}
+Per l'applicazione di **colori semantici** al testo e allo sfondo si veda alla voce:  
+**[{{ site.data.short.link }}Colori]({{ site.baseurl }}/docs/utilities/colori/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
 
 

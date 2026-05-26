@@ -9,3 +9,4 @@ lgdd: "Linee Guida per il design digitale"
 ds: "Design System"
 lg: "Linee Guida di Regione Lombardia"
 dsl: "Design System di Regione Lombardia"
+link: '<svg class="icon icon-sm icon-primary"><use href="/dist/svg/sprites.svg#it-arrow-right"></use></svg>'

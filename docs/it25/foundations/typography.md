@@ -181,8 +181,9 @@ Sanità
 
 
 {% capture callout %}
-#### {{ site.data.short.dt }}
-Per l'utilizzo delle classi di formattazione tipografica si consulti la **[relativa pagina]({{ site.baseurl }}/docs/organizzare-i-contenuti/tipografia/)**.
+## {{ site.data.short.dt }}
+Per l'utilizzo delle classi di formattazione tipografica si consulti la voce:  
+**[{{ site.data.short.link }}Tipografia]({{ site.baseurl }}/docs/organizzare-i-contenuti/tipografia/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
 
 

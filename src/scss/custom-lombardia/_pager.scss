@@ -7,3 +7,17 @@ nav.pagination-wrapper {
     justify-content: flex-end;
   }
 }
+
+@include media-breakpoint-up(sm) {
+  .pagination {
+    .page-item {
+      .page-link {
+        &[aria-current] {
+          background-color: $primary;
+          color: $white;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+}

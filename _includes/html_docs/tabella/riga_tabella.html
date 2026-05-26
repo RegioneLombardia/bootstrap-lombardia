@@ -1,0 +1,20 @@
+      <tr>
+        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1" /></td>
+        <th scope="row" class="text-center">{{i}}</th>
+        <td>Chiusa</td>
+        <td>{{ "now" | date: "%d/%m/%Y" }}</td>
+        <td class="text-center">1.230,16 €</td>
+        <td>Mario</td>
+        <td>Verdi</td>
+        <td class="text-center">C4</td>
+        <td class="text-center">
+          <a class="btn btn-xs" href="#" data-toggle="tooltip" title="Modifica">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pencil"></use></svg>
+            <span class="visually-hidden">modifica</span>
+          </a>
+          <a class="btn btn-xs" href="#" data-toggle="tooltip" title="Elimina">
+            <svg class="icon icon-sm"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close-circle"></use></svg>
+            <span class="visually-hidden">elimina riga</span>
+          </a>
+        </td>
+      </tr>

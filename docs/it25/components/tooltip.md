@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Tooltip
-group: inserimento
+group: components
 toc: true
 ---
 
@@ -99,10 +99,10 @@ Per abilitare il funzionamento dei tooltip, nella pagina deve essere inserito il
 
 
 {% capture callout %}
-#### {{ site.data.short.dt }}
-Per le altre modalità possibili sia di abilitazione dei tooltip sia di impostazione del tipo di comparsa e scomparsa di questi componenti, si veda la **[relativa pagina]({{ site.baseurl }}/docs/componenti/tooltip/)**
+## {{ site.data.short.dt }}
+Per le altre modalità possibili sia di abilitazione dei tooltip sia di impostazione del tipo di comparsa e scomparsa di questi componenti, si veda la voce:  
+**[{{ site.data.short.link }}Tooltip]({{ site.baseurl }}/docs/componenti/tooltip/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
-
 
 
 <script>
@@ -113,3 +113,4 @@ Per le altre modalità possibili sia di abilitazione dei tooltip sia di impostaz
     })
   })    
 </script>
+

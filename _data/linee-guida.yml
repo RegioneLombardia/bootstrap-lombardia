@@ -1,10 +1,16 @@
+- title: Introduzione
+
 - title: Foundations
   pages:
     - title: Colors
     - title: Typography
+    - title: Grid
+    - title: Icons
+    - title: Logo
 
 - title: Navigation
   pages:
+    - title: Breadcrumbs
     - title: Footer
     - title: Header
 
@@ -12,5 +18,17 @@
   pages:
     - title: Button
     - title: Card
+    - title: Cookiebar
+    - title: Pager
+    - title: Progress bar
+    - title: Table
+    - title: Tooltip
+    - title: Wizard
 
 - title: Esempi
+
+- title: Installazione
+
+- title: Breaking change
+
+- title: Crediti

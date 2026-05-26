@@ -43,6 +43,17 @@
   h5 {
     color: $info;
   }
+  h2 {
+    &#documentazione-tecnica {
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.75rem;
+        line-height: 2rem;
+      }
+    }
+  }
   .icon-info {
     fill: $info;
   }

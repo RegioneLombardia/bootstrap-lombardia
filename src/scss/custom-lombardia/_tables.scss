@@ -1,4 +1,15 @@
 .table {
+  th {
+    //background-color: #edf7ed;
+    font-weight: 600;
+  }
+  &.table-sm {
+    td {
+      .btn-xs {
+        padding: 0
+      }
+    }
+  }
   &.it25-sm {
     tr {
       height: 48px;
@@ -6,6 +17,11 @@
     thead,
     tbody {
       vertical-align: middle;
+    }
+    td {
+      .btn-xs {
+        padding: 0
+      }
     }
   }
   &.it25-md {

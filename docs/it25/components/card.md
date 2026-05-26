@@ -265,3 +265,10 @@ toc: yes
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
+
+
+{% capture callout %}
+## {{ site.data.short.dt }}
+Per ulteriori dettagli tecnici sulle card si veda la voce:  
+**[{{ site.data.short.link }}Card]({{ site.baseurl }}/docs/componenti/card/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}

@@ -1,3 +1,19 @@
+## 2.7.0
+### Design System Regione Lombardia v1.3
+
+#### Palette colori
+La forte riduzione del numero dei colori previsti dalla palette e il cambiamento dei colori secondari, può generare cambiamenti cromatici indesiderati  su componenti personalizzati.  
+Si consiglia di testare **tutte le pagine** del vostro sito con un tool di controllo del contrasto colori (es. [pa11y](https://github.com/pa11y/pa11y){:target="\_blank"} o [pa11y-ci](https://github.com/pa11y/pa11y-ci){:target="\_blank"}), per prevenire problemi di accessibilità.
+- Footer
+
+
+### Header
+- Riduzione allo scroll
+
+### Wizard
+Eliminato il **Wizard semplice** in quanto obsoleto riespetto al nuovo Design System
+
+
 ## 2.5.3
 
 [Changelog completo](https://github.com/RegioneLombardia/bootstrap-lombardia/releases/tag/v2.5.3) <svg class="icon steppers-success" aria-hidden="true"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use></svg>  

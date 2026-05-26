@@ -5,6 +5,27 @@ title: Introduzione
 toc: true
 ---
 
+{% capture callout %}
+#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Library e linee guida in fase di aggiornamento
+
+Il sommario è provvisoriamente diviso in due sezioni:
+ - **Linee Guida** contiene la documentazione dei componenti **già adeguati al nuovo** {{ site.data.short.dsl }}
+ - **Linee Guida Old** le voci riguardanti le parti non ancora aggiornate.
+
+Con i prossimi rilasci, mano a mano che altri componenti e la relativa documentazione verranno aggiornati, le voci spariranno dalle "Linee guida OLD" per comparire nelle "Linee Guida".  
+Le voci nella seconda sezione riguardano comunque **componenti tuttora funzionanti ed utilizzabili**.
+
+#### Roadmap
+Il criterio seguito nell'aggiornamento di library e linee guida è quello di fornire per primi gli elementi più evidenti dal punto di vista visivo, per poi completare quelli di dettaglio.
+
+Data l'urgenza è stato giocoforza basarsi sulla versione *2.x* di {{ site.data.short.bi }}, pur sapendo che AGID ha appena rilasciato la versione *3.0.0-beta.0* destinata a sostituirla e contenente sostanziali e impattanti cambiamenti.
+
+Quando Agid rilascerà la versione *3.0.0* definitiva, partirà necessariamente un riallineamento alla nuova versione di {{ site.data.short.bi }}.  
+A tale nuova versione è rimandato l'aggiornamento del componente *Form* (e componenti direttamente collegati)
+{% endcapture %}{% include callout.html content=callout type="warning" %}
+
+
+
 ### Design System
 Il **Design System** è un insieme di *regole*, *modelli interconnessi* e *linee guida* che aiutano a mantenere coerenza e continuità all'interno di un ecosistema digitale per affiancare tutti i designer e gli sviluppatori durante la progettazione di prodotti e servizi digitali.
 

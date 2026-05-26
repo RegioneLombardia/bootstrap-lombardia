@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
-title: Paginatore
-group: navigazione
+title: Pager
+group: components
 toc: true
 ---
 
@@ -81,3 +81,10 @@ Tendenzialmente si trova nella parte in **basso a destra o al centro** della pag
 {% include html_docs/paginatore/paginatore_semplificato.html %}
 {% endcapture %}
 {% include example.html content=example %}
+
+
+{% capture callout %}
+## {{ site.data.short.dt }}
+Per ulteriori dettagli tecnici sul pager si veda la voce:  
+**[{{ site.data.short.link }}Paginazione]({{ site.baseurl }}/docs/componenti/paginazione/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}

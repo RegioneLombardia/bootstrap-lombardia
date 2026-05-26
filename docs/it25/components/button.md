@@ -251,3 +251,9 @@ Il pulsante **large** va usato principalmente per la navigazione in pagina (es. 
   </div>
 </div>
 {% endcapture %}{% include example.html content=example %}
+
+{% capture callout %}
+## {{ site.data.short.dt }}
+Per ulteriori dettagli tecnici sui bottoni si veda la voce:  
+**[{{ site.data.short.link }}Buttons]({{ site.baseurl }}/docs/componenti/buttons/)**
+{% endcapture %}{% include callout.html content=callout type="info" %}
