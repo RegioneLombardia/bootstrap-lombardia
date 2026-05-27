@@ -42,8 +42,17 @@ Per abilitare il funzionamento dei tooltip dell'esempio, è stato inserito nella
   })    
 </script>
 
+
 {% capture callout %}
 ## {{ site.data.short.dt }}
 Questo componente è costruito sull a base del componente di {{ site.data.short.bi }}:  
 **[{{ site.data.short.link }}Steppers]({{ site.baseurl }}/docs/componenti/steppers/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
+
+
+## Breaking change
+
+{% capture callout %}
+Eliminato il **Wizard semplice**: obsoleto rispetto al nuovo Design System.
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}
+

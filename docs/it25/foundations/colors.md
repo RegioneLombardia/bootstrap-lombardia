@@ -224,3 +224,10 @@ Per l'applicazione di **colori semantici** al testo e allo sfondo si veda alla v
 {% endcapture %}{% include callout.html content=callout type="info" %}
 
 
+## Breaking change
+{% capture callout %}
+**Riduzione dei colori della palette** e cambiamento dei colori secondari.  
+Può generare contrasti cromatici indesiderati su componenti personalizzati.  
+Si consiglia di testare **tutte le pagine** con un tool di controllo del contrasto colori (es. [pa11y](https://github.com/pa11y/pa11y){:target="\_blank"} o [pa11y-ci](https://github.com/pa11y/pa11y-ci){:target="\_blank"}), per prevenire problemi di accessibilità.
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}
+

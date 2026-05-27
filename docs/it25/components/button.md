@@ -257,3 +257,9 @@ Il pulsante **large** va usato principalmente per la navigazione in pagina (es. 
 Per ulteriori dettagli tecnici sui bottoni si veda la voce:  
 **[{{ site.data.short.link }}Buttons]({{ site.baseurl }}/docs/componenti/buttons/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
+
+
+## Breaking change
+{% capture callout %}
+Eliminata tipologia bottoni secondari grigi.
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}
