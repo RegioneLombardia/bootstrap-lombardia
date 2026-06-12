@@ -61,6 +61,10 @@ export default function () {
       if (headerCenter.classList.contains('it25-header-sidebar') || headerCenter.classList.contains('it25-header-menu-vert')) {
         return
       }
+      if (!document.getElementsByClassName('it25-menu-orizzontale')[0]) {
+        headerCenter.classList.add('no-menu')
+        return
+      }
       const brandWrapper = headerCenter.getElementsByClassName('it-brand-wrapper')[0].cloneNode(true)
       if (brandWrapper.getElementsByClassName('it25-header-logo').length > 0) {
         if (brandWrapper.getElementsByClassName('it-brand-text').length > 0) {
@@ -68,7 +72,7 @@ export default function () {
         }
       }
       let searchWrapper
-      if (headerCenter.getElementsByClassName('it-search-wrapper')) {
+      if (headerCenter.getElementsByClassName('it-search-wrapper')[0]) {
         searchWrapper = headerCenter.getElementsByClassName('it-search-wrapper')[0].cloneNode(true)
         searchWrapper.classList.add('d-none', 'd-lg-flex')
       }
@@ -80,7 +84,7 @@ export default function () {
           if (!isCloned) {
             isCloned = true
             if (searchWrapper) {
-              document.getElementsByClassName('menu-wrapper')[0].appendChild(searchWrapper)
+             document.getElementsByClassName('menu-wrapper')[0].appendChild(searchWrapper)
             }
             document.getElementsByClassName('menu-wrapper')[0].insertBefore(brandWrapper, document.getElementsByClassName('menu-wrapper')[0].firstChild)
           }

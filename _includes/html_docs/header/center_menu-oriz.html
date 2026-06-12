@@ -21,14 +21,15 @@
               </div>
 
               <div class="it-right-zone">
+                {% if include.search=="yes" %}
                 <div class="it-search-wrapper">
                   <span class="d-none d-md-block">Cerca</span>
                   <a class="search-link rounded-icon" aria-label="Cerca nel sito" href="#">
                     <svg class="icon"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-search"></use></svg>
                   </a>
                 </div>
+                {% endif %}
               </div>
-
 
             </div>
           </div>

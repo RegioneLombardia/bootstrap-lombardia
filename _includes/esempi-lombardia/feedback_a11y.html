@@ -1,0 +1,90 @@
+<div class="row">
+  <div class="form-group">
+    <label for="servizio">Servizio interessato *</label>
+    <input type="text" class="form-control" id="servizio" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <div class="select-wrapper">
+      <label for="tipoSegnalazione">
+        <span data-bs-toggle="tooltip" data-bs-placement="top"
+						title="1=Segnala un contenuto o funzionalità che non è accessibile. 2=Richiesta di una versione alternativa di un contenuto non conforme (esempio: PDF non accessibile)" id="infoTipoSegnalazione">
+							Tipo di segnalazione *
+							<sup>
+								<svg class="icon icon-sm icon-info">
+									<use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+								</svg>
+							</sup>
+						</span>
+      </label>
+      <select id="tipoSegnalazione" title="Scegli una opzione" class="form-control" required>
+        <option selected="" value="">scegli un'opzione...</option>
+        <option value="01">1 - Problema di accessibilità</option>
+        <option value="02">2 - Richiesta formato alternativo</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="nome">Nome *</label>
+    <input type="text" class="form-control" id="nome" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="cognome">Cognome *</label>
+    <input type="text" class="form-control" id="cognome" autocomplete="last-name" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputEmail">Email *</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="inserisci il tuo indirizzo email" autocomplete="email"/>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="telefono">Telefono (facoltativo)</label>
+    <input type="number" class="form-control" id="telefono" autocomplete="phone-number" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="url">URL della pagina interssata (facoltativo)</label>
+    <input type="text" class="form-control" id="url" placeholder="https://..."/>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="descrizione">Descrizione *</label>
+  <textarea class="form-control" id="descrizione" rows="6"
+    placeholder="Descrivi il problema riscontrato o il contenuto di cui hai bisogno in formato alternativo"></textarea>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="tecnologiaAssistiva">Tecnologia assistiva utilizzata (facoltativo)</label>
+    <input type="text" class="form-control" id="tecnologiaAssistiva" placeholder="esempi: NVDA 2024.1, VoiceOver su iOS 17"/>
+  </div>
+</div>
+
+<div class="row mb-5">
+  <div class="col-12 col-md-6">
+    <div class="form-upload">
+      <label for="upload">
+        <span data-bs-toggle="upload" data-bs-placement="right"
+						title="Screenshot o screencast del problema. Estensioni ammesse: JPG, PNG, PDF, MP4. Dimensione massima: 10 MB." id="infoTipoSegnalazione">
+						Allegato (facoltativo)
+          <sup>
+            <svg class="icon icon-sm icon-info">
+              <use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </span>
+      </label>
+      <input type="file" name="upload" id="upload" multiple="multiple" class="form-control" required />
+    </div>
+  </div>
+</div>

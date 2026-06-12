@@ -2,6 +2,7 @@
 layout: base
 title: es. Form
 ---
+<!--
 <style>
 .form-group {
   display: flex;
@@ -11,7 +12,7 @@ title: es. Form
   display: flex ;
 }
 </style>
-
+-->
 <header class="it-header-wrapper it-header-sticky"
   data-bs-position-type="fixed"
   data-bs-toggle="sticky"
@@ -19,7 +20,7 @@ title: es. Form
   data-bs-sticky-class-name="is-sticky">
   {% include html_docs/header/topbar.html dropdowns="yes" language="yes" logged="yes" %}
   <div class="it-nav-wrapper">
-    {% include html_docs/header/center_menu-oriz.html logo="yes" textlogo="yes" %}
+    {% include html_docs/header/center_menu-oriz.html logo="yes" textlogo="yes" search="yes" %}
     {% include html_docs/header/navbar_oriz.html %}
   </div>
 </header>
@@ -36,11 +37,9 @@ title: es. Form
       {% include esempi-lombardia/toggles.html %}
 <!-- *****************************************************************************************************+ -->
       <div class="row">
-        <div class="col-12">
-          <div class="float-end">
-            <button type="button" class="btn btn-outline-primary">Annulla</button>
-            <button type="submit" class="btn btn-primary">Invio</button>
-          </div>
+        <div class="col-12 mt-4">
+          <button type="submit" class="btn btn-primary me-4">Invio</button>
+          <button type="button" class="btn btn-outline-primary">Annulla</button>
         </div>
       </div>
 <!-- *****************************************************************************************************+ -->

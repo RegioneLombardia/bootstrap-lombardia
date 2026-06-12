@@ -1,0 +1,102 @@
+---
+layout: base
+title: es. Feedback accessibilità
+---
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+  {% include html_docs/header/topbar.html dropdowns="yes" %}
+  <div class="it-nav-wrapper">
+    {% include html_docs/header/center_menu-oriz.html textlogo="yes" %}
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1 class="my-3 fw-normal">Feedback accessibilità</h1>
+    <form class="my-5" id="justValidate" action="index.html" method="post">
+      {% include esempi-lombardia/feedback_a11y.html %}
+<!-- *****************************************************************************************************+ -->
+      <div class="row">
+        <div class="col-12 mt-3">
+          <button type="submit" class="btn btn-primary me-4">Invio segnalazione</button>
+          <button type="button" class="btn btn-outline-primary">Annulla</button>
+        </div>
+      </div>
+<!-- *****************************************************************************************************+ -->
+    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div aria-live="polite" id="errorMsgContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end container -->
+</main>
+{% include html_docs/footer/footer.html %}
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const errorMessage =
+      '<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></div>'
+    const errorWrapper = document.querySelector('#errorMsgContainer')
+    const validate = new bootstrap.FormValidate('#justValidate', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: false,
+    })
+
+    validate
+      .addField('#servizio', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#tipoSegnalazione', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#nome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#cognome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .addField('#inputEmail', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Inserire email corretta',
+        },
+      ])
+      .addField('#descrizione', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .onFail((fields) => {
+        errorWrapper.innerHTML = ''
+        errorWrapper.innerHTML = errorMessage
+        errorWrapper.scrollIntoView()
+      })
+  })
+</script>

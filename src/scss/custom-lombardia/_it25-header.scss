@@ -101,6 +101,12 @@
   &.it-header-sticky {
     &.is-sticky {
       @include media-breakpoint-up(lg) {
+        .it-header-center-wrapper {
+          &.no-menu {
+            display: flex;
+            border-bottom: 1px solid #e1e7ea;
+          }
+        }
         .it-header-navbar-wrapper {
           .menu-wrapper {
             .it-search-wrapper {

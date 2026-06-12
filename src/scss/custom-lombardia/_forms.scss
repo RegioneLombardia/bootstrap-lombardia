@@ -59,6 +59,7 @@ input {
   opacity: 0;
 }
 .form-control {
+  font-weight: 400;
   background-color: transparent;
   &.just-validate-success-field ~ .warning-feedback {
     display: block;

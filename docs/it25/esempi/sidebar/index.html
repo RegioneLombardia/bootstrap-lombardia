@@ -4,23 +4,13 @@ title: es. Sidebar
 description: Pagina completa con form e sidebar
 double-logo: true
 ---
-<style>
-.form-group {
-  display: flex;
-  flex-flow: row wrap;
-}
-.row {
-  display: flex ;
-}
-</style>
-
 <header class="it-header-wrapper it-header-sticky"
   data-bs-position-type="fixed"
   data-bs-toggle="sticky"
   data-bs-target="#header-nav-wrapper"
   data-bs-sticky-class-name="is-sticky">
    {% include html_docs/header/topbar.html dropdowns="yes" language="yes" logged="yes" %}
-   {% include html_docs/header/center_sidebar.html textlogo="yes" %}
+   {% include html_docs/header/center_sidebar.html textlogo="yes" search="yes" %}
 </header>
 
 <main>

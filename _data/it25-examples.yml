@@ -32,3 +32,6 @@
     - name: Cookiebar
       url: cookiebar
       description: "Barra di avviso sui cookie."
+    - name: Feedback accessibilità
+      url: feedback-a11y
+      description: "Modulo di feedback per l'accessibilità."
