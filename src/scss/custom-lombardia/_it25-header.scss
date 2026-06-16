@@ -15,6 +15,14 @@
         font-size: 1rem;
         padding-right: 0;
       }
+      &.navbar-brand {
+        padding-top: $header-slim-brand-padding;
+        padding-bottom: $header-slim-brand-padding;
+      }
+    }
+    .it-header-slim-right-zone,
+    .header-slim-right-zone {
+      height: $header-slim-height;
     }
     .dropdown-menu {
       border: 1px solid $primary;

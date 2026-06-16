@@ -84,7 +84,7 @@ export default function () {
           if (!isCloned) {
             isCloned = true
             if (searchWrapper) {
-             document.getElementsByClassName('menu-wrapper')[0].appendChild(searchWrapper)
+              document.getElementsByClassName('menu-wrapper')[0].appendChild(searchWrapper)
             }
             document.getElementsByClassName('menu-wrapper')[0].insertBefore(brandWrapper, document.getElementsByClassName('menu-wrapper')[0].firstChild)
           }

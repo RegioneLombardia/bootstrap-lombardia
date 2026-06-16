@@ -1,5 +1,5 @@
       <tr>
-        <td class="text-center"><input id="checkbox1" type="checkbox" aria-label="Scegli riga 1" /></td>
+        <td class="text-center"><input id="checkbox{{include.es-nr}}{{i}}" type="checkbox" aria-label="Scegli riga {{i}}" /></td>
         <th scope="row" class="text-center">{{i}}</th>
         <td>Chiusa</td>
         <td>{{ "now" | date: "%d/%m/%Y" }}</td>

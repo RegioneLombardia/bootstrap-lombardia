@@ -73,9 +73,9 @@
 <div class="row mb-5">
   <div class="col-12 col-md-6">
     <div class="form-upload">
-      <label for="upload">
-        <span data-bs-toggle="upload" data-bs-placement="right"
-						title="Screenshot o screencast del problema. Estensioni ammesse: JPG, PNG, PDF, MP4. Dimensione massima: 10 MB." id="infoTipoSegnalazione">
+      <label for="infoUpload">
+        <span data-bs-toggle="infoUpload" data-bs-placement="right"
+						title="Screenshot o screencast del problema. Estensioni ammesse: JPG, PNG, PDF, MP4. Dimensione massima: 10 MB." id="infoUpload">
 						Allegato (facoltativo)
           <sup>
             <svg class="icon icon-sm icon-info">
@@ -84,7 +84,7 @@
           </sup>
         </span>
       </label>
-      <input type="file" name="upload" id="upload" multiple="multiple" class="form-control" required />
+      <input type="file" name="upload" id="upload" multiple="multiple" class="form-control" aria-label="percorso del file da caricare" />
     </div>
   </div>
 </div>

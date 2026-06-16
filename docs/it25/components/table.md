@@ -24,10 +24,10 @@ Si ottiene aggiungendo la classe `table-sm`
     <caption>
       Lista richieste rimborso
     </caption>
-    {% include html_docs/tabella/testata_tabella.html %}
+    {% include html_docs/tabella/testata_tabella.html es-nr=1%}
     <tbody>
       {% for i in (1..5) %}
-        {% include html_docs/tabella/riga_tabella.html %}
+        {% include html_docs/tabella/riga_tabella.html es-nr=1%}
       {% endfor %}
     </tbody>
   </table>
@@ -42,9 +42,9 @@ Si ottiene aggiungendo la classe `table-sm`
     <caption>
       Lista richieste rimborso
     </caption>
-{% include html_docs/tabella/testata_tabella.html %}
+{% include html_docs/tabella/testata_tabella.html es-nr=2 %}
     <tbody>
-{% include html_docs/tabella/riga_tabella.html %}
+{% include html_docs/tabella/riga_tabella.html es-nr=2%}
       . . .
     </tbody>
   </table>
@@ -61,10 +61,10 @@ Si ottiene aggiungendo la classe `it25-sm`
 
 <div class="table-responsive">
   <table class="table table-striped it25-sm">
-    {% include html_docs/tabella/testata_tabella.html %}
+    {% include html_docs/tabella/testata_tabella.html es-nr=3 %}
     <tbody>
       {% for i in (1..3) %}
-        {% include html_docs/tabella/riga_tabella.html %}
+        {% include html_docs/tabella/riga_tabella.html es-nr=3 %}
       {% endfor %}
     </tbody>
   </table>
