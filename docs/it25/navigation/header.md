@@ -197,7 +197,7 @@ All'interno del `<div class="it-header-slim-right-zone">` vanno posti i dropdown
 
 ---
 ### Center
-Il codice per la pate centrale cambia leggermente a seconda del tipo di menù di navigazione pincipale scelto.
+Il codice per la parte centrale cambia leggermente a seconda del tipo di menù di navigazione pincipale scelto.
 
 #### orizzontale
 {% highlight html %}
@@ -215,6 +215,12 @@ Il codice per la pate centrale cambia leggermente a seconda del tipo di menù di
 {% endhighlight %}
 
 
+**Nota**: Nel caso non esistano né logo né acronimo, e quindi l'unica cosa che compare nel *center* sia il nome dell'applicativo, vanno tolte le classi `d-none d-md-inline` dal tag  
+```
+<span class="it25-app-name d-inline">Nome applicativo</span>
+```
+e sostituite con `d-inline`, in modo che il nome applicativo compaia anche sugli schermi di piccole dimensioni.  
+Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visualizzarne, sugli schermi piccoli, una versione abbreviata sempre giocando sulle classi **[{{ site.data.short.link }}Display]({{ site.baseurl }}/docs/organizzare-gli-spazi/display/)**
 
 ## Attivazione 
 **Per attivare il funzionamento** di tutti i tipi di menù, **è necessario invocare la funzione** :

@@ -21,15 +21,21 @@
                     </svg>
                   </button>
                 </div>
+
                 <div class="it-brand-wrapper d-flex justify-content-start">
                   {% if include.logo=="yes" %}
-                  <img src="{{ site.baseurl }}/dist/assets/img/logo_inlombardia.svg" alt="logo in lombardia" class="it25-header-logo" />
+                  <a href="#">
+                    <img src="{{ site.baseurl }}/dist/assets/img/logo_inlombardia.svg" alt="logo in lombardia" class="it25-header-logo" />
+                  </a>
                   {% endif %}
-                  {% if include.textlogo=="yes" %}
                   <div class="it-brand-text">
-                    <div class="it-brand-title d-inline">ACRONIMO <span class="d-none d-md-inline">Nome applicativo</span></div>
+                    <div class="it-brand-title d-inline">
+                    {% if include.textlogo=="yes" %}
+                      <span class="it25-text-logo">Text Logo </span>
+                    {% endif %}
+                    <span class="it25-app-name d-none d-md-inline">Nome applicativo</span>
+                    </div>
                   </div>
-                  {% endif %}
                 </div>
               </div>
 

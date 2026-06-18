@@ -53,12 +53,13 @@
     }
     .it-brand-wrapper {
       margin-left: 6px;
-      .it25-header-logo {
+      .it25-header-logo,
+      .it25-text-logo {
         margin-right: $header-center-icon-margin;
         height: 32px;
       }
       .it-brand-text {
-        margin-left: 12px;
+        //margin-left: 12px;
       }
       .it-brand-title {
         font-size: $header-center-h2-size-mob;

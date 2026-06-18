@@ -70,6 +70,11 @@ export default function () {
         if (brandWrapper.getElementsByClassName('it-brand-text').length > 0) {
           brandWrapper.getElementsByClassName('it-brand-text')[0].classList.add('d-none')
         }
+      } else {
+        if (brandWrapper.getElementsByClassName('it25-text-logo').length > 0) {
+          brandWrapper.getElementsByClassName('it25-app-name')[0].classList = 'it25-app-name d-none'
+          console.log(brandWrapper.getElementsByClassName('it25-app-name')[0].classList)
+        }
       }
       let searchWrapper
       if (headerCenter.getElementsByClassName('it-search-wrapper')[0]) {
