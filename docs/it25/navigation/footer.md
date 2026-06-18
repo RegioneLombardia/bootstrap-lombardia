@@ -29,3 +29,11 @@ Eventuali loghi in numero superiore a 3, o comunque se a colori, devono essere p
 {% capture example %}
 {% include html_docs/footer/footer.html multilogo="yes"%}
 {% endcapture %}{% include example.html content=example %}
+
+
+
+## Breaking change
+{% capture callout %}
+**Nuovo Footer**  
+Cambiamento aspetto grafico e struttura dei link
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}

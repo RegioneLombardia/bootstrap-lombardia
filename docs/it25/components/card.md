@@ -272,3 +272,10 @@ toc: yes
 Per ulteriori dettagli tecnici sulle card si veda la voce:  
 **[{{ site.data.short.link }}Card]({{ site.baseurl }}/docs/componenti/card/)**
 {% endcapture %}{% include callout.html content=callout type="info" %}
+
+
+
+## Breaking change
+{% capture callout %}
+Cambiati struttura e aspetto
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}

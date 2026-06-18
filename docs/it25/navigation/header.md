@@ -228,3 +228,10 @@ Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visuali
 bootstrap.it25Header()
 ```
 
+## Breaking change
+{% capture callout %}
+**Nuovo Header**  
+- Cambiamento struttura
+- Comportamento di default: riduzione dimensioni allo scroll verso il basso.
+- Duplicazione del logo applicativo nella navbar del menu orizzontale.
+{% endcapture %}{% include callout-breaking.html content=callout version="2.7.0" type="danger" %}
