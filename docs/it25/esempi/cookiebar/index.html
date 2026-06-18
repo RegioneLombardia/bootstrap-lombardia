@@ -11,11 +11,11 @@
 
 <title>CookieBar · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202606181342" rel="stylesheet" />
 
 <!-- Documentation extras -->
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202606181342" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -74,7 +74,7 @@
   <p>Questo sito utilizza cookie tecnici, analytics e di terze parti. <br />Proseguendo nella navigazione accetti l’utilizzo dei cookie.</p>
   <div class="mt-4">
     <button data-bs-accept="cookiebar" class="btn btn-primary me-3">ACCETTO<span class="visually-hidden"> i cookies</span></button>
-    <a href="#" class="me-3">Preferenze<span class="visually-hidden">cookies</span></a>
+    <button class="btn btn-outline-white me-3">ACCETTA SOLO NECESSARI</button>
     <a href="#" class="">Privacy policy</a>
   </div>
 </section>
@@ -83,67 +83,256 @@
   <a class="visually-hidden-focusable" href="#main">Vai al contenuto principale</a>
 </div>
 
-<header>
-<div class="it-header-slim-wrapper it25-top-bar">
-  <div class="container-fluid">
+<header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+    <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
+            </a>
+            <div class="it-header-slim-right-zone">
+              
+              <div class="nav-item">
+  <a href="#" class="d-none d-md-block">Esplora i siti di Regione
+    <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-external-link"></use></svg>
+  </a>
+</div>
+
+<!-- scelta lingua -->
+<div class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
+    <span>ITA</span>
+    <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+  </a>
+  <div class="dropdown-menu">
     <div class="row">
       <div class="col-12">
-        <div class="it-header-slim-wrapper-content">
-          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
-            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" alt="logo regione lombardia" class="d-md-none" />
+        <div class="link-list-wrapper">
+          <ul class="link-list">
+            <li><a class="dropdown-item list-item" href="#"><span>ITA<span class="visually-hidden">selezionata</span></span></a></li>
+            <li><a class="dropdown-item list-item" href="#"><span>ENG</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- funzioni per utente loggato -->
+<div class="nav-item dropdown d-inline">
+  <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
+    <span>Nome Cognome</span>
+    <svg class="icon icon-white" aria-label="utente">
+      <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use>
+    </svg>
+    <svg class="icon icon-white" aria-label="espandi">
+      <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+    </svg>
+  </a>
+  <div class="dropdown-menu" data-popper-placement="bottom-end">
+    <div class="link-list-wrapper">
+      <ul class="link-list">
+        <li>
+          <a class="list-item" href="#"><span>Impostazioni</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 2</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 3</span></a>
+        </li>
+        <li>
+          <a class="list-item" href="#"><span>Voce 4</span></a>
+        </li>
+        <li>
+          <span class="divider" role="separator"></span>
+        </li>
+        <li>
+          <a class="list-item" href="#">
+            <svg class="icon icon-primary">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-logout"></use>
+            </svg>
+            <span>Logout</span>
           </a>
-          <div class="header-slim-right-zone">
-            <div class="nav-item dropdown">
-              <a aria-expanded="false" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="#" data-bs-display="static">
-                <span>Lorem ipsum dolor sit</span>
-                <svg class="icon icon-white" aria-label="utente">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-user"></use>
-                </svg>
-                <svg class="icon icon-white" aria-label="espandi">
-                  <use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
-                </svg>
-              </a>
-              <div class="dropdown-menu" data-popper-placement="bottom-end">
-                <div class="link-list-wrapper">
-                  <ul class="link-list">
-                    <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
-                    </li>
-                    <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
-                    </li>
-                    <li>
-                      <a class="list-item" href="#"><span>Lorem ipsum dolor sit</span></a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+              
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="it-header-center-wrapper it25-barra-ist">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12">
-        <div class="it-header-center-content-wrapper">
-          <div class="it-brand-wrapper">
-            <a href="#">
-              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl.png"
-                alt="logo regione lombardia" class="it25-header-logo d-none d-md-block" />
-              <div class="it-brand-text">ACRONIMO Nome applicativo</div>
-            </a>
+  <div class="it-nav-wrapper">
+        <div class="it-header-center-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="it-header-center-content-wrapper d-flex justify-content-between">
+
+              <div class="it25-left-zone d-flex justify-content-start">
+                <div class="it-brand-wrapper d-flex">
+                  
+                  <a href="#">
+                    <img src="/bootstrap-lombardia/dist/assets/img/logo_inlombardia.svg" alt="logo in lombardia" class="it25-header-logo" />
+                  </a>
+                  
+                  <div class="it-brand-text">
+                    <div class="it-brand-title d-inline">
+                    
+                      <span class="it25-text-logo">Text Logo </span>
+                    
+                     <span class="it25-app-name d-none d-md-inline">Nome applicativo</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="it-right-zone">
+                
+                <div class="it-search-wrapper">
+                  <span class="d-none d-md-block">Cerca</span>
+                  <a class="search-link rounded-icon" aria-label="Cerca nel sito" href="#">
+                    <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-search"></use></svg>
+                  </a>
+                </div>
+                
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
+        <div class="it-header-navbar-wrapper it25-menu-orizzontale" id="header-nav-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <!--start nav-->
+            <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+              <button class="custom-navbar-toggler" type="button" aria-controls="navC1" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#navC1">
+                <svg class="icon icon-primary">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-burger"></use>
+                </svg>
+              </button>
+              <div class="navbar-collapsable" id="navC1" tabindex="-1">
+                <div class="close-div">
+                  <button class="btn close-menu" type="button">
+                    <span class="visually-hidden">Nascondi la navigazione</span>
+                    <svg class="icon">
+                      <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close-big"></use>
+                    </svg>
+                  </button>
+                </div>
+                <div class="menu-wrapper justify-content-lg-between">
+                  <ul class="navbar-nav">
+  <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
+  <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
+  <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdownC1">
+      <span>Menu Dropdown</span>
+      <svg class="icon icon-xs">
+        <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+      </svg>
+    </a>
+    <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdownC1">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a></li>
+          <li><span class="divider"></span></li>
+          <li><a class="dropdown-item list-item" href="#"><span>Link lista 4</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </li>
+  <!-- megamenu -->
+  <li class="nav-item dropdown megamenu">
+    <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-5" data-focus-mouse="false">
+        <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
+    </button>
+    <div class="dropdown-menu" role="region" aria-labelledby="megamenu-5">
+      <div class="megamenu pb-5 pt-3 py-lg-0">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4 px-0">
+            <div class="row">
+              <div class="col-12 it-vertical it-description pb-lg-3">
+                <div class="description-content ps-4 ps-sm-5 ms-3">
+                    <h4 class="fw-normal">Argomenti</h4>
+                  <p>
+                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
+                </li>
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
+                </li>
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="link-list-wrapper">
+              <ul class="link-list">
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
+                </li>
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
+                </li>
+                <li class="border-bottom">
+                  <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </header>
 
 <main id="main">
@@ -179,36 +368,75 @@
   <br/>
   <br/>
 </main>
-<footer class="footer">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 my-4 fw-bold title">ACCREDITAS Sistema di accreditamento</div>
-    </div>
-    <div class="row">
-      <div class="col-12 mt-3">
-        <ul class="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
-          <li class="list-inline-item"><a href="">Privacy</a></li>
-          <li class="list-inline-item"><a href="">Accessibilità</a></li>
-          <li class="list-inline-item"><a href="">Cookie policy</a></li>
-          <li class="list-inline-item"><a href="">Note legali</a></li>
-          <li class="list-inline-item"><a href="">Contatti</a></li>
-          <li class="list-inline-item"><a href="">Credits</a></li>
-        </ul>
+<footer class="it-footer">
+
+  <div class="it-footer-main">
+    <div class="container-fluid">
+      <div class="row clearfix mb-3">
+        <div class="col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0">
+          <img src="/bootstrap-lombardia/dist/assets/img/sbaffo.svg" class="float-end img-fluid" alt="logo regione lombardia" />
+        </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12 my-3 copyright">
-        <span class="d-inline-block">&copy; Copyright Regione Lombardia tutti i diritti riservati</span>
-        <span class="d-inline-block"> - C.F. 80050050154</span>
-        <span class="d-inline-block"> - Piazza Città di Lombardia 1</span>
-        <span class="d-inline-block"> - 20124 Milano</span>
-      </div>
+    <div class="container-fluid mt-3 px-3 px-md-5">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 pb-3">
+            <div>&copy; Copyright Regione Lombardia tutti i diritti riservati</div>
+            <div>C.F. 80050050154</div>
+            <div>Piazza Città di Lombardia 1 - 20124 Milano</div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Contatti</a></li>
+                <li><a class="list-item" href="#">Redazione</a></li>
+                <li><a class="list-item" href="#">URP</a></li>
+                <li><a class="list-item" href="#">Pubblicità legale</a></li>
+                <li><a class="list-item" href="#">Note legali</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Accessibilità</a></li>
+                <li><a class="list-item" href="#">E015</a></li>
+                <li><a class="list-item" href="#">Intranet</a></li>
+                <li><a class="list-item" href="#">Mappa del sito</a></li>
+                <li><a class="list-item" href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Cookie policy</a></li>
+                <li><a class="list-item" href="#">Impostazione Cookie</a></li>
+                <li><a class="list-item" href="#">Social Media Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2"/>
+          </a>
+          
+          <div class="h6 fw-normal me-4 mb-2">ACRONIMO Nome applicativo</div>
+          
+          
+        </div>
+      </section>
     </div>
   </div>
 </footer>
 
+
  
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202512311348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202606181342"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')

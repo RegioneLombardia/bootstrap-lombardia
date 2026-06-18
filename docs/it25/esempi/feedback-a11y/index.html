@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="author" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="generator" content="Jekyll v4.4.1" />
+
+<title>es. Feedback accessibilità · Bootstrap Lombardia</title>
+<!-- Bootstrap core CSS -->
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202606181342" rel="stylesheet" />
+
+<!-- Documentation extras -->
+
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202606181342" rel="stylesheet" />
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+<!-- Favicons -->
+<link rel="icon" href="/bootstrap-lombardia/favicon.ico" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+<link rel="icon" href="/bootstrap-lombardia/docs/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+<link rel="mask-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/safari-pinned-tab.svg" color="#0066CC" />
+<link rel="apple-touch-icon" href="/bootstrap-lombardia/docs/assets/img/favicons/apple-touch-icon.png" />
+<link rel="manifest" href="/bootstrap-lombardia/site.webmanifest" />
+<meta name="msapplication-config" content="/bootstrap-lombardia/browserconfig.xml" />
+<meta name="theme-color" content="#0066CC" />
+ <!-- Twitter -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@designersITA" />
+<meta name="twitter:creator" content="Azienda Regionale Innovazione e Acquisti" />
+<meta name="twitter:title" content="es. Feedback accessibilità" />
+<meta name="twitter:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta name="twitter:image" content="/docs/assets/img/favicons/social-card.png" />
+
+<!-- Facebook -->
+<meta property="og:url" content="/docs/it25/esempi/feedback-a11y/" />
+<meta property="og:title" content="es. Feedback accessibilità" />
+<meta property="og:description" content="Bootstrap Lombardia è una customizzazione di Boostrap Italia per la creazione di applicazioni web per la Regione Lombardia nel pieno rispetto delle Linee guida di design per i servizi web della PA" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="/docs/assets/img/favicons/social-card.png" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', 'kjpRNRPp1y']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+
+
+  </head>
+  <body>
+    <header class="it-header-wrapper it-header-sticky"
+  data-bs-position-type="fixed"
+  data-bs-toggle="sticky"
+  data-bs-target="#header-nav-wrapper"
+  data-bs-sticky-class-name="is-sticky">
+    <div class="it-header-slim-wrapper it25-top-bar">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="it-header-slim-wrapper-content">
+            <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+              <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" />
+            </a>
+            <div class="it-header-slim-right-zone">
+              
+              <div class="nav-item">
+  <a href="#" class="d-none d-md-block">Esplora i siti di Regione
+    <svg class="icon"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-external-link"></use></svg>
+  </a>
+</div>
+
+
+
+
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="it-nav-wrapper">
+        <div class="it-header-center-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="it-header-center-content-wrapper d-flex justify-content-between">
+
+              <div class="it25-left-zone d-flex justify-content-start">
+                <div class="it-brand-wrapper d-flex">
+                  
+                  <div class="it-brand-text">
+                    <div class="it-brand-title d-inline">
+                    
+                      <span class="it25-text-logo">Text Logo </span>
+                    
+                     <span class="it25-app-name d-none d-md-inline">Nome applicativo</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="it-right-zone">
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <h1 class="my-3 fw-normal">Feedback accessibilità</h1>
+    <form class="my-5" id="justValidate" action="index.html" method="post">
+      <div class="row">
+  <div class="form-group">
+    <label for="servizio">Servizio interessato *</label>
+    <input type="text" class="form-control" id="servizio" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <div class="select-wrapper">
+      <label for="tipoSegnalazione">
+        <span data-bs-toggle="tooltip" data-bs-placement="top"
+						title="1=Segnala un contenuto o funzionalità che non è accessibile. 2=Richiesta di una versione alternativa di un contenuto non conforme (esempio: PDF non accessibile)" id="infoTipoSegnalazione">
+							Tipo di segnalazione *
+							<sup>
+								<svg class="icon icon-sm icon-info">
+									<use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+								</svg>
+							</sup>
+						</span>
+      </label>
+      <select id="tipoSegnalazione" title="Scegli una opzione" class="form-control" required>
+        <option selected="" value="">scegli un'opzione...</option>
+        <option value="01">1 - Problema di accessibilità</option>
+        <option value="02">2 - Richiesta formato alternativo</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="nome">Nome *</label>
+    <input type="text" class="form-control" id="nome" autocomplete="given-name" />
+  </div>
+  <div class="form-group col-md-6">
+    <label for="cognome">Cognome *</label>
+    <input type="text" class="form-control" id="cognome" autocomplete="last-name" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group col-md-6">
+    <label for="inputEmail">Email *</label>
+    <input type="email" class="form-control" id="inputEmail" placeholder="inserisci il tuo indirizzo email" autocomplete="email"/>
+  </div>
+  <div class="form-group col-md-6">
+    <label for="telefono">Telefono (facoltativo)</label>
+    <input type="number" class="form-control" id="telefono" autocomplete="phone-number" />
+  </div>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="url">URL della pagina interssata (facoltativo)</label>
+    <input type="text" class="form-control" id="url" placeholder="https://..."/>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="descrizione">Descrizione *</label>
+  <textarea class="form-control" id="descrizione" rows="6"
+    placeholder="Descrivi il problema riscontrato o il contenuto di cui hai bisogno in formato alternativo"></textarea>
+</div>
+
+<div class="row">
+  <div class="form-group">
+    <label for="tecnologiaAssistiva">Tecnologia assistiva utilizzata (facoltativo)</label>
+    <input type="text" class="form-control" id="tecnologiaAssistiva" placeholder="esempi: NVDA 2024.1, VoiceOver su iOS 17"/>
+  </div>
+</div>
+
+<div class="row mb-5">
+  <div class="col-12 col-md-6">
+    <div class="form-upload">
+      <label for="infoUpload">
+        <span data-bs-toggle="infoUpload" data-bs-placement="right"
+						title="Screenshot o screencast del problema. Estensioni ammesse: JPG, PNG, PDF, MP4. Dimensione massima: 10 MB." id="infoUpload">
+						Allegato (facoltativo)
+          <sup>
+            <svg class="icon icon-sm icon-info">
+              <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+            </svg>
+          </sup>
+        </span>
+      </label>
+      <input type="file" name="upload" id="upload" multiple="multiple" class="form-control" aria-label="percorso del file da caricare" />
+    </div>
+  </div>
+</div>
+
+<!-- *****************************************************************************************************+ -->
+      <div class="row">
+        <div class="col-12 mt-3">
+          <button type="submit" class="btn btn-primary me-4">Invio segnalazione</button>
+          <button type="button" class="btn btn-outline-primary">Annulla</button>
+        </div>
+      </div>
+<!-- *****************************************************************************************************+ -->
+    </form>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div aria-live="polite" id="errorMsgContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- end container -->
+</main>
+<footer class="it-footer">
+
+  <div class="it-footer-main">
+    <div class="container-fluid">
+      <div class="row clearfix mb-3">
+        <div class="col-xl-4 offset-xl-8 col-md-6 offset-md-6 col-sm-9 offset-sm-3 pe-0">
+          <img src="/bootstrap-lombardia/dist/assets/img/sbaffo.svg" class="float-end img-fluid" alt="logo regione lombardia" />
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-3 px-3 px-md-5">
+      <section class="mb-4">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 pb-3">
+            <div>&copy; Copyright Regione Lombardia tutti i diritti riservati</div>
+            <div>C.F. 80050050154</div>
+            <div>Piazza Città di Lombardia 1 - 20124 Milano</div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Contatti</a></li>
+                <li><a class="list-item" href="#">Redazione</a></li>
+                <li><a class="list-item" href="#">URP</a></li>
+                <li><a class="list-item" href="#">Pubblicità legale</a></li>
+                <li><a class="list-item" href="#">Note legali</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Accessibilità</a></li>
+                <li><a class="list-item" href="#">E015</a></li>
+                <li><a class="list-item" href="#">Intranet</a></li>
+                <li><a class="list-item" href="#">Mappa del sito</a></li>
+                <li><a class="list-item" href="#">Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="link-list-wrapper">
+              <ul class="footer-list link-list clearfix">
+                <li><a class="list-item" href="#">Cookie policy</a></li>
+                <li><a class="list-item" href="#">Impostazione Cookie</a></li>
+                <li><a class="list-item" href="#">Social Media Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="py-3 border-white border-top">
+        <div class="it25-footer-logo d-flex flex-wrap justify-content-start align-items-center">
+          <a class="navbar-brand" href="#" aria-label="link sito regione lombardia">
+            <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-negativo.svg" alt="logo regione lombardia" class="me-4 mb-2"/>
+          </a>
+          
+          <div class="h6 fw-normal me-4 mb-2">ACRONIMO Nome applicativo</div>
+          
+          
+        </div>
+      </section>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const errorMessage =
+      '<div class="alert alert-danger alert-dismissible fade show" role="alert"><strong>Attenzione</strong> Alcuni campi inseriti sono da controllare.<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Chiudi avviso"></div>'
+    const errorWrapper = document.querySelector('#errorMsgContainer')
+    const validate = new bootstrap.FormValidate('#justValidate', {
+      errorFieldCssClass: 'is-invalid',
+      errorLabelCssClass: 'form-feedback',
+      errorLabelStyle: '',
+      focusInvalidField: false,
+    })
+
+    validate
+      .addField('#servizio', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#tipoSegnalazione', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#nome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+      ])
+      .addField('#cognome', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .addField('#inputEmail', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+        },
+        {
+          rule: 'email',
+          errorMessage: 'Inserire email corretta',
+        },
+      ])
+      .addField('#descrizione', [
+        {
+          rule: 'required',
+          errorMessage: 'Questo campo è richiesto',
+          sucessMessage: 'Validato',
+        },
+      ])
+      .onFail((fields) => {
+        errorWrapper.innerHTML = ''
+        errorWrapper.innerHTML = errorMessage
+        errorWrapper.scrollIntoView()
+      })
+  })
+</script>
+ 
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202606181342"></script>
+
+<script>
+  bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
+  bootstrap.it25Header()
+</script><!-- Notification per tornare alla pagina principale -->
+<!--
+<div class="notification dismissable with-icon" role="alert" id="notification-esempi"
+  aria-labelledby="notification-esempi-title">
+  <h5 id="notification-esempi-title">
+    <svg class="icon">
+      <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"
+        xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-info-circle"></use>
+    </svg>
+    Esempio di utilizzo
+  </h5>
+  <p>
+    <a href="/bootstrap-lombardia/docs/esempi/">Torna alla pagina principale degli esempi</a>
+  </p>
+  <button type="button" class="btn notification-close">
+    <svg class="icon">
+      <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close"
+        xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-close"></use>
+    </svg>
+    <span class="visually-hidden">Chiudi notifica: Titolo notification</span>
+  </button>
+</div>
+-->
+<script>
+//   $(document).ready(function () {
+//     notificationShow('notification-esempi')
+//   })
+</script><script>
+  /**
+ * Copy button functionality for both accordion and standalone code blocks
+ */
+
+  // Create ARIA live region for announcements (only once)
+  function createAriaLiveRegion() {
+    if (!document.getElementById('copy-announcement')) {
+      const liveRegion = document.createElement('div');
+      liveRegion.id = 'copy-announcement';
+      liveRegion.setAttribute('aria-live', 'polite');
+      liveRegion.setAttribute('aria-atomic', 'true');
+      liveRegion.className = 'visually-hidden';
+      document.body.appendChild(liveRegion);
+    }
+  }
+
+  // Announce to screen readers
+  function announceToScreenReader(message) {
+    const liveRegion = document.getElementById('copy-announcement');
+    if (liveRegion) {
+      liveRegion.textContent = message;
+      // Clear after announcement
+      setTimeout(() => {
+        liveRegion.textContent = '';
+      }, 1000);
+    }
+  }
+
+  // Handle accordion copy buttons (in header)
+  function setupAccordionCopyButtons() {
+    document.querySelectorAll('.code-example-accordion .copy-code-btn').forEach(function (button) {
+      if (button.hasAttribute('data-copy-setup')) return;
+      button.setAttribute('data-copy-setup', 'true');
+
+      button.addEventListener('click', function () {
+        const targetId = button.getAttribute('data-target');
+        const collapse = document.querySelector(targetId);
+
+        if (collapse) {
+          const code = collapse.querySelector('code td[class="code"] pre') ??
+            collapse.querySelector('code td[class="rouge-code"] pre') ??
+            collapse.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 2000);
+          }
+        }
+      });
+    });
+  }
+
+  // Handle standalone code blocks (original functionality)
+  function setupStandaloneCopyButtons() {
+    document
+      .querySelectorAll('figure.highlight, pre.highlight')
+      .forEach(function (node) {
+        // Skip if inside accordion (handled by accordion copy button)
+        if (node.closest('.code-example-accordion')) return;
+
+        // Skip if copy button already exists
+        if (node.parentElement.querySelector('.copy-button-container')) return;
+
+        const button = document.createElement('button'),
+          divContainer = document.createElement('div');
+
+        divContainer.classList.add('copy-button-container');
+        button.type = 'button';
+        button.setAttribute('aria-label', 'Copia il codice negli appunti');
+        button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-copy"></use></svg>';
+        button.classList.add('btn', 'btn-primary', 'btn-xs', 'btn-secondary');
+
+        button.addEventListener('click', function () {
+          const code = node.querySelector('code td[class="code"] pre') ??
+            node.querySelector('code td[class="rouge-code"] pre') ??
+            node.querySelector('code');
+
+          if (code) {
+            navigator.clipboard.writeText(code.innerText.trim());
+
+            // Visual and accessibility feedback
+            const originalHTML = button.innerHTML;
+            const originalAriaLabel = button.getAttribute('aria-label');
+
+            button.innerHTML = '<svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copiato"><use href="' + window.SITE_BASEURL + '/dist/svg/sprites.svg#it-check"></use></svg>';
+            button.setAttribute('aria-label', 'Codice copiato negli appunti');
+            button.classList.remove('btn-secondary');
+            button.classList.add('btn-success');
+
+            // Screen reader announcement
+            announceToScreenReader('Codice copiato negli appunti');
+
+            setTimeout(() => {
+              button.innerHTML = originalHTML;
+              button.setAttribute('aria-label', originalAriaLabel);
+              button.classList.remove('btn-success');
+              button.classList.add('btn-secondary');
+            }, 3000);
+          }
+        });
+
+        divContainer.appendChild(button);
+
+        // Position button based on code block type
+        if (node.nodeName == 'FIGURE') {
+          node.insertBefore(divContainer, node.querySelector('pre'));
+        } else if (node.nodeName == 'PRE') {
+          node.classList.remove("highlight");
+          node.insertAdjacentElement('beforebegin', divContainer);
+        }
+      });
+  }
+
+  // Setup both types of copy buttons
+  function setupAllCopyButtons() {
+    createAriaLiveRegion(); // Create live region first
+    setupAccordionCopyButtons();
+    setupStandaloneCopyButtons();
+  }
+
+  // Run on page load
+  document.addEventListener('DOMContentLoaded', setupAllCopyButtons);
+
+  // Run when code example accordions are shown
+  document.addEventListener('shown.bs.collapse', function (e) {
+    if (e.target.closest('.code-example-accordion')) {
+      setupAccordionCopyButtons();
+    }
+  });
+</script>
+
+  </body>
+</html>

@@ -11,13 +11,13 @@
 
 <title>Tabelle · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202606181342" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202606181342" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -74,7 +74,7 @@
 
     <header style="background-color: #003254;" class="navbar-main navbar navbar-dark bd-navbar px-3 bd-navbar--slim">
   <div class="container-fluid">
-    <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Italia Homepage" title="Bootstrap Italia Homepage">
+    <a class="navbar-brand py-0 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Italia Homepage" title="Bootstrap Italia Homepage">
       <div class="d-flex flex-row">
         <div class="d-flex flex-column pl-3 pl-sm-4">
           <h1 class="bd-logo-title">Documentazione Tecnica</h1>
@@ -89,7 +89,7 @@
     
 
     <div class="navbar-brand">
-      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.17.1</small> ricompilata per Regione Lombardia</strong>
+      <strong>Copia della Documentazione di Bootstrap Italia <small class="pe-2 m-0">v2.18.1</small> ricompilata per Regione Lombardia</strong>
     </div>
 
     
@@ -584,7 +584,7 @@
 <p>A causa dell’uso diffuso di tabelle su widget di terze parti come calendari e campi di selezione data, Bootstrap ha progettato le tabelle senza forzarne lo stile. È sufficiente aggiungere la classe <code class="language-plaintext highlighter-rouge">.table</code> a qualsiasi <code class="language-plaintext highlighter-rouge">&lt;table&gt;</code>, quindi estendere con stili personalizzati o con le nostre varie classi incluse di modificatori.</p>
 
 <p>Usando il markup di base della tabella, ecco come appaiono le tabelle che utilizzano la classe <code class="language-plaintext highlighter-rouge">.table</code> in Bootstrap.<br />
-<strong>Tutti gli stili di tabella sono ereditari</strong>, il che significa che tutte le tabelle annidate avranno lo stesso stile della tabella genitrice.</p>
+Gli stili di tabella <strong>non sono ereditari</strong>, il che significa che le tabelle annidate possono avere uno stile diverso da quello della tabella genitrice.</p>
 
 <div class="bd-example">
 <table class="table">
@@ -618,15 +618,15 @@
   </tbody>
 </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-928191" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-485862" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-928191">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-928191" aria-expanded="false" aria-controls="collapse-example-928191">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-485862">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-485862" aria-expanded="false" aria-controls="collapse-example-485862">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-928191">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-485862">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -634,7 +634,7 @@
       </div>
     </div>
 
-    <div id="collapse-example-928191" class="accordion-collapse collapse" data-bs-parent="#accordion-example-928191" role="region" aria-labelledby="heading-example-928191">
+    <div id="collapse-example-485862" class="accordion-collapse collapse" data-bs-parent="#accordion-example-485862" role="region" aria-labelledby="heading-example-485862">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -706,6 +706,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -717,6 +718,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -799,15 +801,15 @@ if (!window.accordionAutoExpandSetup) {
     </table>
   </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-930821" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-487975" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-930821">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-930821" aria-expanded="false" aria-controls="collapse-example-930821">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-487975">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-487975" aria-expanded="false" aria-controls="collapse-example-487975">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-930821">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-487975">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -815,7 +817,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-930821" class="accordion-collapse collapse" data-bs-parent="#accordion-example-930821" role="region" aria-labelledby="heading-example-930821">
+    <div id="collapse-example-487975" class="accordion-collapse collapse" data-bs-parent="#accordion-example-487975" role="region" aria-labelledby="heading-example-487975">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -939,6 +941,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -950,6 +953,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -1179,15 +1183,15 @@ if (!window.accordionAutoExpandSetup) {
 
 
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-934325" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-490512" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-934325">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-934325" aria-expanded="false" aria-controls="collapse-example-934325">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-490512">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-490512" aria-expanded="false" aria-controls="collapse-example-490512">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-934325">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-490512">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1195,7 +1199,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-934325" class="accordion-collapse collapse" data-bs-parent="#accordion-example-934325" role="region" aria-labelledby="heading-example-934325">
+    <div id="collapse-example-490512" class="accordion-collapse collapse" data-bs-parent="#accordion-example-490512" role="region" aria-labelledby="heading-example-490512">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1623,6 +1627,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -1634,6 +1639,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -1731,15 +1737,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-947795" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-497409" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-947795">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-947795" aria-expanded="false" aria-controls="collapse-example-947795">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-497409">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-497409" aria-expanded="false" aria-controls="collapse-example-497409">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-947795">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-497409">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1747,7 +1753,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-947795" class="accordion-collapse collapse" data-bs-parent="#accordion-example-947795" role="region" aria-labelledby="heading-example-947795">
+    <div id="collapse-example-497409" class="accordion-collapse collapse" data-bs-parent="#accordion-example-497409" role="region" aria-labelledby="heading-example-497409">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1917,6 +1923,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -1928,6 +1935,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -1998,15 +2006,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-950838" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-499618" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-950838">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-950838" aria-expanded="false" aria-controls="collapse-example-950838">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-499618">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-499618" aria-expanded="false" aria-controls="collapse-example-499618">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-950838">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-499618">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2014,7 +2022,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-950838" class="accordion-collapse collapse" data-bs-parent="#accordion-example-950838" role="region" aria-labelledby="heading-example-950838">
+    <div id="collapse-example-499618" class="accordion-collapse collapse" data-bs-parent="#accordion-example-499618" role="region" aria-labelledby="heading-example-499618">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2138,6 +2146,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2149,6 +2158,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2180,15 +2190,15 @@ if (!window.accordionAutoExpandSetup) {
     </table>
   </div>
   </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-953613" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-501697" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-953613">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-953613" aria-expanded="false" aria-controls="collapse-example-953613">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-501697">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-501697" aria-expanded="false" aria-controls="collapse-example-501697">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-953613">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-501697">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2196,7 +2206,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-953613" class="accordion-collapse collapse" data-bs-parent="#accordion-example-953613" role="region" aria-labelledby="heading-example-953613">
+    <div id="collapse-example-501697" class="accordion-collapse collapse" data-bs-parent="#accordion-example-501697" role="region" aria-labelledby="heading-example-501697">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2244,6 +2254,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2255,6 +2266,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2307,15 +2319,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-954886" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-502596" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-954886">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-954886" aria-expanded="false" aria-controls="collapse-example-954886">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-502596">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-502596" aria-expanded="false" aria-controls="collapse-example-502596">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-954886">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-502596">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2323,7 +2335,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-954886" class="accordion-collapse collapse" data-bs-parent="#accordion-example-954886" role="region" aria-labelledby="heading-example-954886">
+    <div id="collapse-example-502596" class="accordion-collapse collapse" data-bs-parent="#accordion-example-502596" role="region" aria-labelledby="heading-example-502596">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2395,6 +2407,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2406,6 +2419,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2450,15 +2464,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-956495" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-503740" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-956495">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-956495" aria-expanded="false" aria-controls="collapse-example-956495">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-503740">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-503740" aria-expanded="false" aria-controls="collapse-example-503740">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-956495">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-503740">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2466,7 +2480,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-956495" class="accordion-collapse collapse" data-bs-parent="#accordion-example-956495" role="region" aria-labelledby="heading-example-956495">
+    <div id="collapse-example-503740" class="accordion-collapse collapse" data-bs-parent="#accordion-example-503740" role="region" aria-labelledby="heading-example-503740">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2538,6 +2552,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2549,6 +2564,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2595,15 +2611,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-958091" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-504918" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-958091">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-958091" aria-expanded="false" aria-controls="collapse-example-958091">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-504918">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-504918" aria-expanded="false" aria-controls="collapse-example-504918">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-958091">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-504918">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2611,7 +2627,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-958091" class="accordion-collapse collapse" data-bs-parent="#accordion-example-958091" role="region" aria-labelledby="heading-example-958091">
+    <div id="collapse-example-504918" class="accordion-collapse collapse" data-bs-parent="#accordion-example-504918" role="region" aria-labelledby="heading-example-504918">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2683,6 +2699,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2694,6 +2711,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2738,15 +2756,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-959570" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-506112" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-959570">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-959570" aria-expanded="false" aria-controls="collapse-example-959570">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-506112">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-506112" aria-expanded="false" aria-controls="collapse-example-506112">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-959570">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-506112">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2754,7 +2772,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-959570" class="accordion-collapse collapse" data-bs-parent="#accordion-example-959570" role="region" aria-labelledby="heading-example-959570">
+    <div id="collapse-example-506112" class="accordion-collapse collapse" data-bs-parent="#accordion-example-506112" role="region" aria-labelledby="heading-example-506112">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2826,6 +2844,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2837,6 +2856,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -2880,15 +2900,15 @@ if (!window.accordionAutoExpandSetup) {
   </tbody>
 </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-961209" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-508039" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-961209">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-961209" aria-expanded="false" aria-controls="collapse-example-961209">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-508039">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-508039" aria-expanded="false" aria-controls="collapse-example-508039">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-961209">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-508039">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -2896,7 +2916,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-961209" class="accordion-collapse collapse" data-bs-parent="#accordion-example-961209" role="region" aria-labelledby="heading-example-961209">
+    <div id="collapse-example-508039" class="accordion-collapse collapse" data-bs-parent="#accordion-example-508039" role="region" aria-labelledby="heading-example-508039">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2966,6 +2986,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -2977,6 +2998,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3022,15 +3044,15 @@ if (!window.accordionAutoExpandSetup) {
       </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-962817" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-509443" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-962817">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-962817" aria-expanded="false" aria-controls="collapse-example-962817">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-509443">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-509443" aria-expanded="false" aria-controls="collapse-example-509443">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-962817">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-509443">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3038,7 +3060,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-962817" class="accordion-collapse collapse" data-bs-parent="#accordion-example-962817" role="region" aria-labelledby="heading-example-962817">
+    <div id="collapse-example-509443" class="accordion-collapse collapse" data-bs-parent="#accordion-example-509443" role="region" aria-labelledby="heading-example-509443">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3108,6 +3130,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3119,6 +3142,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3162,15 +3186,15 @@ if (!window.accordionAutoExpandSetup) {
       </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-964303" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-510791" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-964303">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-964303" aria-expanded="false" aria-controls="collapse-example-964303">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-510791">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-510791" aria-expanded="false" aria-controls="collapse-example-510791">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-964303">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-510791">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3178,7 +3202,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-964303" class="accordion-collapse collapse" data-bs-parent="#accordion-example-964303" role="region" aria-labelledby="heading-example-964303">
+    <div id="collapse-example-510791" class="accordion-collapse collapse" data-bs-parent="#accordion-example-510791" role="region" aria-labelledby="heading-example-510791">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3248,6 +3272,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3259,6 +3284,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3304,15 +3330,15 @@ if (!window.accordionAutoExpandSetup) {
       </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-965905" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-512139" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-965905">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-965905" aria-expanded="false" aria-controls="collapse-example-965905">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-512139">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-512139" aria-expanded="false" aria-controls="collapse-example-512139">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-965905">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-512139">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3320,7 +3346,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-965905" class="accordion-collapse collapse" data-bs-parent="#accordion-example-965905" role="region" aria-labelledby="heading-example-965905">
+    <div id="collapse-example-512139" class="accordion-collapse collapse" data-bs-parent="#accordion-example-512139" role="region" aria-labelledby="heading-example-512139">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3390,6 +3416,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3401,6 +3428,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3442,15 +3470,15 @@ if (!window.accordionAutoExpandSetup) {
       </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-967503" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-513496" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-967503">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-967503" aria-expanded="false" aria-controls="collapse-example-967503">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-513496">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-513496" aria-expanded="false" aria-controls="collapse-example-513496">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-967503">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-513496">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3458,7 +3486,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-967503" class="accordion-collapse collapse" data-bs-parent="#accordion-example-967503" role="region" aria-labelledby="heading-example-967503">
+    <div id="collapse-example-513496" class="accordion-collapse collapse" data-bs-parent="#accordion-example-513496" role="region" aria-labelledby="heading-example-513496">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3528,6 +3556,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3539,6 +3568,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3584,15 +3614,15 @@ if (!window.accordionAutoExpandSetup) {
       </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-968967" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-514804" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-968967">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-968967" aria-expanded="false" aria-controls="collapse-example-968967">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-514804">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-514804" aria-expanded="false" aria-controls="collapse-example-514804">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-968967">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-514804">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3600,7 +3630,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-968967" class="accordion-collapse collapse" data-bs-parent="#accordion-example-968967" role="region" aria-labelledby="heading-example-968967">
+    <div id="collapse-example-514804" class="accordion-collapse collapse" data-bs-parent="#accordion-example-514804" role="region" aria-labelledby="heading-example-514804">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3670,6 +3700,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3681,6 +3712,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3729,15 +3761,15 @@ if (!window.accordionAutoExpandSetup) {
     </table>
   </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-970585" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-515933" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-970585">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-970585" aria-expanded="false" aria-controls="collapse-example-970585">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-515933">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-515933" aria-expanded="false" aria-controls="collapse-example-515933">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-970585">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-515933">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3745,7 +3777,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-970585" class="accordion-collapse collapse" data-bs-parent="#accordion-example-970585" role="region" aria-labelledby="heading-example-970585">
+    <div id="collapse-example-515933" class="accordion-collapse collapse" data-bs-parent="#accordion-example-515933" role="region" aria-labelledby="heading-example-515933">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -3821,6 +3853,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -3832,6 +3865,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -3902,15 +3936,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-972768" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-517987" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-972768">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-972768" aria-expanded="false" aria-controls="collapse-example-972768">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-517987">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-517987" aria-expanded="false" aria-controls="collapse-example-517987">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-972768">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-517987">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -3918,7 +3952,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-972768" class="accordion-collapse collapse" data-bs-parent="#accordion-example-972768" role="region" aria-labelledby="heading-example-972768">
+    <div id="collapse-example-517987" class="accordion-collapse collapse" data-bs-parent="#accordion-example-517987" role="region" aria-labelledby="heading-example-517987">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -4038,6 +4072,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -4049,6 +4084,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -4097,15 +4133,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-975290" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-520032" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-975290">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-975290" aria-expanded="false" aria-controls="collapse-example-975290">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-520032">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-520032" aria-expanded="false" aria-controls="collapse-example-520032">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-975290">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-520032">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -4113,7 +4149,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-975290" class="accordion-collapse collapse" data-bs-parent="#accordion-example-975290" role="region" aria-labelledby="heading-example-975290">
+    <div id="collapse-example-520032" class="accordion-collapse collapse" data-bs-parent="#accordion-example-520032" role="region" aria-labelledby="heading-example-520032">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -4185,6 +4221,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -4196,6 +4233,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -4248,15 +4286,15 @@ if (!window.accordionAutoExpandSetup) {
     </tfoot>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-978005" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-521469" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-978005">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-978005" aria-expanded="false" aria-controls="collapse-example-978005">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-521469">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-521469" aria-expanded="false" aria-controls="collapse-example-521469">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-978005">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-521469">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -4264,7 +4302,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-978005" class="accordion-collapse collapse" data-bs-parent="#accordion-example-978005" role="region" aria-labelledby="heading-example-978005">
+    <div id="collapse-example-521469" class="accordion-collapse collapse" data-bs-parent="#accordion-example-521469" role="region" aria-labelledby="heading-example-521469">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -4352,6 +4390,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -4363,6 +4402,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -4409,15 +4449,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-981341" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-522965" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-981341">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-981341" aria-expanded="false" aria-controls="collapse-example-981341">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-522965">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-522965" aria-expanded="false" aria-controls="collapse-example-522965">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-981341">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-522965">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -4425,7 +4465,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-981341" class="accordion-collapse collapse" data-bs-parent="#accordion-example-981341" role="region" aria-labelledby="heading-example-981341">
+    <div id="collapse-example-522965" class="accordion-collapse collapse" data-bs-parent="#accordion-example-522965" role="region" aria-labelledby="heading-example-522965">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -4497,6 +4537,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -4508,6 +4549,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -4552,15 +4594,15 @@ if (!window.accordionAutoExpandSetup) {
     </tbody>
   </table>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-983668" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-524203" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-983668">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-983668" aria-expanded="false" aria-controls="collapse-example-983668">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-524203">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-524203" aria-expanded="false" aria-controls="collapse-example-524203">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-983668">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-524203">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -4568,7 +4610,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-983668" class="accordion-collapse collapse" data-bs-parent="#accordion-example-983668" role="region" aria-labelledby="heading-example-983668">
+    <div id="collapse-example-524203" class="accordion-collapse collapse" data-bs-parent="#accordion-example-524203" role="region" aria-labelledby="heading-example-524203">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -4640,6 +4682,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -4651,6 +4694,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -4667,17 +4711,17 @@ if (!window.accordionAutoExpandSetup) {
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202512311348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202606181342"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202512311348"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202606181342"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202512311348"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202606181342"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -4698,7 +4742,7 @@ if (!window.accordionAutoExpandSetup) {
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202512311348"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202606181342"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

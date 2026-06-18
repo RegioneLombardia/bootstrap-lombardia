@@ -11,13 +11,13 @@
 
 <title>Popover · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202606181342" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202512311348" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202606181342" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -77,7 +77,7 @@
   <div class="container-fluid">
     <a class="navbar-brand py-2 text-decoration-none" href="/bootstrap-lombardia/" aria-label="Bootstrap Lombardia Homepage" title="Bootstrap Lombardia Homepage">
       <div class="d-flex flex-row">
-        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-bianco.png" height="50px" alt="logo regione lombardia" class="d-none d-md-block">
+        <img src="/bootstrap-lombardia/dist/assets/img/logo-rl-negativo.svg" height="36px" style="margin-top: 6px" alt="logo regione lombardia" class="d-none d-md-block">
         <div class="d-flex flex-column ps-3 ps-sm-4">
           <h1 class="bd-logo-title">Bootstrap Regione Lombardia</h1>
           <h2 class="bd-logo-subtitle">Versione di Bootstrap Italia<span class="d-none d-md-inline"> per la Regione Lombardia</span><span class="d-none d-xl-inline"> per lo sviluppo di applicazioni web per la PA</span></h2>
@@ -94,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.6.3/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">v2.6.3</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.7.0/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.7.0</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -128,7 +128,69 @@
             
           </li><li>
             
-            <a class="list-item " href="/bootstrap-lombardia/docs/it25/sistema-di-griglie/"><span>Sistema di griglie</span></a>
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-2"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-2"
+              aria-expanded="false"
+              aria-controls="collapse-2"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Foundations</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-2"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/foundations/colors/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Colors</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/foundations/typography/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Typography</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/foundations/grid/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Grid</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/foundations/icons/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Icons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/foundations/logo/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Logo</span></a>
+              </li></ul>
             
           </li><li>
             
@@ -143,7 +205,7 @@
               aria-controls="collapse-3"
             >
               <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Utilità</span>
+                <span class="list-item-title">Navigation</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true">
                   <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
                 </svg>
@@ -152,33 +214,30 @@
             <ul class="link-sublist collapse " id="collapse-3"><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/utilità/tipografia/"
+                  href="/bootstrap-lombardia/docs/it25/navigation/breadcrumbs/"
                 >
-                  <span>Tipografia</span></a>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Breadcrumbs</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/utilità/colori/"
+                  href="/bootstrap-lombardia/docs/it25/navigation/footer/"
                 >
-                  <span>Colori</span></a>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Footer</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/utilità/ombre-e-angoli/"
+                  href="/bootstrap-lombardia/docs/it25/navigation/header/"
                 >
-                  <span>Ombre e angoli</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/utilità/icone/"
-                >
-                  <span>Icone</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/utilità/divisori/"
-                >
-                  <span>Divisori</span></a>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Header</span></a>
               </li></ul>
             
           </li><li>
@@ -194,7 +253,7 @@
               aria-controls="collapse-4"
             >
               <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Componenti Principali</span>
+                <span class="list-item-title">Components</span>
                 <svg class="icon icon-sm icon-primary right" aria-hidden="true">
                   <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
                 </svg>
@@ -203,279 +262,75 @@
             <ul class="link-sublist collapse " id="collapse-4"><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/logo/"
+                  href="/bootstrap-lombardia/docs/it25/components/button/"
                 >
-                  <span>Logo</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/header/"
-                >
-                  <span>Header</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/"
-                >
-                  <span>Menu orizzontale</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-verticale/"
-                >
-                  <span>Menu Verticale</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/gestione-loghi-multipli/"
-                >
-                  <span>Gestione Loghi Multipli</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/componenti-principali/footer/"
-                >
-                  <span>Footer</span></a>
-              </li></ul>
-            
-          </li><li>
-            
-            <!-- One:usare ID -->
-            <a
-              role="button"
-              class="list-item large medium icon-right"
-              href="#collapse-5"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-5"
-              aria-expanded="false"
-              aria-controls="collapse-5"
-            >
-              <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Navigazione</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
                 </svg>
-              </span>
-            </a>
-            <ul class="link-sublist collapse " id="collapse-5"><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/navigazione/breadcrumbs/"
-                >
-                  <span>Breadcrumbs</span></a>
+                  <span>Button</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/navigazione/liste/"
+                  href="/bootstrap-lombardia/docs/it25/components/card/"
                 >
-                  <span>Liste</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/navigazione/dropdown-menu/"
-                >
-                  <span>Dropdown Menu</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/"
-                >
-                  <span>Megamenu</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/navigazione/paginatore/"
-                >
-                  <span>Paginatore</span></a>
-              </li></ul>
-            
-          </li><li>
-            
-            <!-- One:usare ID -->
-            <a
-              role="button"
-              class="list-item large medium icon-right"
-              href="#collapse-6"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-6"
-              aria-expanded="false"
-              aria-controls="collapse-6"
-            >
-              <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Call to action</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
                 </svg>
-              </span>
-            </a>
-            <ul class="link-sublist collapse " id="collapse-6"><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/call-to-action/bottoni/"
-                >
-                  <span>Bottoni</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/"
-                >
-                  <span>Tab bar</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/call-to-action/slider/"
-                >
-                  <span>Slider</span></a>
-              </li></ul>
-            
-          </li><li>
-            
-            <!-- One:usare ID -->
-            <a
-              role="button"
-              class="list-item large medium icon-right"
-              href="#collapse-7"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-7"
-              aria-expanded="false"
-              aria-controls="collapse-7"
-            >
-              <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Informazioni</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
-                </svg>
-              </span>
-            </a>
-            <ul class="link-sublist collapse " id="collapse-7"><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/accordion/"
-                >
-                  <span>Accordion</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/card/"
-                >
                   <span>Card</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/card-old/"
+                  href="/bootstrap-lombardia/docs/it25/components/cookiebar/"
                 >
-                  <span>Card old</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/carousel/"
-                >
-                  <span>Carousel</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/calendario/"
-                >
-                  <span>Calendario</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/time-picker/"
-                >
-                  <span>Time Picker</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/cookiebar/"
-                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
                   <span>Cookiebar</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/overlay/"
+                  href="/bootstrap-lombardia/docs/it25/components/pager/"
                 >
-                  <span>Overlay</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/tabella/"
-                >
-                  <span>Tabella</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/informazioni/snackbar/"
-                >
-                  <span>Snackbar</span></a>
-              </li></ul>
-            
-          </li><li>
-            
-            <!-- One:usare ID -->
-            <a
-              role="button"
-              class="list-item large medium icon-right"
-              href="#collapse-8"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapse-8"
-              aria-expanded="true"
-              aria-controls="collapse-8"
-            >
-              <span class="list-item-title-icon-wrapper">
-                <span class="list-item-title">Inserimento</span>
-                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
-                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
                 </svg>
-              </span>
-            </a>
-            <ul class="link-sublist collapse show" id="collapse-8"><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/check-box/"
-                >
-                  <span>Check box</span></a>
+                  <span>Pager</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/"
+                  href="/bootstrap-lombardia/docs/it25/components/progress-bar/"
                 >
-                  <span>Radio buttons</span></a>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Progress bar</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/toggle/"
+                  href="/bootstrap-lombardia/docs/it25/components/table/"
                 >
-                  <span>Toggle</span></a>
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Table</span></a>
               </li><li>
                 <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/"
+                  href="/bootstrap-lombardia/docs/it25/components/tooltip/"
                 >
-                  <span>Input fields</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/tooltip/"
-                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
                   <span>Tooltip</span></a>
               </li><li>
                 <a
-                  class="list-item  active"
-                  href="/bootstrap-lombardia/docs/it25/inserimento/popover/"
-                >
-                  <span>Popover</span></a>
-              </li><li>
-                <a
                   class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/wizard/"
+                  href="/bootstrap-lombardia/docs/it25/components/wizard/"
                 >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
                   <span>Wizard</span></a>
-              </li><li>
-                <a
-                  class="list-item "
-                  href="/bootstrap-lombardia/docs/it25/inserimento/progress-bar/"
-                >
-                  <span>Progress bar</span></a>
               </li></ul>
             
           </li><li>
@@ -493,6 +348,319 @@
           </li><li>
             
             <a class="list-item " href="/bootstrap-lombardia/docs/it25/crediti/"><span>Crediti</span></a>
+            
+          </li></ul>
+      </div>
+    </div>
+
+    <h3 class="no_toc">Linee Guida OLD</h3>
+    <div class="sidebar-linklist-wrapper">
+      <div class="link-list-wrapper">
+        <ul class="link-list"><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-1"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-1"
+              aria-expanded="false"
+              aria-controls="collapse-old-1"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Utilità</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-old-1"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/utilità/ombre-e-angoli/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Ombre e angoli</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/utilità/divisori/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Divisori</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-2"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-2"
+              aria-expanded="false"
+              aria-controls="collapse-old-2"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Componenti Principali</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-old-2"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-orizzontale/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Menu orizzontale</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/componenti-principali/menu-verticale/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Menu Verticale</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-3"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-3"
+              aria-expanded="false"
+              aria-controls="collapse-old-3"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Navigazione</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-old-3"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/navigazione/liste/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Liste</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/navigazione/dropdown-menu/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Dropdown Menu</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/navigazione/megamenu/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Megamenu</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-4"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-4"
+              aria-expanded="false"
+              aria-controls="collapse-old-4"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Call to action</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-old-4"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/call-to-action/tab-bar/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Tab bar</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/call-to-action/slider/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Slider</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-5"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-5"
+              aria-expanded="false"
+              aria-controls="collapse-old-5"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Informazioni</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse " id="collapse-old-5"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/accordion/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Accordion</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/carousel/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Carousel</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/calendario/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Calendario</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/time-picker/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Time Picker</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/overlay/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Overlay</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/informazioni/snackbar/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Snackbar</span></a>
+              </li></ul>
+            
+          </li><li>
+            
+            <!-- One:usare ID -->
+            <a
+              role="button"
+              class="list-item large medium icon-right"
+              href="#collapse-old-6"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse-old-6"
+              aria-expanded="true"
+              aria-controls="collapse-old-6"
+            >
+              <span class="list-item-title-icon-wrapper">
+                <span class="list-item-title">Inserimento</span>
+                <svg class="icon icon-sm icon-primary right" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use>
+                </svg>
+              </span>
+            </a>
+            <ul class="link-sublist collapse show" id="collapse-old-6"><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/inserimento/check-box/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Check box</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/inserimento/radio-buttons/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Radio buttons</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/inserimento/toggle/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Toggle</span></a>
+              </li><li>
+                <a
+                  class="list-item "
+                  href="/bootstrap-lombardia/docs/it25/inserimento/input-fields/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Input fields</span></a>
+              </li><li>
+                <a
+                  class="list-item  active"
+                  href="/bootstrap-lombardia/docs/it25/inserimento/popover/"
+                >
+                <svg class="icon icon-xs icon-primary" aria-hidden="true">
+                  <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus" xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-minus"></use>
+                </svg>
+                  <span>Popover</span></a>
+              </li></ul>
             
           </li></ul>
       </div>
@@ -559,15 +727,15 @@
   </div>
 </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-009352" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-780837" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-009352">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-009352" aria-expanded="false" aria-controls="collapse-example-009352">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-780837">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-780837" aria-expanded="false" aria-controls="collapse-example-780837">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-009352">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-780837">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -575,7 +743,7 @@
       </div>
     </div>
 
-    <div id="collapse-example-009352" class="accordion-collapse collapse" data-bs-parent="#accordion-example-009352" role="region" aria-labelledby="heading-example-009352">
+    <div id="collapse-example-780837" class="accordion-collapse collapse" data-bs-parent="#accordion-example-780837" role="region" aria-labelledby="heading-example-780837">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -665,6 +833,7 @@ if (!window.accordionAutoExpandSetup) {
   window.accordionAutoExpandSetup = true;
 
   function initAutoExpand() {
+/*
     const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
     if (firstAccordion) {
       const button = firstAccordion.querySelector('.accordion-button');
@@ -676,6 +845,7 @@ if (!window.accordionAutoExpandSetup) {
         collapse.classList.add('show');
       }
     }
+*/
   }
 
   if (document.readyState === 'loading') {
@@ -726,17 +896,17 @@ Nell’esempio qui sopra infatti, se si preme il tasto <em>Popover in alto</em> 
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202512311348"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202606181342"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202512311348"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202606181342"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202512311348"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202606181342"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -757,7 +927,7 @@ Nell’esempio qui sopra infatti, se si preme il tasto <em>Popover in alto</em> 
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202512311348"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202606181342"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script type="text/javascript">
   docsearch({

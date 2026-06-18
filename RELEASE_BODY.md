@@ -1,8 +1,17 @@
-## [2.6.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.6.2...v2.6.3) (2025-12-31)
+# [2.7.0](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.6.3...v2.7.0) (2026-06-18)
 
 ### Features
 
-* allineamento alla 2.17.1 di bootstrap-italia
+* Inizio allineamento al nuovo Design System di Regione Lombardia
+* allineamento alla versione 2.18.1 di bootstrap-italia
 
----
-# Merge 2.17.0 -> 2.17.1 bootstrap-italia - INIZIO
+### BREAKING CHANGES
+
+Per l'allineamento al nuovo Design System di Regione Lombardia tutti i componenti elencati sotto hanno subito cambiamenti che possono comportare modifiche al codice delle pagine che li utilizzano.  
+Si consiglia fortemente di leggere la documentazione specifica dei componenti per i dettagli.
+* Palette colori
+* Header
+* Footer
+* Bottoni
+* Card
+* Wizard
