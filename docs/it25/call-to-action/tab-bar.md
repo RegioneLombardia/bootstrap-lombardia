@@ -126,7 +126,7 @@ Ogni bar deve contenere tab **dello stesso tipo**.
 {% capture callout %}
 #### Accessibilità
 Nel caso di di Tab bar con solo icone è **obbligatorio fornire una descrizione** in uno span di classe `visually-hidden` o con un testo alternativo, in modo che possa essere utilizzato anche da i non vedenti.  
-Inoltre, poichè il significato dell'icona non sempre risulta chiaro per gli utenti anche per gli utenti normodotati, è fortemente consigliato aggiungere un **[tooltip]({{ site.baseurl }}/docs/it25/inserimento/tooltip/)** per aiutare la comprensione.
+Inoltre, poichè il significato dell'icona non sempre risulta chiaro per gli utenti anche per gli utenti normodotati, è fortemente consigliato aggiungere un **[tooltip]({{ site.baseurl }}/docs/it25/components/tooltip/)** per aiutare la comprensione.
 {% endcapture %}{% include callout.html content=callout type="accessibility" %}
 
 {% capture example %}
