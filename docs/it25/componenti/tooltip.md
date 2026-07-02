@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Tooltip
-group: components
+group: componenti
 toc: true
 ---
 

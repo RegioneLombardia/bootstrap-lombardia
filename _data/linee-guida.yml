@@ -1,20 +1,20 @@
 - title: Introduzione
 
-- title: Foundations
+- title: Utilita
   pages:
-    - title: Colors
-    - title: Typography
-    - title: Grid
-    - title: Icons
     - title: Logo
+    - title: Griglie
+    - title: Colori
+    - title: Tipografia
+    - title: Icone
 
-- title: Navigation
+- title: Navigazione
   pages:
-    - title: Breadcrumbs
-    - title: Footer
     - title: Header
+    - title: Breadcrumb
+    - title: Footer
 
-- title: Components
+- title: Componenti
   pages:
     - title: Button
     - title: Card

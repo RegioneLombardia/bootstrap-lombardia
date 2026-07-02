@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Footer
-group: navigation
+group: navigazione
 toc: true
 ---
 

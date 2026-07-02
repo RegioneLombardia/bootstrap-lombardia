@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Progress bar
-group: components
+group: componenti
 toc: false
 ---
 

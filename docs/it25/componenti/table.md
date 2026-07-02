@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Table
-group: components
+group: componenti
 toc: yes
 ---
 

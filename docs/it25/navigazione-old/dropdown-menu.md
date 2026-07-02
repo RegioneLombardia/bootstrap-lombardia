@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Dropdown Menu
-group: navigazione
+group: navigazione-old
 toc: true
 ---
 

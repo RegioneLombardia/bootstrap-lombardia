@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Cookie bar
-group: components
+group: componenti
 toc: yes
 ---
 

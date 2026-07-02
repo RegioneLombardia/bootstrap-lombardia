@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Pager
-group: components
+group: componenti
 toc: true
 ---
 

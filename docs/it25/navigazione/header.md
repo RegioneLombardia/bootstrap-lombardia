@@ -2,7 +2,7 @@
 layout: it25_docs
 title: Header
 description: Header applicativi Web.
-group: navigation
+group: navigazione
 toc: true
 ---
 

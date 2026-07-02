@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Liste
-group: navigazione
+group: navigazione-old
 toc: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Card
-group: components
+group: componenti
 toc: yes
 ---
 

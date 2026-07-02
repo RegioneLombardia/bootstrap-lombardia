@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
-title: Icons
-group: foundations
+title: Icone
+group: utilita
 toc: false
 ---
 

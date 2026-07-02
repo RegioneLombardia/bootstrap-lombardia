@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Button
-group: components
+group: componenti
 toc: yes
 ---
 

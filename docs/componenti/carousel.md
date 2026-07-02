@@ -647,7 +647,8 @@ div **`it-carousel-wrapper`** :
 {% comment %}Example name: Immagini{% endcomment %}
 {% capture example %}
 
-<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide" data-bs-carousel-splide>
+<div class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols it-full-carousel it-big-img splide" data-bs-carousel-splide aria-labelledby="carouselheading">
+ <h3 id="carouselheading" class="visuallyhidden">Recent news</h3>
   <div class="splide__track">
     <ul class="splide__list">
       <li class="splide__slide">

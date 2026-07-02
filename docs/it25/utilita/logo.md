@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Logo
-group: foundations
+group: utilita
 toc: true
 ---
 

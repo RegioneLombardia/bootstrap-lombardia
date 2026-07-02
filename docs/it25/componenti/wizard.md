@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Wizard
-group: components
+group: componenti
 toc: true
 ---
 

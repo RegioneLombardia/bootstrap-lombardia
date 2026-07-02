@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
-title: Typography
-group: foundations
+title: Tipografia
+group: utilita
 toc: true
 ---
 

@@ -5,8 +5,29 @@ title: Introduzione
 toc: true
 ---
 
+Lo scopo primario dell’interfaccia è quello di **aiutare l’utente** a raggiungere ciò che cerca in modo  naturale, immediato e trasparente. Per questo, la coerenza dei vari elementi che la compongono – anche su diversi dispositivi – è un elemento chiave per la creazione di prodotti e servizi funzionali e  semplici da utilizzare.
+
+Un altro punto fondamentale di una buona interfaccia è la sua inclusività e **tolleranza agli errori**: non si deve mai dare per assunto che l’utente abbia sempre il flusso di navigazione in mente o che comprenda appieno le istruzioni senza che esse vengano fornite esplicitamente.
+
+Per ciò, il designer ha il compito di  progettare interfacce che sappiano accompagnare e guidare il fruitore nel suo percorso, prevedendo  le modalità di utilizzo e prevenendo eventuali errori, tenendo sempre al primo posto **usabilità e accessibilità**. 
+
+
+### Responsive Web Design
+L’interfaccia web deve essere sempre progettata e sviluppata con un approccio responsive, con l’obiettivo di fornire un’esperienza di utilizzo ottimale indipendentemente dalla risoluzione dello  schermo o dal tipo di dispositivo utilizzato.
+
+Al concetto di responsive web design vanno associate pratiche di semplificazione delle interfacce in ottica mobile first, e un’attenzione particolare nel fornire un’esperienza soddisfacente anche a coloro  che hanno difficoltà visive o motorie. 
+
+### Linee Guida
+Le *Linee Guida* descrivono i **componenti specifici personalizzati** per le applicazioni Web di Regione Lombardia.  
+**Devono esse utilizzari al posto di quelli della versione standard** di {{ site.data.short.bi }}.  
+Il loro impiego è **condizione necessaria ma non sufficiente**, per costruire un'interfaccia che possa essere *"approvabile"* da {{ site.data.short.rl }}.
+
+La loro documentazione è organizzata in gruppi: *Utilità*, *Navigazione* e *Componenti*.  
+Sono inoltre forniti degli *Esempi* di pagine complete per vederne il funzionamento nel concreto.
+
+
 {% capture callout %}
-#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Library e linee guida in fase di aggiornamento
+#### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Componenti in fase di aggiornamento
 
 Il sommario è provvisoriamente diviso in due sezioni:
  - **Linee Guida** contiene la documentazione dei componenti **già adeguati al nuovo** {{ site.data.short.dsl }}
@@ -16,7 +37,7 @@ Con i prossimi rilasci, mano a mano che altri componenti e la relativa documenta
 Le voci nella seconda sezione riguardano comunque **componenti tuttora funzionanti ed utilizzabili**.
 
 #### Roadmap
-Il criterio seguito nell'aggiornamento di library e linee guida è quello di fornire per primi gli elementi più evidenti dal punto di vista visivo, per poi completare quelli di dettaglio.
+Il criterio seguito nell'aggiornamento dei componenti è quello di fornire per primi gli elementi più evidenti dal punto di vista visivo, per poi completare quelli di dettaglio.
 
 Data l'urgenza è stato giocoforza basarsi sulla versione *2.x* di {{ site.data.short.bi }}, pur sapendo che AGID ha appena rilasciato la versione *3.0.0-beta.0* destinata a sostituirla e contenente sostanziali e impattanti cambiamenti.
 
@@ -25,22 +46,6 @@ A tale nuova versione è rimandato l'aggiornamento del componente *Form* (e comp
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 
 
-
-### Design System
-Il **Design System** è un insieme di *regole*, *modelli interconnessi* e *linee guida* che aiutano a mantenere coerenza e continuità all'interno di un ecosistema digitale per affiancare tutti i designer e gli sviluppatori durante la progettazione di prodotti e servizi digitali.
-
-Le **linee guida di design** sono uno strumento di lavoro che permette di garantire uniformità e coerenza nei servizi digitali di {{ site.data.short.rl }} ed hanno l'obiettivo di condividere con operatori sia interni che esterni, coinvolti nella progettazione degli ambienti digitali regionali, librerie di elementi già pronti per la prototipazione.
-
-In questa documentazione sono fornite le componenti e gli elementi utili per la progettazione di **Applicativi Web**, organizzate in gruppi: **Sistema di griglie**, **Utilità**, **Componenti principali**, **Navigazione**, **Call to action**, **Informazioni** ed **Inserimento**.  
-Sono inoltre presenti delle indicazioni per la realizzazione di schermate di **Accesso** e la composizione di **Form**.
-
-<!-- Per maggiori informazioni sulle componenti, sul loro utilizzo e sull'intero ecosistema si rimanda alle **{{ site.data.short.lgdd }}** ed al **Progetti di Comunicazione** di {{ site.data.short.rl }}. -->
-
-
-### Linee Guida
-Le **Linee Guida** di Bootstrap Regione Lombardia **indicano quali componenti utilizzare e come utilizzarli**, nella costruzione delle pagine di Web per le applicazione Regione Lombardia, e mostrano una serie di esempi che possono essere utilizzati come base da cui partire.
-
-Sono quindi **indicazioni che è indispensabile seguire** per poter ottenere un'interfaccia *accettabile* da {{ site.data.short.rl }}.
 
 ### Documentazione Tecnica
 La {{ site.data.short.dt }} è il **manuale di riferimento** per il dettaglio sulle specifiche dei componenti.

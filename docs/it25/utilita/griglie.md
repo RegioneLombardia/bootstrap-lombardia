@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
-title: Grid
-group: foundations
+title: Griglie
+group: utilita
 toc: false
 --- 
 

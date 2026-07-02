@@ -1,7 +1,7 @@
 ---
 layout: it25_docs
 title: Megamenu
-group: navigazione
+group: navigazione-old
 toc: true
 ---
 

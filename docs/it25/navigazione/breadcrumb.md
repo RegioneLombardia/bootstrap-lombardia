@@ -1,11 +1,11 @@
 ---
 layout: it25_docs
-title: Breadcrumbs
-group: navigation
+title: Breadcrumb
+group: navigazione
 toc: true
 ---
 
-Le **Breadcrumbs** sono un modello di navigazione secondario che aiuta l’utente a **comprendere la gerarchia tra i livelli e tornare indietro
+Le **Breadcrumb** sono un modello di navigazione secondario che aiuta l’utente a **comprendere la gerarchia tra i livelli e tornare indietro
 attraverso di essi**.  
 Esse forniscono all’utente un **feedback relativo sia alla pagina che al percorso di navigazione**.
 
