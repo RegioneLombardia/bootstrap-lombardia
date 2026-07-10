@@ -1,3 +1,16 @@
+## 2.7.1
+
+### Componenti eliminati
+I seguenti componenti personalizzati per {{ site.data.short.rl }}, sono stati eliminati.  
+Al loro posto si possono utilizzare componenti standard descritti nella {{ site.data.short.dt }}.
+* Calendario -> [Input Calendario]({{ site.baseurl }}/docs/form/input-calendario/)
+* Divisori -> totalmente eliminato
+* Dropdown menu -> [Dropdown]({{ site.baseurl }}/docs/componenti/dropdown/)
+* Slider -> totalmente eliminato
+* Snackbar -> [Notifiche]({{ site.baseurl }}/docs/componenti/notifiche/)
+* Time picker -> [Input Ora]({{ site.baseurl }}/docs/form/input-ora/)
+
+
 ## 2.7.0
 
 [Changelog completo](https://github.com/RegioneLombardia/bootstrap-lombardia/releases/tag/v2.7.0) <svg class="icon steppers-success" aria-hidden="true"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-file"></use></svg>  

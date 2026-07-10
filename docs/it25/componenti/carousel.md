@@ -2,9 +2,11 @@
 layout: it25_docs
 splide: true
 title: Carousel
-group: informazioni
+group: componenti
 toc: yes
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 All’interno del *carosello* è prevista una **hero image** di background, una card che può avere un titolo, un paragrafo e una call to action.  
 E’ possibile avere anche solo un titolo ed un paragrafo.

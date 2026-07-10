@@ -18,30 +18,49 @@ Se le voci di menu di primo livello non sono più di 5, sono disposte orizzontal
 Solo se necessario l'header può ospitare fino a un massimo di tre logotipi.  
 In caso l'applicativo non abbia un logo può essere usato un acronimo e/o il nome dell'applicativo.
 
+<div class="exclude-a11y-check">
 <header class="it-header-wrapper">
   {% include html_docs/header/topbar.html %}
   <div class="it-nav-wrapper">
     {% include html_docs/header/center_menu-oriz.html logo="yes" %}
-    {% include html_docs/header/navbar_oriz.html %}
+    {% include html_docs/header/navbar_oriz.html navor-id="dochead01" %}
   </div>
 </header>
+</div>
 <br/>
 <div class="exclude-a11y-check">
 <header class="it-header-wrapper" style="position: static">
   {% include html_docs/header/topbar.html %}
   <div class="it-nav-wrapper">
     {% include html_docs/header/center_menu-oriz.html textlogo="yes" %}
-    {% include html_docs/header/navbar_oriz.html %}
+    {% include html_docs/header/navbar_oriz.html navor-id="dochead02"%}
   </div>
 </header>
 </div>
 <br/>
 <br/>
 
----
-## Hamburger menu
+### Menu Orizzontale
+Il **Menu orizzontale** è il menu principale di navigazione. Esso può contenere, oltre a _semplici link_, il _menu dropdown_ ed il _megamenu_.
 
-Se le voci di menu di primo livello sono più di 5, vanno collocate in un menù verticale a comparsa, comandato da un *hamburger button*.
+Su **desktop** il menu è sempre visualizzato e a scorrimento in basso e rimane posizionato fisso sotto la barra istituzionale. Se la pagina scorre, il menu si sposta di conseguenza, rimanendo sotto la barra istituzionale.  
+Questa tipologia di menu viene preferita al _menu verticale_ quando **le voci del menu sono poche e le label sono brevi**.
+
+Su **smartphone** la visualizzazione del menu orizzontale è comandata dal bottone hamburger nella barra istituzionale e le voci sono visualizzate in verticale per questioni di spazio. In questo caso il pannello comparirà con uno scorrimento laterale da sinistra ed oscuramento della pagina sottostante.
+
+Si vedano le voci **menu orizzontale** e **form** nella pagina degli [esempi]({{ site.baseurl }}/docs/it25/esempi/) per una migliore comprensione del possibile utilizzo.
+
+<div class="exclude-a11y-check">
+{% comment %}Example name: IT25 Menu orizzontale{% endcomment %}
+{% capture example %}
+  {% include html_docs/header/navbar_oriz.html navor-id="dochead03" %}
+{% endcapture %}{% include example.html content=example %}
+</div>
+
+---
+## Hamburger button
+
+Se le voci di menu di primo livello sono più di 5, vanno collocate in un **menù verticale a comparsa**, comandato da un *hamburger button*.
 <div class="exclude-a11y-check">
 <header class="it-header-wrapper" style="position: static">
   {% include html_docs/header/topbar.html dropdowns="yes" %}
@@ -56,11 +75,52 @@ Se le voci di menu di primo livello sono più di 5, vanno collocate in un menù 
 <br/>
 <br/>
 
+### Menu Verticale
+Il **Menu verticale** può incorporare _liste semplici_ e _liste innestate_.  
+
+Si utilizza quando si ha l’esigenza di trattare in forma di lista le voci del menu, quindi all’interno di applicativi con **molte sezioni** cui si deve dare accesso in qualsiasi punto della navigazione.  
+Lo si preferisce per garantire la leggibilità delle voci nella lista, che può scorrere per una visualizzazione completa.
+
+Questo tipo di menu è sempre **collocato a sinistra dello schermo**; può essere utilizzato in modalità a scomparsa o *sidebar*.  
+Si vedano le voci **menu verticale** e **sidebar** nella pagina degli [esempi]({{ site.baseurl }}/docs/it25/esempi/) per una migliore comprensione del possibile utilizzo.
+
+
+#### Semplice
+
+{% comment %}Example name: IT25 Menu verticale semplice{% endcomment %}
+{% capture example %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 it25-sidebar">
+      {% include html_docs/menu-verticale/menu-verticale-semplice.html %}
+      </div>
+    </div>
+  </div>
+{% endcapture %}{% include example.html content=example %}
+
+
+#### Annidato
+
+{% comment %}Example name: IT25 Menu verticale annidato{% endcomment %}
+{% capture example %}
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4 it25-sidebar">
+        {% include html_docs/menu-verticale/menu-verticale-annidato.html %}
+      </div>
+    </div>
+  </div>
+{% endcapture %}{% include example.html content=example %}
+
+
+
+
 ---
 ## Accesso area privata
 
 La **topbar** può essere impiegata come toolbar di servizio inserendo voci quali **login**, **cambio lingua**, **assistenza** ecc.
 
+<div class="exclude-a11y-check">
 <header class="it-header-wrapper">
   {% include html_docs/header/topbar.html dropdowns="yes" language="yes" access="yes" %}
   <div class="it-nav-wrapper">
@@ -74,6 +134,7 @@ La **topbar** può essere impiegata come toolbar di servizio inserendo voci qual
     {% include html_docs/header/center_menu-oriz.html logo="yes" %}
   </div>
 </header>
+</div>
 
 Il menu dropdown può contenere link utili per il logout e la gestione del profilo e delle impostazioni utente.  
 
@@ -107,6 +168,7 @@ Può essere utile "staccarla" dalle altre per provare anche vedere la responsivi
 
 
 ---
+
 ## Utilizzo del componente
 L'header è costruito sulla base del componente [header di bootstrap-italia]({{ site.baseurl }}/docs/menu-di-navigazione/header/) che è composto da tre parti:
 1. **topbar** equivalente allo *slim header*

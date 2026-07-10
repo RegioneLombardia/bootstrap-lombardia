@@ -1,6 +1,6 @@
 ---
 layout: it25_docs
-title: Pager
+title: Pagination
 group: componenti
 toc: true
 ---

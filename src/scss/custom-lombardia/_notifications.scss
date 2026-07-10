@@ -1,0 +1,10 @@
+.notification {
+  &.with-icon {
+    &.info {
+      border-color: $info;
+      .icon {
+        fill: $info;
+      }
+    }
+  }
+}

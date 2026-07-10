@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
 title: Megamenu
-group: navigazione-old
+group: navigazione
 toc: true
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 Il **Megamenu** è una variante della componente dropdown.  
 Presenta un **sottomenu** contenente **elenchi di link relativi ad una voce del menu di navigazione**.

@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
-title: Wizard
+title: Stepper
 group: componenti
 toc: true
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 La componente **Wizard** è utile per demarcare gli step all’interno di un processo.
 

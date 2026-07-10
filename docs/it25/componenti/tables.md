@@ -1,6 +1,6 @@
 ---
 layout: it25_docs
-title: Table
+title: Tables
 group: componenti
 toc: yes
 ---

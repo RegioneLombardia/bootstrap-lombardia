@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
 title: Popover
-group: inserimento
+group: componenti
 toc: true
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 Il **Popover** è una componente che viene richiamato al click e fornisce informazioni su un determinato elemento, comando o interazione.
 

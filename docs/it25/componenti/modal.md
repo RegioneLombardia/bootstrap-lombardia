@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
-title: Overlay
-group: informazioni
+title: Modal
+group: componenti
 toc: no
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 **L’Overlay** consente di porre massima evidenza su messaggi o fasi di una procedura che richiedono l’attenzione e il feedback dell’utente.
 

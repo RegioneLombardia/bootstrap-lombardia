@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
 title: Accordion
-group: informazioni
+group: componenti
 toc: yes
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 La componente **Accordion** permette di gestire dati e informazioni all’interno della stessa schermata.  
 Si tratta di un serie di pannelli apribili nei quali è possibile inserire informazioni di varia natura, sia testuali che numeriche.  

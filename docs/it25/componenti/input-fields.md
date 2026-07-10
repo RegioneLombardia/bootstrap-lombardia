@@ -1,70 +1,10 @@
 ---
 layout: it25_docs
 title: Input-fields
-group: inserimento
+group: componenti
 toc: true
 ---
 
-Gli **Input fields** sono le componenti dell’interfaccia dedicate all’inserimento di dati all’interno del sistema.  
-Negli esempi sottostanti, si mostrano varie casistiche di componenti per l’input di dati.
-
-Per la validazione è possibile usare [Just Validate](https://just-validate.dev/){:target="_blank"} (si veda la [documentazione tecnica]({{ site.baseurl }}/docs/form/introduzione/#validazione) o l'[esempio Form]({{ site.baseurl }}/docs/it25/esempi/menu-oriz-form/)).  
-Altrimenti è possibile impostare autonomamente:
-- per i *tag* `input` le classi:
-  * `is-valid`
-  * `is-valid warning`
-  * `is-invalid`
-- per i messaggi di errore, le classi
-  * `valid-feedback`
-  * `warning-feedback`
-  * `invalid-feedback`.
-
-{% capture example %}
-<div class="row mb-5">
-  <div class="col">Stato inattivo</div>
-  <div class="col">Stato attivo</div>
-  <div class="col">Stato disabilitato</div>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="form-group">
-      <label for="exampleInputText1">Etichetta di esempio</label>
-      <input type="text" class="form-control" id="exampleInputText1">
-    </div>
-  </div>
-  <div class="col">
-    <div class="form-group">
-      <label class="active" for="exampleInputText2">Etichetta di esempio</label>
-      <input type="text" class="form-control focus--mouse" id="exampleInputText2">
-    </div>
-  </div>
-  <div class="col">
-    <div class="form-group">
-      <label class="active" for="exampleInputText3">Etichetta di esempio</label>
-      <input type="text" class="form-control" id="exampleInputText3" disabled>
-    </div>
-  </div>
-</div>
-<div class="row mb-5">
-  <div class="col-4">Input corretto</div>
-  <div class="col-4">Attenzione</div>
-  <div class="col-4">Errore</div>
-</div>
-<div class="row">
-  <div class="form-group col-4">
-    <label class="active" for="input-field-10">Etichetta di esempio</label>
-    <input type="text" class="form-control is-valid" id="input-field-10" name="input-field-10" value="Testo immesso" />
-  </div>
-  <div class="form-group col-4">
-    <label class="active" for="input-field-11">Etichetta di esempio</label>
-    <input type="text" class="form-control is-valid warning" id="input-field-11" name="input-field-11" value="Testo immesso" />
-  </div>
-  <div class="form-group col-4">
-    <label class="active" for="input-field-12">Etichetta di esempio</label>
-    <input type="text" class="form-control is-invalid" id="input-field-12" name="input-field-12" value="Testo immesso" />
-  </div>
-</div>
-{% endcapture %}{% include example.html content=example %}
 
 ---
 

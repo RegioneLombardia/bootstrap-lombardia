@@ -2,7 +2,7 @@
 layout: it25_docs
 group: introduzione
 title: Introduzione
-toc: true
+toc: false
 ---
 
 Lo scopo primario dell’interfaccia è quello di **aiutare l’utente** a raggiungere ciò che cerca in modo  naturale, immediato e trasparente. Per questo, la coerenza dei vari elementi che la compongono – anche su diversi dispositivi – è un elemento chiave per la creazione di prodotti e servizi funzionali e  semplici da utilizzare.
@@ -29,19 +29,39 @@ Sono inoltre forniti degli *Esempi* di pagine complete per vederne il funzioname
 {% capture callout %}
 #### <svg class="icon icon-warning icon-lg"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-warning-circle"></use></svg> Componenti in fase di aggiornamento
 
-Il sommario è provvisoriamente diviso in due sezioni:
- - **Linee Guida** contiene la documentazione dei componenti **già adeguati al nuovo** {{ site.data.short.dsl }}
- - **Linee Guida Old** le voci riguardanti le parti non ancora aggiornate.
+L'aggiornamento dei componenti al nuovo Design System di Regione Lombardia è ancora in corso.  
+Sono pronti gli elementi più evidenti dal punto di vista visivo.
 
-Con i prossimi rilasci, mano a mano che altri componenti e la relativa documentazione verranno aggiornati, le voci spariranno dalle "Linee guida OLD" per comparire nelle "Linee Guida".  
-Le voci nella seconda sezione riguardano comunque **componenti tuttora funzionanti ed utilizzabili**.
+I componenti **non ancora pienamente aggiornati** sono contrassegnati dai seguenti tag:
+
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th scope="col">Badge</th>
+      <th scope="col">Significato</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="badge bg-warning">Da rivedere</span></td>
+      <td>utilizzabile ma potrebbe essere soggetto a modifiche</td>
+    </tr>
+    <tr>
+      <td><span class="badge primary-bg-g1 text-black">In lavorazione</span></td>
+      <td>componente da creare o ancora in bozza</td>
+    </tr>
+  </tbody>
+</table>
+
+I componenti **non contrassegnati** da un tag, sono da intendersi **pronti**.  
+I componenti **eliminati** sono elencati nei [breaking change]({{ site.baseurl }}/docs/it25/breaking-change/)
 
 #### Roadmap
-Il criterio seguito nell'aggiornamento dei componenti è quello di fornire per primi gli elementi più evidenti dal punto di vista visivo, per poi completare quelli di dettaglio.
+I componenti aggiornati sono basati sulla versione *2.x* di {{ site.data.short.bi }}.
 
-Data l'urgenza è stato giocoforza basarsi sulla versione *2.x* di {{ site.data.short.bi }}, pur sapendo che AGID ha appena rilasciato la versione *3.0.0-beta.0* destinata a sostituirla e contenente sostanziali e impattanti cambiamenti.
-
+AGID ha appena rilasciato la versione *3.0.0-beta* destinata a sostituirla e contenente sostanziali e impattanti cambiamenti.  
 Quando Agid rilascerà la versione *3.0.0* definitiva, partirà necessariamente un riallineamento alla nuova versione di {{ site.data.short.bi }}.  
+
 A tale nuova versione è rimandato l'aggiornamento del componente *Form* (e componenti direttamente collegati)
 {% endcapture %}{% include callout.html content=callout type="warning" %}
 

@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
-title: Tab bar
-group: call-to-action
+title: Tabs
+group: componenti
 toc: false
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 La **Tab bar** organizza e permette la navigazione tra gruppi di contenuti che sono tra loro correlati ed allo **stesso livello di gerarchia**.
 

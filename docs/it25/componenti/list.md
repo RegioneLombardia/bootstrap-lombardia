@@ -1,9 +1,11 @@
 ---
 layout: it25_docs
-title: Liste
-group: navigazione-old
+title: List
+group: componenti
 toc: true
 ---
+
+<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
 
 Le Liste sono composte da voci attraverso le quali è possibile effettuare sessioni di navigazione all’interno di un’interfaccia.  
 Troviamo spesso questo elemento all’interno dei menu verticali, ma possono essere presenti in diverse modalità, come ad esempio all’interno di menu fissi laterali.

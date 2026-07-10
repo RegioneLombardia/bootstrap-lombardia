@@ -3,13 +3,13 @@
   <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
   <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
   <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdownC1">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown{{include.navor-id}}">
       <span>Menu Dropdown</span>
       <svg class="icon icon-xs">
         <use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use>
       </svg>
     </a>
-    <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdownC1">
+    <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown{{include.navor-id}}">
       <div class="link-list-wrapper">
         <ul class="link-list">
           <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
@@ -23,10 +23,10 @@
   </li>
   <!-- megamenu -->
   <li class="nav-item dropdown megamenu">
-    <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu-5" data-focus-mouse="false">
+    <button type="button" class="nav-link dropdown-toggle px-lg-2 px-xl-3" data-bs-toggle="dropdown" aria-expanded="false" id="megamenu{{include.navor-id}}" data-focus-mouse="false">
         <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
     </button>
-    <div class="dropdown-menu" role="region" aria-labelledby="megamenu-5">
+    <div class="dropdown-menu" role="region" aria-labelledby="megamenu{{include.navor-id}}">
       <div class="megamenu pb-5 pt-3 py-lg-0">
         <div class="row">
           <div class="col-xs-12 col-lg-4 px-0">

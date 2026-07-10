@@ -6,24 +6,37 @@
     - title: Griglie
     - title: Colori
     - title: Tipografia
+    - title: Bordi e raggi
     - title: Icone
 
 - title: Navigazione
   pages:
     - title: Header
+    - title: Megamenu
     - title: Breadcrumb
     - title: Footer
+    - title: Searchbar
 
 - title: Componenti
   pages:
+    - title: Accordion
+    - title: Alert
     - title: Button
     - title: Card
+    - title: Carousel
+    - title: Chips
     - title: Cookiebar
-    - title: Pager
+    - title: Data entry
+    - title: Link
+    - title: List
+    - title: Modal
+    - title: Pagination
+    - title: Popover
     - title: Progress bar
-    - title: Table
+    - title: Tabs
+    - title: Tables
     - title: Tooltip
-    - title: Wizard
+    - title: Stepper
 
 - title: Esempi
 
