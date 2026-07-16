@@ -1,5 +1,7 @@
 # used in documentation as site.data.nav
 
+- title: Informazioni
+
 - title: Come iniziare
   pages:
     - title: Introduzione
@@ -111,5 +113,3 @@
 - title: Esempi
 
 - title: Progetti
-
-- title: Informazioni
