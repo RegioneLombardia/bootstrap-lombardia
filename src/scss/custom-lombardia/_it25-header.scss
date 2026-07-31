@@ -160,6 +160,17 @@
   display: none;
 }
 
+
+#it25-megamenu-new {
+  width: 100%;
+  overflow: auto;
+  height: calc(var(--it25-menuvert-height) * 1px);
+  background-color: $white;
+  position: absolute;
+  display: none;
+}
+
+
 .navbar {
   .navbar-collapsable {
     .menu-wrapper {

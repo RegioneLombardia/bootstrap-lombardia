@@ -14,7 +14,7 @@ export default function () {
   }
 
   function clickMenuVert() {
-    var x = document.getElementById('it25-menu-vert')
+    var x = document.getElementById('it25-menu-vert') ?? document.getElementById('it25-megamenu-new')
     if (x.style.display === 'block') {
       x.style.display = 'none'
     } else {
@@ -25,7 +25,7 @@ export default function () {
   }
 
   function initMenuVert() {
-    if (document.getElementById('it25-menu-vert')) {
+    if (document.getElementById('it25-menu-vert') || document.getElementById('it25-megamenu-new')) {
       window.addEventListener('scroll', resizeMenuVert)
       window.addEventListener('resize', resizeMenuVert)
       document.getElementById('btn-hamburger').addEventListener('click', clickMenuVert)
@@ -52,7 +52,11 @@ export default function () {
       document.getElementById('header-nav-wrapper').style.height = ''
       height = window.innerHeight - document.getElementById('header-nav-wrapper').offsetHeight - topbarHeight
     }
-    document.getElementById('it25-menu-vert').style.setProperty('--it25-menuvert-height', height)
+    if (document.getElementById('it25-menu-vert')) {
+      document.getElementById('it25-menu-vert').style.setProperty('--it25-menuvert-height', height)
+    } else {
+      document.getElementById('it25-megamenu-new').style.setProperty('--it25-menuvert-height', height)
+    }
   }
 
   function initCloning() {

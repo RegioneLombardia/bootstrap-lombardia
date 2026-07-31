@@ -16,6 +16,10 @@
       description: "Il menù verticale a comparsa è <strong>utile se le voci di menù sono molto numerose</strong>.<br/>
       Non occupa spazio, ma deve essere aperto e chiuso con un click."
       code_explain: true
+    - name: 'Megamenu'
+      url: megamenu_new
+      description: "Esperimento megamenu RL"
+      code_explain: false
 - category: Corpo pagina compatto
   description: "<strong>Se i dati da mostrare non sono molti</strong>, evita che, sugli schermi grandi, le informazioni risultino troppo sparse."
   examples:
