@@ -11,13 +11,13 @@
 
 <title>Header · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202607161435" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202608121312" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202607161435" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202608121312" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -94,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.7.1/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">v2.7.1</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.7.2/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.7.2</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -496,6 +496,7 @@
 </li>
 <li class="toc-entry toc-h2"><a href="#hamburger-button">Hamburger button</a>
 <ul>
+<li class="toc-entry toc-h3"><a href="#megamenu-di-1-livello">Megamenu di 1° Livello</a></li>
 <li class="toc-entry toc-h3"><a href="#menu-verticale">Menu Verticale</a></li>
 </ul>
 </li>
@@ -635,52 +636,57 @@ In caso l’applicativo non abbia un logo può essere usato un acronimo e/o il n
         <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
     </button>
     <div class="dropdown-menu" role="region" aria-labelledby="megamenudochead01">
-      <div class="megamenu pb-5 pt-3 py-lg-0">
-        <div class="row">
-          <div class="col-xs-12 col-lg-4 px-0">
-            <div class="row">
-              <div class="col-12 it-vertical it-description pb-lg-3">
-                <div class="description-content ps-4 ps-sm-5 ms-3">
-                    <h4 class="fw-normal">Argomenti</h4>
-                  <p>
-                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
-                  </p>
+                    <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 7</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 8</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 9</span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </li>
 </ul>
@@ -799,52 +805,57 @@ In caso l’applicativo non abbia un logo può essere usato un acronimo e/o il n
         <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
     </button>
     <div class="dropdown-menu" role="region" aria-labelledby="megamenudochead02">
-      <div class="megamenu pb-5 pt-3 py-lg-0">
-        <div class="row">
-          <div class="col-xs-12 col-lg-4 px-0">
-            <div class="row">
-              <div class="col-12 it-vertical it-description pb-lg-3">
-                <div class="description-content ps-4 ps-sm-5 ms-3">
-                    <h4 class="fw-normal">Argomenti</h4>
-                  <p>
-                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
-                  </p>
+                    <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 7</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 8</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 9</span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </li>
 </ul>
@@ -865,7 +876,7 @@ In caso l’applicativo non abbia un logo può essere usato un acronimo e/o il n
 <br /></p>
 
 <h3 id="menu-orizzontale">Menu Orizzontale</h3>
-<p>Il <strong>Menu orizzontale</strong> è il menu principale di navigazione. Esso può contenere, oltre a <em>semplici link</em>, il <em>menu dropdown</em> ed il <em>megamenu</em>.</p>
+<p>Il <strong>Menu orizzontale</strong> è una <em>navbar</em> di navigazione. Può contenere, oltre a semplici <strong>link</strong>, <strong>menu dropdown</strong> e <strong>megamenu di 2° livello</strong>.</p>
 
 <p>Su <strong>desktop</strong> il menu è sempre visualizzato e a scorrimento in basso e rimane posizionato fisso sotto la barra istituzionale. Se la pagina scorre, il menu si sposta di conseguenza, rimanendo sotto la barra istituzionale.<br />
 Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <strong>le voci del menu sono poche e le label sono brevi</strong>.</p>
@@ -927,52 +938,57 @@ Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <stro
         <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"></use></svg>
     </button>
     <div class="dropdown-menu" role="region" aria-labelledby="megamenudochead03">
-      <div class="megamenu pb-5 pt-3 py-lg-0">
-        <div class="row">
-          <div class="col-xs-12 col-lg-4 px-0">
-            <div class="row">
-              <div class="col-12 it-vertical it-description pb-lg-3">
-                <div class="description-content ps-4 ps-sm-5 ms-3">
-                    <h4 class="fw-normal">Argomenti</h4>
-                  <p>
-                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
-                  </p>
+                    <div class="row">
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4">
+                <div class="link-list-wrapper">
+                  
+                  <ul class="link-list">
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 7</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 8</span></a>
+                    </li>
+                    <li class="border-bottom">
+                      <a class="dropdown-item list-item" href="#"><span>Link lista 9</span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
     </div>
   </li>
 </ul>
@@ -986,15 +1002,15 @@ Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <stro
       </div>
     </div>
 
-</div><div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-549105" style="margin-bottom: 2rem;" data-auto-expand="true">
+</div><div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-044859" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-549105">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-549105" aria-expanded="false" aria-controls="collapse-example-549105">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-044859">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-044859" aria-expanded="false" aria-controls="collapse-example-044859">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-549105">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-044859">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1002,7 +1018,7 @@ Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <stro
       </div>
     </div>
 
-    <div id="collapse-example-549105" class="accordion-collapse collapse" data-bs-parent="#accordion-example-549105" role="region" aria-labelledby="heading-example-549105">
+    <div id="collapse-example-044859" class="accordion-collapse collapse" data-bs-parent="#accordion-example-044859" role="region" aria-labelledby="heading-example-044859">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1112,6 +1128,11 @@ Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <stro
 106
 107
 108
+109
+110
+111
+112
+113
 </pre></td><td class="code"><pre>      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"it-header-navbar-wrapper it25-menu-orizzontale"</span> <span class="na">id=</span><span class="s">"header-nav-wrapper"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
         <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
@@ -1162,52 +1183,57 @@ Questa tipologia di menu viene preferita al <em>menu verticale</em> quando <stro
         <span class="nt">&lt;span&gt;</span>Megamenu<span class="nt">&lt;/span&gt;&lt;svg</span> <span class="na">role=</span><span class="s">"img"</span> <span class="na">class=</span><span class="s">"icon icon-xs ms-1"</span><span class="nt">&gt;&lt;use</span> <span class="na">href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-expand"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
     <span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span> <span class="na">role=</span><span class="s">"region"</span> <span class="na">aria-labelledby=</span><span class="s">"megamenudochead03"</span><span class="nt">&gt;</span>
-      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"megamenu pb-5 pt-3 py-lg-0"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-lg-4 px-0"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 it-vertical it-description pb-lg-3"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"description-content ps-4 ps-sm-5 ms-3"</span><span class="nt">&gt;</span>
-                    <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"fw-normal"</span><span class="nt">&gt;</span>Argomenti<span class="nt">&lt;/h4&gt;</span>
-                  <span class="nt">&lt;p&gt;</span>
-                    Testo utile a fornire una descrizione dei contenuti della sezione <span class="nt">&lt;strong&gt;</span>megamenu<span class="nt">&lt;/strong&gt;</span>.
-                  <span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                  
+                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 1<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                  
+                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link attivo<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link disabilitato<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 6<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;/ul&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;/div&gt;</span>
+              <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
+                  
+                  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 7<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 8<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
+                      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 9<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
+                    <span class="nt">&lt;/li&gt;</span>
+                  <span class="nt">&lt;/ul&gt;</span>
                 <span class="nt">&lt;/div&gt;</span>
               <span class="nt">&lt;/div&gt;</span>
             <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 1<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 2<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 3<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-lg-4"</span><span class="nt">&gt;</span>
-            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"link-list-wrapper"</span><span class="nt">&gt;</span>
-              <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"link-list"</span><span class="nt">&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link attivo<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link disabilitato<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-                <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"border-bottom"</span><span class="nt">&gt;</span>
-                  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item list-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;&lt;span&gt;</span>Link lista 6<span class="nt">&lt;/span&gt;&lt;/a&gt;</span>
-                <span class="nt">&lt;/li&gt;</span>
-              <span class="nt">&lt;/ul&gt;</span>
-            <span class="nt">&lt;/div&gt;</span>
-          <span class="nt">&lt;/div&gt;</span>
-        <span class="nt">&lt;/div&gt;</span>
-      <span class="nt">&lt;/div&gt;</span>
+
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
 <span class="nt">&lt;/ul&gt;</span>
@@ -1256,7 +1282,7 @@ if (!window.accordionAutoExpandSetup) {
 <hr />
 <h2 id="hamburger-button">Hamburger button</h2>
 
-<p>Se le voci di menu di primo livello sono più di 5, vanno collocate in un <strong>menù verticale a comparsa</strong>, comandato da un <em>hamburger button</em>.</p>
+<p>Se le voci di menu di primo livello sono più di 5, vanno collocate in un <strong>megamenù di primo livello</strong> o in un <strong>menù verticale a comparsa</strong>, comandato da un <em>hamburger button</em>.</p>
 <div class="exclude-a11y-check">
 <header class="it-header-wrapper" style="position: static">
     <div class="it-header-slim-wrapper it25-top-bar">
@@ -1413,6 +1439,15 @@ if (!window.accordionAutoExpandSetup) {
 <p><br />
 <br /></p>
 
+<h3 id="megamenu-di-1-livello">Megamenu di 1° Livello</h3>
+<p>Sugli schermi di medie e grandi dimensioni, orizzontalmente occupa tutta la larghezza disponibile, mentre la lunghezza in verticale dipende dal contenuto.
+Può così <strong>visualizzare immediatamente</strong> un alto numero di voci senza la necessità di scorrere in verticale.<br />
+Può anche essere suddiviso in righe e colonne con larghezze e disposizione differenti.</p>
+
+<p>Sugli schermi di piccole dimensioni si comporta come il menù verticale.</p>
+
+<p>Si veda la voce <strong>megamenu di 1° livello</strong> nella pagina degli <a href="/bootstrap-lombardia/docs/it25/esempi/">esempi</a> per una migliore comprensione del funzionamento.</p>
+
 <h3 id="menu-verticale">Menu Verticale</h3>
 <p>Il <strong>Menu verticale</strong> può incorporare <em>liste semplici</em> e <em>liste innestate</em>.</p>
 
@@ -1527,15 +1562,15 @@ Si vedano le voci <strong>menu verticale</strong> e <strong>sidebar</strong> nel
     </div>
   </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-557800" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-052212" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-557800">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-557800" aria-expanded="false" aria-controls="collapse-example-557800">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-052212">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-052212" aria-expanded="false" aria-controls="collapse-example-052212">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-557800">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-052212">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1543,7 +1578,7 @@ Si vedano le voci <strong>menu verticale</strong> e <strong>sidebar</strong> nel
       </div>
     </div>
 
-    <div id="collapse-example-557800" class="accordion-collapse collapse" data-bs-parent="#accordion-example-557800" role="region" aria-labelledby="heading-example-557800">
+    <div id="collapse-example-052212" class="accordion-collapse collapse" data-bs-parent="#accordion-example-052212" role="region" aria-labelledby="heading-example-052212">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -1924,15 +1959,15 @@ if (!window.accordionAutoExpandSetup) {
     </div>
   </div>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-564566" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-057886" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-564566">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-564566" aria-expanded="false" aria-controls="collapse-example-564566">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-057886">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-057886" aria-expanded="false" aria-controls="collapse-example-057886">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-564566">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-057886">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -1940,7 +1975,7 @@ if (!window.accordionAutoExpandSetup) {
       </div>
     </div>
 
-    <div id="collapse-example-564566" class="accordion-collapse collapse" data-bs-parent="#accordion-example-564566" role="region" aria-labelledby="heading-example-564566">
+    <div id="collapse-example-057886" class="accordion-collapse collapse" data-bs-parent="#accordion-example-057886" role="region" aria-labelledby="heading-example-057886">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -2520,7 +2555,8 @@ if (!window.accordionAutoExpandSetup) {
 Per ogni link si apre un tab separato in cui compare una pagina intera di esempio.<br />
 Può essere utile “staccarla” dalle altre per provare anche vedere la responsività della stessa quando si variano le dimensioni della finestra portandole a livello tablet e smartphone.</p>
 
-<p><a href="/bootstrap-lombardia/docs/it25/esempi/menu-oriz/" target="_blank">menu orizzontale</a><br />
+<p><a href="/bootstrap-lombardia/docs/it25/esempi/megamenu-liv1/" target="_blank">megamenu 1° livello</a><br />
+<a href="/bootstrap-lombardia/docs/it25/esempi/menu-oriz/" target="_blank">navigazione orizzontale</a><br />
 <a href="/bootstrap-lombardia/docs/it25/esempi/menu-vert/" target="_blank">menu verticale</a><br />
 <a href="/bootstrap-lombardia/docs/it25/esempi/sidebar/" target="_blank">sidebar</a></p>
 
@@ -2883,17 +2919,17 @@ Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visuali
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202607161435"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202608121312"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202607161435"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202608121312"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202607161435"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202608121312"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -2914,15 +2950,37 @@ Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visuali
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202607161435"></script> -->
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202608121312"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
 <script type="text/javascript">
   docsearch({
     appId: 'GYB0A8V0L6',
     apiKey: 'c25acd22f6bc00e5710457bcf961f37c',
     indexName: 'bootstrap-lombardia',
     container: '#docsearch',
-    placeholder: "Cerca componenti, classi,informazioni...",
+    placeholder: "Cerca nella documentazione",
+    debug: false,
+    transformItems: (items) =>
+      items.map((item) => ({
+        objectID: item.objectID,
+        content: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+        url: item.objectID,
+        hierarchy: {
+          lvl0: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl1: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl2: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl3: null,
+          lvl4: null,
+          lvl5: null,
+          lvl6: null,
+        },
+        url_without_anchor: item.objectID,
+        type: 'content',
+        anchor: null,
+        _highlightResult: item._highlightResult,
+        _snippetResult: item._snippetResult,
+      }))
+    ,
     translations: DocSearchTranslations = {
       button: {
         buttonText: 'Cerca',
@@ -2930,10 +2988,10 @@ Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visuali
       },
       modal: {
         searchBox: {
-          resetButtonTitle: 'Pulisci la query',
-          resetButtonAriaLabel: 'Pulisci la query',
-          cancelButtonText: 'Cancella',
-          cancelButtonAriaLabel: 'Cancella',
+          clearButtonTitle: 'Pulisci la query',
+          clearButtonAriaLabel: 'Pulisci la query',
+          closeButtonText: 'Cancella',
+          closeButtonAriaLabel: 'Cancella',
         },
         startScreen: {
           recentSearchesTitle: 'Recenti',
@@ -2955,7 +3013,7 @@ Naturalmente, se il nome apllicativo è molto lungo, si può decidere di visuali
           navigateDownKeyAriaLabel: 'Freccia giù',
           closeText: 'chiudi',
           closeKeyAriaLabel: 'tasto Escape',
-          searchByText: 'Search by',
+          poweredByText: 'Search by',
         },
         noResultsScreen: {
           noResultsText: 'Nessun risultato per',

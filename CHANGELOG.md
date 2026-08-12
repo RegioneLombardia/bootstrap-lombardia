@@ -1,3 +1,33 @@
+## [2.7.2](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.1...v2.7.2) (2026-08-12)
+
+### Features
+
+* allineamento alla versione 2.18.3 di bootstrap-italia
+* megamenu di primo livello ([d1fa227](https://github.com/RegioneLombardia/bootstrap-lombardia/commit/d1fa22716a769c1127c25b49f82302ea8efd4f3f))
+
+---
+### Merge 2.18.2 --> 2.18.3 bootstrap-italia
+
+
+## [2.18.3](https://github.com/italia/bootstrap-italia/compare/v2.18.2...v2.18.3) (2026-08-04)
+
+
+### Bug Fixes
+
+* **input-search-autocomplete:** sanitize option HTML and escape regex ([abdbd3b](https://github.com/italia/bootstrap-italia/commit/abdbd3b7bf06bf007194eee8cffbaa2e59cf0ae4))
+* **modal, main:** responsive scrollable modal at high zoom and inert background isolation ([bb9d1c3](https://github.com/italia/bootstrap-italia/commit/bb9d1c3527cc9db6a87ad4341f53725371e9fa85))
+* **transfer:** initialize on keyboard interaction, not only on label events ([9d41936](https://github.com/italia/bootstrap-italia/commit/9d419368e836d7134efcff16f2a5d3d50625cede))
+
+
+## [2.18.2](https://github.com/italia/bootstrap-italia/compare/v2.18.1...v2.18.2) (2026-07-15)
+
+
+### Bug Fixes
+
+* remove autocomplete defaults ([d2d47e2](https://github.com/italia/bootstrap-italia/commit/d2d47e2353bbfe8a764c8807c1f5895fe4f6d15b))
+---
+
+
 ## [2.7.1](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.7.0...v2.7.1) (2026-07-10)
 
 
@@ -38,6 +68,8 @@ Si consiglia fortemente di leggere la documentazione specifica dei componenti pe
 * Card
 * Wizard
 
+---
+### Merge 2.17.2 --> 2.18.1 bootstrap-italia
 
 ### [2.18.1](https://github.com/italia/bootstrap-italia/compare/v2.18.0...v2.18.1) (2026-04-23)
 
@@ -99,7 +131,7 @@ Si consiglia fortemente di leggere la documentazione specifica dei componenti pe
 
 * removed invalid selector `:after .icon` ([e4804b9](https://github.com/italia/bootstrap-italia/commit/e4804b9e71845e98307ea1e134af8a5d47e8d7b7))
 
-
+---
 
 
 ## [2.6.3](https://github.com/RegioneLombardia/bootstrap-lombardia/compare/v2.6.2...v2.6.3) (2025-12-31)
