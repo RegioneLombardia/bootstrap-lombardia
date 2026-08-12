@@ -36,14 +36,36 @@
 <!-- <script src="{{ site.baseurl }}/docs/assets/src/js/cover-animation.js?{{ buildTime }}"></script> -->
 {%- endif -%}
 {%- if page.layout == "docs" or page.layout == "it25_docs" -%} {% comment %}La ricerca è gestita con Algolia DocSearch https://github.com/algolia/docsearch{% endcomment %}
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
 <script type="text/javascript">
   docsearch({
     appId: 'GYB0A8V0L6',
     apiKey: 'c25acd22f6bc00e5710457bcf961f37c',
     indexName: 'bootstrap-lombardia',
     container: '#docsearch',
-    placeholder: "Cerca componenti, classi,informazioni...",
+    placeholder: "Cerca nella documentazione",
+    debug: false,
+    transformItems: (items) =>
+      items.map((item) => ({
+        objectID: item.objectID,
+        content: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+        url: item.objectID,
+        hierarchy: {
+          lvl0: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl1: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl2: item._highlightResult.title.value.replace(/<\/?[^>]+(>|$)/g, "") ?? '',
+          lvl3: null,
+          lvl4: null,
+          lvl5: null,
+          lvl6: null,
+        },
+        url_without_anchor: item.objectID,
+        type: 'content',
+        anchor: null,
+        _highlightResult: item._highlightResult,
+        _snippetResult: item._snippetResult,
+      }))
+    ,
     translations: DocSearchTranslations = {
       button: {
         buttonText: 'Cerca',
@@ -51,10 +73,10 @@
       },
       modal: {
         searchBox: {
-          resetButtonTitle: 'Pulisci la query',
-          resetButtonAriaLabel: 'Pulisci la query',
-          cancelButtonText: 'Cancella',
-          cancelButtonAriaLabel: 'Cancella',
+          clearButtonTitle: 'Pulisci la query',
+          clearButtonAriaLabel: 'Pulisci la query',
+          closeButtonText: 'Cancella',
+          closeButtonAriaLabel: 'Cancella',
         },
         startScreen: {
           recentSearchesTitle: 'Recenti',
@@ -76,7 +98,7 @@
           navigateDownKeyAriaLabel: 'Freccia giù',
           closeText: 'chiudi',
           closeKeyAriaLabel: 'tasto Escape',
-          searchByText: 'Search by',
+          poweredByText: 'Search by',
         },
         noResultsScreen: {
           noResultsText: 'Nessun risultato per',

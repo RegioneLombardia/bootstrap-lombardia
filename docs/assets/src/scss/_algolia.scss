@@ -4,6 +4,14 @@
   --docsearch-searchbox-background: white;
   --docsearch-muted-color: shade-color(#7f8497, 10%);
 }
+
+.DocSearch-Commands-Key,
+.DocSearch-Button-Key {
+  font-size: 12px;
+  height: 24px;
+  width: 32px;
+}
+
 .DocSearch-Button {
   border-radius: 0;
   height: 2.5rem;
@@ -148,4 +156,36 @@
   .ds-suggestion.ds-cursor .algolia-docsearch-suggestion--content {
     background-color: rgba(208, 189, 236, 0.15) !important;
   }
+}
+
+.DocSearch-Clear {
+  visibility: hidden;
+  display: flex;
+}
+
+.DocSearch-Clear:after {
+  animation: fade-in 0.1s ease-in forwards;
+  appearance: none;
+  background: none;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  content: 'X';
+  padding: 2px;
+  right: 1rem;
+  visibility: visible;
+  display: block;
+  position: absolute;
+}
+
+.DocSearch-Actions {
+  display: flex;
+}
+
+.DocSearch-Close {
+  display: none;
+}
+
+.DocSearch-Hit-icon {
+  margin-top: -1rem;
 }
