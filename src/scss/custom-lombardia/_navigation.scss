@@ -5,12 +5,12 @@
         a {
           &.list-item {
             &.active {
-              color: $it25-gray;
+              color: $black;
               text-decoration: none;
               font-weight: 600;
 
               span {
-                color: $it25-gray;
+                color: $black;
               }
             }
           }
@@ -22,11 +22,11 @@
           }
 
           span {
-            color: $it25-gray;
+            color: $black;
           }
 
           i {
-            color: $it25-gray;
+            color: $black;
           }
         }
       }

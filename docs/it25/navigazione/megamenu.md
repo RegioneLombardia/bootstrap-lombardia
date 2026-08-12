@@ -5,10 +5,10 @@ group: navigazione
 toc: true
 ---
 
-<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
-
-Il **Megamenu** è una variante della componente dropdown.  
+Il **Megamenu di 2° livello** è una variante del componente dropdown.  
 Presenta un **sottomenu** contenente **elenchi di link relativi ad una voce del menu di navigazione**.
+
+Utilizzabile nel [menù orizzontale]({{ site.baseurl }}/docs/it25/navigazione/header/#menu-orizzontale) dell'header per racchiudere ampi elenchi di link ed informazioni correlate.
 
 Si raccomanda l’utilizzo di questa componente nella forma più semplice e pulita, utilizzando il **megamenu classico**, con o senza **intestazione delle colonne** (_header_).
 
@@ -17,7 +17,7 @@ Si raccomanda l’utilizzo di questa componente nella forma più semplice e puli
 Il megamenu ha una struttura colonnare in cui ogni colonna richiama al suo interno la componente _lista_ per costruire l’elenco di link desiderato.
 
 {% capture example %}
-{% include html_docs/megamenu/megamenu.html section=false id_suff="26" %}
+{% include html_docs/megamenu/navbar_megamenu.html section=false id_suff="26" %}
 {% endcapture %}
 {% include example.html content=example %}
 
@@ -26,6 +26,6 @@ Il megamenu ha una struttura colonnare in cui ogni colonna richiama al suo inter
 Il megamenu con intestazione delle colonne viene utilizzato quando vi sono delle categorie di liste in cui sono raggruppate le voci di menu per facilitare la ricerca dei contenuti.
 
 {% capture example %}
-{% include html_docs/megamenu/megamenu.html section=true id_suff="27" %}
+{% include html_docs/megamenu/navbar_megamenu.html section=true id_suff="27" %}
 {% endcapture %}
 {% include example.html content=example %}

@@ -41,7 +41,7 @@ In caso l'applicativo non abbia un logo può essere usato un acronimo e/o il nom
 <br/>
 
 ### Menu Orizzontale
-Il **Menu orizzontale** è il menu principale di navigazione. Esso può contenere, oltre a _semplici link_, il _menu dropdown_ ed il _megamenu_.
+Il **Menu orizzontale** è una _navbar_ di navigazione. Può contenere, oltre a semplici **link**, **menu dropdown** e **megamenu di 2° livello**.
 
 Su **desktop** il menu è sempre visualizzato e a scorrimento in basso e rimane posizionato fisso sotto la barra istituzionale. Se la pagina scorre, il menu si sposta di conseguenza, rimanendo sotto la barra istituzionale.  
 Questa tipologia di menu viene preferita al _menu verticale_ quando **le voci del menu sono poche e le label sono brevi**.
@@ -60,7 +60,7 @@ Si vedano le voci **menu orizzontale** e **form** nella pagina degli [esempi]({{
 ---
 ## Hamburger button
 
-Se le voci di menu di primo livello sono più di 5, vanno collocate in un **menù verticale a comparsa**, comandato da un *hamburger button*.
+Se le voci di menu di primo livello sono più di 5, vanno collocate in un **megamenù di primo livello** o in un **menù verticale a comparsa**, comandato da un *hamburger button*.
 <div class="exclude-a11y-check">
 <header class="it-header-wrapper" style="position: static">
   {% include html_docs/header/topbar.html dropdowns="yes" %}
@@ -74,6 +74,16 @@ Se le voci di menu di primo livello sono più di 5, vanno collocate in un **men�
 </div>
 <br/>
 <br/>
+
+### Megamenu di 1° Livello
+Sugli schermi di medie e grandi dimensioni, orizzontalmente occupa tutta la larghezza disponibile, mentre la lunghezza in verticale dipende dal contenuto.
+Può così **visualizzare immediatamente** un alto numero di voci senza la necessità di scorrere in verticale.  
+Può anche essere suddiviso in righe e colonne con larghezze e disposizione differenti.
+
+Sugli schermi di piccole dimensioni si comporta come il menù verticale.
+
+Si veda la voce **megamenu di 1° livello** nella pagina degli [esempi]({{ site.baseurl }}/docs/it25/esempi/) per una migliore comprensione del funzionamento.
+
 
 ### Menu Verticale
 Il **Menu verticale** può incorporare _liste semplici_ e _liste innestate_.  
@@ -162,7 +172,8 @@ Per vedere il comportamento dell'header e dei diversi tipi di menù di navigazio
 Per ogni link si apre un tab separato in cui compare una pagina intera di esempio.  
 Può essere utile "staccarla" dalle altre per provare anche vedere la responsività della stessa quando si variano le dimensioni della finestra portandole a livello tablet e smartphone.
 
-<a href="{{ site.baseurl }}/docs/it25/esempi/menu-oriz/" target="_blank">menu orizzontale</a>  
+<a href="{{ site.baseurl }}/docs/it25/esempi/megamenu-liv1/" target="_blank">megamenu 1° livello</a>  
+<a href="{{ site.baseurl }}/docs/it25/esempi/menu-oriz/" target="_blank">navigazione orizzontale</a>  
 <a href="{{ site.baseurl }}/docs/it25/esempi/menu-vert/" target="_blank">menu verticale</a>  
 <a href="{{ site.baseurl }}/docs/it25/esempi/sidebar/" target="_blank">sidebar</a>  
 

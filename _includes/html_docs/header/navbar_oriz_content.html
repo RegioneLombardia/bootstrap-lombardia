@@ -27,52 +27,7 @@
         <span>Megamenu</span><svg role="img" class="icon icon-xs ms-1"><use href="{{site.baseurl}}/dist/svg/sprites.svg#it-expand"></use></svg>
     </button>
     <div class="dropdown-menu" role="region" aria-labelledby="megamenu{{include.navor-id}}">
-      <div class="megamenu pb-5 pt-3 py-lg-0">
-        <div class="row">
-          <div class="col-xs-12 col-lg-4 px-0">
-            <div class="row">
-              <div class="col-12 it-vertical it-description pb-lg-3">
-                <div class="description-content ps-4 ps-sm-5 ms-3">
-                    <h4 class="fw-normal">Argomenti</h4>
-                  <p>
-                    Testo utile a fornire una descrizione dei contenuti della sezione <strong>megamenu</strong>.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-lg-4">
-            <div class="link-list-wrapper">
-              <ul class="link-list">
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item active" href="#"><span>Link attivo</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item disabled" href="#"><span>Link disabilitato</span></a>
-                </li>
-                <li class="border-bottom">
-                  <a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+        {% include html_docs/megamenu/navbar_megamenu_content.html %}
     </div>
   </li>
 </ul>

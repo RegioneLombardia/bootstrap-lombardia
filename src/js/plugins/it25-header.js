@@ -14,7 +14,7 @@ export default function () {
   }
 
   function clickMenuVert() {
-    var x = document.getElementById('it25-menu-vert') ?? document.getElementById('it25-megamenu-new')
+    var x = document.getElementById('it25-menu-vert') ?? document.getElementById('it25-menu-mega')
     if (x.style.display === 'block') {
       x.style.display = 'none'
     } else {
@@ -25,7 +25,7 @@ export default function () {
   }
 
   function initMenuVert() {
-    if (document.getElementById('it25-menu-vert') || document.getElementById('it25-megamenu-new')) {
+    if (document.getElementById('it25-menu-vert') || document.getElementById('it25-menu-mega')) {
       window.addEventListener('scroll', resizeMenuVert)
       window.addEventListener('resize', resizeMenuVert)
       document.getElementById('btn-hamburger').addEventListener('click', clickMenuVert)
@@ -55,7 +55,7 @@ export default function () {
     if (document.getElementById('it25-menu-vert')) {
       document.getElementById('it25-menu-vert').style.setProperty('--it25-menuvert-height', height)
     } else {
-      document.getElementById('it25-megamenu-new').style.setProperty('--it25-menuvert-height', height)
+      document.getElementById('it25-menu-mega').style.setProperty('--it25-menuvert-height', height)
     }
   }
 

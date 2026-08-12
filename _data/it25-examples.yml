@@ -6,20 +6,22 @@
 - category: Corpo pagina fluido
   description: "Utilizza tutta la larghezza dello schermo <strong>quando devono essere mostrati molti dati</strong>."
   examples:
-    - name: 'Menu orizzontale'
+    - name: 'Navigazione orizzontale'
       url: menu-oriz
-      description: "Il menù orizzontale <strong>occupa poco spazio</strong>, ma può contenere solo pochi link.<br/>
-      Con i <strong>dropdown</strong> o i <strong>megamenù</strong> è possibile aumentarli, ma l'utente deve cliccare per vederli."
+      description: "La navbar orizzontale <strong>occupa poco spazio</strong>, ma può contenere solo pochi link.<br/>
+      Con i <strong>dropdown</strong> o i <strong>megamenù di 2° livello</strong> è possibile aumentarli, ma l'utente deve cliccare per vederli."
       code_explain: true
     - name: 'Menu verticale'
       url: menu-vert
       description: "Il menù verticale a comparsa è <strong>utile se le voci di menù sono molto numerose</strong>.<br/>
       Non occupa spazio, ma deve essere aperto e chiuso con un click."
       code_explain: true
-    - name: 'Megamenu'
-      url: megamenu_new
-      description: "Esperimento megamenu RL"
-      code_explain: false
+    - name: 'Megamenu di 1° Livello'
+      url: megamenu-liv1
+      description: "Megamenu a comparsa che usa tutta la larghezza dello schermo.<br/>
+      Sugli schermi ampi, permette di <strong>visualizzare immediatamente molte voci</strong> senza bisogno di farlo scorrere.<br/>
+      In caso di schermi di piccole dimensioni si comporta come il menù verticale."
+      code_explain: true
 - category: Corpo pagina compatto
   description: "<strong>Se i dati da mostrare non sono molti</strong>, evita che, sugli schermi grandi, le informazioni risultino troppo sparse."
   examples:

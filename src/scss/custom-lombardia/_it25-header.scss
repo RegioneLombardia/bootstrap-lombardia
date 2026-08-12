@@ -160,16 +160,23 @@
   display: none;
 }
 
-
-#it25-megamenu-new {
-  width: 100%;
+#it25-menu-mega {
+  width: 20rem;
   overflow: auto;
   height: calc(var(--it25-menuvert-height) * 1px);
   background-color: $white;
+  box-shadow: $dropdown-menu-shadow;
   position: absolute;
   display: none;
+  .navbar {
+    background: $white;
+  }
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    width: 100%;
+    padding: 1.5rem 3rem;
+    height: auto;
+  }
 }
-
 
 .navbar {
   .navbar-collapsable {
