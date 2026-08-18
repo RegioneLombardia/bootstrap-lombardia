@@ -20,6 +20,18 @@
   }
 }
 
+.code-example-accordion {
+  .accordion-button {
+    color: $primary;
+    font-size: 1rem;
+    font-weight: 600;
+    @include media-breakpoint-up(lg) {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+
 .bd-example {
   background-color: $white;
 }
@@ -157,3 +169,4 @@
   display: block;
   position: relative;
 }
+

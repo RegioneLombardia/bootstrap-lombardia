@@ -1,0 +1,105 @@
+  <div class="accordion" id="accordionExample2">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading1a">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse1a" aria-expanded="true" aria-controls="collapse1a">
+          Elemento Accordion #1
+        </button>
+      </h2>
+      <div id="collapse1a" class="accordion-collapse collapse show"
+        data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading1a">
+        <div class="accordion-body">
+          <div class="accordion" id="accordionExample2N">
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="heading1n">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse1n" aria-expanded="true" aria-controls="collapse1n">
+                  Elemento Accordion annidato #1
+                </button>
+              </h3>
+              <div id="collapse1n" class="accordion-collapse collapse show"
+                data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading1n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+                  Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                  Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+          {% if include.snippets=="no" %}
+            . . .
+          {% else %}
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="heading2n">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse2n" aria-expanded="false" aria-controls="collapse2n">
+                  Elemento Accordion annidato #2
+                </button>
+              </h3>
+              <div id="collapse2n" class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading2n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+                  Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                  Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="heading3n">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapse3n" aria-expanded="false" aria-controls="collapse3n">
+                  Elemento Accordion annidato #3
+                </button>
+              </h3>
+              <div id="collapse3n" class="accordion-collapse collapse"
+                data-bs-parent="#accordionExample2N" role="region" aria-labelledby="heading3n">
+                <div class="accordion-body">
+                  Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+                  Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+                  Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+                </div>
+              </div>
+            </div>
+          {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading2a">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse2a" aria-expanded="false" aria-controls="collapse2a">
+          Elemento Accordion #2
+        </button>
+      </h2>
+      <div id="collapse2a" class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading2a">
+        <div class="accordion-body">
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+    {% if include.snippets=="no" %}
+      . . .
+    {% else %}
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="heading3a">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapse3a" aria-expanded="false" aria-controls="collapse3a">
+          Elemento Accordion #3
+        </button>
+      </h2>
+      <div id="collapse3a" class="accordion-collapse collapse"
+        data-bs-parent="#accordionExample2" role="region" aria-labelledby="heading3a">
+        <div class="accordion-body">
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget.
+          Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh.
+          Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
+      </div>
+    </div>
+{% endif %}
+  </div>
