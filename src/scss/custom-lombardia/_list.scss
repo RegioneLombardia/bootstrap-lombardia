@@ -1,42 +1,22 @@
-ul {
-  li {
-    a {
-      &.list-item {
-        &:hover:not(.disabled) {
-          //text-decoration: none;
-          span {
-            color: $black;
-            text-decoration: underline;
-          }
-          .icon {
-            fill: $primary;
-          }
-        }
-        span {
-          color: $black;
-          font-weight: 400;
-          &.list-item-title {
-            font-weight: 600;
-          }
-        }
-        // variazione icone a collapse aperto
-        &.active {
-          span {
-            color: $black;
-            text-decoration: none;
-            font-weight: 600;
-          }
-          .icon {
-            color: $color-text-primary-active;
-          }
-        }
-        &.disabled {
-          cursor: not-allowed;
-          span {
-            color: $input-color-placeholder;
-          }
+.it-list-wrapper {
+  .it-list {
+    .list-item {
+      .it-rounded-icon {
+        svg {
+          fill: $primary;
         }
       }
+      .it-right-zone {
+        .text {
+          font-weight: 400;
+        }
+      }
+    }
+    a.list-item:active {
+      color: $primary-v8;
+    }
+    a.list-item:hover {
+      color: $primary-700;
     }
   }
 }
@@ -45,16 +25,11 @@ ul {
 @include media-breakpoint-up(xl) {
   .it-list-wrapper {
     .it-list {
-      a {
-        &.list-item {
-          &:hover {
-            box-shadow: none;
-            color: $black;
-            text-decoration: underline;
-            background: transparent;
-            border-bottom: 1px solid $list-border-color;
-          }
-        }
+      a.list-item:hover {
+        box-shadow: none;
+        background: transparent;
+        border-bottom-color: $list-border-color;
+        color: $primary-700;
       }
     }
   }
