@@ -13,7 +13,7 @@
           {% if include.snippets=="no" %}
             include esempi-lombardia/account_posta.html
           {% else %}
-            {% include esempi-lombardia/account_posta.html %}
+            {% include esempi-lombardia/account_posta.html es-name=include.es-name %}
           {% endif %}
         </div>
       </div>
@@ -32,7 +32,7 @@
           {% if include.snippets=="no" %}
             include esempi-lombardia/indirizzo.html
           {% else %}
-            {% include esempi-lombardia/indirizzo.html %}
+            {% include esempi-lombardia/indirizzo.html es-name=include.es-name %}
           {% endif %}
         </div>
       </div>
@@ -51,7 +51,7 @@
           {% if include.snippets=="no" %}
             include esempi-lombardia/toggles.html
           {% else %}
-            {% include esempi-lombardia/toggles.html %}
+            {% include esempi-lombardia/toggles.html es-name=include.es-name %}
           {% endif %}
         </div>
       </div>

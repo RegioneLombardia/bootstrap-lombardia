@@ -1,37 +1,37 @@
 <div class="row">
   <div class="form-group col-md-6">
-    <label for="formNome">Nome</label>
-    <input type="text" class="form-control" id="formNome" autocomplete="given-name" />
+    <label for="formNome{{include.es-name}}">Nome</label>
+    <input type="text" class="form-control" id="formNome{{include.es-name}}" autocomplete="given-name" />
   </div>
   <div class="form-group col-md-6">
-    <label for="formCognome">Cognome</label>
-    <input type="text" class="form-control" id="formCognome" autocomplete="last-name" />
+    <label for="formCognome{{include.es-name}}">Cognome</label>
+    <input type="text" class="form-control" id="formCognome{{include.es-name}}" autocomplete="last-name" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-10">
-    <label for="inputAddress">Indirizzo</label>
-    <input type="text" class="form-control" id="inputAddress" autocomplete="address-line1"/>
+    <label for="inputAddress{{include.es-name}}">Indirizzo</label>
+    <input type="text" class="form-control" id="inputAddress{{include.es-name}}" autocomplete="address-line1"/>
   </div>
   <div class="form-group col-2">
-    <label for="civico" class="input-number-label">Civico</label>
-    <input type="text" class="form-control" id="civico" autocomplete="civic-number" />
+    <label for="civico{{include.es-name}}" class="input-number-label">Civico</label>
+    <input type="text" class="form-control" id="civico{{include.es-name}}" autocomplete="civic-number" />
   </div>
 </div>
 <div class="row">
   <div class="form-group col-md-6">
-    <label for="inputCity">Comune</label>
-    <input type="text" class="form-control" id="inputCity" autocomplete="address-line2" />
+    <label for="inputCity{{include.es-name}}">Comune</label>
+    <input type="text" class="form-control" id="inputCity{{include.es-name}}" autocomplete="address-line2" />
   </div>
   <div class="form-group col-md-2">
-    <label for="inputCAP">CAP</label>
-    <input type="number" class="form-control" id="inputCAP" />
+    <label for="inputCAP{{include.es-name}}">CAP</label>
+    <input type="number" class="form-control" id="inputCAP{{include.es-name}}" />
   </div>
   <div class="col-md-4">
     <div class="form-group">
       <div class="select-wrapper">
-        <label for="defaultSelect">Provincia</label>
-        <select id="defaultSelect" title="Scegli una opzione" class="form-control" required autocomplete="address-level1">
+        <label for="defaultSelect{{include.es-name}}">Provincia</label>
+        <select id="defaultSelect{{include.es-name}}" title="Scegli una opzione" class="form-control" required autocomplete="address-level1">
           <option selected="" value="">Scegli un'opzione</option>
           <option value="BG">Bergamo</option>
           <option value="BS">Brescia</option>
