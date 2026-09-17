@@ -1,18 +1,26 @@
-//mobile
 .link-list-wrapper {
-  &.it25-linklist-default {
-    ul {
-      li {
-        border-bottom: 1px solid $border-color;
+  ul {
+    li {
+      a {
+        span {
+          color: $black;
+          //.list-item-title {
+          //color: $primary;
+          //text-decoration: underline;
+          //}
+        }
+        &:hover:not(.disabled) {
+          span {
+            color: $primary;
+          }
+        }
+        &:active {
+          span {
+            color: $primary-v8;
+            text-decoration: underline;
+          }
+        }
       }
     }
-  }
-  .link-list-heading {
-    color: $it25-gray;
-    text-transform: uppercase;
-  }
-  h3 {
-    color: $it25-gray;
-    text-transform: uppercase;
   }
 }
