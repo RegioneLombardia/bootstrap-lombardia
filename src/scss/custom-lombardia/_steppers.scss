@@ -12,9 +12,13 @@
           padding: $stepper-spacing-v $stepper-spacing-h;
         }
         background: white;
-        border: 1px solid #e5e5e5;
+        border: 1px solid rgba($primary, 0.5);
+        color: rgba($primary, 0.5);
         flex-grow: unset;
-        border-radius: 8px;
+        border-radius: 4px;
+        svg {
+          fill: rgba($primary, 0.5);
+        }
         &.confirmed {
           border-color: $primary;
         }
@@ -43,11 +47,12 @@
       }
       &::after {
         content: ' ';
-        width: 100%;
+        width: 90%;
         background-color: #e5e5e5;
         position: absolute;
         height: 0.5em;
         top: 35%;
+        left: 5%;
         z-index: -1;
         @include media-breakpoint-up(lg) {
           z-index: 0;

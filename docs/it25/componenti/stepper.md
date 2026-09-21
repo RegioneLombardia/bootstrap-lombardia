@@ -5,11 +5,7 @@ group: componenti
 toc: true
 ---
 
-<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
-
-La componente **Wizard** è utile per demarcare gli step all’interno di un processo.
-
-Il suo utilizzo e la sua applicazione variano a seconda del servizio e il suo design spesso è il frutto di una valutazione preliminare sulla natura del servizio.
+Il componente è utile per demarcare i passi da eseguire all’interno di un processo.
 
 {% capture example %}
 {% include html_docs/wizard/wizard_dettagliato.html %}
