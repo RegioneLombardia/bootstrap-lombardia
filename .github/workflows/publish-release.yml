@@ -12,7 +12,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
           ref: main
@@ -31,7 +31,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - name: Publish package to NPM
-        run: npm publish
+        run: npm stage publish
         continue-on-error: true
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
