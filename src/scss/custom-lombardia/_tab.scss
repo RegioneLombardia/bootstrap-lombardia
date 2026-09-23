@@ -20,14 +20,24 @@
   }
   //link element
   .nav-link {
-    color: $it25-gray;
+    font-weight: 400;
+    color: $grey-600;
     .icon {
-      fill: $it25-gray;
+      fill: $grey-600;
     }
     &.disabled {
-      color: $input-color-placeholder;
+      color: $grey-300;
       .icon {
-        fill: $input-color-placeholder;
+        fill: $grey-300;
+      }
+    }
+    &.active {
+      font-weight: 600;
+    }
+    &:hover {
+      font-weight: 600;
+      .icon {
+        fill: $primary;
       }
     }
   }
@@ -41,31 +51,34 @@
   }
 
   &.nav-dark {
+    background-color: $primary;
+    border-bottom: 1px solid white;
     .nav-link {
       color: white;
       .icon {
         fill: white;
       }
       &:hover {
-        color: $cyan;
+        color: white;
         .icon {
-          fill: $cyan;
+          fill: white;
         }
       }
       &.disabled {
-        color: $neutral-1-a6;
+        color: $grey-300;
         & .icon {
-          fill: $neutral-1-a6;
+          fill: $grey-300;
         }
       }
     }
     .nav-link.active,
     .nav-item.show .nav-link {
-      background-color: $gray-primary;
-      color: $cyan;
-      border-bottom: 2px solid $cyan;
+      background-color: $primary;
+      border-bottom-color: white;
+      border-bottom-width: 3px;
+      color: white;
       .icon {
-        fill: $cyan;
+        fill: white;
       }
     }
   }

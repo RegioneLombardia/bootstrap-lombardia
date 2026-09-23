@@ -5,124 +5,104 @@ group: componenti
 toc: false
 ---
 
-<div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
-
 La **Tab bar** organizza e permette la navigazione tra gruppi di contenuti che sono tra loro correlati ed allo **stesso livello di gerarchia**.
 
-Ogni tab dovrebbe mostrare un contenuto **distinto dalle altre**. A tal proposito, le tab **non devono essere usate per spezzare un contenuto** che ha bisogno di essere letto in un dato ordine.
+Ogni tab dovrebbe mostrare un contenuto **distinto dalle altre**.  
+Le tab **non** devono essere usate per **dividere un contenuto che va letto in un dato ordine**.
 
-Le label delle tab devono essere **corte e non abbreviate**, a meno che non sia strettamente necessario.  
-Le tab con solo testo, con icona e con testo e icona non vanno mai mescolate.  
-Ogni bar deve contenere tab **dello stesso tipo**.
+Le **label** delle tab devono essere **corte e non abbreviate**, a meno che non sia strettamente necessario.  
+Ogni bar deve contenere tab **dello stesso tipo**: non mescolare tab con icona e tab con testo.
 
+### Label testuale
+{% comment %}Example name: IT25 Tabs label testo {% endcomment %}
+{% capture example %}
+<ul class="nav nav-tabs auto">
+  <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#">Attivo</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+  <li class="nav-item"><a class="nav-link disabled" href="#">Disabilitato</a></li>
+</ul>
+{% endcapture %}{% include example.html content=example class="no_toc_section" %}
 
-<div class="bd-example">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Solo testo</label>
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#">Label</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Solo Icone</label>
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Testo e Icone</label>
-        <ul class="nav nav-tabs nav-tabs-icon-text icon-right">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Label
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Label
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              Label
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1">
-              Label
-              <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+#### sfondo colore primario
+{% comment %}Example name: IT25 Tabs label testo dark {% endcomment %}
+{% capture example %}
+<div class="bg-primary p-3">
+  <ul class="nav nav-tabs auto nav-dark">
+    <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Attivo</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabilitato</a></li>
+  </ul>
 </div>
+{% endcapture %}{% include example.html content=example class="no_toc_section" %}
 
 
-{% highlight html %}
-<ul class="nav nav-tabs nav-tabs-icon-text icon-right">
+### Icona
+{% comment %}Example name: IT25 Tabs icona {% endcomment %}
+{% capture example %}
+<ul class="nav nav-tabs auto">
   <li class="nav-item">
-    <a class="nav-link" href="#">
-      Label
+    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
       <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">
-      Label
+    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
       <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="#">
-      Label
+    <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
       <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link disabled" href="#" tabindex="-1">
-      Label
+    <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
       <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
     </a>
   </li>
 </ul>
-{% endhighlight %}
+{% endcapture %}{% include example.html content=example class="no_toc_section" %}
+
+#### sfondo colore primario
+{% comment %}Example name: IT25 Tabs label testo dark {% endcomment %}
+{% capture example %}
+<div class="bg-primary p-3">
+  <ul class="nav nav-tabs auto nav-dark">
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-star-outline"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-pa"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-comment"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
+        <svg class="icon"><use xlink:href="{{ site.baseurl }}/dist/svg/sprites.svg#it-copy"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+  </ul>
+</div>
+{% endcapture %}{% include example.html content=example class="no_toc_section" %}
+
+
 
 
 {% capture callout %}
