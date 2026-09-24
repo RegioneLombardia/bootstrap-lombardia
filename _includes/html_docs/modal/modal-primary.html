@@ -1,0 +1,41 @@
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalp">Lancia la demo della modale</button>
+
+<!-- Modal -->
+<div class="it-example-modal">
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="modalp"
+      aria-labelledby="modal2Title" aria-describedby="modal2Description">
+      <div class="modal-dialog it25-modal-primary modal-lg" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <div class="modal-title" id="modal2Title">Trova l’operatore vicino a te</div>
+               <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">
+                  <svg class="icon icon-lg icon-white"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-close"></use></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+              <p id="modal2Description">Ricerca con semplicità gli operatori accreditati per i servizi al lavoro
+                utilizzando la mappa interattiva.</p>
+              <p>
+                <a href="#">Questo è un link</a>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <div class="form-check me-auto">
+                <input id="checkbox2" type="checkbox" checked="checked">
+                <label for="checkbox2">Non mostrare più</label>
+              </div>
+              <div>
+                <button class="btn btn-lg btn-primary me-3">
+                  <span>BUTTON</span>
+                </button>
+                <button class="btn btn-lg btn-outline-primary btn-icon">
+                  <span>BUTTON</span>
+                  <svg class="icon icon-primary ms-2"><use href="{{ site.baseurl }}/dist/svg/sprites.svg#it-arrow-right"></use></svg>
+                </button>
+              </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

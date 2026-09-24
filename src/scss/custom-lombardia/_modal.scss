@@ -1,12 +1,68 @@
 .modal {
   .modal-dialog {
     .modal-content {
-      border-radius: 8px;
-      .modal-header {
-        h5 {
-          font-weight: 700;
+      border-radius: 16px;
+      padding: 1rem;
+      .modal-title {
+        font-weight: 400;
+        font-size: 1.5rem;
+        @include media-breakpoint-up(lg) {
+          font-size: 2rem;
         }
       }
+      .modal-footer {
+        padding: $modal-padding * 0.5 $modal-padding * 0.66;
+      }
+    }
+  }
+}
+.it25-modal-primary {
+  .modal-content {
+    background-color: $primary;
+    border: var(--#{$prefix}modal-border-width) solid $primary;
+    color: white;
+  }
+  .modal-body {
+    color: white;
+  }
+  a,
+  label {
+    color: white;
+  }
+  .btn-primary {
+    color: white;
+    border: 1px solid white;
+  }
+  .btn-close {
+    color: white;
+    fill: white;
+  }
+  .btn-outline-primary {
+    color: $primary;
+    background-color: white;
+    border: 1px solid $primary-600;
+  }
+  .form-check {
+    [type='checkbox'] {
+      &:not(:checked) + label::after {
+        border-color: white;
+      }
+      &:disabled:not(:checked) + label::after {
+        border-color: #d9d9d9;
+        background-color: #fff;
+      }
+      &:disabled:checked + label::after {
+        background-color: #d9d9d9;
+        border-color: #d9d9d9;
+      }
+      &:disabled.semi-checked + label::after {
+        background-color: #d9d9d9;
+        border-color: #d9d9d9;
+      }
+    }
+    input.semi-checked:not(:checked) + label::after {
+      border-color: $primary; // TODO: Not found
+      background-color: $primary; // TODO: Not found
     }
   }
 }
