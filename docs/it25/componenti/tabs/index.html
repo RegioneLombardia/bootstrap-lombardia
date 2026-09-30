@@ -11,13 +11,13 @@
 
 <title>Tabs · Bootstrap Lombardia</title>
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202609180726" rel="stylesheet" />
+<link href="/bootstrap-lombardia/dist/css/bootstrap-lombardia.min.css?202609300837" rel="stylesheet" />
 
 <!-- Documentation extras -->
  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3"/>
 
-<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202609180726" rel="stylesheet" />
+<link href="/bootstrap-lombardia/docs/assets/dist/css/docs.min.css?202609300837" rel="stylesheet" />
 
 <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
 <!-- Favicons -->
@@ -94,8 +94,8 @@
     <ul class="navbar-nav flex-row ms-md-auto d-none d-md-flex">
       <li class="nav-item pe-2">
         <a title="Scarica Bootstrap Lombardia" data-toggle="tooltip" class="nav-link d-flex align-items-center"
-           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.7.3/bootstrap-lombardia.zip" aria-label="Download">
-          <small class="pe-2 m-0">v2.7.3</small>
+           href="https://github.com/RegioneLombardia/bootstrap-lombardia/releases/download/v2.7.4/bootstrap-lombardia.zip" aria-label="Download">
+          <small class="pe-2 m-0">v2.7.4</small>
           <svg class="icon icon-sm icon-light"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-download"></use></svg><span class="visually-hidden">Download</span>
         </a>
       </li>
@@ -480,120 +480,437 @@
         <main class="col-12 col-md-9 col-xl-8 py-md-3 px-md-3 bd-content">
           <h1 class="bd-title" id="content">Tabs</h1>
           <p class="lead"></p>
-          <div class="h4"><span class="badge bg-warning">Da rivedere</span></div>
+          <p>La <strong>Tab bar</strong> organizza e permette la navigazione tra gruppi di contenuti che sono tra loro correlati ed allo <strong>stesso livello di gerarchia</strong>.</p>
 
-<p>La <strong>Tab bar</strong> organizza e permette la navigazione tra gruppi di contenuti che sono tra loro correlati ed allo <strong>stesso livello di gerarchia</strong>.</p>
+<p>Ogni tab dovrebbe mostrare un contenuto <strong>distinto dalle altre</strong>.<br />
+Le tab <strong>non</strong> devono essere usate per <strong>dividere un contenuto che va letto in un dato ordine</strong>.</p>
 
-<p>Ogni tab dovrebbe mostrare un contenuto <strong>distinto dalle altre</strong>. A tal proposito, le tab <strong>non devono essere usate per spezzare un contenuto</strong> che ha bisogno di essere letto in un dato ordine.</p>
+<p>Le <strong>label</strong> delle tab devono essere <strong>corte e non abbreviate</strong>, a meno che non sia strettamente necessario.<br />
+Ogni bar deve contenere tab <strong>dello stesso tipo</strong>: non mescolare tab con icona e tab con testo.</p>
 
-<p>Le label delle tab devono essere <strong>corte e non abbreviate</strong>, a meno che non sia strettamente necessario.<br />
-Le tab con solo testo, con icona e con testo e icona non vanno mai mescolate.<br />
-Ogni bar deve contenere tab <strong>dello stesso tipo</strong>.</p>
+<h3 id="label-testuale">Label testuale</h3>
 
-<div class="bd-example">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Solo testo</label>
-        <ul class="nav nav-tabs">
-          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Label</a></li>
-          <li class="nav-item"><a class="nav-link disabled" href="#">Label</a></li>
-        </ul>
+<div class="bd-example no_toc_section">
+<ul class="nav nav-tabs auto">
+  <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+  <li class="nav-item"><a class="nav-link active" href="#">Attivo</a></li>
+  <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+  <li class="nav-item"><a class="nav-link disabled" href="#">Disabilitato</a></li>
+</ul>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-902617" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-902617">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-902617" aria-expanded="false" aria-controls="collapse-example-902617">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-902617">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Solo Icone</label>
-      <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use></svg>
-              <span class="visually-hidden">Breve testo esplicativo</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        <label class="my-3">Testo e Icone</label>
-        <ul class="nav nav-tabs nav-tabs-icon-text icon-right">
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Label
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              Label
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#">
-              Label
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"></use></svg>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1">
-              Label
-              <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use></svg>
-            </a>
-          </li>
-        </ul>
-      </div>
+
+    <div id="collapse-example-902617" class="accordion-collapse collapse" data-bs-parent="#accordion-example-902617" role="region" aria-labelledby="heading-example-902617">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs auto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabilitato<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
     </div>
   </div>
 </div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs nav-tabs-icon-text icon-right"</span><span class="nt">&gt;</span>
+  function initAutoExpand() {
+/*
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+*/
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="sfondo-colore-primario">sfondo colore primario</h4>
+
+<div class="bd-example no_toc_section">
+<div class="bg-primary p-3">
+  <ul class="nav nav-tabs auto nav-dark">
+    <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+    <li class="nav-item"><a class="nav-link active" href="#">Attivo</a></li>
+    <li class="nav-item"><a class="nav-link" href="#">Label</a></li>
+    <li class="nav-item"><a class="nav-link disabled" href="#">Disabilitato</a></li>
+  </ul>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-903626" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-903626">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-903626" aria-expanded="false" aria-controls="collapse-example-903626">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-903626">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-903626" class="accordion-collapse collapse" data-bs-parent="#accordion-example-903626" role="region" aria-labelledby="heading-example-903626">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary p-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs auto nav-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Attivo<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Label<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Disabilitato<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+/*
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+*/
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h3 id="icona">Icona</h3>
+
+<div class="bd-example no_toc_section">
+<ul class="nav nav-tabs auto">
+  <li class="nav-item">
+    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+      <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+      <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+      <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
+      <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use></svg>
+      <span class="visually-hidden">Breve testo esplicativo</span>
+    </a>
+  </li>
+</ul>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-904660" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-904660">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-904660" aria-expanded="false" aria-controls="collapse-example-904660">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-904660">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-904660" class="accordion-collapse collapse" data-bs-parent="#accordion-example-904660" role="region" aria-labelledby="heading-example-904660">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+</pre></td><td class="code"><pre><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs auto"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-      Label
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-      Label
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
-      Label
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
   <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
-      Label
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
       <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
     <span class="nt">&lt;/a&gt;</span>
   <span class="nt">&lt;/li&gt;</span>
-<span class="nt">&lt;/ul&gt;</span></code></pre></figure>
+<span class="nt">&lt;/ul&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+/*
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+*/
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
+
+<h4 id="sfondo-colore-primario-1">sfondo colore primario</h4>
+
+<div class="bd-example no_toc_section">
+<div class="bg-primary p-3">
+  <ul class="nav nav-tabs auto nav-dark">
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" data-bs-toggle="tooltip" data-placement="top" title="Label" tabindex="-1">
+        <svg class="icon"><use xlink:href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use></svg>
+        <span class="visually-hidden">Breve testo esplicativo</span>
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-906697" style="margin-bottom: 2rem;" data-auto-expand="true">
+  <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-906697">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-906697" aria-expanded="false" aria-controls="collapse-example-906697">
+          Codice HTML
+        </button>
+      </h2>
+      <div class="d-flex align-items-center">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-906697">
+          <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
+            <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="collapse-example-906697" class="accordion-collapse collapse" data-bs-parent="#accordion-example-906697" role="region" aria-labelledby="heading-example-906697">
+      <div class="accordion-body p-0 position-relative">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="code"><pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"bg-primary p-3"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"nav nav-tabs auto nav-dark"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-star-outline"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-pa"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link active"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-comment"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"nav-item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"nav-link disabled"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">data-bs-toggle=</span><span class="s">"tooltip"</span> <span class="na">data-placement=</span><span class="s">"top"</span> <span class="na">title=</span><span class="s">"Label"</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"</span><span class="nt">&gt;&lt;/use&gt;&lt;/svg&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visually-hidden"</span><span class="nt">&gt;</span>Breve testo esplicativo<span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+</div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+if (!window.accordionAutoExpandSetup) {
+  window.accordionAutoExpandSetup = true;
+
+  function initAutoExpand() {
+/*
+    const firstAccordion = document.querySelector('.auto-expand-first[data-auto-expand="true"]');
+    if (firstAccordion) {
+      const button = firstAccordion.querySelector('.accordion-button');
+      const collapse = firstAccordion.querySelector('.accordion-collapse');
+
+      if (button && collapse && button.classList.contains('collapsed')) {
+        button.classList.remove('collapsed');
+        button.setAttribute('aria-expanded', 'true');
+        collapse.classList.add('show');
+      }
+    }
+*/
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoExpand);
+  } else {
+    setTimeout(initAutoExpand, 0);
+  }
+}
+</script>
 
 <div class="bd-callout bd-callout-accessibility">
 <h4 id="accessibilità">Accessibilità</h4>
@@ -629,15 +946,15 @@ Inoltre, poichè il significato dell’icona non sempre risulta chiaro per gli u
   </li>
 </ul>
 </div>
-<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-401866" style="margin-bottom: 2rem;" data-auto-expand="true">
+<div class="accordion accordion-left-icon border-bottom-0 pt-2 auto-expand-first code-example-accordion " id="accordion-example-910792" style="margin-bottom: 2rem;" data-auto-expand="true">
   <div class="accordion-item" style="background: transparent;"><div class="d-flex justify-content-between align-items-center">
-      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-401866">
-        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-401866" aria-expanded="false" aria-controls="collapse-example-401866">
+      <h2 class="accordion-header flex-grow-1 no_toc" id="heading-example-910792">
+        <button class="accordion-button border-top-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-example-910792" aria-expanded="false" aria-controls="collapse-example-910792">
           Codice HTML
         </button>
       </h2>
       <div class="d-flex align-items-center">
-        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-401866">
+        <button type="button" class="btn shadow-none btn-xs btn-secondary p-2 me-2 copy-code-btn" aria-label="Copia il codice negli appunti" data-target="#collapse-example-910792">
           <svg role="img" class="icon icon-sm align-middle icon-white" aria-label="Copia il codice negli appunti">
             <use href="/bootstrap-lombardia/dist/svg/sprites.svg#it-copy"></use>
           </svg>
@@ -645,7 +962,7 @@ Inoltre, poichè il significato dell’icona non sempre risulta chiaro per gli u
       </div>
     </div>
 
-    <div id="collapse-example-401866" class="accordion-collapse collapse" data-bs-parent="#accordion-example-401866" role="region" aria-labelledby="heading-example-401866">
+    <div id="collapse-example-910792" class="accordion-collapse collapse" data-bs-parent="#accordion-example-910792" role="region" aria-labelledby="heading-example-910792">
       <div class="accordion-body p-0 position-relative">
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
 2
@@ -760,17 +1077,17 @@ if (!window.accordionAutoExpandSetup) {
     </div>
 
     
-<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202609180726"></script>
+<script src="/bootstrap-lombardia/dist/js/bootstrap-lombardia.bundle.min.js?202609300837"></script>
 
 <script>
   bootstrap.loadFonts('/bootstrap-lombardia/dist/fonts')
   bootstrap.it25Header()
-</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202609180726"></script>
+</script><script src="/bootstrap-lombardia/docs/assets/dist/js/docs.min.js?202609300837"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/anchor.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/clipboard.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tsparticles.min.js"></script>
 
-<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202609180726"></script>
+<script src="/bootstrap-lombardia/docs/assets/src/js/docs.js?202609300837"></script>
 
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/tweenjs.min.js"></script>
 <script src="/bootstrap-lombardia/docs/assets/src/js/vendor/easeljs.min.js"></script>
@@ -791,7 +1108,7 @@ if (!window.accordionAutoExpandSetup) {
     { src: '/bootstrap-lombardia/docs/assets/img/cover/cover-animation-7.png', id: 'cover-7' },
   ]
 </script>-->
-<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202609180726"></script> -->
+<!-- <script src="/bootstrap-lombardia/docs/assets/src/js/cover-animation.js?202609300837"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/@docsearch/js@4"></script>
 <script type="text/javascript">
   docsearch({
